@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* WoWTalentProAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* WoWTalentProAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		257AEA28129E8FB900DE9D51 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA27129E8FB900DE9D51 /* CoreData.framework */; };
+		257AEA34129E901900DE9D51 /* WTDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA31129E901900DE9D51 /* WTDataCenter.m */; };
+		257AEA35129E901900DE9D51 /* WTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA33129E901900DE9D51 /* WTCoreDataStack.m */; };
+		257AEA42129E902400DE9D51 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA39129E902400DE9D51 /* NSObject+SBJSON.m */; };
+		257AEA43129E902400DE9D51 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA3B129E902400DE9D51 /* NSString+SBJSON.m */; };
+		257AEA44129E902400DE9D51 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA3D129E902400DE9D51 /* SBJsonBase.m */; };
+		257AEA45129E902400DE9D51 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA3F129E902400DE9D51 /* SBJsonParser.m */; };
+		257AEA46129E902400DE9D51 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA41129E902400DE9D51 /* SBJsonWriter.m */; };
+		257AEA4A129E902700DE9D51 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA49129E902700DE9D51 /* Reachability.m */; };
+		257AEA4F129E902A00DE9D51 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA4E129E902A00DE9D51 /* libFlurry.a */; };
+		257AEA53129E903B00DE9D51 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA52129E903B00DE9D51 /* SystemConfiguration.framework */; };
+		257AEA6E129E910900DE9D51 /* WoWTalentPro.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA6D129E910900DE9D51 /* WoWTalentPro.xcdatamodel */; };
+		257AEAB3129E92AB00DE9D51 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEAAE129E92AB00DE9D51 /* Icon-72.png */; };
+		257AEAB4129E92AB00DE9D51 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEAAF129E92AB00DE9D51 /* Icon.png */; };
+		257AEAB5129E92AB00DE9D51 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEAB0129E92AB00DE9D51 /* Icon@2x.png */; };
+		257AEAB6129E92AB00DE9D51 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257AEAB2129E92AB00DE9D51 /* MainWindow.xib */; };
+		257AEAEE129E945400DE9D51 /* LauncherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEAEC129E945400DE9D51 /* LauncherViewController.m */; };
+		257AEAEF129E945400DE9D51 /* LauncherViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257AEAED129E945400DE9D51 /* LauncherViewController_iPhone.xib */; };
+		257AEB2E129E968A00DE9D51 /* TalentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEB2C129E968A00DE9D51 /* TalentViewController.m */; };
+		257AEB2F129E968A00DE9D51 /* TalentViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB2D129E968A00DE9D51 /* TalentViewController_iPhone.xib */; };
+		257AEB92129E9C8400DE9D51 /* deathknight_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB82129E9C8400DE9D51 /* deathknight_0.png */; };
+		257AEB93129E9C8400DE9D51 /* deathknight_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB83129E9C8400DE9D51 /* deathknight_1.png */; };
+		257AEB94129E9C8400DE9D51 /* deathknight_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB84129E9C8400DE9D51 /* deathknight_2.png */; };
+		257AEB95129E9C8400DE9D51 /* icon_deathknight.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB86129E9C8400DE9D51 /* icon_deathknight.png */; };
+		257AEB96129E9C8400DE9D51 /* icon_druid.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB87129E9C8400DE9D51 /* icon_druid.png */; };
+		257AEB97129E9C8400DE9D51 /* icon_hunter.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB88129E9C8400DE9D51 /* icon_hunter.png */; };
+		257AEB98129E9C8400DE9D51 /* icon_mage.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB89129E9C8400DE9D51 /* icon_mage.png */; };
+		257AEB99129E9C8400DE9D51 /* icon_murloc.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB8A129E9C8400DE9D51 /* icon_murloc.png */; };
+		257AEB9A129E9C8400DE9D51 /* icon_paladin.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB8B129E9C8400DE9D51 /* icon_paladin.png */; };
+		257AEB9B129E9C8400DE9D51 /* icon_pet.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB8C129E9C8400DE9D51 /* icon_pet.png */; };
+		257AEB9C129E9C8400DE9D51 /* icon_priest.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB8D129E9C8400DE9D51 /* icon_priest.png */; };
+		257AEB9D129E9C8400DE9D51 /* icon_rogue.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB8E129E9C8400DE9D51 /* icon_rogue.png */; };
+		257AEB9E129E9C8400DE9D51 /* icon_shaman.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB8F129E9C8400DE9D51 /* icon_shaman.png */; };
+		257AEB9F129E9C8400DE9D51 /* icon_warlock.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB90129E9C8400DE9D51 /* icon_warlock.png */; };
+		257AEBA0129E9C8400DE9D51 /* icon_warrior.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB91129E9C8400DE9D51 /* icon_warrior.png */; };
+		257AEBEC129E9F9500DE9D51 /* TalentButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEBEB129E9F9500DE9D51 /* TalentButton.m */; };
+		257AEBF0129E9FE500DE9D51 /* TalentButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBEF129E9FE500DE9D51 /* TalentButtonViewController.xib */; };
+		257AEC15129EA0A700DE9D51 /* across-left-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBF4129EA0A700DE9D51 /* across-left-green.png */; };
+		257AEC16129EA0A700DE9D51 /* across-left-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBF5129EA0A700DE9D51 /* across-left-grey.png */; };
+		257AEC17129EA0A700DE9D51 /* across-left-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBF6129EA0A700DE9D51 /* across-left-yellow.png */; };
+		257AEC18129EA0A700DE9D51 /* across-right-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBF7129EA0A700DE9D51 /* across-right-green.png */; };
+		257AEC19129EA0A700DE9D51 /* across-right-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBF8129EA0A700DE9D51 /* across-right-grey.png */; };
+		257AEC1A129EA0A700DE9D51 /* across-right-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBF9129EA0A700DE9D51 /* across-right-yellow.png */; };
+		257AEC1B129EA0A700DE9D51 /* down-1-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBFA129EA0A700DE9D51 /* down-1-green.png */; };
+		257AEC1C129EA0A700DE9D51 /* down-1-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBFB129EA0A700DE9D51 /* down-1-grey.png */; };
+		257AEC1D129EA0A700DE9D51 /* down-1-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBFC129EA0A700DE9D51 /* down-1-yellow.png */; };
+		257AEC1E129EA0A700DE9D51 /* down-2-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBFD129EA0A700DE9D51 /* down-2-green.png */; };
+		257AEC1F129EA0A700DE9D51 /* down-2-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBFE129EA0A700DE9D51 /* down-2-grey.png */; };
+		257AEC20129EA0A700DE9D51 /* down-2-left-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBFF129EA0A700DE9D51 /* down-2-left-green.png */; };
+		257AEC21129EA0A700DE9D51 /* down-2-left-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC00129EA0A700DE9D51 /* down-2-left-grey.png */; };
+		257AEC22129EA0A700DE9D51 /* down-2-left-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC01129EA0A700DE9D51 /* down-2-left-yellow.png */; };
+		257AEC23129EA0A700DE9D51 /* down-2-right-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC02129EA0A700DE9D51 /* down-2-right-green.png */; };
+		257AEC24129EA0A700DE9D51 /* down-2-right-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC03129EA0A700DE9D51 /* down-2-right-grey.png */; };
+		257AEC25129EA0A700DE9D51 /* down-2-right-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC04129EA0A700DE9D51 /* down-2-right-yellow.png */; };
+		257AEC26129EA0A700DE9D51 /* down-2-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC05129EA0A700DE9D51 /* down-2-yellow.png */; };
+		257AEC27129EA0A700DE9D51 /* down-3-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC06129EA0A700DE9D51 /* down-3-green.png */; };
+		257AEC28129EA0A700DE9D51 /* down-3-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC07129EA0A700DE9D51 /* down-3-grey.png */; };
+		257AEC29129EA0A700DE9D51 /* down-3-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC08129EA0A700DE9D51 /* down-3-yellow.png */; };
+		257AEC2A129EA0A700DE9D51 /* down-4-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC09129EA0A700DE9D51 /* down-4-green.png */; };
+		257AEC2B129EA0A700DE9D51 /* down-4-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC0A129EA0A700DE9D51 /* down-4-grey.png */; };
+		257AEC2C129EA0A700DE9D51 /* down-4-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC0B129EA0A700DE9D51 /* down-4-yellow.png */; };
+		257AEC2D129EA0A700DE9D51 /* down-left-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC0C129EA0A700DE9D51 /* down-left-green.png */; };
+		257AEC2E129EA0A700DE9D51 /* down-left-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC0D129EA0A700DE9D51 /* down-left-grey.png */; };
+		257AEC2F129EA0A700DE9D51 /* down-left-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC0E129EA0A700DE9D51 /* down-left-yellow.png */; };
+		257AEC30129EA0A700DE9D51 /* down-right-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC0F129EA0A700DE9D51 /* down-right-green.png */; };
+		257AEC31129EA0A700DE9D51 /* down-right-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC10129EA0A700DE9D51 /* down-right-grey.png */; };
+		257AEC32129EA0A700DE9D51 /* down-right-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC11129EA0A700DE9D51 /* down-right-yellow.png */; };
+		257AEC33129EA0A700DE9D51 /* icon-over-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC12129EA0A700DE9D51 /* icon-over-green.png */; };
+		257AEC34129EA0A700DE9D51 /* icon-over-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC13129EA0A700DE9D51 /* icon-over-grey.png */; };
+		257AEC35129EA0A700DE9D51 /* icon-over-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC14129EA0A700DE9D51 /* icon-over-yellow.png */; };
+		257AEC38129EA21A00DE9D51 /* TalentButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEC37129EA21A00DE9D51 /* TalentButtonViewController.m */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* WoWTalentProAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WoWTalentProAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* WoWTalentProAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WoWTalentProAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* WoWTalentPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoWTalentPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		257AEA22129E8F8900DE9D51 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		257AEA27129E8FB900DE9D51 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		257AEA30129E901900DE9D51 /* WTDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTDataCenter.h; sourceTree = "<group>"; };
+		257AEA31129E901900DE9D51 /* WTDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTDataCenter.m; sourceTree = "<group>"; };
+		257AEA32129E901900DE9D51 /* WTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTCoreDataStack.h; sourceTree = "<group>"; };
+		257AEA33129E901900DE9D51 /* WTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTCoreDataStack.m; sourceTree = "<group>"; };
+		257AEA37129E902400DE9D51 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		257AEA38129E902400DE9D51 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		257AEA39129E902400DE9D51 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		257AEA3A129E902400DE9D51 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		257AEA3B129E902400DE9D51 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		257AEA3C129E902400DE9D51 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		257AEA3D129E902400DE9D51 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		257AEA3E129E902400DE9D51 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		257AEA3F129E902400DE9D51 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		257AEA40129E902400DE9D51 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		257AEA41129E902400DE9D51 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		257AEA48129E902700DE9D51 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		257AEA49129E902700DE9D51 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		257AEA4C129E902A00DE9D51 /* FlurryAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdDelegate.h; sourceTree = "<group>"; };
+		257AEA4D129E902A00DE9D51 /* FlurryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAPI.h; sourceTree = "<group>"; };
+		257AEA4E129E902A00DE9D51 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
+		257AEA52129E903B00DE9D51 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		257AEA6D129E910900DE9D51 /* WoWTalentPro.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; name = WoWTalentPro.xcdatamodel; path = Resources/WoWTalentPro.xcdatamodel; sourceTree = "<group>"; };
+		257AEAAE129E92AB00DE9D51 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		257AEAAF129E92AB00DE9D51 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		257AEAB0129E92AB00DE9D51 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		257AEAB2129E92AB00DE9D51 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		257AEAEB129E945400DE9D51 /* LauncherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LauncherViewController.h; sourceTree = "<group>"; };
+		257AEAEC129E945400DE9D51 /* LauncherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LauncherViewController.m; sourceTree = "<group>"; };
+		257AEAED129E945400DE9D51 /* LauncherViewController_iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LauncherViewController_iPhone.xib; sourceTree = "<group>"; };
+		257AEB2B129E968A00DE9D51 /* TalentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentViewController.h; sourceTree = "<group>"; };
+		257AEB2C129E968A00DE9D51 /* TalentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalentViewController.m; sourceTree = "<group>"; };
+		257AEB2D129E968A00DE9D51 /* TalentViewController_iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalentViewController_iPhone.xib; sourceTree = "<group>"; };
+		257AEB82129E9C8400DE9D51 /* deathknight_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deathknight_0.png; sourceTree = "<group>"; };
+		257AEB83129E9C8400DE9D51 /* deathknight_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deathknight_1.png; sourceTree = "<group>"; };
+		257AEB84129E9C8400DE9D51 /* deathknight_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deathknight_2.png; sourceTree = "<group>"; };
+		257AEB86129E9C8400DE9D51 /* icon_deathknight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_deathknight.png; sourceTree = "<group>"; };
+		257AEB87129E9C8400DE9D51 /* icon_druid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_druid.png; sourceTree = "<group>"; };
+		257AEB88129E9C8400DE9D51 /* icon_hunter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_hunter.png; sourceTree = "<group>"; };
+		257AEB89129E9C8400DE9D51 /* icon_mage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_mage.png; sourceTree = "<group>"; };
+		257AEB8A129E9C8400DE9D51 /* icon_murloc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_murloc.png; sourceTree = "<group>"; };
+		257AEB8B129E9C8400DE9D51 /* icon_paladin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_paladin.png; sourceTree = "<group>"; };
+		257AEB8C129E9C8400DE9D51 /* icon_pet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pet.png; sourceTree = "<group>"; };
+		257AEB8D129E9C8400DE9D51 /* icon_priest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_priest.png; sourceTree = "<group>"; };
+		257AEB8E129E9C8400DE9D51 /* icon_rogue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_rogue.png; sourceTree = "<group>"; };
+		257AEB8F129E9C8400DE9D51 /* icon_shaman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_shaman.png; sourceTree = "<group>"; };
+		257AEB90129E9C8400DE9D51 /* icon_warlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_warlock.png; sourceTree = "<group>"; };
+		257AEB91129E9C8400DE9D51 /* icon_warrior.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_warrior.png; sourceTree = "<group>"; };
+		257AEBEA129E9F9500DE9D51 /* TalentButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentButton.h; sourceTree = "<group>"; };
+		257AEBEB129E9F9500DE9D51 /* TalentButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalentButton.m; sourceTree = "<group>"; };
+		257AEBEF129E9FE500DE9D51 /* TalentButtonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalentButtonViewController.xib; sourceTree = "<group>"; };
+		257AEBF4129EA0A700DE9D51 /* across-left-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "across-left-green.png"; sourceTree = "<group>"; };
+		257AEBF5129EA0A700DE9D51 /* across-left-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "across-left-grey.png"; sourceTree = "<group>"; };
+		257AEBF6129EA0A700DE9D51 /* across-left-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "across-left-yellow.png"; sourceTree = "<group>"; };
+		257AEBF7129EA0A700DE9D51 /* across-right-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "across-right-green.png"; sourceTree = "<group>"; };
+		257AEBF8129EA0A700DE9D51 /* across-right-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "across-right-grey.png"; sourceTree = "<group>"; };
+		257AEBF9129EA0A700DE9D51 /* across-right-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "across-right-yellow.png"; sourceTree = "<group>"; };
+		257AEBFA129EA0A700DE9D51 /* down-1-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-1-green.png"; sourceTree = "<group>"; };
+		257AEBFB129EA0A700DE9D51 /* down-1-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-1-grey.png"; sourceTree = "<group>"; };
+		257AEBFC129EA0A700DE9D51 /* down-1-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-1-yellow.png"; sourceTree = "<group>"; };
+		257AEBFD129EA0A700DE9D51 /* down-2-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-2-green.png"; sourceTree = "<group>"; };
+		257AEBFE129EA0A700DE9D51 /* down-2-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-2-grey.png"; sourceTree = "<group>"; };
+		257AEBFF129EA0A700DE9D51 /* down-2-left-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-2-left-green.png"; sourceTree = "<group>"; };
+		257AEC00129EA0A700DE9D51 /* down-2-left-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-2-left-grey.png"; sourceTree = "<group>"; };
+		257AEC01129EA0A700DE9D51 /* down-2-left-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-2-left-yellow.png"; sourceTree = "<group>"; };
+		257AEC02129EA0A700DE9D51 /* down-2-right-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-2-right-green.png"; sourceTree = "<group>"; };
+		257AEC03129EA0A700DE9D51 /* down-2-right-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-2-right-grey.png"; sourceTree = "<group>"; };
+		257AEC04129EA0A700DE9D51 /* down-2-right-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-2-right-yellow.png"; sourceTree = "<group>"; };
+		257AEC05129EA0A700DE9D51 /* down-2-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-2-yellow.png"; sourceTree = "<group>"; };
+		257AEC06129EA0A700DE9D51 /* down-3-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-3-green.png"; sourceTree = "<group>"; };
+		257AEC07129EA0A700DE9D51 /* down-3-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-3-grey.png"; sourceTree = "<group>"; };
+		257AEC08129EA0A700DE9D51 /* down-3-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-3-yellow.png"; sourceTree = "<group>"; };
+		257AEC09129EA0A700DE9D51 /* down-4-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-4-green.png"; sourceTree = "<group>"; };
+		257AEC0A129EA0A700DE9D51 /* down-4-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-4-grey.png"; sourceTree = "<group>"; };
+		257AEC0B129EA0A700DE9D51 /* down-4-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-4-yellow.png"; sourceTree = "<group>"; };
+		257AEC0C129EA0A700DE9D51 /* down-left-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-left-green.png"; sourceTree = "<group>"; };
+		257AEC0D129EA0A700DE9D51 /* down-left-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-left-grey.png"; sourceTree = "<group>"; };
+		257AEC0E129EA0A700DE9D51 /* down-left-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-left-yellow.png"; sourceTree = "<group>"; };
+		257AEC0F129EA0A700DE9D51 /* down-right-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-right-green.png"; sourceTree = "<group>"; };
+		257AEC10129EA0A700DE9D51 /* down-right-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-right-grey.png"; sourceTree = "<group>"; };
+		257AEC11129EA0A700DE9D51 /* down-right-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-right-yellow.png"; sourceTree = "<group>"; };
+		257AEC12129EA0A700DE9D51 /* icon-over-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-over-green.png"; sourceTree = "<group>"; };
+		257AEC13129EA0A700DE9D51 /* icon-over-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-over-grey.png"; sourceTree = "<group>"; };
+		257AEC14129EA0A700DE9D51 /* icon-over-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-over-yellow.png"; sourceTree = "<group>"; };
+		257AEC36129EA21A00DE9D51 /* TalentButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentButtonViewController.h; sourceTree = "<group>"; };
+		257AEC37129EA21A00DE9D51 /* TalentButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalentButtonViewController.m; sourceTree = "<group>"; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* WoWTalentPro_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WoWTalentPro_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* WoWTalentPro-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WoWTalentPro-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				257AEA28129E8FB900DE9D51 /* CoreData.framework in Frameworks */,
+				257AEA4F129E902A00DE9D51 /* libFlurry.a in Frameworks */,
+				257AEA53129E903B00DE9D51 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				257AEA2B129E900E00DE9D51 /* Controllers */,
+				257AEA2C129E900E00DE9D51 /* CoreData */,
+				257AEA2D129E900E00DE9D51 /* Models */,
+				257AEA2E129E900E00DE9D51 /* Vendor */,
+				257AEA2F129E900E00DE9D51 /* Views */,
+				1D3623240D0F684500981E51 /* WoWTalentProAppDelegate.h */,
+				1D3623250D0F684500981E51 /* WoWTalentProAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* WoWTalentPro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		257AEA2B129E900E00DE9D51 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				257AEAEB129E945400DE9D51 /* LauncherViewController.h */,
+				257AEAEC129E945400DE9D51 /* LauncherViewController.m */,
+				257AEAED129E945400DE9D51 /* LauncherViewController_iPhone.xib */,
+				257AEB2B129E968A00DE9D51 /* TalentViewController.h */,
+				257AEB2C129E968A00DE9D51 /* TalentViewController.m */,
+				257AEB2D129E968A00DE9D51 /* TalentViewController_iPhone.xib */,
+				257AEC36129EA21A00DE9D51 /* TalentButtonViewController.h */,
+				257AEC37129EA21A00DE9D51 /* TalentButtonViewController.m */,
+				257AEBEF129E9FE500DE9D51 /* TalentButtonViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		257AEA2C129E900E00DE9D51 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				257AEA30129E901900DE9D51 /* WTDataCenter.h */,
+				257AEA31129E901900DE9D51 /* WTDataCenter.m */,
+				257AEA32129E901900DE9D51 /* WTCoreDataStack.h */,
+				257AEA33129E901900DE9D51 /* WTCoreDataStack.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		257AEA2D129E900E00DE9D51 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		257AEA2E129E900E00DE9D51 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				257AEA4B129E902A00DE9D51 /* FlurryLib */,
+				257AEA47129E902700DE9D51 /* Reachability */,
+				257AEA36129E902400DE9D51 /* JSON */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		257AEA2F129E900E00DE9D51 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				257AEBEA129E9F9500DE9D51 /* TalentButton.h */,
+				257AEBEB129E9F9500DE9D51 /* TalentButton.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		257AEA36129E902400DE9D51 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				257AEA37129E902400DE9D51 /* JSON.h */,
+				257AEA38129E902400DE9D51 /* NSObject+SBJSON.h */,
+				257AEA39129E902400DE9D51 /* NSObject+SBJSON.m */,
+				257AEA3A129E902400DE9D51 /* NSString+SBJSON.h */,
+				257AEA3B129E902400DE9D51 /* NSString+SBJSON.m */,
+				257AEA3C129E902400DE9D51 /* SBJsonBase.h */,
+				257AEA3D129E902400DE9D51 /* SBJsonBase.m */,
+				257AEA3E129E902400DE9D51 /* SBJsonParser.h */,
+				257AEA3F129E902400DE9D51 /* SBJsonParser.m */,
+				257AEA40129E902400DE9D51 /* SBJsonWriter.h */,
+				257AEA41129E902400DE9D51 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		257AEA47129E902700DE9D51 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				257AEA48129E902700DE9D51 /* Reachability.h */,
+				257AEA49129E902700DE9D51 /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		257AEA4B129E902A00DE9D51 /* FlurryLib */ = {
+			isa = PBXGroup;
+			children = (
+				257AEA4C129E902A00DE9D51 /* FlurryAdDelegate.h */,
+				257AEA4D129E902A00DE9D51 /* FlurryAPI.h */,
+				257AEA4E129E902A00DE9D51 /* libFlurry.a */,
+			);
+			path = FlurryLib;
+			sourceTree = "<group>";
+		};
+		257AEAAC129E92AB00DE9D51 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				257AEB0B129E95BC00DE9D51 /* 1x */,
+				257AEB18129E95BC00DE9D51 /* 2x */,
+				257AEAAD129E92AB00DE9D51 /* Icons */,
+			);
+			name = Assets;
+			path = Resources/Assets;
+			sourceTree = "<group>";
+		};
+		257AEAAD129E92AB00DE9D51 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				257AEAAE129E92AB00DE9D51 /* Icon-72.png */,
+				257AEAAF129E92AB00DE9D51 /* Icon.png */,
+				257AEAB0129E92AB00DE9D51 /* Icon@2x.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		257AEAB1129E92AB00DE9D51 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				257AEAB2129E92AB00DE9D51 /* MainWindow.xib */,
+			);
+			name = Nibs;
+			path = Resources/Nibs;
+			sourceTree = "<group>";
+		};
+		257AEB0B129E95BC00DE9D51 /* 1x */ = {
+			isa = PBXGroup;
+			children = (
+				257AEBF3129EA0A700DE9D51 /* Misc */,
+				257AEB81129E9C8400DE9D51 /* Backgrounds */,
+				257AEB85129E9C8400DE9D51 /* LauncherIcons */,
+			);
+			path = 1x;
+			sourceTree = "<group>";
+		};
+		257AEB18129E95BC00DE9D51 /* 2x */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 2x;
+			sourceTree = "<group>";
+		};
+		257AEB81129E9C8400DE9D51 /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				257AEB82129E9C8400DE9D51 /* deathknight_0.png */,
+				257AEB83129E9C8400DE9D51 /* deathknight_1.png */,
+				257AEB84129E9C8400DE9D51 /* deathknight_2.png */,
+			);
+			path = Backgrounds;
+			sourceTree = "<group>";
+		};
+		257AEB85129E9C8400DE9D51 /* LauncherIcons */ = {
+			isa = PBXGroup;
+			children = (
+				257AEB86129E9C8400DE9D51 /* icon_deathknight.png */,
+				257AEB87129E9C8400DE9D51 /* icon_druid.png */,
+				257AEB88129E9C8400DE9D51 /* icon_hunter.png */,
+				257AEB89129E9C8400DE9D51 /* icon_mage.png */,
+				257AEB8A129E9C8400DE9D51 /* icon_murloc.png */,
+				257AEB8B129E9C8400DE9D51 /* icon_paladin.png */,
+				257AEB8C129E9C8400DE9D51 /* icon_pet.png */,
+				257AEB8D129E9C8400DE9D51 /* icon_priest.png */,
+				257AEB8E129E9C8400DE9D51 /* icon_rogue.png */,
+				257AEB8F129E9C8400DE9D51 /* icon_shaman.png */,
+				257AEB90129E9C8400DE9D51 /* icon_warlock.png */,
+				257AEB91129E9C8400DE9D51 /* icon_warrior.png */,
+			);
+			path = LauncherIcons;
+			sourceTree = "<group>";
+		};
+		257AEBF3129EA0A700DE9D51 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				257AEBF4129EA0A700DE9D51 /* across-left-green.png */,
+				257AEBF5129EA0A700DE9D51 /* across-left-grey.png */,
+				257AEBF6129EA0A700DE9D51 /* across-left-yellow.png */,
+				257AEBF7129EA0A700DE9D51 /* across-right-green.png */,
+				257AEBF8129EA0A700DE9D51 /* across-right-grey.png */,
+				257AEBF9129EA0A700DE9D51 /* across-right-yellow.png */,
+				257AEBFA129EA0A700DE9D51 /* down-1-green.png */,
+				257AEBFB129EA0A700DE9D51 /* down-1-grey.png */,
+				257AEBFC129EA0A700DE9D51 /* down-1-yellow.png */,
+				257AEBFD129EA0A700DE9D51 /* down-2-green.png */,
+				257AEBFE129EA0A700DE9D51 /* down-2-grey.png */,
+				257AEBFF129EA0A700DE9D51 /* down-2-left-green.png */,
+				257AEC00129EA0A700DE9D51 /* down-2-left-grey.png */,
+				257AEC01129EA0A700DE9D51 /* down-2-left-yellow.png */,
+				257AEC02129EA0A700DE9D51 /* down-2-right-green.png */,
+				257AEC03129EA0A700DE9D51 /* down-2-right-grey.png */,
+				257AEC04129EA0A700DE9D51 /* down-2-right-yellow.png */,
+				257AEC05129EA0A700DE9D51 /* down-2-yellow.png */,
+				257AEC06129EA0A700DE9D51 /* down-3-green.png */,
+				257AEC07129EA0A700DE9D51 /* down-3-grey.png */,
+				257AEC08129EA0A700DE9D51 /* down-3-yellow.png */,
+				257AEC09129EA0A700DE9D51 /* down-4-green.png */,
+				257AEC0A129EA0A700DE9D51 /* down-4-grey.png */,
+				257AEC0B129EA0A700DE9D51 /* down-4-yellow.png */,
+				257AEC0C129EA0A700DE9D51 /* down-left-green.png */,
+				257AEC0D129EA0A700DE9D51 /* down-left-grey.png */,
+				257AEC0E129EA0A700DE9D51 /* down-left-yellow.png */,
+				257AEC0F129EA0A700DE9D51 /* down-right-green.png */,
+				257AEC10129EA0A700DE9D51 /* down-right-grey.png */,
+				257AEC11129EA0A700DE9D51 /* down-right-yellow.png */,
+				257AEC12129EA0A700DE9D51 /* icon-over-green.png */,
+				257AEC13129EA0A700DE9D51 /* icon-over-grey.png */,
+				257AEC14129EA0A700DE9D51 /* icon-over-yellow.png */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* WoWTalentPro_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				257AEA22129E8F8900DE9D51 /* Constants.h */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				257AEAAC129E92AB00DE9D51 /* Assets */,
+				257AEAB1129E92AB00DE9D51 /* Nibs */,
+				8D1107310486CEB800E47090 /* WoWTalentPro-Info.plist */,
+				257AEA6D129E910900DE9D51 /* WoWTalentPro.xcdatamodel */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				257AEA27129E8FB900DE9D51 /* CoreData.framework */,
+				257AEA52129E903B00DE9D51 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* WoWTalentPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "WoWTalentPro" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WoWTalentPro;
+			productName = WoWTalentPro;
+			productReference = 1D6058910D05DD3D006BFB54 /* WoWTalentPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Seven Minute Apps";
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WoWTalentPro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* WoWTalentPro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				257AEAB3129E92AB00DE9D51 /* Icon-72.png in Resources */,
+				257AEAB4129E92AB00DE9D51 /* Icon.png in Resources */,
+				257AEAB5129E92AB00DE9D51 /* Icon@2x.png in Resources */,
+				257AEAB6129E92AB00DE9D51 /* MainWindow.xib in Resources */,
+				257AEAEF129E945400DE9D51 /* LauncherViewController_iPhone.xib in Resources */,
+				257AEB2F129E968A00DE9D51 /* TalentViewController_iPhone.xib in Resources */,
+				257AEB92129E9C8400DE9D51 /* deathknight_0.png in Resources */,
+				257AEB93129E9C8400DE9D51 /* deathknight_1.png in Resources */,
+				257AEB94129E9C8400DE9D51 /* deathknight_2.png in Resources */,
+				257AEB95129E9C8400DE9D51 /* icon_deathknight.png in Resources */,
+				257AEB96129E9C8400DE9D51 /* icon_druid.png in Resources */,
+				257AEB97129E9C8400DE9D51 /* icon_hunter.png in Resources */,
+				257AEB98129E9C8400DE9D51 /* icon_mage.png in Resources */,
+				257AEB99129E9C8400DE9D51 /* icon_murloc.png in Resources */,
+				257AEB9A129E9C8400DE9D51 /* icon_paladin.png in Resources */,
+				257AEB9B129E9C8400DE9D51 /* icon_pet.png in Resources */,
+				257AEB9C129E9C8400DE9D51 /* icon_priest.png in Resources */,
+				257AEB9D129E9C8400DE9D51 /* icon_rogue.png in Resources */,
+				257AEB9E129E9C8400DE9D51 /* icon_shaman.png in Resources */,
+				257AEB9F129E9C8400DE9D51 /* icon_warlock.png in Resources */,
+				257AEBA0129E9C8400DE9D51 /* icon_warrior.png in Resources */,
+				257AEBF0129E9FE500DE9D51 /* TalentButtonViewController.xib in Resources */,
+				257AEC15129EA0A700DE9D51 /* across-left-green.png in Resources */,
+				257AEC16129EA0A700DE9D51 /* across-left-grey.png in Resources */,
+				257AEC17129EA0A700DE9D51 /* across-left-yellow.png in Resources */,
+				257AEC18129EA0A700DE9D51 /* across-right-green.png in Resources */,
+				257AEC19129EA0A700DE9D51 /* across-right-grey.png in Resources */,
+				257AEC1A129EA0A700DE9D51 /* across-right-yellow.png in Resources */,
+				257AEC1B129EA0A700DE9D51 /* down-1-green.png in Resources */,
+				257AEC1C129EA0A700DE9D51 /* down-1-grey.png in Resources */,
+				257AEC1D129EA0A700DE9D51 /* down-1-yellow.png in Resources */,
+				257AEC1E129EA0A700DE9D51 /* down-2-green.png in Resources */,
+				257AEC1F129EA0A700DE9D51 /* down-2-grey.png in Resources */,
+				257AEC20129EA0A700DE9D51 /* down-2-left-green.png in Resources */,
+				257AEC21129EA0A700DE9D51 /* down-2-left-grey.png in Resources */,
+				257AEC22129EA0A700DE9D51 /* down-2-left-yellow.png in Resources */,
+				257AEC23129EA0A700DE9D51 /* down-2-right-green.png in Resources */,
+				257AEC24129EA0A700DE9D51 /* down-2-right-grey.png in Resources */,
+				257AEC25129EA0A700DE9D51 /* down-2-right-yellow.png in Resources */,
+				257AEC26129EA0A700DE9D51 /* down-2-yellow.png in Resources */,
+				257AEC27129EA0A700DE9D51 /* down-3-green.png in Resources */,
+				257AEC28129EA0A700DE9D51 /* down-3-grey.png in Resources */,
+				257AEC29129EA0A700DE9D51 /* down-3-yellow.png in Resources */,
+				257AEC2A129EA0A700DE9D51 /* down-4-green.png in Resources */,
+				257AEC2B129EA0A700DE9D51 /* down-4-grey.png in Resources */,
+				257AEC2C129EA0A700DE9D51 /* down-4-yellow.png in Resources */,
+				257AEC2D129EA0A700DE9D51 /* down-left-green.png in Resources */,
+				257AEC2E129EA0A700DE9D51 /* down-left-grey.png in Resources */,
+				257AEC2F129EA0A700DE9D51 /* down-left-yellow.png in Resources */,
+				257AEC30129EA0A700DE9D51 /* down-right-green.png in Resources */,
+				257AEC31129EA0A700DE9D51 /* down-right-grey.png in Resources */,
+				257AEC32129EA0A700DE9D51 /* down-right-yellow.png in Resources */,
+				257AEC33129EA0A700DE9D51 /* icon-over-green.png in Resources */,
+				257AEC34129EA0A700DE9D51 /* icon-over-grey.png in Resources */,
+				257AEC35129EA0A700DE9D51 /* icon-over-yellow.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* WoWTalentProAppDelegate.m in Sources */,
+				257AEA34129E901900DE9D51 /* WTDataCenter.m in Sources */,
+				257AEA35129E901900DE9D51 /* WTCoreDataStack.m in Sources */,
+				257AEA42129E902400DE9D51 /* NSObject+SBJSON.m in Sources */,
+				257AEA43129E902400DE9D51 /* NSString+SBJSON.m in Sources */,
+				257AEA44129E902400DE9D51 /* SBJsonBase.m in Sources */,
+				257AEA45129E902400DE9D51 /* SBJsonParser.m in Sources */,
+				257AEA46129E902400DE9D51 /* SBJsonWriter.m in Sources */,
+				257AEA4A129E902700DE9D51 /* Reachability.m in Sources */,
+				257AEA6E129E910900DE9D51 /* WoWTalentPro.xcdatamodel in Sources */,
+				257AEAEE129E945400DE9D51 /* LauncherViewController.m in Sources */,
+				257AEB2E129E968A00DE9D51 /* TalentViewController.m in Sources */,
+				257AEBEC129E9F9500DE9D51 /* TalentButton.m in Sources */,
+				257AEC38129EA21A00DE9D51 /* TalentButtonViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WoWTalentPro_Prefix.pch;
+				INFOPLIST_FILE = "WoWTalentPro-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes/Vendor/FlurryLib\"",
+				);
+				PRODUCT_NAME = WoWTalentPro;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WoWTalentPro_Prefix.pch;
+				INFOPLIST_FILE = "WoWTalentPro-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes/Vendor/FlurryLib\"",
+				);
+				PRODUCT_NAME = WoWTalentPro;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "WoWTalentPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WoWTalentPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
