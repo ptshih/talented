@@ -17,11 +17,17 @@
 
   NSInteger _tree;
   NSInteger _tier;
-  NSInteger _col;
+  NSInteger _col;  
+  NSInteger _max;
+  
+  NSInteger _current;
 }
 
 @property (nonatomic, assign) NSInteger tree;
 @property (nonatomic, assign) NSInteger tier;
 @property (nonatomic, assign) NSInteger col;
+@property (nonatomic, assign) NSInteger max;
+
+- (IBAction)talentAction;
 
 @end

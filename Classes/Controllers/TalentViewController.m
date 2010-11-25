@@ -34,10 +34,12 @@
 @implementation TalentViewController
 
 @synthesize selectedClass = _selectedClass;
+@synthesize talentButtonArray = _talentButtonArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
+    _talentButtonArray = [[NSMutableArray alloc] init];
   }
   return self;
 }
@@ -70,12 +72,16 @@
 - (void)prepareTreeAtIndex:(NSInteger)index {
   NSInteger row = 0;
   NSInteger col = 0;
-  for(row=0;row<4;row++) {
-    for(col=0;col<4;col++) {
+  for(row=0;row<1;row++) {
+    for(col=0;col<1;col++) {
       TalentButtonViewController *tbvc = [[TalentButtonViewController alloc] initWithNibName:@"TalentButtonViewController" bundle:nil];
       tbvc.tree = index;
+      tbvc.tier = row;
+      tbvc.col = col;
+      tbvc.max = 2;
       tbvc.view.frame = CGRectMake(MARGIN_X + 320 * index + ((SPACING_X + 62) * col), MARGIN_Y + ((SPACING_Y + 58) * row), tbvc.view.frame.size.width, tbvc.view.frame.size.height);
       [_scrollView addSubview:tbvc.view];
+      [self.talentButtonArray addObject:tbvc];
       [tbvc release];
     }
   }
@@ -96,6 +102,7 @@
 
 
 - (void)dealloc {
+  if(_talentButtonArray) [_talentButtonArray release];
   if(_scrollView) [_scrollView release];
   if(_selectedClass) [_selectedClass release];
   [super dealloc];

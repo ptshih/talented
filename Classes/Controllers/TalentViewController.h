@@ -12,8 +12,10 @@
 @interface TalentViewController : UIViewController {
   IBOutlet UIScrollView *_scrollView;
   NSString *_selectedClass;
+  NSMutableArray *_talentButtonArray;
 }
 
 @property (nonatomic, retain) NSString *selectedClass;
+@property (nonatomic, retain) NSMutableArray *talentButtonArray;
 
 @end

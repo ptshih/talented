@@ -8,27 +8,45 @@
 
 #import "TalentButtonViewController.h"
 
+@interface TalentButtonViewController (Private)
+
+- (void)updateState;
+
+@end
 
 @implementation TalentButtonViewController
 
 @synthesize tree = _tree;
 @synthesize tier = _tier;
 @synthesize col = _col;
+@synthesize max = _max;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
+    _current = 0;
+    _max = 0;
   }
   return self;
 }
 
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
   [super viewDidLoad];
+  [_talentButton setImage:[UIImage imageNamed:@"0000.png"] forState:UIControlStateNormal];
+  
+  // Update labels, border image, graying out
+  [self updateState];
 }
-*/
 
+- (void)updateState {
+  _talentLabel.text = [NSString stringWithFormat:@"%d/%d", _current, _max];
+}
+
+- (IBAction)talentAction {
+  // Check points spent
+  // Check max
+}
 
 - (void)didReceiveMemoryWarning {
   // Releases the view if it doesn't have a superview.
