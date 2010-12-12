@@ -10,7 +10,9 @@
 #import "TalentButtonViewController.h"
 
 @interface TalentViewController : UIViewController <TalentButtonDelegate> {
-  IBOutlet UIScrollView *_scrollView;
+  IBOutlet UIView *_summaryView;
+  IBOutlet UIView *_talentView;
+  IBOutlet UIView *_glyphView;
   NSString *_selectedClass;
   NSMutableArray *_talentButtonArray;
 }

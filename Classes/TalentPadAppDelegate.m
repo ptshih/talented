@@ -21,7 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
   // Override point for customization after application launch.
   
-  _launcherViewController = [[LauncherViewController alloc] initWithNibName:@"LauncherViewController_iPhone" bundle:nil];
+  _launcherViewController = [[LauncherViewController alloc] initWithNibName:@"LauncherViewController" bundle:nil];
   _navigationController = [[UINavigationController alloc] initWithRootViewController:self.launcherViewController];
   self.navigationController.navigationBar.barStyle = UIBarStyleBlackOpaque;
   

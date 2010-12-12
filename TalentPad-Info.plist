@@ -23,6 +23,11 @@
 	<false/>
 	<key>UILaunchImageFile</key>
 	<string>Default</string>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+	</array>
 	<key>CFBundleIdentifier</key>
 	<string>com.sevenminuteapps.talentpad</string>
 	<key>CFBundleInfoDictionaryVersion</key>

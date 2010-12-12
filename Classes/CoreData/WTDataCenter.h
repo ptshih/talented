@@ -18,16 +18,8 @@
 }
 
 #pragma JSON parsing helper methods
-
-/**
- Returns a parsed autoreleased object from JSON NSData. If the parsing fails for whatever reason, an empty array
- will be returned.
- 
- @param data The NSData that you want parsed into an object (array or dictionary) (this should be NSData with a JSON format)
- */
 + (id)objectFromData:(NSData *)data;
-
-
-
++ (id)arrayFromData:(NSData *)data;
++ (id)dictionaryFromData:(NSData *)data;
 
 @end

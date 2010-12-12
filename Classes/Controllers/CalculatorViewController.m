@@ -1,21 +1,28 @@
 //
-//  LauncherViewController.m
+//  CalculatorViewController.m
 //  TalentPad
 //
-//  Created by Peter Shih on 11/25/10.
+//  Created by Peter Shih on 12/11/10.
 //  Copyright 2010 Seven Minute Apps. All rights reserved.
 //
 
-#import "LauncherViewController.h"
 #import "CalculatorViewController.h"
 
-@implementation LauncherViewController
 
-// The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
+@implementation CalculatorViewController
+
+@synthesize classId = _classId;
+@synthesize specTreeNo = _specTreeNo;
+@synthesize totalPoints = _totalPoints;
+@synthesize state = _state;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
-    self.title = @"TalentPad";
+    _classId = 0;
+    _specTreeNo = 0;
+    _totalPoints = 0;
+    _state = CalculatorStateDisabled;
   }
   return self;
 }
@@ -24,16 +31,6 @@
   [super viewDidLoad];
 }
 
-#pragma mark Class Selection
-- (IBAction)deathKnight {
-  CalculatorViewController *cvc = [[CalculatorViewController alloc] initWithNibName:@"CalculatorViewController" bundle:nil];
-  cvc.classId = 1;
-  [self.navigationController pushViewController:cvc animated:YES];
-  [cvc release];
-}
-
-
-// Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
   return UIInterfaceOrientationIsLandscape(interfaceOrientation);
 }
@@ -41,7 +38,7 @@
 - (void)didReceiveMemoryWarning {
   // Releases the view if it doesn't have a superview.
   [super didReceiveMemoryWarning];
-
+  
   // Release any cached data, images, etc. that aren't in use.
 }
 

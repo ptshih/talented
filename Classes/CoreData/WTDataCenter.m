@@ -8,9 +8,8 @@
 
 #import "WTDataCenter.h"
 #import "Constants.h"
-#import "JSON.h"
-
-static SBJsonParser *_parser = nil;
+#import "CJSONDeserializer.h"
+#import "CJSONSerializer.h"
 
 @interface WTDataCenter (Private)
 
@@ -18,16 +17,12 @@ static SBJsonParser *_parser = nil;
 
 @implementation WTDataCenter
 
-+ (void)load {
-  _parser = [[SBJsonParser alloc] init];
-}
-
 #pragma mark JSON Parsing Helpers
 + (id)objectFromData:(NSData *)data {
   id returnObject = nil;
   
   @try {
-    returnObject = [_parser objectWithString:[[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease]];
+    returnObject = [[CJSONDeserializer deserializer] deserialize:data error:nil];
   }
   @catch (NSException * e) {
     DLog(@"Error parsing JSON from response: %@", e);
@@ -40,5 +35,42 @@ static SBJsonParser *_parser = nil;
   
   return returnObject;
 }
+
++ (id)arrayFromData:(NSData *)data {
+  NSArray *returnArray = nil;
+  
+  @try {
+    returnArray = [[CJSONDeserializer deserializer] deserializeAsArray:data error:nil];
+  }
+  @catch (NSException * e) {
+    DLog(@"Error parsing JSON from response: %@", e);
+    returnArray = nil;
+  }
+  
+  if (!returnArray) {
+    returnArray = nil;
+  }
+  
+  return returnArray;
+}
+
++ (id)dictionaryFromData:(NSData *)data {
+  NSArray *returnDictionary = nil;
+  
+  @try {
+    returnDictionary = [[CJSONDeserializer deserializer] deserializeAsDictionary:data error:nil];
+  }
+  @catch (NSException * e) {
+    DLog(@"Error parsing JSON from response: %@", e);
+    returnDictionary = nil;
+  }
+  
+  if (!returnDictionary) {
+    returnDictionary = nil;
+  }
+  
+  return returnDictionary;
+}
+
 
 @end
