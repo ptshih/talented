@@ -7,6 +7,10 @@
  *
  */
 
+#define WOW_ASSETS_URL @"http://us.battle.net/wow-assets/static/images/icons/56/"
+
+#define WOW_ICON_URL(icon) [NSString stringWithFormat:@"%@%@.jpg", WOW_ASSETS_URL, icon]
+
 #define RGBCOLOR(R,G,B) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1.0]
 #define RGBACOLOR(R,G,B,A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
 

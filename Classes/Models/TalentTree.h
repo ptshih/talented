@@ -29,6 +29,8 @@
 @property (nonatomic, retain) CharacterClass * characterClass;
 @property (nonatomic, retain) NSSet* talents;
 
++ (TalentTree *)addTalentTreeWithDictionary:(NSDictionary *)dictionary forCharacterClass:(CharacterClass *)characterClass inContext:(NSManagedObjectContext *)context;
+
 @end
 
 

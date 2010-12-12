@@ -25,7 +25,14 @@
 }
 
 #pragma mark Class Selection
-- (IBAction)deathKnight {
+- (IBAction)paladin {
+  CalculatorViewController *cvc = [[CalculatorViewController alloc] initWithNibName:@"CalculatorViewController" bundle:nil];
+  cvc.classId = 2;
+  [self.navigationController pushViewController:cvc animated:YES];
+  [cvc release];
+}
+
+- (IBAction)warrior {
   CalculatorViewController *cvc = [[CalculatorViewController alloc] initWithNibName:@"CalculatorViewController" bundle:nil];
   cvc.classId = 1;
   [self.navigationController pushViewController:cvc animated:YES];

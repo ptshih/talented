@@ -8,6 +8,18 @@
 
 #import "TreeViewController.h"
 #import "TalentViewController.h"
+#import "Talent.h"
+
+#define MARGIN_X 15.0
+#define MARGIN_Y 15.0
+#define SPACING_X 18.0
+#define SPACING_Y 18.0
+
+@interface TreeViewController (Private)
+
+- (void)prepareTalents;
+
+@end
 
 @implementation TreeViewController
 
@@ -21,6 +33,7 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
+    _talentArray = [[NSArray array] retain];
     _classId = 0;
     _treeNo = 0;
     _state = TreeStateDisabled;
@@ -30,6 +43,20 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  
+  // Prepare all the talents for this tree
+  [self prepareTalents];
+}
+
+#pragma mark Prepare Talents
+- (void)prepareTalents {
+  for (Talent *talent in self.talentArray) {
+    TalentViewController *tvc = [[TalentViewController alloc] initWithNibName:@"TalentViewController" bundle:nil];
+    tvc.talent = talent;
+    tvc.view.frame = CGRectMake(((SPACING_X + 62) * [talent.col integerValue]), ((SPACING_Y + 58) * [talent.tier integerValue]), tvc.view.frame.size.width, tvc.view.frame.size.height);
+    [self.view addSubview:tvc.view];
+    [tvc release];
+  }
 }
 
 - (void)didReceiveMemoryWarning {

@@ -13,6 +13,8 @@
 
 }
 
-- (IBAction)deathKnight;
+
+- (IBAction)warrior;
+- (IBAction)paladin;
 
 @end

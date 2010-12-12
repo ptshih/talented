@@ -133,6 +133,16 @@
 		257AEC34129EA0A700DE9D51 /* icon-over-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC13129EA0A700DE9D51 /* icon-over-grey.png */; };
 		257AEC35129EA0A700DE9D51 /* icon-over-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC14129EA0A700DE9D51 /* icon-over-yellow.png */; };
 		257AEC80129EA91700DE9D51 /* 0000.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC7F129EA91700DE9D51 /* 0000.png */; };
+		25E07E4712B4E2B300646BC7 /* talentTrees.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E07E4612B4E2B300646BC7 /* talentTrees.json */; };
+		25E07E4812B4E2B300646BC7 /* talentTrees.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E07E4612B4E2B300646BC7 /* talentTrees.json */; };
+		25E07E6012B4E39500646BC7 /* characterClass.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E07E5F12B4E39500646BC7 /* characterClass.json */; };
+		25E07E6112B4E39500646BC7 /* characterClass.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E07E5F12B4E39500646BC7 /* characterClass.json */; };
+		25E07EB112B4EAFF00646BC7 /* paladin.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E07EB012B4EAFF00646BC7 /* paladin.json */; };
+		25E07EB212B4EAFF00646BC7 /* paladin.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E07EB012B4EAFF00646BC7 /* paladin.json */; };
+		25E07EDB12B4ECFC00646BC7 /* TalentTree+Fetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E07EDA12B4ECFC00646BC7 /* TalentTree+Fetch.m */; };
+		25E07EDC12B4ECFC00646BC7 /* TalentTree+Fetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E07EDA12B4ECFC00646BC7 /* TalentTree+Fetch.m */; };
+		25E07EF612B4EDDF00646BC7 /* NSManagedObject+Fetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E07EF512B4EDDF00646BC7 /* NSManagedObject+Fetch.m */; };
+		25E07EF712B4EDDF00646BC7 /* NSManagedObject+Fetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E07EF512B4EDDF00646BC7 /* NSManagedObject+Fetch.m */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
@@ -141,7 +151,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1D6058900D05DD3D006BFB54 /* TalentPad */;
+			remoteGlobalIDString = 1D6058900D05DD3D006BFB54;
 			remoteInfo = TalentPad;
 		};
 /* End PBXContainerItemProxy section */
@@ -278,6 +288,13 @@
 		257AEC13129EA0A700DE9D51 /* icon-over-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-over-grey.png"; sourceTree = "<group>"; };
 		257AEC14129EA0A700DE9D51 /* icon-over-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-over-yellow.png"; sourceTree = "<group>"; };
 		257AEC7F129EA91700DE9D51 /* 0000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0000.png; sourceTree = "<group>"; };
+		25E07E4612B4E2B300646BC7 /* talentTrees.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = talentTrees.json; sourceTree = "<group>"; };
+		25E07E5F12B4E39500646BC7 /* characterClass.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = characterClass.json; sourceTree = "<group>"; };
+		25E07EB012B4EAFF00646BC7 /* paladin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = paladin.json; sourceTree = "<group>"; };
+		25E07ED912B4ECFC00646BC7 /* TalentTree+Fetch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TalentTree+Fetch.h"; sourceTree = "<group>"; };
+		25E07EDA12B4ECFC00646BC7 /* TalentTree+Fetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TalentTree+Fetch.m"; sourceTree = "<group>"; };
+		25E07EF412B4EDDF00646BC7 /* NSManagedObject+Fetch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Fetch.h"; sourceTree = "<group>"; };
+		25E07EF512B4EDDF00646BC7 /* NSManagedObject+Fetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Fetch.m"; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* TalentPad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentPad_Prefix.pch; sourceTree = "<group>"; };
@@ -411,6 +428,9 @@
 		2500E6C712B4D37300EB1987 /* json */ = {
 			isa = PBXGroup;
 			children = (
+				25E07EB012B4EAFF00646BC7 /* paladin.json */,
+				25E07E5F12B4E39500646BC7 /* characterClass.json */,
+				25E07E4612B4E2B300646BC7 /* talentTrees.json */,
 				2500E89012B4E03E00EB1987 /* masteries.json */,
 				2500E6C812B4D37300EB1987 /* primarySpells.json */,
 				2500E6C912B4D37300EB1987 /* talent.json */,
@@ -453,6 +473,7 @@
 		257AEA2D129E900E00DE9D51 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				25E07ED812B4ECE200646BC7 /* Categories */,
 				2500E64112B4CA0D00EB1987 /* CharacterClass.h */,
 				2500E64212B4CA0D00EB1987 /* CharacterClass.m */,
 				2500E63F12B4CA0D00EB1987 /* TalentTree.h */,
@@ -622,6 +643,17 @@
 				257AEC7F129EA91700DE9D51 /* 0000.png */,
 			);
 			path = Talents;
+			sourceTree = "<group>";
+		};
+		25E07ED812B4ECE200646BC7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				25E07ED912B4ECFC00646BC7 /* TalentTree+Fetch.h */,
+				25E07EDA12B4ECFC00646BC7 /* TalentTree+Fetch.m */,
+				25E07EF412B4EDDF00646BC7 /* NSManagedObject+Fetch.h */,
+				25E07EF512B4EDDF00646BC7 /* NSManagedObject+Fetch.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
@@ -807,6 +839,9 @@
 				2500E6CE12B4D37300EB1987 /* talentAbility.json in Resources */,
 				2500E6CF12B4D37300EB1987 /* warrior.json in Resources */,
 				2500E89112B4E03E00EB1987 /* masteries.json in Resources */,
+				25E07E4712B4E2B300646BC7 /* talentTrees.json in Resources */,
+				25E07E6012B4E39500646BC7 /* characterClass.json in Resources */,
+				25E07EB112B4EAFF00646BC7 /* paladin.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -819,6 +854,9 @@
 				2500E7C112B4DA2400EB1987 /* warrior.json in Resources */,
 				2500E7C212B4DA2500EB1987 /* talentAbility.json in Resources */,
 				2500E89212B4E03E00EB1987 /* masteries.json in Resources */,
+				25E07E4812B4E2B300646BC7 /* talentTrees.json in Resources */,
+				25E07E6112B4E39500646BC7 /* characterClass.json in Resources */,
+				25E07EB212B4EAFF00646BC7 /* paladin.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -873,6 +911,8 @@
 				2500E64612B4CA0D00EB1987 /* Talent.m in Sources */,
 				2500E64712B4CA0D00EB1987 /* TalentTree.m in Sources */,
 				2500E64812B4CA0D00EB1987 /* CharacterClass.m in Sources */,
+				25E07EDC12B4ECFC00646BC7 /* TalentTree+Fetch.m in Sources */,
+				25E07EF712B4EDDF00646BC7 /* NSManagedObject+Fetch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -901,6 +941,8 @@
 				2500E7B912B4D9F900EB1987 /* Talent.m in Sources */,
 				2500E7BA12B4D9FA00EB1987 /* TalentTree.m in Sources */,
 				2500E82112B4DB6300EB1987 /* TalentPad.xcdatamodel in Sources */,
+				25E07EDB12B4ECFC00646BC7 /* TalentTree+Fetch.m in Sources */,
+				25E07EF612B4EDDF00646BC7 /* NSManagedObject+Fetch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1016,6 +1058,7 @@
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;

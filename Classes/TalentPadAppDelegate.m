@@ -9,12 +9,15 @@
 #import "TalentPadAppDelegate.h"
 #import "LauncherViewController.h"
 
+// Test stuff
 #import "SMADataCenter.h"
 #import "SMACoreDataStack.h"
 #import "CJSONDeserializer.h"
 #import "Talent.h"
 #import "PrimarySpell.h"
 #import "Mastery.h"
+#import "TalentTree.h"
+#import "CharacterClass.h"
 
 @implementation TalentPadAppDelegate
 
@@ -23,9 +26,13 @@
 @synthesize launcherViewController = _launcherViewController;
 
 - (void)doCoreDataTests {
-  [self talentAbilityTest];
-  [self primarySpellsTest];
-  [self masteriesTest];
+//  [self talentDataTestForClass:@"warrior"];
+//  [self talentDataTestForClass:@"paladin"];
+//  [self talentAbilityTest];
+//  [self primarySpellsTest];
+//  [self masteriesTest];
+//  [self talentTreesTest];
+//  [self characterClassTest];
 }
 
 - (void)talentAbilityTest {
@@ -93,6 +100,86 @@
       NSLog(@"saving to core data");
     }
   }
+}
+
+- (void)talentTreesTest {
+  NSString *filePath = [[NSBundle mainBundle] pathForResource:@"talentTrees" ofType:@"json"];
+  NSData *myData = [NSData dataWithContentsOfFile:filePath];
+  if (myData) {
+    NSLog(@"testing core data insert");
+    
+    NSArray *testArray = [[CJSONDeserializer deserializer] deserializeAsArray:myData error:nil];
+    
+    // Test core data
+    NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
+    
+    for (NSDictionary *testDict in testArray) {
+      [TalentTree addTalentTreeWithDictionary:testDict forCharacterClass:nil inContext:context];
+    }
+    
+    if (context.hasChanges) {
+      if (![context save:nil]) {
+      }
+      NSLog(@"saving to core data");
+    }
+  }
+}
+
+- (void)characterClassTest {
+  NSString *filePath = [[NSBundle mainBundle] pathForResource:@"characterClass" ofType:@"json"];
+  NSData *myData = [NSData dataWithContentsOfFile:filePath];
+  if (myData) {
+    NSLog(@"testing core data insert");
+    
+    NSDictionary *testDict = [[CJSONDeserializer deserializer] deserializeAsDictionary:myData error:nil];
+    
+    // Test core data
+    NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
+    
+    [CharacterClass addCharacterClassWithDictionary:testDict inContext:context];
+    
+    if (context.hasChanges) {
+      if (![context save:nil]) {
+      }
+      NSLog(@"saving to core data");
+    }
+  }
+}
+
+- (void)talentDataTestForClass:(NSString *)classString {
+  NSString *filePath = [[NSBundle mainBundle] pathForResource:classString ofType:@"json"];
+  NSData *myData = [NSData dataWithContentsOfFile:filePath];
+  if (myData) {
+    NSLog(@"testing core data insert");
+    
+    NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
+    
+    NSDictionary *testDict = [[[CJSONDeserializer deserializer] deserializeAsDictionary:myData error:nil] objectForKey:@"talentData"];
+    
+    // Parse characterClass
+    NSDictionary *characterClassDict = [testDict objectForKey:@"characterClass"];
+    CharacterClass *characterClass = [CharacterClass addCharacterClassWithDictionary:characterClassDict inContext:context];
+    
+    if (characterClass) {
+      NSMutableSet *talentTreesSet = [NSMutableSet set];      
+      
+      // Parse talentTrees
+      NSArray *talentTreesArray = [testDict objectForKey:@"talentTrees"];
+      for (NSDictionary *talentTreeDict in talentTreesArray) {
+        [talentTreesSet addObject:[TalentTree addTalentTreeWithDictionary:talentTreeDict forCharacterClass:characterClass inContext:context]];
+      }
+      
+      // Set relationship for characterClass.talentTrees
+      characterClass.talentTrees = talentTreesSet;
+    }
+    
+    if (context.hasChanges) {
+      if (![context save:nil]) {
+      }
+      NSLog(@"saving to core data");
+    }
+  }
+
 }
 
 #pragma mark -

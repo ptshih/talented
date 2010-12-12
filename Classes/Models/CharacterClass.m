@@ -25,7 +25,8 @@
     newCharacterClass.powerType = [dictionary objectForKey:@"powerType"];
     
     // Hook up talentTrees relationship
-    newCharacterClass.talentTrees = nil;
+    // The talentTrees relation will be hooked up later
+//    newCharacterClass.talentTrees = nil;
     
     return newCharacterClass;
   } else {

@@ -14,14 +14,14 @@ typedef enum {
 } CalculatorState;
 
 @interface CalculatorViewController : UIViewController {
-  NSMutableArray *_treeArray;
+  NSArray *_treeArray;
   NSInteger _classId;
   NSInteger _specTreeNo;
   NSInteger _totalPoints;
   NSInteger _state;
 }
 
-@property (nonatomic, retain) NSMutableArray *treeArray;
+@property (nonatomic, retain) NSArray *treeArray;
 @property (nonatomic, assign) NSInteger classId;
 @property (nonatomic, assign) NSInteger specTreeNo;
 @property (nonatomic, assign) NSInteger totalPoints;

@@ -14,7 +14,7 @@ typedef enum {
 } TreeState;
 
 @interface TreeViewController : UIViewController {
-  NSMutableArray *_talentArray;
+  NSArray *_talentArray;
   NSArray *_pointsInTier;
   NSInteger _classId;
   NSInteger _treeNo;
@@ -22,7 +22,7 @@ typedef enum {
   BOOL _isSpecTree;
 }
 
-@property (nonatomic, retain) NSMutableArray *talentArray;
+@property (nonatomic, retain) NSArray *talentArray;
 @property (nonatomic, retain) NSArray *pointsInTier;
 @property (nonatomic, assign) NSInteger classId;
 @property (nonatomic, assign) NSInteger treeNo;

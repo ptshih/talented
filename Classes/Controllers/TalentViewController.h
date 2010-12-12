@@ -23,6 +23,7 @@ typedef enum {
 } TalentState;
 
 @interface TalentViewController : UIViewController {
+  IBOutlet UIButton *_talentButton;
   IBOutlet UIImageView *_talentBorderView;
   IBOutlet UILabel *_talentLabel;
   

@@ -1,0 +1,1060 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 2,
+      "name" : "Paladin",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "Holy",
+      "icon" : "spell_holy_holybolt",
+      "backgroundFile" : "PALADINHOLY",
+      "overlayColor" : "#ff7f00",
+      "description" : "Invokes the power of the Light to protect and to heal.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : true,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 20473,
+        "name" : "Holy Shock",
+        "icon" : "spell_holy_searinglight",
+        "cost" : "8% of base mana",
+        "range" : "20 yd range",
+        "castTime" : "Instant cast",
+        "cooldown" : "6 sec cooldown",
+        "reagents" : [ ],
+        "description" : "Blasts the target with Holy energy, causing 54 Holy damage to an enemy, or 143 healing to an ally, and grants a charge of Holy Power.",
+        "internal" : false,
+        "keyAbility" : true
+      }, {
+        "spellId" : 95859,
+        "name" : "Meditation",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "Allows 50% of your mana regeneration from Spirit to continue while in combat.",
+        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 85102,
+        "name" : "Walk in the Light",
+        "icon" : "spell_holy_championsgrace",
+        "reagents" : [ ],
+        "description" : "Increases the effectiveness of your healing spells by 15%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76669,
+        "name" : "Illuminated Healing",
+        "icon" : "spell_holy_absolution",
+        "reagents" : [ ],
+        "description" : "Your direct healing spells also place an absorb shield on your target for 10% of the amount healed lasting 8 sec.  Each point of Mastery increases the absorb amount by an addtional 1.25%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10099,
+        "name" : "Arbiter of the Light",
+        "icon" : "spell_holy_healingaura",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases the critical effect chance of your Judgement and Templar's Verdict by 6%."
+        }, {
+          "description" : "Increases the critical effect chance of your Judgement and Templar's Verdict by 12%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12189,
+        "name" : "Protector of the Innocent",
+        "icon" : "ability_paladin_protectoroftheinnocent",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Casting a targeted heal on any target, except yourself, also heals you for 45."
+        }, {
+          "description" : "Casting a targeted heal on any target, except yourself, also heals you for 90."
+        }, {
+          "description" : "Casting a targeted heal on any target, except yourself, also heals you for 136."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10127,
+        "name" : "Judgements of the Pure",
+        "icon" : "ability_paladin_judgementofthepure",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Your Judgement increases your casting and melee haste by 3% for 1 min."
+        }, {
+          "description" : "Your Judgement increases your casting and melee haste by 6% for 1 min."
+        }, {
+          "description" : "Your Judgement increases your casting and melee haste by 9% for 1 min."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11213,
+        "name" : "Clarity of Purpose",
+        "icon" : "spell_paladin_clarityofpurpose",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduces the casting time of your Holy Light and Divine Light spells by 0.15 sec."
+        }, {
+          "description" : "Reduces the casting time of your Holy Light and Divine Light spells by 0.3 sec."
+        }, {
+          "description" : "Reduces the casting time of your Holy Light and Divine Light spells by 0.5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10097,
+        "name" : "Last Word",
+        "icon" : "spell_holy_holyguidance",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Gives your Word of Glory a 30% increased critical chance when used on targets with 35% or less health."
+        }, {
+          "description" : "Gives your Word of Glory a 60% increased critical chance when used on targets with 35% or less health."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11780,
+        "name" : "Blazing Light",
+        "icon" : "spell_holy_holybolt",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Increases the damage of your Holy Shock and Exorcism by 10%."
+        }, {
+          "description" : "Increases the damage of your Holy Shock and Exorcism by 20%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10109,
+        "name" : "Denounce",
+        "icon" : "spell_holy_excorcism_02",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Reduces the mana cost of Exorcism by 38%.  In addition, you have a 25% chance when casting Holy Shock to make your next Exorcism spell instant and cost no mana."
+        }, {
+          "description" : "Reduces the mana cost of Exorcism by 75%.  In addition, you have a 50% chance when casting Holy Shock to make your next Exorcism spell instant and cost no mana."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11202,
+        "name" : "Divine Favor",
+        "icon" : "spell_holy_divineillumination",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Instant cast",
+          "cooldown" : "3 min cooldown",
+          "description" : "Increases your spell casting haste by 20% and spell critical chance by 20% for 20 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10129,
+        "name" : "Infusion of Light",
+        "icon" : "ability_paladin_infusionoflight",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Increases the critical effect chance of your Holy Shock by 5%.  In addition, your Holy Shock critical effects reduce the cast time of your next Holy Light or Divine Light by 0.75 sec."
+        }, {
+          "description" : "Increases the critical effect chance of your Holy Shock by 10%.  In addition, your Holy Shock critical effects reduce the cast time of your next Holy Light or Divine Light by 1.50 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11771,
+        "name" : "Daybreak",
+        "icon" : "inv_qirajidol_sun",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Your Flash of Light, Holy Light and Divine Light have a 10% chance to make your next Holy Shock not trigger a cooldown if used within 12 sec."
+        }, {
+          "description" : "Your Flash of Light, Holy Light and Divine Light have a 20% chance to make your next Holy Shock not trigger a cooldown if used within 12 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10113,
+        "name" : "Enlightened Judgements",
+        "icon" : "ability_paladin_enlightenedjudgements",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Grants hit rating equal to 50% of any Spirit gained from items or effects, and increases the range of your Judgement by 5 yards.  In addition, your Judgement instantly heals you for 46."
+        }, {
+          "description" : "Grants hit rating equal to 100% of any Spirit gained from items or effects, and increases the range of your Judgement by 10 yards.  In addition, your Judgement instantly heals you for 92."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10133,
+        "name" : "Beacon of Light",
+        "icon" : "ability_paladin_beaconoflight",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "6% of base mana",
+          "range" : "60 yd range",
+          "castTime" : "Instant cast",
+          "description" : "The target becomes a Beacon of Light to all members of your party or raid within a 60 yard radius.  Each heal you cast on party or raid members will also heal the Beacon for 50% of the amount healed.  Only one target can be the Beacon of Light at a time. Lasts 5 min."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11215,
+        "name" : "Speed of Light",
+        "icon" : "paladin_icon_speedoflight",
+        "x" : 2,
+        "y" : 3,
+        "req" : 10129,
+        "ranks" : [ {
+          "description" : "Grants 1% spell haste and reduces the cooldown of Holy Radiance by 10 sec.  Casting Holy Radiance increases your movement speed by 20% for 4 sec."
+        }, {
+          "description" : "Grants 2% spell haste and reduces the cooldown of Holy Radiance by 20 sec.  Casting Holy Radiance increases your movement speed by 40% for 4 sec."
+        }, {
+          "description" : "Grants 3% spell haste and reduces the cooldown of Holy Radiance by 30 sec.  Casting Holy Radiance increases your movement speed by 60% for 4 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10121,
+        "name" : "Sacred Cleansing",
+        "icon" : "ability_paladin_sacredcleansing",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Your Cleanse spell now also dispels 1 Magic effect."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11779,
+        "name" : "Conviction",
+        "icon" : "ability_paladin_conviction",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Gives you a 1% bonus to damage and healing for 15 sec after causing a critical effect from a weapon swing, spell, or ability.  This effect stacks up to 3 times."
+        }, {
+          "description" : "Gives you a 2% bonus to damage and healing for 15 sec after causing a critical effect from a weapon swing, spell, or ability.  This effect stacks up to 3 times."
+        }, {
+          "description" : "Gives you a 3% bonus to damage and healing for 15 sec after causing a critical effect from a weapon swing, spell, or ability.  This effect stacks up to 3 times."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10115,
+        "name" : "Aura Mastery",
+        "icon" : "spell_holy_auramastery",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Instant",
+          "cooldown" : "2 min cooldown",
+          "description" : "Causes your Concentration Aura to make all affected targets immune to Silence and Interrupt effects and improve the effect of all other auras by 100%.  Lasts 6 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12151,
+        "name" : "Paragon of Virtue",
+        "icon" : "spell_holy_avenginewrath",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Reduces the cooldown of Divine Protection by 10 sec, Hand of Sacrifice by 15 sec and Avenging Wrath by 30 sec."
+        }, {
+          "description" : "Reduces the cooldown of Divine Protection by 20 sec, Hand of Sacrifice by 30 sec and Avenging Wrath by 60 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11168,
+        "name" : "Tower of Radiance",
+        "icon" : "achievement_bg_winsoa",
+        "x" : 1,
+        "y" : 5,
+        "req" : 10133,
+        "ranks" : [ {
+          "description" : "Healing the target of your Beacon of Light with Flash of Light, Holy Light or Divine Light has a 33% chance to generate a charge of Holy Power."
+        }, {
+          "description" : "Healing the target of your Beacon of Light with Flash of Light, Holy Light or Divine Light has a 66% chance to generate a charge of Holy Power."
+        }, {
+          "description" : "Healing the target of your Beacon of Light with Flash of Light, Holy Light or Divine Light has a 100% chance to generate a charge of Holy Power."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10117,
+        "name" : "Blessed Life",
+        "icon" : "spell_holy_blessedlife",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "You have a 50% chance to gain a charge of Holy Power whenever you take direct damage.  This effect cannot occur more than once every 8 seconds."
+        }, {
+          "description" : "You have a 100% chance to gain a charge of Holy Power whenever you take direct damage.  This effect cannot occur more than once every 8 seconds."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11203,
+        "name" : "Light of Dawn",
+        "icon" : "spell_paladin_lightofdawn",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "1 Holy Power",
+          "castTime" : "Instant cast",
+          "description" : "Consumes all Holy Power to send a wave of healing energy before you, healing up to 5 of the most injured targets in your party or raid within a 30 yard frontal cone for 38 per charge of Holy Power."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Protection",
+      "icon" : "ability_paladin_shieldofthetemplar",
+      "backgroundFile" : "PALADINPROTECTION",
+      "overlayColor" : "#4c7fff",
+      "description" : "Uses Holy magic to shield himself and defend allies from attackers.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : true,
+        "healer" : false,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 31935,
+        "name" : "Avenger's Shield",
+        "icon" : "spell_holy_avengersshield",
+        "cost" : "6% of base mana",
+        "range" : "30 yd range",
+        "castTime" : "Instant cast",
+        "cooldown" : "15 sec cooldown",
+        "requires" : "Requires Shields",
+        "reagents" : [ ],
+        "description" : "Hurls a holy shield at the enemy, dealing 116 Holy damage, silencing and interrupting spellcasting for 3 sec, and then jumping to additional nearby enemies.  Affects 3 total targets.",
+        "internal" : false,
+        "keyAbility" : true
+      }, {
+        "spellId" : 31878,
+        "name" : "Judgements of the Wise",
+        "icon" : "ability_paladin_judgementofthewise",
+        "reagents" : [ ],
+        "description" : "Your Judgement grants you 30% of your base mana over 10 sec.",
+        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 53592,
+        "name" : "Touched by the Light",
+        "icon" : "ability_paladin_touchedbylight",
+        "reagents" : [ ],
+        "description" : "Increases your total Stamina by 15%, increases your spell hit by 8%, and increases your spell power by an amount equal to 60% of your Strength.",
+        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 84839,
+        "name" : "Vengeance",
+        "icon" : "ability_paladin_shieldofvengeance",
+        "reagents" : [ ],
+        "description" : "Each time you take damage, you gain 5% of the damage taken as attack power, up to a maximum of 10% of your health.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76671,
+        "name" : "Divine Bulwark",
+        "icon" : "spell_holy_holyprotection",
+        "reagents" : [ ],
+        "description" : "Increases your chance to block melee attacks by 18%.  Each point of Mastery increases block chance by an additional 2.25%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 12198,
+        "name" : "Divinity",
+        "icon" : "spell_holy_blindingheal",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases all healing done by you and all healing effects on you by 2%."
+        }, {
+          "description" : "Increases all healing done by you and all healing effects on you by 4%."
+        }, {
+          "description" : "Increases all healing done by you and all healing effects on you by 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10324,
+        "name" : "Seals of the Pure",
+        "icon" : "inv_mace_46",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases the damage done by your Seal of Righteousness, Seal of Truth, and Seal of Justice by 6%."
+        }, {
+          "description" : "Increases the damage done by your Seal of Righteousness, Seal of Truth, and Seal of Justice by 12%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12152,
+        "name" : "Eternal Glory",
+        "icon" : "inv_torch_thrown",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Your Word of Glory has a 15% chance not to consume Holy Power."
+        }, {
+          "description" : "Your Word of Glory has a 30% chance not to consume Holy Power."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10372,
+        "name" : "Judgements of the Just",
+        "icon" : "ability_paladin_judgementsofthejust",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Your Judgement reduces the melee and ranged attack speed of the target by 10% for 20 sec.  In addition, increases the duration of your Seal of Justice effect by 0.5 sec."
+        }, {
+          "description" : "Your Judgement reduces the melee and ranged attack speed of the target by 20% for 20 sec.  In addition, increases the duration of your Seal of Justice effect by 1 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10332,
+        "name" : "Toughness",
+        "icon" : "spell_holy_devotion",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Increases your armor value from items by 3%."
+        }, {
+          "description" : "Increases your armor value from items by 6%."
+        }, {
+          "description" : "Increases your armor value from items by 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10336,
+        "name" : "Improved Hammer of Justice",
+        "icon" : "spell_holy_sealofmight",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Decreases the cooldown of your Hammer of Justice spell by 10 sec."
+        }, {
+          "description" : "Decreases the cooldown of your Hammer of Justice spell by 20 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10344,
+        "name" : "Hallowed Ground",
+        "icon" : "spell_holy_innerfire",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Increases the damage of your Consecration by 20% and decreases its mana cost by 40%."
+        }, {
+          "description" : "Increases the damage of your Consecration by 40% and decreases its mana cost by 80%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10346,
+        "name" : "Sanctuary",
+        "icon" : "spell_nature_lightningshield",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Reduces the chance you'll be critically hit by melee attacks by 2% and reduces all damage taken by 3%.  In addition when you block or dodge a melee attack you gain 1% of maximum mana."
+        }, {
+          "description" : "Reduces the chance you'll be critically hit by melee attacks by 4% and reduces all damage taken by 7%.  In addition when you block or dodge a melee attack you gain 2% of maximum mana."
+        }, {
+          "description" : "Reduces the chance you'll be critically hit by melee attacks by 6% and reduces all damage taken by 10%. In addition when you block or dodge a melee attack you gain 3% of maximum mana."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10374,
+        "name" : "Hammer of the Righteous",
+        "icon" : "ability_paladin_hammeroftherighteous",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "12% of base mana",
+          "range" : "Melee Range",
+          "castTime" : "Instant cast",
+          "cooldown" : "4.5 sec cooldown",
+          "requires" : "Requires One-Handed Melee Weapon",
+          "description" : "Hammer the current target for 30% weapon damage, causing a wave of light that hits all targets within 8 yards for 28 Holy damage. Grants a charge of Holy Power."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11159,
+        "name" : "Wrath of the Lightbringer",
+        "icon" : "inv_mace_82",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Increases the damage by 50% of your Crusader Strike and Judgement and increases the critical strike chance by 15% of your Holy Wrath and Hammer of Wrath."
+        }, {
+          "description" : "Increases the damage by 100% of your Crusader Strike and Judgement and increases the critical strike chance by 30% of your Holy Wrath and Hammer of Wrath."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11161,
+        "name" : "Reckoning",
+        "icon" : "spell_holy_blessingofstrength",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "You have a 10% chance after blocking an attack for your next 4 weapon swings within 8 sec to generate an additional attack."
+        }, {
+          "description" : "You have a 20% chance after blocking an attack for your next 4 weapon swings within 8 sec to generate an additional attack."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11607,
+        "name" : "Shield of the Righteous",
+        "icon" : "ability_paladin_shieldofvengeance",
+        "x" : 1,
+        "y" : 3,
+        "req" : 10346,
+        "ranks" : [ {
+          "cost" : "1 Holy Power",
+          "range" : "Melee Range",
+          "castTime" : "Instant cast",
+          "requires" : "Requires Shields",
+          "description" : "Slam the target with your shield, causing Holy damage.  Consumes all charges of Holy Power to determine damage dealt:\n\n\n\n1 Holy Power: 23 damage\n\n2 Holy Power: 69 damage\n\n3 Holy Power: 138 damage"
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11193,
+        "name" : "Grand Crusader",
+        "icon" : "inv_helmet_74",
+        "x" : 2,
+        "y" : 3,
+        "req" : 10374,
+        "ranks" : [ {
+          "description" : "When your Crusader Strike or Hammer of the Righteous deal damage to your primary target, they have a 10% chance of refreshing the cooldown on your next Avenger's Shield."
+        }, {
+          "description" : "When your Crusader Strike or Hammer of the Righteous deal damage to your primary target, they have a 20% chance of refreshing the cooldown on your next Avenger's Shield."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10680,
+        "name" : "Vindication",
+        "icon" : "spell_holy_vindication",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Your Crusader Strike and Hammer of the Righteous reduce physical damage done by their primary targets by 10% for 30 sec.   In addition, your Hammer of Justice will interrupt creatures that are immune to stuns."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10356,
+        "name" : "Holy Shield",
+        "icon" : "spell_holy_blessingofprotection",
+        "x" : 1,
+        "y" : 4,
+        "req" : 11607,
+        "ranks" : [ {
+          "description" : "Using Shield of the Righteous or Inquisition increases the amount your shield blocks by an additional 10% for 20 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11221,
+        "name" : "Guarded by the Light",
+        "icon" : "ability_paladin_gaurdedbythelight",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Increases your Word of Glory by 5% when used to heal yourself, and allows your Word of Glory to grant Holy Shield."
+        }, {
+          "description" : "Increases your Word of Glory by 10% when used to heal yourself, and allows your Word of Glory to grant Holy Shield.  In addition, any overhealing will create a protective shield equal to the amount of overhealing that lasts for 6 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10334,
+        "name" : "Divine Guardian",
+        "icon" : "spell_holy_powerwordbarrier",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "range" : "100 yd range",
+          "castTime" : "Instant cast",
+          "cooldown" : "2 min cooldown",
+          "description" : "All party or raid members, excluding the Paladin, take 20% reduced damage for 6 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10370,
+        "name" : "Sacred Duty",
+        "icon" : "spell_holy_divineintervention",
+        "x" : 1,
+        "y" : 5,
+        "req" : 10356,
+        "ranks" : [ {
+          "description" : "Your Judgements have a 25% chance of making your next Shield of the Righteous a critical strike.  Lasts 15 sec."
+        }, {
+          "description" : "Your Judgements have a 50% chance of making your next Shield of the Righteous a critical strike.  Lasts 15 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10340,
+        "name" : "Shield of the Templar",
+        "icon" : "ability_paladin_shieldofthetemplar",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Reduces the cooldown of Avenging Wrath by 20 sec and Guardian of Ancient Kings by 45 sec.  In addition, your Divine Plea will generate 1 Holy Power."
+        }, {
+          "description" : "Reduces the cooldown of Avenging Wrath by 40 sec and Guardian of Ancient Kings by 80 sec.  In addition, your Divine Plea will generate 2 Holy Power."
+        }, {
+          "description" : "Reduces the cooldown of Avenging Wrath by 60 sec and Guardian of Ancient Kings by 120 sec.  In addition, your Divine Plea will generate 3 Holy Power."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10350,
+        "name" : "Ardent Defender",
+        "icon" : "spell_holy_ardentdefender",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "castTime" : "Instant",
+          "cooldown" : "3 min cooldown",
+          "description" : "Reduce damage taken by 20% for 10 sec. While Ardent Defender is active, the next attack that would otherwise kill you will instead cause you to be healed for 15% of your maximum health."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Retribution",
+      "icon" : "spell_holy_auraoflight",
+      "backgroundFile" : "PALADINCOMBAT",
+      "overlayColor" : "#ff0000",
+      "description" : "A righteous crusader who judges and punishes opponents with weapons and Holy magic.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 85256,
+        "name" : "Templar's Verdict",
+        "icon" : "spell_paladin_templarsverdict",
+        "cost" : "1 Holy Power",
+        "range" : "Melee Range",
+        "castTime" : "Instant cast",
+        "requires" : "Requires Melee Weapon",
+        "reagents" : [ ],
+        "description" : "An instant weapon attack that causes a percentage of weapon damage.  Consumes all charges of Holy Power to increase damage dealt:\n\n\n\n1 Holy Power: 30% Weapon Damage\n\n2 Holy Power: 90% Weapon Damage\n\n3 Holy Power: 235% Weapon Damage",
+        "internal" : false,
+        "keyAbility" : true
+      }, {
+        "spellId" : 89901,
+        "name" : "Judgements of the Bold",
+        "icon" : "ability_paladin_judgementofthewise",
+        "reagents" : [ ],
+        "description" : "Your Judgement grants you 25% of your base mana over 10 sec.",
+        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 53503,
+        "name" : "Sheath of Light",
+        "icon" : "ability_paladin_sheathoflight",
+        "reagents" : [ ],
+        "description" : "Increases your spell power by an amount equal to 30% of your attack power and increases your chance to hit with spells by 8%.",
+        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 20113,
+        "name" : "Two-Handed Weapon Specialization",
+        "icon" : "inv_hammer_04",
+        "reagents" : [ ],
+        "description" : "Increases the damage you deal with two-handed melee weapons by 20%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76672,
+        "name" : "Hand of Light",
+        "icon" : "ability_paladin_blessedhands",
+        "reagents" : [ ],
+        "description" : "Your autoattacks have a 8% chance to grant Hand of Light, causing your next Holy Power ability to consume no Holy Power and to cast as if 3 Holy Power were consumed.  Each point of Mastery increases the chance by an additional 1%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10647,
+        "name" : "Eye for an Eye",
+        "icon" : "spell_holy_eyeforaneye",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "All magic attacks against you have a 20% chance to cause 30% of the damage taken back to the attacker as well."
+        }, {
+          "description" : "All magic attacks against you have a 40% chance to cause 30% of the damage taken back to the attacker as well."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10651,
+        "name" : "Crusade",
+        "icon" : "spell_holy_crusade",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases the damage of your Crusader Strike, Hammer of the Righteous, and Templar's Verdict by 10%, and the damage and healing of your Holy Shock by 10%.  In addition, for 15 sec after you kill an enemy that yields experience or honor, your next Holy Light heals for an additional 100%."
+        }, {
+          "description" : "Increases the damage of your Crusader Strike, Hammer of the Righteous, and Templar's Verdict by 20%, and the damage and healing of your Holy Shock by 20%.  In addition, for 15 sec after you kill an enemy that yields experience or honor, your next Holy Light heals for an additional 200%."
+        }, {
+          "description" : "Increases the damage of your Crusader Strike, Hammer of the Righteous, and Templar's Verdict by 30%, and the damage and healing of your Holy Shock by 30%.  In addition, for 15 sec after you kill an enemy that yields experience or honor, your next Holy Light heals for an additional 300%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11612,
+        "name" : "Improved Judgement",
+        "icon" : "ability_paladin_judgementblue",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases the range of your Judgement by 10 yards."
+        }, {
+          "description" : "Increases the range of your Judgement by 20 yards."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12153,
+        "name" : "Guardian's Favor",
+        "icon" : "spell_holy_sealofprotection",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduces the cooldown of your Hand of Protection by 60 sec and increases the duration of your Hand of Freedom by 2 sec."
+        }, {
+          "description" : "Reduces the cooldown of your Hand of Protection by 2 min and increases the duration of your Hand of Freedom by 4 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11269,
+        "name" : "Rule of Law",
+        "icon" : "inv_relics_libramofhope",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Increases the critical effect chance of your Crusader Strike, Hammer of the Righteous and Word of Glory by 5%."
+        }, {
+          "description" : "Increases the critical effect chance of your Crusader Strike, Hammer of the Righteous and Word of Glory by 10%."
+        }, {
+          "description" : "Increases the critical effect chance of your Crusader Strike, Hammer of the Righteous and Word of Glory by 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11611,
+        "name" : "Pursuit of Justice",
+        "icon" : "spell_holy_persuitofjustice",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "You have a 50% chance to gain a charge of Holy Power when struck by a Stun, Fear or Immobilize effect.  In addition, increases your movement and mounted movement speed by 8%.  This effect does not stack with other movement speed increasing effects."
+        }, {
+          "description" : "You have a 100% chance to gain a charge of Holy Power when struck by a Stun, Fear or Immobilize effect.  In addition, increases your movement and mounted movement speed by 15%.  This effect does not stack with other movement speed increasing effects."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10665,
+        "name" : "Communion",
+        "icon" : "ability_paladin_judgementofthewise",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Your auras increase your party and raid's damage dealt by 3% and your damage by an additional 2%.  In addition, your Judgement causes Replenishment.\n\n\n\nReplenishment - Grants up to 10 party or raid members mana regeneration equal to 1% of their maximum mana per 10 sec. Lasts for 15 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10661,
+        "name" : "The Art of War",
+        "icon" : "ability_paladin_artofwar",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Your autoattacks have a 7% chance to make your next Exorcism instant, free and cause 100% additional damage."
+        }, {
+          "description" : "Your autoattacks have a 14% chance to make your next Exorcism instant, free and cause 100% additional damage."
+        }, {
+          "description" : "Your autoattacks have a 20% chance to make your next Exorcism instant, free and cause 100% additional damage."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11610,
+        "name" : "Long Arm of the Law",
+        "icon" : "ability_paladin_judgementred",
+        "x" : 2,
+        "y" : 2,
+        "req" : 11612,
+        "ranks" : [ {
+          "description" : "Your Judgement has a 50% chance to increase your movement speed by 45% for 4 sec when used on targets at or further than 15 yards from you."
+        }, {
+          "description" : "Your Judgement has a 100% chance to increase your movement speed by 45% for 4 sec when used on targets at or further than 15 yards from you."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11204,
+        "name" : "Divine Storm",
+        "icon" : "ability_paladin_divinestorm",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "5% of base mana",
+          "castTime" : "Instant cast",
+          "cooldown" : "4.5 sec cooldown",
+          "requires" : "Requires Melee Weapon",
+          "description" : "An instant attack that causes 60% weapon damage to all enemies within 8 yards.  The Divine Storm heals up to 3 party or raid members totaling 25% of the damage caused."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11207,
+        "name" : "Rebuke",
+        "icon" : "spell_holy_fistofjustice",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "10% of base mana",
+          "range" : "Melee Range",
+          "castTime" : "Instant",
+          "cooldown" : "10 sec cooldown",
+          "description" : "Interrupts spellcasting and prevents any spell in that school from being cast for 4 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11372,
+        "name" : "Sanctity of Battle",
+        "icon" : "inv_sword_136",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Haste effects lower the cooldown of your Crusader Strike and Divine Storm abilities."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10643,
+        "name" : "Seals of Command",
+        "icon" : "ability_warrior_innerrage",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Your Seal of Righteousness, Seal of Truth and Seal of Justice now also deal 7% weapon damage each time you swing.  In addition, your Seal of Righteousness now hits up to 2 additional targets."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10669,
+        "name" : "Sanctified Wrath",
+        "icon" : "ability_paladin_sanctifiedwrath",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Increases the critical strike chance of Hammer of Wrath by 20%, reduces the cooldown of Avenging Wrath by 20 secs and allows the use of Hammer of Wrath at all times during Avenging Wrath."
+        }, {
+          "description" : "Increases the critical strike chance of Hammer of Wrath by 40%, reduces the cooldown of Avenging Wrath by 40 secs and allows the use of Hammer of Wrath at all times during Avenging Wrath."
+        }, {
+          "description" : "Increases the critical strike chance of Hammer of Wrath by 60%, reduces the cooldown of Avenging Wrath by 60 secs and allows the use of Hammer of Wrath at all times during Avenging Wrath."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11271,
+        "name" : "Selfless Healer",
+        "icon" : "spell_holy_rune",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "When you heal others with your Word of Glory, it increases the effectiveness of the heal by 25% and increases your damage done by 2% per charge of Holy Power for 10 sec."
+        }, {
+          "description" : "When you heal others with your Word of Glory, it increases the effectiveness of the heal by 50% and increases your damage done by 4% per charge of Holy Power for 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10663,
+        "name" : "Repentance",
+        "icon" : "spell_holy_prayerofhealing",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "9% of base mana",
+          "range" : "20 yd range",
+          "castTime" : "Instant cast",
+          "cooldown" : "1 min cooldown",
+          "description" : "Puts the enemy target in a state of meditation, incapacitating them for up to 1 min.  Any damage caused will awaken the target.  Usable against Demons, Dragonkin, Giants, Humanoids and Undead."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10633,
+        "name" : "Divine Purpose",
+        "icon" : "spell_holy_divinepurpose",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "The following attacks have a 20% chance to generate Holy Power:\n\n\n\n- Judgement\n\n- Exorcism\n\n- Templar's Verdict\n\n- Divine Storm\n\n- Inquisition\n\n- Holy Wrath\n\n- Hammer of Wrath"
+        }, {
+          "description" : "The following attacks have a 40% chance to generate Holy Power:\n\n\n\n- Judgement\n\n- Exorcism\n\n- Templar's Verdict\n\n- Divine Storm\n\n- Inquisition\n\n- Holy Wrath\n\n- Hammer of Wrath"
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10677,
+        "name" : "Inquiry of Faith",
+        "icon" : "ability_paladin_righteousvengeance",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Increases the periodic damage done by your Seal of Truth by 10%, and the duration of your Inqusition by 50%."
+        }, {
+          "description" : "Increases the periodic damage done by your Seal of Truth by 20%, and the duration of your Inqusition by 100%."
+        }, {
+          "description" : "Increases the periodic damage done by your Seal of Truth by 30%, and the duration of your Inqusition by 150%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11211,
+        "name" : "Acts of Sacrifice",
+        "icon" : "ability_paladin_blessedhands",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Reduces the cooldown by 10% and mana cost by 10% of your Hand of Freedom, Hand of Salvation and Hand of Sacrifice.  In addition, your Cleanse will remove one movement impairing effect if cast on yourself."
+        }, {
+          "description" : "Reduces the cooldown by 20% and mana cost by 20% of your Hand of Freedom, Hand of Salvation and Hand of Sacrifice.  In addition, your Cleanse will remove one movement impairing effect if cast on yourself."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11222,
+        "name" : "Zealotry",
+        "icon" : "spell_holy_proclaimchampion_02",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "3 Holy Power",
+          "castTime" : "Instant cast",
+          "cooldown" : "2 min cooldown",
+          "description" : "Your Crusader Strike generates 3 charges of Holy Power per strike for the next 20 sec.  Requires 3 Holy Power to use, but does not consume Holy Power."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

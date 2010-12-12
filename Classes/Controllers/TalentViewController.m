@@ -8,6 +8,7 @@
 
 #import "TalentViewController.h"
 #import "Talent.h"
+#import "Constants.h"
 
 @interface TalentViewController (Private)
 
@@ -29,6 +30,13 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  
+  NSURL *imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL(self.talent.icon)];
+  NSURLRequest *myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
+  NSData *returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
+  UIImage *myImage  = [[UIImage alloc] initWithData:returnData];
+  
+  [_talentButton setImage:myImage forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,8 +54,9 @@
 
 
 - (void)dealloc {
-  if(_talentBorderView) [_talentBorderView release];
-  if(_talentLabel) [_talentLabel release];
+  if (_talentButton) [_talentButton release];
+  if (_talentBorderView) [_talentBorderView release];
+  if (_talentLabel) [_talentLabel release];
   [super dealloc];
 }
 
