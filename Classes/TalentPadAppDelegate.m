@@ -24,6 +24,7 @@
   _launcherViewController = [[LauncherViewController alloc] initWithNibName:@"LauncherViewController" bundle:nil];
   _navigationController = [[UINavigationController alloc] initWithRootViewController:self.launcherViewController];
   self.navigationController.navigationBar.barStyle = UIBarStyleBlackOpaque;
+  self.navigationController.navigationBarHidden = NO;
   
   [window addSubview:self.navigationController.view];
   [self.window makeKeyAndVisible];

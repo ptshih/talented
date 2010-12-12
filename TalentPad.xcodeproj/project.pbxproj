@@ -25,6 +25,8 @@
 		2500E49412B492DA00EB1987 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E48812B492DA00EB1987 /* CJSONSerializer.m */; };
 		2500E49912B4936100EB1987 /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E49712B4936100EB1987 /* CalculatorViewController.m */; };
 		2500E49A12B4936100EB1987 /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2500E49812B4936100EB1987 /* CalculatorViewController.xib */; };
+		2500E4F412B49A0100EB1987 /* TreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E4F212B49A0100EB1987 /* TreeViewController.m */; };
+		2500E4F512B49A0100EB1987 /* TreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2500E4F312B49A0100EB1987 /* TreeViewController.xib */; };
 		257AEA28129E8FB900DE9D51 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA27129E8FB900DE9D51 /* CoreData.framework */; };
 		257AEA34129E901900DE9D51 /* WTDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA31129E901900DE9D51 /* WTDataCenter.m */; };
 		257AEA35129E901900DE9D51 /* WTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA33129E901900DE9D51 /* WTCoreDataStack.m */; };
@@ -127,6 +129,9 @@
 		2500E49612B4936100EB1987 /* CalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
 		2500E49712B4936100EB1987 /* CalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
 		2500E49812B4936100EB1987 /* CalculatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorViewController.xib; sourceTree = "<group>"; };
+		2500E4F112B49A0100EB1987 /* TreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeViewController.h; sourceTree = "<group>"; };
+		2500E4F212B49A0100EB1987 /* TreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeViewController.m; sourceTree = "<group>"; };
+		2500E4F312B49A0100EB1987 /* TreeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreeViewController.xib; sourceTree = "<group>"; };
 		257AEA22129E8F8900DE9D51 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		257AEA27129E8FB900DE9D51 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		257AEA30129E901900DE9D51 /* WTDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTDataCenter.h; sourceTree = "<group>"; };
@@ -311,6 +316,9 @@
 				2500E49612B4936100EB1987 /* CalculatorViewController.h */,
 				2500E49712B4936100EB1987 /* CalculatorViewController.m */,
 				2500E49812B4936100EB1987 /* CalculatorViewController.xib */,
+				2500E4F112B49A0100EB1987 /* TreeViewController.h */,
+				2500E4F212B49A0100EB1987 /* TreeViewController.m */,
+				2500E4F312B49A0100EB1987 /* TreeViewController.xib */,
 				257AEB2B129E968A00DE9D51 /* TalentViewController.h */,
 				257AEB2C129E968A00DE9D51 /* TalentViewController.m */,
 				257AEB2D129E968A00DE9D51 /* TalentViewController.xib */,
@@ -648,6 +656,7 @@
 				257AEC80129EA91700DE9D51 /* 0000.png in Resources */,
 				2500E42012B46A2F00EB1987 /* MainWindow.xib in Resources */,
 				2500E49A12B4936100EB1987 /* CalculatorViewController.xib in Resources */,
+				2500E4F512B49A0100EB1987 /* TreeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,6 +689,7 @@
 				2500E49312B492DA00EB1987 /* CJSONScanner.m in Sources */,
 				2500E49412B492DA00EB1987 /* CJSONSerializer.m in Sources */,
 				2500E49912B4936100EB1987 /* CalculatorViewController.m in Sources */,
+				2500E4F412B49A0100EB1987 /* TreeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
