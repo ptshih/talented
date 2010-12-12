@@ -1,6 +1,6 @@
 //
-//  WoWTalentProAppDelegate.h
-//  WoWTalentPro
+//  TalentPadAppDelegate.h
+//  TalentPad
 //
 //  Created by Peter Shih on 11/25/10.
 //  Copyright 2010 Seven Minute Apps. All rights reserved.
@@ -10,7 +10,7 @@
 
 @class LauncherViewController;
 
-@interface WoWTalentProAppDelegate : NSObject <UIApplicationDelegate> {
+@interface TalentPadAppDelegate : NSObject <UIApplicationDelegate> {
   UIWindow *window;
   UINavigationController *_navigationController;
   LauncherViewController *_launcherViewController;

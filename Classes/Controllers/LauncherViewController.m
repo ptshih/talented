@@ -1,6 +1,6 @@
 //
 //  LauncherViewController.m
-//  WoWTalentPro
+//  TalentPad
 //
 //  Created by Peter Shih on 11/25/10.
 //  Copyright 2010 Seven Minute Apps. All rights reserved.
@@ -15,7 +15,7 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
-    self.title = @"WoWTalent";
+    self.title = @"TalentPad";
   }
   return self;
 }

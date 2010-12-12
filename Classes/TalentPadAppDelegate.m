@@ -1,15 +1,15 @@
 //
-//  WoWTalentProAppDelegate.m
-//  WoWTalentPro
+//  TalentPadAppDelegate.m
+//  TalentPad
 //
 //  Created by Peter Shih on 11/25/10.
 //  Copyright 2010 Seven Minute Apps. All rights reserved.
 //
 
-#import "WoWTalentProAppDelegate.h"
+#import "TalentPadAppDelegate.h"
 #import "LauncherViewController.h"
 
-@implementation WoWTalentProAppDelegate
+@implementation TalentPadAppDelegate
 
 @synthesize window;
 @synthesize navigationController = _navigationController;

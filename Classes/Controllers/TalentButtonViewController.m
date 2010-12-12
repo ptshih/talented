@@ -1,6 +1,6 @@
     //
 //  TalentButtonViewController.m
-//  WoWTalentPro
+//  TalentPad
 //
 //  Created by Peter Shih on 11/25/10.
 //  Copyright 2010 Seven Minute Apps. All rights reserved.
@@ -20,6 +20,7 @@
 @synthesize tier = _tier;
 @synthesize col = _col;
 @synthesize max = _max;
+@synthesize delegate = _delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -44,8 +45,8 @@
 }
 
 - (IBAction)talentAction {
-  // Check points spent
-  // Check max
+  // Tell TalentViewController that this talent was tapped
+  [self.delegate talentButtonTapped:self];
 }
 
 - (void)didReceiveMemoryWarning {

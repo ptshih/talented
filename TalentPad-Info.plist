@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDisplayName</key>
-	<string>WoWTalent</string>
+	<string>TalentPad</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
@@ -24,7 +24,7 @@
 	<key>UILaunchImageFile</key>
 	<string>Default</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.sevenminuteapps.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.sevenminuteapps.talentpad</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

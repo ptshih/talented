@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3623260D0F684500981E51 /* WoWTalentProAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* WoWTalentProAppDelegate.m */; };
+		1D3623260D0F684500981E51 /* TalentPadAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* TalentPadAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -88,9 +88,9 @@
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D3623240D0F684500981E51 /* WoWTalentProAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WoWTalentProAppDelegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* WoWTalentProAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WoWTalentProAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* WoWTalentPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoWTalentPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D3623240D0F684500981E51 /* TalentPadAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentPadAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* TalentPadAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalentPadAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* TalentPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalentPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		257AEA22129E8F8900DE9D51 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		257AEA27129E8FB900DE9D51 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -182,8 +182,8 @@
 		257AEC7F129EA91700DE9D51 /* 0000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0000.png; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* WoWTalentPro_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WoWTalentPro_Prefix.pch; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* WoWTalentPro-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WoWTalentPro-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* TalentPad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentPad_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* TalentPad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TalentPad-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,8 +211,8 @@
 				257AEA2D129E900E00DE9D51 /* Models */,
 				257AEA2E129E900E00DE9D51 /* Vendor */,
 				257AEA2F129E900E00DE9D51 /* Views */,
-				1D3623240D0F684500981E51 /* WoWTalentProAppDelegate.h */,
-				1D3623250D0F684500981E51 /* WoWTalentProAppDelegate.m */,
+				1D3623240D0F684500981E51 /* TalentPadAppDelegate.h */,
+				1D3623250D0F684500981E51 /* TalentPadAppDelegate.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -220,7 +220,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* WoWTalentPro.app */,
+				1D6058910D05DD3D006BFB54 /* TalentPad.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -455,7 +455,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				32CA4F630368D1EE00C91783 /* WoWTalentPro_Prefix.pch */,
+				32CA4F630368D1EE00C91783 /* TalentPad_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				257AEA22129E8F8900DE9D51 /* Constants.h */,
 			);
@@ -467,7 +467,7 @@
 			children = (
 				257AEAAC129E92AB00DE9D51 /* Assets */,
 				257AEAB1129E92AB00DE9D51 /* Nibs */,
-				8D1107310486CEB800E47090 /* WoWTalentPro-Info.plist */,
+				8D1107310486CEB800E47090 /* TalentPad-Info.plist */,
 				257AEA6D129E910900DE9D51 /* WoWTalentPro.xcdatamodel */,
 			);
 			name = Resources;
@@ -488,9 +488,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* WoWTalentPro */ = {
+		1D6058900D05DD3D006BFB54 /* TalentPad */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "WoWTalentPro" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TalentPad" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -500,9 +500,9 @@
 			);
 			dependencies = (
 			);
-			name = WoWTalentPro;
+			name = TalentPad;
 			productName = WoWTalentPro;
-			productReference = 1D6058910D05DD3D006BFB54 /* WoWTalentPro.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* TalentPad.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -513,7 +513,7 @@
 			attributes = {
 				ORGANIZATIONNAME = "Seven Minute Apps";
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WoWTalentPro" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TalentPad" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -527,7 +527,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* WoWTalentPro */,
+				1D6058900D05DD3D006BFB54 /* TalentPad */,
 			);
 		};
 /* End PBXProject section */
@@ -604,7 +604,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				1D3623260D0F684500981E51 /* WoWTalentProAppDelegate.m in Sources */,
+				1D3623260D0F684500981E51 /* TalentPadAppDelegate.m in Sources */,
 				257AEA34129E901900DE9D51 /* WTDataCenter.m in Sources */,
 				257AEA35129E901900DE9D51 /* WTCoreDataStack.m in Sources */,
 				257AEA42129E902400DE9D51 /* NSObject+SBJSON.m in Sources */,
@@ -632,13 +632,13 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = WoWTalentPro_Prefix.pch;
-				INFOPLIST_FILE = "WoWTalentPro-Info.plist";
+				GCC_PREFIX_HEADER = TalentPad_Prefix.pch;
+				INFOPLIST_FILE = "TalentPad-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Classes/Vendor/FlurryLib\"",
 				);
-				PRODUCT_NAME = WoWTalentPro;
+				PRODUCT_NAME = TalentPad;
 			};
 			name = Debug;
 		};
@@ -648,13 +648,13 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = WoWTalentPro_Prefix.pch;
-				INFOPLIST_FILE = "WoWTalentPro-Info.plist";
+				GCC_PREFIX_HEADER = TalentPad_Prefix.pch;
+				INFOPLIST_FILE = "TalentPad-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Classes/Vendor/FlurryLib\"",
 				);
-				PRODUCT_NAME = WoWTalentPro;
+				PRODUCT_NAME = TalentPad;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -689,7 +689,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "WoWTalentPro" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TalentPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -698,7 +698,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WoWTalentPro" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TalentPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
