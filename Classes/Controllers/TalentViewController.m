@@ -21,11 +21,13 @@
 @synthesize talent = _talent;
 @synthesize delegate = _delegate;
 @synthesize state = _state;
+@synthesize currentRank = _currentRank;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
     _state = TalentStateDisabled;
+    _currentRank = 0;
   }
   return self;
 }
@@ -51,6 +53,23 @@
     _talentFrameView.image = [UIImage imageNamed:@"icon-frame-yellow.png"];
   }
 }
+
+- (void)updateState {
+  DLog(@"Talent: %@ Update State", self.talent);
+  _talentLabel.text = [NSString stringWithFormat:@"%d", self.currentRank];
+}
+
+// Add a point for now
+- (IBAction)talentTapped {
+  if (self.delegate) {
+    [self.delegate talentAdd:self];
+  }
+}
+
+// Need callback for subtract
+
+
+
 
 - (void)didReceiveMemoryWarning {
   // Releases the view if it doesn't have a superview.

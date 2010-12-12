@@ -7,7 +7,6 @@
 //
 
 #import "CalculatorViewController.h"
-#import "TreeViewController.h"
 #import "SMACoreDataStack.h"
 #import "TalentTree.h"
 #import "TalentTree+Fetch.h"
@@ -26,6 +25,7 @@
 @implementation CalculatorViewController
 
 @synthesize treeArray = _treeArray;
+@synthesize treeViewArray = _treeViewArray;
 @synthesize classId = _classId;
 @synthesize specTreeNo = _specTreeNo;
 @synthesize totalPoints = _totalPoints;
@@ -34,6 +34,7 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
+    _treeViewArray = [[NSMutableArray alloc] init];
     _classId = 0;
     _specTreeNo = 0;
     _totalPoints = 0;
@@ -59,13 +60,21 @@
   NSFetchRequest *request = [TalentTree fetchRequestForTalentTreesWithClassId:self.classId];
   [request setEntity:entity];
   
+  // Set an ASC sort on treeNo
+  NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"treeNo" ascending:YES];
+  NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor, nil];
+  [sortDescriptor release];
+  [request setSortDescriptors:sortDescriptors];
+  
   NSError *error;
   NSArray *array = [context executeFetchRequest:request error:&error];
   if(array) {
     self.treeArray = array;
   }
   
-//  DLog(@"name: %@", [[[self.treeArray objectAtIndex:0] talents] allObjects]);
+  DLog(@"Loaded at index 0: %@", [[self.treeArray objectAtIndex:0] name]);
+  DLog(@"Loaded at index 1: %@", [[self.treeArray objectAtIndex:1] name]);
+  DLog(@"Loaded at index 2: %@", [[self.treeArray objectAtIndex:2] name]);
 
 }
 
@@ -73,12 +82,23 @@
 - (void)prepareTrees {
   for (TalentTree *talentTree in self.treeArray) {
     TreeViewController *tvc = [[TreeViewController alloc] initWithNibName:@"TreeViewController" bundle:nil];
+    tvc.delegate = self;
     tvc.talentArray = [[talentTree talents] allObjects];
     tvc.treeNo = [[talentTree treeNo] integerValue];
     tvc.view.frame = CGRectMake(SPACING_X + (SPACING_X * tvc.treeNo) + (320 * tvc.treeNo), SPACING_Y, tvc.view.frame.size.width, tvc.view.frame.size.height);
     [self.view addSubview:tvc.view];
+    [self.treeViewArray addObject:tvc];
     [tvc release];
   }
+}
+
+#pragma mark TreeDelegate
+- (void)treeAdd:(TreeViewController *)sender {
+
+}
+
+- (void)treeSubtract:(TreeViewController *)sender {
+  
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -100,7 +120,8 @@
 
 
 - (void)dealloc {
-  if(_treeArray) [_treeArray release];
+  if (_treeViewArray) [_treeViewArray release];
+  if (_treeArray) [_treeArray release];
   [super dealloc];
 }
 

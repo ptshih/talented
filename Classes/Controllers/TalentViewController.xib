@@ -81,7 +81,7 @@
 							<string key="NSResourceName">icon-frame-green.png</string>
 						</object>
 					</object>
-					<object class="IBUIImageView" id="396697255">
+					<object class="IBUIImageView" id="322743183">
 						<reference key="NSNextResponder" ref="277909851"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{46, 46}, {22, 22}}</string>
@@ -167,9 +167,18 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">_talentPointsView</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="396697255"/>
+						<reference key="destination" ref="322743183"/>
 					</object>
 					<int key="connectionID">29</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">talentTapped</string>
+						<reference key="source" ref="39367085"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">30</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -199,7 +208,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="39367085"/>
 							<reference ref="318579499"/>
-							<reference ref="396697255"/>
+							<reference ref="322743183"/>
 							<reference ref="413430706"/>
 						</object>
 						<reference key="parent" ref="0"/>
@@ -224,7 +233,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">27</int>
-						<reference key="object" ref="396697255"/>
+						<reference key="object" ref="322743183"/>
 						<reference key="parent" ref="277909851"/>
 						<string key="objectName">talentPointsView</string>
 					</object>
@@ -279,7 +288,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">29</int>
+			<int key="maxID">30</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -287,6 +296,17 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">TalentViewController</string>
 					<string key="superclassName">UIViewController</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">talentTapped</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">talentTapped</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">talentTapped</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
 					<object class="NSMutableDictionary" key="outlets">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">

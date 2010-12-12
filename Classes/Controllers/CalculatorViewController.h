@@ -7,14 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TreeViewController.h"
 
 typedef enum {
   CalculatorStateDisabled = 0,
   CalculatorStateEnabled = 1
 } CalculatorState;
 
-@interface CalculatorViewController : UIViewController {
+@interface CalculatorViewController : UIViewController <TreeDelegate> {
   NSArray *_treeArray;
+  NSMutableArray *_treeViewArray;
   NSInteger _classId;
   NSInteger _specTreeNo;
   NSInteger _totalPoints;
@@ -22,6 +24,7 @@ typedef enum {
 }
 
 @property (nonatomic, retain) NSArray *treeArray;
+@property (nonatomic, retain) NSMutableArray *treeViewArray;
 @property (nonatomic, assign) NSInteger classId;
 @property (nonatomic, assign) NSInteger specTreeNo;
 @property (nonatomic, assign) NSInteger totalPoints;
