@@ -1,0 +1,18 @@
+{
+  "id" : 10496,
+  "name" : "Sword and Board",
+  "icon" : "ability_warrior_swordandboard",
+  "x" : 2,
+  "y" : 5,
+  "req" : 10486,
+  "ranks" : [ {
+    "description" : "Increases the critical strike chance of Devastate by 5%.  In addition, when your Devastate or Revenge deal damage, they have a 10% chance of refreshing the cooldown of your Shield Slam and reducing its cost by 100% for 5 sec."
+  }, {
+    "description" : "Increases the critical strike chance of Devastate by 10%.  In addition, when your Devastate or Revenge deal damage, they have a 20% chance of refreshing the cooldown of your Shield Slam and reducing its cost by 100% for 5 sec."
+  }, {
+    "description" : "Increases the critical strike chance of Devastate by 15%.  In addition, when your Devastate or Revenge deal damage, they have a 30% chance of refreshing the cooldown of your Shield Slam and reducing its cost by 100% for 5 sec."
+  } ],
+  "keyAbility" : false,
+  "categoryMask0" : 0,
+  "categoryMask1" : 0
+}

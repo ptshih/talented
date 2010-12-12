@@ -7,28 +7,29 @@
 //
 
 #import "TreeViewController.h"
+#import "TalentViewController.h"
 
 @implementation TreeViewController
 
+@synthesize talentArray = _talentArray;
+@synthesize pointsInTier = _pointsInTier;
 @synthesize classId = _classId;
 @synthesize treeNo = _treeNo;
 @synthesize state = _state;
 @synthesize isSpecTree = _isSpecTree;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-if (self) {
-// Custom initialization.
-}
-return self;
+  self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+  if (self) {
+    _classId = 0;
+    _treeNo = 0;
+    _state = TreeStateDisabled;
+  }
+  return self;
 }
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-  return UIInterfaceOrientationIsLandscape(interfaceOrientation);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,6 +47,8 @@ return self;
 
 
 - (void)dealloc {
+  if(_talentArray) [_talentArray release];
+  if(_pointsInTier) [_pointsInTier release];
   [super dealloc];
 }
 

@@ -1,0 +1,18 @@
+{
+  "id" : 10986,
+  "name" : "Chaos Bolt",
+  "icon" : "ability_warlock_chaosbolt",
+  "x" : 1,
+  "y" : 6,
+  "req" : 10984,
+  "ranks" : [ {
+    "cost" : "7% of base mana",
+    "range" : "40 yd range",
+    "castTime" : "2.5 sec cast",
+    "cooldown" : "12 sec cooldown",
+    "description" : "Sends a bolt of chaotic fire at the enemy, dealing 0 Fire damage. Chaos Bolt cannot be resisted, and pierces through all absorption effects."
+  } ],
+  "keyAbility" : true,
+  "categoryMask0" : 0,
+  "categoryMask1" : 0
+}

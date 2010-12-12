@@ -7,97 +7,28 @@
 //
 
 #import "TalentViewController.h"
-
-#define MARGIN_X 15.0
-#define MARGIN_Y 15.0
-#define SPACING_X 14.0
-#define SPACING_Y 14.0
-
-// IMG WIDTH = 62
-// 72
+#import "Talent.h"
 
 @interface TalentViewController (Private)
-
-/**
- Creates a UIImageView background for a tree given an index (0~2)
- */
-- (void)prepareBackgroundAtIndex:(NSInteger)index;
-
-/**
- Renders UIButtons for a tree given an index (0~2)
- */
-- (void)prepareTreeAtIndex:(NSInteger)index;
 
 @end
 
 @implementation TalentViewController
 
-@synthesize selectedClass = _selectedClass;
-@synthesize talentButtonArray = _talentButtonArray;
+@synthesize talent = _talent;
+@synthesize delegate = _delegate;
+@synthesize state = _state;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
-    _talentButtonArray = [[NSMutableArray alloc] init];
+    _state = TalentStateDisabled;
   }
   return self;
 }
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  
-  // Create the scrollView frame for the 3 talent panes
-  
-  // Render the 3 backgrounds
-  [self prepareBackgroundAtIndex:0];
-  [self prepareBackgroundAtIndex:1];
-  [self prepareBackgroundAtIndex:2];
-  
-  // Render the 3 talent trees
-  [self prepareTreeAtIndex:0];
-  [self prepareTreeAtIndex:1];
-  [self prepareTreeAtIndex:2];
-}
-
-- (void)prepareBackgroundAtIndex:(NSInteger)index {
-  UIImageView *backgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@_%d.png", self.selectedClass, index]]];
-  backgroundImageView.frame = CGRectMake(340 * index, 0, 340, 660);
-  [_talentView addSubview:backgroundImageView];
-  [backgroundImageView release];
-}
-
-- (void)prepareTreeAtIndex:(NSInteger)index {
-  NSInteger tier = 0;
-  NSInteger col = 0;
-  for(tier=0;tier<1;tier++) {
-    for(col=0;col<1;col++) {
-      TalentButtonViewController *tbvc = [[TalentButtonViewController alloc] initWithNibName:@"TalentButtonViewController" bundle:nil];
-      tbvc.delegate = self;
-      tbvc.tree = index;
-      tbvc.tier = tier;
-      tbvc.col = col;
-      tbvc.max = 2;
-      tbvc.view.frame = CGRectMake(MARGIN_X + 340 * index + ((SPACING_X + 62) * col), MARGIN_Y + ((SPACING_Y + 58) * tier), tbvc.view.frame.size.width, tbvc.view.frame.size.height);
-      [_talentView addSubview:tbvc.view];
-      [self.talentButtonArray addObject:tbvc];
-      [tbvc release];
-    }
-  }
-}
-
-#pragma mark TalentButtonDelegate
-- (void)talentButtonTapped:(id)sender {
-  // check state
-  
-  // update global/tree state based on the button's tier/col/value
-  
-  // update all talent buttons with nsnotification
-  
-}
-
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-  return UIInterfaceOrientationIsLandscape(interfaceOrientation);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -115,11 +46,8 @@
 
 
 - (void)dealloc {
-  if(_talentButtonArray) [_talentButtonArray release];
-  if(_summaryView) [_summaryView release];
-  if(_talentView) [_talentView release];
-  if(_glyphView) [_glyphView release];
-  if(_selectedClass) [_selectedClass release];
+  if(_talentBorderView) [_talentBorderView release];
+  if(_talentLabel) [_talentLabel release];
   [super dealloc];
 }
 

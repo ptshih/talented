@@ -27,20 +27,61 @@
 		2500E49A12B4936100EB1987 /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2500E49812B4936100EB1987 /* CalculatorViewController.xib */; };
 		2500E4F412B49A0100EB1987 /* TreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E4F212B49A0100EB1987 /* TreeViewController.m */; };
 		2500E4F512B49A0100EB1987 /* TreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2500E4F312B49A0100EB1987 /* TreeViewController.xib */; };
+		2500E64312B4CA0D00EB1987 /* Mastery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E63812B4CA0D00EB1987 /* Mastery.m */; };
+		2500E64412B4CA0D00EB1987 /* Rank.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E63A12B4CA0D00EB1987 /* Rank.m */; };
+		2500E64512B4CA0D00EB1987 /* PrimarySpell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E63C12B4CA0D00EB1987 /* PrimarySpell.m */; };
+		2500E64612B4CA0D00EB1987 /* Talent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E63E12B4CA0D00EB1987 /* Talent.m */; };
+		2500E64712B4CA0D00EB1987 /* TalentTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E64012B4CA0D00EB1987 /* TalentTree.m */; };
+		2500E64812B4CA0D00EB1987 /* CharacterClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E64212B4CA0D00EB1987 /* CharacterClass.m */; };
+		2500E6CC12B4D37300EB1987 /* primarySpells.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6C812B4D37300EB1987 /* primarySpells.json */; };
+		2500E6CD12B4D37300EB1987 /* talent.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6C912B4D37300EB1987 /* talent.json */; };
+		2500E6CE12B4D37300EB1987 /* talentAbility.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6CA12B4D37300EB1987 /* talentAbility.json */; };
+		2500E6CF12B4D37300EB1987 /* warrior.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6CB12B4D37300EB1987 /* warrior.json */; };
+		2500E79312B4D99800EB1987 /* CoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E6D112B4D39000EB1987 /* CoreDataTests.m */; };
+		2500E79612B4D9A400EB1987 /* SMACoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA33129E901900DE9D51 /* SMACoreDataStack.m */; };
+		2500E79712B4D9A500EB1987 /* SMADataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA31129E901900DE9D51 /* SMADataCenter.m */; };
+		2500E79E12B4D9CC00EB1987 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA27129E8FB900DE9D51 /* CoreData.framework */; };
+		2500E7A012B4D9CC00EB1987 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2500E79F12B4D9CC00EB1987 /* CoreFoundation.framework */; };
+		2500E7A112B4D9CC00EB1987 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		2500E7A212B4D9CC00EB1987 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA52129E903B00DE9D51 /* SystemConfiguration.framework */; };
+		2500E7A312B4D9CC00EB1987 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2500E7A812B4D9E100EB1987 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E47112B492DA00EB1987 /* CDataScanner.m */; };
+		2500E7A912B4D9E200EB1987 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E47B12B492DA00EB1987 /* CDataScanner_Extensions.m */; };
+		2500E7AA12B4D9E300EB1987 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E48412B492DA00EB1987 /* CJSONDeserializer.m */; };
+		2500E7AB12B4D9E300EB1987 /* CFilteringJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E47412B492DA00EB1987 /* CFilteringJSONSerializer.m */; };
+		2500E7AC12B4D9E400EB1987 /* CJSONDeserializer_BlocksExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E47612B492DA00EB1987 /* CJSONDeserializer_BlocksExtensions.m */; };
+		2500E7AD12B4D9E500EB1987 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E48612B492DA00EB1987 /* CJSONScanner.m */; };
+		2500E7AE12B4D9E500EB1987 /* CJSONSerializedData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E47812B492DA00EB1987 /* CJSONSerializedData.m */; };
+		2500E7AF12B4D9E600EB1987 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E48812B492DA00EB1987 /* CJSONSerializer.m */; };
+		2500E7B012B4D9E600EB1987 /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E47D12B492DA00EB1987 /* NSCharacterSet_Extensions.m */; };
+		2500E7B112B4D9E800EB1987 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E47F12B492DA00EB1987 /* NSDictionary_JSONExtensions.m */; };
+		2500E7B212B4D9E900EB1987 /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E48112B492DA00EB1987 /* NSScanner_Extensions.m */; };
+		2500E7B512B4D9F700EB1987 /* CharacterClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E64212B4CA0D00EB1987 /* CharacterClass.m */; };
+		2500E7B612B4D9F700EB1987 /* Mastery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E63812B4CA0D00EB1987 /* Mastery.m */; };
+		2500E7B712B4D9F800EB1987 /* PrimarySpell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E63C12B4CA0D00EB1987 /* PrimarySpell.m */; };
+		2500E7B812B4D9F800EB1987 /* Rank.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E63A12B4CA0D00EB1987 /* Rank.m */; };
+		2500E7B912B4D9F900EB1987 /* Talent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E63E12B4CA0D00EB1987 /* Talent.m */; };
+		2500E7BA12B4D9FA00EB1987 /* TalentTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E64012B4CA0D00EB1987 /* TalentTree.m */; };
+		2500E7BF12B4DA2300EB1987 /* primarySpells.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6C812B4D37300EB1987 /* primarySpells.json */; };
+		2500E7C012B4DA2400EB1987 /* talent.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6C912B4D37300EB1987 /* talent.json */; };
+		2500E7C112B4DA2400EB1987 /* warrior.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6CB12B4D37300EB1987 /* warrior.json */; };
+		2500E7C212B4DA2500EB1987 /* talentAbility.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6CA12B4D37300EB1987 /* talentAbility.json */; };
+		2500E82112B4DB6300EB1987 /* TalentPad.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA6D129E910900DE9D51 /* TalentPad.xcdatamodel */; };
+		2500E89112B4E03E00EB1987 /* masteries.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E89012B4E03E00EB1987 /* masteries.json */; };
+		2500E89212B4E03E00EB1987 /* masteries.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E89012B4E03E00EB1987 /* masteries.json */; };
 		257AEA28129E8FB900DE9D51 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA27129E8FB900DE9D51 /* CoreData.framework */; };
-		257AEA34129E901900DE9D51 /* WTDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA31129E901900DE9D51 /* WTDataCenter.m */; };
-		257AEA35129E901900DE9D51 /* WTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA33129E901900DE9D51 /* WTCoreDataStack.m */; };
+		257AEA34129E901900DE9D51 /* SMADataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA31129E901900DE9D51 /* SMADataCenter.m */; };
+		257AEA35129E901900DE9D51 /* SMACoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA33129E901900DE9D51 /* SMACoreDataStack.m */; };
 		257AEA4A129E902700DE9D51 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA49129E902700DE9D51 /* Reachability.m */; };
 		257AEA4F129E902A00DE9D51 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA4E129E902A00DE9D51 /* libFlurry.a */; };
 		257AEA53129E903B00DE9D51 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA52129E903B00DE9D51 /* SystemConfiguration.framework */; };
-		257AEA6E129E910900DE9D51 /* WoWTalentPro.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA6D129E910900DE9D51 /* WoWTalentPro.xcdatamodel */; };
+		257AEA6E129E910900DE9D51 /* TalentPad.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA6D129E910900DE9D51 /* TalentPad.xcdatamodel */; };
 		257AEAB3129E92AB00DE9D51 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEAAE129E92AB00DE9D51 /* Icon-72.png */; };
 		257AEAB4129E92AB00DE9D51 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEAAF129E92AB00DE9D51 /* Icon.png */; };
 		257AEAB5129E92AB00DE9D51 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEAB0129E92AB00DE9D51 /* Icon@2x.png */; };
 		257AEAEE129E945400DE9D51 /* LauncherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEAEC129E945400DE9D51 /* LauncherViewController.m */; };
 		257AEAEF129E945400DE9D51 /* LauncherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257AEAED129E945400DE9D51 /* LauncherViewController.xib */; };
 		257AEB2E129E968A00DE9D51 /* TalentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEB2C129E968A00DE9D51 /* TalentViewController.m */; };
-		257AEB2F129E968A00DE9D51 /* TalentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB2D129E968A00DE9D51 /* TalentViewController.xib */; };
 		257AEB92129E9C8400DE9D51 /* deathknight_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB82129E9C8400DE9D51 /* deathknight_0.png */; };
 		257AEB93129E9C8400DE9D51 /* deathknight_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB83129E9C8400DE9D51 /* deathknight_1.png */; };
 		257AEB94129E9C8400DE9D51 /* deathknight_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB84129E9C8400DE9D51 /* deathknight_2.png */; };
@@ -57,7 +98,7 @@
 		257AEB9F129E9C8400DE9D51 /* icon_warlock.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB90129E9C8400DE9D51 /* icon_warlock.png */; };
 		257AEBA0129E9C8400DE9D51 /* icon_warrior.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB91129E9C8400DE9D51 /* icon_warrior.png */; };
 		257AEBEC129E9F9500DE9D51 /* TalentButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEBEB129E9F9500DE9D51 /* TalentButton.m */; };
-		257AEBF0129E9FE500DE9D51 /* TalentButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBEF129E9FE500DE9D51 /* TalentButtonViewController.xib */; };
+		257AEBF0129E9FE500DE9D51 /* TalentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBEF129E9FE500DE9D51 /* TalentViewController.xib */; };
 		257AEC15129EA0A700DE9D51 /* across-left-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBF4129EA0A700DE9D51 /* across-left-green.png */; };
 		257AEC16129EA0A700DE9D51 /* across-left-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBF5129EA0A700DE9D51 /* across-left-grey.png */; };
 		257AEC17129EA0A700DE9D51 /* across-left-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBF6129EA0A700DE9D51 /* across-left-yellow.png */; };
@@ -91,10 +132,19 @@
 		257AEC33129EA0A700DE9D51 /* icon-over-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC12129EA0A700DE9D51 /* icon-over-green.png */; };
 		257AEC34129EA0A700DE9D51 /* icon-over-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC13129EA0A700DE9D51 /* icon-over-grey.png */; };
 		257AEC35129EA0A700DE9D51 /* icon-over-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC14129EA0A700DE9D51 /* icon-over-yellow.png */; };
-		257AEC38129EA21A00DE9D51 /* TalentButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEC37129EA21A00DE9D51 /* TalentButtonViewController.m */; };
 		257AEC80129EA91700DE9D51 /* 0000.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC7F129EA91700DE9D51 /* 0000.png */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2500E78C12B4D97000EB1987 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D6058900D05DD3D006BFB54 /* TalentPad */;
+			remoteInfo = TalentPad;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -132,19 +182,42 @@
 		2500E4F112B49A0100EB1987 /* TreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeViewController.h; sourceTree = "<group>"; };
 		2500E4F212B49A0100EB1987 /* TreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeViewController.m; sourceTree = "<group>"; };
 		2500E4F312B49A0100EB1987 /* TreeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreeViewController.xib; sourceTree = "<group>"; };
+		2500E63712B4CA0D00EB1987 /* Mastery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mastery.h; sourceTree = "<group>"; };
+		2500E63812B4CA0D00EB1987 /* Mastery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mastery.m; sourceTree = "<group>"; };
+		2500E63912B4CA0D00EB1987 /* Rank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rank.h; sourceTree = "<group>"; };
+		2500E63A12B4CA0D00EB1987 /* Rank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rank.m; sourceTree = "<group>"; };
+		2500E63B12B4CA0D00EB1987 /* PrimarySpell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimarySpell.h; sourceTree = "<group>"; };
+		2500E63C12B4CA0D00EB1987 /* PrimarySpell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimarySpell.m; sourceTree = "<group>"; };
+		2500E63D12B4CA0D00EB1987 /* Talent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Talent.h; sourceTree = "<group>"; };
+		2500E63E12B4CA0D00EB1987 /* Talent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Talent.m; sourceTree = "<group>"; };
+		2500E63F12B4CA0D00EB1987 /* TalentTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentTree.h; sourceTree = "<group>"; };
+		2500E64012B4CA0D00EB1987 /* TalentTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalentTree.m; sourceTree = "<group>"; };
+		2500E64112B4CA0D00EB1987 /* CharacterClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterClass.h; sourceTree = "<group>"; };
+		2500E64212B4CA0D00EB1987 /* CharacterClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterClass.m; sourceTree = "<group>"; };
+		2500E6B012B4D34E00EB1987 /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
+		2500E6C812B4D37300EB1987 /* primarySpells.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primarySpells.json; sourceTree = "<group>"; };
+		2500E6C912B4D37300EB1987 /* talent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = talent.json; sourceTree = "<group>"; };
+		2500E6CA12B4D37300EB1987 /* talentAbility.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = talentAbility.json; sourceTree = "<group>"; };
+		2500E6CB12B4D37300EB1987 /* warrior.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warrior.json; sourceTree = "<group>"; };
+		2500E6D012B4D39000EB1987 /* CoreDataTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTests.h; sourceTree = "<group>"; };
+		2500E6D112B4D39000EB1987 /* CoreDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTests.m; sourceTree = "<group>"; };
+		2500E78612B4D96B00EB1987 /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2500E78712B4D96B00EB1987 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		2500E79F12B4D9CC00EB1987 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		2500E89012B4E03E00EB1987 /* masteries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = masteries.json; sourceTree = "<group>"; };
 		257AEA22129E8F8900DE9D51 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		257AEA27129E8FB900DE9D51 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		257AEA30129E901900DE9D51 /* WTDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTDataCenter.h; sourceTree = "<group>"; };
-		257AEA31129E901900DE9D51 /* WTDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTDataCenter.m; sourceTree = "<group>"; };
-		257AEA32129E901900DE9D51 /* WTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTCoreDataStack.h; sourceTree = "<group>"; };
-		257AEA33129E901900DE9D51 /* WTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTCoreDataStack.m; sourceTree = "<group>"; };
+		257AEA30129E901900DE9D51 /* SMADataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMADataCenter.h; sourceTree = "<group>"; };
+		257AEA31129E901900DE9D51 /* SMADataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMADataCenter.m; sourceTree = "<group>"; };
+		257AEA32129E901900DE9D51 /* SMACoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMACoreDataStack.h; sourceTree = "<group>"; };
+		257AEA33129E901900DE9D51 /* SMACoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMACoreDataStack.m; sourceTree = "<group>"; };
 		257AEA48129E902700DE9D51 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		257AEA49129E902700DE9D51 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		257AEA4C129E902A00DE9D51 /* FlurryAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdDelegate.h; sourceTree = "<group>"; };
 		257AEA4D129E902A00DE9D51 /* FlurryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAPI.h; sourceTree = "<group>"; };
 		257AEA4E129E902A00DE9D51 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
 		257AEA52129E903B00DE9D51 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		257AEA6D129E910900DE9D51 /* WoWTalentPro.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; name = WoWTalentPro.xcdatamodel; path = Resources/WoWTalentPro.xcdatamodel; sourceTree = "<group>"; };
+		257AEA6D129E910900DE9D51 /* TalentPad.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; name = TalentPad.xcdatamodel; path = Resources/TalentPad.xcdatamodel; sourceTree = "<group>"; };
 		257AEAAE129E92AB00DE9D51 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		257AEAAF129E92AB00DE9D51 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		257AEAB0129E92AB00DE9D51 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
@@ -153,7 +226,6 @@
 		257AEAED129E945400DE9D51 /* LauncherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LauncherViewController.xib; sourceTree = "<group>"; };
 		257AEB2B129E968A00DE9D51 /* TalentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentViewController.h; sourceTree = "<group>"; };
 		257AEB2C129E968A00DE9D51 /* TalentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalentViewController.m; sourceTree = "<group>"; };
-		257AEB2D129E968A00DE9D51 /* TalentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalentViewController.xib; sourceTree = "<group>"; };
 		257AEB82129E9C8400DE9D51 /* deathknight_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deathknight_0.png; sourceTree = "<group>"; };
 		257AEB83129E9C8400DE9D51 /* deathknight_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deathknight_1.png; sourceTree = "<group>"; };
 		257AEB84129E9C8400DE9D51 /* deathknight_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deathknight_2.png; sourceTree = "<group>"; };
@@ -171,7 +243,7 @@
 		257AEB91129E9C8400DE9D51 /* icon_warrior.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_warrior.png; sourceTree = "<group>"; };
 		257AEBEA129E9F9500DE9D51 /* TalentButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentButton.h; sourceTree = "<group>"; };
 		257AEBEB129E9F9500DE9D51 /* TalentButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalentButton.m; sourceTree = "<group>"; };
-		257AEBEF129E9FE500DE9D51 /* TalentButtonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalentButtonViewController.xib; sourceTree = "<group>"; };
+		257AEBEF129E9FE500DE9D51 /* TalentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalentViewController.xib; sourceTree = "<group>"; };
 		257AEBF4129EA0A700DE9D51 /* across-left-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "across-left-green.png"; sourceTree = "<group>"; };
 		257AEBF5129EA0A700DE9D51 /* across-left-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "across-left-grey.png"; sourceTree = "<group>"; };
 		257AEBF6129EA0A700DE9D51 /* across-left-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "across-left-yellow.png"; sourceTree = "<group>"; };
@@ -205,8 +277,6 @@
 		257AEC12129EA0A700DE9D51 /* icon-over-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-over-green.png"; sourceTree = "<group>"; };
 		257AEC13129EA0A700DE9D51 /* icon-over-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-over-grey.png"; sourceTree = "<group>"; };
 		257AEC14129EA0A700DE9D51 /* icon-over-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-over-yellow.png"; sourceTree = "<group>"; };
-		257AEC36129EA21A00DE9D51 /* TalentButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentButtonViewController.h; sourceTree = "<group>"; };
-		257AEC37129EA21A00DE9D51 /* TalentButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalentButtonViewController.m; sourceTree = "<group>"; };
 		257AEC7F129EA91700DE9D51 /* 0000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0000.png; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -228,12 +298,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2500E78312B4D96B00EB1987 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2500E79E12B4D9CC00EB1987 /* CoreData.framework in Frameworks */,
+				2500E7A012B4D9CC00EB1987 /* CoreFoundation.framework in Frameworks */,
+				2500E7A112B4D9CC00EB1987 /* Foundation.framework in Frameworks */,
+				2500E7A212B4D9CC00EB1987 /* SystemConfiguration.framework in Frameworks */,
+				2500E7A312B4D9CC00EB1987 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2500E62712B4BE0900EB1987 /* TalentData */,
 				257AEA2B129E900E00DE9D51 /* Controllers */,
 				257AEA2C129E900E00DE9D51 /* CoreData */,
 				257AEA2D129E900E00DE9D51 /* Models */,
@@ -249,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* TalentPad.app */,
+				2500E78612B4D96B00EB1987 /* Tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -307,6 +391,35 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+		2500E5B712B4AB8900EB1987 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				2500E6C712B4D37300EB1987 /* json */,
+				2500E6D012B4D39000EB1987 /* CoreDataTests.h */,
+				2500E6D112B4D39000EB1987 /* CoreDataTests.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		2500E62712B4BE0900EB1987 /* TalentData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TalentData;
+			sourceTree = SOURCE_ROOT;
+		};
+		2500E6C712B4D37300EB1987 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				2500E89012B4E03E00EB1987 /* masteries.json */,
+				2500E6C812B4D37300EB1987 /* primarySpells.json */,
+				2500E6C912B4D37300EB1987 /* talent.json */,
+				2500E6CA12B4D37300EB1987 /* talentAbility.json */,
+				2500E6CB12B4D37300EB1987 /* warrior.json */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
 		257AEA2B129E900E00DE9D51 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,10 +434,7 @@
 				2500E4F312B49A0100EB1987 /* TreeViewController.xib */,
 				257AEB2B129E968A00DE9D51 /* TalentViewController.h */,
 				257AEB2C129E968A00DE9D51 /* TalentViewController.m */,
-				257AEB2D129E968A00DE9D51 /* TalentViewController.xib */,
-				257AEC36129EA21A00DE9D51 /* TalentButtonViewController.h */,
-				257AEC37129EA21A00DE9D51 /* TalentButtonViewController.m */,
-				257AEBEF129E9FE500DE9D51 /* TalentButtonViewController.xib */,
+				257AEBEF129E9FE500DE9D51 /* TalentViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -332,10 +442,10 @@
 		257AEA2C129E900E00DE9D51 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				257AEA30129E901900DE9D51 /* WTDataCenter.h */,
-				257AEA31129E901900DE9D51 /* WTDataCenter.m */,
-				257AEA32129E901900DE9D51 /* WTCoreDataStack.h */,
-				257AEA33129E901900DE9D51 /* WTCoreDataStack.m */,
+				257AEA30129E901900DE9D51 /* SMADataCenter.h */,
+				257AEA31129E901900DE9D51 /* SMADataCenter.m */,
+				257AEA32129E901900DE9D51 /* SMACoreDataStack.h */,
+				257AEA33129E901900DE9D51 /* SMACoreDataStack.m */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -343,6 +453,18 @@
 		257AEA2D129E900E00DE9D51 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2500E64112B4CA0D00EB1987 /* CharacterClass.h */,
+				2500E64212B4CA0D00EB1987 /* CharacterClass.m */,
+				2500E63F12B4CA0D00EB1987 /* TalentTree.h */,
+				2500E64012B4CA0D00EB1987 /* TalentTree.m */,
+				2500E63B12B4CA0D00EB1987 /* PrimarySpell.h */,
+				2500E63C12B4CA0D00EB1987 /* PrimarySpell.m */,
+				2500E63712B4CA0D00EB1987 /* Mastery.h */,
+				2500E63812B4CA0D00EB1987 /* Mastery.m */,
+				2500E63D12B4CA0D00EB1987 /* Talent.h */,
+				2500E63E12B4CA0D00EB1987 /* Talent.m */,
+				2500E63912B4CA0D00EB1987 /* Rank.h */,
+				2500E63A12B4CA0D00EB1987 /* Rank.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -508,8 +630,12 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				2500E5B712B4AB8900EB1987 /* Test */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				2500E6B012B4D34E00EB1987 /* Test-Info.plist */,
+				2500E78712B4D96B00EB1987 /* Tests-Info.plist */,
+				2500E79F12B4D9CC00EB1987 /* CoreFoundation.framework */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -530,7 +656,7 @@
 				257AEAAC129E92AB00DE9D51 /* Assets */,
 				257AEAB1129E92AB00DE9D51 /* Nibs */,
 				8D1107310486CEB800E47090 /* TalentPad-Info.plist */,
-				257AEA6D129E910900DE9D51 /* WoWTalentPro.xcdatamodel */,
+				257AEA6D129E910900DE9D51 /* TalentPad.xcdatamodel */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -567,6 +693,25 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* TalentPad.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2500E78512B4D96B00EB1987 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2500E78B12B4D96B00EB1987 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				2500E78112B4D96B00EB1987 /* Resources */,
+				2500E78212B4D96B00EB1987 /* Sources */,
+				2500E78312B4D96B00EB1987 /* Frameworks */,
+				2500E78412B4D96B00EB1987 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2500E78D12B4D97000EB1987 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 2500E78612B4D96B00EB1987 /* Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -590,6 +735,7 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* TalentPad */,
+				2500E78512B4D96B00EB1987 /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -603,7 +749,6 @@
 				257AEAB4129E92AB00DE9D51 /* Icon.png in Resources */,
 				257AEAB5129E92AB00DE9D51 /* Icon@2x.png in Resources */,
 				257AEAEF129E945400DE9D51 /* LauncherViewController.xib in Resources */,
-				257AEB2F129E968A00DE9D51 /* TalentViewController.xib in Resources */,
 				257AEB92129E9C8400DE9D51 /* deathknight_0.png in Resources */,
 				257AEB93129E9C8400DE9D51 /* deathknight_1.png in Resources */,
 				257AEB94129E9C8400DE9D51 /* deathknight_2.png in Resources */,
@@ -619,7 +764,7 @@
 				257AEB9E129E9C8400DE9D51 /* icon_shaman.png in Resources */,
 				257AEB9F129E9C8400DE9D51 /* icon_warlock.png in Resources */,
 				257AEBA0129E9C8400DE9D51 /* icon_warrior.png in Resources */,
-				257AEBF0129E9FE500DE9D51 /* TalentButtonViewController.xib in Resources */,
+				257AEBF0129E9FE500DE9D51 /* TalentViewController.xib in Resources */,
 				257AEC15129EA0A700DE9D51 /* across-left-green.png in Resources */,
 				257AEC16129EA0A700DE9D51 /* across-left-grey.png in Resources */,
 				257AEC17129EA0A700DE9D51 /* across-left-yellow.png in Resources */,
@@ -657,10 +802,43 @@
 				2500E42012B46A2F00EB1987 /* MainWindow.xib in Resources */,
 				2500E49A12B4936100EB1987 /* CalculatorViewController.xib in Resources */,
 				2500E4F512B49A0100EB1987 /* TreeViewController.xib in Resources */,
+				2500E6CC12B4D37300EB1987 /* primarySpells.json in Resources */,
+				2500E6CD12B4D37300EB1987 /* talent.json in Resources */,
+				2500E6CE12B4D37300EB1987 /* talentAbility.json in Resources */,
+				2500E6CF12B4D37300EB1987 /* warrior.json in Resources */,
+				2500E89112B4E03E00EB1987 /* masteries.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2500E78112B4D96B00EB1987 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2500E7BF12B4DA2300EB1987 /* primarySpells.json in Resources */,
+				2500E7C012B4DA2400EB1987 /* talent.json in Resources */,
+				2500E7C112B4DA2400EB1987 /* warrior.json in Resources */,
+				2500E7C212B4DA2500EB1987 /* talentAbility.json in Resources */,
+				2500E89212B4E03E00EB1987 /* masteries.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2500E78412B4D96B00EB1987 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -669,14 +847,13 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* TalentPadAppDelegate.m in Sources */,
-				257AEA34129E901900DE9D51 /* WTDataCenter.m in Sources */,
-				257AEA35129E901900DE9D51 /* WTCoreDataStack.m in Sources */,
+				257AEA34129E901900DE9D51 /* SMADataCenter.m in Sources */,
+				257AEA35129E901900DE9D51 /* SMACoreDataStack.m in Sources */,
 				257AEA4A129E902700DE9D51 /* Reachability.m in Sources */,
-				257AEA6E129E910900DE9D51 /* WoWTalentPro.xcdatamodel in Sources */,
+				257AEA6E129E910900DE9D51 /* TalentPad.xcdatamodel in Sources */,
 				257AEAEE129E945400DE9D51 /* LauncherViewController.m in Sources */,
 				257AEB2E129E968A00DE9D51 /* TalentViewController.m in Sources */,
 				257AEBEC129E9F9500DE9D51 /* TalentButton.m in Sources */,
-				257AEC38129EA21A00DE9D51 /* TalentButtonViewController.m in Sources */,
 				2500E48A12B492DA00EB1987 /* CDataScanner.m in Sources */,
 				2500E48B12B492DA00EB1987 /* CFilteringJSONSerializer.m in Sources */,
 				2500E48C12B492DA00EB1987 /* CJSONDeserializer_BlocksExtensions.m in Sources */,
@@ -690,10 +867,52 @@
 				2500E49412B492DA00EB1987 /* CJSONSerializer.m in Sources */,
 				2500E49912B4936100EB1987 /* CalculatorViewController.m in Sources */,
 				2500E4F412B49A0100EB1987 /* TreeViewController.m in Sources */,
+				2500E64312B4CA0D00EB1987 /* Mastery.m in Sources */,
+				2500E64412B4CA0D00EB1987 /* Rank.m in Sources */,
+				2500E64512B4CA0D00EB1987 /* PrimarySpell.m in Sources */,
+				2500E64612B4CA0D00EB1987 /* Talent.m in Sources */,
+				2500E64712B4CA0D00EB1987 /* TalentTree.m in Sources */,
+				2500E64812B4CA0D00EB1987 /* CharacterClass.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2500E78212B4D96B00EB1987 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2500E79312B4D99800EB1987 /* CoreDataTests.m in Sources */,
+				2500E79612B4D9A400EB1987 /* SMACoreDataStack.m in Sources */,
+				2500E79712B4D9A500EB1987 /* SMADataCenter.m in Sources */,
+				2500E7A812B4D9E100EB1987 /* CDataScanner.m in Sources */,
+				2500E7A912B4D9E200EB1987 /* CDataScanner_Extensions.m in Sources */,
+				2500E7AA12B4D9E300EB1987 /* CJSONDeserializer.m in Sources */,
+				2500E7AB12B4D9E300EB1987 /* CFilteringJSONSerializer.m in Sources */,
+				2500E7AC12B4D9E400EB1987 /* CJSONDeserializer_BlocksExtensions.m in Sources */,
+				2500E7AD12B4D9E500EB1987 /* CJSONScanner.m in Sources */,
+				2500E7AE12B4D9E500EB1987 /* CJSONSerializedData.m in Sources */,
+				2500E7AF12B4D9E600EB1987 /* CJSONSerializer.m in Sources */,
+				2500E7B012B4D9E600EB1987 /* NSCharacterSet_Extensions.m in Sources */,
+				2500E7B112B4D9E800EB1987 /* NSDictionary_JSONExtensions.m in Sources */,
+				2500E7B212B4D9E900EB1987 /* NSScanner_Extensions.m in Sources */,
+				2500E7B512B4D9F700EB1987 /* CharacterClass.m in Sources */,
+				2500E7B612B4D9F700EB1987 /* Mastery.m in Sources */,
+				2500E7B712B4D9F800EB1987 /* PrimarySpell.m in Sources */,
+				2500E7B812B4D9F800EB1987 /* Rank.m in Sources */,
+				2500E7B912B4D9F900EB1987 /* Talent.m in Sources */,
+				2500E7BA12B4D9FA00EB1987 /* TalentTree.m in Sources */,
+				2500E82112B4DB6300EB1987 /* TalentPad.xcdatamodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2500E78D12B4D97000EB1987 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D6058900D05DD3D006BFB54 /* TalentPad */;
+			targetProxy = 2500E78C12B4D97000EB1987 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
@@ -728,6 +947,66 @@
 				);
 				PRODUCT_NAME = TalentPad;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2500E78912B4D96B00EB1987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Tests;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2500E78A12B4D96B00EB1987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = "Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Tests;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -771,6 +1050,15 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2500E78B12B4D96B00EB1987 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2500E78912B4D96B00EB1987 /* Debug */,
+				2500E78A12B4D96B00EB1987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,5 +1,5 @@
 //
-//  WTDataCenter.h
+//  SMADataCenter.h
 //  TalentPad
 //
 //  Created by Peter Shih on 11/24/10.
@@ -13,7 +13,7 @@
  Static parent class that wraps data management, including parsing and core data operations.
  */
 
-@interface WTDataCenter : NSObject {
+@interface SMADataCenter : NSObject {
 
 }
 

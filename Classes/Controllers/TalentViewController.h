@@ -7,17 +7,33 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TalentButtonViewController.h"
 
-@interface TalentViewController : UIViewController <TalentButtonDelegate> {
-  IBOutlet UIView *_summaryView;
-  IBOutlet UIView *_talentView;
-  IBOutlet UIView *_glyphView;
-  NSString *_selectedClass;
-  NSMutableArray *_talentButtonArray;
+@protocol TalentDelegate <NSObject>
+@required
+- (void)talentTapped:(id)sender;
+@end
+
+@class Talent;
+
+typedef enum {
+  TalentStateDisabled = 0,
+  TalentStateEnabled = 1,
+  TalentStateMaxed = 2,
+  TalentStateFinished = 3
+} TalentState;
+
+@interface TalentViewController : UIViewController {
+  IBOutlet UIImageView *_talentBorderView;
+  IBOutlet UILabel *_talentLabel;
+  
+  Talent *_talent;
+  id <TalentDelegate> _delegate;
+  
+  NSInteger _state;
 }
 
-@property (nonatomic, retain) NSString *selectedClass;
-@property (nonatomic, retain) NSMutableArray *talentButtonArray;
+@property (nonatomic, assign) Talent *talent;
+@property (nonatomic, assign) id <TalentDelegate> delegate;
+@property (nonatomic, assign) NSInteger state;
 
 @end

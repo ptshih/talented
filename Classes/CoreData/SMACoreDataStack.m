@@ -1,24 +1,24 @@
 //
-//  WTCoreDataStack.m
+//  SMACoreDataStack.m
 //  TalentPad
 //
 //  Created by Peter Shih on 11/24/10.
 //  Copyright 2010 Seven Minute Apps. All rights reserved.
 //
 
-#import "WTCoreDataStack.h"
+#import "SMACoreDataStack.h"
 
 static NSPersistentStoreCoordinator *_persistentStoreCoordinator = nil;
 static NSManagedObjectModel *_managedObjectModel = nil;
 static NSManagedObjectContext *_managedObjectContext = nil;
 
-@interface WTCoreDataStack (Private)
+@interface SMACoreDataStack (Private)
 
 + (void)initPersistentStore;
 
 @end
 
-@implementation WTCoreDataStack
+@implementation SMACoreDataStack
 
 + (void)load {
   NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
@@ -34,13 +34,14 @@ static NSManagedObjectContext *_managedObjectContext = nil;
     _persistentStoreCoordinator = nil;
   }
   
-  NSURL *storeUrl = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent:@"wikinvest.sqlite"]];
+  NSURL *storeUrl = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent:@"talentpad.sqlite"]];
   NSError *error = nil;
   
   _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
   
   if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:nil error:&error]) {
     // Handle the error.
+    NSLog(@"failed to create persistent store");
   }  
 }
 

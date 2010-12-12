@@ -31,11 +31,11 @@
 #define ALog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
 
 // Detect Device Type
-static BOOL isDeviceIPad() {
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 30200
-  if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-    return YES; 
-  }
-#endif
-  return NO;
-}
+//static BOOL isDeviceIPad() {
+//#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 30200
+//  if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+//    return YES; 
+//  }
+//#endif
+//  return NO;
+//}

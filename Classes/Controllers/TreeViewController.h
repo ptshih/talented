@@ -8,14 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum {
+  TreeStateDisabled = 0,
+  TreeStateEnabled = 1
+} TreeState;
 
 @interface TreeViewController : UIViewController {
+  NSMutableArray *_talentArray;
+  NSArray *_pointsInTier;
   NSInteger _classId;
   NSInteger _treeNo;
   NSInteger _state;
   BOOL _isSpecTree;
 }
 
+@property (nonatomic, retain) NSMutableArray *talentArray;
+@property (nonatomic, retain) NSArray *pointsInTier;
 @property (nonatomic, assign) NSInteger classId;
 @property (nonatomic, assign) NSInteger treeNo;
 @property (nonatomic, assign) NSInteger state;

@@ -1,5 +1,5 @@
 //
-//  WTCoreDataStack.h
+//  SMACoreDataStack.h
 //  TalentPad
 //
 //  Created by Peter Shih on 11/24/10.
@@ -10,7 +10,7 @@
 #import <CoreData/CoreData.h>
 
 
-@interface WTCoreDataStack : NSObject {
+@interface SMACoreDataStack : NSObject {
 
 }
 

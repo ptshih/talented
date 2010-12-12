@@ -1,21 +1,21 @@
 //
-//  WTDataCenter.m
+//  SMADataCenter.m
 //  TalentPad
 //
 //  Created by Peter Shih on 11/24/10.
 //  Copyright 2010 Seven Minute Apps. All rights reserved.
 //
 
-#import "WTDataCenter.h"
+#import "SMADataCenter.h"
 #import "Constants.h"
 #import "CJSONDeserializer.h"
 #import "CJSONSerializer.h"
 
-@interface WTDataCenter (Private)
+@interface SMADataCenter (Private)
 
 @end
 
-@implementation WTDataCenter
+@implementation SMADataCenter
 
 #pragma mark JSON Parsing Helpers
 + (id)objectFromData:(NSData *)data {

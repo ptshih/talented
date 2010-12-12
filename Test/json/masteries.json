@@ -1,0 +1,9 @@
+[ {
+  "spellId" : 77219,
+  "name" : "Master Demonologist",
+  "icon" : "spell_shadow_shadowpact",
+  "reagents" : [ ],
+  "description" : "Increases the damage done by your demon servants and damage you deal while transformed into a demon by 12%.  Each point of Mastery increases damage by an additional 1.5%.",
+  "internal" : false,
+  "keyAbility" : false
+} ]

@@ -1,0 +1,21 @@
+[ {
+  "spellId" : 17962,
+  "name" : "Conflagrate",
+  "icon" : "spell_fire_fireball",
+  "cost" : "16% of base mana",
+  "range" : "40 yd range",
+  "castTime" : "Instant cast",
+  "cooldown" : "10 sec cooldown",
+  "reagents" : [ ],
+  "description" : "Instantly deals fire damage equal to 60% of your Immolate's periodic damage on the target.",
+  "internal" : false,
+  "keyAbility" : true
+}, {
+  "spellId" : 84739,
+  "name" : "Cataclysm",
+  "icon" : "spell_fire_meteorstorm",
+  "reagents" : [ ],
+  "description" : "Increases Fire spell damage by 25%.",
+  "internal" : false,
+  "keyAbility" : false
+} ]

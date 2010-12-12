@@ -9,11 +9,91 @@
 #import "TalentPadAppDelegate.h"
 #import "LauncherViewController.h"
 
+#import "SMADataCenter.h"
+#import "SMACoreDataStack.h"
+#import "CJSONDeserializer.h"
+#import "Talent.h"
+#import "PrimarySpell.h"
+#import "Mastery.h"
+
 @implementation TalentPadAppDelegate
 
 @synthesize window;
 @synthesize navigationController = _navigationController;
 @synthesize launcherViewController = _launcherViewController;
+
+- (void)doCoreDataTests {
+  [self talentAbilityTest];
+  [self primarySpellsTest];
+  [self masteriesTest];
+}
+
+- (void)talentAbilityTest {
+  NSString *filePath = [[NSBundle mainBundle] pathForResource:@"talentAbility" ofType:@"json"];
+  NSData *myData = [NSData dataWithContentsOfFile:filePath];
+  if (myData) {
+    NSLog(@"testing core data insert");
+    
+    NSDictionary *testDict = [[CJSONDeserializer deserializer] deserializeAsDictionary:myData error:nil];
+    
+    // Test core data
+    NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
+    
+    [Talent addTalentWithDictionary:testDict forTalentTree:nil inContext:context];
+    
+    if (context.hasChanges) {
+      if (![context save:nil]) {
+      }
+      NSLog(@"saving to core data");
+    }
+  }
+}
+
+- (void)primarySpellsTest {
+  NSString *filePath = [[NSBundle mainBundle] pathForResource:@"primarySpells" ofType:@"json"];
+  NSData *myData = [NSData dataWithContentsOfFile:filePath];
+  if (myData) {
+    NSLog(@"testing core data insert");
+    
+    NSArray *testArray = [[CJSONDeserializer deserializer] deserializeAsArray:myData error:nil];
+    
+    // Test core data
+    NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
+    
+    for (NSDictionary *testDict in testArray) {
+      [PrimarySpell addPrimarySpellWithDictionary:testDict forTalentTree:nil inContext:context];
+    }
+    
+    if (context.hasChanges) {
+      if (![context save:nil]) {
+      }
+      NSLog(@"saving to core data");
+    }
+  }
+}
+
+- (void)masteriesTest {
+  NSString *filePath = [[NSBundle mainBundle] pathForResource:@"masteries" ofType:@"json"];
+  NSData *myData = [NSData dataWithContentsOfFile:filePath];
+  if (myData) {
+    NSLog(@"testing core data insert");
+    
+    NSArray *testArray = [[CJSONDeserializer deserializer] deserializeAsArray:myData error:nil];
+    
+    // Test core data
+    NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
+    
+    for (NSDictionary *testDict in testArray) {
+      [Mastery addMasteryWithDictionary:testDict forTalentTree:nil inContext:context];
+    }
+    
+    if (context.hasChanges) {
+      if (![context save:nil]) {
+      }
+      NSLog(@"saving to core data");
+    }
+  }
+}
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -28,6 +108,8 @@
   
   [window addSubview:self.navigationController.view];
   [self.window makeKeyAndVisible];
+  
+  [self doCoreDataTests];
 
   return YES;
 }
