@@ -24,7 +24,8 @@ typedef enum {
 
 @interface TalentViewController : UIViewController {
   IBOutlet UIButton *_talentButton;
-  IBOutlet UIImageView *_talentBorderView;
+  IBOutlet UIImageView *_talentFrameView;
+  IBOutlet UIImageView *_talentPointsView;
   IBOutlet UILabel *_talentLabel;
   
   Talent *_talent;

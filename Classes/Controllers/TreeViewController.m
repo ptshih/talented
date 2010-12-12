@@ -12,8 +12,10 @@
 
 #define MARGIN_X 15.0
 #define MARGIN_Y 15.0
-#define SPACING_X 18.0
-#define SPACING_Y 18.0
+#define SPACING_X 12.0
+#define SPACING_Y 12.0
+#define T_WIDTH 68.0
+#define T_HEIGHT 68.0
 
 @interface TreeViewController (Private)
 
@@ -53,7 +55,7 @@
   for (Talent *talent in self.talentArray) {
     TalentViewController *tvc = [[TalentViewController alloc] initWithNibName:@"TalentViewController" bundle:nil];
     tvc.talent = talent;
-    tvc.view.frame = CGRectMake(((SPACING_X + 62) * [talent.col integerValue]), ((SPACING_Y + 58) * [talent.tier integerValue]), tvc.view.frame.size.width, tvc.view.frame.size.height);
+    tvc.view.frame = CGRectMake(((SPACING_X + T_WIDTH) * [talent.col integerValue]), ((SPACING_Y + T_HEIGHT) * [talent.tier integerValue]), tvc.view.frame.size.width, tvc.view.frame.size.height);
     [self.view addSubview:tvc.view];
     [tvc release];
   }

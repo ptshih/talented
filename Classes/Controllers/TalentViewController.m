@@ -12,6 +12,8 @@
 
 @interface TalentViewController (Private)
 
+- (void)prepareTalent;
+
 @end
 
 @implementation TalentViewController
@@ -31,12 +33,23 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   
+  [self prepareTalent];
+}
+
+- (void)prepareTalent {
   NSURL *imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL(self.talent.icon)];
   NSURLRequest *myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
   NSData *returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
   UIImage *myImage  = [[UIImage alloc] initWithData:returnData];
   
   [_talentButton setImage:myImage forState:UIControlStateNormal];
+  
+  // Setup Frame Border
+  if ([self.talent.keyAbility boolValue]) {
+    _talentFrameView.image = [UIImage imageNamed:@"ability-frame-yellow.png"];
+  } else {
+    _talentFrameView.image = [UIImage imageNamed:@"icon-frame-yellow.png"];
+  }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,10 +65,10 @@
   // e.g. self.myOutlet = nil;
 }
 
-
 - (void)dealloc {
   if (_talentButton) [_talentButton release];
-  if (_talentBorderView) [_talentBorderView release];
+  if (_talentFrameView) [_talentFrameView release];
+  if (_talentPointsView) [_talentPointsView release];
   if (_talentLabel) [_talentLabel release];
   [super dealloc];
 }

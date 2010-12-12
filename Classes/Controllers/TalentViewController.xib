@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="17"/>
+			<integer value="21"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -45,7 +45,7 @@
 					<object class="IBUIButton" id="39367085">
 						<reference key="NSNextResponder" ref="277909851"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{3, 3}, {46, 46}}</string>
+						<string key="NSFrame">{{4, 4}, {56, 56}}</string>
 						<reference key="NSSuperview" ref="277909851"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -72,34 +72,46 @@
 					<object class="IBUIImageView" id="318579499">
 						<reference key="NSNextResponder" ref="277909851"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrameSize">{62, 58}</string>
+						<string key="NSFrameSize">{64, 64}</string>
 						<reference key="NSSuperview" ref="277909851"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">icon-over-green.png</string>
+							<string key="NSResourceName">icon-frame-green.png</string>
+						</object>
+					</object>
+					<object class="IBUIImageView" id="396697255">
+						<reference key="NSNextResponder" ref="277909851"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{46, 46}, {22, 22}}</string>
+						<reference key="NSSuperview" ref="277909851"/>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<object class="NSCustomResource" key="IBUIImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">points-frame-green.png</string>
 						</object>
 					</object>
 					<object class="IBUILabel" id="413430706">
 						<reference key="NSNextResponder" ref="277909851"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{32, 40}, {32, 18}}</string>
+						<string key="NSFrame">{{46, 46}, {22, 22}}</string>
 						<reference key="NSSuperview" ref="277909851"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">0/0</string>
+						<string key="IBUIText">0</string>
 						<object class="NSFont" key="IBUIFont">
-							<string key="NSName">Helvetica</string>
-							<double key="NSSize">13</double>
+							<string key="NSName">Helvetica-Bold</string>
+							<double key="NSSize">14</double>
 							<int key="NSfFlags">16</int>
 						</object>
 						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4wNDE3MTc3MDggMSAwLjE3MjY2MjAzAA</bytes>
+							<int key="NSColorSpace">2</int>
+							<bytes key="NSRGB">MC4wOTgwMzkyMjQ3NCAwLjcxMzcyNTUwNzMgMC4wMTE3NjQ3MDcwNAA</bytes>
 						</object>
 						<reference key="IBUIHighlightedColor" ref="721641858"/>
 						<int key="IBUIBaselineAdjustment">1</int>
@@ -107,7 +119,7 @@
 						<int key="IBUITextAlignment">1</int>
 					</object>
 				</object>
-				<string key="NSFrameSize">{62, 58}</string>
+				<string key="NSFrameSize">{68, 68}</string>
 				<reference key="NSSuperview"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
@@ -129,14 +141,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">_talentBorderView</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="318579499"/>
-					</object>
-					<int key="connectionID">23</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">_talentLabel</string>
 						<reference key="source" ref="372490531"/>
 						<reference key="destination" ref="413430706"/>
@@ -150,6 +154,22 @@
 						<reference key="destination" ref="39367085"/>
 					</object>
 					<int key="connectionID">26</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">_talentFrameView</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="318579499"/>
+					</object>
+					<int key="connectionID">28</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">_talentPointsView</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="396697255"/>
+					</object>
+					<int key="connectionID">29</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -179,6 +199,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="39367085"/>
 							<reference ref="318579499"/>
+							<reference ref="396697255"/>
 							<reference ref="413430706"/>
 						</object>
 						<reference key="parent" ref="0"/>
@@ -193,13 +214,19 @@
 						<int key="objectID">21</int>
 						<reference key="object" ref="318579499"/>
 						<reference key="parent" ref="277909851"/>
-						<string key="objectName">talentBorderView</string>
+						<string key="objectName">talentFrameView</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">22</int>
 						<reference key="object" ref="413430706"/>
 						<reference key="parent" ref="277909851"/>
 						<string key="objectName">talentLabel</string>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">27</int>
+						<reference key="object" ref="396697255"/>
+						<reference key="parent" ref="277909851"/>
+						<string key="objectName">talentPointsView</string>
 					</object>
 				</object>
 			</object>
@@ -214,16 +241,26 @@
 					<string>19.IBPluginDependency</string>
 					<string>21.IBPluginDependency</string>
 					<string>22.IBPluginDependency</string>
+					<string>22.IBViewBoundsToFrameTransform</string>
+					<string>27.IBPluginDependency</string>
+					<string>27.IBViewBoundsToFrameTransform</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>TalentViewController</string>
 					<string>UIResponder</string>
-					<string>{{45, 937}, {62, 58}}</string>
+					<string>{{296, 702}, {68, 68}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAABAgAAAwiwAAA</bytes>
+					</object>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAABCGAAAwmgAAA</bytes>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="unlocalizedProperties">
@@ -242,7 +279,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">26</int>
+			<int key="maxID">29</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -254,38 +291,45 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>_talentBorderView</string>
 							<string>_talentButton</string>
+							<string>_talentFrameView</string>
 							<string>_talentLabel</string>
+							<string>_talentPointsView</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>UIImageView</string>
 							<string>UIButton</string>
+							<string>UIImageView</string>
 							<string>UILabel</string>
+							<string>UIImageView</string>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>_talentBorderView</string>
 							<string>_talentButton</string>
+							<string>_talentFrameView</string>
 							<string>_talentLabel</string>
+							<string>_talentPointsView</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBToOneOutletInfo">
-								<string key="name">_talentBorderView</string>
-								<string key="candidateClassName">UIImageView</string>
-							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">_talentButton</string>
 								<string key="candidateClassName">UIButton</string>
 							</object>
 							<object class="IBToOneOutletInfo">
+								<string key="name">_talentFrameView</string>
+								<string key="candidateClassName">UIImageView</string>
+							</object>
+							<object class="IBToOneOutletInfo">
 								<string key="name">_talentLabel</string>
 								<string key="candidateClassName">UILabel</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">_talentPointsView</string>
+								<string key="candidateClassName">UIImageView</string>
 							</object>
 						</object>
 					</object>
@@ -515,8 +559,17 @@
 		<string key="IBDocument.LastKnownRelativeProjectPath">../../TalentPad.xcodeproj</string>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">icon-over-green.png</string>
-			<string key="NS.object.0">{62, 60}</string>
+			<bool key="EncodedWithXMLCoder">YES</bool>
+			<object class="NSArray" key="dict.sortedKeys">
+				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>icon-frame-green.png</string>
+				<string>points-frame-green.png</string>
+			</object>
+			<object class="NSMutableArray" key="dict.values">
+				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>{64, 64}</string>
+				<string>{22, 22}</string>
+			</object>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">132</string>
 	</data>
