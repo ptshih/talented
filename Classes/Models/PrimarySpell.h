@@ -14,13 +14,13 @@
 {
 }
 
-@property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSString * primarySpellName;
 @property (nonatomic, retain) NSString * cost;
 @property (nonatomic, retain) NSString * castTime;
 @property (nonatomic, retain) NSString * reagents;
 @property (nonatomic, retain) NSString * requires;
 @property (nonatomic, retain) NSString * cooldown;
-@property (nonatomic, retain) NSString * range;
+@property (nonatomic, retain) NSString * spellRange;
 @property (nonatomic, retain) NSNumber * keyAbility;
 @property (nonatomic, retain) NSNumber * spellId;
 @property (nonatomic, retain) NSString * icon;

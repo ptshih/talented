@@ -19,7 +19,7 @@
 @property (nonatomic, retain) NSString * cooldown;
 @property (nonatomic, retain) NSString * requires;
 @property (nonatomic, retain) NSString * reagents;
-@property (nonatomic, retain) NSString * range;
+@property (nonatomic, retain) NSString * spellRange;
 @property (nonatomic, retain) NSNumber * rank;
 @property (nonatomic, retain) NSString * tooltip;
 @property (nonatomic, retain) Talent * talent;

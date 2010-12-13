@@ -27,14 +27,14 @@
 #pragma mark Class Selection
 - (IBAction)paladin {
   CalculatorViewController *cvc = [[CalculatorViewController alloc] initWithNibName:@"CalculatorViewController" bundle:nil];
-  cvc.classId = 2;
+  cvc.characterClassId = 2;
   [self.navigationController pushViewController:cvc animated:YES];
   [cvc release];
 }
 
 - (IBAction)warrior {
   CalculatorViewController *cvc = [[CalculatorViewController alloc] initWithNibName:@"CalculatorViewController" bundle:nil];
-  cvc.classId = 1;
+  cvc.characterClassId = 1;
   [self.navigationController pushViewController:cvc animated:YES];
   [cvc release];
 }

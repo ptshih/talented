@@ -19,7 +19,7 @@
 @property (nonatomic, retain) NSString * tooltip;
 @property (nonatomic, retain) NSNumber * masteryId;
 @property (nonatomic, retain) NSString * icon;
-@property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSString * masteryName;
 @property (nonatomic, retain) TalentTree * talentTree;
 
 + (Mastery *)addMasteryWithDictionary:(NSDictionary *)dictionary forTalentTree:(TalentTree *)talentTree inContext:(NSManagedObjectContext *)context;

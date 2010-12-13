@@ -13,7 +13,7 @@
 @implementation Talent 
 
 @dynamic col;
-@dynamic name;
+@dynamic talentName;
 @dynamic talentId;
 @dynamic tier;
 @dynamic req;
@@ -30,7 +30,7 @@
     
     newTalent.talentId = [dictionary objectForKey:@"id"];
     newTalent.req = [dictionary objectForKey:@"req"];
-    newTalent.name = [dictionary objectForKey:@"name"];
+    newTalent.talentName = [dictionary objectForKey:@"name"];
     newTalent.icon = [dictionary objectForKey:@"icon"];
     newTalent.col = [dictionary objectForKey:@"x"];
     newTalent.tier = [dictionary objectForKey:@"y"];

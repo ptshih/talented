@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="21"/>
+			<integer value="17"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -47,7 +47,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{4, 4}, {56, 56}}</string>
 						<reference key="NSSuperview" ref="277909851"/>
-						<object class="NSColor" key="IBUIBackgroundColor" id="974765048">
+						<object class="NSColor" key="IBUIBackgroundColor" id="542861176">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MCAwAA</bytes>
 						</object>
@@ -78,7 +78,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrameSize">{64, 64}</string>
 						<reference key="NSSuperview" ref="277909851"/>
-						<reference key="IBUIBackgroundColor" ref="974765048"/>
+						<reference key="IBUIBackgroundColor" ref="542861176"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
@@ -86,12 +86,12 @@
 							<string key="NSResourceName">icon-frame-gray.png</string>
 						</object>
 					</object>
-					<object class="IBUIImageView" id="855568042">
+					<object class="IBUIImageView" id="456611511">
 						<reference key="NSNextResponder" ref="277909851"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{46, 46}, {22, 22}}</string>
 						<reference key="NSSuperview" ref="277909851"/>
-						<reference key="IBUIBackgroundColor" ref="974765048"/>
+						<reference key="IBUIBackgroundColor" ref="542861176"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
@@ -104,7 +104,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{46, 46}, {22, 22}}</string>
 						<reference key="NSSuperview" ref="277909851"/>
-						<reference key="IBUIBackgroundColor" ref="974765048"/>
+						<reference key="IBUIBackgroundColor" ref="542861176"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -118,7 +118,7 @@
 						</object>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">2</int>
-							<bytes key="NSRGB">MC4wOTgwMzkyMjQ3NCAwLjcxMzcyNTUwNzMgMC4wMTE3NjQ3MDcwNAA</bytes>
+							<bytes key="NSRGB">MC4wOTgwMzkyMjQ3NCAwLjcxMzcyNTUwNzMgMAA</bytes>
 						</object>
 						<reference key="IBUIHighlightedColor" ref="721641858"/>
 						<int key="IBUIBaselineAdjustment">1</int>
@@ -128,7 +128,7 @@
 				</object>
 				<string key="NSFrameSize">{68, 68}</string>
 				<reference key="NSSuperview"/>
-				<reference key="IBUIBackgroundColor" ref="974765048"/>
+				<reference key="IBUIBackgroundColor" ref="542861176"/>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
 		</object>
@@ -171,7 +171,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">_talentPointsView</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="855568042"/>
+						<reference key="destination" ref="456611511"/>
 					</object>
 					<int key="connectionID">29</int>
 				</object>
@@ -212,7 +212,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="39367085"/>
 							<reference ref="318579499"/>
-							<reference ref="855568042"/>
+							<reference ref="456611511"/>
 							<reference ref="413430706"/>
 						</object>
 						<reference key="parent" ref="0"/>
@@ -237,7 +237,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">27</int>
-						<reference key="object" ref="855568042"/>
+						<reference key="object" ref="456611511"/>
 						<reference key="parent" ref="277909851"/>
 						<string key="objectName">talentPointsView</string>
 					</object>

@@ -15,8 +15,8 @@
 }
 
 @property (nonatomic, retain) NSString * powerType;
-@property (nonatomic, retain) NSNumber * classId;
-@property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSNumber * characterClassId;
+@property (nonatomic, retain) NSString * characterClassName;
 @property (nonatomic, retain) NSSet* talentTrees;
 
 + (CharacterClass *)addCharacterClassWithDictionary:(NSDictionary *)dictionary inContext:(NSManagedObjectContext *)context;

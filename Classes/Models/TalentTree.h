@@ -23,7 +23,7 @@
 @property (nonatomic, retain) NSString * tooltip;
 @property (nonatomic, retain) NSString * backgroundImage;
 @property (nonatomic, retain) NSString * icon;
-@property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSString * talentTreeName;
 @property (nonatomic, retain) NSSet* primarySpells;
 @property (nonatomic, retain) NSSet* masteries;
 @property (nonatomic, retain) CharacterClass * characterClass;

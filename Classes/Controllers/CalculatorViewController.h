@@ -15,21 +15,26 @@ typedef enum {
   CalculatorStateAllEnabled = 2
 } CalculatorState;
 
+@class TooltipViewController;
+
 @interface CalculatorViewController : UIViewController <TreeDelegate> {
+  TooltipViewController *_tooltipViewController;
   NSArray *_treeArray;
   NSMutableArray *_treeViewArray;
-  NSInteger _classId;
+  NSInteger _characterClassId;
   NSInteger _specTreeNo;
   NSInteger _totalPoints;
   NSInteger _state;
 }
 
+@property (nonatomic, retain) TooltipViewController *tooltipViewController;
 @property (nonatomic, retain) NSArray *treeArray;
 @property (nonatomic, retain) NSMutableArray *treeViewArray;
-@property (nonatomic, assign) NSInteger classId;
+@property (nonatomic, assign) NSInteger characterClassId;
 @property (nonatomic, assign) NSInteger specTreeNo;
 @property (nonatomic, assign) NSInteger totalPoints;
 @property (nonatomic, assign) NSInteger state;
 
+- (void)hideTooltip;
 
 @end

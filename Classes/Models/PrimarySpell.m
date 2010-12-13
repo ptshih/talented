@@ -11,13 +11,13 @@
 
 @implementation PrimarySpell 
 
-@dynamic name;
+@dynamic primarySpellName;
 @dynamic cost;
 @dynamic castTime;
 @dynamic reagents;
 @dynamic requires;
 @dynamic cooldown;
-@dynamic range;
+@dynamic spellRange;
 @dynamic keyAbility;
 @dynamic spellId;
 @dynamic icon;
@@ -27,13 +27,13 @@
   if (dictionary) {
     PrimarySpell *newPrimarySpell = [NSEntityDescription insertNewObjectForEntityForName:@"PrimarySpell" inManagedObjectContext:context];
     
-    newPrimarySpell.name = [dictionary objectForKey:@"name"];
+    newPrimarySpell.primarySpellName = [dictionary objectForKey:@"name"];
     newPrimarySpell.cost = [dictionary objectForKey:@"cost"];
     newPrimarySpell.castTime = [dictionary objectForKey:@"castTime"];
 //    newPrimarySpell.reagents
     newPrimarySpell.requires = [dictionary objectForKey:@"requires"];
     newPrimarySpell.cooldown = [dictionary objectForKey:@"cooldown"];
-    newPrimarySpell.range = [dictionary objectForKey:@"range"];
+    newPrimarySpell.spellRange = [dictionary objectForKey:@"range"];
     newPrimarySpell.keyAbility = [dictionary objectForKey:@"keyAbility"];
     newPrimarySpell.spellId = [dictionary objectForKey:@"spellId"];
     newPrimarySpell.icon = [dictionary objectForKey:@"icon"];

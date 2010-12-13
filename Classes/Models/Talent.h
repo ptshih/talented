@@ -16,7 +16,7 @@
 }
 
 @property (nonatomic, retain) NSNumber * col;
-@property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSString * talentName;
 @property (nonatomic, retain) NSNumber * talentId;
 @property (nonatomic, retain) NSNumber * tier;
 @property (nonatomic, retain) NSNumber * req;

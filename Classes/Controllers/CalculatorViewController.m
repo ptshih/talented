@@ -7,9 +7,11 @@
 //
 
 #import "CalculatorViewController.h"
+#import "TooltipViewController.h"
 #import "SMACoreDataStack.h"
 #import "TalentTree.h"
 #import "TalentTree+Fetch.h"
+#import "Talent.h"
 #import "Constants.h"
 
 #define SPACING_X 16.0
@@ -24,14 +26,16 @@
 - (void)prepareTrees;
 - (void)updateStateFromTreeNo:(NSInteger)treeNo;
 - (void)updateTreeStateForTree:(NSInteger)treeNo;
+- (void)showTooltipForTalentView:(TalentViewController *)talentView inTree:(TreeViewController *)treeView;
 
 @end
 
 @implementation CalculatorViewController
 
+@synthesize tooltipViewController = _tooltipViewController;
 @synthesize treeArray = _treeArray;
 @synthesize treeViewArray = _treeViewArray;
-@synthesize classId = _classId;
+@synthesize characterClassId = _characterClassId;
 @synthesize specTreeNo = _specTreeNo;
 @synthesize totalPoints = _totalPoints;
 @synthesize state = _state;
@@ -40,7 +44,7 @@
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
     _treeViewArray = [[NSMutableArray alloc] init];
-    _classId = 0;
+    _characterClassId = 0;
     _specTreeNo = 1;
     _totalPoints = 0;
     _state = CalculatorStateEnabled;
@@ -62,7 +66,7 @@
   NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
   NSEntityDescription *entity = [NSEntityDescription entityForName:@"TalentTree" inManagedObjectContext:context];
   
-  NSFetchRequest *request = [TalentTree fetchRequestForTalentTreesWithClassId:self.classId];
+  NSFetchRequest *request = [TalentTree fetchRequestForTalentTreesWithCharacterClassId:self.characterClassId];
   [request setEntity:entity];
   
   // Set an ASC sort on treeNo
@@ -77,9 +81,9 @@
     self.treeArray = array;
   }
   
-  DLog(@"Loaded at index 0: %@", [[self.treeArray objectAtIndex:0] name]);
-  DLog(@"Loaded at index 1: %@", [[self.treeArray objectAtIndex:1] name]);
-  DLog(@"Loaded at index 2: %@", [[self.treeArray objectAtIndex:2] name]);
+  DLog(@"Loaded at index 0: %@", [[self.treeArray objectAtIndex:0] talentTreeName]);
+  DLog(@"Loaded at index 1: %@", [[self.treeArray objectAtIndex:1] talentTreeName]);
+  DLog(@"Loaded at index 2: %@", [[self.treeArray objectAtIndex:2] talentTreeName]);
 
 }
 
@@ -87,6 +91,7 @@
 - (void)prepareTrees {
   for (TalentTree *talentTree in self.treeArray) {
     TreeViewController *tvc = [[TreeViewController alloc] initWithNibName:@"TreeViewController" bundle:nil];
+    tvc.talentTree = talentTree;
     tvc.delegate = self;
     tvc.talentArray = [[talentTree talents] allObjects];
     tvc.treeNo = [[talentTree treeNo] integerValue];
@@ -165,20 +170,63 @@
 }
 
 #pragma mark TreeDelegate
-- (void)treeAdd:(TreeViewController *)sender {
-  DLog(@"Adding a point for tree: %d", sender.treeNo);
+- (void)treeAdd:(TreeViewController *)treeView forTalentView:(TalentViewController *)talentView {
+  DLog(@"Adding a point for tree: %d", treeView.treeNo);
   self.totalPoints++;
   
-  [self updateStateFromTreeNo:sender.treeNo];
+  [self showTooltipForTalentView:talentView inTree:treeView];
+  
+  [self updateStateFromTreeNo:treeView.treeNo];
 }
 
-- (void)treeSubtract:(TreeViewController *)sender {
-  DLog(@"Subtracting a point for tree: %d", sender.treeNo);
+- (void)treeSubtract:(TreeViewController *)treeView forTalentView:(TalentViewController *)talentView {
+  DLog(@"Subtracting a point for tree: %d", treeView.treeNo);
   self.totalPoints--;
   
-  [self updateStateFromTreeNo:sender.treeNo];
+  [self updateStateFromTreeNo:treeView.treeNo];
 }
 
+#pragma mark Tooltip Methods
+- (void)showTooltipForTalentView:(TalentViewController *)talentView inTree:(TreeViewController *)treeView {
+  if (!self.tooltipViewController) {
+    _tooltipViewController = [[TooltipViewController alloc] initWithNibName:@"TooltipViewController" bundle:nil];
+  }
+  
+  self.tooltipViewController.treeView = treeView;
+  self.tooltipViewController.talentView = talentView;
+	
+	// First set the frame to a large size
+  self.tooltipViewController.view.frame = CGRectMake(0, 0, 260, self.view.frame.size.height);
+  
+	
+	[self.tooltipViewController setInfo]; // Because this view is persistent, can't use init/viewdidload
+	
+	[self.tooltipViewController setTooltip]; // create the tooltip and setup frames
+  
+  NSInteger tier = [talentView.talent.tier integerValue];
+  
+	NSInteger scrollTop = (64 * tier);
+	
+  
+	NSInteger invertThreshold = 6;
+		
+	self.tooltipViewController.view.alpha = 0.0f;
+	[self.view addSubview:self.tooltipViewController.view];
+	[UIView beginAnimations:@"TooltipTransition" context:nil];
+	[UIView setAnimationCurve:UIViewAnimationCurveLinear];  
+	[UIView setAnimationDuration:0.2f];
+	self.tooltipViewController.view.alpha = 1.0f;
+	[UIView commitAnimations];
+}
+
+
+- (void)hideTooltip {
+	if(self.tooltipViewController != nil) {
+		[self.tooltipViewController.view removeFromSuperview];
+	}
+}
+
+#pragma mark Memory Management
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
   return UIInterfaceOrientationIsLandscape(interfaceOrientation);
 }
@@ -198,6 +246,7 @@
 
 
 - (void)dealloc {
+  if (_tooltipViewController) [_tooltipViewController release];
   if (_treeViewArray) [_treeViewArray release];
   if (_treeArray) [_treeArray release];
   [super dealloc];

@@ -16,14 +16,14 @@
 @dynamic tooltip;
 @dynamic masteryId;
 @dynamic icon;
-@dynamic name;
+@dynamic masteryName;
 @dynamic talentTree;
 
 + (Mastery *)addMasteryWithDictionary:(NSDictionary *)dictionary forTalentTree:(TalentTree *)talentTree inContext:(NSManagedObjectContext *)context {
   if (dictionary) {
     Mastery *newMastery = [NSEntityDescription insertNewObjectForEntityForName:@"Mastery" inManagedObjectContext:context];
     
-    newMastery.name = [dictionary objectForKey:@"name"];
+    newMastery.masteryName = [dictionary objectForKey:@"name"];
     newMastery.tooltip = [dictionary objectForKey:@"description"];
     newMastery.masteryId = [dictionary objectForKey:@"spellId"];
     newMastery.icon = [dictionary objectForKey:@"icon"];

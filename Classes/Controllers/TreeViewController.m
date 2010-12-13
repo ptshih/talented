@@ -36,11 +36,12 @@
 @synthesize talentViewDict = _talentViewDict;
 @synthesize pointsInTier = _pointsInTier;
 @synthesize pointsInTree = _pointsInTree;
-@synthesize classId = _classId;
+@synthesize characterClassId = _characterClassId;
 @synthesize treeNo = _treeNo;
 @synthesize state = _state;
 @synthesize isSpecTree = _isSpecTree;
 
+@synthesize talentTree = _talentTree;
 @synthesize delegate = _delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -53,7 +54,7 @@
     _pointsInTier = [[NSArray alloc] initWithObjects:[NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], nil];
     
     _pointsInTree = 0;
-    _classId = 0;
+    _characterClassId = 0;
     _treeNo = 0;
     _state = TreeStateDisabled;
   }
@@ -155,8 +156,8 @@
 }
 
 #pragma mark TalentDelegate
-- (void)talentAdd:(TalentViewController *)sender {
-  DLog(@"Trying to add a point for talent: %@", sender.talent);
+- (void)talentAdd:(TalentViewController *)talentView {
+  DLog(@"Trying to add a point for talent: %@", talentView.talent);
   
   if (self.state == TreeStateFinished) {
     return;
@@ -166,22 +167,22 @@
     return;
   }
   
-  if ([self canAddPoint:sender]) {
+  if ([self canAddPoint:talentView]) {
     // Update Tree's points
     self.pointsInTree++;
     
     // Update Talent's current rank
-    sender.currentRank++;
+    talentView.currentRank++;
     
     // Tell Calculator
     if (self.delegate) {
-      [self.delegate treeAdd:self];
+      [self.delegate treeAdd:self forTalentView:talentView];
     }
   }
 }
 
-- (void)talentSubtract:(TalentViewController *)sender {
-  DLog(@"Trying to subtract a point for talent: %@", sender.talent);
+- (void)talentSubtract:(TalentViewController *)talentView {
+  DLog(@"Trying to subtract a point for talent: %@", talentView.talent);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -199,9 +200,9 @@
 
 
 - (void)dealloc {
-  if(_talentArray) [_talentArray release];
-  if(_pointsInTier) [_pointsInTier release];
-  if(_talentViewDict) [_talentViewDict release];
+  if (_talentArray) [_talentArray release];
+  if (_pointsInTier) [_pointsInTier release];
+  if (_talentViewDict) [_talentViewDict release];
   [super dealloc];
 }
 

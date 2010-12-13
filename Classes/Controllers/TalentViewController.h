@@ -12,8 +12,8 @@
 
 @protocol TalentDelegate <NSObject>
 @required
-- (void)talentAdd:(TalentViewController *)sender;
-- (void)talentSubtract:(TalentViewController *)sender;
+- (void)talentAdd:(TalentViewController *)talentView;
+- (void)talentSubtract:(TalentViewController *)talentView;
 @end
 
 @class Talent;

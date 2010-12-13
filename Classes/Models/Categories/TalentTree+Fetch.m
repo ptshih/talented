@@ -11,8 +11,8 @@
 
 @implementation TalentTree (Fetch)
 
-+ (NSFetchRequest *)fetchRequestForTalentTreesWithClassId:(NSInteger)classId {
-  NSFetchRequest *request = [NSManagedObject fetchRequestWithName:@"getTalentTreesWithClassId" andSubstitutionVariables:[NSDictionary dictionaryWithObject:[NSNumber numberWithInt:classId] forKey:@"classId"]];
++ (NSFetchRequest *)fetchRequestForTalentTreesWithCharacterClassId:(NSInteger)characterClassId {
+  NSFetchRequest *request = [NSManagedObject fetchRequestWithName:@"getTalentTreesWithCharacterClassId" andSubstitutionVariables:[NSDictionary dictionaryWithObject:[NSNumber numberWithInt:characterClassId] forKey:@"characterClassId"]];
   return request;
 }
 

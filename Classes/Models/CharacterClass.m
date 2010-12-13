@@ -12,16 +12,16 @@
 @implementation CharacterClass 
 
 @dynamic powerType;
-@dynamic classId;
-@dynamic name;
+@dynamic characterClassId;
+@dynamic characterClassName;
 @dynamic talentTrees;
 
 + (CharacterClass *)addCharacterClassWithDictionary:(NSDictionary *)dictionary inContext:(NSManagedObjectContext *)context {
   if (dictionary) {
     CharacterClass *newCharacterClass = [NSEntityDescription insertNewObjectForEntityForName:@"CharacterClass" inManagedObjectContext:context];
     
-    newCharacterClass.classId = [dictionary objectForKey:@"classId"];
-    newCharacterClass.name = [dictionary objectForKey:@"name"];
+    newCharacterClass.characterClassId = [dictionary objectForKey:@"classId"];
+    newCharacterClass.characterClassName = [dictionary objectForKey:@"name"];
     newCharacterClass.powerType = [dictionary objectForKey:@"powerType"];
     
     // Hook up talentTrees relationship

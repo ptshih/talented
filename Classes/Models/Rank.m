@@ -16,7 +16,7 @@
 @dynamic cooldown;
 @dynamic requires;
 @dynamic reagents;
-@dynamic range;
+@dynamic spellRange;
 @dynamic rank;
 @dynamic tooltip;
 @dynamic talent;
@@ -31,7 +31,7 @@
     newRank.cooldown = [dictionary objectForKey:@"cooldown"];
     newRank.requires = [dictionary objectForKey:@"requires"];
 //    newRank.reagents = [dictionary objectForKey:@"reagents"];
-    newRank.range = [dictionary objectForKey:@"range"];
+    newRank.spellRange = [dictionary objectForKey:@"range"];
     newRank.tooltip = [dictionary objectForKey:@"description"];
     
     // Hook up talent relationship

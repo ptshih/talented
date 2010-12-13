@@ -20,7 +20,7 @@
 @dynamic tooltip;
 @dynamic backgroundImage;
 @dynamic icon;
-@dynamic name;
+@dynamic talentTreeName;
 @dynamic primarySpells;
 @dynamic masteries;
 @dynamic characterClass;
@@ -36,7 +36,7 @@
     newTalentTree.tooltip = [dictionary objectForKey:@"description"];
     newTalentTree.backgroundImage = [dictionary objectForKey:@"backgroundFile"];
     newTalentTree.icon = [dictionary objectForKey:@"icon"];
-    newTalentTree.name = [dictionary objectForKey:@"name"];
+    newTalentTree.talentTreeName = [dictionary objectForKey:@"name"];
 
     
     // Hook up talentTrees relationship

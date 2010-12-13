@@ -12,6 +12,6 @@
 
 @interface TalentTree (Fetch)
 
-+ (NSFetchRequest *)fetchRequestForTalentTreesWithClassId:(NSInteger)classId;
++ (NSFetchRequest *)fetchRequestForTalentTreesWithCharacterClassId:(NSInteger)characterClassId;
 
 @end
