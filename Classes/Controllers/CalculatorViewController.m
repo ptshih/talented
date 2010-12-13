@@ -22,8 +22,8 @@
 
 - (void)fetchTrees;
 - (void)prepareTrees;
-- (void)updateState;
-- (void)updateTreeState;
+- (void)updateStateFromTreeNo:(NSInteger)treeNo;
+- (void)updateTreeStateForTree:(NSInteger)treeNo;
 
 @end
 
@@ -97,23 +97,40 @@
     [tvc release];
   }
   
-  [self updateTreeState];
+  [self updateTreeStateForTree:0];
+  [self updateTreeStateForTree:1];
+  [self updateTreeStateForTree:2];
 }
 
 #pragma mark Calculator Logic
-- (void)updateState {
+- (void)updateStateFromTreeNo:(NSInteger)treeNo {
   // Check for max points in calculator
   if (self.totalPoints == MAX_POINTS) {
     self.state = CalculatorStateDisabled;
   } else {
-    self.state = CalculatorStateEnabled;
+    if (self.state != CalculatorStateAllEnabled) {
+      self.state = CalculatorStateEnabled;
+    }
   }
-
-  // Tell trees to update state
-  [self updateTreeState];
+  
+  // Check to see if spec tree has reached 31
+  if ([[self.treeViewArray objectAtIndex:self.specTreeNo] pointsInTree] >= SPEC_POINTS_LIMIT && self.state == CalculatorStateEnabled) {
+    self.state = CalculatorStateAllEnabled;
+    [self updateTreeStateForTree:0];
+    [self updateTreeStateForTree:1];
+    [self updateTreeStateForTree:2];
+  } else if ([[self.treeViewArray objectAtIndex:self.specTreeNo] pointsInTree] < SPEC_POINTS_LIMIT) {
+    self.state = CalculatorStateEnabled;
+    [self updateTreeStateForTree:0];
+    [self updateTreeStateForTree:1];
+    [self updateTreeStateForTree:2];
+  } else {
+    [self updateTreeStateForTree:treeNo];
+  }
+  
 }
 
-- (void)updateTreeState {
+- (void)updateTreeStateForTree:(NSInteger)treeNo {
   // If calculator is disabled, then tell all trees
   if (self.state == CalculatorStateDisabled) {
     for (TreeViewController *tvc in self.treeViewArray) {
@@ -152,14 +169,14 @@
   DLog(@"Adding a point for tree: %d", sender.treeNo);
   self.totalPoints++;
   
-  [self updateState];
+  [self updateStateFromTreeNo:sender.treeNo];
 }
 
 - (void)treeSubtract:(TreeViewController *)sender {
   DLog(@"Subtracting a point for tree: %d", sender.treeNo);
   self.totalPoints--;
   
-  [self updateState];
+  [self updateStateFromTreeNo:sender.treeNo];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

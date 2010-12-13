@@ -10,6 +10,15 @@
 #import "Talent.h"
 #import "Constants.h"
 
+static UIImage *_iconYellow = nil;
+static UIImage *_iconGreen = nil;
+static UIImage *_iconGray = nil;
+static UIImage *_pointsGreen = nil;
+static UIImage *_pointsYellow = nil;
+static UIImage *_abilityGray = nil;
+static UIImage *_abilityYellow = nil;
+      
+
 @interface TalentViewController (Private)
 
 - (void)prepareTalent;
@@ -23,6 +32,18 @@
 @synthesize delegate = _delegate;
 @synthesize state = _state;
 @synthesize currentRank = _currentRank;
+
++ (void)initialize {
+  _iconGray = [[UIImage imageNamed:@"icon-frame-gray.png"] retain];
+  _iconGreen = [[UIImage imageNamed:@"icon-frame-green.png"] retain];
+  _iconYellow = [[UIImage imageNamed:@"icon-frame-yellow.png"] retain];
+  
+  _pointsGreen = [[UIImage imageNamed:@"points-frame-green.png"] retain];
+  _pointsYellow = [[UIImage imageNamed:@"points-frame-yellow.png"] retain];
+  
+  _abilityGray = [[UIImage imageNamed:@"ability-frame-gray.png"] retain];
+  _abilityYellow = [[UIImage imageNamed:@"ability-frame-yellow.png"] retain];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -83,9 +104,9 @@
     _talentLabel.hidden = YES;
     _talentPointsView.hidden = YES;
     if ([self.talent.keyAbility boolValue]) {
-      _talentFrameView.image = [UIImage imageNamed:@"ability-frame-gray.png"];
+      _talentFrameView.image = _abilityGray;
     } else {
-      _talentFrameView.image = [UIImage imageNamed:@"icon-frame-gray.png"];
+      _talentFrameView.image = _iconGray;
     }
   }
 }
@@ -94,22 +115,22 @@
   // Setup Frame Border
   if ([self.talent.keyAbility boolValue]) {
     if (self.state == TalentStateDisabled) {
-      _talentFrameView.image = [UIImage imageNamed:@"ability-frame-gray.png"];
+      _talentFrameView.image = _abilityGray;
     } else {
-      _talentFrameView.image = [UIImage imageNamed:@"ability-frame-yellow.png"];
-      _talentPointsView.image = [UIImage imageNamed:@"points-frame-yellow.png"];
+      _talentFrameView.image = _abilityYellow;
+      _talentPointsView.image = _pointsYellow;
       _talentLabel.textColor = LABEL_COLOR_YELLOW;
     }
   } else {
     if (self.state == TalentStateDisabled) {
-      _talentFrameView.image = [UIImage imageNamed:@"icon-frame-gray.png"];
+      _talentFrameView.image = _iconGray;
     } else if (self.state == TalentStateEnabled) {
-      _talentFrameView.image = [UIImage imageNamed:@"icon-frame-green.png"];
-      _talentPointsView.image = [UIImage imageNamed:@"points-frame-green.png"];
+      _talentFrameView.image = _iconGreen;
+      _talentPointsView.image = _pointsGreen;
       _talentLabel.textColor = LABEL_COLOR_GREEN;
     } else {
-      _talentFrameView.image = [UIImage imageNamed:@"icon-frame-yellow.png"];
-      _talentPointsView.image = [UIImage imageNamed:@"points-frame-yellow.png"];
+      _talentFrameView.image = _iconYellow;
+      _talentPointsView.image = _pointsYellow;
       _talentLabel.textColor = LABEL_COLOR_YELLOW;
     }
   }

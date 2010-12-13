@@ -11,7 +11,8 @@
 
 typedef enum {
   CalculatorStateDisabled = 0,
-  CalculatorStateEnabled = 1
+  CalculatorStateEnabled = 1,
+  CalculatorStateAllEnabled = 2
 } CalculatorState;
 
 @interface CalculatorViewController : UIViewController <TreeDelegate> {

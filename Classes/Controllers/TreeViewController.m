@@ -144,7 +144,9 @@
 
 - (void)updateState {
   // Tell tree to update state for all talents
-  [self updateTalentState];
+  if (self.state == TreeStateEnabled) {
+    [self updateTalentState];
+  }
   
   // If we are finished, perform finish update state
   if (self.state == TreeStateFinished) {
