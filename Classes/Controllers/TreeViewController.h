@@ -29,6 +29,7 @@ typedef enum {
 } TreeState;
 
 @interface TreeViewController : UIViewController <TalentDelegate> {
+  IBOutlet UIImageView *_backgroundView;
   NSArray *_talentArray;
   NSMutableDictionary *_talentViewDict;
   NSMutableDictionary *_childDict; // This is an inverse requirement (child) dictionary used for canSubtract

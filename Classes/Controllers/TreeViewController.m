@@ -8,6 +8,7 @@
 
 #import "TreeViewController.h"
 #import "Talent.h"
+#import "TalentTree.h"
 #import "Constants.h"
 
 #define MARGIN_X 15.0
@@ -19,6 +20,7 @@
 
 @interface TreeViewController (Private)
 
+- (void)prepareBackground;
 - (void)prepareTalents;
 
 /**
@@ -69,8 +71,14 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   
+  [self prepareBackground];
+  
   // Prepare all the talents for this tree
   [self prepareTalents];
+}
+
+- (void)prepareBackground {
+  _backgroundView.image = [UIImage imageNamed:@"paladinholy.png"];
 }
 
 #pragma mark Prepare Talents
@@ -79,7 +87,7 @@
     TalentViewController *tvc = [[TalentViewController alloc] initWithNibName:@"TalentViewController" bundle:nil];
     tvc.talent = talent;
     tvc.delegate = self;
-    tvc.view.frame = CGRectMake(((SPACING_X + T_WIDTH) * [talent.col integerValue]), ((SPACING_Y + T_HEIGHT) * [talent.tier integerValue]), tvc.view.frame.size.width, tvc.view.frame.size.height);
+    tvc.view.frame = CGRectMake(8.0 + ((SPACING_X + T_WIDTH) * [talent.col integerValue]), 8.0 + ((SPACING_Y + T_HEIGHT) * [talent.tier integerValue]), tvc.view.frame.size.width, tvc.view.frame.size.height);
     [self.view addSubview:tvc.view];
     [self.talentViewDict setObject:tvc forKey:[talent.talentId stringValue]];
     if (talent.req) [self.childDict setObject:[talent.talentId stringValue] forKey:[talent.req stringValue]];
@@ -92,6 +100,11 @@
 
 #pragma mark Tree Logic
 - (BOOL)canAddPoint:(TalentViewController *)talentView {
+  // Check to see if tree is enabled
+  if (self.state != TreeStateEnabled) {
+    return NO;
+  }
+  
   // Check to see if talent is already maxed
   NSInteger maxRank = [talentView.talent.ranks count];
   if (talentView.currentRank == maxRank) {
@@ -184,9 +197,7 @@
 
 - (void)updateState {
   // Tell tree to update state for all talents
-  if (self.state == TreeStateEnabled) {
-    [self updateTalentState];
-  }
+  [self updateTalentState];
   
   // If we are finished, perform finish update state
   if (self.state == TreeStateFinished) {

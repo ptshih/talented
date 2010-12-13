@@ -69,6 +69,76 @@
 		2500E82112B4DB6300EB1987 /* TalentPad.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA6D129E910900DE9D51 /* TalentPad.xcdatamodel */; };
 		2500E89112B4E03E00EB1987 /* masteries.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E89012B4E03E00EB1987 /* masteries.json */; };
 		2500E89212B4E03E00EB1987 /* masteries.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E89012B4E03E00EB1987 /* masteries.json */; };
+		251369E912B620D000BEFD01 /* deathknightblood.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369CB12B620D000BEFD01 /* deathknightblood.png */; };
+		251369EA12B620D000BEFD01 /* deathknightfrost.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369CC12B620D000BEFD01 /* deathknightfrost.png */; };
+		251369EB12B620D000BEFD01 /* deathknightunholy.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369CD12B620D000BEFD01 /* deathknightunholy.png */; };
+		251369EC12B620D000BEFD01 /* druidbalance.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369CE12B620D000BEFD01 /* druidbalance.png */; };
+		251369ED12B620D000BEFD01 /* druidferalcombat.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369CF12B620D000BEFD01 /* druidferalcombat.png */; };
+		251369EE12B620D000BEFD01 /* druidrestoration.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D012B620D000BEFD01 /* druidrestoration.png */; };
+		251369EF12B620D000BEFD01 /* hunterbeastmastery.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D112B620D000BEFD01 /* hunterbeastmastery.png */; };
+		251369F012B620D000BEFD01 /* huntermarksmanship.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D212B620D000BEFD01 /* huntermarksmanship.png */; };
+		251369F112B620D000BEFD01 /* huntersurvival.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D312B620D000BEFD01 /* huntersurvival.png */; };
+		251369F212B620D000BEFD01 /* magearcane.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D412B620D000BEFD01 /* magearcane.png */; };
+		251369F312B620D000BEFD01 /* magefire.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D512B620D000BEFD01 /* magefire.png */; };
+		251369F412B620D000BEFD01 /* magefrost.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D612B620D000BEFD01 /* magefrost.png */; };
+		251369F512B620D000BEFD01 /* paladincombat.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D712B620D000BEFD01 /* paladincombat.png */; };
+		251369F612B620D000BEFD01 /* paladinholy.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D812B620D000BEFD01 /* paladinholy.png */; };
+		251369F712B620D000BEFD01 /* paladinprotection.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D912B620D000BEFD01 /* paladinprotection.png */; };
+		251369F812B620D000BEFD01 /* priestdiscipline.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369DA12B620D000BEFD01 /* priestdiscipline.png */; };
+		251369F912B620D000BEFD01 /* priestholy.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369DB12B620D000BEFD01 /* priestholy.png */; };
+		251369FA12B620D000BEFD01 /* priestshadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369DC12B620D000BEFD01 /* priestshadow.png */; };
+		251369FB12B620D000BEFD01 /* rogueassassination.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369DD12B620D000BEFD01 /* rogueassassination.png */; };
+		251369FC12B620D000BEFD01 /* roguecombat.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369DE12B620D000BEFD01 /* roguecombat.png */; };
+		251369FD12B620D000BEFD01 /* roguesubtlety.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369DF12B620D000BEFD01 /* roguesubtlety.png */; };
+		251369FE12B620D000BEFD01 /* shamanelementalcombat.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E012B620D000BEFD01 /* shamanelementalcombat.png */; };
+		251369FF12B620D000BEFD01 /* shamanenhancement.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E112B620D000BEFD01 /* shamanenhancement.png */; };
+		25136A0012B620D000BEFD01 /* shamanrestoration.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E212B620D000BEFD01 /* shamanrestoration.png */; };
+		25136A0112B620D000BEFD01 /* warlockcurses.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E312B620D000BEFD01 /* warlockcurses.png */; };
+		25136A0212B620D000BEFD01 /* warlockdestruction.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E412B620D000BEFD01 /* warlockdestruction.png */; };
+		25136A0312B620D000BEFD01 /* warlocksummoning.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E512B620D000BEFD01 /* warlocksummoning.png */; };
+		25136A0412B620D000BEFD01 /* warriorarms.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E612B620D000BEFD01 /* warriorarms.png */; };
+		25136A0512B620D000BEFD01 /* warriorfury.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E712B620D000BEFD01 /* warriorfury.png */; };
+		25136A0612B620D000BEFD01 /* warriorprotection.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E812B620D000BEFD01 /* warriorprotection.png */; };
+		25136A0712B620D000BEFD01 /* deathknightblood.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369CB12B620D000BEFD01 /* deathknightblood.png */; };
+		25136A0812B620D000BEFD01 /* deathknightfrost.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369CC12B620D000BEFD01 /* deathknightfrost.png */; };
+		25136A0912B620D000BEFD01 /* deathknightunholy.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369CD12B620D000BEFD01 /* deathknightunholy.png */; };
+		25136A0A12B620D000BEFD01 /* druidbalance.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369CE12B620D000BEFD01 /* druidbalance.png */; };
+		25136A0B12B620D000BEFD01 /* druidferalcombat.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369CF12B620D000BEFD01 /* druidferalcombat.png */; };
+		25136A0C12B620D000BEFD01 /* druidrestoration.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D012B620D000BEFD01 /* druidrestoration.png */; };
+		25136A0D12B620D000BEFD01 /* hunterbeastmastery.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D112B620D000BEFD01 /* hunterbeastmastery.png */; };
+		25136A0E12B620D000BEFD01 /* huntermarksmanship.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D212B620D000BEFD01 /* huntermarksmanship.png */; };
+		25136A0F12B620D000BEFD01 /* huntersurvival.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D312B620D000BEFD01 /* huntersurvival.png */; };
+		25136A1012B620D000BEFD01 /* magearcane.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D412B620D000BEFD01 /* magearcane.png */; };
+		25136A1112B620D000BEFD01 /* magefire.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D512B620D000BEFD01 /* magefire.png */; };
+		25136A1212B620D000BEFD01 /* magefrost.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D612B620D000BEFD01 /* magefrost.png */; };
+		25136A1312B620D000BEFD01 /* paladincombat.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D712B620D000BEFD01 /* paladincombat.png */; };
+		25136A1412B620D000BEFD01 /* paladinholy.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D812B620D000BEFD01 /* paladinholy.png */; };
+		25136A1512B620D000BEFD01 /* paladinprotection.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D912B620D000BEFD01 /* paladinprotection.png */; };
+		25136A1612B620D000BEFD01 /* priestdiscipline.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369DA12B620D000BEFD01 /* priestdiscipline.png */; };
+		25136A1712B620D000BEFD01 /* priestholy.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369DB12B620D000BEFD01 /* priestholy.png */; };
+		25136A1812B620D000BEFD01 /* priestshadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369DC12B620D000BEFD01 /* priestshadow.png */; };
+		25136A1912B620D000BEFD01 /* rogueassassination.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369DD12B620D000BEFD01 /* rogueassassination.png */; };
+		25136A1A12B620D000BEFD01 /* roguecombat.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369DE12B620D000BEFD01 /* roguecombat.png */; };
+		25136A1B12B620D000BEFD01 /* roguesubtlety.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369DF12B620D000BEFD01 /* roguesubtlety.png */; };
+		25136A1C12B620D000BEFD01 /* shamanelementalcombat.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E012B620D000BEFD01 /* shamanelementalcombat.png */; };
+		25136A1D12B620D000BEFD01 /* shamanenhancement.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E112B620D000BEFD01 /* shamanenhancement.png */; };
+		25136A1E12B620D000BEFD01 /* shamanrestoration.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E212B620D000BEFD01 /* shamanrestoration.png */; };
+		25136A1F12B620D000BEFD01 /* warlockcurses.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E312B620D000BEFD01 /* warlockcurses.png */; };
+		25136A2012B620D000BEFD01 /* warlockdestruction.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E412B620D000BEFD01 /* warlockdestruction.png */; };
+		25136A2112B620D000BEFD01 /* warlocksummoning.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E512B620D000BEFD01 /* warlocksummoning.png */; };
+		25136A2212B620D000BEFD01 /* warriorarms.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E612B620D000BEFD01 /* warriorarms.png */; };
+		25136A2312B620D000BEFD01 /* warriorfury.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E712B620D000BEFD01 /* warriorfury.png */; };
+		25136A2412B620D000BEFD01 /* warriorprotection.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E812B620D000BEFD01 /* warriorprotection.png */; };
+		25136A7012B623DA00BEFD01 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25136A6E12B623DA00BEFD01 /* SummaryViewController.m */; };
+		25136A7112B623DA00BEFD01 /* SummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25136A6F12B623DA00BEFD01 /* SummaryViewController.xib */; };
+		25136A7212B623DA00BEFD01 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25136A6E12B623DA00BEFD01 /* SummaryViewController.m */; };
+		25136A7312B623DA00BEFD01 /* SummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25136A6F12B623DA00BEFD01 /* SummaryViewController.xib */; };
+		25136A8512B6260100BEFD01 /* summary_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25136A8412B6260100BEFD01 /* summary_bg.jpg */; };
+		25136A8612B6260100BEFD01 /* summary_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25136A8412B6260100BEFD01 /* summary_bg.jpg */; };
+		25136A9012B6265000BEFD01 /* red_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136A8F12B6265000BEFD01 /* red_button.png */; };
+		25136A9112B6265000BEFD01 /* red_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136A8F12B6265000BEFD01 /* red_button.png */; };
+		25136A9312B6270400BEFD01 /* tree-overview-icon-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136A9212B6270400BEFD01 /* tree-overview-icon-frame.png */; };
+		25136A9412B6270400BEFD01 /* tree-overview-icon-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136A9212B6270400BEFD01 /* tree-overview-icon-frame.png */; };
 		257AEA28129E8FB900DE9D51 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA27129E8FB900DE9D51 /* CoreData.framework */; };
 		257AEA34129E901900DE9D51 /* SMADataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA31129E901900DE9D51 /* SMADataCenter.m */; };
 		257AEA35129E901900DE9D51 /* SMACoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA33129E901900DE9D51 /* SMACoreDataStack.m */; };
@@ -246,6 +316,42 @@
 		2500E78712B4D96B00EB1987 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		2500E79F12B4D9CC00EB1987 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		2500E89012B4E03E00EB1987 /* masteries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = masteries.json; sourceTree = "<group>"; };
+		251369CB12B620D000BEFD01 /* deathknightblood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deathknightblood.png; sourceTree = "<group>"; };
+		251369CC12B620D000BEFD01 /* deathknightfrost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deathknightfrost.png; sourceTree = "<group>"; };
+		251369CD12B620D000BEFD01 /* deathknightunholy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deathknightunholy.png; sourceTree = "<group>"; };
+		251369CE12B620D000BEFD01 /* druidbalance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = druidbalance.png; sourceTree = "<group>"; };
+		251369CF12B620D000BEFD01 /* druidferalcombat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = druidferalcombat.png; sourceTree = "<group>"; };
+		251369D012B620D000BEFD01 /* druidrestoration.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = druidrestoration.png; sourceTree = "<group>"; };
+		251369D112B620D000BEFD01 /* hunterbeastmastery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hunterbeastmastery.png; sourceTree = "<group>"; };
+		251369D212B620D000BEFD01 /* huntermarksmanship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huntermarksmanship.png; sourceTree = "<group>"; };
+		251369D312B620D000BEFD01 /* huntersurvival.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huntersurvival.png; sourceTree = "<group>"; };
+		251369D412B620D000BEFD01 /* magearcane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magearcane.png; sourceTree = "<group>"; };
+		251369D512B620D000BEFD01 /* magefire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magefire.png; sourceTree = "<group>"; };
+		251369D612B620D000BEFD01 /* magefrost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magefrost.png; sourceTree = "<group>"; };
+		251369D712B620D000BEFD01 /* paladincombat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paladincombat.png; sourceTree = "<group>"; };
+		251369D812B620D000BEFD01 /* paladinholy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paladinholy.png; sourceTree = "<group>"; };
+		251369D912B620D000BEFD01 /* paladinprotection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paladinprotection.png; sourceTree = "<group>"; };
+		251369DA12B620D000BEFD01 /* priestdiscipline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = priestdiscipline.png; sourceTree = "<group>"; };
+		251369DB12B620D000BEFD01 /* priestholy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = priestholy.png; sourceTree = "<group>"; };
+		251369DC12B620D000BEFD01 /* priestshadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = priestshadow.png; sourceTree = "<group>"; };
+		251369DD12B620D000BEFD01 /* rogueassassination.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rogueassassination.png; sourceTree = "<group>"; };
+		251369DE12B620D000BEFD01 /* roguecombat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roguecombat.png; sourceTree = "<group>"; };
+		251369DF12B620D000BEFD01 /* roguesubtlety.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roguesubtlety.png; sourceTree = "<group>"; };
+		251369E012B620D000BEFD01 /* shamanelementalcombat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shamanelementalcombat.png; sourceTree = "<group>"; };
+		251369E112B620D000BEFD01 /* shamanenhancement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shamanenhancement.png; sourceTree = "<group>"; };
+		251369E212B620D000BEFD01 /* shamanrestoration.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shamanrestoration.png; sourceTree = "<group>"; };
+		251369E312B620D000BEFD01 /* warlockcurses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warlockcurses.png; sourceTree = "<group>"; };
+		251369E412B620D000BEFD01 /* warlockdestruction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warlockdestruction.png; sourceTree = "<group>"; };
+		251369E512B620D000BEFD01 /* warlocksummoning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warlocksummoning.png; sourceTree = "<group>"; };
+		251369E612B620D000BEFD01 /* warriorarms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warriorarms.png; sourceTree = "<group>"; };
+		251369E712B620D000BEFD01 /* warriorfury.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warriorfury.png; sourceTree = "<group>"; };
+		251369E812B620D000BEFD01 /* warriorprotection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warriorprotection.png; sourceTree = "<group>"; };
+		25136A6D12B623DA00BEFD01 /* SummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = "<group>"; };
+		25136A6E12B623DA00BEFD01 /* SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
+		25136A6F12B623DA00BEFD01 /* SummaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummaryViewController.xib; sourceTree = "<group>"; };
+		25136A8412B6260100BEFD01 /* summary_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = summary_bg.jpg; sourceTree = "<group>"; };
+		25136A8F12B6265000BEFD01 /* red_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_button.png; sourceTree = "<group>"; };
+		25136A9212B6270400BEFD01 /* tree-overview-icon-frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tree-overview-icon-frame.png"; sourceTree = "<group>"; };
 		257AEA22129E8F8900DE9D51 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		257AEA27129E8FB900DE9D51 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		257AEA30129E901900DE9D51 /* SMADataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMADataCenter.h; sourceTree = "<group>"; };
@@ -502,6 +608,43 @@
 			path = json;
 			sourceTree = "<group>";
 		};
+		251369CA12B620D000BEFD01 /* backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				251369CB12B620D000BEFD01 /* deathknightblood.png */,
+				251369CC12B620D000BEFD01 /* deathknightfrost.png */,
+				251369CD12B620D000BEFD01 /* deathknightunholy.png */,
+				251369CE12B620D000BEFD01 /* druidbalance.png */,
+				251369CF12B620D000BEFD01 /* druidferalcombat.png */,
+				251369D012B620D000BEFD01 /* druidrestoration.png */,
+				251369D112B620D000BEFD01 /* hunterbeastmastery.png */,
+				251369D212B620D000BEFD01 /* huntermarksmanship.png */,
+				251369D312B620D000BEFD01 /* huntersurvival.png */,
+				251369D412B620D000BEFD01 /* magearcane.png */,
+				251369D512B620D000BEFD01 /* magefire.png */,
+				251369D612B620D000BEFD01 /* magefrost.png */,
+				251369D712B620D000BEFD01 /* paladincombat.png */,
+				251369D812B620D000BEFD01 /* paladinholy.png */,
+				251369D912B620D000BEFD01 /* paladinprotection.png */,
+				251369DA12B620D000BEFD01 /* priestdiscipline.png */,
+				251369DB12B620D000BEFD01 /* priestholy.png */,
+				251369DC12B620D000BEFD01 /* priestshadow.png */,
+				251369DD12B620D000BEFD01 /* rogueassassination.png */,
+				251369DE12B620D000BEFD01 /* roguecombat.png */,
+				251369DF12B620D000BEFD01 /* roguesubtlety.png */,
+				251369E012B620D000BEFD01 /* shamanelementalcombat.png */,
+				251369E112B620D000BEFD01 /* shamanenhancement.png */,
+				251369E212B620D000BEFD01 /* shamanrestoration.png */,
+				251369E312B620D000BEFD01 /* warlockcurses.png */,
+				251369E412B620D000BEFD01 /* warlockdestruction.png */,
+				251369E512B620D000BEFD01 /* warlocksummoning.png */,
+				251369E612B620D000BEFD01 /* warriorarms.png */,
+				251369E712B620D000BEFD01 /* warriorfury.png */,
+				251369E812B620D000BEFD01 /* warriorprotection.png */,
+			);
+			path = backgrounds;
+			sourceTree = "<group>";
+		};
 		257AEA2B129E900E00DE9D51 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -519,6 +662,9 @@
 				257AEBEF129E9FE500DE9D51 /* TalentViewController.xib */,
 				25DC757512B5A682000F70F6 /* TooltipViewController.h */,
 				25DC757612B5A682000F70F6 /* TooltipViewController.m */,
+				25136A6D12B623DA00BEFD01 /* SummaryViewController.h */,
+				25136A6E12B623DA00BEFD01 /* SummaryViewController.m */,
+				25136A6F12B623DA00BEFD01 /* SummaryViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -601,6 +747,7 @@
 		257AEAAC129E92AB00DE9D51 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				251369CA12B620D000BEFD01 /* backgrounds */,
 				25DC758012B5A77E000F70F6 /* Tooltip */,
 				25E080ED12B508A000646BC7 /* icon-frame-yellow.png */,
 				25E080EC12B508A000646BC7 /* icon-frame-green.png */,
@@ -609,6 +756,9 @@
 				25E080E112B5042A00646BC7 /* points-frame-green.png */,
 				25E080FD12B509D100646BC7 /* ability-frame-yellow.png */,
 				25E0810412B50AF100646BC7 /* ability-frame-gray.png */,
+				25136A8412B6260100BEFD01 /* summary_bg.jpg */,
+				25136A8F12B6265000BEFD01 /* red_button.png */,
+				25136A9212B6270400BEFD01 /* tree-overview-icon-frame.png */,
 				257AEB0B129E95BC00DE9D51 /* 1x */,
 				257AEAAD129E92AB00DE9D51 /* Icons */,
 			);
@@ -961,6 +1111,40 @@
 				25DC758C12B5A78C000F70F6 /* points_plus_on.png in Resources */,
 				25DC77F912B5CBA8000F70F6 /* points_minus_off.png in Resources */,
 				25DC78FB12B5D9F6000F70F6 /* tooltip_bg.png in Resources */,
+				251369E912B620D000BEFD01 /* deathknightblood.png in Resources */,
+				251369EA12B620D000BEFD01 /* deathknightfrost.png in Resources */,
+				251369EB12B620D000BEFD01 /* deathknightunholy.png in Resources */,
+				251369EC12B620D000BEFD01 /* druidbalance.png in Resources */,
+				251369ED12B620D000BEFD01 /* druidferalcombat.png in Resources */,
+				251369EE12B620D000BEFD01 /* druidrestoration.png in Resources */,
+				251369EF12B620D000BEFD01 /* hunterbeastmastery.png in Resources */,
+				251369F012B620D000BEFD01 /* huntermarksmanship.png in Resources */,
+				251369F112B620D000BEFD01 /* huntersurvival.png in Resources */,
+				251369F212B620D000BEFD01 /* magearcane.png in Resources */,
+				251369F312B620D000BEFD01 /* magefire.png in Resources */,
+				251369F412B620D000BEFD01 /* magefrost.png in Resources */,
+				251369F512B620D000BEFD01 /* paladincombat.png in Resources */,
+				251369F612B620D000BEFD01 /* paladinholy.png in Resources */,
+				251369F712B620D000BEFD01 /* paladinprotection.png in Resources */,
+				251369F812B620D000BEFD01 /* priestdiscipline.png in Resources */,
+				251369F912B620D000BEFD01 /* priestholy.png in Resources */,
+				251369FA12B620D000BEFD01 /* priestshadow.png in Resources */,
+				251369FB12B620D000BEFD01 /* rogueassassination.png in Resources */,
+				251369FC12B620D000BEFD01 /* roguecombat.png in Resources */,
+				251369FD12B620D000BEFD01 /* roguesubtlety.png in Resources */,
+				251369FE12B620D000BEFD01 /* shamanelementalcombat.png in Resources */,
+				251369FF12B620D000BEFD01 /* shamanenhancement.png in Resources */,
+				25136A0012B620D000BEFD01 /* shamanrestoration.png in Resources */,
+				25136A0112B620D000BEFD01 /* warlockcurses.png in Resources */,
+				25136A0212B620D000BEFD01 /* warlockdestruction.png in Resources */,
+				25136A0312B620D000BEFD01 /* warlocksummoning.png in Resources */,
+				25136A0412B620D000BEFD01 /* warriorarms.png in Resources */,
+				25136A0512B620D000BEFD01 /* warriorfury.png in Resources */,
+				25136A0612B620D000BEFD01 /* warriorprotection.png in Resources */,
+				25136A7112B623DA00BEFD01 /* SummaryViewController.xib in Resources */,
+				25136A8512B6260100BEFD01 /* summary_bg.jpg in Resources */,
+				25136A9012B6265000BEFD01 /* red_button.png in Resources */,
+				25136A9312B6270400BEFD01 /* tree-overview-icon-frame.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -984,6 +1168,40 @@
 				25E080FE12B509D100646BC7 /* ability-frame-yellow.png in Resources */,
 				25E0810512B50AF100646BC7 /* ability-frame-gray.png in Resources */,
 				25DC78FC12B5D9F6000F70F6 /* tooltip_bg.png in Resources */,
+				25136A0712B620D000BEFD01 /* deathknightblood.png in Resources */,
+				25136A0812B620D000BEFD01 /* deathknightfrost.png in Resources */,
+				25136A0912B620D000BEFD01 /* deathknightunholy.png in Resources */,
+				25136A0A12B620D000BEFD01 /* druidbalance.png in Resources */,
+				25136A0B12B620D000BEFD01 /* druidferalcombat.png in Resources */,
+				25136A0C12B620D000BEFD01 /* druidrestoration.png in Resources */,
+				25136A0D12B620D000BEFD01 /* hunterbeastmastery.png in Resources */,
+				25136A0E12B620D000BEFD01 /* huntermarksmanship.png in Resources */,
+				25136A0F12B620D000BEFD01 /* huntersurvival.png in Resources */,
+				25136A1012B620D000BEFD01 /* magearcane.png in Resources */,
+				25136A1112B620D000BEFD01 /* magefire.png in Resources */,
+				25136A1212B620D000BEFD01 /* magefrost.png in Resources */,
+				25136A1312B620D000BEFD01 /* paladincombat.png in Resources */,
+				25136A1412B620D000BEFD01 /* paladinholy.png in Resources */,
+				25136A1512B620D000BEFD01 /* paladinprotection.png in Resources */,
+				25136A1612B620D000BEFD01 /* priestdiscipline.png in Resources */,
+				25136A1712B620D000BEFD01 /* priestholy.png in Resources */,
+				25136A1812B620D000BEFD01 /* priestshadow.png in Resources */,
+				25136A1912B620D000BEFD01 /* rogueassassination.png in Resources */,
+				25136A1A12B620D000BEFD01 /* roguecombat.png in Resources */,
+				25136A1B12B620D000BEFD01 /* roguesubtlety.png in Resources */,
+				25136A1C12B620D000BEFD01 /* shamanelementalcombat.png in Resources */,
+				25136A1D12B620D000BEFD01 /* shamanenhancement.png in Resources */,
+				25136A1E12B620D000BEFD01 /* shamanrestoration.png in Resources */,
+				25136A1F12B620D000BEFD01 /* warlockcurses.png in Resources */,
+				25136A2012B620D000BEFD01 /* warlockdestruction.png in Resources */,
+				25136A2112B620D000BEFD01 /* warlocksummoning.png in Resources */,
+				25136A2212B620D000BEFD01 /* warriorarms.png in Resources */,
+				25136A2312B620D000BEFD01 /* warriorfury.png in Resources */,
+				25136A2412B620D000BEFD01 /* warriorprotection.png in Resources */,
+				25136A7312B623DA00BEFD01 /* SummaryViewController.xib in Resources */,
+				25136A8612B6260100BEFD01 /* summary_bg.jpg in Resources */,
+				25136A9112B6265000BEFD01 /* red_button.png in Resources */,
+				25136A9412B6270400BEFD01 /* tree-overview-icon-frame.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1049,6 +1267,7 @@
 				25DC75E012B5B523000F70F6 /* NSObject+ConvenienceMethods.m in Sources */,
 				25DC75E112B5B523000F70F6 /* NSString+ConvenienceMethods.m in Sources */,
 				25DC771112B5C29D000F70F6 /* DismissView.m in Sources */,
+				25136A7012B623DA00BEFD01 /* SummaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1081,6 +1300,7 @@
 				25E07EF612B4EDDF00646BC7 /* NSManagedObject+Fetch.m in Sources */,
 				25E083D012B5A45100646BC7 /* UIImage+Manipulation.m in Sources */,
 				25DC757A12B5A682000F70F6 /* TooltipViewController.m in Sources */,
+				25136A7212B623DA00BEFD01 /* SummaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,7 +15,7 @@
 #import "Constants.h"
 
 #define SPACING_X 16.0
-#define SPACING_Y 60.0 + 16.0
+#define SPACING_Y 16.0
 
 #define MAX_POINTS 41
 #define SPEC_POINTS_LIMIT 31
@@ -23,6 +23,7 @@
 @interface CalculatorViewController (Private)
 
 - (void)fetchTrees;
+- (void)prepareSummaries;
 - (void)prepareTrees;
 - (void)updateStateFromTreeNo:(NSInteger)treeNo;
 - (void)updateTreeStateForTree:(NSInteger)treeNo;
@@ -34,6 +35,7 @@
 
 @synthesize tooltipViewController = _tooltipViewController;
 @synthesize treeArray = _treeArray;
+@synthesize summaryViewArray = _summaryViewArray;
 @synthesize treeViewArray = _treeViewArray;
 @synthesize characterClassId = _characterClassId;
 @synthesize specTreeNo = _specTreeNo;
@@ -43,6 +45,7 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
+    _summaryViewArray = [[NSMutableArray alloc] init];
     _treeViewArray = [[NSMutableArray alloc] init];
     _characterClassId = 0;
     _specTreeNo = 1;
@@ -55,13 +58,32 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   
+  [_swapButton setTitle:NSLocalizedString(@"View Talents", @"View Summaries") forState:UIControlStateNormal];
+  
   // Fetch trees from core data
   [self fetchTrees];
+  
+  // Prepare Summaries
+  [self prepareSummaries];
   
   // Add Trees to View
   [self prepareTrees];
 }
 
+#pragma mark IBAction
+- (IBAction)swapViews {
+  UIView *activeView = [self.view.subviews objectAtIndex:0];
+  if ([activeView isEqual:_talentTreeView]) {
+    [_swapButton setTitle:NSLocalizedString(@"View Summaries", @"View Summaries") forState:UIControlStateNormal];
+  } else {
+    [_swapButton setTitle:NSLocalizedString(@"View Talents", @"View Summaries") forState:UIControlStateNormal];
+  }
+
+  [self.view exchangeSubviewAtIndex:0 withSubviewAtIndex:1];
+  
+}
+
+#pragma mark Fetch Trees from CoreData
 - (void)fetchTrees {
   NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
   NSEntityDescription *entity = [NSEntityDescription entityForName:@"TalentTree" inManagedObjectContext:context];
@@ -87,6 +109,20 @@
 
 }
 
+- (void)prepareSummaries {
+  NSInteger treeNo = 0;
+  for (TalentTree *talentTree in self.treeArray) {
+    treeNo = [[talentTree treeNo] integerValue];
+    SummaryViewController *svc = [[SummaryViewController alloc] initWithNibName:@"SummaryViewController" bundle:nil];
+    svc.talentTree = talentTree;
+    svc.delegate = self;
+    svc.view.frame = CGRectMake(SPACING_X + (SPACING_X * treeNo) + (320 * treeNo), 0, svc.view.frame.size.width, svc.view.frame.size.height);
+    [_summaryView addSubview:svc.view];
+    [self.summaryViewArray addObject:svc];
+    [svc release];
+  }
+}
+
 #pragma mark Prepare Trees
 - (void)prepareTrees {
   for (TalentTree *talentTree in self.treeArray) {
@@ -96,8 +132,8 @@
     tvc.talentArray = [[talentTree talents] allObjects];
     tvc.treeNo = [[talentTree treeNo] integerValue];
     tvc.isSpecTree = (tvc.treeNo == self.specTreeNo) ? YES : NO;
-    tvc.view.frame = CGRectMake(SPACING_X + (SPACING_X * tvc.treeNo) + (320 * tvc.treeNo), SPACING_Y, tvc.view.frame.size.width, tvc.view.frame.size.height);
-    [self.view addSubview:tvc.view];
+    tvc.view.frame = CGRectMake(SPACING_X + (SPACING_X * tvc.treeNo) + (320 * tvc.treeNo), 0, tvc.view.frame.size.width, tvc.view.frame.size.height);
+    [_talentTreeView addSubview:tvc.view];
     [self.treeViewArray addObject:tvc];
     [tvc release];
   }
@@ -188,6 +224,22 @@
   [self updateStateFromTreeNo:treeView.treeNo];
 }
 
+#pragma mark SummaryDelegate
+- (void)specTreeSelected:(NSInteger)treeNo {
+  // Update the primary spec tree
+  self.specTreeNo = treeNo;
+  for (TreeViewController *tree in self.treeViewArray) {
+    if (tree.treeNo == treeNo) {
+      tree.isSpecTree = YES;
+    } else {
+      tree.isSpecTree = NO;
+    }
+    [self updateTreeStateForTree:tree.treeNo];
+  }
+  
+  [self swapViews];
+}
+
 #pragma mark Tooltip Methods
 - (void)showTooltipForTalentView:(TalentViewController *)talentView inTree:(TreeViewController *)treeView {
   if (!self.tooltipViewController) {
@@ -240,6 +292,7 @@
 
 - (void)dealloc {
   if (_tooltipViewController) [_tooltipViewController release];
+  if (_summaryViewArray) [_summaryViewArray release];
   if (_treeViewArray) [_treeViewArray release];
   if (_treeArray) [_treeArray release];
   [super dealloc];
