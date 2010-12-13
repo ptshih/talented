@@ -15,10 +15,15 @@
 #define SPACING_X 16.0
 #define SPACING_Y 60.0 + 16.0
 
+#define MAX_POINTS 41
+#define SPEC_POINTS_LIMIT 31
+
 @interface CalculatorViewController (Private)
 
 - (void)fetchTrees;
 - (void)prepareTrees;
+- (void)updateState;
+- (void)updateTreeState;
 
 @end
 
@@ -36,9 +41,9 @@
   if (self) {
     _treeViewArray = [[NSMutableArray alloc] init];
     _classId = 0;
-    _specTreeNo = 0;
+    _specTreeNo = 1;
     _totalPoints = 0;
-    _state = CalculatorStateDisabled;
+    _state = CalculatorStateEnabled;
   }
   return self;
 }
@@ -85,20 +90,76 @@
     tvc.delegate = self;
     tvc.talentArray = [[talentTree talents] allObjects];
     tvc.treeNo = [[talentTree treeNo] integerValue];
+    tvc.isSpecTree = (tvc.treeNo == self.specTreeNo) ? YES : NO;
     tvc.view.frame = CGRectMake(SPACING_X + (SPACING_X * tvc.treeNo) + (320 * tvc.treeNo), SPACING_Y, tvc.view.frame.size.width, tvc.view.frame.size.height);
     [self.view addSubview:tvc.view];
     [self.treeViewArray addObject:tvc];
     [tvc release];
   }
+  
+  [self updateTreeState];
+}
+
+#pragma mark Calculator Logic
+- (void)updateState {
+  // Check for max points in calculator
+  if (self.totalPoints == MAX_POINTS) {
+    self.state = CalculatorStateDisabled;
+  } else {
+    self.state = CalculatorStateEnabled;
+  }
+
+  // Tell trees to update state
+  [self updateTreeState];
+}
+
+- (void)updateTreeState {
+  // If calculator is disabled, then tell all trees
+  if (self.state == CalculatorStateDisabled) {
+    for (TreeViewController *tvc in self.treeViewArray) {
+      tvc.state = TreeStateFinished;
+      [tvc updateState];
+    }
+    return;
+  }
+  
+  BOOL isSpecLimitReached = NO;
+  
+  // Check to see if spec tree has reached 31
+  if ([[self.treeViewArray objectAtIndex:self.specTreeNo] pointsInTree] >= SPEC_POINTS_LIMIT) {
+    isSpecLimitReached = YES;
+  }
+  
+  for (TreeViewController *tvc in self.treeViewArray) {
+    // If we have reached 31pts in spec tree, enable all 3 trees
+    if (isSpecLimitReached) {
+      tvc.state = TreeStateEnabled;
+    } else {
+      if (tvc.treeNo == self.specTreeNo) {
+        tvc.state = TreeStateEnabled;
+      } else {
+        tvc.state = TreeStateDisabled;
+      }
+    }
+
+    [tvc updateState];
+  }
+  
 }
 
 #pragma mark TreeDelegate
 - (void)treeAdd:(TreeViewController *)sender {
-
+  DLog(@"Adding a point for tree: %d", sender.treeNo);
+  self.totalPoints++;
+  
+  [self updateState];
 }
 
 - (void)treeSubtract:(TreeViewController *)sender {
+  DLog(@"Subtracting a point for tree: %d", sender.treeNo);
+  self.totalPoints--;
   
+  [self updateState];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

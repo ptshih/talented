@@ -21,8 +21,7 @@
 typedef enum {
   TalentStateDisabled = 0,
   TalentStateEnabled = 1,
-  TalentStateMaxed = 2,
-  TalentStateFinished = 3
+  TalentStateMaxed = 2
 } TalentState;
 
 @interface TalentViewController : UIViewController {
@@ -45,5 +44,6 @@ typedef enum {
 
 - (IBAction)talentTapped;
 - (void)updateState;
+- (void)updateStateFinished;
 
 @end

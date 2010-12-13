@@ -21,6 +21,13 @@
 
 - (void)prepareTalents;
 
+/**
+ Updates the state of all TalentViewController objects
+ */
+- (void)updateTalentState;
+
+- (void)updateTalentStateFinished;
+
 @end
 
 @implementation TreeViewController
@@ -69,29 +76,38 @@
     tvc.view.frame = CGRectMake(((SPACING_X + T_WIDTH) * [talent.col integerValue]), ((SPACING_Y + T_HEIGHT) * [talent.tier integerValue]), tvc.view.frame.size.width, tvc.view.frame.size.height);
     [self.view addSubview:tvc.view];
     [self.talentViewDict setObject:tvc forKey:[talent.talentId stringValue]];
-    [tvc updateState];
+//    [tvc updateState];
     [tvc release];
   }
+  
+  // Update state for all buttons
+  [self updateTalentState];
 }
 
 #pragma mark Tree Logic
-- (BOOL)canAddPoint:(Talent *)talent {
+- (BOOL)canAddPoint:(TalentViewController *)talentView {
+  // Check to see if talent is already maxed
+  NSInteger maxRank = [talentView.talent.ranks count];
+  if (talentView.currentRank == maxRank) {
+    return NO;
+  }
+  
   // Tier point requirement check
   // Points required in tree to add a point into a tier is = tier * 5
-  NSInteger tier = [talent.tier integerValue];
+  NSInteger tier = [talentView.talent.tier integerValue];
   if (!(self.pointsInTree >= (tier * 5))) {
     return NO;
   }
   
   // Check for parent requirement if exist
-  if (talent.req) {
-    TalentViewController *reqTalentViewController = [self.talentViewDict valueForKey:[talent.req stringValue]];
+  if (talentView.talent.req) {
+    TalentViewController *reqTalentViewController = [self.talentViewDict valueForKey:[talentView.talent.req stringValue]];
     if (reqTalentViewController) {
-      DLog(@"Talent: %@ found a req: %@", talent, [[self.talentViewDict valueForKey:[talent.req stringValue]] talent]);
+      DLog(@"Talent: %@ found a req: %@", talentView.talent, [[self.talentViewDict valueForKey:[talentView.talent.req stringValue]] talent]);
       
       // Check to see if parent is maxed out
-      NSInteger maxRank = [[reqTalentViewController.talent ranks] count];
-      if (!(reqTalentViewController.currentRank == maxRank)) {
+      NSInteger reqMaxRank = [[reqTalentViewController.talent ranks] count];
+      if (!(reqTalentViewController.currentRank == reqMaxRank)) {
         return NO;
       }
     }
@@ -100,25 +116,70 @@
   return YES;
 }
 
-- (BOOL)canSubtractPoint:(Talent *)talent {
+- (BOOL)canSubtractPoint:(TalentViewController *)talentView {
   return NO;
+}
+
+- (void)updateTalentState {
+  // Update state for all talents in this tree
+  for (TalentViewController *talentView in [self.talentViewDict allValues]) {
+    if (self.state == TreeStateDisabled) {
+      talentView.state = TalentStateDisabled;
+    } else if (talentView.currentRank == [talentView.talent.ranks count]) {    // Check for max
+      talentView.state = TalentStateMaxed;
+    } else if ([self canAddPoint:talentView]) {
+      talentView.state = TalentStateEnabled;
+    } else {
+      talentView.state = TalentStateDisabled;
+    }
+    [talentView updateState];
+  }
+}
+
+- (void)updateTalentStateFinished {
+  for (TalentViewController *talentView in [self.talentViewDict allValues]) {
+    [talentView updateStateFinished];
+  }
+}
+
+- (void)updateState {
+  // Tell tree to update state for all talents
+  [self updateTalentState];
+  
+  // If we are finished, perform finish update state
+  if (self.state == TreeStateFinished) {
+    [self updateTalentStateFinished];
+  }
 }
 
 #pragma mark TalentDelegate
 - (void)talentAdd:(TalentViewController *)sender {
-  DLog(@"talent add in Tree");
-  if ([self canAddPoint:sender.talent]) {
+  DLog(@"Trying to add a point for talent: %@", sender.talent);
+  
+  if (self.state == TreeStateFinished) {
+    return;
+  }
+  
+  if (self.state == TreeStateDisabled) {
+    return;
+  }
+  
+  if ([self canAddPoint:sender]) {
     // Update Tree's points
     self.pointsInTree++;
     
+    // Update Talent's current rank
     sender.currentRank++;
-    [sender updateState];
+    
+    // Tell Calculator
+    if (self.delegate) {
+      [self.delegate treeAdd:self];
+    }
   }
 }
 
-- (void)talentSubtract:(id)sender {
-  DLog(@"talent subtract in Tree");
-  [sender updateState];
+- (void)talentSubtract:(TalentViewController *)sender {
+  DLog(@"Trying to subtract a point for talent: %@", sender.talent);
 }
 
 - (void)didReceiveMemoryWarning {

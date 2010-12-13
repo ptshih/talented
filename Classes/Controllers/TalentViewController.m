@@ -13,6 +13,7 @@
 @interface TalentViewController (Private)
 
 - (void)prepareTalent;
+- (void)updateBorders;
 
 @end
 
@@ -47,20 +48,85 @@
   [_talentButton setImage:myImage forState:UIControlStateNormal];
   
   // Setup Frame Border
-  if ([self.talent.keyAbility boolValue]) {
-    _talentFrameView.image = [UIImage imageNamed:@"ability-frame-yellow.png"];
-  } else {
-    _talentFrameView.image = [UIImage imageNamed:@"icon-frame-yellow.png"];
-  }
+  [self updateBorders];
 }
 
 - (void)updateState {
   DLog(@"Talent: %@ Update State", self.talent);
   _talentLabel.text = [NSString stringWithFormat:@"%d", self.currentRank];
+  [self updateBorders];
+  
+  switch (self.state) {
+    case TalentStateDisabled:
+      _talentLabel.hidden = YES;
+      _talentPointsView.hidden = YES;
+      break;
+    case TalentStateEnabled:
+      _talentLabel.hidden = NO;
+      _talentPointsView.hidden = NO;
+      break;
+    case TalentStateMaxed:
+      _talentLabel.hidden = NO;
+      _talentPointsView.hidden = NO;
+      break;
+    default:
+      break;
+  }
+}
+
+- (void)updateStateFinished {
+  DLog(@"Talent: %@ Update State Finished", self.talent);
+  [self updateState];
+  
+  // If we are finished, hide all labels for enabled talents with 0 points
+  if (self.state == TalentStateEnabled && self.currentRank == 0) {
+    _talentLabel.hidden = YES;
+    _talentPointsView.hidden = YES;
+    if ([self.talent.keyAbility boolValue]) {
+      _talentFrameView.image = [UIImage imageNamed:@"ability-frame-gray.png"];
+    } else {
+      _talentFrameView.image = [UIImage imageNamed:@"icon-frame-gray.png"];
+    }
+  }
+}
+
+- (void)updateBorders {
+  // Setup Frame Border
+  if ([self.talent.keyAbility boolValue]) {
+    if (self.state == TalentStateDisabled) {
+      _talentFrameView.image = [UIImage imageNamed:@"ability-frame-gray.png"];
+    } else {
+      _talentFrameView.image = [UIImage imageNamed:@"ability-frame-yellow.png"];
+      _talentPointsView.image = [UIImage imageNamed:@"points-frame-yellow.png"];
+      _talentLabel.textColor = LABEL_COLOR_YELLOW;
+    }
+  } else {
+    if (self.state == TalentStateDisabled) {
+      _talentFrameView.image = [UIImage imageNamed:@"icon-frame-gray.png"];
+    } else if (self.state == TalentStateEnabled) {
+      _talentFrameView.image = [UIImage imageNamed:@"icon-frame-green.png"];
+      _talentPointsView.image = [UIImage imageNamed:@"points-frame-green.png"];
+      _talentLabel.textColor = LABEL_COLOR_GREEN;
+    } else {
+      _talentFrameView.image = [UIImage imageNamed:@"icon-frame-yellow.png"];
+      _talentPointsView.image = [UIImage imageNamed:@"points-frame-yellow.png"];
+      _talentLabel.textColor = LABEL_COLOR_YELLOW;
+    }
+  }
 }
 
 // Add a point for now
 - (IBAction)talentTapped {
+  // Check to see if this talent is disabled
+  if (self.state == TalentStateDisabled) {
+    return;
+  }
+
+  // Check to see if this talent is already maxed
+  if (self.state == TalentStateMaxed) {
+    return;
+  }
+      
   if (self.delegate) {
     [self.delegate talentAdd:self];
   }

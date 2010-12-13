@@ -19,7 +19,8 @@
 
 typedef enum {
   TreeStateDisabled = 0,
-  TreeStateEnabled = 1
+  TreeStateEnabled = 1,
+  TreeStateFinished = 2
 } TreeState;
 
 @interface TreeViewController : UIViewController <TalentDelegate> {
@@ -45,5 +46,10 @@ typedef enum {
 @property (nonatomic, assign) BOOL isSpecTree;
 
 @property (nonatomic, assign) id <TreeDelegate> delegate;
+
+/**
+ Update own state (tree) called by calculator
+ */
+- (void)updateState;
 
 @end
