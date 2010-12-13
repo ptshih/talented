@@ -8,6 +8,7 @@
 
 #import "TalentViewController.h"
 #import "Talent.h"
+#import "UIImage+Manipulation.h"
 #import "Constants.h"
 
 static UIImage *_iconYellow = nil;
@@ -17,7 +18,6 @@ static UIImage *_pointsGreen = nil;
 static UIImage *_pointsYellow = nil;
 static UIImage *_abilityGray = nil;
 static UIImage *_abilityYellow = nil;
-      
 
 @interface TalentViewController (Private)
 
@@ -66,7 +66,9 @@ static UIImage *_abilityYellow = nil;
   NSData *returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
   UIImage *myImage  = [[UIImage alloc] initWithData:returnData];
   
-  [_talentButton setImage:myImage forState:UIControlStateNormal];
+  _talentColor = myImage;
+  _talentGrayscale = [[UIImage convertToGrayscale:myImage] retain];
+  [_talentButton setImage:_talentColor forState:UIControlStateNormal];
   
   // Setup Frame Border
   [self updateBorders];
@@ -81,14 +83,17 @@ static UIImage *_abilityYellow = nil;
     case TalentStateDisabled:
       _talentLabel.hidden = YES;
       _talentPointsView.hidden = YES;
+      [_talentButton setImage:_talentGrayscale forState:UIControlStateNormal];
       break;
     case TalentStateEnabled:
       _talentLabel.hidden = NO;
       _talentPointsView.hidden = NO;
+      [_talentButton setImage:_talentColor forState:UIControlStateNormal];
       break;
     case TalentStateMaxed:
       _talentLabel.hidden = NO;
       _talentPointsView.hidden = NO;
+      [_talentButton setImage:_talentColor forState:UIControlStateNormal];
       break;
     default:
       break;
@@ -103,6 +108,7 @@ static UIImage *_abilityYellow = nil;
   if (self.state == TalentStateEnabled && self.currentRank == 0) {
     _talentLabel.hidden = YES;
     _talentPointsView.hidden = YES;
+    [_talentButton setImage:_talentGrayscale forState:UIControlStateNormal];
     if ([self.talent.keyAbility boolValue]) {
       _talentFrameView.image = _abilityGray;
     } else {
@@ -176,6 +182,8 @@ static UIImage *_abilityYellow = nil;
   if (_talentFrameView) [_talentFrameView release];
   if (_talentPointsView) [_talentPointsView release];
   if (_talentLabel) [_talentLabel release];
+  if (_talentColor) [_talentColor release];
+  if (_talentGrayscale) [_talentGrayscale release];
   [super dealloc];
 }
 

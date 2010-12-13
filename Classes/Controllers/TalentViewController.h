@@ -35,6 +35,10 @@ typedef enum {
   
   NSInteger _state;
   NSInteger _currentRank;
+  
+  UIImage *_talentGrayscale;
+  UIImage *_talentColor;
+  
 }
 
 @property (nonatomic, assign) Talent *talent;

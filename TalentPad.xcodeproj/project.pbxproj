@@ -157,6 +157,8 @@
 		25E080FF12B509D100646BC7 /* ability-frame-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25E080FD12B509D100646BC7 /* ability-frame-yellow.png */; };
 		25E0810512B50AF100646BC7 /* ability-frame-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25E0810412B50AF100646BC7 /* ability-frame-gray.png */; };
 		25E0810612B50AF100646BC7 /* ability-frame-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25E0810412B50AF100646BC7 /* ability-frame-gray.png */; };
+		25E083D012B5A45100646BC7 /* UIImage+Manipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E083CF12B5A45100646BC7 /* UIImage+Manipulation.m */; };
+		25E083D112B5A45100646BC7 /* UIImage+Manipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E083CF12B5A45100646BC7 /* UIImage+Manipulation.m */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
@@ -316,6 +318,8 @@
 		25E080EE12B508A000646BC7 /* points-frame-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "points-frame-yellow.png"; sourceTree = "<group>"; };
 		25E080FD12B509D100646BC7 /* ability-frame-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ability-frame-yellow.png"; sourceTree = "<group>"; };
 		25E0810412B50AF100646BC7 /* ability-frame-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ability-frame-gray.png"; sourceTree = "<group>"; };
+		25E083CE12B5A45100646BC7 /* UIImage+Manipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Manipulation.h"; sourceTree = "<group>"; };
+		25E083CF12B5A45100646BC7 /* UIImage+Manipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Manipulation.m"; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* TalentPad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentPad_Prefix.pch; sourceTree = "<group>"; };
@@ -354,6 +358,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				25E083CD12B5A44300646BC7 /* Categories */,
 				2500E62712B4BE0900EB1987 /* TalentData */,
 				257AEA2B129E900E00DE9D51 /* Controllers */,
 				257AEA2C129E900E00DE9D51 /* CoreData */,
@@ -684,6 +689,15 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		25E083CD12B5A44300646BC7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				25E083CE12B5A45100646BC7 /* UIImage+Manipulation.h */,
+				25E083CF12B5A45100646BC7 /* UIImage+Manipulation.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
@@ -955,6 +969,7 @@
 				2500E64812B4CA0D00EB1987 /* CharacterClass.m in Sources */,
 				25E07EDC12B4ECFC00646BC7 /* TalentTree+Fetch.m in Sources */,
 				25E07EF712B4EDDF00646BC7 /* NSManagedObject+Fetch.m in Sources */,
+				25E083D112B5A45100646BC7 /* UIImage+Manipulation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -985,6 +1000,7 @@
 				2500E82112B4DB6300EB1987 /* TalentPad.xcdatamodel in Sources */,
 				25E07EDB12B4ECFC00646BC7 /* TalentTree+Fetch.m in Sources */,
 				25E07EF612B4EDDF00646BC7 /* NSManagedObject+Fetch.m in Sources */,
+				25E083D012B5A45100646BC7 /* UIImage+Manipulation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
