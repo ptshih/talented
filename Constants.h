@@ -14,6 +14,8 @@
 #define LABEL_COLOR_GREEN RGBCOLOR(25.0,182.0,0.0)
 #define LABEL_COLOR_YELLOW RGBCOLOR(255.0,210.0,0.0)
 
+#define TOOLTIP_COLOR_RED RGBCOLOR(255.0,51.0,51.0)
+
 #define RGBCOLOR(R,G,B) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1.0]
 #define RGBACOLOR(R,G,B,A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
 

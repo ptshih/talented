@@ -19,6 +19,9 @@
 #define BUTTON_WIDTH 79.0
 #define BUTTON_HEIGHT 38.0
 #define TOOLTIP_CAP 15
+#define MARGIN_X 15.0
+#define MARGIN_Y 15.0
+#define MARGIN_Y_SM 2.0
 
 static UIImage *_plusButtonOn = nil;
 static UIImage *_plusButtonOff = nil;
@@ -73,20 +76,10 @@ static UIImage *_minusButtonOff = nil;
     self.view.width = 280.0;
     self.view.height = 0.0;
     
-    
     [self setupButtons];
     [self setupBackground];
     [self setupTooltip];
     [self setupLabels];
-    
-    // Add to subview
-    [self.view addSubview:self.bgImageView];    
-    [self.view addSubview:self.plusButton];
-    [self.view addSubview:self.minusButton];
-    [self.view addSubview:self.tooltipLabel];
-    
-    [self.view addSubview:self.nameLabel];
-    [self.view addSubview:self.rankLabel];
   }
   return self;
 }
@@ -98,13 +91,16 @@ static UIImage *_minusButtonOff = nil;
   _minusButton = [[UIButton alloc] initWithFrame:CGRectMake(61, 15, BUTTON_WIDTH, BUTTON_HEIGHT)];
   [self.plusButton addTarget:self action:@selector(addPoint:) forControlEvents:UIControlEventTouchUpInside];
   [self.minusButton addTarget:self action:@selector(removePoint:) forControlEvents:UIControlEventTouchUpInside];
+  [self.view addSubview:self.plusButton];
+  [self.view addSubview:self.minusButton];
 }
 
 - (void)setupBackground {
   // Background
   UIImage *tooltipBg = [[UIImage imageNamed:@"tooltip_bg.png"] stretchableImageWithLeftCapWidth:TOOLTIP_CAP topCapHeight:TOOLTIP_CAP];
   _bgImageView = [[UIImageView alloc] initWithImage:tooltipBg];
-  self.bgImageView.top = 60.0; 
+  self.bgImageView.top = 60.0;
+  [self.view addSubview:self.bgImageView];
 }
 
 - (void)setupTooltip {
@@ -114,6 +110,7 @@ static UIImage *_minusButtonOff = nil;
   self.tooltipLabel.font = [UIFont systemFontOfSize:14.0];
   self.tooltipLabel.textColor = [UIColor colorWithRed:0.9 green:0.746 blue:0.082 alpha:1.0];
   self.tooltipLabel.backgroundColor = [UIColor clearColor];
+  [self.view addSubview:self.tooltipLabel];
 }
 
 - (void)setupLabels {
@@ -127,9 +124,56 @@ static UIImage *_minusButtonOff = nil;
   self.rankLabel.textColor = [UIColor whiteColor];
   self.rankLabel.backgroundColor = [UIColor clearColor];
   
+  // optional labels for child req and tier req
+  _depReqLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+  self.depReqLabel.font = [UIFont systemFontOfSize:14.0];
+  self.depReqLabel.textColor = TOOLTIP_COLOR_RED;
+  self.depReqLabel.backgroundColor = [UIColor clearColor];
+  
+  _tierReqLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+  self.tierReqLabel.font = [UIFont systemFontOfSize:14.0];
+  self.tierReqLabel.textColor = TOOLTIP_COLOR_RED;
+  self.tierReqLabel.backgroundColor = [UIColor clearColor];
+  
+  _costLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+  self.costLabel.font = [UIFont systemFontOfSize:14.0];
+  self.costLabel.textColor = [UIColor whiteColor];
+  self.costLabel.backgroundColor = [UIColor clearColor];
+  
+  _rangeLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+  self.rangeLabel.font = [UIFont systemFontOfSize:14.0];
+  self.rangeLabel.textColor = [UIColor whiteColor];
+  self.rangeLabel.backgroundColor = [UIColor clearColor];
+  
+  _castTimeLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+  self.castTimeLabel.font = [UIFont systemFontOfSize:14.0];
+  self.castTimeLabel.textColor = [UIColor whiteColor];
+  self.castTimeLabel.backgroundColor = [UIColor clearColor];
+  
+  _cooldownLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+  self.cooldownLabel.font = [UIFont systemFontOfSize:14.0];
+  self.cooldownLabel.textColor = [UIColor whiteColor];
+  self.cooldownLabel.backgroundColor = [UIColor clearColor];
+  
+  _requiresLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+  self.requiresLabel.font = [UIFont systemFontOfSize:14.0];
+  self.requiresLabel.textColor = [UIColor whiteColor];
+  self.requiresLabel.backgroundColor = [UIColor clearColor];
+  
+  [self.view addSubview:self.nameLabel];
+  [self.view addSubview:self.rankLabel];
+  [self.view addSubview:self.depReqLabel];
+  [self.view addSubview:self.tierReqLabel];
+  [self.view addSubview:self.costLabel];
+  [self.view addSubview:self.rangeLabel];
+  [self.view addSubview:self.castTimeLabel];
+  [self.view addSubview:self.cooldownLabel];
+  [self.view addSubview:self.requiresLabel];
 }
 
-#pragma mark UI Layout
+#pragma mark Prepare Methods
+// Prepare methods are called whenever the controller gets new or changed data
+// When loading a new tooltip or adding/removing a point refresh
 - (void)prepareButtons {
   if ([self.treeView canAddPoint:self.talentView]) {
     [self.plusButton setImage:_plusButtonOn forState:UIControlStateNormal];
@@ -150,24 +194,123 @@ static UIImage *_minusButtonOff = nil;
   
   // Add rank label
   NSInteger maxRank = [self.talentView.talent.ranks count];
-  self.rankLabel.text = [NSString stringWithFormat:@"Rank %d/%d",self.talentView.currentRank , maxRank];
+  self.rankLabel.text = [NSString stringWithFormat:@"%@ %d/%d", NSLocalizedString(@"Rank", @"Rank"), self.talentView.currentRank , maxRank];
   [self.rankLabel sizeToFit];
   
   self.nameLabel.top = _desiredHeight;
-  self.nameLabel.left = 15.0;
+  self.nameLabel.left = MARGIN_X;
   
-  _desiredHeight = self.nameLabel.bottom + 2.0;
+  _desiredHeight = self.nameLabel.bottom + MARGIN_Y_SM;
   
   self.rankLabel.top = _desiredHeight;
-  self.rankLabel.left = 15.0;
+  self.rankLabel.left = MARGIN_X;
   
-  _desiredHeight = self.rankLabel.bottom + 2.0;
+  _desiredHeight = self.rankLabel.bottom + MARGIN_Y_SM;
   
+  // Only show if there is a parent dependency
+  NSNumber *reqId = self.talentView.talent.req;
+  if (reqId) {
+    TalentViewController *req = [self.treeView.talentViewDict objectForKey:[reqId stringValue]];
+    self.depReqLabel.hidden = NO;
+    self.depReqLabel.text = [NSString stringWithFormat:@"Requires %d point(s) in %@", [req.talent.ranks count], req.talent.talentName];
+    [self.depReqLabel sizeToFit];
+    
+    self.depReqLabel.top = _desiredHeight;
+    self.depReqLabel.left = MARGIN_X;
+  
+    _desiredHeight = self.depReqLabel.bottom + MARGIN_Y_SM;
+  } else {
+    self.depReqLabel.hidden = YES;
+  }
+  
+  // Only show if tier dependency isn't met
+  if (self.talentView.state == TalentStateDisabled && [self.talentView.talent.tier integerValue] > 0) {
+    self.tierReqLabel.hidden = NO;
+    self.tierReqLabel.text = [NSString stringWithFormat:@"Requires %d points in %@ Talents", [self.talentView.talent.tier integerValue] * 5, self.treeView.talentTree.talentTreeName];
+    [self.tierReqLabel sizeToFit];
+    
+    self.tierReqLabel.top = _desiredHeight;
+    self.tierReqLabel.left = MARGIN_X;
+    
+    _desiredHeight = self.tierReqLabel.bottom + MARGIN_Y_SM;
+  } else {
+    self.tierReqLabel.hidden = YES;
+  }
+
+  // Spell Detail Labels, these are conditional also
+  if ([[self.talentView.talent.ranks anyObject] cost] || [[self.talentView.talent.ranks anyObject] spellRange]) {
+    if ([[self.talentView.talent.ranks anyObject] cost]) {
+      self.costLabel.hidden = NO;
+      self.costLabel.text = [[self.talentView.talent.ranks anyObject] cost];
+      [self.costLabel sizeToFit];
+      self.costLabel.top = _desiredHeight;
+      self.costLabel.left = MARGIN_X;
+    } else {
+      self.costLabel.hidden = YES;
+    }
+    if ([[self.talentView.talent.ranks anyObject] spellRange]) {
+      self.rangeLabel.hidden = NO;
+      self.rangeLabel.text = [[self.talentView.talent.ranks anyObject] spellRange];
+      [self.rangeLabel sizeToFit];
+      self.rangeLabel.top = _desiredHeight;
+      self.rangeLabel.left = 280.0 - self.rangeLabel.width - MARGIN_X;
+    } else {
+      self.rangeLabel.hidden = YES;
+    }
+    if (!self.costLabel.hidden) {
+      _desiredHeight = self.costLabel.bottom + MARGIN_Y_SM;
+    } else {
+      _desiredHeight = self.rangeLabel.bottom + MARGIN_Y_SM;
+    }
+  } else {
+    self.costLabel.hidden = YES;
+    self.rangeLabel.hidden = YES;
+  }
+  
+  if ([[self.talentView.talent.ranks anyObject] castTime] || [[self.talentView.talent.ranks anyObject] cooldown]) {
+    if ([[self.talentView.talent.ranks anyObject] castTime]) {
+      self.castTimeLabel.hidden = NO;
+      self.castTimeLabel.text = [[self.talentView.talent.ranks anyObject] castTime];
+      [self.castTimeLabel sizeToFit];
+      self.castTimeLabel.top = _desiredHeight;
+      self.castTimeLabel.left = MARGIN_X;
+    } else {
+      self.castTimeLabel.hidden = YES;
+    }
+    if ([[self.talentView.talent.ranks anyObject] cooldown]) {
+      self.cooldownLabel.hidden = NO;
+      self.cooldownLabel.text = [[self.talentView.talent.ranks anyObject] cooldown];
+      [self.cooldownLabel sizeToFit];
+      self.cooldownLabel.top = _desiredHeight;
+      self.cooldownLabel.left = 280.0 - self.cooldownLabel.width - MARGIN_X;
+    } else {
+      self.cooldownLabel.hidden = YES;
+    }
+    if (!self.castTimeLabel.hidden) {
+      _desiredHeight = self.castTimeLabel.bottom + MARGIN_Y_SM;
+    } else {
+      _desiredHeight = self.cooldownLabel.bottom + MARGIN_Y_SM;
+    }
+  } else {
+    self.castTimeLabel.hidden = YES;
+    self.cooldownLabel.hidden = YES;
+  }
+  
+  // Requires (optional) label
+  if ([[self.talentView.talent.ranks anyObject] requires]) {
+    self.requiresLabel.hidden = NO;
+    self.requiresLabel.text = [[self.talentView.talent.ranks anyObject] requires];
+    [self.requiresLabel sizeToFit];
+    self.requiresLabel.top = _desiredHeight;
+    self.requiresLabel.left = MARGIN_X;
+    _desiredHeight = self.requiresLabel.bottom + MARGIN_Y_SM;
+  } else {
+    self.requiresLabel.hidden = YES;
+  }
+
 }
 
-- (void)prepareTooltip {
-
-  
+- (void)prepareTooltip {  
   // Populate tooltip text
   // Set an ASC sort on treeNo
   NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"rank" ascending:YES];
@@ -188,7 +331,7 @@ static UIImage *_minusButtonOff = nil;
   // Tooltip TextView size
 	CGSize tooltipSize = [self.tooltipLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
   self.tooltipLabel.top = _desiredHeight;
-  self.tooltipLabel.left = 15.0;
+  self.tooltipLabel.left = MARGIN_X;
   self.tooltipLabel.width = tooltipSize.width;
   self.tooltipLabel.height = tooltipSize.height;
   
@@ -197,7 +340,7 @@ static UIImage *_minusButtonOff = nil;
   DLog(@"Preparing tooltip with width: %f, height: %f", tooltipSize.width, tooltipSize.height);
 }
 
-- (void)loadTooltipPopup {
+- (void)reloadTooltipData {
   _desiredHeight = 75.0;
   [self prepareButtons];
   [self prepareLabels];
@@ -205,359 +348,23 @@ static UIImage *_minusButtonOff = nil;
   
   
   // Set tooltip bg height
-  self.view.height = _desiredHeight + 15.0;
+  self.view.height = _desiredHeight + MARGIN_Y;
   self.bgImageView.height = self.view.height - 60.0;
 
-}
-
-- (void)updateLabels {
-  // Update Rank Label
-  NSInteger maxRank = [self.talentView.talent.ranks count];
-  self.rankLabel.text = [NSString stringWithFormat:@"Rank %d/%d",self.talentView.currentRank , maxRank];
-  [self.rankLabel sizeToFit];
-  
-  // Populate tooltip text
-  // Set an ASC sort on treeNo
-  NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"rank" ascending:YES];
-  NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor, nil];
-  [sortDescriptor release];
-  NSArray *ranks = [self.talentView.talent.ranks sortedArrayUsingDescriptors:sortDescriptors];
-  
-  // If currently at rank 0, we show rank 1 text
-  // Else we show the current rank's text
-  if (self.talentView.currentRank > 0) {
-    self.tooltipLabel.text = [[ranks objectAtIndex:self.talentView.currentRank - 1] tooltip];
-  } else {
-    self.tooltipLabel.text = [[ranks objectAtIndex:self.talentView.currentRank] tooltip];
-  }
-}
-
-- (void)updateButtons {
-  [self prepareButtons];
 }
 
 #pragma mark Add/Remove Point
 - (void)addPoint:(id)sender {
   if ([self.talentView talentAdd]) {
-    [self updateLabels];
-    [self updateButtons];
+    [self reloadTooltipData];
   }
 }
 
 - (void)removePoint:(id)sender {
   if ([self.talentView talentSubtract]) {
-    [self updateLabels];
-    [self updateButtons];
+    [self reloadTooltipData];
   }
 }
-
-// create and setup the tooltip frame
-//- (void)setTooltip {
-//	// Calculate frame size and positioning based on button held
-//	//	self.view.frame = CGRectMake(15 + (80 * button.col), 10 + (64 * button.row), self.view.frame.size.width, self.view.frame.size.height);
-//	
-//  //	NSLog(@"button col: %d, row: %d",self.button.col, self.button.row);
-//	
-//	NSInteger top, left, width, height, bottom; //, invHeight;
-//	width = 260; // width of tooltip
-//	height = 0; // dynamic calc height
-//	//invHeight = 0;
-//  
-//  // Access talent properties
-//  NSInteger tier = [self.talentView.talent.tier integerValue];
-//  NSInteger treeNo = [self.talentView.talent.talentTree.treeNo integerValue];
-//  
-//  top = tier * 64 + 74;
-//  bottom = (10 - tier) * 64 + 74;
-//  
-//  left = ((320 - width) / 2) + treeNo * 320;
-//  
-//  
-//	
-//	// First set the frame to a large size
-//	self.view.frame = CGRectMake(left, top, width, self.view.frame.size.height);
-//	
-//	//	infoPage.view.frame = CGRectMake(infoPage.view.frame.origin.x, infoPage.view.frame.origin.y, infoPage.view.frame.size.width, infoPage.view.frame.size.height);
-//	[self setInfo]; // Because this view is persistent, can't use init/viewdidload
-//	
-//  BOOL canAdd = [self.treeView canAddPoint:self.talentView];
-//  
-//	BOOL dependMet = YES;
-//	BOOL depend2Met = YES;
-//	NSInteger treePointReq = [delegate.data pointsRequiredForButton:button];
-//	if(!canAdd) {
-//		// if dependency is met, remove the requirement
-//		if(button.depend == nil || button.depend.max == button.depend.rank) {
-//			depend2Met = YES;
-//		} 
-//		// if points spent is met, remove the requirement
-//		if([delegate.data pointsSpentInTree:button.tree] >= treePointReq) {
-//			dependMet = YES;
-//		}
-//	} else { // if the point can be added, then we always remove the requirements no matter what
-//		depend2Met = YES;
-//		dependMet = YES;
-//	}
-//  
-//	
-//  //	NSLog(@"canadd: %d, d1: %d, d2: %d",canAdd, dependMet, depend2Met);
-//	
-//	// height calc
-//	height += 45; // add 45px for -/+ buttons
-//	height += 15; // add 15px for top tooltip_bg
-//	//invHeight += 15;
-//	
-//	// Deal with name Label first
-//	CGSize nameSize = [self.nameLabel sizeThatFits:CGSizeMake(226, 1000)];
-//	NSInteger nameOffset = height;
-//	height += nameSize.height; // add nameLabel's height
-//	//invHeight += nameSize.height;
-//	
-//	// Rank
-//  //	CGSize rankSize = [self.rankLabel sizeThatFits:CGSizeMake(226, 1000)];
-//	CGSize rankSize = CGSizeMake(226, 16);
-//	NSInteger rankOffset = height;
-//	height += rankSize.height; // add rankLabel's height
-//	//invHeight += rankSize.height;
-//	
-//  //	NSLog(@"height so far: %d",height);
-//	
-//	// Reqs 1
-//	NSInteger reqsOffset = 0;
-//	CGSize reqsSize;
-//	if(([self.reqsLabel.text length] > 0) && (!dependMet)) {
-//    //		NSLog(@"wtf");
-//    //		reqsSize = [self.reqsLabel sizeThatFits:CGSizeMake(226, 1000)];
-//		reqsSize = CGSizeMake(226, 16);
-//		reqsOffset = height;
-//		height += reqsSize.height; // add requirements height
-//		//invHeight += reqsSize.height;
-//	}
-//	else {
-//		reqsSize = CGSizeMake(0, 0);
-//	}
-//	
-//	// Reqs 2
-//	NSInteger req2Offset = 0;
-//	CGSize req2Size;
-//	if([self.req2Label.text length] > 0 && (!depend2Met)) {
-//    //		req2Size = [self.req2Label sizeThatFits:CGSizeMake(226, 1000)];
-//		req2Size = CGSizeMake(226, 16);
-//		req2Offset = height;
-//		height += req2Size.height; // add requirements 2 height
-//		//invHeight += req2Size.height;
-//	}
-//	else {
-//		req2Size = CGSizeMake(0, 0);
-//	}
-//  
-//	// TL and TR
-//	NSInteger topLevelOffset = 0;
-//	NSInteger topLevelHeight = 0;
-//	if([self.TLLabel.text length] > 0 || [self.TRLabel.text length] > 0) {
-//		topLevelOffset = height;
-//		topLevelHeight = 16;
-//		height += 16;
-//		//invHeight += 15;
-//	}
-//	
-//	// BL and BR
-//	NSInteger botLevelOffset = 0;
-//	NSInteger botLevelHeight = 0;
-//	if([self.BLLabel.text length] > 0 || [self.BRLabel.text length] > 0) {
-//		botLevelOffset = height;
-//		botLevelHeight = 16;
-//		height += 16;
-//		//invHeight += 15;
-//	}
-//	
-//	// Description size
-//	CGSize descSize = CGSizeMake(0, 0);
-//	NSInteger descSpacer = 2;
-//	NSInteger descOffset = height + descSpacer;
-//	height += (descSize.height + descSpacer); // add description height;
-//	//invHeight += descSize.height + descSpacer;
-//	
-//	// Add bottom tooltip bg
-//	NSInteger bottomOffset = height;
-//	height += 15; // add 15px for bottom tooltip bg
-//	//invHeight += 15;
-//	
-//  //	NSLog(@"final height: %d, inverted: %d",height,invHeight);
-//  //	NSLog(@"desc: %@",self.description.text);
-//  //	NSLog(@"req: %@, req2: %@",reqsLabel.text, req2Label.text);
-//	
-//	NSInteger adjDescHeight;
-//	NSInteger descHeightDiff;
-//	NSInteger diffHeight;
-//	NSInteger invertThreshold = 6;
-//	
-//	// If row is 6 or above, invert tooltip
-//	
-//	if(tier >= invertThreshold) {
-//		if(height > (self.treeView.view.frame.size.height - bottom)) {
-//			diffHeight = height - (self.treeView.view.frame.size.height - bottom);
-//			adjDescHeight = descSize.height - diffHeight;
-//			descHeightDiff = descSize.height - adjDescHeight;
-//		} else {
-//			adjDescHeight = descSize.height;
-//			descHeightDiff = 0;
-//			diffHeight = 0;
-//		}
-//		// Set new frame height
-//    //		NSLog(@"top: %d, parent: %g",top, parent.pageView.frame.size.height - top - height + diffHeight);
-//		[self.view setFrame:CGRectMake(left, self.treeView.view.frame.size.height - bottom - height + diffHeight, width, height - diffHeight)];
-//		
-//		// Set Desc Frame
-//		[self.bgTop setFrame:CGRectMake(self.bgTop.frame.origin.x, self.bgTop.frame.origin.y - 45, width, 15)];
-//		[self.bgImage setFrame:CGRectMake(self.bgImage.frame.origin.x, self.bgImage.frame.origin.y - 45, width, adjDescHeight + descSpacer + rankSize.height + nameSize.height + reqsSize.height + req2Size.height + topLevelHeight + botLevelHeight)];
-//		[self.nameLabel setFrame:CGRectMake(self.nameLabel.frame.origin.x, nameOffset - 45, self.nameLabel.frame.size.width, self.nameLabel.frame.size.height)];
-//		[self.rankLabel setFrame:CGRectMake(self.rankLabel.frame.origin.x, rankOffset - 45, self.rankLabel.frame.size.width, self.rankLabel.frame.size.height)];
-//		if(reqsOffset > 0) [self.reqsLabel setFrame:CGRectMake(self.reqsLabel.frame.origin.x, reqsOffset - 45, self.reqsLabel.frame.size.width, self.reqsLabel.frame.size.height)];
-//		else [self.reqsLabel removeFromSuperview];
-//		if(req2Offset > 0) [self.req2Label setFrame:CGRectMake(self.req2Label.frame.origin.x, req2Offset - 45, self.req2Label.frame.size.width, self.req2Label.frame.size.height)];
-//		else [self.req2Label removeFromSuperview];
-//		if(topLevelOffset > 0) {
-//			[self.TLLabel setFrame:CGRectMake(self.TLLabel.frame.origin.x, topLevelOffset - 45, self.TLLabel.frame.size.width, self.TLLabel.frame.size.height)];
-//			[self.TRLabel setFrame:CGRectMake(self.TRLabel.frame.origin.x, topLevelOffset - 45, self.TRLabel.frame.size.width, self.TRLabel.frame.size.height)];
-//		}
-//		else {
-//			[self.TLLabel removeFromSuperview];
-//			[self.TRLabel removeFromSuperview];
-//		}
-//		if(botLevelOffset > 0) {
-//			[self.BLLabel setFrame:CGRectMake(self.BLLabel.frame.origin.x, botLevelOffset - 45, self.BLLabel.frame.size.width, self.BLLabel.frame.size.height)];
-//			[self.BRLabel setFrame:CGRectMake(self.BRLabel.frame.origin.x, botLevelOffset - 45, self.BRLabel.frame.size.width, self.BRLabel.frame.size.height)];
-//		}
-//		else {
-//			[self.BLLabel removeFromSuperview];
-//			[self.BRLabel removeFromSuperview];
-//		}
-//		[_tooltip setFrame:CGRectMake(_tooltip.frame.origin.x, descOffset - 45, _tooltip.frame.size.width, adjDescHeight)];
-//		[self.bgBottom setFrame:CGRectMake(self.bgBottom.frame.origin.x, bottomOffset - descHeightDiff - 45, width, 15)];
-//		[self.addButton setFrame:CGRectMake(self.addButton.frame.origin.x, self.view.frame.size.height - 45, self.addButton.frame.size.width, self.addButton.frame.size.height)];
-//		[self.delButton setFrame:CGRectMake(self.delButton.frame.origin.x, self.view.frame.size.height - 45, self.delButton.frame.size.width, self.delButton.frame.size.height)];
-//	} else {
-//		if(height > (self.treeView.view.frame.size.height - 74)) {
-//			diffHeight = height - (self.treeView.view.frame.size.height - 74);
-//			adjDescHeight = descSize.height - diffHeight;
-//			descHeightDiff = descSize.height - adjDescHeight;
-//		} else {
-//			adjDescHeight = descSize.height;
-//			descHeightDiff = 0;
-//			diffHeight = 0;
-//		}
-//		
-//		// Set new frame height
-//		[self.view setFrame:CGRectMake(left, top, width, height - diffHeight)];
-//		
-//		// Set Desc Frame
-//		[self.bgTop setFrame:CGRectMake(self.bgTop.frame.origin.x, self.bgTop.frame.origin.y, width, 15)];
-//		[self.bgImage setFrame:CGRectMake(self.bgImage.frame.origin.x, self.bgImage.frame.origin.y, width, adjDescHeight + descSpacer + rankSize.height + nameSize.height + reqsSize.height + req2Size.height + topLevelHeight + botLevelHeight)];
-//		[self.nameLabel setFrame:CGRectMake(self.nameLabel.frame.origin.x, nameOffset, self.nameLabel.frame.size.width, self.nameLabel.frame.size.height)];
-//		[self.rankLabel setFrame:CGRectMake(self.rankLabel.frame.origin.x, rankOffset, self.rankLabel.frame.size.width, self.rankLabel.frame.size.height)];
-//		if(reqsOffset > 0) [self.reqsLabel setFrame:CGRectMake(self.reqsLabel.frame.origin.x, reqsOffset, self.reqsLabel.frame.size.width, self.reqsLabel.frame.size.height)];
-//		else [self.reqsLabel removeFromSuperview];
-//		if(req2Offset > 0) [self.req2Label setFrame:CGRectMake(self.req2Label.frame.origin.x, req2Offset, self.req2Label.frame.size.width, self.req2Label.frame.size.height)];
-//		else [self.req2Label removeFromSuperview];
-//		if(topLevelOffset > 0) {
-//			[self.TLLabel setFrame:CGRectMake(self.TLLabel.frame.origin.x, topLevelOffset, self.TLLabel.frame.size.width, self.TLLabel.frame.size.height)];
-//			[self.TRLabel setFrame:CGRectMake(self.TRLabel.frame.origin.x, topLevelOffset, self.TRLabel.frame.size.width, self.TRLabel.frame.size.height)];
-//		}
-//		else {
-//			[self.TLLabel removeFromSuperview];
-//			[self.TRLabel removeFromSuperview];
-//		}
-//		if(botLevelOffset > 0) {
-//			[self.BLLabel setFrame:CGRectMake(self.BLLabel.frame.origin.x, botLevelOffset, self.BLLabel.frame.size.width, self.BLLabel.frame.size.height)];
-//			[self.BRLabel setFrame:CGRectMake(self.BRLabel.frame.origin.x, botLevelOffset, self.BRLabel.frame.size.width, self.BRLabel.frame.size.height)];
-//		}
-//		else {
-//			[self.BLLabel removeFromSuperview];
-//			[self.BRLabel removeFromSuperview];
-//		}
-//		[_tooltip setFrame:CGRectMake(_tooltip.frame.origin.x, descOffset, _tooltip.frame.size.width, adjDescHeight)];
-//		[self.bgBottom setFrame:CGRectMake(self.bgBottom.frame.origin.x, bottomOffset - descHeightDiff, width, 15)];
-//	}
-//}
-//
-//- (void)updateInfo {
-//  NSInteger maxRank = [self.talentView.talent.ranks count];
-//  NSInteger currentRank = self.talentView.currentRank;
-//	rankLabel.text = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"rank", @"Rank word used in descriptions"), [NSString stringWithFormat:@"%i/%i", currentRank, maxRank]];
-//	[self updateDesc];
-//	//	NSLog(@"text: %@",button.text);
-//  
-//	[delButton setEnabled:([self.treeView canAddPoint:self.talentView]) ? true : false];
-//	[addButton setEnabled:([self.treeView canAddPoint:self.talentView]) ? true : false];
-//}
-//
-//- (void)updateLabels {
-//  TalentViewController *reqTalentView = [self.treeView.talentViewDict objectForKey:[self.talentView.talent.req stringValue]];
-//  NSInteger reqMaxRank = [reqTalentView.talent.ranks count];
-//  NSInteger reqCurrentRank = reqTalentView.currentRank;
-//  NSInteger tier = [self.talentView.talent.tier integerValue];
-//  
-//	BOOL canAdd = [self.treeView canAddPoint:self.talentView];
-//	NSInteger treePointReq = 5 * tier;
-//	if (canAdd) {
-//		[reqsLabel setTextColor:[UIColor whiteColor]];
-//		[req2Label setTextColor:[UIColor whiteColor]];
-//	} else {
-//		if (!self.talentView.talent.req || reqMaxRank == reqCurrentRank) {
-//			[req2Label setTextColor:[UIColor whiteColor]];
-//		} else {
-//			[req2Label setTextColor:[UIColor redColor]];
-//		}
-//		if (self.treeView.pointsInTree >= treePointReq) {
-//			[reqsLabel setTextColor:[UIColor whiteColor]];
-//		} else {
-//			[reqsLabel setTextColor:[UIColor redColor]];
-//		}
-//	}
-//	
-//	if (tier > 0) {
-//		reqsLabel.text = [NSString stringWithFormat:NSLocalizedString(@"requires_tier",@"required points tier"),treePointReq, self.treeView.talentTree.talentTreeName];
-//		//		reqsLabel.text = [NSString stringWithFormat:@"Requires %i points in %@", treePointReq, [data getNameForTree:button.tree]];
-//	} else {
-//		reqsLabel.text = @"";
-//	}
-//	if (self.talentView.talent.req) {
-//		req2Label.text = [NSString stringWithFormat:NSLocalizedString(@"requires_dependency",@"required points dependency"), reqMaxRank, (reqMaxRank > 1) ? "s" : "", reqTalentView.talent.talentName];
-//		//		req2Label.text = [NSString stringWithFormat:@"Requires %i point%s in %@", button.depend.max, (button.depend.max > 1) ? "s" : "", button.depend.name];
-//	} else {
-//		req2Label.text = @"";
-//	}
-//	
-//	TLLabel.text = [[self.talentView.talent.ranks anyObject] cost];
-//	TRLabel.text = [[self.talentView.talent.ranks anyObject] spellRange];
-//	BLLabel.text = [[self.talentView.talent.ranks anyObject] castTime];
-//	BRLabel.text = [[self.talentView.talent.ranks anyObject] cooldown];
-//	
-//}
-//
-//- (void)updateDesc {
-//  // Set an ASC sort on treeNo
-//  NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"rank" ascending:YES];
-//  NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor, nil];
-//  [sortDescriptor release];
-//  NSArray *ranks = [self.talentView.talent.ranks sortedArrayUsingDescriptors:sortDescriptors];
-//  
-//	if (self.talentView.currentRank > 0) {
-//		_tooltip.text = [[ranks objectAtIndex:self.talentView.currentRank - 1] tooltip];
-//	} else {
-//		_tooltip.text = [[ranks objectAtIndex:self.talentView.currentRank] tooltip];
-//	}
-//	_tooltip.text = [_tooltip.text stringByReplacingOccurrencesOfString:@"\\n" withString:@"\n"];
-//}
-
-/*
- // Override to allow orientations other than the default portrait orientation.
- - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
- // Return YES for supported orientations
- return (interfaceOrientation == UIInterfaceOrientationPortrait);
- }
- */
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.

@@ -197,7 +197,7 @@
   self.tooltipViewController.treeView = treeView;
   self.tooltipViewController.talentView = talentView;
   
-  [self.tooltipViewController loadTooltipPopup];
+  [self.tooltipViewController reloadTooltipData];
   
   UIPopoverController *popover = [[UIPopoverController alloc] initWithContentViewController:self.tooltipViewController];
   popover.popoverContentSize = self.tooltipViewController.view.frame.size;

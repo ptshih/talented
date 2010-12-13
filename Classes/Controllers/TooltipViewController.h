@@ -55,6 +55,6 @@
 @property (nonatomic, retain) UILabel *cooldownLabel;
 @property (nonatomic, retain) UILabel *requiresLabel;
 
-- (void)loadTooltipPopup;
+- (void)reloadTooltipData;
 
 @end
