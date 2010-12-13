@@ -144,23 +144,46 @@ static UIImage *_abilityYellow = nil;
 
 // Add a point for now
 - (IBAction)talentTapped {
-  // Check to see if this talent is disabled
-  if (self.state == TalentStateDisabled) {
-    return;
-  }
-
-  // Check to see if this talent is already maxed
-  if (self.state == TalentStateMaxed) {
-    return;
-  }
-      
+  DLog(@"Talent tapped for talent: %@", self.talent);
   if (self.delegate) {
-    [self.delegate talentAdd:self];
+    [self.delegate talentTapped:self];
   }
 }
 
-// Need callback for subtract
+- (BOOL)talentAdd {
+  // Check to see if this talent is disabled
+  if (self.state == TalentStateDisabled) {
+    return NO;
+  }
+  
+  // Check to see if this talent is already maxed
+  if (self.state == TalentStateMaxed) {
+    return NO;
+  }
+  
+  if (self.delegate) {
+    return [self.delegate talentAdd:self];
+  } 
+  return NO;
+}
 
+// Need callback for subtract
+- (BOOL)talentSubtract {
+  // Check to see if this talent is disabled
+  if (self.state == TalentStateDisabled) {
+    return NO;
+  }
+  
+  // Check to see if this talent is at zero points
+  if (self.currentRank == 0) {
+    return NO;
+  }
+  
+  if (self.delegate) {
+    return [self.delegate talentSubtract:self];
+  }
+  return NO;
+}
 
 
 

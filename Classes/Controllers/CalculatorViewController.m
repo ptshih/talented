@@ -170,11 +170,13 @@
 }
 
 #pragma mark TreeDelegate
+- (void)talentTappedForTree:(TreeViewController *)treeView andTalentView:(TalentViewController *)talentView {
+  [self showTooltipForTalentView:talentView inTree:treeView];
+}
+
 - (void)treeAdd:(TreeViewController *)treeView forTalentView:(TalentViewController *)talentView {
   DLog(@"Adding a point for tree: %d", treeView.treeNo);
   self.totalPoints++;
-  
-  [self showTooltipForTalentView:talentView inTree:treeView];
   
   [self updateStateFromTreeNo:treeView.treeNo];
 }
@@ -189,34 +191,25 @@
 #pragma mark Tooltip Methods
 - (void)showTooltipForTalentView:(TalentViewController *)talentView inTree:(TreeViewController *)treeView {
   if (!self.tooltipViewController) {
-    _tooltipViewController = [[TooltipViewController alloc] initWithNibName:@"TooltipViewController" bundle:nil];
+    _tooltipViewController = [[TooltipViewController alloc] init];
   }
   
   self.tooltipViewController.treeView = treeView;
   self.tooltipViewController.talentView = talentView;
-	
-	// First set the frame to a large size
-  self.tooltipViewController.view.frame = CGRectMake(0, 0, 260, self.view.frame.size.height);
   
-	
-	[self.tooltipViewController setInfo]; // Because this view is persistent, can't use init/viewdidload
-	
-	[self.tooltipViewController setTooltip]; // create the tooltip and setup frames
+  [self.tooltipViewController loadTooltipPopup];
   
-  NSInteger tier = [talentView.talent.tier integerValue];
-  
-	NSInteger scrollTop = (64 * tier);
-	
-  
-	NSInteger invertThreshold = 6;
-		
-	self.tooltipViewController.view.alpha = 0.0f;
-	[self.view addSubview:self.tooltipViewController.view];
-	[UIView beginAnimations:@"TooltipTransition" context:nil];
-	[UIView setAnimationCurve:UIViewAnimationCurveLinear];  
-	[UIView setAnimationDuration:0.2f];
-	self.tooltipViewController.view.alpha = 1.0f;
-	[UIView commitAnimations];
+  UIPopoverController *popover = [[UIPopoverController alloc] initWithContentViewController:self.tooltipViewController];
+  popover.popoverContentSize = self.tooltipViewController.view.frame.size;
+  [popover presentPopoverFromRect:CGRectZero inView:self.view permittedArrowDirections:NO animated:YES];
+			
+//	self.tooltipViewController.view.alpha = 0.0f;
+//	[self.view addSubview:self.tooltipViewController.view];
+//	[UIView beginAnimations:@"TooltipTransition" context:nil];
+//	[UIView setAnimationCurve:UIViewAnimationCurveLinear];  
+//	[UIView setAnimationDuration:0.2f];
+//	self.tooltipViewController.view.alpha = 1.0f;
+//	[UIView commitAnimations];
 }
 
 

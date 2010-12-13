@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@class InfoTextView;
 @class TreeViewController;
 @class TalentViewController;
 
@@ -16,50 +15,46 @@
   TreeViewController *_treeView;
 	TalentViewController *_talentView;
   
-	// IB Outlets
-	IBOutlet InfoTextView *_tooltip;
-	IBOutlet UIImageView *bgImage;
-	IBOutlet UIImageView *bgTop;
-	IBOutlet UIImageView *bgBottom;
-	IBOutlet UIButton *addButton;
-	IBOutlet UIButton *delButton;
-	
-	IBOutlet UILabel *nameLabel;
-	IBOutlet UILabel *rankLabel;
-	IBOutlet UILabel *reqsLabel;
-	IBOutlet UILabel *req2Label;
-	IBOutlet UILabel *TLLabel;
-	IBOutlet UILabel *TRLabel;
-	IBOutlet UILabel *BLLabel;
-	IBOutlet UILabel *BRLabel;
+  CGFloat _desiredHeight;
+  
+  UIImageView *_bgImageView;
+  UIButton *_plusButton;
+  UIButton *_minusButton;
+  UILabel *_tooltipLabel;
+  
+  UILabel *_nameLabel;
+  UILabel *_rankLabel;
+  UILabel *_depReqLabel; // dependency requirement
+  UILabel *_tierReqLabel; // tier points spent requirement
+  
+  // Attributes Labels
+  UILabel *_costLabel;
+  UILabel *_rangeLabel;
+  UILabel *_castTimeLabel;
+  UILabel *_cooldownLabel;
+  UILabel *_requiresLabel;
+  
 }
 
 @property (nonatomic, assign) TreeViewController *treeView;
 @property (nonatomic, assign) TalentViewController *talentView;
 
+@property (nonatomic, retain) UIImageView *bgImageView;
+@property (nonatomic, retain) UIButton *plusButton;
+@property (nonatomic, retain) UIButton *minusButton;
+@property (nonatomic, retain) UILabel *tooltipLabel;
 
-@property (assign) UIImageView *bgImage;
-@property (assign) UIImageView *bgTop;
-@property (assign) UIImageView *bgBottom;
-@property (assign) UIButton *addButton;
-@property (assign) UIButton *delButton;
+@property (nonatomic, retain) UILabel *nameLabel;
+@property (nonatomic, retain) UILabel *rankLabel;
+@property (nonatomic, retain) UILabel *depReqLabel;
+@property (nonatomic, retain) UILabel *tierReqLabel;
 
-@property (assign) UILabel *nameLabel;
-@property (assign) UILabel *rankLabel;
-@property (assign) UILabel *reqsLabel;
-@property (assign) UILabel *req2Label;
-@property (assign) UILabel *TLLabel;
-@property (assign) UILabel *TRLabel;
-@property (assign) UILabel *BLLabel;
-@property (assign) UILabel *BRLabel;
+@property (nonatomic, retain) UILabel *costLabel;
+@property (nonatomic, retain) UILabel *rangeLabel;
+@property (nonatomic, retain) UILabel *castTimeLabel;
+@property (nonatomic, retain) UILabel *cooldownLabel;
+@property (nonatomic, retain) UILabel *requiresLabel;
 
-
-- (void)setInfo;
-- (void)setTooltip;
-- (void)updateInfo;
-- (void)updateLabels;
-- (void)updateDesc;
-- (IBAction)addPoint:(id)sender;
-- (IBAction)removePoint:(id)sender;
+- (void)loadTooltipPopup;
 
 @end

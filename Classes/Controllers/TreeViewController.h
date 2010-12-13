@@ -14,6 +14,8 @@
 
 @protocol TreeDelegate <NSObject>
 @required
+- (void)talentTappedForTree:(TreeViewController *)treeView andTalentView:(TalentViewController *)talentView;
+@optional
 - (void)treeAdd:(TreeViewController *)treeView forTalentView:(TalentViewController *)talentView;
 - (void)treeSubtract:(TreeViewController *)treeView forTalentView:(TalentViewController *)talentView;
 @end

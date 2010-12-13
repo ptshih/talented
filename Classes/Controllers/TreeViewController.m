@@ -118,7 +118,18 @@
 }
 
 - (BOOL)canSubtractPoint:(TalentViewController *)talentView {
-  return NO;
+  // Check to see if talent is at zero
+  if (talentView.currentRank == 0) {
+    return NO;
+  }
+  
+  // Tier point requirement check
+  // NEED LOGIC HERE
+  
+  // Check for parent requirement if exist
+  // NEED LOGIC HERE
+  
+  return YES;
 }
 
 - (void)updateTalentState {
@@ -156,15 +167,22 @@
 }
 
 #pragma mark TalentDelegate
-- (void)talentAdd:(TalentViewController *)talentView {
+- (void)talentTapped:(TalentViewController *)talentView {
+  // Tell Calculator
+  if (self.delegate) {
+    [self.delegate talentTappedForTree:self andTalentView:talentView];
+  }
+}
+
+- (BOOL)talentAdd:(TalentViewController *)talentView {
   DLog(@"Trying to add a point for talent: %@", talentView.talent);
   
   if (self.state == TreeStateFinished) {
-    return;
+    return NO;
   }
   
   if (self.state == TreeStateDisabled) {
-    return;
+    return NO;
   }
   
   if ([self canAddPoint:talentView]) {
@@ -178,11 +196,26 @@
     if (self.delegate) {
       [self.delegate treeAdd:self forTalentView:talentView];
     }
+    return YES;
   }
+  return NO;
 }
 
-- (void)talentSubtract:(TalentViewController *)talentView {
+- (BOOL)talentSubtract:(TalentViewController *)talentView {
   DLog(@"Trying to subtract a point for talent: %@", talentView.talent);
+  
+  if ([self canSubtractPoint:talentView]) {
+    self.pointsInTree--;
+    
+    talentView.currentRank--;
+    
+    // Tell Calculator
+    if (self.delegate) {
+      [self.delegate treeSubtract:self forTalentView:talentView];
+    }
+    return YES;
+  }
+  return NO;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -134,12 +134,7 @@
 		257AEC35129EA0A700DE9D51 /* icon-over-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC14129EA0A700DE9D51 /* icon-over-yellow.png */; };
 		257AEC80129EA91700DE9D51 /* 0000.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC7F129EA91700DE9D51 /* 0000.png */; };
 		25DC757812B5A682000F70F6 /* TooltipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DC757612B5A682000F70F6 /* TooltipViewController.m */; };
-		25DC757912B5A682000F70F6 /* TooltipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25DC757712B5A682000F70F6 /* TooltipViewController.xib */; };
 		25DC757A12B5A682000F70F6 /* TooltipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DC757612B5A682000F70F6 /* TooltipViewController.m */; };
-		25DC757B12B5A682000F70F6 /* TooltipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25DC757712B5A682000F70F6 /* TooltipViewController.xib */; };
-		25DC758712B5A78C000F70F6 /* tooltip_body.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DC758112B5A78C000F70F6 /* tooltip_body.png */; };
-		25DC758812B5A78C000F70F6 /* tooltip_bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DC758212B5A78C000F70F6 /* tooltip_bottom.png */; };
-		25DC758912B5A78C000F70F6 /* tooltip_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DC758312B5A78C000F70F6 /* tooltip_top.png */; };
 		25DC758A12B5A78C000F70F6 /* points_minus_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DC758412B5A78C000F70F6 /* points_minus_on.png */; };
 		25DC758B12B5A78C000F70F6 /* points_plus_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DC758512B5A78C000F70F6 /* points_plus_off.png */; };
 		25DC758C12B5A78C000F70F6 /* points_plus_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DC758612B5A78C000F70F6 /* points_plus_on.png */; };
@@ -151,6 +146,8 @@
 		25DC75E112B5B523000F70F6 /* NSString+ConvenienceMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DC75DF12B5B523000F70F6 /* NSString+ConvenienceMethods.m */; };
 		25DC771112B5C29D000F70F6 /* DismissView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DC771012B5C29D000F70F6 /* DismissView.m */; };
 		25DC77F912B5CBA8000F70F6 /* points_minus_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DC77F812B5CBA8000F70F6 /* points_minus_off.png */; };
+		25DC78FB12B5D9F6000F70F6 /* tooltip_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DC78FA12B5D9F6000F70F6 /* tooltip_bg.png */; };
+		25DC78FC12B5D9F6000F70F6 /* tooltip_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DC78FA12B5D9F6000F70F6 /* tooltip_bg.png */; };
 		25E07E4712B4E2B300646BC7 /* talentTrees.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E07E4612B4E2B300646BC7 /* talentTrees.json */; };
 		25E07E4812B4E2B300646BC7 /* talentTrees.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E07E4612B4E2B300646BC7 /* talentTrees.json */; };
 		25E07E6012B4E39500646BC7 /* characterClass.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E07E5F12B4E39500646BC7 /* characterClass.json */; };
@@ -324,10 +321,6 @@
 		257AEC7F129EA91700DE9D51 /* 0000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0000.png; sourceTree = "<group>"; };
 		25DC757512B5A682000F70F6 /* TooltipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TooltipViewController.h; sourceTree = "<group>"; };
 		25DC757612B5A682000F70F6 /* TooltipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TooltipViewController.m; sourceTree = "<group>"; };
-		25DC757712B5A682000F70F6 /* TooltipViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TooltipViewController.xib; sourceTree = "<group>"; };
-		25DC758112B5A78C000F70F6 /* tooltip_body.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tooltip_body.png; sourceTree = "<group>"; };
-		25DC758212B5A78C000F70F6 /* tooltip_bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tooltip_bottom.png; sourceTree = "<group>"; };
-		25DC758312B5A78C000F70F6 /* tooltip_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tooltip_top.png; sourceTree = "<group>"; };
 		25DC758412B5A78C000F70F6 /* points_minus_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = points_minus_on.png; sourceTree = "<group>"; };
 		25DC758512B5A78C000F70F6 /* points_plus_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = points_plus_off.png; sourceTree = "<group>"; };
 		25DC758612B5A78C000F70F6 /* points_plus_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = points_plus_on.png; sourceTree = "<group>"; };
@@ -346,6 +339,7 @@
 		25DC770F12B5C29D000F70F6 /* DismissView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissView.h; sourceTree = "<group>"; };
 		25DC771012B5C29D000F70F6 /* DismissView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissView.m; sourceTree = "<group>"; };
 		25DC77F812B5CBA8000F70F6 /* points_minus_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = points_minus_off.png; sourceTree = "<group>"; };
+		25DC78FA12B5D9F6000F70F6 /* tooltip_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tooltip_bg.png; sourceTree = "<group>"; };
 		25E07E4612B4E2B300646BC7 /* talentTrees.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = talentTrees.json; sourceTree = "<group>"; };
 		25E07E5F12B4E39500646BC7 /* characterClass.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = characterClass.json; sourceTree = "<group>"; };
 		25E07EB012B4EAFF00646BC7 /* paladin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = paladin.json; sourceTree = "<group>"; };
@@ -525,7 +519,6 @@
 				257AEBEF129E9FE500DE9D51 /* TalentViewController.xib */,
 				25DC757512B5A682000F70F6 /* TooltipViewController.h */,
 				25DC757612B5A682000F70F6 /* TooltipViewController.m */,
-				25DC757712B5A682000F70F6 /* TooltipViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -733,9 +726,7 @@
 		25DC758012B5A77E000F70F6 /* Tooltip */ = {
 			isa = PBXGroup;
 			children = (
-				25DC758112B5A78C000F70F6 /* tooltip_body.png */,
-				25DC758212B5A78C000F70F6 /* tooltip_bottom.png */,
-				25DC758312B5A78C000F70F6 /* tooltip_top.png */,
+				25DC78FA12B5D9F6000F70F6 /* tooltip_bg.png */,
 				25DC758412B5A78C000F70F6 /* points_minus_on.png */,
 				25DC77F812B5CBA8000F70F6 /* points_minus_off.png */,
 				25DC758512B5A78C000F70F6 /* points_plus_off.png */,
@@ -965,14 +956,11 @@
 				25E080F412B508A000646BC7 /* points-frame-yellow.png in Resources */,
 				25E080FF12B509D100646BC7 /* ability-frame-yellow.png in Resources */,
 				25E0810612B50AF100646BC7 /* ability-frame-gray.png in Resources */,
-				25DC757912B5A682000F70F6 /* TooltipViewController.xib in Resources */,
-				25DC758712B5A78C000F70F6 /* tooltip_body.png in Resources */,
-				25DC758812B5A78C000F70F6 /* tooltip_bottom.png in Resources */,
-				25DC758912B5A78C000F70F6 /* tooltip_top.png in Resources */,
 				25DC758A12B5A78C000F70F6 /* points_minus_on.png in Resources */,
 				25DC758B12B5A78C000F70F6 /* points_plus_off.png in Resources */,
 				25DC758C12B5A78C000F70F6 /* points_plus_on.png in Resources */,
 				25DC77F912B5CBA8000F70F6 /* points_minus_off.png in Resources */,
+				25DC78FB12B5D9F6000F70F6 /* tooltip_bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -995,7 +983,7 @@
 				25E080F112B508A000646BC7 /* points-frame-yellow.png in Resources */,
 				25E080FE12B509D100646BC7 /* ability-frame-yellow.png in Resources */,
 				25E0810512B50AF100646BC7 /* ability-frame-gray.png in Resources */,
-				25DC757B12B5A682000F70F6 /* TooltipViewController.xib in Resources */,
+				25DC78FC12B5D9F6000F70F6 /* tooltip_bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

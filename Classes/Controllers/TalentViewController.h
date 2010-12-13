@@ -12,8 +12,10 @@
 
 @protocol TalentDelegate <NSObject>
 @required
-- (void)talentAdd:(TalentViewController *)talentView;
-- (void)talentSubtract:(TalentViewController *)talentView;
+- (void)talentTapped:(TalentViewController *)talentView;
+@optional
+- (BOOL)talentAdd:(TalentViewController *)talentView;
+- (BOOL)talentSubtract:(TalentViewController *)talentView;
 @end
 
 @class Talent;
@@ -49,5 +51,7 @@ typedef enum {
 - (IBAction)talentTapped;
 - (void)updateState;
 - (void)updateStateFinished;
+- (BOOL)talentAdd;
+- (BOOL)talentSubtract;
 
 @end
