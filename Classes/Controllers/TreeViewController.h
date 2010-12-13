@@ -32,8 +32,8 @@ typedef enum {
   IBOutlet UIImageView *_backgroundView;
   NSArray *_talentArray;
   NSMutableDictionary *_talentViewDict;
-  NSMutableDictionary *_childDict; // This is an inverse requirement (child) dictionary used for canSubtract
-//  NSMutableArray *_pointsInTier;
+  NSMutableDictionary *_childDict; // This is an inverse requirement (child) dictionary used for canSubtract, needs to store array in value (multi dependency)
+  NSMutableDictionary *_arrowViewDict;
   NSInteger _pointsInTier[MAX_TIERS];
   NSInteger _pointsInTree;
   NSInteger _characterClassId;
@@ -48,7 +48,7 @@ typedef enum {
 @property (nonatomic, retain) NSArray *talentArray;
 @property (nonatomic, retain) NSMutableDictionary *talentViewDict;
 @property (nonatomic, retain) NSMutableDictionary *childDict;
-//@property (nonatomic, retain) NSMutableArray *pointsInTier;
+@property (nonatomic, retain) NSMutableDictionary *arrowViewDict;
 @property (nonatomic, assign) NSInteger pointsInTree;
 @property (nonatomic, assign) NSInteger characterClassId;
 @property (nonatomic, assign) NSInteger treeNo;

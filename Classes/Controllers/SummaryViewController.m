@@ -8,6 +8,7 @@
 
 #import "SummaryViewController.h"
 #import "TalentTree.h"
+#import "Constants.h"
 
 @implementation SummaryViewController
 
@@ -16,6 +17,13 @@
 
 - (void)viewDidLoad {
   [_redButton setTitle:self.talentTree.talentTreeName forState:UIControlStateNormal];
+  
+  NSURL *imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL(self.talentTree.icon)];
+  NSURLRequest *myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
+  NSData *returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
+  UIImage *myImage  = [[UIImage alloc] initWithData:returnData];
+  
+  [_primarySpellButton setImage:myImage forState:UIControlStateNormal];
 }
 
 #pragma mark IBAction

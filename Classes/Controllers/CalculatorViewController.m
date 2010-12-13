@@ -22,6 +22,8 @@
 
 @interface CalculatorViewController (Private)
 
+- (void)setupHeader;
+- (void)setSwapButtonTitle;
 - (void)fetchTrees;
 - (void)prepareSummaries;
 - (void)prepareTrees;
@@ -58,8 +60,6 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   
-  [_swapButton setTitle:NSLocalizedString(@"View Talents", @"View Summaries") forState:UIControlStateNormal];
-  
   // Fetch trees from core data
   [self fetchTrees];
   
@@ -68,19 +68,50 @@
   
   // Add Trees to View
   [self prepareTrees];
+  
+  // Setup Footer
+  [self setSwapButtonTitle];
+  
+  // Setup Header
+  [self setupHeader];
 }
 
 #pragma mark IBAction
 - (IBAction)swapViews {
-  UIView *activeView = [self.view.subviews objectAtIndex:0];
+  [self.view exchangeSubviewAtIndex:0 withSubviewAtIndex:1];
+  [self setSwapButtonTitle];
+}
+
+- (void)setSwapButtonTitle {
+  UIView *activeView = [self.view.subviews objectAtIndex:1];
   if ([activeView isEqual:_talentTreeView]) {
     [_swapButton setTitle:NSLocalizedString(@"View Summaries", @"View Summaries") forState:UIControlStateNormal];
   } else {
     [_swapButton setTitle:NSLocalizedString(@"View Talents", @"View Summaries") forState:UIControlStateNormal];
   }
+}
 
-  [self.view exchangeSubviewAtIndex:0 withSubviewAtIndex:1];
+- (void)setupHeader {
+  NSURL *imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL([[self.treeArray objectAtIndex:0] icon])];
+  NSURLRequest *myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
+  NSData *returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
+  UIImage *myImage  = [[UIImage alloc] initWithData:returnData];
   
+  _leftIcon.image = myImage;
+  
+  imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL([[self.treeArray objectAtIndex:1] icon])];
+  myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
+  returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
+  myImage  = [[UIImage alloc] initWithData:returnData];
+  
+  _middleIcon.image = myImage;
+  
+  imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL([[self.treeArray objectAtIndex:2] icon])];
+  myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
+  returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
+  myImage  = [[UIImage alloc] initWithData:returnData];
+  
+  _rightIcon.image = myImage;
 }
 
 #pragma mark Fetch Trees from CoreData

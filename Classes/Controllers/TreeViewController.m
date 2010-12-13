@@ -10,6 +10,7 @@
 #import "Talent.h"
 #import "TalentTree.h"
 #import "Constants.h"
+#import "UIView+Additions.h"
 
 #define MARGIN_X 15.0
 #define MARGIN_Y 15.0
@@ -20,6 +21,7 @@
 
 @interface TreeViewController (Private)
 
+- (void)prepareArrows;
 - (void)prepareBackground;
 - (void)prepareTalents;
 
@@ -37,7 +39,7 @@
 @synthesize talentArray = _talentArray;
 @synthesize talentViewDict = _talentViewDict;
 @synthesize childDict = _childDict;
-//@synthesize pointsInTier = _pointsInTier;
+@synthesize arrowViewDict = _arrowViewDict;
 @synthesize pointsInTree = _pointsInTree;
 @synthesize characterClassId = _characterClassId;
 @synthesize treeNo = _treeNo;
@@ -52,13 +54,13 @@
   if (self) {
     _talentArray = [[NSArray array] retain];
     _talentViewDict = [[NSMutableDictionary alloc] init];
+    _arrowViewDict = [[NSMutableDictionary alloc] init];
     _childDict = [[NSMutableDictionary alloc] init];
     
     // Initialize points in tier for 7 tiers
     for (int i = 0; i < MAX_TIERS; i++) {
       _pointsInTier[i] = 0;
     }
-//    _pointsInTier = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], nil];
     
     _pointsInTree = 0;
     _characterClassId = 0;
@@ -75,13 +77,58 @@
   
   // Prepare all the talents for this tree
   [self prepareTalents];
+  
+  // Prepare arrows
+  [self prepareArrows];
 }
 
+#pragma mark Prepare Talents
 - (void)prepareBackground {
   _backgroundView.image = [UIImage imageNamed:@"paladinholy.png"];
 }
 
-#pragma mark Prepare Talents
+- (void)prepareArrows {
+  // Read the childDict and generate arrows
+//  DLog(@"Preparing arrows for dict: %@ for tree: %d", self.childDict, self.treeNo);
+
+  for (NSString *parentId in [self.childDict allKeys]) {
+    NSMutableArray *children = [self.childDict objectForKey:parentId];
+    for (NSString *childId in children) {
+      TalentViewController *parent = [self.talentViewDict objectForKey:parentId];
+      TalentViewController *child = [self.talentViewDict objectForKey:childId];
+      
+      NSInteger parentTier = [parent.talent.tier integerValue];
+      NSInteger childTier = [child.talent.tier integerValue];
+      NSInteger parentCol = [parent.talent.col integerValue];
+      NSInteger childCol = [child.talent.col integerValue];
+      NSInteger dx = childCol - parentCol;
+      NSInteger dy = childTier - parentTier;
+  //    DLog(@"parent coords tier: %d, col: %d", parentTier, parentCol);
+  //    DLog(@"child coords tier: %d, col: %d", childTier, childCol);
+  //    DLog(@"dx: %d, dy: %d", dx, dy);
+      DLog(@"Arrow: %d-%d-color.png", dx, dy);
+      
+      UIImageView *arrowView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d-%d-gray.png", dx, dy]] highlightedImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d-%d-yellow.png", dx, dy]]];
+      arrowView.highlighted = NO;
+      
+      if (dx < 0) {
+        arrowView.top = parent.view.top + floor(parent.view.height / 2) - 9;
+        arrowView.left = parent.view.left - arrowView.width + 4;
+      } else if (dx == 0) {
+        arrowView.top = parent.view.bottom - 8;
+        arrowView.left = parent.view.left + floor(parent.view.width / 2) - 9;
+      } else {
+        arrowView.top = parent.view.top + floor(parent.view.height / 2) - 9;
+        arrowView.left = parent.view.right - 7;
+      }
+
+      [self.arrowViewDict setObject:arrowView forKey:childId];
+      [self.view addSubview:arrowView];
+      [arrowView release];
+    }
+  }
+}
+
 - (void)prepareTalents {
   for (Talent *talent in self.talentArray) {
     TalentViewController *tvc = [[TalentViewController alloc] initWithNibName:@"TalentViewController" bundle:nil];
@@ -90,7 +137,19 @@
     tvc.view.frame = CGRectMake(8.0 + ((SPACING_X + T_WIDTH) * [talent.col integerValue]), 8.0 + ((SPACING_Y + T_HEIGHT) * [talent.tier integerValue]), tvc.view.frame.size.width, tvc.view.frame.size.height);
     [self.view addSubview:tvc.view];
     [self.talentViewDict setObject:tvc forKey:[talent.talentId stringValue]];
-    if (talent.req) [self.childDict setObject:[talent.talentId stringValue] forKey:[talent.req stringValue]];
+    if (talent.req) {
+      // A talent may have multiple children
+      // Need to store an array in the value
+      NSMutableArray *valueArray = [self.childDict valueForKey:[talent.req stringValue]];
+      if (valueArray) {
+        [valueArray addObject:[talent.talentId stringValue]];
+        [self.childDict setObject:valueArray forKey:[talent.req stringValue]];
+      } else {
+        [self.childDict setObject:[NSMutableArray arrayWithObject:[talent.talentId stringValue]] forKey:[talent.req stringValue]];
+      }
+
+//      [self.childDict setObject:[talent.talentId stringValue] forKey:[talent.req stringValue]];
+    }
     [tvc release];
   }
   
@@ -122,7 +181,7 @@
   if (talentView.talent.req) {
     TalentViewController *reqTalentViewController = [self.talentViewDict valueForKey:[talentView.talent.req stringValue]];
     if (reqTalentViewController) {
-      DLog(@"Talent: %@ found a req: %@", talentView.talent, [[self.talentViewDict valueForKey:[talentView.talent.req stringValue]] talent]);
+      DLog(@"Talent: %@ found a req: %@", talentView.talent.talentName, [[[self.talentViewDict valueForKey:[talentView.talent.req stringValue]] talent] talentName]);
       
       // Check to see if parent is maxed out
       NSInteger reqMaxRank = [[reqTalentViewController.talent ranks] count];
@@ -155,17 +214,20 @@
   } 
   
   // Check for parent requirement if exist
-  // Look in the inverse dependency requirement dictionary to see if this talent has a child
-  // IF this talent has a child, make sure child has no points
-  NSString *childId = [self.childDict objectForKey:[talentView.talent.talentId stringValue]];
-  if (childId) {
-    TalentViewController *childTalentViewController = [self.talentViewDict valueForKey:childId];
-    if (childTalentViewController) {
-      DLog(@"Child: %@ found for Parent: %@", childTalentViewController, talentView);
-      
-      // If the child's current rank is not 0, return NO
-      if (childTalentViewController.currentRank != 0) {
-        return NO;
+  // Look in the inverse dependency requirement dictionary to see if this talent has children
+  // IF this talent has children, make sure all children have no points
+  NSMutableArray *children = [self.childDict objectForKey:[talentView.talent.talentId stringValue]];
+  
+  for (NSString *childId in children) {
+    if (childId) {
+      TalentViewController *childTalentViewController = [self.talentViewDict valueForKey:childId];
+      if (childTalentViewController) {
+        DLog(@"Child: %@ found for Parent: %@", childTalentViewController.talent.talentName, talentView.talent.talentName);
+        
+        // If the child's current rank is not 0, return NO
+        if (childTalentViewController.currentRank != 0) {
+          return NO;
+        }
       }
     }
   }
@@ -185,6 +247,23 @@
     } else {
       talentView.state = TalentStateDisabled;
     }
+    
+    // Check to see if any arrows need to be updated
+    // If tier points are satisfied and req is maxed, turn arrow yellow
+    UIImageView *arrowView = [self.arrowViewDict objectForKey:[talentView.talent.talentId stringValue]];
+    if (arrowView) {
+      TalentViewController *req = [self.talentViewDict objectForKey:[talentView.talent.req stringValue]];
+      if (req) {
+        if (req.currentRank == [req.talent.ranks count]) {
+          // maxed, enable arrow
+          arrowView.highlighted = YES;
+        } else {
+          // not maxed, disable arrow
+          arrowView.highlighted = NO;
+        }
+      }
+    }
+    
     [talentView updateState];
   }
 }
@@ -214,7 +293,7 @@
 }
 
 - (BOOL)talentAdd:(TalentViewController *)talentView {
-  DLog(@"Trying to add a point for talent: %@", talentView.talent);
+  DLog(@"Trying to add a point for talent: %@", talentView.talent.talentName);
   
   if (self.state == TreeStateFinished) {
     return NO;
@@ -243,7 +322,7 @@
 }
 
 - (BOOL)talentSubtract:(TalentViewController *)talentView {
-  DLog(@"Trying to subtract a point for talent: %@", talentView.talent);
+  DLog(@"Trying to subtract a point for talent: %@", talentView.talent.talentName);
   
   if ([self canSubtractPoint:talentView]) {
     self.pointsInTree--;
@@ -277,8 +356,8 @@
 
 - (void)dealloc {
   if (_talentArray) [_talentArray release];
-//  if (_pointsInTier) [_pointsInTier release];
   if (_talentViewDict) [_talentViewDict release];
+  if (_arrowViewDict) [_arrowViewDict release];
   if (_childDict) [_childDict release];
   [super dealloc];
 }

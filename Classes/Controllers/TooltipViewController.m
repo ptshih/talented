@@ -211,20 +211,24 @@ static UIImage *_minusButtonOff = nil;
   NSNumber *reqId = self.talentView.talent.req;
   if (reqId) {
     TalentViewController *req = [self.treeView.talentViewDict objectForKey:[reqId stringValue]];
-    self.depReqLabel.hidden = NO;
-    self.depReqLabel.text = [NSString stringWithFormat:@"Requires %d point(s) in %@", [req.talent.ranks count], req.talent.talentName];
-    [self.depReqLabel sizeToFit];
+    if (req.state == TalentStateMaxed) {
+      self.depReqLabel.hidden = YES;
+    } else {
+      self.depReqLabel.hidden = NO;
+      self.depReqLabel.text = [NSString stringWithFormat:@"Requires %d point(s) in %@", [req.talent.ranks count], req.talent.talentName];
+      [self.depReqLabel sizeToFit];
+      
+      self.depReqLabel.top = _desiredHeight;
+      self.depReqLabel.left = MARGIN_X;
     
-    self.depReqLabel.top = _desiredHeight;
-    self.depReqLabel.left = MARGIN_X;
-  
-    _desiredHeight = self.depReqLabel.bottom + MARGIN_Y_SM;
+      _desiredHeight = self.depReqLabel.bottom + MARGIN_Y_SM;
+    }
   } else {
     self.depReqLabel.hidden = YES;
   }
   
   // Only show if tier dependency isn't met
-  if (self.talentView.state == TalentStateDisabled && [self.talentView.talent.tier integerValue] > 0) {
+  if (self.treeView.pointsInTree < 5 * [self.talentView.talent.tier integerValue]) {
     self.tierReqLabel.hidden = NO;
     self.tierReqLabel.text = [NSString stringWithFormat:@"Requires %d points in %@ Talents", [self.talentView.talent.tier integerValue] * 5, self.treeView.talentTree.talentTreeName];
     [self.tierReqLabel sizeToFit];

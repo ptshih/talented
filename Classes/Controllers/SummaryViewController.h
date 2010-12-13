@@ -17,6 +17,7 @@
 
 @interface SummaryViewController : UIViewController {
   IBOutlet UIButton *_redButton;
+  IBOutlet UIButton *_primarySpellButton;
   
   TalentTree *_talentTree;
   id <SummaryDelegate> _delegate;

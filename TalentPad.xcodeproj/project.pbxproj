@@ -155,6 +155,48 @@
 		25136BC512B637A500BEFD01 /* rogue.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB512B637A500BEFD01 /* rogue.json */; };
 		25136BC612B637A500BEFD01 /* shaman.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB612B637A500BEFD01 /* shaman.json */; };
 		25136BC712B637A500BEFD01 /* warlock.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB712B637A500BEFD01 /* warlock.json */; };
+		25136C8C12B646C700BEFD01 /* 1-0-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C6E12B646C600BEFD01 /* 1-0-gray.png */; };
+		25136C8D12B646C700BEFD01 /* 1-0-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C6F12B646C600BEFD01 /* 1-0-yellow.png */; };
+		25136C8F12B646C700BEFD01 /* 0-1-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C7112B646C600BEFD01 /* 0-1-gray.png */; };
+		25136C9012B646C700BEFD01 /* 0-1-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C7212B646C600BEFD01 /* 0-1-yellow.png */; };
+		25136C9212B646C700BEFD01 /* 0-2-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C7412B646C600BEFD01 /* 0-2-gray.png */; };
+		25136C9912B646C700BEFD01 /* 0-2-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C7B12B646C700BEFD01 /* 0-2-yellow.png */; };
+		25136CA412B646C700BEFD01 /* 1-1-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C8612B646C700BEFD01 /* 1-1-gray.png */; };
+		25136CA512B646C700BEFD01 /* 1-1-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C8712B646C700BEFD01 /* 1-1-yellow.png */; };
+		25136CAA12B646C700BEFD01 /* 1-0-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C6E12B646C600BEFD01 /* 1-0-gray.png */; };
+		25136CAB12B646C700BEFD01 /* 1-0-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C6F12B646C600BEFD01 /* 1-0-yellow.png */; };
+		25136CAD12B646C700BEFD01 /* 0-1-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C7112B646C600BEFD01 /* 0-1-gray.png */; };
+		25136CAE12B646C700BEFD01 /* 0-1-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C7212B646C600BEFD01 /* 0-1-yellow.png */; };
+		25136CB012B646C700BEFD01 /* 0-2-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C7412B646C600BEFD01 /* 0-2-gray.png */; };
+		25136CB712B646C700BEFD01 /* 0-2-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C7B12B646C700BEFD01 /* 0-2-yellow.png */; };
+		25136CC212B646C700BEFD01 /* 1-1-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C8612B646C700BEFD01 /* 1-1-gray.png */; };
+		25136CC312B646C700BEFD01 /* 1-1-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C8712B646C700BEFD01 /* 1-1-yellow.png */; };
+		25136CD112B646D000BEFD01 /* icon_deathknight.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CC512B646D000BEFD01 /* icon_deathknight.png */; };
+		25136CD212B646D000BEFD01 /* icon_druid.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CC612B646D000BEFD01 /* icon_druid.png */; };
+		25136CD312B646D000BEFD01 /* icon_hunter.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CC712B646D000BEFD01 /* icon_hunter.png */; };
+		25136CD412B646D000BEFD01 /* icon_mage.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CC812B646D000BEFD01 /* icon_mage.png */; };
+		25136CD512B646D000BEFD01 /* icon_murloc.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CC912B646D000BEFD01 /* icon_murloc.png */; };
+		25136CD612B646D000BEFD01 /* icon_paladin.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CCA12B646D000BEFD01 /* icon_paladin.png */; };
+		25136CD712B646D000BEFD01 /* icon_pet.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CCB12B646D000BEFD01 /* icon_pet.png */; };
+		25136CD812B646D000BEFD01 /* icon_priest.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CCC12B646D000BEFD01 /* icon_priest.png */; };
+		25136CD912B646D000BEFD01 /* icon_rogue.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CCD12B646D000BEFD01 /* icon_rogue.png */; };
+		25136CDA12B646D000BEFD01 /* icon_shaman.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CCE12B646D000BEFD01 /* icon_shaman.png */; };
+		25136CDB12B646D000BEFD01 /* icon_warlock.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CCF12B646D000BEFD01 /* icon_warlock.png */; };
+		25136CDC12B646D000BEFD01 /* icon_warrior.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CD012B646D000BEFD01 /* icon_warrior.png */; };
+		25136CDD12B646D000BEFD01 /* icon_deathknight.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CC512B646D000BEFD01 /* icon_deathknight.png */; };
+		25136CDE12B646D000BEFD01 /* icon_druid.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CC612B646D000BEFD01 /* icon_druid.png */; };
+		25136CDF12B646D000BEFD01 /* icon_hunter.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CC712B646D000BEFD01 /* icon_hunter.png */; };
+		25136CE012B646D000BEFD01 /* icon_mage.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CC812B646D000BEFD01 /* icon_mage.png */; };
+		25136CE112B646D000BEFD01 /* icon_murloc.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CC912B646D000BEFD01 /* icon_murloc.png */; };
+		25136CE212B646D000BEFD01 /* icon_paladin.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CCA12B646D000BEFD01 /* icon_paladin.png */; };
+		25136CE312B646D000BEFD01 /* icon_pet.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CCB12B646D000BEFD01 /* icon_pet.png */; };
+		25136CE412B646D000BEFD01 /* icon_priest.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CCC12B646D000BEFD01 /* icon_priest.png */; };
+		25136CE512B646D000BEFD01 /* icon_rogue.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CCD12B646D000BEFD01 /* icon_rogue.png */; };
+		25136CE612B646D000BEFD01 /* icon_shaman.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CCE12B646D000BEFD01 /* icon_shaman.png */; };
+		25136CE712B646D000BEFD01 /* icon_warlock.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CCF12B646D000BEFD01 /* icon_warlock.png */; };
+		25136CE812B646D000BEFD01 /* icon_warrior.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CD012B646D000BEFD01 /* icon_warrior.png */; };
+		25136D8012B64BDA00BEFD01 /* -1-0-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136D7D12B64BDA00BEFD01 /* -1-0-gray.png */; };
+		25136D8112B64BDA00BEFD01 /* -1-0-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136D7E12B64BDA00BEFD01 /* -1-0-yellow.png */; };
 		257AEA28129E8FB900DE9D51 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA27129E8FB900DE9D51 /* CoreData.framework */; };
 		257AEA34129E901900DE9D51 /* SMADataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA31129E901900DE9D51 /* SMADataCenter.m */; };
 		257AEA35129E901900DE9D51 /* SMACoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA33129E901900DE9D51 /* SMACoreDataStack.m */; };
@@ -168,57 +210,8 @@
 		257AEAEE129E945400DE9D51 /* LauncherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEAEC129E945400DE9D51 /* LauncherViewController.m */; };
 		257AEAEF129E945400DE9D51 /* LauncherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257AEAED129E945400DE9D51 /* LauncherViewController.xib */; };
 		257AEB2E129E968A00DE9D51 /* TalentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEB2C129E968A00DE9D51 /* TalentViewController.m */; };
-		257AEB92129E9C8400DE9D51 /* deathknight_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB82129E9C8400DE9D51 /* deathknight_0.png */; };
-		257AEB93129E9C8400DE9D51 /* deathknight_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB83129E9C8400DE9D51 /* deathknight_1.png */; };
-		257AEB94129E9C8400DE9D51 /* deathknight_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB84129E9C8400DE9D51 /* deathknight_2.png */; };
-		257AEB95129E9C8400DE9D51 /* icon_deathknight.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB86129E9C8400DE9D51 /* icon_deathknight.png */; };
-		257AEB96129E9C8400DE9D51 /* icon_druid.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB87129E9C8400DE9D51 /* icon_druid.png */; };
-		257AEB97129E9C8400DE9D51 /* icon_hunter.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB88129E9C8400DE9D51 /* icon_hunter.png */; };
-		257AEB98129E9C8400DE9D51 /* icon_mage.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB89129E9C8400DE9D51 /* icon_mage.png */; };
-		257AEB99129E9C8400DE9D51 /* icon_murloc.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB8A129E9C8400DE9D51 /* icon_murloc.png */; };
-		257AEB9A129E9C8400DE9D51 /* icon_paladin.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB8B129E9C8400DE9D51 /* icon_paladin.png */; };
-		257AEB9B129E9C8400DE9D51 /* icon_pet.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB8C129E9C8400DE9D51 /* icon_pet.png */; };
-		257AEB9C129E9C8400DE9D51 /* icon_priest.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB8D129E9C8400DE9D51 /* icon_priest.png */; };
-		257AEB9D129E9C8400DE9D51 /* icon_rogue.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB8E129E9C8400DE9D51 /* icon_rogue.png */; };
-		257AEB9E129E9C8400DE9D51 /* icon_shaman.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB8F129E9C8400DE9D51 /* icon_shaman.png */; };
-		257AEB9F129E9C8400DE9D51 /* icon_warlock.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB90129E9C8400DE9D51 /* icon_warlock.png */; };
-		257AEBA0129E9C8400DE9D51 /* icon_warrior.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEB91129E9C8400DE9D51 /* icon_warrior.png */; };
 		257AEBEC129E9F9500DE9D51 /* TalentButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEBEB129E9F9500DE9D51 /* TalentButton.m */; };
 		257AEBF0129E9FE500DE9D51 /* TalentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBEF129E9FE500DE9D51 /* TalentViewController.xib */; };
-		257AEC15129EA0A700DE9D51 /* across-left-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBF4129EA0A700DE9D51 /* across-left-green.png */; };
-		257AEC16129EA0A700DE9D51 /* across-left-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBF5129EA0A700DE9D51 /* across-left-grey.png */; };
-		257AEC17129EA0A700DE9D51 /* across-left-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBF6129EA0A700DE9D51 /* across-left-yellow.png */; };
-		257AEC18129EA0A700DE9D51 /* across-right-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBF7129EA0A700DE9D51 /* across-right-green.png */; };
-		257AEC19129EA0A700DE9D51 /* across-right-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBF8129EA0A700DE9D51 /* across-right-grey.png */; };
-		257AEC1A129EA0A700DE9D51 /* across-right-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBF9129EA0A700DE9D51 /* across-right-yellow.png */; };
-		257AEC1B129EA0A700DE9D51 /* down-1-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBFA129EA0A700DE9D51 /* down-1-green.png */; };
-		257AEC1C129EA0A700DE9D51 /* down-1-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBFB129EA0A700DE9D51 /* down-1-grey.png */; };
-		257AEC1D129EA0A700DE9D51 /* down-1-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBFC129EA0A700DE9D51 /* down-1-yellow.png */; };
-		257AEC1E129EA0A700DE9D51 /* down-2-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBFD129EA0A700DE9D51 /* down-2-green.png */; };
-		257AEC1F129EA0A700DE9D51 /* down-2-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBFE129EA0A700DE9D51 /* down-2-grey.png */; };
-		257AEC20129EA0A700DE9D51 /* down-2-left-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBFF129EA0A700DE9D51 /* down-2-left-green.png */; };
-		257AEC21129EA0A700DE9D51 /* down-2-left-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC00129EA0A700DE9D51 /* down-2-left-grey.png */; };
-		257AEC22129EA0A700DE9D51 /* down-2-left-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC01129EA0A700DE9D51 /* down-2-left-yellow.png */; };
-		257AEC23129EA0A700DE9D51 /* down-2-right-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC02129EA0A700DE9D51 /* down-2-right-green.png */; };
-		257AEC24129EA0A700DE9D51 /* down-2-right-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC03129EA0A700DE9D51 /* down-2-right-grey.png */; };
-		257AEC25129EA0A700DE9D51 /* down-2-right-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC04129EA0A700DE9D51 /* down-2-right-yellow.png */; };
-		257AEC26129EA0A700DE9D51 /* down-2-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC05129EA0A700DE9D51 /* down-2-yellow.png */; };
-		257AEC27129EA0A700DE9D51 /* down-3-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC06129EA0A700DE9D51 /* down-3-green.png */; };
-		257AEC28129EA0A700DE9D51 /* down-3-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC07129EA0A700DE9D51 /* down-3-grey.png */; };
-		257AEC29129EA0A700DE9D51 /* down-3-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC08129EA0A700DE9D51 /* down-3-yellow.png */; };
-		257AEC2A129EA0A700DE9D51 /* down-4-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC09129EA0A700DE9D51 /* down-4-green.png */; };
-		257AEC2B129EA0A700DE9D51 /* down-4-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC0A129EA0A700DE9D51 /* down-4-grey.png */; };
-		257AEC2C129EA0A700DE9D51 /* down-4-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC0B129EA0A700DE9D51 /* down-4-yellow.png */; };
-		257AEC2D129EA0A700DE9D51 /* down-left-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC0C129EA0A700DE9D51 /* down-left-green.png */; };
-		257AEC2E129EA0A700DE9D51 /* down-left-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC0D129EA0A700DE9D51 /* down-left-grey.png */; };
-		257AEC2F129EA0A700DE9D51 /* down-left-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC0E129EA0A700DE9D51 /* down-left-yellow.png */; };
-		257AEC30129EA0A700DE9D51 /* down-right-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC0F129EA0A700DE9D51 /* down-right-green.png */; };
-		257AEC31129EA0A700DE9D51 /* down-right-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC10129EA0A700DE9D51 /* down-right-grey.png */; };
-		257AEC32129EA0A700DE9D51 /* down-right-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC11129EA0A700DE9D51 /* down-right-yellow.png */; };
-		257AEC33129EA0A700DE9D51 /* icon-over-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC12129EA0A700DE9D51 /* icon-over-green.png */; };
-		257AEC34129EA0A700DE9D51 /* icon-over-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC13129EA0A700DE9D51 /* icon-over-grey.png */; };
-		257AEC35129EA0A700DE9D51 /* icon-over-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC14129EA0A700DE9D51 /* icon-over-yellow.png */; };
-		257AEC80129EA91700DE9D51 /* 0000.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEC7F129EA91700DE9D51 /* 0000.png */; };
 		25DC757812B5A682000F70F6 /* TooltipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DC757612B5A682000F70F6 /* TooltipViewController.m */; };
 		25DC757A12B5A682000F70F6 /* TooltipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DC757612B5A682000F70F6 /* TooltipViewController.m */; };
 		25DC758A12B5A78C000F70F6 /* points_minus_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DC758412B5A78C000F70F6 /* points_minus_on.png */; };
@@ -376,6 +369,28 @@
 		25136BB512B637A500BEFD01 /* rogue.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rogue.json; sourceTree = "<group>"; };
 		25136BB612B637A500BEFD01 /* shaman.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shaman.json; sourceTree = "<group>"; };
 		25136BB712B637A500BEFD01 /* warlock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warlock.json; sourceTree = "<group>"; };
+		25136C6E12B646C600BEFD01 /* 1-0-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-0-gray.png"; sourceTree = "<group>"; };
+		25136C6F12B646C600BEFD01 /* 1-0-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-0-yellow.png"; sourceTree = "<group>"; };
+		25136C7112B646C600BEFD01 /* 0-1-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0-1-gray.png"; sourceTree = "<group>"; };
+		25136C7212B646C600BEFD01 /* 0-1-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0-1-yellow.png"; sourceTree = "<group>"; };
+		25136C7412B646C600BEFD01 /* 0-2-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0-2-gray.png"; sourceTree = "<group>"; };
+		25136C7B12B646C700BEFD01 /* 0-2-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0-2-yellow.png"; sourceTree = "<group>"; };
+		25136C8612B646C700BEFD01 /* 1-1-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-1-gray.png"; sourceTree = "<group>"; };
+		25136C8712B646C700BEFD01 /* 1-1-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-1-yellow.png"; sourceTree = "<group>"; };
+		25136CC512B646D000BEFD01 /* icon_deathknight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_deathknight.png; sourceTree = "<group>"; };
+		25136CC612B646D000BEFD01 /* icon_druid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_druid.png; sourceTree = "<group>"; };
+		25136CC712B646D000BEFD01 /* icon_hunter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_hunter.png; sourceTree = "<group>"; };
+		25136CC812B646D000BEFD01 /* icon_mage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_mage.png; sourceTree = "<group>"; };
+		25136CC912B646D000BEFD01 /* icon_murloc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_murloc.png; sourceTree = "<group>"; };
+		25136CCA12B646D000BEFD01 /* icon_paladin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_paladin.png; sourceTree = "<group>"; };
+		25136CCB12B646D000BEFD01 /* icon_pet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pet.png; sourceTree = "<group>"; };
+		25136CCC12B646D000BEFD01 /* icon_priest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_priest.png; sourceTree = "<group>"; };
+		25136CCD12B646D000BEFD01 /* icon_rogue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_rogue.png; sourceTree = "<group>"; };
+		25136CCE12B646D000BEFD01 /* icon_shaman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_shaman.png; sourceTree = "<group>"; };
+		25136CCF12B646D000BEFD01 /* icon_warlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_warlock.png; sourceTree = "<group>"; };
+		25136CD012B646D000BEFD01 /* icon_warrior.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_warrior.png; sourceTree = "<group>"; };
+		25136D7D12B64BDA00BEFD01 /* -1-0-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "-1-0-gray.png"; sourceTree = "<group>"; };
+		25136D7E12B64BDA00BEFD01 /* -1-0-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "-1-0-yellow.png"; sourceTree = "<group>"; };
 		257AEA22129E8F8900DE9D51 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		257AEA27129E8FB900DE9D51 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		257AEA30129E901900DE9D51 /* SMADataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMADataCenter.h; sourceTree = "<group>"; };
@@ -397,58 +412,9 @@
 		257AEAED129E945400DE9D51 /* LauncherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LauncherViewController.xib; sourceTree = "<group>"; };
 		257AEB2B129E968A00DE9D51 /* TalentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentViewController.h; sourceTree = "<group>"; };
 		257AEB2C129E968A00DE9D51 /* TalentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalentViewController.m; sourceTree = "<group>"; };
-		257AEB82129E9C8400DE9D51 /* deathknight_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deathknight_0.png; sourceTree = "<group>"; };
-		257AEB83129E9C8400DE9D51 /* deathknight_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deathknight_1.png; sourceTree = "<group>"; };
-		257AEB84129E9C8400DE9D51 /* deathknight_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deathknight_2.png; sourceTree = "<group>"; };
-		257AEB86129E9C8400DE9D51 /* icon_deathknight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_deathknight.png; sourceTree = "<group>"; };
-		257AEB87129E9C8400DE9D51 /* icon_druid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_druid.png; sourceTree = "<group>"; };
-		257AEB88129E9C8400DE9D51 /* icon_hunter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_hunter.png; sourceTree = "<group>"; };
-		257AEB89129E9C8400DE9D51 /* icon_mage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_mage.png; sourceTree = "<group>"; };
-		257AEB8A129E9C8400DE9D51 /* icon_murloc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_murloc.png; sourceTree = "<group>"; };
-		257AEB8B129E9C8400DE9D51 /* icon_paladin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_paladin.png; sourceTree = "<group>"; };
-		257AEB8C129E9C8400DE9D51 /* icon_pet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pet.png; sourceTree = "<group>"; };
-		257AEB8D129E9C8400DE9D51 /* icon_priest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_priest.png; sourceTree = "<group>"; };
-		257AEB8E129E9C8400DE9D51 /* icon_rogue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_rogue.png; sourceTree = "<group>"; };
-		257AEB8F129E9C8400DE9D51 /* icon_shaman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_shaman.png; sourceTree = "<group>"; };
-		257AEB90129E9C8400DE9D51 /* icon_warlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_warlock.png; sourceTree = "<group>"; };
-		257AEB91129E9C8400DE9D51 /* icon_warrior.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_warrior.png; sourceTree = "<group>"; };
 		257AEBEA129E9F9500DE9D51 /* TalentButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentButton.h; sourceTree = "<group>"; };
 		257AEBEB129E9F9500DE9D51 /* TalentButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalentButton.m; sourceTree = "<group>"; };
 		257AEBEF129E9FE500DE9D51 /* TalentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalentViewController.xib; sourceTree = "<group>"; };
-		257AEBF4129EA0A700DE9D51 /* across-left-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "across-left-green.png"; sourceTree = "<group>"; };
-		257AEBF5129EA0A700DE9D51 /* across-left-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "across-left-grey.png"; sourceTree = "<group>"; };
-		257AEBF6129EA0A700DE9D51 /* across-left-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "across-left-yellow.png"; sourceTree = "<group>"; };
-		257AEBF7129EA0A700DE9D51 /* across-right-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "across-right-green.png"; sourceTree = "<group>"; };
-		257AEBF8129EA0A700DE9D51 /* across-right-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "across-right-grey.png"; sourceTree = "<group>"; };
-		257AEBF9129EA0A700DE9D51 /* across-right-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "across-right-yellow.png"; sourceTree = "<group>"; };
-		257AEBFA129EA0A700DE9D51 /* down-1-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-1-green.png"; sourceTree = "<group>"; };
-		257AEBFB129EA0A700DE9D51 /* down-1-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-1-grey.png"; sourceTree = "<group>"; };
-		257AEBFC129EA0A700DE9D51 /* down-1-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-1-yellow.png"; sourceTree = "<group>"; };
-		257AEBFD129EA0A700DE9D51 /* down-2-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-2-green.png"; sourceTree = "<group>"; };
-		257AEBFE129EA0A700DE9D51 /* down-2-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-2-grey.png"; sourceTree = "<group>"; };
-		257AEBFF129EA0A700DE9D51 /* down-2-left-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-2-left-green.png"; sourceTree = "<group>"; };
-		257AEC00129EA0A700DE9D51 /* down-2-left-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-2-left-grey.png"; sourceTree = "<group>"; };
-		257AEC01129EA0A700DE9D51 /* down-2-left-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-2-left-yellow.png"; sourceTree = "<group>"; };
-		257AEC02129EA0A700DE9D51 /* down-2-right-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-2-right-green.png"; sourceTree = "<group>"; };
-		257AEC03129EA0A700DE9D51 /* down-2-right-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-2-right-grey.png"; sourceTree = "<group>"; };
-		257AEC04129EA0A700DE9D51 /* down-2-right-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-2-right-yellow.png"; sourceTree = "<group>"; };
-		257AEC05129EA0A700DE9D51 /* down-2-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-2-yellow.png"; sourceTree = "<group>"; };
-		257AEC06129EA0A700DE9D51 /* down-3-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-3-green.png"; sourceTree = "<group>"; };
-		257AEC07129EA0A700DE9D51 /* down-3-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-3-grey.png"; sourceTree = "<group>"; };
-		257AEC08129EA0A700DE9D51 /* down-3-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-3-yellow.png"; sourceTree = "<group>"; };
-		257AEC09129EA0A700DE9D51 /* down-4-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-4-green.png"; sourceTree = "<group>"; };
-		257AEC0A129EA0A700DE9D51 /* down-4-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-4-grey.png"; sourceTree = "<group>"; };
-		257AEC0B129EA0A700DE9D51 /* down-4-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-4-yellow.png"; sourceTree = "<group>"; };
-		257AEC0C129EA0A700DE9D51 /* down-left-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-left-green.png"; sourceTree = "<group>"; };
-		257AEC0D129EA0A700DE9D51 /* down-left-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-left-grey.png"; sourceTree = "<group>"; };
-		257AEC0E129EA0A700DE9D51 /* down-left-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-left-yellow.png"; sourceTree = "<group>"; };
-		257AEC0F129EA0A700DE9D51 /* down-right-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-right-green.png"; sourceTree = "<group>"; };
-		257AEC10129EA0A700DE9D51 /* down-right-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-right-grey.png"; sourceTree = "<group>"; };
-		257AEC11129EA0A700DE9D51 /* down-right-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-right-yellow.png"; sourceTree = "<group>"; };
-		257AEC12129EA0A700DE9D51 /* icon-over-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-over-green.png"; sourceTree = "<group>"; };
-		257AEC13129EA0A700DE9D51 /* icon-over-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-over-grey.png"; sourceTree = "<group>"; };
-		257AEC14129EA0A700DE9D51 /* icon-over-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-over-yellow.png"; sourceTree = "<group>"; };
-		257AEC7F129EA91700DE9D51 /* 0000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0000.png; sourceTree = "<group>"; };
 		25DC757512B5A682000F70F6 /* TooltipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TooltipViewController.h; sourceTree = "<group>"; };
 		25DC757612B5A682000F70F6 /* TooltipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TooltipViewController.m; sourceTree = "<group>"; };
 		25DC758412B5A78C000F70F6 /* points_minus_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = points_minus_on.png; sourceTree = "<group>"; };
@@ -677,6 +643,42 @@
 			path = backgrounds;
 			sourceTree = "<group>";
 		};
+		25136C6912B646C600BEFD01 /* arrows */ = {
+			isa = PBXGroup;
+			children = (
+				25136C7112B646C600BEFD01 /* 0-1-gray.png */,
+				25136C7212B646C600BEFD01 /* 0-1-yellow.png */,
+				25136C7412B646C600BEFD01 /* 0-2-gray.png */,
+				25136C7B12B646C700BEFD01 /* 0-2-yellow.png */,
+				25136D7D12B64BDA00BEFD01 /* -1-0-gray.png */,
+				25136D7E12B64BDA00BEFD01 /* -1-0-yellow.png */,
+				25136C6E12B646C600BEFD01 /* 1-0-gray.png */,
+				25136C6F12B646C600BEFD01 /* 1-0-yellow.png */,
+				25136C8612B646C700BEFD01 /* 1-1-gray.png */,
+				25136C8712B646C700BEFD01 /* 1-1-yellow.png */,
+			);
+			path = arrows;
+			sourceTree = "<group>";
+		};
+		25136CC412B646D000BEFD01 /* launcher */ = {
+			isa = PBXGroup;
+			children = (
+				25136CC512B646D000BEFD01 /* icon_deathknight.png */,
+				25136CC612B646D000BEFD01 /* icon_druid.png */,
+				25136CC712B646D000BEFD01 /* icon_hunter.png */,
+				25136CC812B646D000BEFD01 /* icon_mage.png */,
+				25136CC912B646D000BEFD01 /* icon_murloc.png */,
+				25136CCA12B646D000BEFD01 /* icon_paladin.png */,
+				25136CCB12B646D000BEFD01 /* icon_pet.png */,
+				25136CCC12B646D000BEFD01 /* icon_priest.png */,
+				25136CCD12B646D000BEFD01 /* icon_rogue.png */,
+				25136CCE12B646D000BEFD01 /* icon_shaman.png */,
+				25136CCF12B646D000BEFD01 /* icon_warlock.png */,
+				25136CD012B646D000BEFD01 /* icon_warrior.png */,
+			);
+			path = launcher;
+			sourceTree = "<group>";
+		};
 		257AEA2B129E900E00DE9D51 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -779,8 +781,11 @@
 		257AEAAC129E92AB00DE9D51 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				25136CC412B646D000BEFD01 /* launcher */,
+				25136C6912B646C600BEFD01 /* arrows */,
 				251369CA12B620D000BEFD01 /* backgrounds */,
 				25DC758012B5A77E000F70F6 /* Tooltip */,
+				257AEAAD129E92AB00DE9D51 /* Icons */,
 				25E080ED12B508A000646BC7 /* icon-frame-yellow.png */,
 				25E080EC12B508A000646BC7 /* icon-frame-green.png */,
 				25E080DE12B503A100646BC7 /* icon-frame-gray.png */,
@@ -791,8 +796,6 @@
 				25136A8412B6260100BEFD01 /* summary_bg.jpg */,
 				25136A8F12B6265000BEFD01 /* red_button.png */,
 				25136A9212B6270400BEFD01 /* tree-overview-icon-frame.png */,
-				257AEB0B129E95BC00DE9D51 /* 1x */,
-				257AEAAD129E92AB00DE9D51 /* Icons */,
 			);
 			name = Assets;
 			path = Resources/Assets;
@@ -815,94 +818,6 @@
 			);
 			name = Nibs;
 			path = Resources/Nibs;
-			sourceTree = "<group>";
-		};
-		257AEB0B129E95BC00DE9D51 /* 1x */ = {
-			isa = PBXGroup;
-			children = (
-				257AEC7E129EA91700DE9D51 /* Talents */,
-				257AEBF3129EA0A700DE9D51 /* Misc */,
-				257AEB81129E9C8400DE9D51 /* Backgrounds */,
-				257AEB85129E9C8400DE9D51 /* LauncherIcons */,
-			);
-			path = 1x;
-			sourceTree = "<group>";
-		};
-		257AEB81129E9C8400DE9D51 /* Backgrounds */ = {
-			isa = PBXGroup;
-			children = (
-				257AEB82129E9C8400DE9D51 /* deathknight_0.png */,
-				257AEB83129E9C8400DE9D51 /* deathknight_1.png */,
-				257AEB84129E9C8400DE9D51 /* deathknight_2.png */,
-			);
-			path = Backgrounds;
-			sourceTree = "<group>";
-		};
-		257AEB85129E9C8400DE9D51 /* LauncherIcons */ = {
-			isa = PBXGroup;
-			children = (
-				257AEB86129E9C8400DE9D51 /* icon_deathknight.png */,
-				257AEB87129E9C8400DE9D51 /* icon_druid.png */,
-				257AEB88129E9C8400DE9D51 /* icon_hunter.png */,
-				257AEB89129E9C8400DE9D51 /* icon_mage.png */,
-				257AEB8A129E9C8400DE9D51 /* icon_murloc.png */,
-				257AEB8B129E9C8400DE9D51 /* icon_paladin.png */,
-				257AEB8C129E9C8400DE9D51 /* icon_pet.png */,
-				257AEB8D129E9C8400DE9D51 /* icon_priest.png */,
-				257AEB8E129E9C8400DE9D51 /* icon_rogue.png */,
-				257AEB8F129E9C8400DE9D51 /* icon_shaman.png */,
-				257AEB90129E9C8400DE9D51 /* icon_warlock.png */,
-				257AEB91129E9C8400DE9D51 /* icon_warrior.png */,
-			);
-			path = LauncherIcons;
-			sourceTree = "<group>";
-		};
-		257AEBF3129EA0A700DE9D51 /* Misc */ = {
-			isa = PBXGroup;
-			children = (
-				257AEBF4129EA0A700DE9D51 /* across-left-green.png */,
-				257AEBF5129EA0A700DE9D51 /* across-left-grey.png */,
-				257AEBF6129EA0A700DE9D51 /* across-left-yellow.png */,
-				257AEBF7129EA0A700DE9D51 /* across-right-green.png */,
-				257AEBF8129EA0A700DE9D51 /* across-right-grey.png */,
-				257AEBF9129EA0A700DE9D51 /* across-right-yellow.png */,
-				257AEBFA129EA0A700DE9D51 /* down-1-green.png */,
-				257AEBFB129EA0A700DE9D51 /* down-1-grey.png */,
-				257AEBFC129EA0A700DE9D51 /* down-1-yellow.png */,
-				257AEBFD129EA0A700DE9D51 /* down-2-green.png */,
-				257AEBFE129EA0A700DE9D51 /* down-2-grey.png */,
-				257AEBFF129EA0A700DE9D51 /* down-2-left-green.png */,
-				257AEC00129EA0A700DE9D51 /* down-2-left-grey.png */,
-				257AEC01129EA0A700DE9D51 /* down-2-left-yellow.png */,
-				257AEC02129EA0A700DE9D51 /* down-2-right-green.png */,
-				257AEC03129EA0A700DE9D51 /* down-2-right-grey.png */,
-				257AEC04129EA0A700DE9D51 /* down-2-right-yellow.png */,
-				257AEC05129EA0A700DE9D51 /* down-2-yellow.png */,
-				257AEC06129EA0A700DE9D51 /* down-3-green.png */,
-				257AEC07129EA0A700DE9D51 /* down-3-grey.png */,
-				257AEC08129EA0A700DE9D51 /* down-3-yellow.png */,
-				257AEC09129EA0A700DE9D51 /* down-4-green.png */,
-				257AEC0A129EA0A700DE9D51 /* down-4-grey.png */,
-				257AEC0B129EA0A700DE9D51 /* down-4-yellow.png */,
-				257AEC0C129EA0A700DE9D51 /* down-left-green.png */,
-				257AEC0D129EA0A700DE9D51 /* down-left-grey.png */,
-				257AEC0E129EA0A700DE9D51 /* down-left-yellow.png */,
-				257AEC0F129EA0A700DE9D51 /* down-right-green.png */,
-				257AEC10129EA0A700DE9D51 /* down-right-grey.png */,
-				257AEC11129EA0A700DE9D51 /* down-right-yellow.png */,
-				257AEC12129EA0A700DE9D51 /* icon-over-green.png */,
-				257AEC13129EA0A700DE9D51 /* icon-over-grey.png */,
-				257AEC14129EA0A700DE9D51 /* icon-over-yellow.png */,
-			);
-			path = Misc;
-			sourceTree = "<group>";
-		};
-		257AEC7E129EA91700DE9D51 /* Talents */ = {
-			isa = PBXGroup;
-			children = (
-				257AEC7F129EA91700DE9D51 /* 0000.png */,
-			);
-			path = Talents;
 			sourceTree = "<group>";
 		};
 		25DC758012B5A77E000F70F6 /* Tooltip */ = {
@@ -1070,56 +985,7 @@
 				257AEAB4129E92AB00DE9D51 /* Icon.png in Resources */,
 				257AEAB5129E92AB00DE9D51 /* Icon@2x.png in Resources */,
 				257AEAEF129E945400DE9D51 /* LauncherViewController.xib in Resources */,
-				257AEB92129E9C8400DE9D51 /* deathknight_0.png in Resources */,
-				257AEB93129E9C8400DE9D51 /* deathknight_1.png in Resources */,
-				257AEB94129E9C8400DE9D51 /* deathknight_2.png in Resources */,
-				257AEB95129E9C8400DE9D51 /* icon_deathknight.png in Resources */,
-				257AEB96129E9C8400DE9D51 /* icon_druid.png in Resources */,
-				257AEB97129E9C8400DE9D51 /* icon_hunter.png in Resources */,
-				257AEB98129E9C8400DE9D51 /* icon_mage.png in Resources */,
-				257AEB99129E9C8400DE9D51 /* icon_murloc.png in Resources */,
-				257AEB9A129E9C8400DE9D51 /* icon_paladin.png in Resources */,
-				257AEB9B129E9C8400DE9D51 /* icon_pet.png in Resources */,
-				257AEB9C129E9C8400DE9D51 /* icon_priest.png in Resources */,
-				257AEB9D129E9C8400DE9D51 /* icon_rogue.png in Resources */,
-				257AEB9E129E9C8400DE9D51 /* icon_shaman.png in Resources */,
-				257AEB9F129E9C8400DE9D51 /* icon_warlock.png in Resources */,
-				257AEBA0129E9C8400DE9D51 /* icon_warrior.png in Resources */,
 				257AEBF0129E9FE500DE9D51 /* TalentViewController.xib in Resources */,
-				257AEC15129EA0A700DE9D51 /* across-left-green.png in Resources */,
-				257AEC16129EA0A700DE9D51 /* across-left-grey.png in Resources */,
-				257AEC17129EA0A700DE9D51 /* across-left-yellow.png in Resources */,
-				257AEC18129EA0A700DE9D51 /* across-right-green.png in Resources */,
-				257AEC19129EA0A700DE9D51 /* across-right-grey.png in Resources */,
-				257AEC1A129EA0A700DE9D51 /* across-right-yellow.png in Resources */,
-				257AEC1B129EA0A700DE9D51 /* down-1-green.png in Resources */,
-				257AEC1C129EA0A700DE9D51 /* down-1-grey.png in Resources */,
-				257AEC1D129EA0A700DE9D51 /* down-1-yellow.png in Resources */,
-				257AEC1E129EA0A700DE9D51 /* down-2-green.png in Resources */,
-				257AEC1F129EA0A700DE9D51 /* down-2-grey.png in Resources */,
-				257AEC20129EA0A700DE9D51 /* down-2-left-green.png in Resources */,
-				257AEC21129EA0A700DE9D51 /* down-2-left-grey.png in Resources */,
-				257AEC22129EA0A700DE9D51 /* down-2-left-yellow.png in Resources */,
-				257AEC23129EA0A700DE9D51 /* down-2-right-green.png in Resources */,
-				257AEC24129EA0A700DE9D51 /* down-2-right-grey.png in Resources */,
-				257AEC25129EA0A700DE9D51 /* down-2-right-yellow.png in Resources */,
-				257AEC26129EA0A700DE9D51 /* down-2-yellow.png in Resources */,
-				257AEC27129EA0A700DE9D51 /* down-3-green.png in Resources */,
-				257AEC28129EA0A700DE9D51 /* down-3-grey.png in Resources */,
-				257AEC29129EA0A700DE9D51 /* down-3-yellow.png in Resources */,
-				257AEC2A129EA0A700DE9D51 /* down-4-green.png in Resources */,
-				257AEC2B129EA0A700DE9D51 /* down-4-grey.png in Resources */,
-				257AEC2C129EA0A700DE9D51 /* down-4-yellow.png in Resources */,
-				257AEC2D129EA0A700DE9D51 /* down-left-green.png in Resources */,
-				257AEC2E129EA0A700DE9D51 /* down-left-grey.png in Resources */,
-				257AEC2F129EA0A700DE9D51 /* down-left-yellow.png in Resources */,
-				257AEC30129EA0A700DE9D51 /* down-right-green.png in Resources */,
-				257AEC31129EA0A700DE9D51 /* down-right-grey.png in Resources */,
-				257AEC32129EA0A700DE9D51 /* down-right-yellow.png in Resources */,
-				257AEC33129EA0A700DE9D51 /* icon-over-green.png in Resources */,
-				257AEC34129EA0A700DE9D51 /* icon-over-grey.png in Resources */,
-				257AEC35129EA0A700DE9D51 /* icon-over-yellow.png in Resources */,
-				257AEC80129EA91700DE9D51 /* 0000.png in Resources */,
 				2500E42012B46A2F00EB1987 /* MainWindow.xib in Resources */,
 				2500E49A12B4936100EB1987 /* CalculatorViewController.xib in Resources */,
 				2500E4F512B49A0100EB1987 /* TreeViewController.xib in Resources */,
@@ -1185,6 +1051,28 @@
 				25136BBD12B637A500BEFD01 /* rogue.json in Resources */,
 				25136BBE12B637A500BEFD01 /* shaman.json in Resources */,
 				25136BBF12B637A500BEFD01 /* warlock.json in Resources */,
+				25136C8C12B646C700BEFD01 /* 1-0-gray.png in Resources */,
+				25136C8D12B646C700BEFD01 /* 1-0-yellow.png in Resources */,
+				25136C8F12B646C700BEFD01 /* 0-1-gray.png in Resources */,
+				25136C9012B646C700BEFD01 /* 0-1-yellow.png in Resources */,
+				25136C9212B646C700BEFD01 /* 0-2-gray.png in Resources */,
+				25136C9912B646C700BEFD01 /* 0-2-yellow.png in Resources */,
+				25136CA412B646C700BEFD01 /* 1-1-gray.png in Resources */,
+				25136CA512B646C700BEFD01 /* 1-1-yellow.png in Resources */,
+				25136CD112B646D000BEFD01 /* icon_deathknight.png in Resources */,
+				25136CD212B646D000BEFD01 /* icon_druid.png in Resources */,
+				25136CD312B646D000BEFD01 /* icon_hunter.png in Resources */,
+				25136CD412B646D000BEFD01 /* icon_mage.png in Resources */,
+				25136CD512B646D000BEFD01 /* icon_murloc.png in Resources */,
+				25136CD612B646D000BEFD01 /* icon_paladin.png in Resources */,
+				25136CD712B646D000BEFD01 /* icon_pet.png in Resources */,
+				25136CD812B646D000BEFD01 /* icon_priest.png in Resources */,
+				25136CD912B646D000BEFD01 /* icon_rogue.png in Resources */,
+				25136CDA12B646D000BEFD01 /* icon_shaman.png in Resources */,
+				25136CDB12B646D000BEFD01 /* icon_warlock.png in Resources */,
+				25136CDC12B646D000BEFD01 /* icon_warrior.png in Resources */,
+				25136D8012B64BDA00BEFD01 /* -1-0-gray.png in Resources */,
+				25136D8112B64BDA00BEFD01 /* -1-0-yellow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1250,6 +1138,26 @@
 				25136BC512B637A500BEFD01 /* rogue.json in Resources */,
 				25136BC612B637A500BEFD01 /* shaman.json in Resources */,
 				25136BC712B637A500BEFD01 /* warlock.json in Resources */,
+				25136CAA12B646C700BEFD01 /* 1-0-gray.png in Resources */,
+				25136CAB12B646C700BEFD01 /* 1-0-yellow.png in Resources */,
+				25136CAD12B646C700BEFD01 /* 0-1-gray.png in Resources */,
+				25136CAE12B646C700BEFD01 /* 0-1-yellow.png in Resources */,
+				25136CB012B646C700BEFD01 /* 0-2-gray.png in Resources */,
+				25136CB712B646C700BEFD01 /* 0-2-yellow.png in Resources */,
+				25136CC212B646C700BEFD01 /* 1-1-gray.png in Resources */,
+				25136CC312B646C700BEFD01 /* 1-1-yellow.png in Resources */,
+				25136CDD12B646D000BEFD01 /* icon_deathknight.png in Resources */,
+				25136CDE12B646D000BEFD01 /* icon_druid.png in Resources */,
+				25136CDF12B646D000BEFD01 /* icon_hunter.png in Resources */,
+				25136CE012B646D000BEFD01 /* icon_mage.png in Resources */,
+				25136CE112B646D000BEFD01 /* icon_murloc.png in Resources */,
+				25136CE212B646D000BEFD01 /* icon_paladin.png in Resources */,
+				25136CE312B646D000BEFD01 /* icon_pet.png in Resources */,
+				25136CE412B646D000BEFD01 /* icon_priest.png in Resources */,
+				25136CE512B646D000BEFD01 /* icon_rogue.png in Resources */,
+				25136CE612B646D000BEFD01 /* icon_shaman.png in Resources */,
+				25136CE712B646D000BEFD01 /* icon_warlock.png in Resources */,
+				25136CE812B646D000BEFD01 /* icon_warrior.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

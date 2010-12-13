@@ -75,7 +75,7 @@ static UIImage *_abilityYellow = nil;
 }
 
 - (void)updateState {
-  DLog(@"Talent: %@ Update State", self.talent);
+//  DLog(@"Talent: %@ Update State", self.talent.talentName);
   _talentLabel.text = [NSString stringWithFormat:@"%d", self.currentRank];
   [self updateBorders];
   
@@ -101,7 +101,7 @@ static UIImage *_abilityYellow = nil;
 }
 
 - (void)updateStateFinished {
-  DLog(@"Talent: %@ Update State Finished", self.talent);
+  DLog(@"Talent: %@ Update State Finished", self.talent.talentName);
   [self updateState];
   
   // If we are finished, hide all labels for enabled talents with 0 points
@@ -144,7 +144,7 @@ static UIImage *_abilityYellow = nil;
 
 // Add a point for now
 - (IBAction)talentTapped {
-  DLog(@"Talent tapped for talent: %@", self.talent);
+  DLog(@"Talent tapped for talent: %@", self.talent.talentName);
   if (self.delegate) {
     [self.delegate talentTapped:self];
   }

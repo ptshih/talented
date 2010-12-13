@@ -23,6 +23,10 @@ typedef enum {
   IBOutlet UIView *_summaryView;
   IBOutlet UIButton *_swapButton;
   IBOutlet UIButton *_resetButton;
+  IBOutlet UIImageView *_leftIcon;
+  IBOutlet UIImageView *_middleIcon;
+  IBOutlet UIImageView *_rightIcon;
+  
   
   TooltipViewController *_tooltipViewController;
   NSArray *_treeArray;
