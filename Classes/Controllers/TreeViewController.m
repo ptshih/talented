@@ -34,6 +34,7 @@
 
 @synthesize talentArray = _talentArray;
 @synthesize talentViewDict = _talentViewDict;
+@synthesize childDict = _childDict;
 @synthesize pointsInTier = _pointsInTier;
 @synthesize pointsInTree = _pointsInTree;
 @synthesize characterClassId = _characterClassId;
@@ -49,6 +50,7 @@
   if (self) {
     _talentArray = [[NSArray array] retain];
     _talentViewDict = [[NSMutableDictionary alloc] init];
+    _childDict = [[NSMutableDictionary alloc] init];
     
     // Initialize points in tier for 7 tiers
     _pointsInTier = [[NSArray alloc] initWithObjects:[NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], nil];
@@ -77,7 +79,7 @@
     tvc.view.frame = CGRectMake(((SPACING_X + T_WIDTH) * [talent.col integerValue]), ((SPACING_Y + T_HEIGHT) * [talent.tier integerValue]), tvc.view.frame.size.width, tvc.view.frame.size.height);
     [self.view addSubview:tvc.view];
     [self.talentViewDict setObject:tvc forKey:[talent.talentId stringValue]];
-//    [tvc updateState];
+    if (talent.req) [self.childDict setObject:[talent.talentId stringValue] forKey:[talent.req stringValue]];
     [tvc release];
   }
   
@@ -127,7 +129,20 @@
   // NEED LOGIC HERE
   
   // Check for parent requirement if exist
-  // NEED LOGIC HERE
+  // Look in the inverse dependency requirement dictionary to see if this talent has a child
+  // IF this talent has a child, make sure child has no points
+  NSString *childId = [self.childDict objectForKey:[talentView.talent.talentId stringValue]];
+  if (childId) {
+    TalentViewController *childTalentViewController = [self.talentViewDict valueForKey:childId];
+    if (childTalentViewController) {
+      DLog(@"Child: %@ found for Parent: %@", childTalentViewController, talentView);
+      
+      // If the child's current rank is not 0, return NO
+      if (childTalentViewController.currentRank != 0) {
+        return NO;
+      }
+    }
+  }
   
   return YES;
 }
@@ -236,6 +251,7 @@
   if (_talentArray) [_talentArray release];
   if (_pointsInTier) [_pointsInTier release];
   if (_talentViewDict) [_talentViewDict release];
+  if (_childDict) [_childDict release];
   [super dealloc];
 }
 

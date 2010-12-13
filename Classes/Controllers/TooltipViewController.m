@@ -98,8 +98,6 @@ static UIImage *_minusButtonOff = nil;
   _minusButton = [[UIButton alloc] initWithFrame:CGRectMake(61, 15, BUTTON_WIDTH, BUTTON_HEIGHT)];
   [self.plusButton addTarget:self action:@selector(addPoint:) forControlEvents:UIControlEventTouchUpInside];
   [self.minusButton addTarget:self action:@selector(removePoint:) forControlEvents:UIControlEventTouchUpInside];
-  [self.plusButton setImage:_plusButtonOn forState:UIControlStateNormal];
-  [self.minusButton setImage:_minusButtonOn forState:UIControlStateNormal];
 }
 
 - (void)setupBackground {
@@ -132,6 +130,19 @@ static UIImage *_minusButtonOff = nil;
 }
 
 #pragma mark UI Layout
+- (void)prepareButtons {
+  if ([self.treeView canAddPoint:self.talentView]) {
+    [self.plusButton setImage:_plusButtonOn forState:UIControlStateNormal];
+  } else {
+    [self.plusButton setImage:_plusButtonOff forState:UIControlStateNormal];
+  }
+  if ([self.treeView canSubtractPoint:self.talentView]) {
+    [self.minusButton setImage:_minusButtonOn forState:UIControlStateNormal];
+  } else {
+    [self.minusButton setImage:_minusButtonOff forState:UIControlStateNormal];
+  }
+}
+
 - (void)prepareLabels {
   // Add name label
   self.nameLabel.text = self.talentView.talent.talentName;
@@ -188,6 +199,7 @@ static UIImage *_minusButtonOff = nil;
 
 - (void)loadTooltipPopup {
   _desiredHeight = 75.0;
+  [self prepareButtons];
   [self prepareLabels];
   [self prepareTooltip];
   
@@ -220,16 +232,22 @@ static UIImage *_minusButtonOff = nil;
   }
 }
 
+- (void)updateButtons {
+  [self prepareButtons];
+}
+
 #pragma mark Add/Remove Point
 - (void)addPoint:(id)sender {
   if ([self.talentView talentAdd]) {
     [self updateLabels];
+    [self updateButtons];
   }
 }
 
 - (void)removePoint:(id)sender {
   if ([self.talentView talentSubtract]) {
     [self updateLabels];
+    [self updateButtons];
   }
 }
 

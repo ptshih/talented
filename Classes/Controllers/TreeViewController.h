@@ -29,6 +29,7 @@ typedef enum {
 @interface TreeViewController : UIViewController <TalentDelegate> {
   NSArray *_talentArray;
   NSMutableDictionary *_talentViewDict;
+  NSMutableDictionary *_childDict; // This is an inverse requirement (child) dictionary used for canSubtract
   NSArray *_pointsInTier;
   NSInteger _pointsInTree;
   NSInteger _characterClassId;
@@ -42,6 +43,7 @@ typedef enum {
 
 @property (nonatomic, retain) NSArray *talentArray;
 @property (nonatomic, retain) NSMutableDictionary *talentViewDict;
+@property (nonatomic, retain) NSMutableDictionary *childDict;
 @property (nonatomic, retain) NSArray *pointsInTier;
 @property (nonatomic, assign) NSInteger pointsInTree;
 @property (nonatomic, assign) NSInteger characterClassId;
@@ -58,5 +60,6 @@ typedef enum {
 - (void)updateState;
 
 - (BOOL)canAddPoint:(TalentViewController *)talentView;
+- (BOOL)canSubtractPoint:(TalentViewController *)talentView;
 
 @end
