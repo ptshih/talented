@@ -139,6 +139,22 @@
 		25136A9112B6265000BEFD01 /* red_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136A8F12B6265000BEFD01 /* red_button.png */; };
 		25136A9312B6270400BEFD01 /* tree-overview-icon-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136A9212B6270400BEFD01 /* tree-overview-icon-frame.png */; };
 		25136A9412B6270400BEFD01 /* tree-overview-icon-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136A9212B6270400BEFD01 /* tree-overview-icon-frame.png */; };
+		25136BB812B637A500BEFD01 /* deathknight.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB012B637A500BEFD01 /* deathknight.json */; };
+		25136BB912B637A500BEFD01 /* druid.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB112B637A500BEFD01 /* druid.json */; };
+		25136BBA12B637A500BEFD01 /* hunter.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB212B637A500BEFD01 /* hunter.json */; };
+		25136BBB12B637A500BEFD01 /* mage.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB312B637A500BEFD01 /* mage.json */; };
+		25136BBC12B637A500BEFD01 /* priest.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB412B637A500BEFD01 /* priest.json */; };
+		25136BBD12B637A500BEFD01 /* rogue.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB512B637A500BEFD01 /* rogue.json */; };
+		25136BBE12B637A500BEFD01 /* shaman.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB612B637A500BEFD01 /* shaman.json */; };
+		25136BBF12B637A500BEFD01 /* warlock.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB712B637A500BEFD01 /* warlock.json */; };
+		25136BC012B637A500BEFD01 /* deathknight.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB012B637A500BEFD01 /* deathknight.json */; };
+		25136BC112B637A500BEFD01 /* druid.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB112B637A500BEFD01 /* druid.json */; };
+		25136BC212B637A500BEFD01 /* hunter.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB212B637A500BEFD01 /* hunter.json */; };
+		25136BC312B637A500BEFD01 /* mage.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB312B637A500BEFD01 /* mage.json */; };
+		25136BC412B637A500BEFD01 /* priest.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB412B637A500BEFD01 /* priest.json */; };
+		25136BC512B637A500BEFD01 /* rogue.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB512B637A500BEFD01 /* rogue.json */; };
+		25136BC612B637A500BEFD01 /* shaman.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB612B637A500BEFD01 /* shaman.json */; };
+		25136BC712B637A500BEFD01 /* warlock.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB712B637A500BEFD01 /* warlock.json */; };
 		257AEA28129E8FB900DE9D51 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA27129E8FB900DE9D51 /* CoreData.framework */; };
 		257AEA34129E901900DE9D51 /* SMADataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA31129E901900DE9D51 /* SMADataCenter.m */; };
 		257AEA35129E901900DE9D51 /* SMACoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA33129E901900DE9D51 /* SMACoreDataStack.m */; };
@@ -352,6 +368,14 @@
 		25136A8412B6260100BEFD01 /* summary_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = summary_bg.jpg; sourceTree = "<group>"; };
 		25136A8F12B6265000BEFD01 /* red_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_button.png; sourceTree = "<group>"; };
 		25136A9212B6270400BEFD01 /* tree-overview-icon-frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tree-overview-icon-frame.png"; sourceTree = "<group>"; };
+		25136BB012B637A500BEFD01 /* deathknight.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deathknight.json; sourceTree = "<group>"; };
+		25136BB112B637A500BEFD01 /* druid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = druid.json; sourceTree = "<group>"; };
+		25136BB212B637A500BEFD01 /* hunter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hunter.json; sourceTree = "<group>"; };
+		25136BB312B637A500BEFD01 /* mage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mage.json; sourceTree = "<group>"; };
+		25136BB412B637A500BEFD01 /* priest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = priest.json; sourceTree = "<group>"; };
+		25136BB512B637A500BEFD01 /* rogue.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rogue.json; sourceTree = "<group>"; };
+		25136BB612B637A500BEFD01 /* shaman.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shaman.json; sourceTree = "<group>"; };
+		25136BB712B637A500BEFD01 /* warlock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warlock.json; sourceTree = "<group>"; };
 		257AEA22129E8F8900DE9D51 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		257AEA27129E8FB900DE9D51 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		257AEA30129E901900DE9D51 /* SMADataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMADataCenter.h; sourceTree = "<group>"; };
@@ -596,14 +620,22 @@
 		2500E6C712B4D37300EB1987 /* json */ = {
 			isa = PBXGroup;
 			children = (
+				2500E6CB12B4D37300EB1987 /* warrior.json */,
 				25E07EB012B4EAFF00646BC7 /* paladin.json */,
+				25136BB212B637A500BEFD01 /* hunter.json */,
+				25136BB512B637A500BEFD01 /* rogue.json */,
+				25136BB412B637A500BEFD01 /* priest.json */,
+				25136BB012B637A500BEFD01 /* deathknight.json */,
+				25136BB612B637A500BEFD01 /* shaman.json */,
+				25136BB312B637A500BEFD01 /* mage.json */,
+				25136BB712B637A500BEFD01 /* warlock.json */,
+				25136BB112B637A500BEFD01 /* druid.json */,
 				25E07E5F12B4E39500646BC7 /* characterClass.json */,
 				25E07E4612B4E2B300646BC7 /* talentTrees.json */,
 				2500E89012B4E03E00EB1987 /* masteries.json */,
 				2500E6C812B4D37300EB1987 /* primarySpells.json */,
 				2500E6C912B4D37300EB1987 /* talent.json */,
 				2500E6CA12B4D37300EB1987 /* talentAbility.json */,
-				2500E6CB12B4D37300EB1987 /* warrior.json */,
 			);
 			path = json;
 			sourceTree = "<group>";
@@ -1145,6 +1177,14 @@
 				25136A8512B6260100BEFD01 /* summary_bg.jpg in Resources */,
 				25136A9012B6265000BEFD01 /* red_button.png in Resources */,
 				25136A9312B6270400BEFD01 /* tree-overview-icon-frame.png in Resources */,
+				25136BB812B637A500BEFD01 /* deathknight.json in Resources */,
+				25136BB912B637A500BEFD01 /* druid.json in Resources */,
+				25136BBA12B637A500BEFD01 /* hunter.json in Resources */,
+				25136BBB12B637A500BEFD01 /* mage.json in Resources */,
+				25136BBC12B637A500BEFD01 /* priest.json in Resources */,
+				25136BBD12B637A500BEFD01 /* rogue.json in Resources */,
+				25136BBE12B637A500BEFD01 /* shaman.json in Resources */,
+				25136BBF12B637A500BEFD01 /* warlock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1202,6 +1242,14 @@
 				25136A8612B6260100BEFD01 /* summary_bg.jpg in Resources */,
 				25136A9112B6265000BEFD01 /* red_button.png in Resources */,
 				25136A9412B6270400BEFD01 /* tree-overview-icon-frame.png in Resources */,
+				25136BC012B637A500BEFD01 /* deathknight.json in Resources */,
+				25136BC112B637A500BEFD01 /* druid.json in Resources */,
+				25136BC212B637A500BEFD01 /* hunter.json in Resources */,
+				25136BC312B637A500BEFD01 /* mage.json in Resources */,
+				25136BC412B637A500BEFD01 /* priest.json in Resources */,
+				25136BC512B637A500BEFD01 /* rogue.json in Resources */,
+				25136BC612B637A500BEFD01 /* shaman.json in Resources */,
+				25136BC712B637A500BEFD01 /* warlock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

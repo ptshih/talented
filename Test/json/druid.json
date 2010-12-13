@@ -1,0 +1,1094 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 11,
+      "name" : "Druid",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "Balance",
+      "icon" : "spell_nature_starfall",
+      "backgroundFile" : "DruidBalance",
+      "overlayColor" : "#cc4ccc",
+      "description" : "Can take on the form of a powerful Moonkin, balancing the power of Arcane and Nature magic to destroy enemies at a distance.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 78674,
+        "name" : "Starsurge",
+        "icon" : "spell_arcane_arcane03",
+        "cost" : "11% of base mana",
+        "range" : "40 yd range",
+        "castTime" : "2 sec cast",
+        "cooldown" : "15 sec cooldown",
+        "reagents" : [ ],
+        "description" : "You fuse the power of the moon and sun, launching a devastating blast of energy at the target. Causes 59 Spellstorm damage to the target and generates 15 Lunar or Solar energy, whichever is more beneficial to you.",
+        "internal" : false,
+        "keyAbility" : true
+      }, {
+        "spellId" : 16913,
+        "name" : "Moonfury",
+        "icon" : "spell_nature_moonglow",
+        "reagents" : [ ],
+        "description" : "Arcane and Nature spell damage increased by 15%.\n\n\n\nIncreases the critical strike damage bonus of your Wrath, Moonfire, Starfire, Starsurge, Insect Swarm and Starfall spells by 100%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77492,
+        "name" : "Total Eclipse",
+        "icon" : "ability_druid_eclipse",
+        "reagents" : [ ],
+        "description" : "Increases the bonus damage from Eclipse by 12%.  Each point of Mastery increases the bonus by an additional 1.5%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 8359,
+        "name" : "Nature's Grace",
+        "icon" : "spell_nature_naturesblessing",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "You gain 5% spell haste after you cast Moonfire, Regrowth, or Insect Swarm, lasting 15 sec. This effect has a 1 minute cooldown. When you gain Lunar or Solar Eclipse, the cooldown of Nature's Grace is instantly reset."
+        }, {
+          "description" : "You gain 10% spell haste after you cast Moonfire, Regrowth, or Insect Swarm, lasting 15 sec. This effect has a 1 minute cooldown. When you gain Lunar or Solar Eclipse, the cooldown of Nature's Grace is instantly reset."
+        }, {
+          "description" : "You gain 15% spell haste after you cast Moonfire, Regrowth, or Insect Swarm, lasting 15 sec. This effect has a 1 minute cooldown. When you gain Lunar or Solar Eclipse, the cooldown of Nature's Grace is instantly reset."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8349,
+        "name" : "Starlight Wrath",
+        "icon" : "spell_nature_abolishmagic",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Reduces the cast time of your Wrath and Starfire spells by .15 sec."
+        }, {
+          "description" : "Reduces the cast time of your Wrath and Starfire spells by .25 sec."
+        }, {
+          "description" : "Reduces the cast time of your Wrath and Starfire spells by 0.5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11281,
+        "name" : "Nature's Majesty",
+        "icon" : "inv_staff_01",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases the critical strike chance with spells by 2%."
+        }, {
+          "description" : "Increases the critical strike chance with spells by 4%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11284,
+        "name" : "Genesis",
+        "icon" : "spell_arcane_arcane03",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Increases the healing done by your periodic spells and by Swiftmend by 2%, and increases the duration of your Moonfire and Insect Swarm by 2 sec."
+        }, {
+          "description" : "Increases the healing done by your periodic spells and by Swiftmend by 4%, and increases the duration of your Moonfire and Insect Swarm by 4 sec."
+        }, {
+          "description" : "Increases the healing done by your periodic spells and by Swiftmend by 6%, and increases the duration of your Moonfire and Insect Swarm by 6 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8353,
+        "name" : "Moonglow",
+        "icon" : "spell_nature_sentinal",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduces the Mana cost of your damage and healing spells by 3%."
+        }, {
+          "description" : "Reduces the Mana cost of your damage and healing spells by 6%."
+        }, {
+          "description" : "Reduces the Mana cost of your damage and healing spells by 9%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8383,
+        "name" : "Balance of Power",
+        "icon" : "ability_druid_balanceofpower",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Increases your Nature and Arcane spell damage by 1% and increases your spell hit rating by an additional amount equal to 50% of your Spirit."
+        }, {
+          "description" : "Increases your Nature and Arcane spell damage by 2% and increases your spell hit rating by an additional amount equal to 100% of your Spirit."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8389,
+        "name" : "Euphoria",
+        "icon" : "achievement_boss_valithradreamwalker",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "While not in an Eclipse state, you have a 12% chance to double the Solar or Lunar energy generated by your Wrath or Starfire when they deal damage.\n\n\n\nWhen you reach a Solar or Lunar eclipse, you instantly are restored 8% of your total mana."
+        }, {
+          "description" : "While not in an Eclipse state, you have a 24% chance to double the Solar or Lunar energy generated by your Wrath or Starfire when they deal damage.\n\n\n\nWhen you reach a Solar or Lunar eclipse, you instantly are restored 16% of your total mana."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11278,
+        "name" : "Moonkin Form",
+        "icon" : "spell_nature_forceofnature",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "13% of base mana",
+          "castTime" : "Instant",
+          "description" : "Shapeshift into Moonkin Form. While in this form your Arcane and Nature spell damage is increased by 10%, the armor contribution from items is increased by 120%, and grants 5% spell haste to all nearby friendly and raid targets within 100 yards.  The Moonkin can not cast healing or resurrection spells while shapeshifted.\n\n\n\nThe act of shapeshifting frees the caster of Movement Impairing effects."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11282,
+        "name" : "Typhoon",
+        "icon" : "ability_druid_typhoon",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "32% of base mana",
+          "range" : "30 yd range",
+          "castTime" : "Instant cast",
+          "cooldown" : "20 sec cooldown",
+          "description" : "You summon a violent Typhoon that does 36 Nature damage to targets within 30 yards when in contact with hostile targets, knocking them back and dazing them for 6 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8381,
+        "name" : "Shooting Stars",
+        "icon" : "ability_mage_arcanebarrage",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "You have a 2% chance when you deal damage with your Moonfire or Insect Swarm to instantly reset the cooldown of your Starsurge and reduce its cast time by 100%. Lasts 8 sec."
+        }, {
+          "description" : "You have a 4% chance when you deal damage with your Moonfire or Insect Swarm to instantly reset the cooldown of your Starsurge and reduce its cast time by 100%. Lasts 8 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8391,
+        "name" : "Owlkin Frenzy",
+        "icon" : "ability_druid_owlkinfrenzy",
+        "x" : 1,
+        "y" : 3,
+        "req" : 11278,
+        "ranks" : [ {
+          "description" : "Attacks done to you while in Moonkin form have a 5% chance to cause you to go into a Frenzy, increasing your damage by 10% and causing you to be immune to pushback while casting Balance spells. Lasts 10 sec."
+        }, {
+          "description" : "Attacks done to you while in Moonkin form have a 10% chance to cause you to go into a Frenzy, increasing your damage by 10% and causing you to be immune to pushback while casting Balance spells. Lasts 10 sec."
+        }, {
+          "description" : "Attacks done to you while in Moonkin form have a 15% chance to cause you to go into a Frenzy, increasing your damage by 10% and causing you to be immune to pushback while casting Balance spells. Lasts 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8379,
+        "name" : "Gale Winds",
+        "icon" : "ability_druid_galewinds",
+        "x" : 2,
+        "y" : 3,
+        "req" : 11282,
+        "ranks" : [ {
+          "description" : "Increases damage done by your Hurricane and Typhoon spells by 15%, and increases the range of your Cyclone spell by 2 yards."
+        }, {
+          "description" : "Increases damage done by your Hurricane and Typhoon spells by 30%, and increases the range of your Cyclone spell by 4 yards."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8361,
+        "name" : "Solar Beam",
+        "icon" : "ability_vehicle_sonicshockwave",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "18% of base mana",
+          "range" : "40 yd range",
+          "castTime" : "Instant cast",
+          "cooldown" : "1 min cooldown",
+          "description" : "You summon a beam of solar light over the enemy target's location, interrupting the enemy target and silencing all enemy targets under the beam within 5 yards while it is active. Solar Beam lasts for 10 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12149,
+        "name" : "Dreamstate",
+        "icon" : "ability_druid_dreamstate",
+        "x" : 0,
+        "y" : 4,
+        "req" : 8389,
+        "ranks" : [ {
+          "description" : "When you cast your Innervate on yourself, you regain an additional 15% of your total mana over its duration."
+        }, {
+          "description" : "When you cast your Innervate on yourself, you regain an additional 30% of your total mana over its duration."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8399,
+        "name" : "Force of Nature",
+        "icon" : "ability_druid_forceofnature",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "12% of base mana",
+          "range" : "40 yd range",
+          "castTime" : "Instant cast",
+          "cooldown" : "3 min cooldown",
+          "description" : "Summons 3 treants to attack enemy targets for 30 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12150,
+        "name" : "Sunfire",
+        "icon" : "ability_mage_firestarter",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "While in Solar Eclipse, your Moonfire spell will morph into Sunfire."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11277,
+        "name" : "Earth and Moon",
+        "icon" : "ability_druid_earthandsky",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Your Wrath and Starfire spells apply the Earth and Moon effect, which increases spell damage taken by 8% for 12 sec.  Also increases your spell damage by 2%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8403,
+        "name" : "Fungal Growth",
+        "icon" : "creature_sporemushroom",
+        "x" : 1,
+        "y" : 5,
+        "req" : 8399,
+        "ranks" : [ {
+          "description" : "When your Treants die or your Wild Mushrooms are triggered, you spawn a Fungal Growth at its wake covering the area within 8 yards, slowing all enemy targets by 25%. Lasts 10 sec."
+        }, {
+          "description" : "When your Treants die or your Wild Mushrooms are triggered, you spawn a Fungal Growth at its wake covering the area within 8 yards, slowing all enemy targets by 50%. Lasts 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8393,
+        "name" : "Lunar Shower",
+        "icon" : "achievement_worldevent_lunar",
+        "x" : 2,
+        "y" : 5,
+        "req" : 12150,
+        "ranks" : [ {
+          "description" : "When you cast Moonfire, you gain Lunar Shower. Lunar Shower increases the direct damage done by your Moonfire by 15%, and reduces the mana cost by 10%. This effect is refreshed and amplified when you move, stacking up to 3 times. Effect lasts for 3 sec."
+        }, {
+          "description" : "When you cast Moonfire, you gain Lunar Shower. Lunar Shower increases the direct damage done by your Moonfire by 30%, and reduces the mana cost by 20%. This effect is refreshed and amplified when you move, stacking up to 3 times. Effect lasts for 3 sec."
+        }, {
+          "description" : "When you cast Moonfire, you gain Lunar Shower. Lunar Shower increases the direct damage done by your Moonfire by 45%, and reduces the mana cost by 30%. This effect is refreshed and amplified when you move, stacking up to 3 times. Effect lasts for 3 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8405,
+        "name" : "Starfall",
+        "icon" : "ability_druid_starfall",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "35% of base mana",
+          "castTime" : "Instant cast",
+          "cooldown" : "1.5 min cooldown",
+          "description" : "You summon a flurry of stars from the sky on all targets within 40 yards of the caster, each dealing 13 Arcane damage. Maximum 20 stars. Lasts 10 sec.  \n\n\n\nShapeshifting into an animal form or mounting cancels the effect. Any effect which causes you to lose control of your character will suppress the starfall effect."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Feral Combat",
+      "icon" : "ability_racial_bearform",
+      "backgroundFile" : "DruidFeralCombat",
+      "overlayColor" : "#ff00ff",
+      "description" : "Takes on the form of a great cat to deal damage with bleeds and bites or a mighty bear to absorb damage and protect allies.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : true,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 33917,
+        "name" : "Mangle",
+        "icon" : "ability_druid_mangle2",
+        "reagents" : [ ],
+        "description" : "Mangle the target, inflicting damage and causing the target to take additional damage from bleed effects for 1 min.  This ability can be used in Cat Form or Bear Form.",
+        "internal" : false,
+        "keyAbility" : true
+      }, {
+        "spellId" : 84735,
+        "name" : "Aggression",
+        "icon" : "ability_druid_predatoryinstincts",
+        "reagents" : [ ],
+        "description" : "Increases your attack power by 25%.",
+        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 87335,
+        "name" : "Feral Instinct",
+        "icon" : "ability_ambush",
+        "reagents" : [ ],
+        "description" : "Reduces the chance enemies have to detect you while Prowling.",
+        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 84840,
+        "name" : "Vengeance",
+        "icon" : "ability_paladin_shieldofvengeance",
+        "reagents" : [ ],
+        "description" : "Each time you take damage while in Bear Form, you gain 5% of the damage taken as attack power, up to a maximum of 10% of your health.  Entering Cat Form will cancel this effect.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77494,
+        "name" : "Savage Defender",
+        "icon" : "ability_racial_cannibalize",
+        "reagents" : [ ],
+        "description" : "Increases the damage absorbed by your Savage Defense ability by 32%.    Each point of Mastery increases the absorb by an additional 4%.",
+        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 77493,
+        "name" : "Razor Claws",
+        "icon" : "inv_misc_monsterclaw_05",
+        "reagents" : [ ],
+        "description" : "Increases the damage done by your bleed abilities by 25%.  Each point of Mastery increases bleed damage by an additional 3.1%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 8295,
+        "name" : "Feral Swiftness",
+        "icon" : "spell_nature_spiritwolf",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases your movement speed by 15% in Cat Form and increases your chance to dodge while in Cat Form or Bear Form by 2%."
+        }, {
+          "description" : "Increases your movement speed by 30% in Cat Form and increases your chance to dodge while in Cat Form or Bear Form by 4%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11716,
+        "name" : "Furor",
+        "icon" : "spell_holy_blessingofstamina",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Grants you a 33% chance to gain 10 Rage when you shapeshift into Bear Form, allows you to keep up to 33 of your Energy when you shapeshift into Cat Form, and increases your maximum mana by 5%."
+        }, {
+          "description" : "Grants you a 66% chance to gain 10 Rage when you shapeshift into Bear Form, allows you to keep up to 66 of your Energy when you shapeshift into Cat Form, and increases your maximum mana by 10%."
+        }, {
+          "description" : "Grants you a 100% chance to gain 10 Rage when you shapeshift into Bear Form, allows you to keep up to 100 of your Energy when you shapeshift into Cat Form, and increases your maximum mana by 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9026,
+        "name" : "Predatory Strikes",
+        "icon" : "ability_hunter_pet_cat",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases the critical strike chance of your Ravage by 25% on targets at or above 80% health.\n\n\n\nYour finishing moves have a 10% chance per combo point to make your next non-instant Nature spell with a base casting time of less than 10 sec. become an instant cast spell and cost no mana."
+        }, {
+          "description" : "Increases the critical strike chance of your Ravage by 50% on targets at or above 80% health.\n\n\n\nYour finishing moves have a 20% chance per combo point to make your next non-instant Nature spell with a base casting time of less than 10 sec. become an instant cast spell and cost no mana."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8760,
+        "name" : "Infected Wounds",
+        "icon" : "ability_druid_infectedwound",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Your Shred, Maul, Ravage and Mangle attacks cause an Infected Wound in the target. The Infected Wound reduces the movement speed of the target by 25% and the attack speed by 10%. Lasts 12 sec."
+        }, {
+          "description" : "Your Shred, Ravage, Maul, and Mangle attacks cause an Infected Wound in the target. The Infected Wound reduces the movement speed of the target by 50% and the attack speed by 20%. Lasts 12 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8305,
+        "name" : "Fury Swipes",
+        "icon" : "ability_druid_mangle.tga",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "When you auto-attack while in Cat form or Bear form, you have a 5% chance to cause a Fury Swipe dealing 310% weapon damage. This effect cannot occur more than once every 3 sec."
+        }, {
+          "description" : "When you auto-attack while in Cat form or Bear form, you have a 10% chance to cause a Fury Swipe dealing 310% weapon damage. This effect cannot occur more than once every 3 sec."
+        }, {
+          "description" : "When you auto-attack while in Cat form or Bear form, you have a 15% chance to cause a Fury Swipe dealing 310% weapon damage. This effect cannot occur more than once every 3 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8761,
+        "name" : "Primal Fury",
+        "icon" : "ability_racial_cannibalize",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Gives you a 50% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear Form and your critical strikes from Cat Form abilities that add combo points  have a 50% chance to add an additional combo point."
+        }, {
+          "description" : "Gives you a 100% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear Form and your critical strikes from Cat Form abilities that add combo points  have a 100% chance to add an additional combo point."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11285,
+        "name" : "Feral Aggression",
+        "icon" : "ability_druid_demoralizingroar",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Increases the damage caused by your Ferocious Bite by 5% and causes Faerie Fire (Feral) to apply 2 stacks of the Faerie Fire effect when cast."
+        }, {
+          "description" : "Increases the damage caused by your Ferocious Bite by 10% and causes Faerie Fire (Feral) to apply 3 stacks of the Faerie Fire effect when cast."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8323,
+        "name" : "King of the Jungle",
+        "icon" : "ability_druid_kingofthejungle",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "While using your Enrage ability in Bear Form, your damage is increased by 5%, and your Tiger's Fury ability also instantly restores 20 energy."
+        }, {
+          "description" : "While using your Enrage ability in Bear Form, your damage is increased by 10%, and your Tiger's Fury ability also instantly restores 40 energy."
+        }, {
+          "description" : "While using your Enrage ability in Bear Form, your damage is increased by 15%, and your Tiger's Fury ability also instantly restores 60 energy."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8299,
+        "name" : "Feral Charge",
+        "icon" : "ability_hunter_pet_bear",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Teaches Feral Charge (Bear) and Feral Charge (Cat).\n\n\n\nFeral Charge (Bear) - Causes you to charge an enemy, immobilizing them for 4 sec. 15 second cooldown.\n\n\n\nFeral Charge (Cat) - Causes you to leap behind an enemy, dazing them for 3 sec. 30 second cooldown."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8301,
+        "name" : "Stampede",
+        "icon" : "spell_druid_feralchargecat",
+        "x" : 2,
+        "y" : 2,
+        "req" : 8299,
+        "ranks" : [ {
+          "description" : "Increases your melee haste by 15% after you use Feral Charge (Bear) for 8 sec, and your next Ravage will temporarily not require stealth for 10 sec after you use Feral Charge (Cat), and cost 50% less energy."
+        }, {
+          "description" : "Increases your melee haste by 30% after you use Feral Charge (Bear) for 8 sec, and your next Ravage will temporarily not require stealth for 10 sec after you use Feral Charge (Cat), and cost 100% less energy."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8293,
+        "name" : "Thick Hide",
+        "icon" : "inv_misc_pelt_bear_03",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Increases your Armor contribution from cloth and leather items by 4%, increases armor while in Bear Form by an additional 11%, and reduces the chance you'll be critically hit by melee attacks by 2%."
+        }, {
+          "description" : "Increases your Armor contribution from cloth and leather items by 7%, increases armor while in Bear Form by an additional 22%, and reduces the chance you'll be critically hit by melee attacks by 4%."
+        }, {
+          "description" : "Increases your Armor contribution from cloth and leather items by 10%, increases armor while in Bear Form by an additional 33%, and reduces the chance you'll be critically hit by melee attacks by 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8325,
+        "name" : "Leader of the Pack",
+        "icon" : "spell_nature_unyeildingstamina",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "While in Cat Form or Bear Form, the Leader of the Pack increases critical strike chance of all party and raid members within 100 yards by 5%.  In addition, your melee critical strikes in Cat Form and Bear Form cause you to heal for 4% of your total health and gain 4% of your maximum mana.  This effect cannot occur more than once every 6 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8307,
+        "name" : "Brutal Impact",
+        "icon" : "ability_druid_bash",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Increases the stun duration of your Bash and Pounce abilities by 0.5 sec, decreases the cooldown of Bash by 5 sec, decreases the cooldown of Skull Bash by 25 sec, and causes victims of your Skull Bash ability to have 5% increased mana cost for their spells for 10 sec."
+        }, {
+          "description" : "Increases the stun duration of your Bash and Pounce abilities by 1 sec, decreases the cooldown of Bash by 10 sec, decreases the cooldown of Skull Bash by 50 sec, and causes victims of your Skull Bash ability to have 10% increased mana cost for their spells for 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8303,
+        "name" : "Nurturing Instinct",
+        "icon" : "ability_druid_healinginstincts",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Increases your healing spells by up to 50% of your Agility, and increases healing done to you by 10% while in Cat form."
+        }, {
+          "description" : "Increases your healing spells by up to 100% of your Agility, and increases healing done to you by 20% while in Cat form."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8335,
+        "name" : "Primal Madness",
+        "icon" : "ability_mount_jungletiger",
+        "x" : 0,
+        "y" : 4,
+        "req" : 8323,
+        "ranks" : [ {
+          "description" : "Tiger's Fury and Berserk also increase your current and maximum energy by 10 during their durations, and your Enrage and Berserk abilities instantly generate 6 Rage."
+        }, {
+          "description" : "Tiger's Fury and Berserk also increase your current and maximum energy by 20 during their durations, and your Enrage and Berserk abilities instantly generate 12 Rage."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8313,
+        "name" : "Survival Instincts",
+        "icon" : "ability_druid_tigersroar",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Instant",
+          "cooldown" : "3 min cooldown",
+          "description" : "Reduces all damage taken by 50% for 12 sec.  Only useable while in Bear Form or Cat Form."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8759,
+        "name" : "Endless Carnage",
+        "icon" : "spell_deathknight_bloodboil",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Increases the duration of your Rake by 3 sec and your Savage Roar and Pulverize by 4 sec."
+        }, {
+          "description" : "Increases the duration of your Rake by 6 sec and your Savage Roar and Pulverize by 8 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8758,
+        "name" : "Natural Reaction",
+        "icon" : "ability_bullrush",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Reduces damage taken while in Bear Form by 6%, increases your dodge while in Bear Form by 3%, and you generate 1 rage every time you dodge while in Bear Form."
+        }, {
+          "description" : "Reduces damage taken while in Bear Form by 12%, increases your dodge while in Bear Form by 6%, and you generate 3 rage every time you dodge while in Bear Form."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8341,
+        "name" : "Blood in the Water",
+        "icon" : "inv_misc_food_134_meat",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "When you Ferocious Bite a target at or below 25% health, you have a 50% chance to instantly refresh the duration of your Rip on the target."
+        }, {
+          "description" : "When you Ferocious Bite a target at or below 25% health, you have a 100% chance to instantly refresh the duration of your Rip on the target."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8343,
+        "name" : "Rend and Tear",
+        "icon" : "ability_druid_primalagression",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Increases damage done by your Maul and Shred attacks on bleeding targets by 7%, and increases the critical strike chance of your Ferocious Bite ability on bleeding targets by 8%."
+        }, {
+          "description" : "Increases damage done by your Maul and Shred attacks on bleeding targets by 13%, and increases the critical strike chance of your Ferocious Bite ability on bleeding targets by 17%."
+        }, {
+          "description" : "Increases damage done by your Maul and Shred attacks on bleeding targets by 20%, and increases the critical strike chance of your Ferocious Bite ability on bleeding targets by 25%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8319,
+        "name" : "Pulverize",
+        "icon" : "ability_smash",
+        "x" : 2,
+        "y" : 5,
+        "req" : 8343,
+        "ranks" : [ {
+          "cost" : "15 Rage",
+          "range" : "Melee Range",
+          "castTime" : "Instant",
+          "description" : "Deals 120% weapon damage plus additional 14 damage for each of your Lacerate applications on the target, and increases your melee critical strike chance by 3% for each Lacerate application consumed for 10 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8347,
+        "name" : "Berserk",
+        "icon" : "ability_druid_berserk",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "castTime" : "Instant",
+          "cooldown" : "3 min cooldown",
+          "description" : "Your Lacerate periodic damage has a 30% chance to refresh the cooldown of your Mangle (Bear) ability and make it cost no rage.  In addition, when activated this ability causes your Mangle (Bear) ability to hit up to 3 targets and have no cooldown, and reduces the energy cost of all your Cat Form abilities by 50%.  Lasts 15 sec.  You cannot use Tiger's Fury while Berserk is active. \n\n\n\nClears the effect of Fear and makes you immune to Fear for the duration."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Restoration",
+      "icon" : "spell_nature_healingtouch",
+      "backgroundFile" : "DruidRestoration",
+      "overlayColor" : "#66cc33",
+      "description" : "Uses heal-over-time Nature spells to keep allies alive, taking on the form of a tree when the need is most urgent.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : true,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 18562,
+        "name" : "Swiftmend",
+        "icon" : "inv_relics_idolofrejuvenation",
+        "cost" : "10% of base mana",
+        "range" : "40 yd range",
+        "castTime" : "Instant cast",
+        "cooldown" : "15 sec cooldown",
+        "reagents" : [ ],
+        "description" : "Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal the target for 144.",
+        "internal" : false,
+        "keyAbility" : true
+      }, {
+        "spellId" : 87305,
+        "name" : "Gift of Nature",
+        "icon" : "spell_nature_spiritarmor",
+        "reagents" : [ ],
+        "description" : "Healing increased by 25%.",
+        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 85101,
+        "name" : "Meditation",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "Allows 50% of your mana regeneration from Spirit to continue while in combat.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77495,
+        "name" : "Symbiosis",
+        "icon" : "spell_nature_healingway",
+        "reagents" : [ ],
+        "description" : "Increases the potency of your healing spells by 10% on targets already affected by one of your heal over time spells.  Each point of Mastery increases heal potency by an additional 1.25%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 8227,
+        "name" : "Blessing of the Grove",
+        "icon" : "spell_shaman_spiritlink",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases the healing done by your Rejuvenation by 2% and the direct damage of your Moonfire by 3%."
+        }, {
+          "description" : "Increases the healing done by your Rejuvenation by 4% and the direct damage of your Moonfire by 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8237,
+        "name" : "Natural Shapeshifter",
+        "icon" : "spell_nature_wispsplode",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Reduces the mana cost of all shapeshifting by 10% and increases the duration of Tree of Life Form by 5 sec."
+        }, {
+          "description" : "Reduces the mana cost of all shapeshifting by 20% and increases the duration of Tree of Life Form by 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11699,
+        "name" : "Naturalist",
+        "icon" : "spell_nature_healingtouch",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Reduces the cast time of your Healing Touch and Nourish spells by 0.3 sec."
+        }, {
+          "description" : "Reduces the cast time of your Healing Touch and Nourish spells by 0.5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11715,
+        "name" : "Heart of the Wild",
+        "icon" : "spell_holy_blessingofagility",
+        "x" : 3,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases your Intellect by 2%.  In addition, while in Bear Form your Stamina is increased by 2% and while in Cat Form your attack power is increased by 3%."
+        }, {
+          "description" : "Increases your Intellect by 4%.  In addition, while in Bear Form your Stamina is increased by 4% and while in Cat Form your attack power is increased by 7%."
+        }, {
+          "description" : "Increases your Intellect by 6%.  In addition, while in Bear Form your Stamina is increased by 6% and while in Cat Form your attack power is increased by 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11279,
+        "name" : "Perseverance",
+        "icon" : "achievement_zone_darnassus",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduces all spell damage taken by 2%."
+        }, {
+          "description" : "Reduces all spell damage taken by 4%."
+        }, {
+          "description" : "Reduces all spell damage taken by 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8277,
+        "name" : "Master Shapeshifter",
+        "icon" : "ability_druid_mastershapeshifter",
+        "x" : 1,
+        "y" : 1,
+        "req" : 8237,
+        "ranks" : [ {
+          "description" : "Grants an effect which lasts while the Druid is within the respective shapeshift form.\n\n\n\nBear Form - Increases physical damage by 4%.\n\n\n\nCat Form - Increases critical strike chance by 4%.\n\n\n\nMoonkin Form - Increases spell damage by 4%.\n\n\n\nTree of Life/Caster Form - Increases healing by 4%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8245,
+        "name" : "Improved Rejuvenation",
+        "icon" : "spell_nature_rejuvenation",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Increases the effect of your Rejuvenation and Swiftmend spells by 5%."
+        }, {
+          "description" : "Increases the effect of your Rejuvenation and Swiftmend spells by 10%."
+        }, {
+          "description" : "Increases the effect of your Rejuvenation and Swiftmend spells by 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8253,
+        "name" : "Living Seed",
+        "icon" : "ability_druid_giftoftheearthmother",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "When you critically heal a target with Swiftmend, Regrowth, Nourish or Healing Touch spell you plant a Living Seed on the target for 10% of the amount healed. The Living Seed will bloom when the target is next attacked. Lasts 15 sec."
+        }, {
+          "description" : "When you critically heal a target with Swiftmend, Regrowth, Nourish or Healing Touch spell you plant a Living Seed on the target for 20% of the amount healed. The Living Seed will bloom when the target is next attacked. Lasts 15 sec."
+        }, {
+          "description" : "When you critically heal a target with Swiftmend, Regrowth, Nourish or Healing Touch spell you plant a Living Seed on the target for 30% of the amount healed. The Living Seed will bloom when the target is next attacked. Lasts 15 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8269,
+        "name" : "Revitalize",
+        "icon" : "ability_druid_replenish",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "When you periodically heal with your Rejuvenation or Lifebloom spells, you have a 20% chance to instantly regenerate 1% of your total mana. This effect cannot occur more than once every 12 sec.\n\n\n\nIn addition, you also grant Replenishment when you cast or refresh Lifebloom.\n\n\n\nReplenishment - Grants up to 10 party or raid members mana regeneration equal to 1% of their maximum mana per 10 sec. Lasts for 15 sec."
+        }, {
+          "description" : "When you periodically heal with your Rejuvenation or Lifebloom spells, you have a 20% chance to instantly regenerate 2% of your total mana. This effect cannot occur more than once every 12 sec.\n\n\n\nIn addition, you also grant Replenishment when you cast or refresh Lifebloom.\n\n\n\nReplenishment - Grants up to 10 party or raid members mana regeneration equal to 1% of their maximum mana per 10 sec. Lasts for 15 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8249,
+        "name" : "Nature's Swiftness",
+        "icon" : "spell_nature_ravenform",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Instant cast",
+          "cooldown" : "3 min cooldown",
+          "description" : "When activated, your next Nature spell with a base casting time less than 10 sec. becomes an instant cast spell."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11712,
+        "name" : "Fury of Stormrage",
+        "icon" : "inv_staff_90",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Reduces the mana cost of your Wrath spell by 50%, and when you deal damage with your Wrath spell you have a 6% chance to cause your next Starfire to be instant cast within 8 sec."
+        }, {
+          "description" : "Reduces the mana cost of your Wrath spell by 100%, and when you deal damage with your Wrath spell you have a 12% chance to cause your next Starfire to be instant cast within 8 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8255,
+        "name" : "Nature's Bounty",
+        "icon" : "spell_nature_resistnature",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Increases the critical effect chance of your Regrowth spell by 20%, and you have a 33% chance when you critically heal with Healing Touch and Nourish to reduce the remaining cooldown of your Swiftmend spell by 0.5 sec."
+        }, {
+          "description" : "Increases the critical effect chance of your Regrowth spell by 40%, and you have a 66% chance when you critically heal with Healing Touch and Nourish to reduce the remaining cooldown of your Swiftmend spell by 0.5 sec."
+        }, {
+          "description" : "Increases the critical effect chance of your Regrowth spell by 60%, and you have a 100% chance when you critically heal with Healing Touch and Nourish to reduce the remaining cooldown of your Swiftmend spell by 0.5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8762,
+        "name" : "Empowered Touch",
+        "icon" : "ability_druid_empoweredtouch",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Increases the healing done by your Healing Touch and Nourish spells by 5%, and grants those spells a 50% chance to refresh the duration of your Lifebloom on targets."
+        }, {
+          "description" : "Increases the healing done by your Healing Touch and Nourish spells by 10%, and causes those spells to refresh the duration of your Lifebloom on targets."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12146,
+        "name" : "Malfurion's Gift",
+        "icon" : "spell_shaman_giftearthmother",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Whenever you heal with your Lifebloom spell, you have a 2% chance to cause Omen of Clarity."
+        }, {
+          "description" : "Whenever you heal with your Lifebloom spell, you have a 4% chance to cause Omen of Clarity."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8263,
+        "name" : "Efflorescence",
+        "icon" : "inv_misc_herb_talandrasrose",
+        "x" : 0,
+        "y" : 4,
+        "req" : 8253,
+        "ranks" : [ {
+          "description" : "When you heal with your Swiftmend spell you also sprout a bed of healing flora underneath the target, healing all nearby friendly targets within 8 yards for 10% of the amount healed by your Swiftmend over 7 sec.  Healing effectiveness diminishes for each player beyond 6 within the area."
+        }, {
+          "description" : "When you heal with your Swiftmend spell you also sprout a bed of healing flora underneath the target, healing all nearby friendly targets within 8 yards for 20% of the amount healed by your Swiftmend over 7 sec.  Healing effectiveness diminishes for each player beyond 6 within the area."
+        }, {
+          "description" : "When you heal with your Swiftmend spell you also sprout a bed of healing flora underneath the target, healing all nearby friendly targets within 8 yards for 30% of the amount healed by your Swiftmend over 7 sec.  Healing effectiveness diminishes for each player beyond 6 within the area."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8279,
+        "name" : "Wild Growth",
+        "icon" : "ability_druid_flourish",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "27% of base mana",
+          "range" : "40 yd range",
+          "castTime" : "Instant cast",
+          "cooldown" : "10 sec cooldown",
+          "description" : "Heals up to 5 friendly party or raid members within 30 yards of the target for 84 over 7 sec.  Prioritizes healing most injured party members.  The amount healed is applied quickly at first, and slows down as the Wild Growth reaches its full duration."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8763,
+        "name" : "Nature's Cure",
+        "icon" : "ability_shaman_cleansespirit",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Empowers your Remove Corruption spell to also remove a magic effect from a friendly target."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8267,
+        "name" : "Nature's Ward",
+        "icon" : "ability_druid_naturalperfection",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Whenever you take an attack while at or below 50% health, you have a 50% chance to automatically cast Rejuvenation on yourself with no mana cost."
+        }, {
+          "description" : "Whenever you take an attack while at or below 50% health, you have a 100% chance to automatically cast Rejuvenation on yourself with no mana cost."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11280,
+        "name" : "Gift of the Earthmother",
+        "icon" : "ability_druid_manatree",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Increases the healing done when your Lifebloom expires by 5%, and causes your Rejuvenation spell to also instantly heal for 5% of the total periodic effect."
+        }, {
+          "description" : "Increases the healing done when your Lifebloom expires by 10%, and causes your Rejuvenation spell to also instantly heal for 10% of the total periodic effect."
+        }, {
+          "description" : "Increases the healing done when your Lifebloom expires by 15%, and causes your Rejuvenation spell to also instantly heal for 15% of the total periodic effect."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8265,
+        "name" : "Swift Rejuvenation",
+        "icon" : "ability_druid_empoweredrejuvination",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Reduces the global cooldown of your Rejuvenation by 0.5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8271,
+        "name" : "Tree of Life",
+        "icon" : "ability_druid_treeoflife",
+        "x" : 1,
+        "y" : 6,
+        "req" : 8279,
+        "ranks" : [ {
+          "cost" : "6% of base mana",
+          "castTime" : "Instant",
+          "cooldown" : "3 min cooldown",
+          "description" : "Shapeshift into the tree of life, increasing healing done by 15% and increasing your armor by 120%. In addition, some of your spells are temporarily enhanced while shapeshifted. Lasts 30 sec.\n\n\n\nEnhanced spells: Lifebloom, Wild Growth, Regrowth, Entangling Roots, Wrath"
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

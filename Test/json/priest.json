@@ -1,0 +1,1090 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 5,
+      "name" : "Priest",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "Discipline",
+      "icon" : "spell_holy_powerwordshield",
+      "backgroundFile" : "PriestDiscipline",
+      "overlayColor" : "#ff7f00",
+      "description" : "Uses magic to shield allies from taking damage as well as heal their wounds.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : true,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 47540,
+        "name" : "Penance",
+        "icon" : "spell_holy_penance",
+        "cost" : "14% of base mana",
+        "range" : "30 yd range",
+        "castTime" : "Channeled",
+        "cooldown" : "12 sec cooldown",
+        "reagents" : [ ],
+        "description" : "Launches a volley of holy light at the target, causing 23 Holy damage to an enemy, or 63 healing to an ally instantly and every 1 sec for 2 sec.",
+        "internal" : false,
+        "keyAbility" : true
+      }, {
+        "spellId" : 84732,
+        "name" : "Enlightenment",
+        "icon" : "spell_arcane_mindmastery",
+        "reagents" : [ ],
+        "description" : "Intellect increased by 15%.",
+        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 95860,
+        "name" : "Meditation",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "Allows 50% of your mana regeneration from Spirit to continue while in combat.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77484,
+        "name" : "Shield Discipline",
+        "icon" : "spell_holy_powerwordshield",
+        "reagents" : [ ],
+        "description" : "Increases  the potency of all your damage absorption spells by 20%.  Each point of Mastery increases the potency of absorbs by an additional 2.5%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10736,
+        "name" : "Improved Power Word: Shield",
+        "icon" : "spell_holy_powerwordshield",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases the damage absorbed by your Power Word: Shield by 5%."
+        }, {
+          "description" : "Increases the damage absorbed by your Power Word: Shield by 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8577,
+        "name" : "Twin Disciplines",
+        "icon" : "spell_holy_sealofvengeance",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases your Shadow and Holy spell damage and healing by 2%."
+        }, {
+          "description" : "Increases your Shadow and Holy spell damage and healing by 4%."
+        }, {
+          "description" : "Increases your Shadow and Holy spell damage and healing by 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8595,
+        "name" : "Mental Agility",
+        "icon" : "ability_hibernation",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Reduces the mana cost of your instant cast spells by 4%."
+        }, {
+          "description" : "Reduces the mana cost of your instant cast spells by 7%."
+        }, {
+          "description" : "Reduces the mana cost of your instant cast spells by 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8593,
+        "name" : "Evangelism",
+        "icon" : "spell_holy_divineillumination",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "You have a 100% chance when you Smite and a 100% chance when you Mind Flay to gain Evangelism. Stacks up to 5 times. Lasts for 20 sec.\n\n\n\nEvangelism (Smite)\n\nIncreasing the damage done by your Smite, Holy Fire, and Penance spells by 2% and reduces the mana cost of those spells by 3%.\n\n\n\nDark Evangelism (Mind Flay)\n\nIncreases the damage done by your Periodic Shadow spells by 1%."
+        }, {
+          "description" : "You have a 100% chance when you Smite and a 100% chance when you Mind Flay to gain Evangelism. Stacks up to 5 times. Lasts for 20 sec.\n\n\n\nEvangelism (Smite)\n\nIncreasing the damage done by your Smite, Holy Fire, and Penance spells by 4% and reduces the mana cost of those spells by 6%.\n\n\n\nDark Evangelism (Mind Flay)\n\nIncreases the damage done by your Periodic Shadow spells by 2%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11608,
+        "name" : "Archangel",
+        "icon" : "ability_priest_archangel",
+        "x" : 1,
+        "y" : 1,
+        "req" : 8593,
+        "ranks" : [ {
+          "castTime" : "Instant cast",
+          "description" : "Consumes your Evangelism effects, causing an effect depending what type of Evangelism effect is consumed:\n\n\n\nArchangel (Evangelism)\n\nInstantly restores 1% of your total mana and increases your healing done by 3% for each stack. Lasts for 18 sec. 30 sec cooldown.\n\n\n\nDark Archangel (Dark Evangelism)\n\nInstantly restores 5% of your total mana and increases the damage done by your Mind Flay, Mind Spike, Mind Blast and Shadow Word: Death 4% for each stack. Lasts for 18 sec. 90 sec cooldown."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8581,
+        "name" : "Inner Sanctum",
+        "icon" : "spell_holy_innerfire",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Your Inner Fire also reduces all spell damage taken by 2% while it is active, and the movement speed bonus of your Inner Will is increased by 2%."
+        }, {
+          "description" : "Your Inner Fire also reduces all spell damage taken by 4% while it is active, and the movement speed bonus of your Inner Will is increased by 4%."
+        }, {
+          "description" : "Spell damage taken is reduced by 6% while within Inner Fire, and the movement speed bonus of your Inner Will is increased by 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8607,
+        "name" : "Soul Warding",
+        "icon" : "ability_priest_soulwarding",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduces the cooldown of your Power Word: Shield ability by 1 sec."
+        }, {
+          "description" : "Reduces the cooldown of your Power Word: Shield ability by 2 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11224,
+        "name" : "Renewed Hope",
+        "icon" : "spell_holy_holyprotection",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Increases the critical effect chance of your Flash Heal, Greater Heal, Heal and Penance (Heal) spells by 5% on targets afflicted by the Weakened Soul effect, or blessed with your Grace effect."
+        }, {
+          "description" : "Increases the critical effect chance of your Flash Heal, Greater Heal, Heal and Penance (Heal) spells by 10% on targets afflicted by the Weakened Soul effect, or blessed with your Grace effect."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8611,
+        "name" : "Power Infusion",
+        "icon" : "spell_holy_powerinfusion",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "16% of base mana",
+          "range" : "30 yd range",
+          "castTime" : "Instant cast",
+          "cooldown" : "2 min cooldown",
+          "description" : "Infuses the target with power, increasing spell casting speed by 20% and reducing the mana cost of all spells by 20%.  Lasts 15 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11812,
+        "name" : "Atonement",
+        "icon" : "ability_priest_atonement",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "When you deal damage with Smite, you instantly heal a nearby low health friendly party or raid target within 8 yards from the enemy target equal to 50% of the damage dealt.\n\n\n\nIf the Priest is healed through Atonement, the effect is reduced in half."
+        }, {
+          "description" : "When you deal damage with Smite, you instantly heal a nearby low health friendly party or raid target within 8 yards from the enemy target equal to 100% of the damage dealt.\n\n\n\nIf the Priest is healed through Atonement, the effect is reduced in half."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8591,
+        "name" : "Inner Focus",
+        "icon" : "spell_frost_windwalkon",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Instant cast",
+          "cooldown" : "45 sec cooldown",
+          "description" : "Reduces the mana cost of your next Flash Heal, Binding Heal, Greater Heal or Prayer of Healing by 100% and increases its critical effect chance by 25%."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8617,
+        "name" : "Rapture",
+        "icon" : "spell_holy_rapture",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "When your Power Word: Shield is completely absorbed or dispelled you are instantly energized with 1.5% of your total mana. This effect can only occur once every 12 sec."
+        }, {
+          "description" : "When your Power Word: Shield is completely absorbed or dispelled you are instantly energized with 2% of your total mana. This effect can only occur once every 12 sec."
+        }, {
+          "description" : "When your Power Word: Shield is completely absorbed or dispelled you are instantly energized with 2.5% of your total mana. This effect can only occur once every 12 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11523,
+        "name" : "Borrowed Time",
+        "icon" : "spell_holy_borrowedtime",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Grants 7% spell haste for your next spell after casting Power Word: Shield."
+        }, {
+          "description" : "Grants 14% spell haste for your next spell after casting Power Word: Shield."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8605,
+        "name" : "Reflective Shield",
+        "icon" : "ability_priest_reflectiveshield",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Causes 22% of the damage you absorb with Power Word: Shield to reflect back at the attacker.  This damage causes no threat."
+        }, {
+          "description" : "Causes 45% of the damage you absorb with Power Word: Shield to reflect back at the attacker.  This damage causes no threat."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11813,
+        "name" : "Strength of Soul",
+        "icon" : "spell_holy_ashestoashes",
+        "x" : 0,
+        "y" : 4,
+        "req" : 11224,
+        "ranks" : [ {
+          "description" : "When you heal a target with your Heal spell, the duration of the weakened soul debuff on the target is reduced by 2 sec."
+        }, {
+          "description" : "When you heal a target with your Heal spell, the duration of the weakened soul debuff on the target is reduced by 4 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8609,
+        "name" : "Divine Aegis",
+        "icon" : "spell_holy_devineaegis",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Critical heals and all heals from Prayer of Healing create a protective shield on the target, absorbing 10% of the amount healed. Lasts 12 sec."
+        }, {
+          "description" : "Critical heals and all heals from Prayer of Healing create a protective shield on the target, absorbing 20% of the amount healed. Lasts 12 sec."
+        }, {
+          "description" : "Critical heals and all heals from Prayer of Healing create a protective shield on the target, absorbing 30% of the amount healed. Lasts 12 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8623,
+        "name" : "Pain Suppression",
+        "icon" : "spell_holy_painsupression",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "8% of base mana",
+          "range" : "40 yd range",
+          "castTime" : "Instant cast",
+          "cooldown" : "3 min cooldown",
+          "description" : "Instantly reduces a friendly target's threat by 5%, reduces all damage taken by 40% and increases resistance to Dispel mechanics by 65% for 8 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12183,
+        "name" : "Train of Thought",
+        "icon" : "ability_mage_studentofthemind",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "You have a 50% chance when you heal with Greater Heal to reduce the cooldown of your Inner Focus by 5 sec.\n\n\n\nYou have a 50% chance when you Smite to reduce the cooldown of your Penance by 0.5 sec."
+        }, {
+          "description" : "You have a 100% chance when you heal with Greater Heal to reduce the cooldown of your Inner Focus by 5 sec.\n\n\n\nYou have a 100% chance when you Smite to reduce the cooldown of your Penance by 0.5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8621,
+        "name" : "Focused Will",
+        "icon" : "ability_priest_focusedwill",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Whenever you are victim of an attack equal to damage greater than 10% of your total health, you gain Focused Will reducing all damage taken by 4% lasting for 8 sec. Stacks up to 2 times."
+        }, {
+          "description" : "Whenever you are victim of an attack equal to damage greater than 10% of your total health, you gain Focused Will reducing all damage taken by 6% lasting for 8 sec. Stacks up to 2 times."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8625,
+        "name" : "Grace",
+        "icon" : "spell_holy_hopeandgrace",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Your Flash Heal, Greater Heal, Heal and Penance spells bless the target with Grace, increasing all healing received from the Priest by 4%. This effect will stack up to 3 times. Effect lasts 15 sec. Grace can only be active on one target at a time."
+        }, {
+          "description" : "Your Flash Heal, Greater Heal, Heal and Penance spells bless the target with Grace, increasing all healing received from the Priest by 8%. This effect will stack up to 3 times. Effect lasts 15 sec. Grace can only be active on one target at a time."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8603,
+        "name" : "Power Word: Barrier",
+        "icon" : "spell_holy_powerwordbarrier",
+        "x" : 1,
+        "y" : 6,
+        "req" : 8609,
+        "ranks" : [ {
+          "cost" : "30% of base mana",
+          "range" : "40 yd range",
+          "castTime" : "Instant cast",
+          "cooldown" : "2 min cooldown",
+          "description" : "Summons a holy barrier on the target location that reduces all damage done to friendly targets by 30%. While within the barrier, spellcasting will not be interrupted by damage. The barrier lasts for 10 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Holy",
+      "icon" : "spell_holy_guardianspirit",
+      "backgroundFile" : "PriestHoly",
+      "overlayColor" : "#9999ff",
+      "description" : "A versatile healer who can reverse damage on individuals or groups and even heal from beyond the grave.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : true,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 88625,
+        "name" : "Holy Word: Chastise",
+        "icon" : "spell_holy_chastise",
+        "cost" : "15% of base mana",
+        "range" : "30 yd range",
+        "castTime" : "Instant cast",
+        "cooldown" : "25 sec cooldown",
+        "reagents" : [ ],
+        "description" : "Chastise the target for 21 Holy damage, and disorients them for 3 sec.",
+        "internal" : false,
+        "keyAbility" : true
+      }, {
+        "spellId" : 95861,
+        "name" : "Meditation",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "Allows 50% of your mana regeneration from Spirit to continue while in combat.",
+        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 87336,
+        "name" : "Spiritual Healing",
+        "icon" : "spell_holy_impholyconcentration",
+        "reagents" : [ ],
+        "description" : "Healing increased by 15%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77485,
+        "name" : "Echo of Light",
+        "icon" : "spell_holy_aspiration",
+        "reagents" : [ ],
+        "description" : "Your direct healing spells heal for an additional 10% over 6 sec.  Each point of Mastery provides an additional 1.25% healing over 6 sec.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10746,
+        "name" : "Improved Renew",
+        "icon" : "spell_holy_renew",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases the amount healed by your Renew spell by 5%."
+        }, {
+          "description" : "Increases the amount healed by your Renew spell by 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9553,
+        "name" : "Empowered Healing",
+        "icon" : "spell_holy_greaterheal",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases the healing done by your Flash Heal, Heal, Binding Heal and Greater Heal by 5%."
+        }, {
+          "description" : "Increases the healing done by your Flash Heal, Heal, Binding Heal and Greater Heal by 10%."
+        }, {
+          "description" : "Increases the healing done by your Flash Heal, Heal, Binding Heal and Greater Heal by 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9549,
+        "name" : "Divine Fury",
+        "icon" : "spell_holy_sealofwrath",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Reduces the casting time of your Smite, Holy Fire, Heal and Greater Heal spells by .15 sec."
+        }, {
+          "description" : "Reduces the casting time of your Smite, Holy Fire, Heal and Greater Heal spells by 0.35 sec."
+        }, {
+          "description" : "Reduces the casting time of your Smite, Holy Fire, Heal and Greater Heal spells by 0.5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11669,
+        "name" : "Desperate Prayer",
+        "icon" : "spell_holy_restoration",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "cost" : "18% of base mana",
+          "castTime" : "Instant cast",
+          "cooldown" : "2 min cooldown",
+          "description" : "Instantly heals the caster for 134."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11765,
+        "name" : "Surge of Light",
+        "icon" : "spell_holy_surgeoflight",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "You have a 3% chance when you Smite or Heal to cause your next Flash Heal to be instant cast and cost no mana but incapable of a critical hit."
+        }, {
+          "description" : "You have a 6% chance when you Smite or Heal to cause your next Flash Heal to be instant cast and cost no mana but incapable of a critical hit."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9561,
+        "name" : "Inspiration",
+        "icon" : "spell_holy_layonhands",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduces your target's physical damage taken by 5% for 15 sec after getting a critical effect from your Flash Heal, Heal, Greater Heal, Binding Heal, Penance, Prayer of Mending, Prayer of Healing, or Circle of Healing spell."
+        }, {
+          "description" : "Reduces your target's physical damage taken by 10% for 15 sec after getting a critical effect from your Flash Heal, Heal, Greater Heal, Binding Heal, Penance, Prayer of Mending, Prayer of Healing, or Circle of Healing spell."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9593,
+        "name" : "Divine Touch",
+        "icon" : "ability_paladin_infusionoflight",
+        "x" : 0,
+        "y" : 2,
+        "req" : 10746,
+        "ranks" : [ {
+          "description" : "Your Renew will instantly heal the target for 5% of the total periodic effect."
+        }, {
+          "description" : "Your Renew will instantly heal the target for 10% of the total periodic effect."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9577,
+        "name" : "Holy Concentration",
+        "icon" : "spell_holy_fanaticism",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Increases the amount of mana regeneration from Spirit while in combat by an additional 10%."
+        }, {
+          "description" : "Increases the amount of mana regeneration from Spirit while in combat by an additional 20%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11666,
+        "name" : "Lightwell",
+        "icon" : "spell_holy_summonlightwell",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "30% of base mana",
+          "range" : "40 yd range",
+          "castTime" : "0.5 sec cast",
+          "cooldown" : "3 min cooldown",
+          "description" : "Creates a Holy Lightwell.  Friendly players can click the Lightwell to restore 274 health over 6 sec.  Attacks done to you equal to 30% of your total health will cancel the effect. Lightwell lasts for 3 min or 10 charges."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12184,
+        "name" : "Tome of Light",
+        "icon" : "inv_misc_book_07",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Reduces the cooldown of your Holy Word spells by 15%."
+        }, {
+          "description" : "Reduces the cooldown of your Holy Word spells by 30%"
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 14738,
+        "name" : "Rapid Renewal",
+        "icon" : "ability_paladin_blessedmending",
+        "x" : 0,
+        "y" : 3,
+        "req" : 9593,
+        "ranks" : [ {
+          "description" : "Reduces the global cooldown of your Renew by 0.5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11670,
+        "name" : "Spirit of Redemption",
+        "icon" : "inv_enchant_essenceeternallarge",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Upon death, the priest becomes the Spirit of Redemption for 15 sec.  The Spirit of Redemption cannot move, attack, be attacked or targeted by any spells or effects.  While in this form the priest can cast any healing spell free of cost.  When the effect ends, the priest dies."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9573,
+        "name" : "Serendipity",
+        "icon" : "spell_holy_serendipity",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "When you heal with Binding Heal or Flash Heal, the cast time of your next Greater Heal or Prayer of Healing spell is reduced by 10% and mana cost reduced by 5%. Stacks up to 2 times. Lasts 20 sec."
+        }, {
+          "description" : "When you heal with Binding Heal or Flash Heal, the cast time of your next Greater Heal or Prayer of Healing spell is reduced by 20% and mana cost reduced by 10%. Stacks up to 2 times. Lasts 20 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9587,
+        "name" : "Body and Soul",
+        "icon" : "spell_holy_symbolofhope",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "When you cast Power Word: Shield or Leap of Faith, you increase the target's movement speed by 30% for 4 sec, and you have a 50% chance when you cast Cure Disease on yourself to also cleanse 1 poison effect in addition to diseases."
+        }, {
+          "description" : "When you cast Power Word: Shield or Leap of Faith, you increase the target's movement speed by 60% for 4 sec, and you have a 100% chance when you cast Cure Disease on yourself to also cleanse 1 poison effect in addition to diseases."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11667,
+        "name" : "Chakra",
+        "icon" : "priest_icon_chakra",
+        "x" : 1,
+        "y" : 4,
+        "req" : 9577,
+        "ranks" : [ {
+          "castTime" : "Instant cast",
+          "cooldown" : "30 sec cooldown",
+          "description" : "When activated, your next Heal, Prayer of Healing, Prayer of Mending, or Smite will put you into a Chakra state for 30 sec.\n\n\n\nSerenity (Heal)\n\nIncreases the critical effect chance of your direct healing spells by 10%, and causes your direct heals to refresh the duration of your Renew on the target.\n\n\n\nSanctuary (Prayer of Healing, Prayer of Mending)\n\nIncreases the healing done by your area of effect spells and Renew by 15% and reduces the cooldown of your Circle of Healing by 2 sec.\n\n\n\nChastise (Smite)\n\nIncreases your total damage done by Shadow and Holy spells by 15%."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11755,
+        "name" : "Revelations",
+        "icon" : "ability_priest_bindingprayers",
+        "x" : 2,
+        "y" : 4,
+        "req" : 11667,
+        "ranks" : [ {
+          "description" : "While within Chakra: Serenity or Chakra: Sanctuary, your Holy Word: Chastise ability will transform into a different ability depending on which state you are in.\n\n\n\nHoly Word: Serenity\n\nInstantly heals the target for 141, and increases the critical effect chance of your healing spells on the target by 25% for 6 sec. 15 sec cooldown.\n\n\n\nHoly Word: Sanctuary\n\nBlesses the ground with Divine light, healing all within it for 8 every 2 sec for 18 sec. Only one Sanctuary can be active at any one time. 40 sec cooldown."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11672,
+        "name" : "Blessed Resilience",
+        "icon" : "spell_holy_blessedresillience",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Whenever you are victim of an attack equal to damage greater than 10% of your total health, you gain Blessed Resilience increasing all healing received by 5% lasting for 10 sec."
+        }, {
+          "description" : "Whenever you are victim of an attack equal to damage greater than 10% of your total health, you gain Blessed Resilience increasing all healing received by 10% lasting for 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9597,
+        "name" : "Test of Faith",
+        "icon" : "spell_holy_testoffaith",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Increases healing by 4% on friendly targets at or below 50% health."
+        }, {
+          "description" : "Increases healing by 8% on friendly targets at or below 50% health."
+        }, {
+          "description" : "Increases healing by 12% on friendly targets at or below 50% health."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11668,
+        "name" : "State of Mind",
+        "icon" : "spell_arcane_mindmastery",
+        "x" : 1,
+        "y" : 5,
+        "req" : 11667,
+        "ranks" : [ {
+          "description" : "Your successful Heal, Prayer of Healing, Prayer of Mending or Smite spell casts increase the duration of your corresponding Chakra state by 2 sec."
+        }, {
+          "description" : "Your successful Heal, Prayer of Healing, Prayer of Mending or Smite spell casts increase the duration of your corresponding Chakra state by 4 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9595,
+        "name" : "Circle of Healing",
+        "icon" : "spell_holy_circleofrenewal",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "cost" : "21% of base mana",
+          "range" : "40 yd range",
+          "castTime" : "Instant cast",
+          "cooldown" : "10 sec cooldown",
+          "description" : "Heals up to 5 friendly party or raid members within 15 yards of the target for 47.  Prioritizes healing most injured party members."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9601,
+        "name" : "Guardian Spirit",
+        "icon" : "spell_holy_guardianspirit",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "6% of base mana",
+          "range" : "40 yd range",
+          "castTime" : "Instant cast",
+          "cooldown" : "3 min cooldown",
+          "description" : "Calls upon a guardian spirit to watch over the friendly target. The spirit increases the healing received by the target by 40%, and also prevents the target from dying by sacrificing itself.  This sacrifice terminates the effect but heals the target of 50% of their maximum health. Lasts 10 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Shadow",
+      "icon" : "spell_shadow_shadowwordpain",
+      "backgroundFile" : "PriestShadow",
+      "overlayColor" : "#b266cc",
+      "description" : "Uses sinister Shadow magic, especially damage-over-time spells, to eradicate enemies.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 15407,
+        "name" : "Mind Flay",
+        "icon" : "spell_shadow_siphonmana",
+        "cost" : "8% of base mana",
+        "range" : "40 yd range",
+        "castTime" : "Channeled",
+        "reagents" : [ ],
+        "description" : "Assault the target's mind with Shadow energy, causing 24 Shadow damage over 3 sec and slowing their movement speed by 50%.",
+        "internal" : false,
+        "keyAbility" : true
+      }, {
+        "spellId" : 95740,
+        "name" : "Shadow Orbs",
+        "icon" : "spell_priest_shadoworbs",
+        "reagents" : [ ],
+        "description" : "You have a 10% chance for your Shadow Word: Pain and Mind Flay spells to grant you a Shadow Orb each time they deal damage.  Casting your Mind Blast or Mind Spike spell consumes all Shadow Orbs, increasing damage of that spell by 0% per Shadow Orb, and granting 0% increased damage on your periodic Shadow spells for 15 sec.  You can have up to a maximum of 3 orbs.",
+        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 87327,
+        "name" : "Shadow Power",
+        "icon" : "spell_shadow_shadowpower",
+        "reagents" : [ ],
+        "description" : "Spell damage increased by 25%.\n\n\n\nIncreases the critical damage of your Shadow spells by 100%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77486,
+        "name" : "Shadow Orb Power",
+        "icon" : "inv_chaos_orb",
+        "reagents" : [ ],
+        "description" : "Increases the damage done by your Shadow Orbs. Each point of Mastery increases damage by an additional 1.3%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9032,
+        "name" : "Darkness",
+        "icon" : "ability_priest_darkness",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Spell haste increased by 1%."
+        }, {
+          "description" : "Spell haste increased by 2%."
+        }, {
+          "description" : "Spell haste increased by 3%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9036,
+        "name" : "Improved Shadow Word: Pain",
+        "icon" : "spell_shadow_shadowwordpain",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases the damage of your Shadow Word: Pain spell by 3%."
+        }, {
+          "description" : "Increases the damage of your Shadow Word: Pain spell by 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9046,
+        "name" : "Veiled Shadows",
+        "icon" : "spell_magic_lesserinvisibilty",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Decreases the cooldown of your Fade ability by 3 sec, and reduces the cooldown of your Shadowfiend ability by 30 sec."
+        }, {
+          "description" : "Decreases the cooldown of your Fade ability by 6 sec, and reduces the cooldown of your Shadowfiend ability by 60 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9040,
+        "name" : "Improved Psychic Scream",
+        "icon" : "spell_shadow_psychicscream",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduces the cooldown of your Psychic Scream spell by 2 sec."
+        }, {
+          "description" : "Reduces the cooldown of your Psychic Scream spell by 4 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9042,
+        "name" : "Improved Mind Blast",
+        "icon" : "spell_shadow_unholyfrenzy",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduces the cooldown of your Mind Blast spell by 0.5 sec., and while in Shadowform your Mind Blast also has a 33% chance to reduce all healing done to the target by 10% for 10 sec."
+        }, {
+          "description" : "Reduces the cooldown of your Mind Blast spell by 1 sec., and while in Shadowform your Mind Blast also has a 66% chance to reduce all healing done to the target by 10% for 10 sec."
+        }, {
+          "description" : "Reduces the cooldown of your Mind Blast spell by 1.5 sec., and while in Shadowform your Mind Blast also has a 100% chance to reduce all healing done to the target by 10% for 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9062,
+        "name" : "Improved Devouring Plague",
+        "icon" : "spell_shadow_devouringplague.",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Your Devouring Plague instantly deals damage equal to 15% of its total periodic effect."
+        }, {
+          "description" : "Your Devouring Plague instantly deals damage equal to 30% of its total periodic effect."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11673,
+        "name" : "Twisted Faith",
+        "icon" : "spell_shadow_mindtwisting",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Increases your shadow spell damage by 1%, and grants you spell hit rating equal to 50% of any Spirit gained from items or effects."
+        }, {
+          "description" : "Increases your shadow spell damage by 2%, and grants you spell hit rating equal to 100% of any Spirit gained from items or effects."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9064,
+        "name" : "Shadowform",
+        "icon" : "spell_shadow_shadowform",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "13% of base mana",
+          "castTime" : "Instant cast",
+          "cooldown" : "1.5 sec cooldown",
+          "description" : "Assume a Shadowform, increasing your Shadow damage by 15%, reducing all damage done to you by 15%, and increasing all party and raid members spell haste by 5%. However, you may not cast Holy spells while in this form."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9068,
+        "name" : "Phantasm",
+        "icon" : "spell_shadow_twistedfaith",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Your Fade ability now has a 50% chance to remove all movement impairing effects."
+        }, {
+          "description" : "Your Fade ability now has a 100% chance to remove all movement impairing effects."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11606,
+        "name" : "Harnessed Shadows",
+        "icon" : "inv_misc_orb_04",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Increases the chance for you to gain a Shadow Orb when dealing damage with your Mind Flay and Shadow Word: Pain by 4%, and you have a 50% chance to gain a Shadow Orb when critically hit by any attack."
+        }, {
+          "description" : "Increases the chance for you to gain a Shadow Orb when dealing damage with your Mind Flay and Shadow Word: Pain by 8%, and you have a 100% chance to gain a Shadow Orb when critically hit by any attack."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9052,
+        "name" : "Silence",
+        "icon" : "ability_priest_silence",
+        "x" : 0,
+        "y" : 3,
+        "req" : 9040,
+        "ranks" : [ {
+          "cost" : "225 Mana",
+          "range" : "30 yd range",
+          "castTime" : "Instant cast",
+          "cooldown" : "45 sec cooldown",
+          "description" : "Silences the target, preventing them from casting spells for 5 sec.  Non-player victim spellcasting is also interrupted for 3 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9054,
+        "name" : "Vampiric Embrace",
+        "icon" : "spell_shadow_unsummonbuilding",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "castTime" : "Instant cast",
+          "description" : "Fills you with the embrace of Shadow energy, causing you to be healed for 6% and other party members to be healed for 3% of any single-target Shadow spell damage you deal for 30 min."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11778,
+        "name" : "Masochism",
+        "icon" : "spell_shadow_misery",
+        "x" : 2,
+        "y" : 3,
+        "req" : 9054,
+        "ranks" : [ {
+          "description" : "When you take a damaging attack equal to or greater than 10% of your total health or damage yourself with your Shadow Word: Death, you instantly gain 5% of your total mana."
+        }, {
+          "description" : "When you take a damaging attack equal to or greater than 10% of your total health or damage yourself with your Shadow Word: Death, you instantly gain 10% of your total mana."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9060,
+        "name" : "Mind Melt",
+        "icon" : "spell_shadow_skull",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Increases the damage done with your Shadow Word: Death by 15% on targets at or below 25% health, and when you deal damage with Mind Spike, the cast time of your next Mind Blast is reduced by 25% lasting 6 sec. Mind Melt can stack up to 2 times."
+        }, {
+          "description" : "Increases the damage done with your Shadow Word: Death by 30% on targets at or below 25% health, and when you deal damage with Mind Spike, the cast time of your next Mind Blast is reduced by 50% lasting 6 sec. Mind Melt can stack up to 2 times."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9076,
+        "name" : "Pain and Suffering",
+        "icon" : "spell_shadow_painandsuffering",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Your Mind Flay has a 30% chance to refresh the duration of your Shadow Word: Pain on the target, and reduces the damage you take from your own Shadow Word: Death by 20%."
+        }, {
+          "description" : "Your Mind Flay has a 60% chance to refresh the duration of your Shadow Word: Pain on the target, and reduces the damage you take from your own Shadow Word: Death by 40%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9074,
+        "name" : "Vampiric Touch",
+        "icon" : "spell_holy_stoicism",
+        "x" : 1,
+        "y" : 4,
+        "req" : 9054,
+        "ranks" : [ {
+          "cost" : "16% of base mana",
+          "range" : "40 yd range",
+          "castTime" : "1.5 sec cast",
+          "description" : "Causes 45 Shadow damage over 15 sec to your target and causes up to 10 party or raid members to gain 1% of their maximum mana per 10 sec when you deal damage from Mind Blast."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11663,
+        "name" : "Paralysis",
+        "icon" : "ability_rogue_masterofsubtlety",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "When you critically hit with your Mind Blast, you cause the target to be unable to move for 2 sec."
+        }, {
+          "description" : "When you critically hit with your Mind Blast, you cause the target to be unable to move for 4 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9072,
+        "name" : "Psychic Horror",
+        "icon" : "spell_shadow_psychichorrors",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "cost" : "16% of base mana",
+          "range" : "30 yd range",
+          "castTime" : "Instant cast",
+          "cooldown" : "2 min cooldown",
+          "description" : "You terrify the target, causing them to tremble in horror for 3 sec and drop their main hand and ranged weapons for 10 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11605,
+        "name" : "Sin and Punishment",
+        "icon" : "spell_holy_prayerofshadowprotection",
+        "x" : 1,
+        "y" : 5,
+        "req" : 9074,
+        "ranks" : [ {
+          "description" : "When your Vampiric Touch is dispelled, the dispeller and all nearby enemy targets within 10 yards have a 50% chance to be instantly feared in horror for 3 sec.\n\n\n\nWhen your Mind Flay critically hits, the cooldown of your Shadowfiend is reduced by 5 sec."
+        }, {
+          "description" : "When your Vampiric Touch is dispelled, the dispeller and all nearby enemy targets within 10 yards have a 100% chance to be instantly feared in horror for 3 sec.\n\n\n\nWhen your Mind Flay critically hits, the cooldown of your Shadowfiend is reduced by 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9070,
+        "name" : "Shadowy Apparition",
+        "icon" : "ability_priest_shadowyapparition",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "When you deal periodic damage with your Shadow Word: Pain, you have a 4% chance to summon a shadow version of yourself which will slowly move towards a target which is afflicted by your Shadow Word: Pain. Once reaching the target, it will instantly deal 19 shadow damage. \n\n    \n\nWhile moving, the chance to summon the shadowy apparation is increased to 20%. You can have up to 4 Shadowy Apparitions active at a time."
+        }, {
+          "description" : "When you deal periodic damage with your Shadow Word: Pain, you have an 8% chance to summon a shadow version of yourself which will slowly move towards a target which is afflicted by your Shadow Word: Pain. Once reaching the target, it will instantly deal 19 shadow damage. \n\n    \n\nWhile moving, the chance to summon the shadowy apparation is increased to 40%. You can have up to 4 Shadowy Apparitions active at a time."
+        }, {
+          "description" : "When you deal periodic damage with your Shadow Word: Pain, you have a 12% chance to summon a shadow version of yourself which will slowly move towards a target which is afflicted by your Shadow Word: Pain. Once reaching the target, it will instantly deal 19 shadow damage.\n\n    \n\nWhile moving, the chance to summon the shadowy apparation is increased to 60%. You can have up to 4 Shadowy Apparitions active at a time."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9080,
+        "name" : "Dispersion",
+        "icon" : "spell_shadow_dispersion",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "castTime" : "Instant",
+          "cooldown" : "2 min cooldown",
+          "description" : "You disperse into pure Shadow energy, reducing all damage taken by 90%.  You are unable to attack or cast spells, but you regenerate 6% mana every 1 sec for 6 sec. \n\n\n\nDispersion can be cast while stunned, feared or silenced and clears all snare and movement impairing effects when cast, and makes you immune to them while dispersed."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

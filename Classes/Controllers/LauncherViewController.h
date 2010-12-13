@@ -16,5 +16,13 @@
 
 - (IBAction)warrior;
 - (IBAction)paladin;
+- (IBAction)hunter;
+- (IBAction)rogue;
+- (IBAction)priest;
+- (IBAction)deathknight;
+- (IBAction)shaman;
+- (IBAction)mage;
+- (IBAction)warlock;
+- (IBAction)druid;
 
 @end

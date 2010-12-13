@@ -1,0 +1,999 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 3,
+      "name" : "Hunter",
+      "powerType" : "FOCUS",
+      "powerTypeId" : 2
+    },
+    "talentTrees" : [ {
+      "name" : "Beast Mastery",
+      "icon" : "ability_hunter_bestialdiscipline",
+      "backgroundFile" : "HunterBeastMastery",
+      "overlayColor" : "#ff004c",
+      "description" : "A master of the wild who can tame a wide variety of beasts to assist him in combat.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 19577,
+        "name" : "Intimidation",
+        "icon" : "ability_devour",
+        "cost" : "35 Focus",
+        "range" : "100 yd range",
+        "castTime" : "Instant",
+        "cooldown" : "1 min cooldown",
+        "reagents" : [ ],
+        "description" : "Command your pet to intimidate the target, causing a high amount of threat and stunning the target for 3 sec. Lasts 15 sec.",
+        "internal" : false,
+        "keyAbility" : true
+      }, {
+        "spellId" : 87325,
+        "name" : "Animal Handler",
+        "icon" : "ability_hunter_animalhandler",
+        "reagents" : [ ],
+        "description" : "Attack Power increased by 15%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76657,
+        "name" : "Master of Beasts",
+        "icon" : "ability_hunter_beasttaming",
+        "reagents" : [ ],
+        "description" : "Increases the damage done by your pets by 14%.  Each point of Mastery increases pet damage by an additional 1.7%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9494,
+        "name" : "Improved Kill Command",
+        "icon" : "ability_hunter_silenthunter",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases the critical strike chance of your Kill Command by 5%."
+        }, {
+          "description" : "Increases the critical strike chance of your Kill Command by 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9490,
+        "name" : "One with Nature",
+        "icon" : "ability_hunter_onewithnature",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases the attack power bonus of your Aspect of the Hawk by 10%, and increases the amount of focus restored by your Aspect of the Fox by 1."
+        }, {
+          "description" : "Increases the attack power bonus of your Aspect of the Hawk by 20%, and increases the amount of focus restored by your Aspect of the Fox by 2."
+        }, {
+          "description" : "Increases the attack power bonus of your Aspect of the Hawk by 30%, and increases the amount of focus restored by your Aspect of the Fox by 3."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9492,
+        "name" : "Bestial Discipline",
+        "icon" : "ability_hunter_bestialdiscipline",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases the Focus regeneration of your pets by 10%."
+        }, {
+          "description" : "Increases the Focus regeneration of your pets by 20%."
+        }, {
+          "description" : "Increases the Focus regeneration of your pets by 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9502,
+        "name" : "Pathfinding",
+        "icon" : "ability_hunter_pathfinding2",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 4%, and increases your speed while mounted by 5%. The mounted movement speed increase does not stack with other effects."
+        }, {
+          "description" : "Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 8%, and increases your speed while mounted by 10%. The mounted movement speed increase does not stack with other effects."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9514,
+        "name" : "Spirit Bond",
+        "icon" : "ability_druid_demoralizingroar",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "While your pet is active, you and your pet will regenerate 1% of total health every 10 sec., and increases healing done to you and your pet by 5%."
+        }, {
+          "description" : "While your pet is active, you and your pet will regenerate 2% of total health every 10 sec., and increases healing done to you and your pet by 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9512,
+        "name" : "Frenzy",
+        "icon" : "inv_misc_monsterclaw_03",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Your pet gains 2% attack speed after attacking with a Basic Attack, lasting for 10 sec and stacking up to 5 times."
+        }, {
+          "description" : "Your pet gains 4% attack speed after attacking with a Basic Attack, lasting for 10 sec and stacking up to 5 times."
+        }, {
+          "description" : "Your pet gains 6% attack speed after attacking with a Basic Attack, lasting for 10 sec and stacking up to 5 times."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9510,
+        "name" : "Improved Mend Pet",
+        "icon" : "ability_hunter_mendpet",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Gives the Mend Pet ability a 25% chance of cleansing 1 Curse, Disease, Magic or Poison effect from the pet each tick."
+        }, {
+          "description" : "Gives the Mend Pet ability a 50% chance of cleansing 1 Curse, Disease, Magic or Poison effect from the pet each tick."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9530,
+        "name" : "Cobra Strikes",
+        "icon" : "ability_hunter_cobrastrikes",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "You have a 5% chance when you hit with Arcane Shot to cause your pet's next 2 Basic Attacks to critically hit."
+        }, {
+          "description" : "You have a 10% chance when you hit with Arcane Shot to cause your pet's next 2 Basic Attacks to critically hit."
+        }, {
+          "description" : "You have a 15% chance when you hit with Arcane Shot to cause your pet's next 2 Basic Attacks to critically hit."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9504,
+        "name" : "Fervor",
+        "icon" : "ability_hunter_aspectoftheviper",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Instant",
+          "cooldown" : "2 min cooldown",
+          "description" : "Instantly restores 50 Focus to you and your pet."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9520,
+        "name" : "Focus Fire",
+        "icon" : "ability_hunter_focusfire",
+        "x" : 2,
+        "y" : 2,
+        "req" : 9512,
+        "ranks" : [ {
+          "castTime" : "Instant cast",
+          "cooldown" : "15 sec cooldown",
+          "description" : "Consumes your Pets Frenzy effect, restoring 4 Focus to your pet and increasing your ranged haste by 3% for each Frenzy stack consumed. Lasts for 15 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9534,
+        "name" : "Longevity",
+        "icon" : "ability_hunter_longevity",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Reduces the cooldown of your Bestial Wrath, Intimidation and Pet Special Abilities by 10%."
+        }, {
+          "description" : "Reduces the cooldown of your Bestial Wrath, Intimidation and Pet Special Abilities by 20%."
+        }, {
+          "description" : "Reduces the cooldown of your Bestial Wrath, Intimidation and Pet Special Abilities by 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9528,
+        "name" : "Killing Streak",
+        "icon" : "achievement_bg_kill_carrier_opposing_flagroom",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "When you score two Kill Command critical hits in a row, your third will deal 10% more damage and have its cost reduced by 5 focus."
+        }, {
+          "description" : "When you score two Kill Command critical hits in a row, your third will deal 20% more damage and have its cost reduced by 10 focus."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11714,
+        "name" : "Crouching Tiger, Hidden Chimera",
+        "icon" : "ability_hunter_pet_chimera",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Whenever you are hit by a melee attack, the cooldown of your Disengage is instantly reduced by 2 sec.\n\n\n\nWhenever you are hit by a ranged attack or spell, the cooldown of your Deterrence is instantly reduced by 4 sec.\n\n\n\nThese effects have a 2 sec cooldown."
+        }, {
+          "description" : "Whenever you are hit by a melee attack, the cooldown of your Disengage is instantly reduced by 4 sec.\n\n\n\nWhenever you are hit by a ranged attack or spell, the cooldown of your Deterrence is instantly reduced by 8 sec.\n\n\n\nThese effects have a 2 sec cooldown."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9524,
+        "name" : "Bestial Wrath",
+        "icon" : "ability_druid_ferociousbite",
+        "x" : 1,
+        "y" : 4,
+        "req" : 9504,
+        "ranks" : [ {
+          "cost" : "45 Focus",
+          "range" : "100 yd range",
+          "castTime" : "Instant cast",
+          "cooldown" : "2 min cooldown",
+          "description" : "Send your pet into a rage causing 20% additional damage for 10 sec.  The beast does not feel pity or remorse or fear and it cannot be stopped unless killed."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9518,
+        "name" : "Ferocious Inspiration",
+        "icon" : "ability_hunter_ferociousinspiration",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "All party and raid members have all damage increased by 3% within 100 yards of your pet."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9538,
+        "name" : "Kindred Spirits",
+        "icon" : "ability_hunter_separationanxiety",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Increases you and your pets maximum focus by 5."
+        }, {
+          "description" : "Increases you and your pets maximum focus by 10."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9536,
+        "name" : "The Beast Within",
+        "icon" : "ability_hunter_beastwithin",
+        "x" : 1,
+        "y" : 5,
+        "req" : 9524,
+        "ranks" : [ {
+          "description" : "While your pet is under the effects of Bestial Wrath, you also go into a rage causing 10% additional damage and reducing the focus cost of all shots and abilities by 50% for 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9522,
+        "name" : "Invigoration",
+        "icon" : "ability_hunter_invigeration",
+        "x" : 2,
+        "y" : 5,
+        "req" : 9518,
+        "ranks" : [ {
+          "description" : "When your pet scores a critical hit with a Basic Attack, you instantly regenerate 3 focus."
+        }, {
+          "description" : "When your pet scores a critical hit with a Basic Attack, you instantly regenerate 6 focus."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9542,
+        "name" : "Beast Mastery",
+        "icon" : "ability_hunter_beastmastery",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "description" : "You master the art of Beast training, teaching you the ability to tame Exotic pets and increasing your total amount of Pet Skill Points by 4."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Marksmanship",
+      "icon" : "ability_hunter_focusedaim",
+      "backgroundFile" : "HunterMarksmanship",
+      "overlayColor" : "#4c99ff",
+      "description" : "A master archer or sharpshooter who excels in bringing down enemies from afar.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 19434,
+        "name" : "Aimed Shot",
+        "icon" : "inv_spear_07",
+        "cost" : "50 Focus",
+        "range" : "5-40 yd range",
+        "castTime" : "3 sec cast",
+        "requires" : "Requires Ranged Weapon",
+        "reagents" : [ ],
+        "description" : "A powerful aimed shot that deals 65% ranged weapon damage plus 4.",
+        "internal" : false,
+        "keyAbility" : true
+      }, {
+        "spellId" : 87326,
+        "name" : "Artisan Quiver",
+        "icon" : "inv_misc_quiver_06",
+        "reagents" : [ ],
+        "description" : "Ranged auto-attack damage increased by 15%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76659,
+        "name" : "Wild Quiver",
+        "icon" : "ability_hunter_wildquiver",
+        "reagents" : [ ],
+        "description" : "Grants a 14% chance for your ranged attacks to also instantly fire an additional ranged shot.  Each point of Mastery increases the chance by an additional 2%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9390,
+        "name" : "Go for the Throat",
+        "icon" : "ability_hunter_goforthethroat",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Your ranged auto-shot critical hits cause your pet to generate 5 Focus."
+        }, {
+          "description" : "Your ranged auto-shot critical hits cause your pet to generate 10 Focus."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9380,
+        "name" : "Efficiency",
+        "icon" : "ability_hunter_focusedaim",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Reduces the focus cost of your Arcane Shot by 1, and your Explosive Shot and Chimera Shot by 2."
+        }, {
+          "description" : "Reduces the focus cost of your Arcane Shot by 2, and your Explosive Shot and Chimera Shot by 4."
+        }, {
+          "description" : "Reduces the focus cost of your Arcane Shot by 3, and your Explosive Shot and Chimera Shot by 6."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9378,
+        "name" : "Rapid Killing",
+        "icon" : "ability_hunter_rapidkilling",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "After killing an opponent that yields experience or honor, your next Aimed Shot, Steady Shot or Cobra Shot causes 10% additional damage.  Lasts 20 sec."
+        }, {
+          "description" : "After killing an opponent that yields experience or honor, your next Aimed Shot, Steady Shot or Cobra Shot causes 20% additional damage.  Lasts 20 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9396,
+        "name" : "Sic 'Em!",
+        "icon" : "ability_hunter_sickem",
+        "x" : 0,
+        "y" : 1,
+        "req" : 9390,
+        "ranks" : [ {
+          "description" : "When you critically hit with your Arcane Shot, Aimed Shot or Explosive Shot the focus cost of your Pet's next basic attack is reduced by 50% for 12 sec."
+        }, {
+          "description" : "When you critically hit with your Arcane Shot, Aimed Shot or Explosive Shot the focus cost of your Pet's next basic attack is reduced by 100% for 12 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9402,
+        "name" : "Improved Steady Shot",
+        "icon" : "ability_hunter_improvedsteadyshot",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "When you Steady Shot twice in a row, your ranged attack speed will be increased by 5% for 8 sec."
+        }, {
+          "description" : "When you Steady Shot twice in a row, your ranged attack speed will be increased by 10% for 8 sec."
+        }, {
+          "description" : "When you Steady Shot twice in a row, your ranged attack speed will be increased by 15% for 8 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9398,
+        "name" : "Careful Aim",
+        "icon" : "ability_hunter_zenarchery",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Increases the critical strike chance of your Steady Shot, Cobra Shot and Aimed Shot by 30% on targets who are above 80% health."
+        }, {
+          "description" : "Increases the critical strike chance of your Steady Shot, Cobra Shot and Aimed Shot by 60% on targets who are above 80% health."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9424,
+        "name" : "Silencing Shot",
+        "icon" : "ability_theblackarrow",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "35 Focus",
+          "range" : "5-35 yd range",
+          "castTime" : "Instant cast",
+          "cooldown" : "20 sec cooldown",
+          "requires" : "Requires Ranged Weapon",
+          "description" : "A shot that silences the target and interrupts spellcasting for 3 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9406,
+        "name" : "Concussive Barrage",
+        "icon" : "ability_hunter_efficiency",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Your successful Chimera Shot and Multi-Shot attacks have a 50% chance to daze the target for 4 sec."
+        }, {
+          "description" : "Your successful Chimera Shot and Multi-Shot attacks have a 100% chance to daze the target for 4 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11225,
+        "name" : "Piercing Shots",
+        "icon" : "ability_hunter_piercingshots",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Your critical Aimed, Steady and Chimera Shots cause the target to bleed for 10% of the damage dealt over 8 sec."
+        }, {
+          "description" : "Your critical Aimed, Steady and Chimera Shots cause the target to bleed for 20% of the damage dealt over 8 sec."
+        }, {
+          "description" : "Your critical Aimed, Steady and Chimera Shots cause the target to bleed for 30% of the damage dealt over 8 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9408,
+        "name" : "Bombardment",
+        "icon" : "ability_marksmanship",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "When you critically hit with your Multi-Shot your next Multi-Shot's focus cost will be reduced by 25%."
+        }, {
+          "description" : "When you critically hit with your Multi-Shot your next Multi-Shot's focus cost will be reduced by 50%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9412,
+        "name" : "Trueshot Aura",
+        "icon" : "ability_trueshot",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Increases the attack power of party and raid members within 100 yards by 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9416,
+        "name" : "Termination",
+        "icon" : "ability_warrior_focusedrage",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Your Steady Shot and Cobra Shot abilities grant an additional 3 Focus when dealt on targets at or below 25% health."
+        }, {
+          "description" : "Your Steady Shot and Cobra Shot abilities grant an additional 6 Focus when dealt on targets at or below 25% health."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9420,
+        "name" : "Resistance is Futile",
+        "icon" : "ability_hunter_resistanceisfutile",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "When your marked target attempts to run, flee or move, you have a 4% chance to cause your next Kill Command on the marked target within 8 sec to refund the focus cost."
+        }, {
+          "description" : "When your marked target attempts to run, flee or move, you have a 8% chance to cause your next Kill Command on the marked target within 8 sec to refund the focus cost."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9422,
+        "name" : "Rapid Recuperation",
+        "icon" : "ability_hunter_rapidregeneration",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "You gain 6 focus every 3 sec while under the effect of Rapid Fire, and you gain 25 focus instantly when you gain Rapid Killing."
+        }, {
+          "description" : "You gain 12 focus every 3 sec while under the effect of Rapid Fire, and you gain 50 focus instantly when you gain Rapid Killing."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9418,
+        "name" : "Master Marksman",
+        "icon" : "ability_hunter_mastermarksman",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "You have a 20% chance when you Steady Shot to gain the Master Marksman effect, lasting 30 sec. After reaching 5 stacks, your next Aimed Shot's cast time and focus cost are reduced by 100% for 10 sec."
+        }, {
+          "description" : "You have a 40% chance when you Steady Shot to gain the Master Marksman effect, lasting 30 sec. After reaching 5 stacks, your next Aimed Shot's cast time and focus cost are reduced by 100% for 10 sec."
+        }, {
+          "description" : "You have a 60% chance when you Steady Shot to gain the Master Marksman effect, lasting 30 sec. After reaching 5 stacks, your next Aimed Shot's cast time and focus cost are reduced by 100% for 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9404,
+        "name" : "Readiness",
+        "icon" : "ability_hunter_readiness",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Instant",
+          "cooldown" : "3 min cooldown",
+          "description" : "When activated, this ability immediately finishes the cooldown on all Hunter abilities."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9426,
+        "name" : "Posthaste",
+        "icon" : "ability_hunter_posthaste",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Reduces the cooldown of your Rapid Fire by 1 min, and your movement speed is increased by 15% for 4 sec after you use Disengage."
+        }, {
+          "description" : "Reduces the cooldown of your Rapid Fire by 2 min, and your movement speed is increased by 30% for 4 sec after you use Disengage."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9428,
+        "name" : "Marked for Death",
+        "icon" : "ability_hunter_assassinate",
+        "x" : 2,
+        "y" : 5,
+        "req" : 9418,
+        "ranks" : [ {
+          "description" : "Your Arcane Shot and Chimera Shot have a 50% chance to automatically apply the Marked for Death effect.\n\n\n\nMarked for Death is the same as Hunter's Mark, but undispellable, does not restrict stealth or invisibility and lasts 15 sec."
+        }, {
+          "description" : "Your Arcane Shot and Chimera Shot have a 100% chance to automatically apply the Marked for Death effect.\n\n\n\nMarked for Death is the same as Hunter's Mark, but undispellable, does not restrict stealth or invisibility and lasts 15 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9430,
+        "name" : "Chimera Shot",
+        "icon" : "ability_hunter_chimerashot2",
+        "x" : 1,
+        "y" : 6,
+        "req" : 9418,
+        "ranks" : [ {
+          "cost" : "50 Focus",
+          "range" : "5-40 yd range",
+          "castTime" : "Instant cast",
+          "cooldown" : "10 sec cooldown",
+          "requires" : "Requires Ranged Weapon",
+          "description" : "An instant shot that causes ranged weapon damage plus 5, refreshing the duration of  your Serpent Sting and healing you for 5% of your total health."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Survival",
+      "icon" : "ability_hunter_camouflage",
+      "backgroundFile" : "HunterSurvival",
+      "overlayColor" : "#ff9900",
+      "description" : "A rugged tracker who favors using animal venom, explosives and traps as deadly weapons.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 53301,
+        "name" : "Explosive Shot",
+        "icon" : "ability_hunter_explosiveshot",
+        "cost" : "50 Focus",
+        "range" : "5-40 yd range",
+        "castTime" : "Instant cast",
+        "cooldown" : "6 sec cooldown",
+        "requires" : "Requires Ranged Weapon",
+        "reagents" : [ ],
+        "description" : "You fire an explosive charge into the enemy target, dealing 2 Fire damage. The charge will blast the target every second for an additional 2 sec.",
+        "internal" : false,
+        "keyAbility" : true
+      }, {
+        "spellId" : 84729,
+        "name" : "Into the Wilderness",
+        "icon" : "achievement_zone_alteracmountains_01",
+        "reagents" : [ ],
+        "description" : "Agility increased by 15%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76658,
+        "name" : "Essence of the Viper",
+        "icon" : "spell_frost_arcticwinds",
+        "reagents" : [ ],
+        "description" : "Increases all elemental damage you deal by 8%.  Each point of Mastery increases elemental damage by an additional 1.0%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9442,
+        "name" : "Hunter vs. Wild",
+        "icon" : "ability_hunter_huntervswild",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases your total Stamina by 4%."
+        }, {
+          "description" : "Increases your total Stamina by 7%."
+        }, {
+          "description" : "Increases your total Stamina by 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9432,
+        "name" : "Pathing",
+        "icon" : "ability_hunter_improvedtracking",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases ranged haste by 1%."
+        }, {
+          "description" : "Increases ranged haste by 2%."
+        }, {
+          "description" : "Increases ranged haste by 3%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9450,
+        "name" : "Improved Serpent Sting",
+        "icon" : "ability_hunter_quickshot",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Your Serpent Sting also does instant damage equal to 15% of its total periodic effect.\n\n\n\nAlso increases the periodic critical strike chance of your Serpent Sting by 5%."
+        }, {
+          "description" : "Your Serpent Sting also does instant damage equal to 30% of its total periodic effect.\n\n\n\nAlso increases the periodic critical strike chance of your Serpent Sting by 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9444,
+        "name" : "Survival Tactics",
+        "icon" : "ability_rogue_feigndeath",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduces the chance that your trap spells will be resisted by 2%, and reduces the cooldown of your Disengage ability by 2 sec."
+        }, {
+          "description" : "Reduces the chance that your trap spells will be resisted by 4%, and reduces the cooldown of your Disengage ability by 4 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10753,
+        "name" : "Trap Mastery",
+        "icon" : "ability_ensnare",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Ice Trap and Freezing Trap - Increases the duration by 10%.\n\n\n\nImmolation Trap, Explosive Trap and Black Arrow - Increases the periodic damage done by 10%.\n\n\n\nSnake Trap - Increases the number of snakes summoned by 2."
+        }, {
+          "description" : "Ice Trap and Freezing Trap - Increases the duration by 20%.\n\n\n\nImmolation Trap, Explosive Trap and Black Arrow - Increases the periodic damage done by 20%.\n\n\n\nSnake Trap - Increases the number of snakes summoned by 4."
+        }, {
+          "description" : "Ice Trap and Freezing Trap - Increases the duration by 30%.\n\n\n\nImmolation Trap, Explosive Trap and Black Arrow - Increases the periodic damage done by 30%.\n\n\n\nSnake Trap - Increases the number of snakes summoned by 6."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9440,
+        "name" : "Entrapment",
+        "icon" : "spell_nature_stranglevines",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "When your Ice Trap or Snake Trap are triggered you entrap all afflicted targets, preventing them from moving for 2 sec."
+        }, {
+          "description" : "When your Ice Trap or Snake Trap are triggered you entrap all afflicted targets, preventing them from moving for 4 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9472,
+        "name" : "Point of No Escape",
+        "icon" : "ability_hunter_pointofnoescape",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Increases the ranged critical strike chance of all of your attacks on targets affected by your Ice Trap and Freezing Trap by 3%."
+        }, {
+          "description" : "Increases the ranged critical strike chance of all of your attacks on targets affected by your Ice Trap and Freezing Trap by 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9484,
+        "name" : "Thrill of the Hunt",
+        "icon" : "ability_hunter_thrillofthehunt",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "You have a 5% chance when you use Arcane Shot, Explosive Shot or Black Arrow to instantly regain 40% of the base focus cost of the shot."
+        }, {
+          "description" : "You have a 10% chance when you use Arcane Shot, Explosive Shot or Black Arrow to instantly regain 40% of the base focus cost of the shot."
+        }, {
+          "description" : "You have a 15% chance when you use Arcane Shot, Explosive Shot or Black Arrow to instantly regain 40% of the base focus cost of the shot."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9448,
+        "name" : "Counterattack",
+        "icon" : "ability_warrior_challange",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "3% of base mana",
+          "range" : "Melee Range",
+          "castTime" : "Instant",
+          "cooldown" : "5 sec cooldown",
+          "description" : "A strike that becomes active after parrying an opponent's attack.  This attack deals 5 damage and immobilizes the target for 5 sec.  Counterattack cannot be blocked, dodged, or parried."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9452,
+        "name" : "Lock and Load",
+        "icon" : "ability_hunter_lockandload",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "You have a 50% chance when you trap a target with Freezing Trap or Ice Trap to cause your next 2 Arcane Shot or Explosive Shot abilities to cost no focus and trigger no cooldown."
+        }, {
+          "description" : "You have a 100% chance when you trap a target with Freezing Trap or Ice Trap to cause your next 2 Arcane Shot or Explosive Shot abilities to cost no focus and trigger no cooldown."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9460,
+        "name" : "Resourcefulness",
+        "icon" : "ability_hunter_resourcefulness",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Reduces the cooldown of all traps and Black Arrow by 2 sec."
+        }, {
+          "description" : "Reduces the cooldown of all traps and Black Arrow by 4 sec."
+        }, {
+          "description" : "Reduces the cooldown of all traps and Black Arrow by 6 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9482,
+        "name" : "Mirrored Blades",
+        "icon" : "inv_weapon_shortblade_99",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "When attacked by a spell while in Deterrence, you have a 50% chance to reflect it back at the attacker."
+        }, {
+          "description" : "When attacked by a spell while in Deterrence, you have a 100% chance to reflect it back at the attacker."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9462,
+        "name" : "T.N.T.",
+        "icon" : "inv_misc_bomb_05",
+        "x" : 2,
+        "y" : 3,
+        "req" : 9452,
+        "ranks" : [ {
+          "description" : "When you deal periodic damage with your Immolation Trap, Explosive Trap or Black Arrow you have a 6% chance to trigger Lock and Load."
+        }, {
+          "description" : "When you deal periodic damage with your Immolation Trap, Explosive Trap or Black Arrow you have a 12% chance to trigger Lock and Load."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9464,
+        "name" : "Toxicology",
+        "icon" : "inv_alchemy_enchantedvial",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Increases the periodic critical damage of your Serpent Sting and Black Arrow by 50%."
+        }, {
+          "description" : "Increases the periodic critical damage of your Serpent Sting and Black Arrow by 100%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9468,
+        "name" : "Wyvern Sting",
+        "icon" : "inv_spear_02",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "10 Focus",
+          "range" : "5-35 yd range",
+          "castTime" : "Instant cast",
+          "cooldown" : "1 min cooldown",
+          "requires" : "Requires Ranged Weapon",
+          "description" : "A stinging shot that puts the target to sleep for 30 sec.  Any damage will cancel the effect.  When the target wakes up, the Sting causes 12 Nature damage over 6 sec.  Only one Sting per Hunter can be active on the target at a time."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9474,
+        "name" : "Noxious Stings",
+        "icon" : "ability_hunter_potentvenom",
+        "x" : 2,
+        "y" : 4,
+        "req" : 9468,
+        "ranks" : [ {
+          "description" : "Increases your damage done on targets afflicted by your Serpent Sting by 5%.\n\n\n\nIf Wyvern Sting is dispelled, the dispeller is also afflicted by Wyvern Sting lasting 25% of the duration remaining."
+        }, {
+          "description" : "Increases your damage done on targets afflicted by your Serpent Sting by 10%.\n\n\n\nIf Wyvern Sting is dispelled, the dispeller is also afflicted by Wyvern Sting lasting 50% of the duration remaining."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9476,
+        "name" : "Hunting Party",
+        "icon" : "ability_hunter_huntingparty",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Increases your total Agility by an additional 2%, and increases the Ranged and Melee Attack Speed of all party and raid members by 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9478,
+        "name" : "Sniper Training",
+        "icon" : "ability_hunter_longshots",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Increases the critical strike chance of your Kill Shot ability by 5%, and after remaining stationary for 6 sec, your Steady Shot and Cobra Shot deal 2% more damage for 15 sec."
+        }, {
+          "description" : "Increases the critical strike chance of your Kill Shot ability by 10%, and after remaining stationary for 6 sec, your Steady Shot and Cobra Shot deal 4% more damage for 15 sec."
+        }, {
+          "description" : "Increases the critical strike chance of your Kill Shot ability by 15%, and after remaining stationary for 6 sec, your Steady Shot and Cobra Shot deal 6% more damage for 15 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11698,
+        "name" : "Serpent Spread",
+        "icon" : "ability_hunter_serpentswiftness",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Targets hit by your Multi-Shot are also afflicted by your Serpent Sting equal to 6 sec of its total duration."
+        }, {
+          "description" : "Targets hit by your Multi-Shot are also afflicted by your Serpent Sting equal to 9 sec of its total duration."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9480,
+        "name" : "Black Arrow",
+        "icon" : "spell_shadow_painspike",
+        "x" : 1,
+        "y" : 6,
+        "req" : 9468,
+        "ranks" : [ {
+          "cost" : "35 Focus",
+          "range" : "5-40 yd range",
+          "castTime" : "Instant cast",
+          "cooldown" : "30 sec cooldown",
+          "requires" : "Requires Ranged Weapon",
+          "description" : "Fires a Black Arrow at the target, dealing 25 Shadow damage over 15 sec. Black Arrow shares a cooldown with other Fire Trap spells."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

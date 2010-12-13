@@ -28,6 +28,16 @@
 - (void)doCoreDataTests {
 //  [self talentDataTestForClass:@"warrior"];
 //  [self talentDataTestForClass:@"paladin"];
+//  [self talentDataTestForClass:@"hunter"];
+//  [self talentDataTestForClass:@"rogue"];
+//  [self talentDataTestForClass:@"priest"];
+//  [self talentDataTestForClass:@"deathknight"];
+//  [self talentDataTestForClass:@"shaman"];
+//  [self talentDataTestForClass:@"mage"];
+//  [self talentDataTestForClass:@"warlock"];
+//  [self talentDataTestForClass:@"druid"];
+  
+  
 //  [self talentAbilityTest];
 //  [self primarySpellsTest];
 //  [self masteriesTest];
