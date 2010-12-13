@@ -35,7 +35,7 @@
 @synthesize talentArray = _talentArray;
 @synthesize talentViewDict = _talentViewDict;
 @synthesize childDict = _childDict;
-@synthesize pointsInTier = _pointsInTier;
+//@synthesize pointsInTier = _pointsInTier;
 @synthesize pointsInTree = _pointsInTree;
 @synthesize characterClassId = _characterClassId;
 @synthesize treeNo = _treeNo;
@@ -53,7 +53,10 @@
     _childDict = [[NSMutableDictionary alloc] init];
     
     // Initialize points in tier for 7 tiers
-    _pointsInTier = [[NSArray alloc] initWithObjects:[NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], nil];
+    for (int i = 0; i < MAX_TIERS; i++) {
+      _pointsInTier[i] = 0;
+    }
+//    _pointsInTier = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], [NSNumber numberWithInteger:0], nil];
     
     _pointsInTree = 0;
     _characterClassId = 0;
@@ -126,7 +129,17 @@
   }
   
   // Tier point requirement check
-  // NEED LOGIC HERE
+  // If pointsInTier of all the next tiers summed is not 0
+  // Then we can't reduce this tier by less than 5
+  NSInteger tier = [talentView.talent.tier integerValue];
+  NSInteger sumOfNextTiers = 0;
+  for (int i = tier + 1; i < MAX_TIERS; i++) {
+    sumOfNextTiers += _pointsInTier[i];
+  }
+  
+  if (sumOfNextTiers > 0) {
+    if (_pointsInTier[tier] <= 5) return NO;
+  } 
   
   // Check for parent requirement if exist
   // Look in the inverse dependency requirement dictionary to see if this talent has a child
@@ -204,6 +217,8 @@
     // Update Tree's points
     self.pointsInTree++;
     
+    _pointsInTier[[talentView.talent.tier integerValue]]++;
+    
     // Update Talent's current rank
     talentView.currentRank++;
     
@@ -221,6 +236,8 @@
   
   if ([self canSubtractPoint:talentView]) {
     self.pointsInTree--;
+    
+    _pointsInTier[[talentView.talent.tier integerValue]]--;
     
     talentView.currentRank--;
     
@@ -249,7 +266,7 @@
 
 - (void)dealloc {
   if (_talentArray) [_talentArray release];
-  if (_pointsInTier) [_pointsInTier release];
+//  if (_pointsInTier) [_pointsInTier release];
   if (_talentViewDict) [_talentViewDict release];
   if (_childDict) [_childDict release];
   [super dealloc];

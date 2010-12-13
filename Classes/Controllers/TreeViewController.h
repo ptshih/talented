@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "TalentViewController.h"
 
+#define MAX_TIERS 7
+
 @class TreeViewController;
 @class TalentTree;
 
@@ -30,7 +32,8 @@ typedef enum {
   NSArray *_talentArray;
   NSMutableDictionary *_talentViewDict;
   NSMutableDictionary *_childDict; // This is an inverse requirement (child) dictionary used for canSubtract
-  NSArray *_pointsInTier;
+//  NSMutableArray *_pointsInTier;
+  NSInteger _pointsInTier[MAX_TIERS];
   NSInteger _pointsInTree;
   NSInteger _characterClassId;
   NSInteger _treeNo;
@@ -44,7 +47,7 @@ typedef enum {
 @property (nonatomic, retain) NSArray *talentArray;
 @property (nonatomic, retain) NSMutableDictionary *talentViewDict;
 @property (nonatomic, retain) NSMutableDictionary *childDict;
-@property (nonatomic, retain) NSArray *pointsInTier;
+//@property (nonatomic, retain) NSMutableArray *pointsInTier;
 @property (nonatomic, assign) NSInteger pointsInTree;
 @property (nonatomic, assign) NSInteger characterClassId;
 @property (nonatomic, assign) NSInteger treeNo;
