@@ -348,7 +348,7 @@ static UIImage *_minusButtonOff = nil;
   self.tooltipLabel.text = [self.tooltipLabel.text stringByReplacingOccurrencesOfString:@"\n\n" withString:@"\n"];
   
   // Tooltip TextView size
-	CGSize tooltipSize = [self.tooltipLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH, self.availableHeight - _desiredHeight - MARGIN_Y) lineBreakMode:UILineBreakModeWordWrap];
+	CGSize tooltipSize = [self.tooltipLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH, self.availableHeight - _desiredHeight - MARGIN_Y * 2 - MARGIN_Y_SM * 2) lineBreakMode:UILineBreakModeWordWrap];
   self.tooltipLabel.top = _desiredHeight;
   self.tooltipLabel.left = MARGIN_X;
   self.tooltipLabel.width = tooltipSize.width + 8;
