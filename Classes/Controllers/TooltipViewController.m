@@ -14,6 +14,7 @@
 #import "Rank.h"
 #import "UIView+Additions.h"
 #import "Constants.h"
+#import "InfoTextView.h"
 
 #define TOOLTIP_WIDTH 260.0
 #define BUTTON_WIDTH 79.0
@@ -46,6 +47,9 @@ static UIImage *_minusButtonOff = nil;
 @synthesize treeView = _treeView;
 @synthesize talentView = _talentView;
 @synthesize bgImageView = _bgImageView;
+
+@synthesize availableHeight = _availableHeight;
+
 @synthesize plusButton = _plusButton;
 @synthesize minusButton = _minusButton;
 @synthesize tooltipLabel = _tooltipLabel;
@@ -71,6 +75,7 @@ static UIImage *_minusButtonOff = nil;
 - (id)init {
   self = [super init];
   if (self) {
+    _availableHeight = 564.0;
     _desiredHeight = 75.0; // 75px after buttons and top border spacing
     
     // Base View
@@ -107,8 +112,10 @@ static UIImage *_minusButtonOff = nil;
 
 - (void)setupTooltip {
   // Tooltip Text View
-  _tooltipLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-  self.tooltipLabel.numberOfLines = INT_MAX;
+//  _tooltipLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+  _tooltipLabel = [[InfoTextView alloc] initWithFrame:CGRectZero];
+  self.tooltipLabel.contentInset = UIEdgeInsetsMake(-6, -8, -6, -8);
+//  self.tooltipLabel.numberOfLines = INT_MAX;
   self.tooltipLabel.font = [UIFont systemFontOfSize:14.0];
   self.tooltipLabel.textColor = [UIColor colorWithRed:0.9 green:0.746 blue:0.082 alpha:1.0];
   self.tooltipLabel.backgroundColor = [UIColor clearColor];
@@ -341,11 +348,11 @@ static UIImage *_minusButtonOff = nil;
   self.tooltipLabel.text = [self.tooltipLabel.text stringByReplacingOccurrencesOfString:@"\n\n" withString:@"\n"];
   
   // Tooltip TextView size
-	CGSize tooltipSize = [self.tooltipLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
+	CGSize tooltipSize = [self.tooltipLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH, self.availableHeight - _desiredHeight - MARGIN_Y) lineBreakMode:UILineBreakModeWordWrap];
   self.tooltipLabel.top = _desiredHeight;
   self.tooltipLabel.left = MARGIN_X;
-  self.tooltipLabel.width = tooltipSize.width;
-  self.tooltipLabel.height = tooltipSize.height;
+  self.tooltipLabel.width = tooltipSize.width + 8;
+  self.tooltipLabel.height = tooltipSize.height + 4;
   
   _desiredHeight = self.tooltipLabel.bottom;
   

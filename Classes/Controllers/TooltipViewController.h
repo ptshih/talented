@@ -10,17 +10,19 @@
 
 @class TreeViewController;
 @class TalentViewController;
+@class InfoTextView;
 
 @interface TooltipViewController : UIViewController {
   TreeViewController *_treeView;
 	TalentViewController *_talentView;
   
+  CGFloat _availableHeight;
   CGFloat _desiredHeight;
   
   UIImageView *_bgImageView;
   UIButton *_plusButton;
   UIButton *_minusButton;
-  UILabel *_tooltipLabel;
+  InfoTextView *_tooltipLabel;
   
   UILabel *_nameLabel;
   UILabel *_rankLabel;
@@ -39,10 +41,12 @@
 @property (nonatomic, assign) TreeViewController *treeView;
 @property (nonatomic, assign) TalentViewController *talentView;
 
+@property (nonatomic, assign) CGFloat availableHeight;
+
 @property (nonatomic, retain) UIImageView *bgImageView;
 @property (nonatomic, retain) UIButton *plusButton;
 @property (nonatomic, retain) UIButton *minusButton;
-@property (nonatomic, retain) UILabel *tooltipLabel;
+@property (nonatomic, retain) InfoTextView *tooltipLabel;
 
 @property (nonatomic, retain) UILabel *nameLabel;
 @property (nonatomic, retain) UILabel *rankLabel;

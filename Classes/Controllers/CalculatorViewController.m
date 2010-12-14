@@ -288,6 +288,16 @@
     [_tooltipPopoverController dismissPopoverAnimated:NO];
   }
   
+  // Calculate available height based on tier selected
+  CGFloat availableHeight = 0.0;
+  if ([talentView.talent.tier integerValue] >= 4) {
+    availableHeight = talentView.view.top - SPACING_Y;
+  } else {
+    availableHeight = _talentTreeView.height + 70.0 - (talentView.view.bottom + SPACING_Y);
+  }
+  DLog(@"availHeight = %f", availableHeight);
+  self.tooltipViewController.availableHeight = availableHeight;
+  
   self.tooltipViewController.treeView = treeView;
   self.tooltipViewController.talentView = talentView;
   
@@ -313,14 +323,7 @@
   
   CGRect popoverFrame = CGRectMake(treeView.view.left, popoverTop, treeView.view.width, self.tooltipViewController.view.height);
   [_tooltipPopoverController presentPopoverFromRect:popoverFrame inView:_talentTreeView permittedArrowDirections:NO animated:YES];
-			
-//	self.tooltipViewController.view.alpha = 0.0f;
-//	[self.view addSubview:self.tooltipViewController.view];
-//	[UIView beginAnimations:@"TooltipTransition" context:nil];
-//	[UIView setAnimationCurve:UIViewAnimationCurveLinear];  
-//	[UIView setAnimationDuration:0.2f];
-//	self.tooltipViewController.view.alpha = 1.0f;
-//	[UIView commitAnimations];
+
 }
 
 
