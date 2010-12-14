@@ -49,6 +49,6 @@ typedef enum {
 @property (nonatomic, assign) NSInteger state;
 
 - (IBAction)swapViews;
-- (void)hideTooltip;
+- (void)hideTooltip:(BOOL)animated;
 
 @end

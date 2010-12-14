@@ -16,14 +16,14 @@
 #import "Constants.h"
 #import "InfoTextView.h"
 
-#define TOOLTIP_WIDTH 260.0
+#define TOOLTIP_WIDTH 270.0
 #define BUTTON_WIDTH 45.0
-#define BUTTON_HEIGHT 38.0
+#define BUTTON_HEIGHT 34.0
 #define TOOLTIP_CAP 15
 #define MARGIN_X 15.0
 #define MARGIN_Y 15.0
 #define MARGIN_Y_SM 2.0
-#define POPOVER_WIDTH 290.0
+#define POPOVER_WIDTH 300.0
 
 static UIImage *_plusButtonOn = nil;
 static UIImage *_plusButtonOff = nil;

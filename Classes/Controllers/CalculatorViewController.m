@@ -17,6 +17,7 @@
 
 #define SPACING_X 16.0
 #define SPACING_Y 16.0
+#define MARGIN_X 16.0
 
 #define MAX_POINTS 41
 #define SPEC_POINTS_LIMIT 31
@@ -239,7 +240,7 @@
 
 #pragma mark TreeDelegate
 - (void)dismissPopoverFromTree:(TreeViewController *)treeView {
-  [self hideTooltip];
+  [self hideTooltip:YES];
 }
 
 - (void)talentTappedForTree:(TreeViewController *)treeView andTalentView:(TalentViewController *)talentView {
@@ -280,13 +281,16 @@
 - (void)showTooltipForTalentView:(TalentViewController *)talentView inTree:(TreeViewController *)treeView {
   if (!self.tooltipViewController) {
     _tooltipViewController = [[TooltipViewController alloc] init];
-  }
-  
-  if (!_tooltipPopoverController) {
-    _tooltipPopoverController = [[UIPopoverController alloc] initWithContentViewController:self.tooltipViewController];
   } else {
-    [_tooltipPopoverController dismissPopoverAnimated:NO];
+    [self hideTooltip:NO];
   }
+
+  
+//  if (!_tooltipPopoverController) {
+//    _tooltipPopoverController = [[UIPopoverController alloc] initWithContentViewController:self.tooltipViewController];
+//  } else {
+//    [_tooltipPopoverController dismissPopoverAnimated:NO];
+//  }
   
   // Calculate available height based on tier selected
   CGFloat availableHeight = 0.0;
@@ -300,37 +304,49 @@
   
   self.tooltipViewController.treeView = treeView;
   self.tooltipViewController.talentView = talentView;
-  
   [self.tooltipViewController reloadTooltipData];
   
-  _tooltipPopoverController.popoverContentSize = self.tooltipViewController.view.frame.size;
-  
-  NSMutableArray *views = [NSMutableArray array];
-  for (TreeViewController *tvc in self.treeViewArray) {
-    [views addObject:tvc.view];
-  }
-  _tooltipPopoverController.passthroughViews = views;
+//  _tooltipPopoverController.popoverContentSize = self.tooltipViewController.view.frame.size;
+//  
+//  NSMutableArray *views = [NSMutableArray array];
+//  for (TreeViewController *tvc in self.treeViewArray) {
+//    [views addObject:tvc.view];
+//  }
+//  _tooltipPopoverController.passthroughViews = views;
   
   // Calculate Popover positioning
   // Invert, etc...
   // IF tier >= 4, invert
   NSInteger popoverTop;
   if ([talentView.talent.tier integerValue] >= 4) {
-    popoverTop = talentView.view.top - self.tooltipViewController.view.height - SPACING_Y;
+    popoverTop = talentView.view.top - self.tooltipViewController.view.height + 70.0 - SPACING_Y;
   } else {
-    popoverTop = talentView.view.bottom + SPACING_Y;
+    popoverTop = talentView.view.bottom + 70.0 +SPACING_Y;
   }
   
-  CGRect popoverFrame = CGRectMake(treeView.view.left, popoverTop, treeView.view.width, self.tooltipViewController.view.height);
-  [_tooltipPopoverController presentPopoverFromRect:popoverFrame inView:_talentTreeView permittedArrowDirections:NO animated:YES];
+  CGRect popoverFrame = CGRectMake(treeView.view.left + 10.0, popoverTop, treeView.view.width, self.tooltipViewController.view.height);
+//  [_tooltipPopoverController presentPopoverFromRect:popoverFrame inView:_talentTreeView permittedArrowDirections:NO animated:YES];
+//  
+  self.tooltipViewController.view.frame = popoverFrame;
+  
+  self.tooltipViewController.view.alpha = 0.0f;
+  [self.view addSubview:self.tooltipViewController.view];
+  [UIView beginAnimations:@"TooltipTransition" context:nil];
+  [UIView setAnimationCurve:UIViewAnimationCurveLinear];  
+  [UIView setAnimationDuration:0.2f];
+  self.tooltipViewController.view.alpha = 1.0f;
+  [UIView commitAnimations];
 
 }
 
 
-- (void)hideTooltip {
-	if(_tooltipPopoverController) {
-    [_tooltipPopoverController dismissPopoverAnimated:YES];
-	}
+- (void)hideTooltip:(BOOL)animated {
+  if (self.tooltipViewController) {
+    [self.tooltipViewController.view removeFromSuperview];
+  }
+//	if(_tooltipPopoverController) {
+//    [_tooltipPopoverController dismissPopoverAnimated:animated];
+//	}
 }
 
 #pragma mark Memory Management
