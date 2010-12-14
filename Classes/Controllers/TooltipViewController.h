@@ -26,6 +26,8 @@
   UIImageView *_bgImageView;
   UIButton *_plusButton;
   UIButton *_minusButton;
+  UIButton *_closeButton;
+  
   InfoTextView *_tooltipLabel;
   
   UILabel *_nameLabel;
@@ -53,6 +55,8 @@
 @property (nonatomic, retain) UIImageView *bgImageView;
 @property (nonatomic, retain) UIButton *plusButton;
 @property (nonatomic, retain) UIButton *minusButton;
+@property (nonatomic, retain) UIButton *closeButton;
+
 @property (nonatomic, retain) InfoTextView *tooltipLabel;
 
 @property (nonatomic, retain) UILabel *nameLabel;

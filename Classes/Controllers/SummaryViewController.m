@@ -73,6 +73,7 @@
     
     [primarySpellView.primarySpellIcon setImage:myImage forState:UIControlStateNormal];
     primarySpellView.primarySpellIcon.primarySpellIndex = i;
+    primarySpellView.primarySpellIcon.parentView = primarySpellView;
     
     primarySpellView.primarySpellNameLabel.text = spell.primarySpellName;
     primarySpellView.top = PRIMARY_SPELL_OFFSET_Y + (i * (primarySpellView.height + PRIMARY_SPELL_MARGIN_Y));
@@ -119,10 +120,13 @@
 
   [self.tooltipViewController reloadTooltipData];
   
-  CGRect popoverFrame = CGRectMake(10.0, 10.0, self.view.width, self.tooltipViewController.view.height);
+  
+  NSInteger tooltipOffset = [sender parentView].bottom;
+  
+  CGRect tooltipFrame = CGRectMake(10.0, tooltipOffset + 6.0, self.view.width, self.tooltipViewController.view.height);
   //  [_tooltipPopoverController presentPopoverFromRect:popoverFrame inView:_talentTreeView permittedArrowDirections:NO animated:YES];
   //  
-  self.tooltipViewController.view.frame = popoverFrame;
+  self.tooltipViewController.view.frame = tooltipFrame;
   
   self.tooltipViewController.view.alpha = 0.0f;
   [self.view addSubview:self.tooltipViewController.view];

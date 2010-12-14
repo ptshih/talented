@@ -10,9 +10,11 @@
 
 
 @interface PrimarySpellButton : UIButton {
+  UIView *_parentView;
   NSInteger _primarySpellIndex;
 }
 
+@property (nonatomic, assign) UIView *parentView;
 @property (nonatomic, assign) NSInteger primarySpellIndex;
 
 @end

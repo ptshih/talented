@@ -419,17 +419,17 @@
   // Calculate Popover positioning
   // Invert, etc...
   // IF tier >= 4, invert
-  NSInteger popoverTop;
+  NSInteger tooltipTop;
   if ([talentView.talent.tier integerValue] >= 4) {
-    popoverTop = talentView.view.top - self.tooltipViewController.view.height + 70.0 - TOOLTIP_MARGIN_Y;
+    tooltipTop = talentView.view.top - self.tooltipViewController.view.height + 70.0 - TOOLTIP_MARGIN_Y;
   } else {
-    popoverTop = talentView.view.bottom + 70.0 + TOOLTIP_MARGIN_Y;
+    tooltipTop = talentView.view.bottom + 70.0 + TOOLTIP_MARGIN_Y;
   }
   
-  CGRect popoverFrame = CGRectMake(treeView.view.left + 10.0, popoverTop, treeView.view.width, self.tooltipViewController.view.height);
+  CGRect tooltipFrame = CGRectMake(treeView.view.left + 10.0, tooltipTop, treeView.view.width, self.tooltipViewController.view.height);
 //  [_tooltipPopoverController presentPopoverFromRect:popoverFrame inView:_talentTreeView permittedArrowDirections:NO animated:YES];
 //  
-  self.tooltipViewController.view.frame = popoverFrame;
+  self.tooltipViewController.view.frame = tooltipFrame;
   
   self.tooltipViewController.view.alpha = 0.0f;
   [self.view addSubview:self.tooltipViewController.view];

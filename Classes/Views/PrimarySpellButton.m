@@ -11,6 +11,7 @@
 
 @implementation PrimarySpellButton
 
+@synthesize parentView = _parentView;
 @synthesize primarySpellIndex = _primarySpellIndex;
 
 - (id)initWithFrame:(CGRect)frame {

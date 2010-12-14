@@ -20,16 +20,19 @@
 #define TOOLTIP_WIDTH 270.0
 #define BUTTON_WIDTH 45.0
 #define BUTTON_HEIGHT 34.0
+#define CLOSE_BUTTON_WIDTH 17.0
+#define CLOSE_BUTTON_HEIGHT 17.0
 #define TOOLTIP_CAP 15
 #define MARGIN_X 15.0
 #define MARGIN_Y 15.0
 #define MARGIN_Y_SM 2.0
-#define POPOVER_WIDTH 300.0
+#define FRAME_WIDTH 300.0
 
 static UIImage *_plusButtonOn = nil;
 static UIImage *_plusButtonOff = nil;
 static UIImage *_minusButtonOn = nil;
 static UIImage *_minusButtonOff = nil;
+static UIImage *_closeButtonImage = nil;
 
 @interface TooltipViewController (Private)
 
@@ -56,6 +59,8 @@ static UIImage *_minusButtonOff = nil;
 
 @synthesize plusButton = _plusButton;
 @synthesize minusButton = _minusButton;
+@synthesize closeButton = _closeButton;
+
 @synthesize tooltipLabel = _tooltipLabel;
 
 @synthesize nameLabel = _nameLabel;
@@ -74,6 +79,7 @@ static UIImage *_minusButtonOff = nil;
   _plusButtonOff = [[UIImage imageNamed:@"points_plus_off.png"] retain];
   _minusButtonOn = [[UIImage imageNamed:@"points_minus_on.png"] retain];
   _minusButtonOff = [[UIImage imageNamed:@"points_minus_off.png"] retain];
+  _closeButtonImage = [[UIImage imageNamed:@"reset.png"] retain];
 }
 
 - (id)init {
@@ -85,12 +91,10 @@ static UIImage *_minusButtonOff = nil;
     _desiredHeight = 15.0; // 75px after buttons and top border spacing
     
     // Base View
-    self.view.width = POPOVER_WIDTH;
+    self.view.width = FRAME_WIDTH;
     self.view.height = 0.0;
     
-    if (!_isPrimarySpell) {
-      [self setupButtons];
-    }
+    [self setupButtons];
     [self setupBackground];
     [self setupTooltip];
     [self setupLabels];
@@ -98,15 +102,23 @@ static UIImage *_minusButtonOff = nil;
   return self;
 }
 
+- (void)closeTooltip {
+  [self.view removeFromSuperview];
+}
+
 #pragma mark UI Initialization and Setup
 - (void)setupButtons {
   // Add and Subtract Buttons
-  _plusButton = [[UIButton alloc] initWithFrame:CGRectMake(POPOVER_WIDTH - MARGIN_X - BUTTON_WIDTH, 15, BUTTON_WIDTH, BUTTON_HEIGHT)];
-  _minusButton = [[UIButton alloc] initWithFrame:CGRectMake(POPOVER_WIDTH - MARGIN_X - BUTTON_WIDTH - BUTTON_WIDTH, 15, BUTTON_WIDTH, BUTTON_HEIGHT)];
+  _plusButton = [[UIButton alloc] initWithFrame:CGRectMake(FRAME_WIDTH - MARGIN_X - BUTTON_WIDTH, 15, BUTTON_WIDTH, BUTTON_HEIGHT)];
+  _minusButton = [[UIButton alloc] initWithFrame:CGRectMake(FRAME_WIDTH - MARGIN_X - BUTTON_WIDTH - BUTTON_WIDTH, 15, BUTTON_WIDTH, BUTTON_HEIGHT)];
+  _closeButton = [[UIButton alloc] initWithFrame:CGRectMake(FRAME_WIDTH - MARGIN_X - CLOSE_BUTTON_WIDTH, 15, CLOSE_BUTTON_WIDTH, CLOSE_BUTTON_HEIGHT)];
   [self.plusButton addTarget:self action:@selector(addPoint:) forControlEvents:UIControlEventTouchUpInside];
   [self.minusButton addTarget:self action:@selector(removePoint:) forControlEvents:UIControlEventTouchUpInside];
+  [self.closeButton addTarget:self action:@selector(closeTooltip) forControlEvents:UIControlEventTouchUpInside];
+  [self.closeButton setImage:_closeButtonImage forState:UIControlStateNormal];
   [self.view addSubview:self.plusButton];
   [self.view addSubview:self.minusButton];
+  [self.view addSubview:self.closeButton];
 }
 
 - (void)setupBackground {
@@ -114,7 +126,7 @@ static UIImage *_minusButtonOff = nil;
   UIImage *tooltipBg = [[UIImage imageNamed:@"tooltip_bg.png"] stretchableImageWithLeftCapWidth:TOOLTIP_CAP topCapHeight:TOOLTIP_CAP];
   _bgImageView = [[UIImageView alloc] initWithImage:tooltipBg];
   self.bgImageView.top = 0.0;
-  self.bgImageView.width = POPOVER_WIDTH;
+  self.bgImageView.width = FRAME_WIDTH;
   [self.view addSubview:self.bgImageView];
 }
 
@@ -214,7 +226,12 @@ static UIImage *_minusButtonOff = nil;
   // Add name label
   self.nameLabel.text = _isPrimarySpell ? self.primarySpell.primarySpellName : self.talentView.talent.talentName;
 
-  labelSize = [self.nameLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH - BUTTON_WIDTH - BUTTON_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
+  if (!_isPrimarySpell) {
+    labelSize = [self.nameLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH - BUTTON_WIDTH * 2, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
+  } else {
+    labelSize = [self.nameLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH - CLOSE_BUTTON_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
+  }
+
   self.nameLabel.top = _desiredHeight;
   self.nameLabel.left = MARGIN_X;
   self.nameLabel.width = labelSize.width;
@@ -290,7 +307,7 @@ static UIImage *_minusButtonOff = nil;
       self.rangeLabel.text = _isPrimarySpell ? self.primarySpell.spellRange : [[self.talentView.talent.ranks anyObject] spellRange];
       [self.rangeLabel sizeToFit];
       self.rangeLabel.top = _desiredHeight;
-      self.rangeLabel.left = POPOVER_WIDTH - self.rangeLabel.width - MARGIN_X;
+      self.rangeLabel.left = FRAME_WIDTH - self.rangeLabel.width - MARGIN_X;
     } else {
       self.rangeLabel.hidden = YES;
     }
@@ -319,7 +336,7 @@ static UIImage *_minusButtonOff = nil;
       self.cooldownLabel.text = _isPrimarySpell ? self.primarySpell.cooldown : [[self.talentView.talent.ranks anyObject] cooldown];
       [self.cooldownLabel sizeToFit];
       self.cooldownLabel.top = _desiredHeight;
-      self.cooldownLabel.left = POPOVER_WIDTH - self.cooldownLabel.width - MARGIN_X;
+      self.cooldownLabel.left = FRAME_WIDTH - self.cooldownLabel.width - MARGIN_X;
     } else {
       self.cooldownLabel.hidden = YES;
     }
@@ -384,8 +401,16 @@ static UIImage *_minusButtonOff = nil;
 - (void)reloadTooltipData {
   _desiredHeight = 15.0;
   if (!_isPrimarySpell) {
+    self.plusButton.hidden = NO;
+    self.minusButton.hidden = NO;
+    self.closeButton.hidden = YES;
     [self prepareButtons];
+  } else {
+    self.plusButton.hidden = YES;
+    self.minusButton.hidden = YES;
+    self.closeButton.hidden = NO;
   }
+
   [self prepareLabels];
   [self prepareTooltip];
   
@@ -393,6 +418,8 @@ static UIImage *_minusButtonOff = nil;
   if (!_isPrimarySpell) {
     [self.view bringSubviewToFront:self.plusButton];
     [self.view bringSubviewToFront:self.minusButton];
+  } else {
+    [self.view bringSubviewToFront:self.closeButton];
   }
   
   // Set tooltip bg height
@@ -431,6 +458,7 @@ static UIImage *_minusButtonOff = nil;
   if (_tooltipLabel) [_tooltipLabel release];
   if (_plusButton) [_plusButton release];
   if (_minusButton) [_minusButton release];
+  if (_closeButton) [_closeButton release];
   
   if (_nameLabel) [_nameLabel release];
   if (_rankLabel) [_rankLabel release];
