@@ -58,6 +58,9 @@ typedef enum {
 @property (nonatomic, assign) NSInteger totalPoints;
 @property (nonatomic, assign) NSInteger state;
 
+- (IBAction)resetLeft;
+- (IBAction)resetMiddle;
+- (IBAction)resetRight;
 - (IBAction)resetAll;
 - (IBAction)swapViews;
 - (void)hideTooltip:(BOOL)animated;

@@ -84,6 +84,15 @@
 }
 
 #pragma mark IBAction
+- (IBAction)resetLeft {
+}
+
+- (IBAction)resetMiddle {
+}
+
+- (IBAction)resetRight {
+}
+
 - (IBAction)resetAll {
   self.totalPoints = 0;
   self.state = CalculatorStateEnabled;
