@@ -11,9 +11,9 @@
 #import "SummaryViewController.h"
 
 typedef enum {
-  CalculatorStateDisabled = 0,
-  CalculatorStateEnabled = 1,
-  CalculatorStateAllEnabled = 2
+  CalculatorStateEnabled = 0,
+  CalculatorStateAllEnabled = 1,
+  CalculatorStateFinished = 2
 } CalculatorState;
 
 @class TooltipViewController;
@@ -63,6 +63,6 @@ typedef enum {
 - (IBAction)resetRight;
 - (IBAction)resetAll;
 - (IBAction)swapViews;
-- (void)hideTooltip:(BOOL)animated;
+- (void)hideTooltip;
 
 @end

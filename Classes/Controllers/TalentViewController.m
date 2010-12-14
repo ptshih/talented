@@ -105,7 +105,7 @@ static UIImage *_abilityYellow = nil;
   [self updateState];
   
   // If we are finished, hide all labels for enabled talents with 0 points
-  if (self.state == TalentStateEnabled && self.currentRank == 0) {
+  if (self.state != TalentStateDisabled && self.currentRank == 0) {
     _talentLabel.hidden = YES;
     _talentPointsView.hidden = YES;
     [_talentButton setImage:_talentGrayscale forState:UIControlStateNormal];

@@ -209,18 +209,43 @@
     return NO;
   }
   
+  
   // Tier point requirement check
   // If pointsInTier of all the next tiers summed is not 0
   // Then we can't reduce this tier by less than 5
   NSInteger tier = [talentView.talent.tier integerValue];
   NSInteger sumOfNextTiers = 0;
+  NSInteger maxTier = 0;
   for (int i = tier + 1; i < MAX_TIERS; i++) {
-    sumOfNextTiers += _pointsInTier[i];
+    if (_pointsInTier[i] > 0) {
+      sumOfNextTiers += _pointsInTier[i];
+      maxTier = i;
+    }
   }
-  
+
+  // If there are points after our tier, check again
+  // Otherwise proceed
+  NSInteger pointsToTier = 0;
+  NSInteger pointsRequiredAtTier = tier * 5;
+  NSInteger pointsRequiredAtMaxTier = maxTier * 5;
+  NSInteger sumOfAllTiersToMaxTier = 0;
   if (sumOfNextTiers > 0) {
-    if (_pointsInTier[tier] <= 5) return NO;
-  } 
+    // Check our own tier to see if we satisfy the minimum point req
+    for (int k = 0; k <= tier; k++) {
+      pointsToTier += _pointsInTier[k];
+    }
+    if (pointsToTier <= pointsRequiredAtTier) return NO;
+    
+    // Sum all points until the farthest tier with points
+    for (int j = 0; j < maxTier; j++) {
+      sumOfAllTiersToMaxTier += _pointsInTier[j];
+    }
+    
+    // If sum of all points to farthest tier is <= points needed for farthest tier to be active, we can't subtract
+    if (sumOfAllTiersToMaxTier <= pointsRequiredAtMaxTier) {
+      return NO;
+    }
+  }
   
   // Check for parent requirement if exist
   // Look in the inverse dependency requirement dictionary to see if this talent has children
@@ -247,7 +272,9 @@
 - (void)updateTalentState {
   // Update state for all talents in this tree
   for (TalentViewController *talentView in [self.talentViewDict allValues]) {
-    if (self.state == TreeStateDisabled) {
+    if (self.state == TreeStateFinished) {
+      // do nothing
+    } else if (self.state == TreeStateDisabled) {
       talentView.state = TalentStateDisabled;
     } else if (talentView.currentRank == [talentView.talent.ranks count]) {    // Check for max
       talentView.state = TalentStateMaxed;
@@ -263,7 +290,7 @@
     if (arrowView) {
       TalentViewController *req = [self.talentViewDict objectForKey:[talentView.talent.req stringValue]];
       if (req) {
-        if (req.currentRank == [req.talent.ranks count]) {
+        if (req.currentRank == [req.talent.ranks count] && self.pointsInTree >= 5 * [talentView.talent.tier integerValue]) {
           // maxed, enable arrow
           arrowView.highlighted = YES;
         } else {

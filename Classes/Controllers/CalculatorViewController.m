@@ -98,6 +98,8 @@
   self.state = CalculatorStateEnabled;
   self.specTreeNo = -1;
   
+  [self hideTooltip];
+  
   for (TreeViewController *tvc in self.treeViewArray) {
     tvc.isSpecTree = NO;
     [tvc resetState];
@@ -217,7 +219,7 @@
 - (void)updateStateFromTreeNo:(NSInteger)treeNo {
   // Check for max points in calculator
   if (self.totalPoints == MAX_POINTS) {
-    self.state = CalculatorStateDisabled;
+    self.state = CalculatorStateFinished;
   } else {
     if (self.state != CalculatorStateAllEnabled) {
       self.state = CalculatorStateEnabled;
@@ -239,11 +241,13 @@
     [self updateTreeStateForTree:treeNo];
   }
   
+  [self updateHeaderState];
+  [self updateHeaderPoints];
 }
 
 - (void)updateTreeStateForTree:(NSInteger)treeNo {
   // If calculator is disabled, then tell all trees
-  if (self.state == CalculatorStateDisabled) {
+  if (self.state == CalculatorStateFinished) {
     for (TreeViewController *tvc in self.treeViewArray) {
       tvc.state = TreeStateFinished;
       [tvc updateState];
@@ -279,7 +283,7 @@
 
 #pragma mark TreeDelegate
 - (void)dismissPopoverFromTree:(TreeViewController *)treeView {
-  [self hideTooltip:YES];
+  [self hideTooltip];
 }
 
 - (void)talentTappedForTree:(TreeViewController *)treeView andTalentView:(TalentViewController *)talentView {
@@ -290,7 +294,6 @@
   DLog(@"Adding a point for tree: %d", treeView.treeNo);
   self.totalPoints++;
   
-  [self updateHeaderPoints];
   [self updateStateFromTreeNo:treeView.treeNo];
 }
 
@@ -298,7 +301,6 @@
   DLog(@"Subtracting a point for tree: %d", treeView.treeNo);
   self.totalPoints--;
 
-  [self updateHeaderPoints];
   [self updateStateFromTreeNo:treeView.treeNo];
 }
 
@@ -328,7 +330,7 @@
 
 - (void)updateHeaderState { 
   // Update Borders and Points
-  if (self.state == CalculatorStateAllEnabled) {
+  if (self.state == CalculatorStateAllEnabled || self.state == CalculatorStateFinished) {
     _leftPoints.hidden = NO;
     _middlePoints.hidden = NO;
     _rightPoints.hidden = NO;
@@ -384,7 +386,7 @@
   if (!self.tooltipViewController) {
     _tooltipViewController = [[TooltipViewController alloc] init];
   } else {
-    [self hideTooltip:NO];
+    [self hideTooltip];
   }
 
   
@@ -421,9 +423,9 @@
   // IF tier >= 4, invert
   NSInteger tooltipTop;
   if ([talentView.talent.tier integerValue] >= 4) {
-    tooltipTop = talentView.view.top - self.tooltipViewController.view.height + 70.0 - TOOLTIP_MARGIN_Y;
+    tooltipTop = talentView.view.top - self.tooltipViewController.view.height - TOOLTIP_MARGIN_Y;
   } else {
-    tooltipTop = talentView.view.bottom + 70.0 + TOOLTIP_MARGIN_Y;
+    tooltipTop = talentView.view.bottom + TOOLTIP_MARGIN_Y;
   }
   
   CGRect tooltipFrame = CGRectMake(treeView.view.left + 10.0, tooltipTop, treeView.view.width, self.tooltipViewController.view.height);
@@ -432,7 +434,7 @@
   self.tooltipViewController.view.frame = tooltipFrame;
   
   self.tooltipViewController.view.alpha = 0.0f;
-  [self.view addSubview:self.tooltipViewController.view];
+  [_talentTreeView addSubview:self.tooltipViewController.view];
   [UIView beginAnimations:@"TooltipTransition" context:nil];
   [UIView setAnimationCurve:UIViewAnimationCurveLinear];  
   [UIView setAnimationDuration:0.2f];
@@ -442,7 +444,7 @@
 }
 
 
-- (void)hideTooltip:(BOOL)animated {
+- (void)hideTooltip {
   if (self.tooltipViewController) {
     [self.tooltipViewController.view removeFromSuperview];
   }

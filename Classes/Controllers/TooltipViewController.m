@@ -111,7 +111,7 @@ static UIImage *_closeButtonImage = nil;
   // Add and Subtract Buttons
   _plusButton = [[UIButton alloc] initWithFrame:CGRectMake(FRAME_WIDTH - MARGIN_X - BUTTON_WIDTH, 15, BUTTON_WIDTH, BUTTON_HEIGHT)];
   _minusButton = [[UIButton alloc] initWithFrame:CGRectMake(FRAME_WIDTH - MARGIN_X - BUTTON_WIDTH - BUTTON_WIDTH, 15, BUTTON_WIDTH, BUTTON_HEIGHT)];
-  _closeButton = [[UIButton alloc] initWithFrame:CGRectMake(FRAME_WIDTH - MARGIN_X - CLOSE_BUTTON_WIDTH, 15, CLOSE_BUTTON_WIDTH, CLOSE_BUTTON_HEIGHT)];
+  _closeButton = [[UIButton alloc] initWithFrame:CGRectMake(FRAME_WIDTH - MARGIN_X - CLOSE_BUTTON_WIDTH, 18, CLOSE_BUTTON_WIDTH, CLOSE_BUTTON_HEIGHT)];
   [self.plusButton addTarget:self action:@selector(addPoint:) forControlEvents:UIControlEventTouchUpInside];
   [self.minusButton addTarget:self action:@selector(removePoint:) forControlEvents:UIControlEventTouchUpInside];
   [self.closeButton addTarget:self action:@selector(closeTooltip) forControlEvents:UIControlEventTouchUpInside];
