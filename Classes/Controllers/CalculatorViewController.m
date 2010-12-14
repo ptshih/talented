@@ -295,7 +295,7 @@
   // Calculate available height based on tier selected
   CGFloat availableHeight = 0.0;
   if ([talentView.talent.tier integerValue] >= 4) {
-    availableHeight = talentView.view.top - SPACING_Y;
+    availableHeight = talentView.view.top - SPACING_Y * 2;
   } else {
     availableHeight = _talentTreeView.height - (talentView.view.bottom + SPACING_Y);
   }

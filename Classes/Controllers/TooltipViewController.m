@@ -209,7 +209,7 @@ static UIImage *_minusButtonOff = nil;
   self.nameLabel.top = _desiredHeight;
   self.nameLabel.left = MARGIN_X;
   self.nameLabel.width = labelSize.width;
-  self.nameLabel.height = labelSize.height;
+  self.nameLabel.height = labelSize.height + 6;
   
   _desiredHeight = self.nameLabel.bottom + MARGIN_Y_SM;
   
@@ -355,11 +355,11 @@ static UIImage *_minusButtonOff = nil;
   self.tooltipLabel.text = [self.tooltipLabel.text stringByReplacingOccurrencesOfString:@"\n\n" withString:@"\n"];
   
   // Tooltip TextView size
-	CGSize tooltipSize = [self.tooltipLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH, self.availableHeight - _desiredHeight - MARGIN_Y * 2 - MARGIN_Y_SM * 2) lineBreakMode:UILineBreakModeWordWrap];
+	CGSize tooltipSize = [self.tooltipLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH - 16, self.availableHeight - _desiredHeight - MARGIN_Y) lineBreakMode:UILineBreakModeWordWrap];
   self.tooltipLabel.top = _desiredHeight;
   self.tooltipLabel.left = MARGIN_X;
-  self.tooltipLabel.width = tooltipSize.width + 8;
-  self.tooltipLabel.height = tooltipSize.height + 4;
+  self.tooltipLabel.width = TOOLTIP_WIDTH;
+  self.tooltipLabel.height = tooltipSize.height + 6;
   
   _desiredHeight = self.tooltipLabel.bottom;
   
