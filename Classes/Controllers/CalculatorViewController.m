@@ -25,6 +25,8 @@
 
 @interface CalculatorViewController (Private)
 
+- (void)resetTreeAtIndex:(NSInteger)index;
+- (NSInteger)getRequiredLevel;
 - (void)updateFooterLabels;
 - (void)updateHeaderPoints;
 - (void)updateHeaderState;
@@ -89,12 +91,33 @@
 
 #pragma mark IBAction
 - (IBAction)resetLeft {
+  [self resetTreeAtIndex:0];
 }
 
 - (IBAction)resetMiddle {
+  [self resetTreeAtIndex:1];
 }
 
 - (IBAction)resetRight {
+  [self resetTreeAtIndex:2];
+}
+
+- (void)resetTreeAtIndex:(NSInteger)index {
+  // If we are resetting the spec tree, make sure we aren't in EnabledAll state
+  // If the side two trees are enabled, we have to reset the side trees also
+  if (self.specTreeNo == index && self.state == CalculatorStateAllEnabled) {
+    // LOGIC NEEDED
+    return;
+  }
+  
+  TreeViewController *tvc = [self.treeViewArray objectAtIndex:index];
+  self.totalPoints -= tvc.pointsInTree;
+  self.state = CalculatorStateEnabled;
+  
+  [self hideTooltip];
+  [tvc resetTree];
+  
+  [self updateStateFromTreeNo:index];
 }
 
 - (IBAction)resetAll {
@@ -107,17 +130,15 @@
   for (TreeViewController *tvc in self.treeViewArray) {
     tvc.isSpecTree = NO;
     [tvc resetState];
+    [self updateStateFromTreeNo:tvc.treeNo];
   }
-  
-  [self updateHeaderPoints];
-  [self updateHeaderState];
-  [self updateFooterLabels];
   
   // Go back to summary view if on talentView
   UIView *activeView = [self.view.subviews objectAtIndex:1];
   if ([activeView isEqual:_talentTreeView]) {
     [self swapViews];
   }
+  
 }
 
 - (IBAction)swapViews {

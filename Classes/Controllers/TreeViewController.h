@@ -66,7 +66,8 @@ typedef enum {
  Update own state (tree) called by calculator
  */
 - (void)updateState;
-- (void)resetState;
+- (void)resetState; // reset points AND state
+- (void)resetTree; // reset points, not state
 
 - (BOOL)canAddPoint:(TalentViewController *)talentView;
 - (BOOL)canSubtractPoint:(TalentViewController *)talentView;

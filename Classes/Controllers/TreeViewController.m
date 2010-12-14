@@ -339,6 +339,19 @@
   [self updateMasteryGlow];
 }
 
+- (void)resetTree {
+  self.pointsInTree = 0;
+  
+  for (int i = 0; i < MAX_TIERS; i++) {
+    _pointsInTier[i] = 0;
+  }
+  
+  // Reset all Talent points
+  for (TalentViewController *tvc in [self.talentViewDict allValues]) {
+    [tvc resetTalent];
+  }
+}
+
 - (void)updateMasteryGlow {
   if (self.isSpecTree) {
     _masteryGlow.hidden = NO;

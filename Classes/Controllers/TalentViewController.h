@@ -51,7 +51,8 @@ typedef enum {
 - (IBAction)talentTapped;
 - (void)updateState;
 - (void)updateStateFinished;
-- (void)resetState;
+- (void)resetState; // reset points and state
+- (void)resetTalent; // reset points, not state
 - (BOOL)talentAdd;
 - (BOOL)talentSubtract;
 
