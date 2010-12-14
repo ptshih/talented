@@ -15,13 +15,14 @@
 #import "UIView+Additions.h"
 #import "Constants.h"
 
-#define TOOLTIP_WIDTH 250.0
+#define TOOLTIP_WIDTH 260.0
 #define BUTTON_WIDTH 79.0
 #define BUTTON_HEIGHT 38.0
 #define TOOLTIP_CAP 15
 #define MARGIN_X 15.0
 #define MARGIN_Y 15.0
 #define MARGIN_Y_SM 2.0
+#define POPOVER_WIDTH 290.0
 
 static UIImage *_plusButtonOn = nil;
 static UIImage *_plusButtonOff = nil;
@@ -73,7 +74,7 @@ static UIImage *_minusButtonOff = nil;
     _desiredHeight = 75.0; // 75px after buttons and top border spacing
     
     // Base View
-    self.view.width = 280.0;
+    self.view.width = POPOVER_WIDTH;
     self.view.height = 0.0;
     
     [self setupButtons];
@@ -87,8 +88,8 @@ static UIImage *_minusButtonOff = nil;
 #pragma mark UI Initialization and Setup
 - (void)setupButtons {
   // Add and Subtract Buttons
-  _plusButton = [[UIButton alloc] initWithFrame:CGRectMake(140, 15, BUTTON_WIDTH, BUTTON_HEIGHT)];
-  _minusButton = [[UIButton alloc] initWithFrame:CGRectMake(61, 15, BUTTON_WIDTH, BUTTON_HEIGHT)];
+  _plusButton = [[UIButton alloc] initWithFrame:CGRectMake(150, 15, BUTTON_WIDTH, BUTTON_HEIGHT)];
+  _minusButton = [[UIButton alloc] initWithFrame:CGRectMake(71, 15, BUTTON_WIDTH, BUTTON_HEIGHT)];
   [self.plusButton addTarget:self action:@selector(addPoint:) forControlEvents:UIControlEventTouchUpInside];
   [self.minusButton addTarget:self action:@selector(removePoint:) forControlEvents:UIControlEventTouchUpInside];
   [self.view addSubview:self.plusButton];
@@ -100,6 +101,7 @@ static UIImage *_minusButtonOff = nil;
   UIImage *tooltipBg = [[UIImage imageNamed:@"tooltip_bg.png"] stretchableImageWithLeftCapWidth:TOOLTIP_CAP topCapHeight:TOOLTIP_CAP];
   _bgImageView = [[UIImageView alloc] initWithImage:tooltipBg];
   self.bgImageView.top = 60.0;
+  self.bgImageView.width = POPOVER_WIDTH;
   [self.view addSubview:self.bgImageView];
 }
 
@@ -126,11 +128,13 @@ static UIImage *_minusButtonOff = nil;
   
   // optional labels for child req and tier req
   _depReqLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+  self.depReqLabel.numberOfLines = 2;
   self.depReqLabel.font = [UIFont systemFontOfSize:14.0];
   self.depReqLabel.textColor = TOOLTIP_COLOR_RED;
   self.depReqLabel.backgroundColor = [UIColor clearColor];
   
   _tierReqLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+  self.tierReqLabel.numberOfLines = 2;
   self.tierReqLabel.font = [UIFont systemFontOfSize:14.0];
   self.tierReqLabel.textColor = TOOLTIP_COLOR_RED;
   self.tierReqLabel.backgroundColor = [UIColor clearColor];
@@ -216,10 +220,12 @@ static UIImage *_minusButtonOff = nil;
     } else {
       self.depReqLabel.hidden = NO;
       self.depReqLabel.text = [NSString stringWithFormat:@"Requires %d point(s) in %@", [req.talent.ranks count], req.talent.talentName];
-      [self.depReqLabel sizeToFit];
       
+      CGSize labelSize = [self.depReqLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
       self.depReqLabel.top = _desiredHeight;
       self.depReqLabel.left = MARGIN_X;
+      self.depReqLabel.width = labelSize.width;
+      self.depReqLabel.height = labelSize.height;
     
       _desiredHeight = self.depReqLabel.bottom + MARGIN_Y_SM;
     }
@@ -231,10 +237,12 @@ static UIImage *_minusButtonOff = nil;
   if (self.treeView.pointsInTree < 5 * [self.talentView.talent.tier integerValue]) {
     self.tierReqLabel.hidden = NO;
     self.tierReqLabel.text = [NSString stringWithFormat:@"Requires %d points in %@ Talents", [self.talentView.talent.tier integerValue] * 5, self.treeView.talentTree.talentTreeName];
-    [self.tierReqLabel sizeToFit];
-    
+
+    CGSize labelSize = [self.tierReqLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
     self.tierReqLabel.top = _desiredHeight;
     self.tierReqLabel.left = MARGIN_X;
+    self.tierReqLabel.width = labelSize.width;
+    self.tierReqLabel.height = labelSize.height;
     
     _desiredHeight = self.tierReqLabel.bottom + MARGIN_Y_SM;
   } else {
@@ -257,7 +265,7 @@ static UIImage *_minusButtonOff = nil;
       self.rangeLabel.text = [[self.talentView.talent.ranks anyObject] spellRange];
       [self.rangeLabel sizeToFit];
       self.rangeLabel.top = _desiredHeight;
-      self.rangeLabel.left = 280.0 - self.rangeLabel.width - MARGIN_X;
+      self.rangeLabel.left = POPOVER_WIDTH - self.rangeLabel.width - MARGIN_X;
     } else {
       self.rangeLabel.hidden = YES;
     }
@@ -286,7 +294,7 @@ static UIImage *_minusButtonOff = nil;
       self.cooldownLabel.text = [[self.talentView.talent.ranks anyObject] cooldown];
       [self.cooldownLabel sizeToFit];
       self.cooldownLabel.top = _desiredHeight;
-      self.cooldownLabel.left = 280.0 - self.cooldownLabel.width - MARGIN_X;
+      self.cooldownLabel.left = POPOVER_WIDTH - self.cooldownLabel.width - MARGIN_X;
     } else {
       self.cooldownLabel.hidden = YES;
     }
@@ -330,7 +338,7 @@ static UIImage *_minusButtonOff = nil;
     self.tooltipLabel.text = [[ranks objectAtIndex:self.talentView.currentRank] tooltip];
   }
 
-//  [self.tooltipLabel.text stringByReplacingOccurrencesOfString:@"\\n" withString:@"\n"];
+  self.tooltipLabel.text = [self.tooltipLabel.text stringByReplacingOccurrencesOfString:@"\n\n" withString:@"\n"];
   
   // Tooltip TextView size
 	CGSize tooltipSize = [self.tooltipLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
@@ -350,6 +358,9 @@ static UIImage *_minusButtonOff = nil;
   [self prepareLabels];
   [self prepareTooltip];
   
+  // Bring buttons to front
+  [self.view bringSubviewToFront:self.plusButton];
+  [self.view bringSubviewToFront:self.minusButton];
   
   // Set tooltip bg height
   self.view.height = _desiredHeight + MARGIN_Y;

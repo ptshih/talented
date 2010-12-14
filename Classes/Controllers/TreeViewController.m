@@ -82,6 +82,12 @@
   [self prepareArrows];
 }
 
+- (IBAction)dismissPopover {
+  if (self.delegate) {
+    [self.delegate dismissPopoverFromTree:self];
+  }
+}
+
 #pragma mark Prepare Talents
 - (void)prepareBackground {
   _backgroundView.image = [UIImage imageNamed:@"paladinholy.png"];

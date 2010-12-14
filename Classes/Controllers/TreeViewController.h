@@ -18,6 +18,7 @@
 @required
 - (void)talentTappedForTree:(TreeViewController *)treeView andTalentView:(TalentViewController *)talentView;
 @optional
+- (void)dismissPopoverFromTree:(TreeViewController *)treeView;
 - (void)treeAdd:(TreeViewController *)treeView forTalentView:(TalentViewController *)talentView;
 - (void)treeSubtract:(TreeViewController *)treeView forTalentView:(TalentViewController *)talentView;
 @end
@@ -57,6 +58,8 @@ typedef enum {
 
 @property (nonatomic, assign) TalentTree *talentTree;
 @property (nonatomic, assign) id <TreeDelegate> delegate;
+
+- (IBAction)dismissPopover;
 
 /**
  Update own state (tree) called by calculator

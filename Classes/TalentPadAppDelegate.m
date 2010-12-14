@@ -26,16 +26,20 @@
 @synthesize launcherViewController = _launcherViewController;
 
 - (void)doCoreDataTests {
-//  [self talentDataTestForClass:@"warrior"];
-//  [self talentDataTestForClass:@"paladin"];
-//  [self talentDataTestForClass:@"hunter"];
-//  [self talentDataTestForClass:@"rogue"];
-//  [self talentDataTestForClass:@"priest"];
-//  [self talentDataTestForClass:@"deathknight"];
-//  [self talentDataTestForClass:@"shaman"];
-//  [self talentDataTestForClass:@"mage"];
-//  [self talentDataTestForClass:@"warlock"];
-//  [self talentDataTestForClass:@"druid"];
+  if (![[NSUserDefaults standardUserDefaults] objectForKey:@"hasLoadedData"]) {
+    [self talentDataTestForClass:@"warrior"];
+    [self talentDataTestForClass:@"paladin"];
+    [self talentDataTestForClass:@"hunter"];
+    [self talentDataTestForClass:@"rogue"];
+    [self talentDataTestForClass:@"priest"];
+    [self talentDataTestForClass:@"deathknight"];
+    [self talentDataTestForClass:@"shaman"];
+    [self talentDataTestForClass:@"mage"];
+    [self talentDataTestForClass:@"warlock"];
+    [self talentDataTestForClass:@"druid"];
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasLoadedData"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+  }
   
   
 //  [self talentAbilityTest];

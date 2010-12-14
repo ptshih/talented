@@ -314,7 +314,6 @@
 		2500E64012B4CA0D00EB1987 /* TalentTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalentTree.m; sourceTree = "<group>"; };
 		2500E64112B4CA0D00EB1987 /* CharacterClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterClass.h; sourceTree = "<group>"; };
 		2500E64212B4CA0D00EB1987 /* CharacterClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterClass.m; sourceTree = "<group>"; };
-		2500E6B012B4D34E00EB1987 /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
 		2500E6C812B4D37300EB1987 /* primarySpells.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primarySpells.json; sourceTree = "<group>"; };
 		2500E6C912B4D37300EB1987 /* talent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = talent.json; sourceTree = "<group>"; };
 		2500E6CA12B4D37300EB1987 /* talentAbility.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = talentAbility.json; sourceTree = "<group>"; };
@@ -869,7 +868,6 @@
 				2500E5B712B4AB8900EB1987 /* Test */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				2500E6B012B4D34E00EB1987 /* Test-Info.plist */,
 				2500E78712B4D96B00EB1987 /* Tests-Info.plist */,
 				2500E79F12B4D9CC00EB1987 /* CoreFoundation.framework */,
 			);
