@@ -14,6 +14,8 @@
 {
 }
 
+@property (nonatomic, retain) NSNumber * index;
+@property (nonatomic, retain) NSString * tooltip;
 @property (nonatomic, retain) NSString * primarySpellName;
 @property (nonatomic, retain) NSString * cost;
 @property (nonatomic, retain) NSString * castTime;
@@ -26,7 +28,7 @@
 @property (nonatomic, retain) NSString * icon;
 @property (nonatomic, retain) TalentTree * talentTree;
 
-+ (PrimarySpell *)addPrimarySpellWithDictionary:(NSDictionary *)dictionary forTalentTree:(TalentTree *)talentTree inContext:(NSManagedObjectContext *)context;
++ (PrimarySpell *)addPrimarySpellWithDictionary:(NSDictionary *)dictionary forTalentTree:(TalentTree *)talentTree forIndex:(NSInteger)index inContext:(NSManagedObjectContext *)context;
 
 @end
 

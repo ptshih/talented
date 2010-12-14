@@ -18,7 +18,7 @@
 #define SPACING_X 16.0
 #define SPACING_Y 16.0
 #define MARGIN_X 16.0
-#define TOOLTIP_MARGIN_Y 64.0
+#define TOOLTIP_MARGIN_Y 6.0
 
 #define MAX_POINTS 41
 #define SPEC_POINTS_LIMIT 31
@@ -471,7 +471,7 @@
 
 
 - (void)dealloc {
-  if (_tooltipPopoverController) [_tooltipPopoverController release];
+//  if (_tooltipPopoverController) [_tooltipPopoverController release];
   if (_tooltipViewController) [_tooltipViewController release];
   if (_summaryViewArray) [_summaryViewArray release];
   if (_treeViewArray) [_treeViewArray release];

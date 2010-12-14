@@ -15,6 +15,7 @@
 #import "UIView+Additions.h"
 #import "Constants.h"
 #import "InfoTextView.h"
+#import "PrimarySpell.h"
 
 #define TOOLTIP_WIDTH 270.0
 #define BUTTON_WIDTH 45.0
@@ -43,6 +44,9 @@ static UIImage *_minusButtonOff = nil;
 @end
 
 @implementation TooltipViewController
+
+@synthesize primarySpell = _primarySpell;
+@synthesize isPrimarySpell = _isPrimarySpell;
 
 @synthesize treeView = _treeView;
 @synthesize talentView = _talentView;
@@ -75,6 +79,8 @@ static UIImage *_minusButtonOff = nil;
 - (id)init {
   self = [super init];
   if (self) {
+    _isPrimarySpell = NO;
+    
     _availableHeight = 564.0;
     _desiredHeight = 15.0; // 75px after buttons and top border spacing
     
@@ -82,7 +88,9 @@ static UIImage *_minusButtonOff = nil;
     self.view.width = POPOVER_WIDTH;
     self.view.height = 0.0;
     
-    [self setupButtons];
+    if (!_isPrimarySpell) {
+      [self setupButtons];
+    }
     [self setupBackground];
     [self setupTooltip];
     [self setupLabels];
@@ -204,7 +212,8 @@ static UIImage *_minusButtonOff = nil;
   CGSize labelSize;
   
   // Add name label
-  self.nameLabel.text = self.talentView.talent.talentName;
+  self.nameLabel.text = _isPrimarySpell ? self.primarySpell.primarySpellName : self.talentView.talent.talentName;
+
   labelSize = [self.nameLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH - BUTTON_WIDTH - BUTTON_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
   self.nameLabel.top = _desiredHeight;
   self.nameLabel.left = MARGIN_X;
@@ -213,70 +222,72 @@ static UIImage *_minusButtonOff = nil;
   
   _desiredHeight = self.nameLabel.bottom + MARGIN_Y_SM;
   
-  // Add rank label
-  NSInteger maxRank = [self.talentView.talent.ranks count];
-  self.rankLabel.text = [NSString stringWithFormat:@"%@ %d/%d", NSLocalizedString(@"Rank", @"Rank"), self.talentView.currentRank , maxRank];
-  labelSize = [self.rankLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH - BUTTON_WIDTH - BUTTON_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
+  if (!_isPrimarySpell) {
+    // Add rank label
+    NSInteger maxRank = [self.talentView.talent.ranks count];
+    self.rankLabel.text = [NSString stringWithFormat:@"%@ %d/%d", NSLocalizedString(@"Rank", @"Rank"), self.talentView.currentRank , maxRank];
+    labelSize = [self.rankLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH - BUTTON_WIDTH - BUTTON_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
+    
+    self.rankLabel.top = _desiredHeight;
+    self.rankLabel.left = MARGIN_X;
+    self.rankLabel.width = labelSize.width;
+    self.rankLabel.height = labelSize.height;
+    
+    _desiredHeight = self.rankLabel.bottom + MARGIN_Y_SM;
   
-  self.rankLabel.top = _desiredHeight;
-  self.rankLabel.left = MARGIN_X;
-  self.rankLabel.width = labelSize.width;
-  self.rankLabel.height = labelSize.height;
-  
-  _desiredHeight = self.rankLabel.bottom + MARGIN_Y_SM;
-  
-  // Only show if there is a parent dependency
-  NSNumber *reqId = self.talentView.talent.req;
-  if (reqId) {
-    TalentViewController *req = [self.treeView.talentViewDict objectForKey:[reqId stringValue]];
-    if (req.state == TalentStateMaxed) {
-      self.depReqLabel.hidden = YES;
-    } else {
-      self.depReqLabel.hidden = NO;
-      self.depReqLabel.text = [NSString stringWithFormat:@"Requires %d point(s) in %@", [req.talent.ranks count], req.talent.talentName];
+    // Only show if there is a parent dependency
+    NSNumber *reqId = self.talentView.talent.req;
+    if (reqId) {
+      TalentViewController *req = [self.treeView.talentViewDict objectForKey:[reqId stringValue]];
+      if (req.state == TalentStateMaxed) {
+        self.depReqLabel.hidden = YES;
+      } else {
+        self.depReqLabel.hidden = NO;
+        self.depReqLabel.text = [NSString stringWithFormat:@"Requires %d point(s) in %@", [req.talent.ranks count], req.talent.talentName];
+        
+        labelSize = [self.depReqLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
+        self.depReqLabel.top = _desiredHeight;
+        self.depReqLabel.left = MARGIN_X;
+        self.depReqLabel.width = labelSize.width;
+        self.depReqLabel.height = labelSize.height;
       
-      labelSize = [self.depReqLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
-      self.depReqLabel.top = _desiredHeight;
-      self.depReqLabel.left = MARGIN_X;
-      self.depReqLabel.width = labelSize.width;
-      self.depReqLabel.height = labelSize.height;
-    
-      _desiredHeight = self.depReqLabel.bottom + MARGIN_Y_SM;
+        _desiredHeight = self.depReqLabel.bottom + MARGIN_Y_SM;
+      }
+    } else {
+      self.depReqLabel.hidden = YES;
     }
-  } else {
-    self.depReqLabel.hidden = YES;
-  }
-  
-  // Only show if tier dependency isn't met
-  if (self.treeView.pointsInTree < 5 * [self.talentView.talent.tier integerValue]) {
-    self.tierReqLabel.hidden = NO;
-    self.tierReqLabel.text = [NSString stringWithFormat:@"Requires %d points in %@ Talents", [self.talentView.talent.tier integerValue] * 5, self.treeView.talentTree.talentTreeName];
-
-    labelSize = [self.tierReqLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
-    self.tierReqLabel.top = _desiredHeight;
-    self.tierReqLabel.left = MARGIN_X;
-    self.tierReqLabel.width = labelSize.width;
-    self.tierReqLabel.height = labelSize.height;
     
-    _desiredHeight = self.tierReqLabel.bottom + MARGIN_Y_SM;
-  } else {
-    self.tierReqLabel.hidden = YES;
+    // Only show if tier dependency isn't met
+    if (self.treeView.pointsInTree < 5 * [self.talentView.talent.tier integerValue]) {
+      self.tierReqLabel.hidden = NO;
+      self.tierReqLabel.text = [NSString stringWithFormat:@"Requires %d points in %@ Talents", [self.talentView.talent.tier integerValue] * 5, self.treeView.talentTree.talentTreeName];
+
+      labelSize = [self.tierReqLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
+      self.tierReqLabel.top = _desiredHeight;
+      self.tierReqLabel.left = MARGIN_X;
+      self.tierReqLabel.width = labelSize.width;
+      self.tierReqLabel.height = labelSize.height;
+      
+      _desiredHeight = self.tierReqLabel.bottom + MARGIN_Y_SM;
+    } else {
+      self.tierReqLabel.hidden = YES;
+    }
   }
 
   // Spell Detail Labels, these are conditional also
-  if ([[self.talentView.talent.ranks anyObject] cost] || [[self.talentView.talent.ranks anyObject] spellRange]) {
-    if ([[self.talentView.talent.ranks anyObject] cost]) {
+  if ([[self.talentView.talent.ranks anyObject] cost] || [[self.talentView.talent.ranks anyObject] spellRange] || self.primarySpell.cost || self.primarySpell.spellRange) {
+    if ([[self.talentView.talent.ranks anyObject] cost] || self.primarySpell.cost) {
       self.costLabel.hidden = NO;
-      self.costLabel.text = [[self.talentView.talent.ranks anyObject] cost];
+      self.costLabel.text = _isPrimarySpell ? self.primarySpell.cost : [[self.talentView.talent.ranks anyObject] cost];
       [self.costLabel sizeToFit];
       self.costLabel.top = _desiredHeight;
       self.costLabel.left = MARGIN_X;
     } else {
       self.costLabel.hidden = YES;
     }
-    if ([[self.talentView.talent.ranks anyObject] spellRange]) {
+    if ([[self.talentView.talent.ranks anyObject] spellRange] || self.primarySpell.spellRange) {
       self.rangeLabel.hidden = NO;
-      self.rangeLabel.text = [[self.talentView.talent.ranks anyObject] spellRange];
+      self.rangeLabel.text = _isPrimarySpell ? self.primarySpell.spellRange : [[self.talentView.talent.ranks anyObject] spellRange];
       [self.rangeLabel sizeToFit];
       self.rangeLabel.top = _desiredHeight;
       self.rangeLabel.left = POPOVER_WIDTH - self.rangeLabel.width - MARGIN_X;
@@ -293,19 +304,19 @@ static UIImage *_minusButtonOff = nil;
     self.rangeLabel.hidden = YES;
   }
   
-  if ([[self.talentView.talent.ranks anyObject] castTime] || [[self.talentView.talent.ranks anyObject] cooldown]) {
-    if ([[self.talentView.talent.ranks anyObject] castTime]) {
+  if ([[self.talentView.talent.ranks anyObject] castTime] || [[self.talentView.talent.ranks anyObject] cooldown] || self.primarySpell.castTime || self.primarySpell.cooldown) {
+    if ([[self.talentView.talent.ranks anyObject] castTime] || self.primarySpell.castTime) {
       self.castTimeLabel.hidden = NO;
-      self.castTimeLabel.text = [[self.talentView.talent.ranks anyObject] castTime];
+      self.castTimeLabel.text = _isPrimarySpell ? self.primarySpell.castTime : [[self.talentView.talent.ranks anyObject] castTime];
       [self.castTimeLabel sizeToFit];
       self.castTimeLabel.top = _desiredHeight;
       self.castTimeLabel.left = MARGIN_X;
     } else {
       self.castTimeLabel.hidden = YES;
     }
-    if ([[self.talentView.talent.ranks anyObject] cooldown]) {
+    if ([[self.talentView.talent.ranks anyObject] cooldown] || self.primarySpell.cooldown) {
       self.cooldownLabel.hidden = NO;
-      self.cooldownLabel.text = [[self.talentView.talent.ranks anyObject] cooldown];
+      self.cooldownLabel.text = _isPrimarySpell ? self.primarySpell.cooldown : [[self.talentView.talent.ranks anyObject] cooldown];
       [self.cooldownLabel sizeToFit];
       self.cooldownLabel.top = _desiredHeight;
       self.cooldownLabel.left = POPOVER_WIDTH - self.cooldownLabel.width - MARGIN_X;
@@ -323,9 +334,9 @@ static UIImage *_minusButtonOff = nil;
   }
   
   // Requires (optional) label
-  if ([[self.talentView.talent.ranks anyObject] requires]) {
+  if ([[self.talentView.talent.ranks anyObject] requires] || self.primarySpell.requires) {
     self.requiresLabel.hidden = NO;
-    self.requiresLabel.text = [[self.talentView.talent.ranks anyObject] requires];
+    self.requiresLabel.text = _isPrimarySpell ? self.primarySpell.requires : [[self.talentView.talent.ranks anyObject] requires];
     [self.requiresLabel sizeToFit];
     self.requiresLabel.top = _desiredHeight;
     self.requiresLabel.left = MARGIN_X;
@@ -336,20 +347,24 @@ static UIImage *_minusButtonOff = nil;
 
 }
 
-- (void)prepareTooltip {  
-  // Populate tooltip text
-  // Set an ASC sort on treeNo
-  NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"rank" ascending:YES];
-  NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor, nil];
-  [sortDescriptor release];
-  NSArray *ranks = [self.talentView.talent.ranks sortedArrayUsingDescriptors:sortDescriptors];
-  
-  // If currently at rank 0, we show rank 1 text
-  // Else we show the current rank's text
-  if (self.talentView.currentRank > 0) {
-    self.tooltipLabel.text = [[ranks objectAtIndex:self.talentView.currentRank - 1] tooltip];
+- (void)prepareTooltip {
+  if (!_isPrimarySpell) {
+    // Populate tooltip text
+    // Set an ASC sort on treeNo
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"rank" ascending:YES];
+    NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor, nil];
+    [sortDescriptor release];
+    NSArray *ranks = [self.talentView.talent.ranks sortedArrayUsingDescriptors:sortDescriptors];
+    
+    // If currently at rank 0, we show rank 1 text
+    // Else we show the current rank's text
+    if (self.talentView.currentRank > 0) {
+      self.tooltipLabel.text = [[ranks objectAtIndex:self.talentView.currentRank - 1] tooltip];
+    } else {
+      self.tooltipLabel.text = [[ranks objectAtIndex:self.talentView.currentRank] tooltip];
+    }
   } else {
-    self.tooltipLabel.text = [[ranks objectAtIndex:self.talentView.currentRank] tooltip];
+    self.tooltipLabel.text = self.primarySpell.tooltip;
   }
 
   self.tooltipLabel.text = [self.tooltipLabel.text stringByReplacingOccurrencesOfString:@"\n\n" withString:@"\n"];
@@ -368,13 +383,17 @@ static UIImage *_minusButtonOff = nil;
 
 - (void)reloadTooltipData {
   _desiredHeight = 15.0;
-  [self prepareButtons];
+  if (!_isPrimarySpell) {
+    [self prepareButtons];
+  }
   [self prepareLabels];
   [self prepareTooltip];
   
   // Bring buttons to front
-  [self.view bringSubviewToFront:self.plusButton];
-  [self.view bringSubviewToFront:self.minusButton];
+  if (!_isPrimarySpell) {
+    [self.view bringSubviewToFront:self.plusButton];
+    [self.view bringSubviewToFront:self.minusButton];
+  }
   
   // Set tooltip bg height
   self.view.height = _desiredHeight + MARGIN_Y;

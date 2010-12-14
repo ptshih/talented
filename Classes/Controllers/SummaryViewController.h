@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class TalentTree;
+@class TooltipViewController;
 
 @protocol SummaryDelegate <NSObject>
 @required
@@ -18,6 +19,11 @@
 @interface SummaryViewController : UIViewController {
   IBOutlet UIButton *_redButton;
   IBOutlet UIButton *_primarySpellButton;
+  IBOutlet UIButton *_dismissButton;
+  
+  NSArray *_primarySpells;
+  
+  TooltipViewController *_tooltipViewController;
   
   UILabel *_tooltipLabel;
   
@@ -25,11 +31,17 @@
   id <SummaryDelegate> _delegate;
 }
 
+@property (nonatomic, retain) NSArray *primarySpells;
+
+@property (nonatomic, retain) TooltipViewController *tooltipViewController;
+
 @property (nonatomic, retain) UILabel *tooltipLabel;
 
 @property (nonatomic, assign) TalentTree *talentTree;
 @property (nonatomic, assign) id <SummaryDelegate> delegate;
 
+- (IBAction)spellTapped:(id)sender;
 - (IBAction)selectSpecTree;
+- (IBAction)hideTooltip;
 
 @end

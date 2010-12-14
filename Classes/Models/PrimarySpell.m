@@ -11,6 +11,8 @@
 
 @implementation PrimarySpell 
 
+@dynamic index;
+@dynamic tooltip;
 @dynamic primarySpellName;
 @dynamic cost;
 @dynamic castTime;
@@ -23,10 +25,12 @@
 @dynamic icon;
 @dynamic talentTree;
 
-+ (PrimarySpell *)addPrimarySpellWithDictionary:(NSDictionary *)dictionary forTalentTree:(TalentTree *)talentTree inContext:(NSManagedObjectContext *)context {
++ (PrimarySpell *)addPrimarySpellWithDictionary:(NSDictionary *)dictionary forTalentTree:(TalentTree *)talentTree forIndex:(NSInteger)index inContext:(NSManagedObjectContext *)context {
   if (dictionary) {
     PrimarySpell *newPrimarySpell = [NSEntityDescription insertNewObjectForEntityForName:@"PrimarySpell" inManagedObjectContext:context];
     
+    newPrimarySpell.index = [NSNumber numberWithInteger:index];
+    newPrimarySpell.tooltip = [dictionary objectForKey:@"description"];
     newPrimarySpell.primarySpellName = [dictionary objectForKey:@"name"];
     newPrimarySpell.cost = [dictionary objectForKey:@"cost"];
     newPrimarySpell.castTime = [dictionary objectForKey:@"castTime"];

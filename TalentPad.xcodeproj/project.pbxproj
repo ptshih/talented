@@ -210,14 +210,12 @@
 		257AEAEE129E945400DE9D51 /* LauncherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEAEC129E945400DE9D51 /* LauncherViewController.m */; };
 		257AEAEF129E945400DE9D51 /* LauncherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257AEAED129E945400DE9D51 /* LauncherViewController.xib */; };
 		257AEB2E129E968A00DE9D51 /* TalentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEB2C129E968A00DE9D51 /* TalentViewController.m */; };
-		257AEBEC129E9F9500DE9D51 /* TalentButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEBEB129E9F9500DE9D51 /* TalentButton.m */; };
 		257AEBF0129E9FE500DE9D51 /* TalentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBEF129E9FE500DE9D51 /* TalentViewController.xib */; };
 		25DC757812B5A682000F70F6 /* TooltipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DC757612B5A682000F70F6 /* TooltipViewController.m */; };
 		25DC757A12B5A682000F70F6 /* TooltipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DC757612B5A682000F70F6 /* TooltipViewController.m */; };
 		25DC758A12B5A78C000F70F6 /* points_minus_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DC758412B5A78C000F70F6 /* points_minus_on.png */; };
 		25DC758B12B5A78C000F70F6 /* points_plus_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DC758512B5A78C000F70F6 /* points_plus_off.png */; };
 		25DC758C12B5A78C000F70F6 /* points_plus_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DC758612B5A78C000F70F6 /* points_plus_on.png */; };
-		25DC75AD12B5A8BA000F70F6 /* TooltipLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DC75AC12B5A8BA000F70F6 /* TooltipLabel.m */; };
 		25DC75B012B5A8C1000F70F6 /* InfoTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DC75AF12B5A8C1000F70F6 /* InfoTextView.m */; };
 		25DC75D812B5B51B000F70F6 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DC75D712B5B51B000F70F6 /* UIView+Additions.m */; };
 		25DC75DB12B5B51F000F70F6 /* NSString+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DC75DA12B5B51F000F70F6 /* NSString+Util.m */; };
@@ -265,6 +263,12 @@
 		25FBA36E12B7731E00F306BC /* summary-glow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA36C12B7731E00F306BC /* summary-glow.png */; };
 		25FBA38E12B779DD00F306BC /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA38D12B779DD00F306BC /* reset.png */; };
 		25FBA38F12B779DD00F306BC /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA38D12B779DD00F306BC /* reset.png */; };
+		25FBA3CE12B77E3400F306BC /* PrimarySpellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA3CD12B77E3400F306BC /* PrimarySpellView.xib */; };
+		25FBA3CF12B77E3400F306BC /* PrimarySpellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA3CD12B77E3400F306BC /* PrimarySpellView.xib */; };
+		25FBA3D312B77ED000F306BC /* PrimarySpellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FBA3D212B77ED000F306BC /* PrimarySpellView.m */; };
+		25FBA3D412B77ED000F306BC /* PrimarySpellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FBA3D212B77ED000F306BC /* PrimarySpellView.m */; };
+		25FBA4EF12B78D8500F306BC /* PrimarySpellButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FBA4EE12B78D8500F306BC /* PrimarySpellButton.m */; };
+		25FBA4F012B78D8500F306BC /* PrimarySpellButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FBA4EE12B78D8500F306BC /* PrimarySpellButton.m */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
@@ -423,16 +427,12 @@
 		257AEAED129E945400DE9D51 /* LauncherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LauncherViewController.xib; sourceTree = "<group>"; };
 		257AEB2B129E968A00DE9D51 /* TalentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentViewController.h; sourceTree = "<group>"; };
 		257AEB2C129E968A00DE9D51 /* TalentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalentViewController.m; sourceTree = "<group>"; };
-		257AEBEA129E9F9500DE9D51 /* TalentButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentButton.h; sourceTree = "<group>"; };
-		257AEBEB129E9F9500DE9D51 /* TalentButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalentButton.m; sourceTree = "<group>"; };
 		257AEBEF129E9FE500DE9D51 /* TalentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalentViewController.xib; sourceTree = "<group>"; };
 		25DC757512B5A682000F70F6 /* TooltipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TooltipViewController.h; sourceTree = "<group>"; };
 		25DC757612B5A682000F70F6 /* TooltipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TooltipViewController.m; sourceTree = "<group>"; };
 		25DC758412B5A78C000F70F6 /* points_minus_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = points_minus_on.png; sourceTree = "<group>"; };
 		25DC758512B5A78C000F70F6 /* points_plus_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = points_plus_off.png; sourceTree = "<group>"; };
 		25DC758612B5A78C000F70F6 /* points_plus_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = points_plus_on.png; sourceTree = "<group>"; };
-		25DC75AB12B5A8BA000F70F6 /* TooltipLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TooltipLabel.h; sourceTree = "<group>"; };
-		25DC75AC12B5A8BA000F70F6 /* TooltipLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TooltipLabel.m; sourceTree = "<group>"; };
 		25DC75AE12B5A8C1000F70F6 /* InfoTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoTextView.h; sourceTree = "<group>"; };
 		25DC75AF12B5A8C1000F70F6 /* InfoTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTextView.m; sourceTree = "<group>"; };
 		25DC75D612B5B51B000F70F6 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
@@ -469,6 +469,11 @@
 		25FBA34812B7708C00F306BC /* mastery-tree-glow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mastery-tree-glow.png"; sourceTree = "<group>"; };
 		25FBA36C12B7731E00F306BC /* summary-glow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "summary-glow.png"; sourceTree = "<group>"; };
 		25FBA38D12B779DD00F306BC /* reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reset.png; sourceTree = "<group>"; };
+		25FBA3CD12B77E3400F306BC /* PrimarySpellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrimarySpellView.xib; sourceTree = "<group>"; };
+		25FBA3D112B77ED000F306BC /* PrimarySpellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimarySpellView.h; sourceTree = "<group>"; };
+		25FBA3D212B77ED000F306BC /* PrimarySpellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimarySpellView.m; sourceTree = "<group>"; };
+		25FBA4ED12B78D8500F306BC /* PrimarySpellButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimarySpellButton.h; sourceTree = "<group>"; };
+		25FBA4EE12B78D8500F306BC /* PrimarySpellButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimarySpellButton.m; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* TalentPad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentPad_Prefix.pch; sourceTree = "<group>"; };
@@ -768,10 +773,11 @@
 				25DC771012B5C29D000F70F6 /* DismissView.m */,
 				25DC75AE12B5A8C1000F70F6 /* InfoTextView.h */,
 				25DC75AF12B5A8C1000F70F6 /* InfoTextView.m */,
-				25DC75AB12B5A8BA000F70F6 /* TooltipLabel.h */,
-				25DC75AC12B5A8BA000F70F6 /* TooltipLabel.m */,
-				257AEBEA129E9F9500DE9D51 /* TalentButton.h */,
-				257AEBEB129E9F9500DE9D51 /* TalentButton.m */,
+				25FBA3D112B77ED000F306BC /* PrimarySpellView.h */,
+				25FBA3D212B77ED000F306BC /* PrimarySpellView.m */,
+				25FBA3CD12B77E3400F306BC /* PrimarySpellView.xib */,
+				25FBA4ED12B78D8500F306BC /* PrimarySpellButton.h */,
+				25FBA4EE12B78D8500F306BC /* PrimarySpellButton.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1101,6 +1107,7 @@
 				25FBA34912B7708C00F306BC /* mastery-tree-glow.png in Resources */,
 				25FBA36D12B7731E00F306BC /* summary-glow.png in Resources */,
 				25FBA38E12B779DD00F306BC /* reset.png in Resources */,
+				25FBA3CE12B77E3400F306BC /* PrimarySpellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1192,6 +1199,7 @@
 				25FBA34A12B7708C00F306BC /* mastery-tree-glow.png in Resources */,
 				25FBA36E12B7731E00F306BC /* summary-glow.png in Resources */,
 				25FBA38F12B779DD00F306BC /* reset.png in Resources */,
+				25FBA3CF12B77E3400F306BC /* PrimarySpellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1226,7 +1234,6 @@
 				257AEA6E129E910900DE9D51 /* TalentPad.xcdatamodel in Sources */,
 				257AEAEE129E945400DE9D51 /* LauncherViewController.m in Sources */,
 				257AEB2E129E968A00DE9D51 /* TalentViewController.m in Sources */,
-				257AEBEC129E9F9500DE9D51 /* TalentButton.m in Sources */,
 				2500E48A12B492DA00EB1987 /* CDataScanner.m in Sources */,
 				2500E48B12B492DA00EB1987 /* CFilteringJSONSerializer.m in Sources */,
 				2500E48C12B492DA00EB1987 /* CJSONDeserializer_BlocksExtensions.m in Sources */,
@@ -1250,7 +1257,6 @@
 				25E07EF712B4EDDF00646BC7 /* NSManagedObject+Fetch.m in Sources */,
 				25E083D112B5A45100646BC7 /* UIImage+Manipulation.m in Sources */,
 				25DC757812B5A682000F70F6 /* TooltipViewController.m in Sources */,
-				25DC75AD12B5A8BA000F70F6 /* TooltipLabel.m in Sources */,
 				25DC75B012B5A8C1000F70F6 /* InfoTextView.m in Sources */,
 				25DC75D812B5B51B000F70F6 /* UIView+Additions.m in Sources */,
 				25DC75DB12B5B51F000F70F6 /* NSString+Util.m in Sources */,
@@ -1258,6 +1264,8 @@
 				25DC75E112B5B523000F70F6 /* NSString+ConvenienceMethods.m in Sources */,
 				25DC771112B5C29D000F70F6 /* DismissView.m in Sources */,
 				25136A7012B623DA00BEFD01 /* SummaryViewController.m in Sources */,
+				25FBA3D312B77ED000F306BC /* PrimarySpellView.m in Sources */,
+				25FBA4EF12B78D8500F306BC /* PrimarySpellButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1291,6 +1299,8 @@
 				25E083D012B5A45100646BC7 /* UIImage+Manipulation.m in Sources */,
 				25DC757A12B5A682000F70F6 /* TooltipViewController.m in Sources */,
 				25136A7212B623DA00BEFD01 /* SummaryViewController.m in Sources */,
+				25FBA3D412B77ED000F306BC /* PrimarySpellView.m in Sources */,
+				25FBA4F012B78D8500F306BC /* PrimarySpellButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

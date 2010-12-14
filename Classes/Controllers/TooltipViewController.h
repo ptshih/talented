@@ -11,10 +11,14 @@
 @class TreeViewController;
 @class TalentViewController;
 @class InfoTextView;
+@class PrimarySpell;
 
 @interface TooltipViewController : UIViewController {
   TreeViewController *_treeView;
 	TalentViewController *_talentView;
+
+  PrimarySpell *_primarySpell;
+  BOOL _isPrimarySpell;
   
   CGFloat _availableHeight;
   CGFloat _desiredHeight;
@@ -40,6 +44,9 @@
 
 @property (nonatomic, assign) TreeViewController *treeView;
 @property (nonatomic, assign) TalentViewController *talentView;
+
+@property (nonatomic, assign) PrimarySpell *primarySpell;
+@property (nonatomic, assign) BOOL isPrimarySpell;
 
 @property (nonatomic, assign) CGFloat availableHeight;
 

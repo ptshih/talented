@@ -61,8 +61,11 @@
     // PrimarySpells
     NSMutableSet *primarySpellsSet = [NSMutableSet set];
     NSArray *primarySpells = [dictionary objectForKey:@"primarySpells"];
+    
+    NSInteger i = 0;
     for (NSDictionary *primarySpell in primarySpells) {
-      [primarySpellsSet addObject:[PrimarySpell addPrimarySpellWithDictionary:primarySpell forTalentTree:newTalentTree inContext:context]];
+      [primarySpellsSet addObject:[PrimarySpell addPrimarySpellWithDictionary:primarySpell forTalentTree:newTalentTree forIndex:i inContext:context]];
+      i++;
     }
     newTalentTree.primarySpells = primarySpellsSet;
     

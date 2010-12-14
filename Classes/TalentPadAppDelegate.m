@@ -82,7 +82,7 @@
     NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
     
     for (NSDictionary *testDict in testArray) {
-      [PrimarySpell addPrimarySpellWithDictionary:testDict forTalentTree:nil inContext:context];
+      [PrimarySpell addPrimarySpellWithDictionary:testDict forTalentTree:nil forIndex:0 inContext:context];
     }
     
     if (context.hasChanges) {
