@@ -36,7 +36,10 @@ typedef enum {
   IBOutlet UIImageView *_rightBorder;
   IBOutlet UILabel *_leftPoints;
   IBOutlet UILabel *_middlePoints;
-  IBOutlet UILabel *_rightPoints;  
+  IBOutlet UILabel *_rightPoints;
+  IBOutlet UILabel *_requiredLevel;
+  IBOutlet UILabel *_pointsLeft;
+  IBOutlet UILabel *_pointsSpent;
   
   TooltipViewController *_tooltipViewController;
 //  UIPopoverController *_tooltipPopoverController;

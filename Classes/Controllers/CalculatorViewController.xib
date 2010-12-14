@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="2"/>
+			<integer value="5"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -336,7 +336,7 @@
 							<object class="IBUIButton" id="670151128">
 								<reference key="NSNextResponder" ref="479409530"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 16}, {160, 37}}</string>
+								<string key="NSFrame">{{20, 12}, {160, 37}}</string>
 								<reference key="NSSuperview" ref="479409530"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -358,7 +358,7 @@
 							<object class="IBUIButton" id="480568667">
 								<reference key="NSNextResponder" ref="479409530"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{844, 16}, {160, 37}}</string>
+								<string key="NSFrame">{{844, 12}, {160, 37}}</string>
 								<reference key="NSSuperview" ref="479409530"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -378,18 +378,22 @@
 							<object class="IBUILabel" id="83872411">
 								<reference key="NSNextResponder" ref="479409530"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{265, 24}, {115, 21}}</string>
+								<string key="NSFrame">{{220, 20}, {160, 21}}</string>
 								<reference key="NSSuperview" ref="479409530"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<string key="IBUIText">Required Level</string>
+								<string key="IBUIText">Required Level: 85</string>
+								<object class="NSFont" key="IBUIFont" id="662765870">
+									<string key="NSName">Helvetica-Bold</string>
+									<double key="NSSize">14</double>
+									<int key="NSfFlags">16</int>
+								</object>
 								<object class="NSColor" key="IBUITextColor">
-									<int key="NSColorSpace">1</int>
-									<bytes key="NSRGB">MSAxIDEAA</bytes>
-									<reference key="NSCustomColorSpace" ref="330351454"/>
+									<int key="NSColorSpace">2</int>
+									<bytes key="NSRGB">MC43MTc2NDcwNzU3IDAuNjAzOTIxNTkyMiAwLjQwMzkyMTYwNDIAA</bytes>
 								</object>
 								<reference key="IBUIHighlightedColor" ref="168675923"/>
 								<int key="IBUIBaselineAdjustment">1</int>
@@ -398,27 +402,28 @@
 							<object class="IBUILabel" id="896173307">
 								<reference key="NSNextResponder" ref="479409530"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{489, 24}, {115, 21}}</string>
+								<string key="NSFrame">{{432, 20}, {160, 21}}</string>
 								<reference key="NSSuperview" ref="479409530"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<string key="IBUIText">Points Left</string>
+								<string key="IBUIText">Points Left: 41</string>
+								<reference key="IBUIFont" ref="662765870"/>
 								<object class="NSColor" key="IBUITextColor">
-									<int key="NSColorSpace">1</int>
-									<bytes key="NSRGB">MSAxIDEAA</bytes>
-									<reference key="NSCustomColorSpace" ref="330351454"/>
+									<int key="NSColorSpace">2</int>
+									<bytes key="NSRGB">MC43MTc2NDcwNzU3IDAuNjAzOTIxNTkyMiAwLjQwMzkyMTYwNDIAA</bytes>
 								</object>
 								<reference key="IBUIHighlightedColor" ref="168675923"/>
 								<int key="IBUIBaselineAdjustment">1</int>
 								<float key="IBUIMinimumFontSize">10</float>
+								<int key="IBUITextAlignment">1</int>
 							</object>
 							<object class="IBUILabel" id="918910426">
 								<reference key="NSNextResponder" ref="479409530"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{661, 24}, {146, 21}}</string>
+								<string key="NSFrame">{{644, 20}, {160, 21}}</string>
 								<reference key="NSSuperview" ref="479409530"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -426,14 +431,15 @@
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<string key="IBUIText">Points Spent: 0/0/0</string>
+								<reference key="IBUIFont" ref="662765870"/>
 								<object class="NSColor" key="IBUITextColor">
-									<int key="NSColorSpace">1</int>
-									<bytes key="NSRGB">MSAxIDEAA</bytes>
-									<reference key="NSCustomColorSpace" ref="330351454"/>
+									<int key="NSColorSpace">2</int>
+									<bytes key="NSRGB">MC43MTc2NDcwNzU3IDAuNjAzOTIxNTkyMiAwLjQwMzkyMTYwNDIAA</bytes>
 								</object>
 								<reference key="IBUIHighlightedColor" ref="168675923"/>
 								<int key="IBUIBaselineAdjustment">1</int>
 								<float key="IBUIMinimumFontSize">10</float>
+								<int key="IBUITextAlignment">2</int>
 							</object>
 						</object>
 						<string key="NSFrame">{{0, 634}, {1024, 60}}</string>
@@ -646,6 +652,30 @@
 					</object>
 					<int key="connectionID">69</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">_requiredLevel</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="83872411"/>
+					</object>
+					<int key="connectionID">70</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">_pointsLeft</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="896173307"/>
+					</object>
+					<int key="connectionID">71</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">_pointsSpent</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="918910426"/>
+					</object>
+					<int key="connectionID">72</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -727,16 +757,19 @@
 						<int key="objectID">8</int>
 						<reference key="object" ref="83872411"/>
 						<reference key="parent" ref="479409530"/>
+						<string key="objectName">requiredLevel</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">9</int>
 						<reference key="object" ref="896173307"/>
 						<reference key="parent" ref="479409530"/>
+						<string key="objectName">pointsLeft</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">10</int>
 						<reference key="object" ref="918910426"/>
 						<reference key="parent" ref="479409530"/>
+						<string key="objectName">pointsSpent</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">12</int>
@@ -929,7 +962,7 @@
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">P4AAAL+AAABEcoAAwigAAA</bytes>
 					</object>
-					<string>{{62, -16}, {1024, 768}}</string>
+					<string>{{62, 50}, {1024, 768}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
@@ -1023,7 +1056,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">69</int>
+			<int key="maxID">72</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1096,6 +1129,9 @@
 							<string>_middleIcon</string>
 							<string>_middleLabel</string>
 							<string>_middlePoints</string>
+							<string>_pointsLeft</string>
+							<string>_pointsSpent</string>
+							<string>_requiredLevel</string>
 							<string>_resetButton</string>
 							<string>_rightBorder</string>
 							<string>_rightIcon</string>
@@ -1113,6 +1149,9 @@
 							<string>UILabel</string>
 							<string>UIImageView</string>
 							<string>UIImageView</string>
+							<string>UILabel</string>
+							<string>UILabel</string>
+							<string>UILabel</string>
 							<string>UILabel</string>
 							<string>UILabel</string>
 							<string>UIButton</string>
@@ -1137,6 +1176,9 @@
 							<string>_middleIcon</string>
 							<string>_middleLabel</string>
 							<string>_middlePoints</string>
+							<string>_pointsLeft</string>
+							<string>_pointsSpent</string>
+							<string>_requiredLevel</string>
 							<string>_resetButton</string>
 							<string>_rightBorder</string>
 							<string>_rightIcon</string>
@@ -1178,6 +1220,18 @@
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">_middlePoints</string>
+								<string key="candidateClassName">UILabel</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">_pointsLeft</string>
+								<string key="candidateClassName">UILabel</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">_pointsSpent</string>
+								<string key="candidateClassName">UILabel</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">_requiredLevel</string>
 								<string key="candidateClassName">UILabel</string>
 							</object>
 							<object class="IBToOneOutletInfo">

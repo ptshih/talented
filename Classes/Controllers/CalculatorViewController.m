@@ -25,6 +25,7 @@
 
 @interface CalculatorViewController (Private)
 
+- (void)updateFooterLabels;
 - (void)updateHeaderPoints;
 - (void)updateHeaderState;
 - (void)setupHeader;
@@ -81,6 +82,9 @@
   [self setupHeader];
   [self updateHeaderState];
   [self updateHeaderPoints];
+  
+  // Setup Footer
+  [self updateFooterLabels];
 }
 
 #pragma mark IBAction
@@ -107,6 +111,7 @@
   
   [self updateHeaderPoints];
   [self updateHeaderState];
+  [self updateFooterLabels];
   
   // Go back to summary view if on talentView
   UIView *activeView = [self.view.subviews objectAtIndex:1];
@@ -243,6 +248,7 @@
   
   [self updateHeaderState];
   [self updateHeaderPoints];
+  [self updateFooterLabels];
 }
 
 - (void)updateTreeStateForTree:(NSInteger)treeNo {
@@ -379,6 +385,43 @@
         break;
     }
   }
+}
+
+#pragma mark Footer Updates
+- (void)updateFooterLabels {
+  _requiredLevel.text = [NSString stringWithFormat:@"Required Level: %d", [self getRequiredLevel]];
+  _pointsLeft.text = [NSString stringWithFormat:@"Points Left: %d", MAX_POINTS - self.totalPoints];
+  _pointsSpent.text = [NSString stringWithFormat:@"Points Spent: %d / %d / %d", [[self.treeViewArray objectAtIndex:0] pointsInTree], [[self.treeViewArray objectAtIndex:1] pointsInTree], [[self.treeViewArray objectAtIndex:2] pointsInTree]];
+}
+
+- (NSInteger)getRequiredLevel {
+  if (self.totalPoints == 0) return 0;
+ 
+  NSInteger reqLevel = 9;
+  NSInteger points = self.totalPoints;
+  
+  // First 2 points = every 1 level
+  NSInteger part = MIN(2, points);
+  if (part > 0) {
+    reqLevel += part;
+    points -= part;
+  }
+  
+  // Next 35 points = every 2 levels
+  part = MIN(35, points);
+  if (part > 0) {
+    reqLevel += part * 2;
+    points -= part;
+  }
+  
+  // Last 4 points = every 1 level
+  part = MIN(5, points);
+  if (part > 0) {
+    reqLevel += part;
+    points -= part;
+  }
+  
+  return reqLevel;
 }
 
 #pragma mark Tooltip Methods
