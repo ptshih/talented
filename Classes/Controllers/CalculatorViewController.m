@@ -297,7 +297,7 @@
   if ([talentView.talent.tier integerValue] >= 4) {
     availableHeight = talentView.view.top - SPACING_Y * 2;
   } else {
-    availableHeight = _talentTreeView.height - (talentView.view.bottom + SPACING_Y);
+    availableHeight = _talentTreeView.height - (talentView.view.bottom + SPACING_Y * 2);
   }
   DLog(@"availHeight = %f", availableHeight);
   self.tooltipViewController.availableHeight = availableHeight;
