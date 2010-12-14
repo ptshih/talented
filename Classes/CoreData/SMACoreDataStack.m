@@ -15,6 +15,7 @@ static NSManagedObjectContext *_managedObjectContext = nil;
 @interface SMACoreDataStack (Private)
 
 + (void)initPersistentStore;
++ (void)prepareDocumentsDirectory;
 
 @end
 
@@ -34,6 +35,8 @@ static NSManagedObjectContext *_managedObjectContext = nil;
     _persistentStoreCoordinator = nil;
   }
   
+  [SMACoreDataStack prepareDocumentsDirectory];
+  
   NSURL *storeUrl = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent:@"talentpad.sqlite"]];
   NSError *error = nil;
   
@@ -42,7 +45,9 @@ static NSManagedObjectContext *_managedObjectContext = nil;
   if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:nil error:&error]) {
     // Handle the error.
     NSLog(@"failed to create persistent store");
-  }  
+  }
+  
+  NSLog(@"init persistent store with path: %@", storeUrl);
 }
 
 + (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
@@ -76,6 +81,15 @@ static NSManagedObjectContext *_managedObjectContext = nil;
 
 + (NSString *)applicationDocumentsDirectory {
   return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+}
+
++ (void)prepareDocumentsDirectory {
+  BOOL isDir;
+  [[NSFileManager defaultManager] fileExistsAtPath:[self applicationDocumentsDirectory]  isDirectory:&isDir];
+  if (!isDir) {
+    [[NSFileManager defaultManager] createDirectoryAtPath:[self applicationDocumentsDirectory] 
+                              withIntermediateDirectories:YES attributes:nil error:nil];
+  }
 }
 
 @end

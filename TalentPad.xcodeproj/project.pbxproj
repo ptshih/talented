@@ -37,38 +37,7 @@
 		2500E6CD12B4D37300EB1987 /* talent.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6C912B4D37300EB1987 /* talent.json */; };
 		2500E6CE12B4D37300EB1987 /* talentAbility.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6CA12B4D37300EB1987 /* talentAbility.json */; };
 		2500E6CF12B4D37300EB1987 /* warrior.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6CB12B4D37300EB1987 /* warrior.json */; };
-		2500E79312B4D99800EB1987 /* CoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E6D112B4D39000EB1987 /* CoreDataTests.m */; };
-		2500E79612B4D9A400EB1987 /* SMACoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA33129E901900DE9D51 /* SMACoreDataStack.m */; };
-		2500E79712B4D9A500EB1987 /* SMADataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA31129E901900DE9D51 /* SMADataCenter.m */; };
-		2500E79E12B4D9CC00EB1987 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA27129E8FB900DE9D51 /* CoreData.framework */; };
-		2500E7A012B4D9CC00EB1987 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2500E79F12B4D9CC00EB1987 /* CoreFoundation.framework */; };
-		2500E7A112B4D9CC00EB1987 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		2500E7A212B4D9CC00EB1987 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA52129E903B00DE9D51 /* SystemConfiguration.framework */; };
-		2500E7A312B4D9CC00EB1987 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		2500E7A812B4D9E100EB1987 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E47112B492DA00EB1987 /* CDataScanner.m */; };
-		2500E7A912B4D9E200EB1987 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E47B12B492DA00EB1987 /* CDataScanner_Extensions.m */; };
-		2500E7AA12B4D9E300EB1987 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E48412B492DA00EB1987 /* CJSONDeserializer.m */; };
-		2500E7AB12B4D9E300EB1987 /* CFilteringJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E47412B492DA00EB1987 /* CFilteringJSONSerializer.m */; };
-		2500E7AC12B4D9E400EB1987 /* CJSONDeserializer_BlocksExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E47612B492DA00EB1987 /* CJSONDeserializer_BlocksExtensions.m */; };
-		2500E7AD12B4D9E500EB1987 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E48612B492DA00EB1987 /* CJSONScanner.m */; };
-		2500E7AE12B4D9E500EB1987 /* CJSONSerializedData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E47812B492DA00EB1987 /* CJSONSerializedData.m */; };
-		2500E7AF12B4D9E600EB1987 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E48812B492DA00EB1987 /* CJSONSerializer.m */; };
-		2500E7B012B4D9E600EB1987 /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E47D12B492DA00EB1987 /* NSCharacterSet_Extensions.m */; };
-		2500E7B112B4D9E800EB1987 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E47F12B492DA00EB1987 /* NSDictionary_JSONExtensions.m */; };
-		2500E7B212B4D9E900EB1987 /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E48112B492DA00EB1987 /* NSScanner_Extensions.m */; };
-		2500E7B512B4D9F700EB1987 /* CharacterClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E64212B4CA0D00EB1987 /* CharacterClass.m */; };
-		2500E7B612B4D9F700EB1987 /* Mastery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E63812B4CA0D00EB1987 /* Mastery.m */; };
-		2500E7B712B4D9F800EB1987 /* PrimarySpell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E63C12B4CA0D00EB1987 /* PrimarySpell.m */; };
-		2500E7B812B4D9F800EB1987 /* Rank.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E63A12B4CA0D00EB1987 /* Rank.m */; };
-		2500E7B912B4D9F900EB1987 /* Talent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E63E12B4CA0D00EB1987 /* Talent.m */; };
-		2500E7BA12B4D9FA00EB1987 /* TalentTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E64012B4CA0D00EB1987 /* TalentTree.m */; };
-		2500E7BF12B4DA2300EB1987 /* primarySpells.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6C812B4D37300EB1987 /* primarySpells.json */; };
-		2500E7C012B4DA2400EB1987 /* talent.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6C912B4D37300EB1987 /* talent.json */; };
-		2500E7C112B4DA2400EB1987 /* warrior.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6CB12B4D37300EB1987 /* warrior.json */; };
-		2500E7C212B4DA2500EB1987 /* talentAbility.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6CA12B4D37300EB1987 /* talentAbility.json */; };
-		2500E82112B4DB6300EB1987 /* TalentPad.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA6D129E910900DE9D51 /* TalentPad.xcdatamodel */; };
 		2500E89112B4E03E00EB1987 /* masteries.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E89012B4E03E00EB1987 /* masteries.json */; };
-		2500E89212B4E03E00EB1987 /* masteries.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E89012B4E03E00EB1987 /* masteries.json */; };
 		251369E912B620D000BEFD01 /* deathknightblood.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369CB12B620D000BEFD01 /* deathknightblood.png */; };
 		251369EA12B620D000BEFD01 /* deathknightfrost.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369CC12B620D000BEFD01 /* deathknightfrost.png */; };
 		251369EB12B620D000BEFD01 /* deathknightunholy.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369CD12B620D000BEFD01 /* deathknightunholy.png */; };
@@ -99,46 +68,11 @@
 		25136A0412B620D000BEFD01 /* warriorarms.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E612B620D000BEFD01 /* warriorarms.png */; };
 		25136A0512B620D000BEFD01 /* warriorfury.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E712B620D000BEFD01 /* warriorfury.png */; };
 		25136A0612B620D000BEFD01 /* warriorprotection.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E812B620D000BEFD01 /* warriorprotection.png */; };
-		25136A0712B620D000BEFD01 /* deathknightblood.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369CB12B620D000BEFD01 /* deathknightblood.png */; };
-		25136A0812B620D000BEFD01 /* deathknightfrost.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369CC12B620D000BEFD01 /* deathknightfrost.png */; };
-		25136A0912B620D000BEFD01 /* deathknightunholy.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369CD12B620D000BEFD01 /* deathknightunholy.png */; };
-		25136A0A12B620D000BEFD01 /* druidbalance.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369CE12B620D000BEFD01 /* druidbalance.png */; };
-		25136A0B12B620D000BEFD01 /* druidferalcombat.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369CF12B620D000BEFD01 /* druidferalcombat.png */; };
-		25136A0C12B620D000BEFD01 /* druidrestoration.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D012B620D000BEFD01 /* druidrestoration.png */; };
-		25136A0D12B620D000BEFD01 /* hunterbeastmastery.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D112B620D000BEFD01 /* hunterbeastmastery.png */; };
-		25136A0E12B620D000BEFD01 /* huntermarksmanship.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D212B620D000BEFD01 /* huntermarksmanship.png */; };
-		25136A0F12B620D000BEFD01 /* huntersurvival.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D312B620D000BEFD01 /* huntersurvival.png */; };
-		25136A1012B620D000BEFD01 /* magearcane.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D412B620D000BEFD01 /* magearcane.png */; };
-		25136A1112B620D000BEFD01 /* magefire.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D512B620D000BEFD01 /* magefire.png */; };
-		25136A1212B620D000BEFD01 /* magefrost.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D612B620D000BEFD01 /* magefrost.png */; };
-		25136A1312B620D000BEFD01 /* paladincombat.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D712B620D000BEFD01 /* paladincombat.png */; };
-		25136A1412B620D000BEFD01 /* paladinholy.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D812B620D000BEFD01 /* paladinholy.png */; };
-		25136A1512B620D000BEFD01 /* paladinprotection.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369D912B620D000BEFD01 /* paladinprotection.png */; };
-		25136A1612B620D000BEFD01 /* priestdiscipline.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369DA12B620D000BEFD01 /* priestdiscipline.png */; };
-		25136A1712B620D000BEFD01 /* priestholy.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369DB12B620D000BEFD01 /* priestholy.png */; };
-		25136A1812B620D000BEFD01 /* priestshadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369DC12B620D000BEFD01 /* priestshadow.png */; };
-		25136A1912B620D000BEFD01 /* rogueassassination.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369DD12B620D000BEFD01 /* rogueassassination.png */; };
-		25136A1A12B620D000BEFD01 /* roguecombat.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369DE12B620D000BEFD01 /* roguecombat.png */; };
-		25136A1B12B620D000BEFD01 /* roguesubtlety.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369DF12B620D000BEFD01 /* roguesubtlety.png */; };
-		25136A1C12B620D000BEFD01 /* shamanelementalcombat.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E012B620D000BEFD01 /* shamanelementalcombat.png */; };
-		25136A1D12B620D000BEFD01 /* shamanenhancement.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E112B620D000BEFD01 /* shamanenhancement.png */; };
-		25136A1E12B620D000BEFD01 /* shamanrestoration.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E212B620D000BEFD01 /* shamanrestoration.png */; };
-		25136A1F12B620D000BEFD01 /* warlockcurses.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E312B620D000BEFD01 /* warlockcurses.png */; };
-		25136A2012B620D000BEFD01 /* warlockdestruction.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E412B620D000BEFD01 /* warlockdestruction.png */; };
-		25136A2112B620D000BEFD01 /* warlocksummoning.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E512B620D000BEFD01 /* warlocksummoning.png */; };
-		25136A2212B620D000BEFD01 /* warriorarms.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E612B620D000BEFD01 /* warriorarms.png */; };
-		25136A2312B620D000BEFD01 /* warriorfury.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E712B620D000BEFD01 /* warriorfury.png */; };
-		25136A2412B620D000BEFD01 /* warriorprotection.png in Resources */ = {isa = PBXBuildFile; fileRef = 251369E812B620D000BEFD01 /* warriorprotection.png */; };
 		25136A7012B623DA00BEFD01 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25136A6E12B623DA00BEFD01 /* SummaryViewController.m */; };
 		25136A7112B623DA00BEFD01 /* SummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25136A6F12B623DA00BEFD01 /* SummaryViewController.xib */; };
-		25136A7212B623DA00BEFD01 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25136A6E12B623DA00BEFD01 /* SummaryViewController.m */; };
-		25136A7312B623DA00BEFD01 /* SummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25136A6F12B623DA00BEFD01 /* SummaryViewController.xib */; };
 		25136A8512B6260100BEFD01 /* summary_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25136A8412B6260100BEFD01 /* summary_bg.jpg */; };
-		25136A8612B6260100BEFD01 /* summary_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25136A8412B6260100BEFD01 /* summary_bg.jpg */; };
 		25136A9012B6265000BEFD01 /* red_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136A8F12B6265000BEFD01 /* red_button.png */; };
-		25136A9112B6265000BEFD01 /* red_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136A8F12B6265000BEFD01 /* red_button.png */; };
 		25136A9312B6270400BEFD01 /* tree-overview-icon-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136A9212B6270400BEFD01 /* tree-overview-icon-frame.png */; };
-		25136A9412B6270400BEFD01 /* tree-overview-icon-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136A9212B6270400BEFD01 /* tree-overview-icon-frame.png */; };
 		25136BB812B637A500BEFD01 /* deathknight.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB012B637A500BEFD01 /* deathknight.json */; };
 		25136BB912B637A500BEFD01 /* druid.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB112B637A500BEFD01 /* druid.json */; };
 		25136BBA12B637A500BEFD01 /* hunter.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB212B637A500BEFD01 /* hunter.json */; };
@@ -147,14 +81,6 @@
 		25136BBD12B637A500BEFD01 /* rogue.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB512B637A500BEFD01 /* rogue.json */; };
 		25136BBE12B637A500BEFD01 /* shaman.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB612B637A500BEFD01 /* shaman.json */; };
 		25136BBF12B637A500BEFD01 /* warlock.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB712B637A500BEFD01 /* warlock.json */; };
-		25136BC012B637A500BEFD01 /* deathknight.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB012B637A500BEFD01 /* deathknight.json */; };
-		25136BC112B637A500BEFD01 /* druid.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB112B637A500BEFD01 /* druid.json */; };
-		25136BC212B637A500BEFD01 /* hunter.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB212B637A500BEFD01 /* hunter.json */; };
-		25136BC312B637A500BEFD01 /* mage.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB312B637A500BEFD01 /* mage.json */; };
-		25136BC412B637A500BEFD01 /* priest.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB412B637A500BEFD01 /* priest.json */; };
-		25136BC512B637A500BEFD01 /* rogue.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB512B637A500BEFD01 /* rogue.json */; };
-		25136BC612B637A500BEFD01 /* shaman.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB612B637A500BEFD01 /* shaman.json */; };
-		25136BC712B637A500BEFD01 /* warlock.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB712B637A500BEFD01 /* warlock.json */; };
 		25136C8C12B646C700BEFD01 /* 1-0-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C6E12B646C600BEFD01 /* 1-0-gray.png */; };
 		25136C8D12B646C700BEFD01 /* 1-0-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C6F12B646C600BEFD01 /* 1-0-yellow.png */; };
 		25136C8F12B646C700BEFD01 /* 0-1-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C7112B646C600BEFD01 /* 0-1-gray.png */; };
@@ -163,14 +89,6 @@
 		25136C9912B646C700BEFD01 /* 0-2-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C7B12B646C700BEFD01 /* 0-2-yellow.png */; };
 		25136CA412B646C700BEFD01 /* 1-1-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C8612B646C700BEFD01 /* 1-1-gray.png */; };
 		25136CA512B646C700BEFD01 /* 1-1-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C8712B646C700BEFD01 /* 1-1-yellow.png */; };
-		25136CAA12B646C700BEFD01 /* 1-0-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C6E12B646C600BEFD01 /* 1-0-gray.png */; };
-		25136CAB12B646C700BEFD01 /* 1-0-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C6F12B646C600BEFD01 /* 1-0-yellow.png */; };
-		25136CAD12B646C700BEFD01 /* 0-1-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C7112B646C600BEFD01 /* 0-1-gray.png */; };
-		25136CAE12B646C700BEFD01 /* 0-1-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C7212B646C600BEFD01 /* 0-1-yellow.png */; };
-		25136CB012B646C700BEFD01 /* 0-2-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C7412B646C600BEFD01 /* 0-2-gray.png */; };
-		25136CB712B646C700BEFD01 /* 0-2-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C7B12B646C700BEFD01 /* 0-2-yellow.png */; };
-		25136CC212B646C700BEFD01 /* 1-1-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C8612B646C700BEFD01 /* 1-1-gray.png */; };
-		25136CC312B646C700BEFD01 /* 1-1-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136C8712B646C700BEFD01 /* 1-1-yellow.png */; };
 		25136CD112B646D000BEFD01 /* icon_deathknight.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CC512B646D000BEFD01 /* icon_deathknight.png */; };
 		25136CD212B646D000BEFD01 /* icon_druid.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CC612B646D000BEFD01 /* icon_druid.png */; };
 		25136CD312B646D000BEFD01 /* icon_hunter.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CC712B646D000BEFD01 /* icon_hunter.png */; };
@@ -183,18 +101,6 @@
 		25136CDA12B646D000BEFD01 /* icon_shaman.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CCE12B646D000BEFD01 /* icon_shaman.png */; };
 		25136CDB12B646D000BEFD01 /* icon_warlock.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CCF12B646D000BEFD01 /* icon_warlock.png */; };
 		25136CDC12B646D000BEFD01 /* icon_warrior.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CD012B646D000BEFD01 /* icon_warrior.png */; };
-		25136CDD12B646D000BEFD01 /* icon_deathknight.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CC512B646D000BEFD01 /* icon_deathknight.png */; };
-		25136CDE12B646D000BEFD01 /* icon_druid.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CC612B646D000BEFD01 /* icon_druid.png */; };
-		25136CDF12B646D000BEFD01 /* icon_hunter.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CC712B646D000BEFD01 /* icon_hunter.png */; };
-		25136CE012B646D000BEFD01 /* icon_mage.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CC812B646D000BEFD01 /* icon_mage.png */; };
-		25136CE112B646D000BEFD01 /* icon_murloc.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CC912B646D000BEFD01 /* icon_murloc.png */; };
-		25136CE212B646D000BEFD01 /* icon_paladin.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CCA12B646D000BEFD01 /* icon_paladin.png */; };
-		25136CE312B646D000BEFD01 /* icon_pet.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CCB12B646D000BEFD01 /* icon_pet.png */; };
-		25136CE412B646D000BEFD01 /* icon_priest.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CCC12B646D000BEFD01 /* icon_priest.png */; };
-		25136CE512B646D000BEFD01 /* icon_rogue.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CCD12B646D000BEFD01 /* icon_rogue.png */; };
-		25136CE612B646D000BEFD01 /* icon_shaman.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CCE12B646D000BEFD01 /* icon_shaman.png */; };
-		25136CE712B646D000BEFD01 /* icon_warlock.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CCF12B646D000BEFD01 /* icon_warlock.png */; };
-		25136CE812B646D000BEFD01 /* icon_warrior.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CD012B646D000BEFD01 /* icon_warrior.png */; };
 		25136D8012B64BDA00BEFD01 /* -1-0-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136D7D12B64BDA00BEFD01 /* -1-0-gray.png */; };
 		25136D8112B64BDA00BEFD01 /* -1-0-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136D7E12B64BDA00BEFD01 /* -1-0-yellow.png */; };
 		257AEA28129E8FB900DE9D51 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA27129E8FB900DE9D51 /* CoreData.framework */; };
@@ -212,7 +118,6 @@
 		257AEB2E129E968A00DE9D51 /* TalentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEB2C129E968A00DE9D51 /* TalentViewController.m */; };
 		257AEBF0129E9FE500DE9D51 /* TalentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBEF129E9FE500DE9D51 /* TalentViewController.xib */; };
 		25DC757812B5A682000F70F6 /* TooltipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DC757612B5A682000F70F6 /* TooltipViewController.m */; };
-		25DC757A12B5A682000F70F6 /* TooltipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DC757612B5A682000F70F6 /* TooltipViewController.m */; };
 		25DC758A12B5A78C000F70F6 /* points_minus_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DC758412B5A78C000F70F6 /* points_minus_on.png */; };
 		25DC758B12B5A78C000F70F6 /* points_plus_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DC758512B5A78C000F70F6 /* points_plus_off.png */; };
 		25DC758C12B5A78C000F70F6 /* points_plus_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DC758612B5A78C000F70F6 /* points_plus_on.png */; };
@@ -224,63 +129,66 @@
 		25DC771112B5C29D000F70F6 /* DismissView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DC771012B5C29D000F70F6 /* DismissView.m */; };
 		25DC77F912B5CBA8000F70F6 /* points_minus_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DC77F812B5CBA8000F70F6 /* points_minus_off.png */; };
 		25DC78FB12B5D9F6000F70F6 /* tooltip_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DC78FA12B5D9F6000F70F6 /* tooltip_bg.png */; };
-		25DC78FC12B5D9F6000F70F6 /* tooltip_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DC78FA12B5D9F6000F70F6 /* tooltip_bg.png */; };
 		25E07E4712B4E2B300646BC7 /* talentTrees.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E07E4612B4E2B300646BC7 /* talentTrees.json */; };
-		25E07E4812B4E2B300646BC7 /* talentTrees.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E07E4612B4E2B300646BC7 /* talentTrees.json */; };
 		25E07E6012B4E39500646BC7 /* characterClass.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E07E5F12B4E39500646BC7 /* characterClass.json */; };
-		25E07E6112B4E39500646BC7 /* characterClass.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E07E5F12B4E39500646BC7 /* characterClass.json */; };
 		25E07EB112B4EAFF00646BC7 /* paladin.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E07EB012B4EAFF00646BC7 /* paladin.json */; };
-		25E07EB212B4EAFF00646BC7 /* paladin.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E07EB012B4EAFF00646BC7 /* paladin.json */; };
-		25E07EDB12B4ECFC00646BC7 /* TalentTree+Fetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E07EDA12B4ECFC00646BC7 /* TalentTree+Fetch.m */; };
 		25E07EDC12B4ECFC00646BC7 /* TalentTree+Fetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E07EDA12B4ECFC00646BC7 /* TalentTree+Fetch.m */; };
-		25E07EF612B4EDDF00646BC7 /* NSManagedObject+Fetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E07EF512B4EDDF00646BC7 /* NSManagedObject+Fetch.m */; };
 		25E07EF712B4EDDF00646BC7 /* NSManagedObject+Fetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E07EF512B4EDDF00646BC7 /* NSManagedObject+Fetch.m */; };
-		25E080DF12B503A100646BC7 /* icon-frame-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25E080DE12B503A100646BC7 /* icon-frame-gray.png */; };
 		25E080E012B503A100646BC7 /* icon-frame-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25E080DE12B503A100646BC7 /* icon-frame-gray.png */; };
-		25E080E212B5042A00646BC7 /* points-frame-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 25E080E112B5042A00646BC7 /* points-frame-green.png */; };
 		25E080E312B5042A00646BC7 /* points-frame-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 25E080E112B5042A00646BC7 /* points-frame-green.png */; };
-		25E080EF12B508A000646BC7 /* icon-frame-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 25E080EC12B508A000646BC7 /* icon-frame-green.png */; };
-		25E080F012B508A000646BC7 /* icon-frame-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25E080ED12B508A000646BC7 /* icon-frame-yellow.png */; };
-		25E080F112B508A000646BC7 /* points-frame-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25E080EE12B508A000646BC7 /* points-frame-yellow.png */; };
 		25E080F212B508A000646BC7 /* icon-frame-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 25E080EC12B508A000646BC7 /* icon-frame-green.png */; };
 		25E080F312B508A000646BC7 /* icon-frame-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25E080ED12B508A000646BC7 /* icon-frame-yellow.png */; };
 		25E080F412B508A000646BC7 /* points-frame-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25E080EE12B508A000646BC7 /* points-frame-yellow.png */; };
-		25E080FE12B509D100646BC7 /* ability-frame-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25E080FD12B509D100646BC7 /* ability-frame-yellow.png */; };
 		25E080FF12B509D100646BC7 /* ability-frame-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25E080FD12B509D100646BC7 /* ability-frame-yellow.png */; };
-		25E0810512B50AF100646BC7 /* ability-frame-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25E0810412B50AF100646BC7 /* ability-frame-gray.png */; };
 		25E0810612B50AF100646BC7 /* ability-frame-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25E0810412B50AF100646BC7 /* ability-frame-gray.png */; };
-		25E083D012B5A45100646BC7 /* UIImage+Manipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E083CF12B5A45100646BC7 /* UIImage+Manipulation.m */; };
 		25E083D112B5A45100646BC7 /* UIImage+Manipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E083CF12B5A45100646BC7 /* UIImage+Manipulation.m */; };
 		25FBA28512B73E6A00F306BC /* icon-border-header-circle-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28212B73E6A00F306BC /* icon-border-header-circle-gray.png */; };
 		25FBA28612B73E6A00F306BC /* icon-border-header-circle-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28312B73E6A00F306BC /* icon-border-header-circle-yellow.png */; };
 		25FBA28712B73E6A00F306BC /* icon-border-header-lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28412B73E6A00F306BC /* icon-border-header-lock.png */; };
-		25FBA28812B73E6A00F306BC /* icon-border-header-circle-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28212B73E6A00F306BC /* icon-border-header-circle-gray.png */; };
-		25FBA28912B73E6A00F306BC /* icon-border-header-circle-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28312B73E6A00F306BC /* icon-border-header-circle-yellow.png */; };
-		25FBA28A12B73E6A00F306BC /* icon-border-header-lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28412B73E6A00F306BC /* icon-border-header-lock.png */; };
 		25FBA34912B7708C00F306BC /* mastery-tree-glow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA34812B7708C00F306BC /* mastery-tree-glow.png */; };
-		25FBA34A12B7708C00F306BC /* mastery-tree-glow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA34812B7708C00F306BC /* mastery-tree-glow.png */; };
 		25FBA36D12B7731E00F306BC /* summary-glow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA36C12B7731E00F306BC /* summary-glow.png */; };
-		25FBA36E12B7731E00F306BC /* summary-glow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA36C12B7731E00F306BC /* summary-glow.png */; };
 		25FBA38E12B779DD00F306BC /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA38D12B779DD00F306BC /* reset.png */; };
-		25FBA38F12B779DD00F306BC /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA38D12B779DD00F306BC /* reset.png */; };
 		25FBA3CE12B77E3400F306BC /* PrimarySpellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA3CD12B77E3400F306BC /* PrimarySpellView.xib */; };
-		25FBA3CF12B77E3400F306BC /* PrimarySpellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA3CD12B77E3400F306BC /* PrimarySpellView.xib */; };
 		25FBA3D312B77ED000F306BC /* PrimarySpellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FBA3D212B77ED000F306BC /* PrimarySpellView.m */; };
-		25FBA3D412B77ED000F306BC /* PrimarySpellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FBA3D212B77ED000F306BC /* PrimarySpellView.m */; };
 		25FBA4EF12B78D8500F306BC /* PrimarySpellButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FBA4EE12B78D8500F306BC /* PrimarySpellButton.m */; };
-		25FBA4F012B78D8500F306BC /* PrimarySpellButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FBA4EE12B78D8500F306BC /* PrimarySpellButton.m */; };
+		25FBA6C812B830A700F306BC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA27129E8FB900DE9D51 /* CoreData.framework */; };
+		25FBA6C912B830A700F306BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		25FBA6CA12B830A700F306BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		25FBA6CB12B830A700F306BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		25FBA6CE12B830CC00F306BC /* CoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E6D112B4D39000EB1987 /* CoreDataTests.m */; };
+		25FBA75812B8319400F306BC /* SMACoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA33129E901900DE9D51 /* SMACoreDataStack.m */; };
+		25FBA75912B8319700F306BC /* SMADataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA31129E901900DE9D51 /* SMADataCenter.m */; };
+		25FBA75A12B831A400F306BC /* CharacterClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E64212B4CA0D00EB1987 /* CharacterClass.m */; };
+		25FBA75B12B831A500F306BC /* Mastery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E63812B4CA0D00EB1987 /* Mastery.m */; };
+		25FBA75C12B831A600F306BC /* NSManagedObject+Fetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E07EF512B4EDDF00646BC7 /* NSManagedObject+Fetch.m */; };
+		25FBA75D12B831A700F306BC /* PrimarySpell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E63C12B4CA0D00EB1987 /* PrimarySpell.m */; };
+		25FBA75E12B831A700F306BC /* Rank.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E63A12B4CA0D00EB1987 /* Rank.m */; };
+		25FBA75F12B831A900F306BC /* Talent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E63E12B4CA0D00EB1987 /* Talent.m */; };
+		25FBA76012B831AA00F306BC /* TalentTree+Fetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E07EDA12B4ECFC00646BC7 /* TalentTree+Fetch.m */; };
+		25FBA76112B831AB00F306BC /* TalentTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E64012B4CA0D00EB1987 /* TalentTree.m */; };
+		25FBA77212B831D700F306BC /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E48412B492DA00EB1987 /* CJSONDeserializer.m */; };
+		25FBA77312B831D900F306BC /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E48612B492DA00EB1987 /* CJSONScanner.m */; };
+		25FBA77412B831DA00F306BC /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E48812B492DA00EB1987 /* CJSONSerializer.m */; };
+		25FBA77712B831F100F306BC /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2500E47112B492DA00EB1987 /* CDataScanner.m */; };
+		25FBA78712B8328900F306BC /* paladin.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E07EB012B4EAFF00646BC7 /* paladin.json */; };
+		25FBA78812B8328A00F306BC /* mage.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB312B637A500BEFD01 /* mage.json */; };
+		25FBA78912B8328B00F306BC /* primarySpells.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6C812B4D37300EB1987 /* primarySpells.json */; };
+		25FBA78A12B8328B00F306BC /* rogue.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB512B637A500BEFD01 /* rogue.json */; };
+		25FBA78B12B8328C00F306BC /* talentAbility.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6CA12B4D37300EB1987 /* talentAbility.json */; };
+		25FBA78C12B8328C00F306BC /* shaman.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB612B637A500BEFD01 /* shaman.json */; };
+		25FBA78D12B8328D00F306BC /* warlock.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB712B637A500BEFD01 /* warlock.json */; };
+		25FBA78E12B8328E00F306BC /* talentTrees.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E07E4612B4E2B300646BC7 /* talentTrees.json */; };
+		25FBA78F12B8328E00F306BC /* priest.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB412B637A500BEFD01 /* priest.json */; };
+		25FBA79012B8328F00F306BC /* deathknight.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB012B637A500BEFD01 /* deathknight.json */; };
+		25FBA79112B8329000F306BC /* warrior.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6CB12B4D37300EB1987 /* warrior.json */; };
+		25FBA79212B8329100F306BC /* hunter.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB212B637A500BEFD01 /* hunter.json */; };
+		25FBA79312B8329200F306BC /* characterClass.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E07E5F12B4E39500646BC7 /* characterClass.json */; };
+		25FBA79412B8329300F306BC /* talent.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6C912B4D37300EB1987 /* talent.json */; };
+		25FBA79512B8329300F306BC /* druid.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB112B637A500BEFD01 /* druid.json */; };
+		25FBA79612B8329400F306BC /* masteries.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E89012B4E03E00EB1987 /* masteries.json */; };
+		25FBA79912B832AE00F306BC /* TalentPad.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA6D129E910900DE9D51 /* TalentPad.xcdatamodel */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		2500E78C12B4D97000EB1987 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1D6058900D05DD3D006BFB54;
-			remoteInfo = TalentPad;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -336,9 +244,6 @@
 		2500E6CB12B4D37300EB1987 /* warrior.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warrior.json; sourceTree = "<group>"; };
 		2500E6D012B4D39000EB1987 /* CoreDataTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTests.h; sourceTree = "<group>"; };
 		2500E6D112B4D39000EB1987 /* CoreDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTests.m; sourceTree = "<group>"; };
-		2500E78612B4D96B00EB1987 /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2500E78712B4D96B00EB1987 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
-		2500E79F12B4D9CC00EB1987 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		2500E89012B4E03E00EB1987 /* masteries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = masteries.json; sourceTree = "<group>"; };
 		251369CB12B620D000BEFD01 /* deathknightblood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deathknightblood.png; sourceTree = "<group>"; };
 		251369CC12B620D000BEFD01 /* deathknightfrost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deathknightfrost.png; sourceTree = "<group>"; };
@@ -474,6 +379,12 @@
 		25FBA3D212B77ED000F306BC /* PrimarySpellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimarySpellView.m; sourceTree = "<group>"; };
 		25FBA4ED12B78D8500F306BC /* PrimarySpellButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimarySpellButton.h; sourceTree = "<group>"; };
 		25FBA4EE12B78D8500F306BC /* PrimarySpellButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimarySpellButton.m; sourceTree = "<group>"; };
+		25FBA6C312B8308D00F306BC /* CoreDataTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25FBA6C412B8308D00F306BC /* CoreDataTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreDataTests-Info.plist"; sourceTree = "<group>"; };
+		25FBA7B912B8365F00F306BC /* AppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppTests-Info.plist"; sourceTree = "<group>"; };
+		25FBA8F812B8367C00F306BC /* TalentPad-Info copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TalentPad-Info copy.plist"; sourceTree = "<group>"; };
+		25FBA91D12B837A300F306BC /* TestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAppDelegate.h; sourceTree = "<group>"; };
+		25FBA91E12B837A300F306BC /* TestAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAppDelegate.m; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* TalentPad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentPad_Prefix.pch; sourceTree = "<group>"; };
@@ -494,15 +405,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2500E78312B4D96B00EB1987 /* Frameworks */ = {
+		25FBA6C012B8308D00F306BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2500E79E12B4D9CC00EB1987 /* CoreData.framework in Frameworks */,
-				2500E7A012B4D9CC00EB1987 /* CoreFoundation.framework in Frameworks */,
-				2500E7A112B4D9CC00EB1987 /* Foundation.framework in Frameworks */,
-				2500E7A212B4D9CC00EB1987 /* SystemConfiguration.framework in Frameworks */,
-				2500E7A312B4D9CC00EB1987 /* UIKit.framework in Frameworks */,
+				25FBA6C812B830A700F306BC /* CoreData.framework in Frameworks */,
+				25FBA6C912B830A700F306BC /* CoreGraphics.framework in Frameworks */,
+				25FBA6CA12B830A700F306BC /* Foundation.framework in Frameworks */,
+				25FBA6CB12B830A700F306BC /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,7 +439,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* TalentPad.app */,
-				2500E78612B4D96B00EB1987 /* Tests.octest */,
+				25FBA6C312B8308D00F306BC /* CoreDataTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -594,6 +504,8 @@
 				2500E6C712B4D37300EB1987 /* json */,
 				2500E6D012B4D39000EB1987 /* CoreDataTests.h */,
 				2500E6D112B4D39000EB1987 /* CoreDataTests.m */,
+				25FBA91D12B837A300F306BC /* TestAppDelegate.h */,
+				25FBA91E12B837A300F306BC /* TestAppDelegate.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -898,8 +810,7 @@
 				2500E5B712B4AB8900EB1987 /* Test */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				2500E78712B4D96B00EB1987 /* Tests-Info.plist */,
-				2500E79F12B4D9CC00EB1987 /* CoreFoundation.framework */,
+				25FBA7B912B8365F00F306BC /* AppTests-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -921,6 +832,8 @@
 				257AEAB1129E92AB00DE9D51 /* Nibs */,
 				8D1107310486CEB800E47090 /* TalentPad-Info.plist */,
 				257AEA6D129E910900DE9D51 /* TalentPad.xcdatamodel */,
+				25FBA6C412B8308D00F306BC /* CoreDataTests-Info.plist */,
+				25FBA8F812B8367C00F306BC /* TalentPad-Info copy.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -957,23 +870,22 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* TalentPad.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2500E78512B4D96B00EB1987 /* Tests */ = {
+		25FBA6C212B8308D00F306BC /* CoreDataTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2500E78B12B4D96B00EB1987 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildConfigurationList = 25FBA6C712B8308E00F306BC /* Build configuration list for PBXNativeTarget "CoreDataTests" */;
 			buildPhases = (
-				2500E78112B4D96B00EB1987 /* Resources */,
-				2500E78212B4D96B00EB1987 /* Sources */,
-				2500E78312B4D96B00EB1987 /* Frameworks */,
-				2500E78412B4D96B00EB1987 /* ShellScript */,
+				25FBA6BE12B8308D00F306BC /* Resources */,
+				25FBA6BF12B8308D00F306BC /* Sources */,
+				25FBA6C012B8308D00F306BC /* Frameworks */,
+				25FBA6C112B8308D00F306BC /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2500E78D12B4D97000EB1987 /* PBXTargetDependency */,
 			);
-			name = Tests;
-			productName = Tests;
-			productReference = 2500E78612B4D96B00EB1987 /* Tests.octest */;
+			name = CoreDataTests;
+			productName = CoreDataTests;
+			productReference = 25FBA6C312B8308D00F306BC /* CoreDataTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -999,7 +911,7 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* TalentPad */,
-				2500E78512B4D96B00EB1987 /* Tests */,
+				25FBA6C212B8308D00F306BC /* CoreDataTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1111,102 +1023,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2500E78112B4D96B00EB1987 /* Resources */ = {
+		25FBA6BE12B8308D00F306BC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2500E7BF12B4DA2300EB1987 /* primarySpells.json in Resources */,
-				2500E7C012B4DA2400EB1987 /* talent.json in Resources */,
-				2500E7C112B4DA2400EB1987 /* warrior.json in Resources */,
-				2500E7C212B4DA2500EB1987 /* talentAbility.json in Resources */,
-				2500E89212B4E03E00EB1987 /* masteries.json in Resources */,
-				25E07E4812B4E2B300646BC7 /* talentTrees.json in Resources */,
-				25E07E6112B4E39500646BC7 /* characterClass.json in Resources */,
-				25E07EB212B4EAFF00646BC7 /* paladin.json in Resources */,
-				25E080DF12B503A100646BC7 /* icon-frame-gray.png in Resources */,
-				25E080E212B5042A00646BC7 /* points-frame-green.png in Resources */,
-				25E080EF12B508A000646BC7 /* icon-frame-green.png in Resources */,
-				25E080F012B508A000646BC7 /* icon-frame-yellow.png in Resources */,
-				25E080F112B508A000646BC7 /* points-frame-yellow.png in Resources */,
-				25E080FE12B509D100646BC7 /* ability-frame-yellow.png in Resources */,
-				25E0810512B50AF100646BC7 /* ability-frame-gray.png in Resources */,
-				25DC78FC12B5D9F6000F70F6 /* tooltip_bg.png in Resources */,
-				25136A0712B620D000BEFD01 /* deathknightblood.png in Resources */,
-				25136A0812B620D000BEFD01 /* deathknightfrost.png in Resources */,
-				25136A0912B620D000BEFD01 /* deathknightunholy.png in Resources */,
-				25136A0A12B620D000BEFD01 /* druidbalance.png in Resources */,
-				25136A0B12B620D000BEFD01 /* druidferalcombat.png in Resources */,
-				25136A0C12B620D000BEFD01 /* druidrestoration.png in Resources */,
-				25136A0D12B620D000BEFD01 /* hunterbeastmastery.png in Resources */,
-				25136A0E12B620D000BEFD01 /* huntermarksmanship.png in Resources */,
-				25136A0F12B620D000BEFD01 /* huntersurvival.png in Resources */,
-				25136A1012B620D000BEFD01 /* magearcane.png in Resources */,
-				25136A1112B620D000BEFD01 /* magefire.png in Resources */,
-				25136A1212B620D000BEFD01 /* magefrost.png in Resources */,
-				25136A1312B620D000BEFD01 /* paladincombat.png in Resources */,
-				25136A1412B620D000BEFD01 /* paladinholy.png in Resources */,
-				25136A1512B620D000BEFD01 /* paladinprotection.png in Resources */,
-				25136A1612B620D000BEFD01 /* priestdiscipline.png in Resources */,
-				25136A1712B620D000BEFD01 /* priestholy.png in Resources */,
-				25136A1812B620D000BEFD01 /* priestshadow.png in Resources */,
-				25136A1912B620D000BEFD01 /* rogueassassination.png in Resources */,
-				25136A1A12B620D000BEFD01 /* roguecombat.png in Resources */,
-				25136A1B12B620D000BEFD01 /* roguesubtlety.png in Resources */,
-				25136A1C12B620D000BEFD01 /* shamanelementalcombat.png in Resources */,
-				25136A1D12B620D000BEFD01 /* shamanenhancement.png in Resources */,
-				25136A1E12B620D000BEFD01 /* shamanrestoration.png in Resources */,
-				25136A1F12B620D000BEFD01 /* warlockcurses.png in Resources */,
-				25136A2012B620D000BEFD01 /* warlockdestruction.png in Resources */,
-				25136A2112B620D000BEFD01 /* warlocksummoning.png in Resources */,
-				25136A2212B620D000BEFD01 /* warriorarms.png in Resources */,
-				25136A2312B620D000BEFD01 /* warriorfury.png in Resources */,
-				25136A2412B620D000BEFD01 /* warriorprotection.png in Resources */,
-				25136A7312B623DA00BEFD01 /* SummaryViewController.xib in Resources */,
-				25136A8612B6260100BEFD01 /* summary_bg.jpg in Resources */,
-				25136A9112B6265000BEFD01 /* red_button.png in Resources */,
-				25136A9412B6270400BEFD01 /* tree-overview-icon-frame.png in Resources */,
-				25136BC012B637A500BEFD01 /* deathknight.json in Resources */,
-				25136BC112B637A500BEFD01 /* druid.json in Resources */,
-				25136BC212B637A500BEFD01 /* hunter.json in Resources */,
-				25136BC312B637A500BEFD01 /* mage.json in Resources */,
-				25136BC412B637A500BEFD01 /* priest.json in Resources */,
-				25136BC512B637A500BEFD01 /* rogue.json in Resources */,
-				25136BC612B637A500BEFD01 /* shaman.json in Resources */,
-				25136BC712B637A500BEFD01 /* warlock.json in Resources */,
-				25136CAA12B646C700BEFD01 /* 1-0-gray.png in Resources */,
-				25136CAB12B646C700BEFD01 /* 1-0-yellow.png in Resources */,
-				25136CAD12B646C700BEFD01 /* 0-1-gray.png in Resources */,
-				25136CAE12B646C700BEFD01 /* 0-1-yellow.png in Resources */,
-				25136CB012B646C700BEFD01 /* 0-2-gray.png in Resources */,
-				25136CB712B646C700BEFD01 /* 0-2-yellow.png in Resources */,
-				25136CC212B646C700BEFD01 /* 1-1-gray.png in Resources */,
-				25136CC312B646C700BEFD01 /* 1-1-yellow.png in Resources */,
-				25136CDD12B646D000BEFD01 /* icon_deathknight.png in Resources */,
-				25136CDE12B646D000BEFD01 /* icon_druid.png in Resources */,
-				25136CDF12B646D000BEFD01 /* icon_hunter.png in Resources */,
-				25136CE012B646D000BEFD01 /* icon_mage.png in Resources */,
-				25136CE112B646D000BEFD01 /* icon_murloc.png in Resources */,
-				25136CE212B646D000BEFD01 /* icon_paladin.png in Resources */,
-				25136CE312B646D000BEFD01 /* icon_pet.png in Resources */,
-				25136CE412B646D000BEFD01 /* icon_priest.png in Resources */,
-				25136CE512B646D000BEFD01 /* icon_rogue.png in Resources */,
-				25136CE612B646D000BEFD01 /* icon_shaman.png in Resources */,
-				25136CE712B646D000BEFD01 /* icon_warlock.png in Resources */,
-				25136CE812B646D000BEFD01 /* icon_warrior.png in Resources */,
-				25FBA28812B73E6A00F306BC /* icon-border-header-circle-gray.png in Resources */,
-				25FBA28912B73E6A00F306BC /* icon-border-header-circle-yellow.png in Resources */,
-				25FBA28A12B73E6A00F306BC /* icon-border-header-lock.png in Resources */,
-				25FBA34A12B7708C00F306BC /* mastery-tree-glow.png in Resources */,
-				25FBA36E12B7731E00F306BC /* summary-glow.png in Resources */,
-				25FBA38F12B779DD00F306BC /* reset.png in Resources */,
-				25FBA3CF12B77E3400F306BC /* PrimarySpellView.xib in Resources */,
+				25FBA78712B8328900F306BC /* paladin.json in Resources */,
+				25FBA78812B8328A00F306BC /* mage.json in Resources */,
+				25FBA78912B8328B00F306BC /* primarySpells.json in Resources */,
+				25FBA78A12B8328B00F306BC /* rogue.json in Resources */,
+				25FBA78B12B8328C00F306BC /* talentAbility.json in Resources */,
+				25FBA78C12B8328C00F306BC /* shaman.json in Resources */,
+				25FBA78D12B8328D00F306BC /* warlock.json in Resources */,
+				25FBA78E12B8328E00F306BC /* talentTrees.json in Resources */,
+				25FBA78F12B8328E00F306BC /* priest.json in Resources */,
+				25FBA79012B8328F00F306BC /* deathknight.json in Resources */,
+				25FBA79112B8329000F306BC /* warrior.json in Resources */,
+				25FBA79212B8329100F306BC /* hunter.json in Resources */,
+				25FBA79312B8329200F306BC /* characterClass.json in Resources */,
+				25FBA79412B8329300F306BC /* talent.json in Resources */,
+				25FBA79512B8329300F306BC /* druid.json in Resources */,
+				25FBA79612B8329400F306BC /* masteries.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2500E78412B4D96B00EB1987 /* ShellScript */ = {
+		25FBA6C112B8308D00F306BC /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1269,50 +1112,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2500E78212B4D96B00EB1987 /* Sources */ = {
+		25FBA6BF12B8308D00F306BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2500E79312B4D99800EB1987 /* CoreDataTests.m in Sources */,
-				2500E79612B4D9A400EB1987 /* SMACoreDataStack.m in Sources */,
-				2500E79712B4D9A500EB1987 /* SMADataCenter.m in Sources */,
-				2500E7A812B4D9E100EB1987 /* CDataScanner.m in Sources */,
-				2500E7A912B4D9E200EB1987 /* CDataScanner_Extensions.m in Sources */,
-				2500E7AA12B4D9E300EB1987 /* CJSONDeserializer.m in Sources */,
-				2500E7AB12B4D9E300EB1987 /* CFilteringJSONSerializer.m in Sources */,
-				2500E7AC12B4D9E400EB1987 /* CJSONDeserializer_BlocksExtensions.m in Sources */,
-				2500E7AD12B4D9E500EB1987 /* CJSONScanner.m in Sources */,
-				2500E7AE12B4D9E500EB1987 /* CJSONSerializedData.m in Sources */,
-				2500E7AF12B4D9E600EB1987 /* CJSONSerializer.m in Sources */,
-				2500E7B012B4D9E600EB1987 /* NSCharacterSet_Extensions.m in Sources */,
-				2500E7B112B4D9E800EB1987 /* NSDictionary_JSONExtensions.m in Sources */,
-				2500E7B212B4D9E900EB1987 /* NSScanner_Extensions.m in Sources */,
-				2500E7B512B4D9F700EB1987 /* CharacterClass.m in Sources */,
-				2500E7B612B4D9F700EB1987 /* Mastery.m in Sources */,
-				2500E7B712B4D9F800EB1987 /* PrimarySpell.m in Sources */,
-				2500E7B812B4D9F800EB1987 /* Rank.m in Sources */,
-				2500E7B912B4D9F900EB1987 /* Talent.m in Sources */,
-				2500E7BA12B4D9FA00EB1987 /* TalentTree.m in Sources */,
-				2500E82112B4DB6300EB1987 /* TalentPad.xcdatamodel in Sources */,
-				25E07EDB12B4ECFC00646BC7 /* TalentTree+Fetch.m in Sources */,
-				25E07EF612B4EDDF00646BC7 /* NSManagedObject+Fetch.m in Sources */,
-				25E083D012B5A45100646BC7 /* UIImage+Manipulation.m in Sources */,
-				25DC757A12B5A682000F70F6 /* TooltipViewController.m in Sources */,
-				25136A7212B623DA00BEFD01 /* SummaryViewController.m in Sources */,
-				25FBA3D412B77ED000F306BC /* PrimarySpellView.m in Sources */,
-				25FBA4F012B78D8500F306BC /* PrimarySpellButton.m in Sources */,
+				25FBA6CE12B830CC00F306BC /* CoreDataTests.m in Sources */,
+				25FBA75812B8319400F306BC /* SMACoreDataStack.m in Sources */,
+				25FBA75912B8319700F306BC /* SMADataCenter.m in Sources */,
+				25FBA75A12B831A400F306BC /* CharacterClass.m in Sources */,
+				25FBA75B12B831A500F306BC /* Mastery.m in Sources */,
+				25FBA75C12B831A600F306BC /* NSManagedObject+Fetch.m in Sources */,
+				25FBA75D12B831A700F306BC /* PrimarySpell.m in Sources */,
+				25FBA75E12B831A700F306BC /* Rank.m in Sources */,
+				25FBA75F12B831A900F306BC /* Talent.m in Sources */,
+				25FBA76012B831AA00F306BC /* TalentTree+Fetch.m in Sources */,
+				25FBA76112B831AB00F306BC /* TalentTree.m in Sources */,
+				25FBA77212B831D700F306BC /* CJSONDeserializer.m in Sources */,
+				25FBA77312B831D900F306BC /* CJSONScanner.m in Sources */,
+				25FBA77412B831DA00F306BC /* CJSONSerializer.m in Sources */,
+				25FBA77712B831F100F306BC /* CDataScanner.m in Sources */,
+				25FBA79912B832AE00F306BC /* TalentPad.xcdatamodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2500E78D12B4D97000EB1987 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1D6058900D05DD3D006BFB54 /* TalentPad */;
-			targetProxy = 2500E78C12B4D97000EB1987 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
@@ -1350,7 +1173,7 @@
 			};
 			name = Release;
 		};
-		2500E78912B4D96B00EB1987 /* Debug */ = {
+		25FBA6C512B8308E00F306BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1364,7 +1187,7 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				INFOPLIST_FILE = "Tests-Info.plist";
+				INFOPLIST_FILE = "CoreDataTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -1374,13 +1197,13 @@
 					UIKit,
 				);
 				PREBINDING = NO;
-				PRODUCT_NAME = Tests;
+				PRODUCT_NAME = CoreDataTests;
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
-		2500E78A12B4D96B00EB1987 /* Release */ = {
+		25FBA6C612B8308E00F306BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1393,7 +1216,7 @@
 				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				INFOPLIST_FILE = "Tests-Info.plist";
+				INFOPLIST_FILE = "CoreDataTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -1403,7 +1226,7 @@
 					UIKit,
 				);
 				PREBINDING = NO;
-				PRODUCT_NAME = Tests;
+				PRODUCT_NAME = CoreDataTests;
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = octest;
 				ZERO_LINK = NO;
@@ -1455,11 +1278,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2500E78B12B4D96B00EB1987 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+		25FBA6C712B8308E00F306BC /* Build configuration list for PBXNativeTarget "CoreDataTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2500E78912B4D96B00EB1987 /* Debug */,
-				2500E78A12B4D96B00EB1987 /* Release */,
+				25FBA6C512B8308E00F306BC /* Debug */,
+				25FBA6C612B8308E00F306BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
