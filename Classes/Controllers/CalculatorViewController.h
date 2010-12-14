@@ -23,10 +23,20 @@ typedef enum {
   IBOutlet UIView *_summaryView;
   IBOutlet UIButton *_swapButton;
   IBOutlet UIButton *_resetButton;
+  
+  // Header Stuff
   IBOutlet UIImageView *_leftIcon;
   IBOutlet UIImageView *_middleIcon;
   IBOutlet UIImageView *_rightIcon;
-  
+  IBOutlet UILabel *_leftLabel;
+  IBOutlet UILabel *_middleLabel;
+  IBOutlet UILabel *_rightLabel;
+  IBOutlet UIImageView *_leftBorder;
+  IBOutlet UIImageView *_middleBorder;
+  IBOutlet UIImageView *_rightBorder;
+  IBOutlet UILabel *_leftPoints;
+  IBOutlet UILabel *_middlePoints;
+  IBOutlet UILabel *_rightPoints;  
   
   TooltipViewController *_tooltipViewController;
   UIPopoverController *_tooltipPopoverController;
@@ -48,6 +58,7 @@ typedef enum {
 @property (nonatomic, assign) NSInteger totalPoints;
 @property (nonatomic, assign) NSInteger state;
 
+- (IBAction)resetAll;
 - (IBAction)swapViews;
 - (void)hideTooltip:(BOOL)animated;
 

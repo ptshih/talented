@@ -117,6 +117,12 @@ static UIImage *_abilityYellow = nil;
   }
 }
 
+- (void)resetState {
+  self.state = TalentStateDisabled;
+  self.currentRank = 0;
+  [self updateState];
+}
+
 - (void)updateBorders {
   // Setup Frame Border
   if ([self.talent.keyAbility boolValue]) {

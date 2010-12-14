@@ -21,6 +21,7 @@
 
 @interface TreeViewController (Private)
 
+- (void)updateMasteryGlow;
 - (void)prepareArrows;
 - (void)prepareBackground;
 - (void)prepareTalents;
@@ -80,6 +81,8 @@
   
   // Prepare arrows
   [self prepareArrows];
+  
+  [self updateMasteryGlow];
 }
 
 - (IBAction)dismissPopover {
@@ -281,12 +284,39 @@
 }
 
 - (void)updateState {
+  [self updateMasteryGlow];
+  
   // Tell tree to update state for all talents
   [self updateTalentState];
   
   // If we are finished, perform finish update state
   if (self.state == TreeStateFinished) {
     [self updateTalentStateFinished];
+  }
+}
+
+- (void)resetState {
+  self.state = TreeStateDisabled;
+  
+  self.pointsInTree = 0;
+  
+  for (int i = 0; i < MAX_TIERS; i++) {
+    _pointsInTier[i] = 0;
+  }
+  
+  // Reset all Talents
+  for (TalentViewController *tvc in [self.talentViewDict allValues]) {
+    [tvc resetState];
+  }
+  
+  [self updateMasteryGlow];
+}
+
+- (void)updateMasteryGlow {
+  if (self.isSpecTree) {
+    _masteryGlow.hidden = NO;
+  } else {
+    _masteryGlow.hidden = YES;
   }
 }
 
@@ -361,6 +391,8 @@
 
 
 - (void)dealloc {
+  if (_backgroundView) [_backgroundView release];
+  if (_masteryGlow) [_masteryGlow release];
   if (_talentArray) [_talentArray release];
   if (_talentViewDict) [_talentViewDict release];
   if (_arrowViewDict) [_arrowViewDict release];

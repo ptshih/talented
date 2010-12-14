@@ -51,6 +51,7 @@ typedef enum {
 - (IBAction)talentTapped;
 - (void)updateState;
 - (void)updateStateFinished;
+- (void)resetState;
 - (BOOL)talentAdd;
 - (BOOL)talentSubtract;
 

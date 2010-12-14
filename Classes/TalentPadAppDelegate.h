@@ -20,5 +20,7 @@
 @property (nonatomic, retain) UINavigationController *navigationController;
 @property (nonatomic, retain) LauncherViewController *launcherViewController;
 
+- (void)talentDataTestForClass:(NSString *)classString;
+
 @end
 

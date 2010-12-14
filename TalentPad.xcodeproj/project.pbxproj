@@ -253,6 +253,14 @@
 		25E0810612B50AF100646BC7 /* ability-frame-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25E0810412B50AF100646BC7 /* ability-frame-gray.png */; };
 		25E083D012B5A45100646BC7 /* UIImage+Manipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E083CF12B5A45100646BC7 /* UIImage+Manipulation.m */; };
 		25E083D112B5A45100646BC7 /* UIImage+Manipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E083CF12B5A45100646BC7 /* UIImage+Manipulation.m */; };
+		25FBA28512B73E6A00F306BC /* icon-border-header-circle-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28212B73E6A00F306BC /* icon-border-header-circle-gray.png */; };
+		25FBA28612B73E6A00F306BC /* icon-border-header-circle-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28312B73E6A00F306BC /* icon-border-header-circle-yellow.png */; };
+		25FBA28712B73E6A00F306BC /* icon-border-header-lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28412B73E6A00F306BC /* icon-border-header-lock.png */; };
+		25FBA28812B73E6A00F306BC /* icon-border-header-circle-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28212B73E6A00F306BC /* icon-border-header-circle-gray.png */; };
+		25FBA28912B73E6A00F306BC /* icon-border-header-circle-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28312B73E6A00F306BC /* icon-border-header-circle-yellow.png */; };
+		25FBA28A12B73E6A00F306BC /* icon-border-header-lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28412B73E6A00F306BC /* icon-border-header-lock.png */; };
+		25FBA34912B7708C00F306BC /* mastery-tree-glow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA34812B7708C00F306BC /* mastery-tree-glow.png */; };
+		25FBA34A12B7708C00F306BC /* mastery-tree-glow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA34812B7708C00F306BC /* mastery-tree-glow.png */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
@@ -451,6 +459,10 @@
 		25E0810412B50AF100646BC7 /* ability-frame-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ability-frame-gray.png"; sourceTree = "<group>"; };
 		25E083CE12B5A45100646BC7 /* UIImage+Manipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Manipulation.h"; sourceTree = "<group>"; };
 		25E083CF12B5A45100646BC7 /* UIImage+Manipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Manipulation.m"; sourceTree = "<group>"; };
+		25FBA28212B73E6A00F306BC /* icon-border-header-circle-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-border-header-circle-gray.png"; sourceTree = "<group>"; };
+		25FBA28312B73E6A00F306BC /* icon-border-header-circle-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-border-header-circle-yellow.png"; sourceTree = "<group>"; };
+		25FBA28412B73E6A00F306BC /* icon-border-header-lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-border-header-lock.png"; sourceTree = "<group>"; };
+		25FBA34812B7708C00F306BC /* mastery-tree-glow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mastery-tree-glow.png"; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* TalentPad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentPad_Prefix.pch; sourceTree = "<group>"; };
@@ -788,10 +800,14 @@
 				25E080ED12B508A000646BC7 /* icon-frame-yellow.png */,
 				25E080EC12B508A000646BC7 /* icon-frame-green.png */,
 				25E080DE12B503A100646BC7 /* icon-frame-gray.png */,
+				25FBA28212B73E6A00F306BC /* icon-border-header-circle-gray.png */,
+				25FBA28312B73E6A00F306BC /* icon-border-header-circle-yellow.png */,
+				25FBA28412B73E6A00F306BC /* icon-border-header-lock.png */,
 				25E080EE12B508A000646BC7 /* points-frame-yellow.png */,
 				25E080E112B5042A00646BC7 /* points-frame-green.png */,
 				25E080FD12B509D100646BC7 /* ability-frame-yellow.png */,
 				25E0810412B50AF100646BC7 /* ability-frame-gray.png */,
+				25FBA34812B7708C00F306BC /* mastery-tree-glow.png */,
 				25136A8412B6260100BEFD01 /* summary_bg.jpg */,
 				25136A8F12B6265000BEFD01 /* red_button.png */,
 				25136A9212B6270400BEFD01 /* tree-overview-icon-frame.png */,
@@ -1071,6 +1087,10 @@
 				25136CDC12B646D000BEFD01 /* icon_warrior.png in Resources */,
 				25136D8012B64BDA00BEFD01 /* -1-0-gray.png in Resources */,
 				25136D8112B64BDA00BEFD01 /* -1-0-yellow.png in Resources */,
+				25FBA28512B73E6A00F306BC /* icon-border-header-circle-gray.png in Resources */,
+				25FBA28612B73E6A00F306BC /* icon-border-header-circle-yellow.png in Resources */,
+				25FBA28712B73E6A00F306BC /* icon-border-header-lock.png in Resources */,
+				25FBA34912B7708C00F306BC /* mastery-tree-glow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1156,6 +1176,10 @@
 				25136CE612B646D000BEFD01 /* icon_shaman.png in Resources */,
 				25136CE712B646D000BEFD01 /* icon_warlock.png in Resources */,
 				25136CE812B646D000BEFD01 /* icon_warrior.png in Resources */,
+				25FBA28812B73E6A00F306BC /* icon-border-header-circle-gray.png in Resources */,
+				25FBA28912B73E6A00F306BC /* icon-border-header-circle-yellow.png in Resources */,
+				25FBA28A12B73E6A00F306BC /* icon-border-header-lock.png in Resources */,
+				25FBA34A12B7708C00F306BC /* mastery-tree-glow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

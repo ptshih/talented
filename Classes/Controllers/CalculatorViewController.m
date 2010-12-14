@@ -18,12 +18,15 @@
 #define SPACING_X 16.0
 #define SPACING_Y 16.0
 #define MARGIN_X 16.0
+#define TOOLTIP_MARGIN_Y 64.0
 
 #define MAX_POINTS 41
 #define SPEC_POINTS_LIMIT 31
 
 @interface CalculatorViewController (Private)
 
+- (void)updateHeaderPoints;
+- (void)updateHeaderState;
 - (void)setupHeader;
 - (void)setSwapButtonTitle;
 - (void)fetchTrees;
@@ -52,7 +55,7 @@
     _summaryViewArray = [[NSMutableArray alloc] init];
     _treeViewArray = [[NSMutableArray alloc] init];
     _characterClassId = 0;
-    _specTreeNo = 1;
+    _specTreeNo = -1;
     _totalPoints = 0;
     _state = CalculatorStateEnabled;
   }
@@ -76,9 +79,31 @@
   
   // Setup Header
   [self setupHeader];
+  [self updateHeaderState];
+  [self updateHeaderPoints];
 }
 
 #pragma mark IBAction
+- (IBAction)resetAll {
+  self.totalPoints = 0;
+  self.state = CalculatorStateEnabled;
+  self.specTreeNo = -1;
+  
+  for (TreeViewController *tvc in self.treeViewArray) {
+    tvc.isSpecTree = NO;
+    [tvc resetState];
+  }
+  
+  [self updateHeaderPoints];
+  [self updateHeaderState];
+  
+  // Go back to summary view if on talentView
+  UIView *activeView = [self.view.subviews objectAtIndex:1];
+  if ([activeView isEqual:_talentTreeView]) {
+    [self swapViews];
+  }
+}
+
 - (IBAction)swapViews {
   [self.view exchangeSubviewAtIndex:0 withSubviewAtIndex:1];
   [self setSwapButtonTitle];
@@ -100,6 +125,7 @@
   UIImage *myImage  = [[UIImage alloc] initWithData:returnData];
   
   _leftIcon.image = myImage;
+  _leftLabel.text = [[self.treeArray objectAtIndex:0] talentTreeName];
   
   imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL([[self.treeArray objectAtIndex:1] icon])];
   myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
@@ -107,6 +133,7 @@
   myImage  = [[UIImage alloc] initWithData:returnData];
   
   _middleIcon.image = myImage;
+  _middleLabel.text = [[self.treeArray objectAtIndex:1] talentTreeName];
   
   imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL([[self.treeArray objectAtIndex:2] icon])];
   myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
@@ -114,6 +141,7 @@
   myImage  = [[UIImage alloc] initWithData:returnData];
   
   _rightIcon.image = myImage;
+  _rightLabel.text = [[self.treeArray objectAtIndex:2] talentTreeName];
 }
 
 #pragma mark Fetch Trees from CoreData
@@ -217,8 +245,10 @@
   BOOL isSpecLimitReached = NO;
   
   // Check to see if spec tree has reached 31
-  if ([[self.treeViewArray objectAtIndex:self.specTreeNo] pointsInTree] >= SPEC_POINTS_LIMIT) {
-    isSpecLimitReached = YES;
+  if (self.specTreeNo >= 0) {
+    if ([[self.treeViewArray objectAtIndex:self.specTreeNo] pointsInTree] >= SPEC_POINTS_LIMIT) {
+      isSpecLimitReached = YES;
+    }
   }
   
   for (TreeViewController *tvc in self.treeViewArray) {
@@ -251,13 +281,15 @@
   DLog(@"Adding a point for tree: %d", treeView.treeNo);
   self.totalPoints++;
   
+  [self updateHeaderPoints];
   [self updateStateFromTreeNo:treeView.treeNo];
 }
 
 - (void)treeSubtract:(TreeViewController *)treeView forTalentView:(TalentViewController *)talentView {
   DLog(@"Subtracting a point for tree: %d", treeView.treeNo);
   self.totalPoints--;
-  
+
+  [self updateHeaderPoints];
   [self updateStateFromTreeNo:treeView.treeNo];
 }
 
@@ -273,8 +305,69 @@
     }
     [self updateTreeStateForTree:tree.treeNo];
   }
-  
+  [self updateHeaderState];
   [self swapViews];
+}
+
+
+#pragma mark Header Updates
+- (void)updateHeaderPoints {
+  _leftPoints.text = [NSString stringWithFormat:@"%d", [[self.treeViewArray objectAtIndex:0] pointsInTree]];
+  _middlePoints.text = [NSString stringWithFormat:@"%d", [[self.treeViewArray objectAtIndex:1] pointsInTree]];
+  _rightPoints.text = [NSString stringWithFormat:@"%d", [[self.treeViewArray objectAtIndex:2] pointsInTree]];
+}
+
+- (void)updateHeaderState { 
+  // Update Borders and Points
+  if (self.state == CalculatorStateAllEnabled) {
+    _leftPoints.hidden = NO;
+    _middlePoints.hidden = NO;
+    _rightPoints.hidden = NO;
+    
+    _leftBorder.image = [UIImage imageNamed:@"icon-border-header-circle-gray.png"];
+    _middleBorder.image = [UIImage imageNamed:@"icon-border-header-circle-gray.png"];
+    _rightBorder.image = [UIImage imageNamed:@"icon-border-header-circle-gray.png"];
+  } else {
+    switch (self.specTreeNo) {
+      case 0:
+        _leftPoints.hidden = NO;
+        _middlePoints.hidden = YES;
+        _rightPoints.hidden = YES;
+        
+        _leftBorder.image = [UIImage imageNamed:@"icon-border-header-circle-gray.png"];
+        _middleBorder.image = [UIImage imageNamed:@"icon-border-header-lock.png"];
+        _rightBorder.image = [UIImage imageNamed:@"icon-border-header-lock.png"];
+        break;
+      case 1:
+        _leftPoints.hidden = YES;
+        _middlePoints.hidden = NO;
+        _rightPoints.hidden = YES;
+        
+        _leftBorder.image = [UIImage imageNamed:@"icon-border-header-lock.png"];
+        _middleBorder.image = [UIImage imageNamed:@"icon-border-header-circle-gray.png"];
+        _rightBorder.image = [UIImage imageNamed:@"icon-border-header-lock.png"];
+        break;
+      case 2:
+        _leftPoints.hidden = YES;
+        _middlePoints.hidden = YES;
+        _rightPoints.hidden = NO;
+        
+        _leftBorder.image = [UIImage imageNamed:@"icon-border-header-lock.png"];
+        _middleBorder.image = [UIImage imageNamed:@"icon-border-header-lock.png"];
+        _rightBorder.image = [UIImage imageNamed:@"icon-border-header-circle-gray.png"];
+        break;
+      default:
+        // Reset state (-1)
+        _leftPoints.hidden = YES;
+        _middlePoints.hidden = YES;
+        _rightPoints.hidden = YES;
+        
+        _leftBorder.image = [UIImage imageNamed:@"icon-border-header-lock.png"];
+        _middleBorder.image = [UIImage imageNamed:@"icon-border-header-lock.png"];
+        _rightBorder.image = [UIImage imageNamed:@"icon-border-header-lock.png"];
+        break;
+    }
+  }
 }
 
 #pragma mark Tooltip Methods
@@ -295,9 +388,9 @@
   // Calculate available height based on tier selected
   CGFloat availableHeight = 0.0;
   if ([talentView.talent.tier integerValue] >= 4) {
-    availableHeight = talentView.view.top - SPACING_Y * 2;
+    availableHeight = talentView.view.top - TOOLTIP_MARGIN_Y * 2;
   } else {
-    availableHeight = _talentTreeView.height - (talentView.view.bottom + SPACING_Y * 2);
+    availableHeight = _talentTreeView.height - (talentView.view.bottom + TOOLTIP_MARGIN_Y * 2);
   }
   DLog(@"availHeight = %f", availableHeight);
   self.tooltipViewController.availableHeight = availableHeight;
@@ -319,9 +412,9 @@
   // IF tier >= 4, invert
   NSInteger popoverTop;
   if ([talentView.talent.tier integerValue] >= 4) {
-    popoverTop = talentView.view.top - self.tooltipViewController.view.height + 70.0 - SPACING_Y;
+    popoverTop = talentView.view.top - self.tooltipViewController.view.height + 70.0 - TOOLTIP_MARGIN_Y;
   } else {
-    popoverTop = talentView.view.bottom + 70.0 +SPACING_Y;
+    popoverTop = talentView.view.bottom + 70.0 + TOOLTIP_MARGIN_Y;
   }
   
   CGRect popoverFrame = CGRectMake(treeView.view.left + 10.0, popoverTop, treeView.view.width, self.tooltipViewController.view.height);
