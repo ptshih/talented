@@ -187,6 +187,10 @@
 		25FBA79512B8329300F306BC /* druid.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB112B637A500BEFD01 /* druid.json */; };
 		25FBA79612B8329400F306BC /* masteries.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E89012B4E03E00EB1987 /* masteries.json */; };
 		25FBA79912B832AE00F306BC /* TalentPad.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA6D129E910900DE9D51 /* TalentPad.xcdatamodel */; };
+		25FBAA7C12B8DB8E00F306BC /* MasteryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FBAA7912B8DB8E00F306BC /* MasteryView.m */; };
+		25FBAA7D12B8DB8E00F306BC /* MasteryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25FBAA7B12B8DB8E00F306BC /* MasteryView.xib */; };
+		25FBAAA312B8DE8700F306BC /* icon-border-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBAAA112B8DE8700F306BC /* icon-border-highlight.png */; };
+		25FBAAA412B8DE8700F306BC /* mastery_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBAAA212B8DE8700F306BC /* mastery_icon.png */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
@@ -385,6 +389,11 @@
 		25FBA8F812B8367C00F306BC /* TalentPad-Info copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TalentPad-Info copy.plist"; sourceTree = "<group>"; };
 		25FBA91D12B837A300F306BC /* TestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAppDelegate.h; sourceTree = "<group>"; };
 		25FBA91E12B837A300F306BC /* TestAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAppDelegate.m; sourceTree = "<group>"; };
+		25FBAA7912B8DB8E00F306BC /* MasteryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasteryView.m; sourceTree = "<group>"; };
+		25FBAA7A12B8DB8E00F306BC /* MasteryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasteryView.h; sourceTree = "<group>"; };
+		25FBAA7B12B8DB8E00F306BC /* MasteryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MasteryView.xib; sourceTree = "<group>"; };
+		25FBAAA112B8DE8700F306BC /* icon-border-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-border-highlight.png"; sourceTree = "<group>"; };
+		25FBAAA212B8DE8700F306BC /* mastery_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mastery_icon.png; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* TalentPad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentPad_Prefix.pch; sourceTree = "<group>"; };
@@ -690,6 +699,9 @@
 				25FBA3CD12B77E3400F306BC /* PrimarySpellView.xib */,
 				25FBA4ED12B78D8500F306BC /* PrimarySpellButton.h */,
 				25FBA4EE12B78D8500F306BC /* PrimarySpellButton.m */,
+				25FBAA7912B8DB8E00F306BC /* MasteryView.m */,
+				25FBAA7A12B8DB8E00F306BC /* MasteryView.h */,
+				25FBAA7B12B8DB8E00F306BC /* MasteryView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -727,6 +739,8 @@
 				25FBA28212B73E6A00F306BC /* icon-border-header-circle-gray.png */,
 				25FBA28312B73E6A00F306BC /* icon-border-header-circle-yellow.png */,
 				25FBA28412B73E6A00F306BC /* icon-border-header-lock.png */,
+				25FBAAA112B8DE8700F306BC /* icon-border-highlight.png */,
+				25FBAAA212B8DE8700F306BC /* mastery_icon.png */,
 				25E080EE12B508A000646BC7 /* points-frame-yellow.png */,
 				25E080E112B5042A00646BC7 /* points-frame-green.png */,
 				25E080FD12B509D100646BC7 /* ability-frame-yellow.png */,
@@ -1020,6 +1034,9 @@
 				25FBA36D12B7731E00F306BC /* summary-glow.png in Resources */,
 				25FBA38E12B779DD00F306BC /* reset.png in Resources */,
 				25FBA3CE12B77E3400F306BC /* PrimarySpellView.xib in Resources */,
+				25FBAA7D12B8DB8E00F306BC /* MasteryView.xib in Resources */,
+				25FBAAA312B8DE8700F306BC /* icon-border-highlight.png in Resources */,
+				25FBAAA412B8DE8700F306BC /* mastery_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1109,6 +1126,7 @@
 				25136A7012B623DA00BEFD01 /* SummaryViewController.m in Sources */,
 				25FBA3D312B77ED000F306BC /* PrimarySpellView.m in Sources */,
 				25FBA4EF12B78D8500F306BC /* PrimarySpellButton.m in Sources */,
+				25FBAA7C12B8DB8E00F306BC /* MasteryView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

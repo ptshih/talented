@@ -12,13 +12,21 @@
 @class TalentViewController;
 @class InfoTextView;
 @class PrimarySpell;
+@class Mastery;
+
+typedef enum {
+  TooltipSourceTalent = 0,
+  TooltipSourcePrimarySpell = 1,
+  TooltipSourceMastery = 2
+} TooltipSource;
 
 @interface TooltipViewController : UIViewController {
   TreeViewController *_treeView;
 	TalentViewController *_talentView;
 
+  NSInteger _tooltipSource;
+  Mastery *_mastery;
   PrimarySpell *_primarySpell;
-  BOOL _isPrimarySpell;
   
   CGFloat _availableHeight;
   CGFloat _desiredHeight;
@@ -47,8 +55,9 @@
 @property (nonatomic, assign) TreeViewController *treeView;
 @property (nonatomic, assign) TalentViewController *talentView;
 
+@property (nonatomic, assign) NSInteger tooltipSource;
+@property (nonatomic, assign) Mastery *mastery;
 @property (nonatomic, assign) PrimarySpell *primarySpell;
-@property (nonatomic, assign) BOOL isPrimarySpell;
 
 @property (nonatomic, assign) CGFloat availableHeight;
 

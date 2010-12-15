@@ -12,6 +12,8 @@
 #import "PrimarySpell.h"
 #import "PrimarySpellView.h"
 #import "PrimarySpellButton.h"
+#import "Mastery.h"
+#import "MasteryView.h"
 #import "Constants.h"
 #import "UIView+Additions.h"
 
@@ -22,6 +24,7 @@
 @interface SummaryViewController (Private)
 
 - (void)setupPrimarySpells;
+- (void)setupMasteries;
 - (void)setupTooltipLabel;
 
 @end
@@ -29,6 +32,7 @@
 @implementation SummaryViewController
 
 @synthesize primarySpells = _primarySpells;
+@synthesize mastery = _mastery;
 
 @synthesize tooltipViewController = _tooltipViewController;
 
@@ -36,6 +40,14 @@
 
 @synthesize talentTree = _talentTree;
 @synthesize delegate = _delegate;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+  self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+  if (self) {
+    _desiredHeight = 0.0;
+  }
+  return self;
+}
 
 - (void)viewDidLoad {
   [_redButton setTitle:self.talentTree.talentTreeName forState:UIControlStateNormal];
@@ -48,6 +60,8 @@
   [_primarySpellButton setImage:myImage forState:UIControlStateNormal];
   
   [self setupPrimarySpells];
+  
+  [self setupMasteries];
   
   [self setupTooltipLabel];
 }
@@ -63,13 +77,13 @@
   
   NSInteger i = 0;
   for (PrimarySpell *spell in self.primarySpells) {
-    PrimarySpellView *primarySpellView = (PrimarySpellView *)[[[NSBundle mainBundle] loadNibNamed:@"PrimarySpellView" owner:self options:nil] objectAtIndex:0];
-
     // Temp
     NSURL *imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL(spell.icon)];
     NSURLRequest *myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
     NSData *returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
     UIImage *myImage  = [[UIImage alloc] initWithData:returnData];
+
+    PrimarySpellView *primarySpellView = (PrimarySpellView *)[[[NSBundle mainBundle] loadNibNamed:@"PrimarySpellView" owner:self options:nil] objectAtIndex:0];
     
     [primarySpellView.primarySpellIcon setImage:myImage forState:UIControlStateNormal];
     primarySpellView.primarySpellIcon.primarySpellIndex = i;
@@ -78,9 +92,29 @@
     primarySpellView.primarySpellNameLabel.text = spell.primarySpellName;
     primarySpellView.top = PRIMARY_SPELL_OFFSET_Y + (i * (primarySpellView.height + PRIMARY_SPELL_MARGIN_Y));
     primarySpellView.left = PRIMARY_SPELL_MARGIN_X;
+    _desiredHeight = primarySpellView.bottom;
     [self.view addSubview:primarySpellView];
     i++;
   }
+}
+
+- (void)setupMasteries {
+  _mastery = [[self.talentTree.masteries anyObject] retain];
+  DLog(@"found masteries: %@ in tree:%@", self.mastery, self.talentTree.talentTreeName);
+  
+//  NSURL *imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL(self.mastery.icon)];
+//  NSURLRequest *myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
+//  NSData *returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
+//  UIImage *myImage  = [[UIImage alloc] initWithData:returnData];
+  
+  MasteryView *masteryView = (MasteryView *)[[[NSBundle mainBundle] loadNibNamed:@"MasteryView" owner:self options:nil] objectAtIndex:0];
+  
+//  [masteryView.masteryIcon setImage:myImage forState:UIControlStateNormal]; // Currently using default mastery icon
+  masteryView.masteryNameLabel.text = self.mastery.masteryName;
+  masteryView.top = _desiredHeight + PRIMARY_SPELL_MARGIN_Y + 2.0;
+  masteryView.left = PRIMARY_SPELL_MARGIN_X;
+  _desiredHeight = masteryView.bottom;
+  [self.view addSubview:masteryView];
 }
 
 - (void)setupTooltipLabel {
@@ -116,7 +150,7 @@
   self.tooltipViewController.availableHeight = self.view.height;
   
   self.tooltipViewController.primarySpell = [self.primarySpells objectAtIndex:[sender primarySpellIndex]];
-  self.tooltipViewController.isPrimarySpell = YES;
+  self.tooltipViewController.tooltipSource = TooltipSourcePrimarySpell;
 
   [self.tooltipViewController reloadTooltipData];
   
@@ -136,6 +170,37 @@
   self.tooltipViewController.view.alpha = 1.0f;
   [UIView commitAnimations];
   
+}
+
+- (IBAction)masteryTapped:(id)sender {
+  if (!self.tooltipViewController) {
+    _tooltipViewController = [[TooltipViewController alloc] init];
+  } else {
+    [self hideTooltip];
+  }
+  
+  self.tooltipViewController.availableHeight = self.view.height;
+  
+  self.tooltipViewController.mastery = self.mastery;
+  self.tooltipViewController.tooltipSource = TooltipSourceMastery;
+  
+  [self.tooltipViewController reloadTooltipData];
+  
+  
+  NSInteger tooltipOffset = _desiredHeight;
+  
+  CGRect tooltipFrame = CGRectMake(10.0, tooltipOffset + 6.0, self.view.width, self.tooltipViewController.view.height);
+  //  [_tooltipPopoverController presentPopoverFromRect:popoverFrame inView:_talentTreeView permittedArrowDirections:NO animated:YES];
+  //  
+  self.tooltipViewController.view.frame = tooltipFrame;
+  
+  self.tooltipViewController.view.alpha = 0.0f;
+  [self.view addSubview:self.tooltipViewController.view];
+  [UIView beginAnimations:@"TooltipTransition" context:nil];
+  [UIView setAnimationCurve:UIViewAnimationCurveLinear];  
+  [UIView setAnimationDuration:0.2f];
+  self.tooltipViewController.view.alpha = 1.0f;
+  [UIView commitAnimations];
 }
 
 - (IBAction)hideTooltip {
@@ -166,6 +231,7 @@
 
 - (void)dealloc {
   if (_primarySpells) [_primarySpells release];
+  if (_mastery) [_mastery release];
   if (_tooltipViewController) [_tooltipViewController release];
   if (_tooltipLabel) [_tooltipLabel release];
   if (_dismissButton) [_dismissButton release];

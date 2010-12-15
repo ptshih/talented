@@ -107,6 +107,9 @@
   // If the side two trees are enabled, we have to reset the side trees also
   if (self.specTreeNo == index && self.state == CalculatorStateAllEnabled) {
     // LOGIC NEEDED
+    UIAlertView *resetAlertView = [[UIAlertView alloc] initWithTitle:@"Can't Rest Tree" message:@"Can't reset specialization tree until other two talent trees have 0 points allocated!" delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+    [resetAlertView show];
+    [resetAlertView autorelease];
     return;
   }
   
@@ -130,8 +133,12 @@
   for (TreeViewController *tvc in self.treeViewArray) {
     tvc.isSpecTree = NO;
     [tvc resetState];
-    [self updateStateFromTreeNo:tvc.treeNo];
+    [tvc updateState];
   }
+  
+  [self updateHeaderState];
+  [self updateHeaderPoints];
+  [self updateFooterLabels];
   
   // Go back to summary view if on talentView
   UIView *activeView = [self.view.subviews objectAtIndex:1];
@@ -439,7 +446,7 @@
   part = MIN(5, points);
   if (part > 0) {
     reqLevel += part;
-    points -= part;
+//    points -= part;
   }
   
   return reqLevel;

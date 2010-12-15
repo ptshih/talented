@@ -10,6 +10,7 @@
 
 @class TalentTree;
 @class TooltipViewController;
+@class Mastery;
 
 @protocol SummaryDelegate <NSObject>
 @required
@@ -21,7 +22,10 @@
   IBOutlet UIButton *_primarySpellButton;
   IBOutlet UIButton *_dismissButton;
   
+  CGFloat _desiredHeight;
+  
   NSArray *_primarySpells;
+  Mastery *_mastery;
   
   TooltipViewController *_tooltipViewController;
   
@@ -32,6 +36,7 @@
 }
 
 @property (nonatomic, retain) NSArray *primarySpells;
+@property (nonatomic, retain) Mastery *mastery;
 
 @property (nonatomic, retain) TooltipViewController *tooltipViewController;
 
@@ -40,6 +45,7 @@
 @property (nonatomic, assign) TalentTree *talentTree;
 @property (nonatomic, assign) id <SummaryDelegate> delegate;
 
+- (IBAction)masteryTapped:(id)sender;
 - (IBAction)spellTapped:(id)sender;
 - (IBAction)selectSpecTree;
 - (IBAction)hideTooltip;
