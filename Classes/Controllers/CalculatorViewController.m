@@ -13,6 +13,7 @@
 #import "TalentTree+Fetch.h"
 #import "Talent.h"
 #import "Constants.h"
+#import "UIColor+i7HexColor.h"
 #import "UIView+Additions.h"
 
 #define SPACING_X 16.0
@@ -235,6 +236,7 @@
     tvc.talentTree = talentTree;
     tvc.delegate = self;
     tvc.talentArray = [[talentTree talents] allObjects];
+    tvc.characterClassId = self.characterClassId;
     tvc.treeNo = [[talentTree treeNo] integerValue];
     tvc.isSpecTree = (tvc.treeNo == self.specTreeNo) ? YES : NO;
     tvc.view.frame = CGRectMake(SPACING_X + (SPACING_X * tvc.treeNo) + (320 * tvc.treeNo), 0, tvc.view.frame.size.width, tvc.view.frame.size.height);

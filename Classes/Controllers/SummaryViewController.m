@@ -16,6 +16,9 @@
 #import "MasteryView.h"
 #import "Constants.h"
 #import "UIView+Additions.h"
+#import "UIColor+i7HexColor.h"
+#import "ImageManipulator.h"
+#import <QuartzCore/QuartzCore.h>
 
 #define PRIMARY_SPELL_MARGIN_X 30.0
 #define PRIMARY_SPELL_MARGIN_Y 10.0
@@ -26,6 +29,7 @@
 - (void)setupPrimarySpells;
 - (void)setupMasteries;
 - (void)setupTooltipLabel;
+- (void)setupBorderColor;
 
 @end
 
@@ -57,13 +61,15 @@
   NSData *returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
   UIImage *myImage  = [[UIImage alloc] initWithData:returnData];
   
-  [_primarySpellButton setImage:myImage forState:UIControlStateNormal];
+  [_primarySpellButton setImage:[ImageManipulator roundCornerImageWithImage:myImage withCornerWidth:20 withCornerHeight:20] forState:UIControlStateNormal];
   
   [self setupPrimarySpells];
   
   [self setupMasteries];
   
   [self setupTooltipLabel];
+  
+  [self setupBorderColor];
 }
 
 - (void)setupPrimarySpells {
@@ -137,6 +143,12 @@
   self.tooltipLabel.height = tooltipSize.height;
   
   [self.view addSubview:self.tooltipLabel];
+}
+
+- (void)setupBorderColor {
+  _glowView.backgroundColor = [UIColor colorWithHexString:self.talentTree.overlayColor];
+  [self.view.layer setBorderColor:[[UIColor colorWithHexString:self.talentTree.overlayColor] CGColor]];
+  [self.view.layer setBorderWidth:1.0];
 }
 
 #pragma mark IBAction

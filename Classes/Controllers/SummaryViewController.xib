@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="4"/>
+			<integer value="8"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -91,10 +91,23 @@
 						<int key="NSvFlags">292</int>
 						<object class="NSMutableArray" key="NSSubviews">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBUIImageView" id="954523944">
+								<reference key="NSNextResponder" ref="307259139"/>
+								<int key="NSvFlags">292</int>
+								<string key="NSFrameSize">{186, 186}</string>
+								<reference key="NSSuperview" ref="307259139"/>
+								<reference key="IBUIBackgroundColor" ref="29186038"/>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<object class="NSCustomResource" key="IBUIImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">summary-glow.png</string>
+								</object>
+							</object>
 							<object class="IBUIButton" id="478022214">
 								<reference key="NSNextResponder" ref="307259139"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{11, 11}, {46, 46}}</string>
+								<string key="NSFrame">{{68, 68}, {50, 50}}</string>
 								<reference key="NSSuperview" ref="307259139"/>
 								<reference key="IBUIBackgroundColor" ref="29186038"/>
 								<bool key="IBUIOpaque">NO</bool>
@@ -109,23 +122,10 @@
 								</object>
 								<reference key="IBUINormalTitleShadowColor" ref="286149952"/>
 							</object>
-							<object class="IBUIImageView" id="954523944">
-								<reference key="NSNextResponder" ref="307259139"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{-61, -61}, {186, 186}}</string>
-								<reference key="NSSuperview" ref="307259139"/>
-								<reference key="IBUIBackgroundColor" ref="29186038"/>
-								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<object class="NSCustomResource" key="IBUIImage">
-									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">summary-glow.png</string>
-								</object>
-							</object>
 							<object class="IBUIImageView" id="113785679">
 								<reference key="NSNextResponder" ref="307259139"/>
 								<int key="NSvFlags">274</int>
-								<string key="NSFrameSize">{68, 68}</string>
+								<string key="NSFrame">{{59, 59}, {68, 68}}</string>
 								<reference key="NSSuperview" ref="307259139"/>
 								<reference key="IBUIBackgroundColor" ref="29186038"/>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
@@ -136,7 +136,7 @@
 								</object>
 							</object>
 						</object>
-						<string key="NSFrame">{{126, 90}, {68, 68}}</string>
+						<string key="NSFrame">{{67, 25}, {186, 186}}</string>
 						<reference key="NSSuperview" ref="1038188339"/>
 						<reference key="IBUIBackgroundColor" ref="29186038"/>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -232,6 +232,14 @@
 					</object>
 					<int key="connectionID">19</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">_glowView</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="954523944"/>
+					</object>
+					<int key="connectionID">20</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -283,8 +291,8 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="113785679"/>
-							<reference ref="478022214"/>
 							<reference ref="954523944"/>
+							<reference ref="478022214"/>
 						</object>
 						<reference key="parent" ref="1038188339"/>
 					</object>
@@ -303,6 +311,7 @@
 						<int key="objectID">15</int>
 						<reference key="object" ref="954523944"/>
 						<reference key="parent" ref="307259139"/>
+						<string key="objectName">glowView</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">17</int>
@@ -339,15 +348,15 @@
 					<string>UIResponder</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">AUCAAABAgAAAA</bytes>
+						<bytes key="NSTransformStruct">AUKMAABCjAAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">AUKCAABDOwAAA</bytes>
+						<bytes key="NSTransformStruct">AcJ0AADCdAAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform"/>
-					<string>{{1296, 1487}, {320, 564}}</string>
+					<string>{{439, 255}, {320, 564}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -377,7 +386,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">19</int>
+			<int key="maxID">20</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -397,11 +406,13 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>hideTooltip</string>
+							<string>masteryTapped:</string>
 							<string>selectSpecTree</string>
 							<string>spellTapped:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -412,6 +423,7 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>hideTooltip</string>
+							<string>masteryTapped:</string>
 							<string>selectSpecTree</string>
 							<string>spellTapped:</string>
 						</object>
@@ -419,6 +431,10 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBActionInfo">
 								<string key="name">hideTooltip</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">masteryTapped:</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
@@ -436,12 +452,14 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>_dismissButton</string>
+							<string>_glowView</string>
 							<string>_primarySpellButton</string>
 							<string>_redButton</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>UIButton</string>
+							<string>UIImageView</string>
 							<string>UIButton</string>
 							<string>UIButton</string>
 						</object>
@@ -451,6 +469,7 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>_dismissButton</string>
+							<string>_glowView</string>
 							<string>_primarySpellButton</string>
 							<string>_redButton</string>
 						</object>
@@ -459,6 +478,10 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">_dismissButton</string>
 								<string key="candidateClassName">UIButton</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">_glowView</string>
+								<string key="candidateClassName">UIImageView</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">_primarySpellButton</string>

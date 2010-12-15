@@ -21,6 +21,7 @@
   IBOutlet UIButton *_redButton;
   IBOutlet UIButton *_primarySpellButton;
   IBOutlet UIButton *_dismissButton;
+  IBOutlet UIImageView *_glowView;
   
   CGFloat _desiredHeight;
   
