@@ -21,6 +21,7 @@
 
 @interface TreeViewController (Private)
 
+- (UIImage *)getBackgroundImage;
 - (void)updateMasteryGlow;
 - (void)prepareArrows;
 - (void)prepareBackground;
@@ -91,9 +92,13 @@
   }
 }
 
+- (UIImage *)getBackgroundImage {
+  return [UIImage imageNamed:[NSString stringWithFormat:@"%d-%d-bg.png", self.characterClassId, self.treeNo]];
+}
+
 #pragma mark Prepare Talents
 - (void)prepareBackground {
-  _backgroundView.image = [UIImage imageNamed:@"paladinholy.png"];
+  _backgroundView.image = [self getBackgroundImage];
 }
 
 - (void)prepareArrows {
