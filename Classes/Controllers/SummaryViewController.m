@@ -110,7 +110,7 @@
   MasteryView *masteryView = (MasteryView *)[[[NSBundle mainBundle] loadNibNamed:@"MasteryView" owner:self options:nil] objectAtIndex:0];
   
 //  [masteryView.masteryIcon setImage:myImage forState:UIControlStateNormal]; // Currently using default mastery icon
-  masteryView.masteryNameLabel.text = self.mastery.masteryName;
+  masteryView.masteryNameLabel.text = [NSString stringWithFormat:@"%@: %@", NSLocalizedString(@"Mastery", @"Mastery"), self.mastery.masteryName];
   masteryView.top = _desiredHeight + PRIMARY_SPELL_MARGIN_Y + 2.0;
   masteryView.left = PRIMARY_SPELL_MARGIN_X;
   _desiredHeight = masteryView.bottom;
@@ -179,7 +179,7 @@
     [self hideTooltip];
   }
   
-  self.tooltipViewController.availableHeight = self.view.height;
+  self.tooltipViewController.availableHeight = self.view.height - _desiredHeight;
   
   self.tooltipViewController.mastery = self.mastery;
   self.tooltipViewController.tooltipSource = TooltipSourceMastery;

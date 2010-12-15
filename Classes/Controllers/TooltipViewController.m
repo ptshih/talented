@@ -237,7 +237,7 @@ static UIImage *_closeButtonImage = nil;
 
       break;
     case 2:
-      self.nameLabel.text = self.mastery.masteryName;
+      self.nameLabel.text = [NSString stringWithFormat:@"%@: %@", NSLocalizedString(@"Mastery", @"Mastery"), self.mastery.masteryName];
       labelSize = [self.nameLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH - CLOSE_BUTTON_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
       break;
     default:
