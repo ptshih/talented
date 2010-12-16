@@ -47,7 +47,7 @@ typedef enum {
   IBOutlet UILabel *_pointsSpent;
   
   TooltipViewController *_tooltipViewController;
-//  UIPopoverController *_tooltipPopoverController;
+
   NSArray *_treeArray;
   NSMutableArray *_treeViewArray;
   NSMutableArray *_summaryViewArray;

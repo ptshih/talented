@@ -169,7 +169,10 @@
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<reference key="IBUIFont" ref="167258632"/>
-						<reference key="IBUIHighlightedTitleColor" ref="949632555"/>
+						<object class="NSColor" key="IBUIHighlightedTitleColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MC42IDAuNiAwLjYgMC42AA</bytes>
+						</object>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">2</int>
 							<bytes key="NSRGB">MC43MTc2NDcwNzU3IDAuNjAzOTIxNTkyMiAwLjQwMzkyMTYwNDIAA</bytes>

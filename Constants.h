@@ -23,8 +23,6 @@
 #define RGBCOLOR(R,G,B) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1.0]
 #define RGBACOLOR(R,G,B,A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
 
-#define kAppWillEnterForeground @"AppWillEnterForegroundNotification"
-
 // App Delegate Macro
 #define APP_DELEGATE ((FacemashAppDelegate *)[[UIApplication sharedApplication] delegate])
 

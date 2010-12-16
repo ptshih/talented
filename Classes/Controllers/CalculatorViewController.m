@@ -255,10 +255,10 @@ static UIImage *_redButtonBackground = nil;
 
 - (void)setupHeader {  
 #ifdef REMOTE_TALENT_IMAGES
-  NSURL *imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL([[self.treeArray objectAtIndex:0] icon])];
-  NSURLRequest *myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
+  NSURL *imageUrl = [[[NSURL alloc] initWithString:WOW_ICON_URL([[self.treeArray objectAtIndex:0] icon])] autorelease];
+  NSURLRequest *myRequest = [[[NSURLRequest alloc] initWithURL:imageUrl] autorelease];
   NSData *returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
-  UIImage *myImage  = [[UIImage alloc] initWithData:returnData];
+  UIImage *myImage  = [[[UIImage alloc] initWithData:returnData] autorelease];
 #else
   UIImage *myImage = [UIImage imageNamed:WOW_ICON_LOCAL([[self.treeArray objectAtIndex:0] icon])];
 #endif
@@ -274,10 +274,10 @@ static UIImage *_redButtonBackground = nil;
   _leftLabel.text = [[self.treeArray objectAtIndex:0] talentTreeName];
   
 #ifdef REMOTE_TALENT_IMAGES
-  imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL([[self.treeArray objectAtIndex:1] icon])];
-  myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
+  imageUrl = [[[NSURL alloc] initWithString:WOW_ICON_URL([[self.treeArray objectAtIndex:1] icon])] autorelease];
+  myRequest = [[[NSURLRequest alloc] initWithURL:imageUrl] autorelease];
   returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
-  myImage  = [[UIImage alloc] initWithData:returnData];
+  myImage  = [[[UIImage alloc] initWithData:returnData] autorelease];
 #else
   myImage = [UIImage imageNamed:WOW_ICON_LOCAL([[self.treeArray objectAtIndex:1] icon])];
 #endif
@@ -293,10 +293,10 @@ static UIImage *_redButtonBackground = nil;
   _middleLabel.text = [[self.treeArray objectAtIndex:1] talentTreeName];
   
 #ifdef REMOTE_TALENT_IMAGES
-  imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL([[self.treeArray objectAtIndex:2] icon])];
-  myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
+  imageUrl = [[[NSURL alloc] initWithString:WOW_ICON_URL([[self.treeArray objectAtIndex:2] icon])] autorelease];
+  myRequest = [[[NSURLRequest alloc] initWithURL:imageUrl] autorelease];
   returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
-  myImage  = [[UIImage alloc] initWithData:returnData];
+  myImage  = [[[UIImage alloc] initWithData:returnData] autorelease];
 #else
   myImage = [UIImage imageNamed:WOW_ICON_LOCAL([[self.treeArray objectAtIndex:2] icon])];
 #endif
@@ -673,13 +673,34 @@ static UIImage *_redButtonBackground = nil;
 
 
 - (void)dealloc {
-//  if (_tooltipPopoverController) [_tooltipPopoverController release];
+  // IBOutlets
+  if (_talentTreeView) [_talentTreeView release];
+  if (_summaryView) [_summaryView release];
+  if (_swapButton) [_swapButton release];
+  if (_resetButton) [_resetButton release];
+  if (_backButton) [_backButton release];
+  if (_loadButton) [_loadButton release];
+  if (_saveButton) [_saveButton release];
+  if (_leftIcon) [_leftIcon release];
+  if (_middleIcon) [_middleIcon release];
+  if (_rightIcon) [_rightIcon release];
+  if (_leftLabel) [_leftLabel release];
+  if (_middleLabel) [_middleLabel release];
+  if (_rightLabel) [_rightLabel release];
+  if (_leftBorder) [_leftBorder release];
+  if (_rightBorder) [_rightBorder release];
+  if (_leftPoints) [_leftPoints release];
+  if (_middlePoints) [_middlePoints release];
+  if (_rightPoints) [_rightPoints release];
+  if (_requiredLevel) [_requiredLevel release];
+  if (_pointsLeft) [_pointsLeft release];
+  if (_pointsSpent) [_pointsSpent release];
+  
   if (_tooltipViewController) [_tooltipViewController release];
   if (_summaryViewArray) [_summaryViewArray release];
   if (_treeViewArray) [_treeViewArray release];
   if (_treeArray) [_treeArray release];
   [super dealloc];
 }
-
 
 @end

@@ -197,8 +197,11 @@ static UIImage *_arthas = nil;
   // e.g. self.myOutlet = nil;
 }
 
-
 - (void)dealloc {
+  if (_loadButton) [_loadButton release];
+  if (_launcherBackground) [_launcherBackground release];
+  if (_launcherBackgroundTwo) [_launcherBackgroundTwo release];
+  if (_classView) [_classView release];
   if (_backgroundArray) [_backgroundArray release];
   [super dealloc];
 }

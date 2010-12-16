@@ -66,10 +66,10 @@ static UIImage *_redButtonBackground = nil;
   [_redButton setTitle:self.talentTree.talentTreeName forState:UIControlStateNormal];
   
 #ifdef REMOTE_TALENT_IMAGES
-  NSURL *imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL(self.talentTree.icon)];
-  NSURLRequest *myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
+  NSURL *imageUrl = [[[NSURL alloc] initWithString:WOW_ICON_URL(self.talentTree.icon)] autorelease];
+  NSURLRequest *myRequest = [[[NSURLRequest alloc] initWithURL:imageUrl] autorelease];
   NSData *returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
-  UIImage *myImage  = [[UIImage alloc] initWithData:returnData];
+  UIImage *myImage  = [[[UIImage alloc] initWithData:returnData] autorelease];
 #else
   UIImage *myImage = [UIImage imageNamed:WOW_ICON_LOCAL(self.talentTree.icon)];
 #endif
@@ -104,10 +104,10 @@ static UIImage *_redButtonBackground = nil;
   NSInteger i = 0;
   for (PrimarySpell *spell in self.primarySpells) {    
 #ifdef REMOTE_TALENT_IMAGES
-    NSURL *imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL(spell.icon)];
-    NSURLRequest *myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
+    NSURL *imageUrl = [[[NSURL alloc] initWithString:WOW_ICON_URL(spell.icon)] autorelease];
+    NSURLRequest *myRequest = [[[NSURLRequest alloc] initWithURL:imageUrl] autorelease];
     NSData *returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
-    UIImage *myImage  = [[UIImage alloc] initWithData:returnData];
+    UIImage *myImage  = [[[UIImage alloc] initWithData:returnData] autorelease];
 #else
     UIImage *myImage = [UIImage imageNamed:WOW_ICON_LOCAL(spell.icon)];
 #endif
@@ -272,6 +272,12 @@ static UIImage *_redButtonBackground = nil;
 
 
 - (void)dealloc {
+  // IBOutlet
+  if (_redButton) [_redButton release];
+  if (_primarySpellButton) [_primarySpellButton release];
+  if (_dismissButton) [_dismissButton release];
+  if (_glowView) [_glowView release];
+      
   if (_primarySpells) [_primarySpells release];
   if (_mastery) [_mastery release];
   if (_tooltipViewController) [_tooltipViewController release];
@@ -279,6 +285,5 @@ static UIImage *_redButtonBackground = nil;
   if (_dismissButton) [_dismissButton release];
   [super dealloc];
 }
-
 
 @end

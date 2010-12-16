@@ -375,8 +375,11 @@
 								<int key="IBUIContentVerticalAlignment">0</int>
 								<reference key="IBUIFont" ref="1018088545"/>
 								<string key="IBUINormalTitle">Swap View</string>
-								<reference key="IBUIHighlightedTitleColor" ref="168675923"/>
-								<object class="NSColor" key="IBUINormalTitleColor" id="809724854">
+								<object class="NSColor" key="IBUIHighlightedTitleColor" id="183754616">
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MC42IDAuNiAwLjYgMC42AA</bytes>
+								</object>
+								<object class="NSColor" key="IBUINormalTitleColor" id="23110080">
 									<int key="NSColorSpace">2</int>
 									<bytes key="NSRGB">MC43MTc2NDcwNzU3IDAuNjAzOTIxNTkyMiAwLjQwMzkyMTYwNDIAA</bytes>
 								</object>
@@ -393,8 +396,8 @@
 								<int key="IBUIContentVerticalAlignment">0</int>
 								<reference key="IBUIFont" ref="1018088545"/>
 								<string key="IBUINormalTitle">Reset</string>
-								<reference key="IBUIHighlightedTitleColor" ref="168675923"/>
-								<reference key="IBUINormalTitleColor" ref="809724854"/>
+								<reference key="IBUIHighlightedTitleColor" ref="183754616"/>
+								<reference key="IBUINormalTitleColor" ref="23110080"/>
 								<reference key="IBUINormalTitleShadowColor" ref="808656939"/>
 							</object>
 							<object class="IBUILabel" id="83872411">
@@ -474,12 +477,12 @@
 						<int key="NSvFlags">292</int>
 						<object class="NSMutableArray" key="NSSubviews">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUIView" id="948106444">
+							<object class="IBUIView" id="159691315">
 								<reference key="NSNextResponder" ref="501683379"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrameSize">{1024, 60}</string>
 								<reference key="NSSuperview" ref="501683379"/>
-								<object class="NSColor" key="IBUIBackgroundColor" id="430741237">
+								<object class="NSColor" key="IBUIBackgroundColor" id="778809191">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MCAwIDAAA</bytes>
 								</object>
@@ -497,8 +500,8 @@
 								<int key="IBUIContentVerticalAlignment">0</int>
 								<reference key="IBUIFont" ref="1018088545"/>
 								<string key="IBUINormalTitle">Save</string>
-								<reference key="IBUIHighlightedTitleColor" ref="168675923"/>
-								<object class="NSColor" key="IBUINormalTitleColor" id="144080722">
+								<reference key="IBUIHighlightedTitleColor" ref="183754616"/>
+								<object class="NSColor" key="IBUINormalTitleColor" id="82390827">
 									<int key="NSColorSpace">2</int>
 									<bytes key="NSRGB">MC43MTc2NDcwNzU3IDAuNjAzOTIxNTkyMiAwLjQwMzkyMTYwNDIAA</bytes>
 								</object>
@@ -515,8 +518,8 @@
 								<int key="IBUIContentVerticalAlignment">0</int>
 								<reference key="IBUIFont" ref="1018088545"/>
 								<string key="IBUINormalTitle">Load</string>
-								<reference key="IBUIHighlightedTitleColor" ref="168675923"/>
-								<reference key="IBUINormalTitleColor" ref="144080722"/>
+								<reference key="IBUIHighlightedTitleColor" ref="183754616"/>
+								<reference key="IBUINormalTitleColor" ref="82390827"/>
 								<reference key="IBUINormalTitleShadowColor" ref="808656939"/>
 							</object>
 							<object class="IBUIButton" id="401804250">
@@ -530,8 +533,8 @@
 								<int key="IBUIContentVerticalAlignment">0</int>
 								<reference key="IBUIFont" ref="1018088545"/>
 								<string key="IBUINormalTitle">Select Class</string>
-								<reference key="IBUIHighlightedTitleColor" ref="168675923"/>
-								<reference key="IBUINormalTitleColor" ref="144080722"/>
+								<reference key="IBUIHighlightedTitleColor" ref="183754616"/>
+								<reference key="IBUINormalTitleColor" ref="82390827"/>
 								<reference key="IBUINormalTitleShadowColor" ref="808656939"/>
 							</object>
 						</object>
@@ -543,7 +546,7 @@
 				</object>
 				<string key="NSFrameSize">{1024, 748}</string>
 				<reference key="NSSuperview"/>
-				<reference key="IBUIBackgroundColor" ref="430741237"/>
+				<reference key="IBUIBackgroundColor" ref="778809191"/>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
 					<int key="IBUIStatusBarStyle">2</int>
@@ -1046,7 +1049,7 @@
 							<reference ref="173238561"/>
 							<reference ref="949172453"/>
 							<reference ref="401804250"/>
-							<reference ref="948106444"/>
+							<reference ref="159691315"/>
 						</object>
 						<reference key="parent" ref="766721923"/>
 						<string key="objectName">navigationView</string>
@@ -1071,7 +1074,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">92</int>
-						<reference key="object" ref="948106444"/>
+						<reference key="object" ref="159691315"/>
 						<reference key="parent" ref="501683379"/>
 					</object>
 				</object>

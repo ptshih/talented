@@ -223,7 +223,7 @@ static UIImage *_closeButtonImage = nil;
 }
 
 - (void)prepareLabels {
-  CGSize labelSize;
+  CGSize labelSize = CGSizeZero;
   
   // Add name label
   switch (self.tooltipSource) {

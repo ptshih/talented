@@ -64,10 +64,10 @@ static UIImage *_abilityYellow = nil;
 
 - (void)prepareTalent {
 #ifdef REMOTE_TALENT_IMAGES
-  NSURL *imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL(self.talent.icon)];
-  NSURLRequest *myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
+  NSURL *imageUrl = [[[NSURL alloc] initWithString:WOW_ICON_URL(self.talent.icon)] autorelease];
+  NSURLRequest *myRequest = [[[NSURLRequest alloc] initWithURL:imageUrl] autorelease];
   NSData *returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
-  UIImage *myImage  = [[UIImage alloc] initWithData:returnData];
+  UIImage *myImage  = [[[UIImage alloc] initWithData:returnData] autorelease];
 #else
   UIImage *myImage = [UIImage imageNamed:WOW_ICON_LOCAL(self.talent.icon)];
 #endif
@@ -223,14 +223,15 @@ static UIImage *_abilityYellow = nil;
 }
 
 - (void)dealloc {
+  // IBOutlet
   if (_talentButton) [_talentButton release];
   if (_talentFrameView) [_talentFrameView release];
   if (_talentPointsView) [_talentPointsView release];
   if (_talentLabel) [_talentLabel release];
+  
   if (_talentColor) [_talentColor release];
   if (_talentGrayscale) [_talentGrayscale release];
   [super dealloc];
 }
-
 
 @end

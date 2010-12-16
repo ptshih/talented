@@ -95,7 +95,7 @@
 }
 
 - (UIImage *)getBackgroundImage {
-  return [UIImage imageNamed:[NSString stringWithFormat:@"%d-%d-bg.png", self.characterClassId, self.treeNo]];
+  return [UIImage imageNamed:[NSString stringWithFormat:@"%d-%d-bg.jpg", self.characterClassId, self.treeNo]];
 }
 
 #pragma mark Prepare Talents
@@ -439,8 +439,10 @@
 
 
 - (void)dealloc {
+  // IBOutlet
   if (_backgroundView) [_backgroundView release];
   if (_masteryGlow) [_masteryGlow release];
+  
   if (_talentArray) [_talentArray release];
   if (_talentViewArray) [_talentViewArray release];
   if (_talentViewDict) [_talentViewDict release];
@@ -448,6 +450,5 @@
   if (_childDict) [_childDict release];
   [super dealloc];
 }
-
 
 @end
