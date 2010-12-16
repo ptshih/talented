@@ -694,6 +694,8 @@ static UIImage *_redButtonBackground = nil;
   if (_requiredLevel) [_requiredLevel release];
   if (_pointsLeft) [_pointsLeft release];
   if (_pointsSpent) [_pointsSpent release];
+  if (_talentTreeView) [_talentTreeView release];
+  if (_summaryView) [_summaryView release];
   
   if (_tooltipViewController) [_tooltipViewController release];
   if (_summaryViewArray) [_summaryViewArray release];

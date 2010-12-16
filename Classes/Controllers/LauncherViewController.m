@@ -9,6 +9,7 @@
 #import "LauncherViewController.h"
 #import "CalculatorViewController.h"
 #import "UIView+Additions.h"
+#import <QuartzCore/QuartzCore.h>
 
 static UIImage *_redButtonBackground = nil;
 static UIImage *_deathwing = nil;
@@ -75,6 +76,9 @@ static UIImage *_arthas = nil;
   [super viewWillDisappear:animated];
   _isVisible = NO;
   _isAnimating = NO;
+  
+  [_launcherBackground.layer removeAllAnimations];
+  [_launcherBackgroundTwo.layer removeAllAnimations];
 }
 
 - (void)viewDidLoad {

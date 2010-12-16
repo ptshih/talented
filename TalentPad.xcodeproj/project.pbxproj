@@ -1681,7 +1681,6 @@
 			isa = PBXGroup;
 			children = (
 				25E083CD12B5A44300646BC7 /* Categories */,
-				2500E62712B4BE0900EB1987 /* TalentData */,
 				257AEA2B129E900E00DE9D51 /* Controllers */,
 				257AEA2C129E900E00DE9D51 /* CoreData */,
 				257AEA2D129E900E00DE9D51 /* Models */,
@@ -1767,13 +1766,6 @@
 			);
 			path = Test;
 			sourceTree = "<group>";
-		};
-		2500E62712B4BE0900EB1987 /* TalentData */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TalentData;
-			sourceTree = SOURCE_ROOT;
 		};
 		2500E6C712B4D37300EB1987 /* json */ = {
 			isa = PBXGroup;

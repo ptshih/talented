@@ -41,6 +41,8 @@ static UIImage *_redButtonBackground = nil;
 
 @synthesize primarySpells = _primarySpells;
 @synthesize mastery = _mastery;
+@synthesize masteryViewArray = _masteryViewArray;
+@synthesize primarySpellViewArray = _primarySpellViewArray;
 
 @synthesize tooltipViewController = _tooltipViewController;
 
@@ -57,6 +59,8 @@ static UIImage *_redButtonBackground = nil;
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
     _desiredHeight = 0.0;
+    _masteryViewArray = [[NSMutableArray alloc] init];
+    _primarySpellViewArray = [[NSMutableArray alloc] init];
   }
   return self;
 }
@@ -129,6 +133,7 @@ static UIImage *_redButtonBackground = nil;
     primarySpellView.top = PRIMARY_SPELL_OFFSET_Y + (i * (primarySpellView.height + PRIMARY_SPELL_MARGIN_Y));
     primarySpellView.left = PRIMARY_SPELL_MARGIN_X;
     _desiredHeight = primarySpellView.bottom;
+    [self.primarySpellViewArray addObject:primarySpellView];
     [self.view addSubview:primarySpellView];
     i++;
   }
@@ -143,13 +148,14 @@ static UIImage *_redButtonBackground = nil;
 //  NSData *returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
 //  UIImage *myImage  = [[UIImage alloc] initWithData:returnData];
   
-  MasteryView *masteryView = (MasteryView *)[[[NSBundle mainBundle] loadNibNamed:@"MasteryView" owner:self options:nil] objectAtIndex:0];
+  MasteryView *masteryView = [[[NSBundle mainBundle] loadNibNamed:@"MasteryView" owner:self options:nil] objectAtIndex:0];
   
 //  [masteryView.masteryIcon setImage:myImage forState:UIControlStateNormal]; // Currently using default mastery icon
   masteryView.masteryNameLabel.text = [NSString stringWithFormat:@"%@: %@", NSLocalizedString(@"Mastery", @"Mastery"), self.mastery.masteryName];
   masteryView.top = _desiredHeight + PRIMARY_SPELL_MARGIN_Y + 2.0;
   masteryView.left = PRIMARY_SPELL_MARGIN_X;
   _desiredHeight = masteryView.bottom;
+  [self.masteryViewArray addObject:masteryView];
   [self.view addSubview:masteryView];
 }
 
@@ -272,17 +278,17 @@ static UIImage *_redButtonBackground = nil;
 
 
 - (void)dealloc {
-  // IBOutlet
-  if (_redButton) [_redButton release];
+  if (_primarySpellViewArray) [_primarySpellViewArray release];
+  if (_masteryViewArray) [_masteryViewArray release];
   if (_primarySpellButton) [_primarySpellButton release];
-  if (_dismissButton) [_dismissButton release];
-  if (_glowView) [_glowView release];
-      
   if (_primarySpells) [_primarySpells release];
   if (_mastery) [_mastery release];
+  
+  if (_redButton) [_redButton release];
+  if (_dismissButton) [_dismissButton release];
+  if (_glowView) [_glowView release];
   if (_tooltipViewController) [_tooltipViewController release];
   if (_tooltipLabel) [_tooltipLabel release];
-  if (_dismissButton) [_dismissButton release];
   [super dealloc];
 }
 

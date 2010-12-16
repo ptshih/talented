@@ -27,6 +27,8 @@
   
   NSArray *_primarySpells;
   Mastery *_mastery;
+  NSMutableArray *_masteryViewArray;
+  NSMutableArray *_primarySpellViewArray;
   
   TooltipViewController *_tooltipViewController;
   
@@ -38,6 +40,8 @@
 
 @property (nonatomic, retain) NSArray *primarySpells;
 @property (nonatomic, retain) Mastery *mastery;
+@property (nonatomic, retain) NSMutableArray *masteryViewArray;
+@property (nonatomic, retain) NSMutableArray *primarySpellViewArray;
 
 @property (nonatomic, retain) TooltipViewController *tooltipViewController;
 

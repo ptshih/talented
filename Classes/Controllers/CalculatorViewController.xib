@@ -843,10 +843,10 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="130334878"/>
-							<reference ref="862889557"/>
 							<reference ref="616015950"/>
 							<reference ref="501683379"/>
 							<reference ref="479409530"/>
+							<reference ref="862889557"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -944,12 +944,6 @@
 						<reference key="object" ref="616015950"/>
 						<reference key="parent" ref="766721923"/>
 						<string key="objectName">talentTreeView</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">25</int>
-						<reference key="object" ref="862889557"/>
-						<reference key="parent" ref="766721923"/>
-						<string key="objectName">summaryView</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">38</int>
@@ -1077,6 +1071,12 @@
 						<reference key="object" ref="159691315"/>
 						<reference key="parent" ref="501683379"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">25</int>
+						<reference key="object" ref="862889557"/>
+						<reference key="parent" ref="766721923"/>
+						<string key="objectName">summaryView</string>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -1175,7 +1175,7 @@
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">AUR0AABBUAAAA</bytes>
 					</object>
-					<string>{{0, 238}, {1024, 768}}</string>
+					<string>{{141, 137}, {1024, 768}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
