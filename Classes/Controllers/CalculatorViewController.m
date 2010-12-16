@@ -674,8 +674,6 @@ static UIImage *_redButtonBackground = nil;
 
 - (void)dealloc {
   // IBOutlets
-  if (_talentTreeView) [_talentTreeView release];
-  if (_summaryView) [_summaryView release];
   if (_swapButton) [_swapButton release];
   if (_resetButton) [_resetButton release];
   if (_backButton) [_backButton release];
@@ -688,6 +686,7 @@ static UIImage *_redButtonBackground = nil;
   if (_middleLabel) [_middleLabel release];
   if (_rightLabel) [_rightLabel release];
   if (_leftBorder) [_leftBorder release];
+  if (_middleBorder) [_middleBorder release];
   if (_rightBorder) [_rightBorder release];
   if (_leftPoints) [_leftPoints release];
   if (_middlePoints) [_middlePoints release];
