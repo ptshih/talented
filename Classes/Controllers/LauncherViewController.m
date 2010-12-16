@@ -34,7 +34,7 @@
 - (void)selectClassWithId:(NSInteger)characterClassId {
   CalculatorViewController *cvc = [[CalculatorViewController alloc] initWithNibName:@"CalculatorViewController" bundle:nil];
   cvc.characterClassId = characterClassId;
-  [self.navigationController pushViewController:cvc animated:YES];
+  [self presentModalViewController:cvc animated:YES];
   [cvc release];
 }
 

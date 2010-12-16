@@ -22,7 +22,6 @@
 @implementation TalentPadAppDelegate
 
 @synthesize window;
-@synthesize navigationController = _navigationController;
 @synthesize launcherViewController = _launcherViewController;
 
 - (void)doCoreDataTests {
@@ -93,11 +92,8 @@
   // Override point for customization after application launch.
   
   _launcherViewController = [[LauncherViewController alloc] initWithNibName:@"LauncherViewController" bundle:nil];
-  _navigationController = [[UINavigationController alloc] initWithRootViewController:self.launcherViewController];
-  self.navigationController.navigationBar.barStyle = UIBarStyleBlackOpaque;
-  self.navigationController.navigationBarHidden = NO;
   
-  [window addSubview:self.navigationController.view];
+  [window addSubview:self.launcherViewController.view];
   [self.window makeKeyAndVisible];
   
   [self doCoreDataTests];
@@ -156,7 +152,6 @@
 
 - (void)dealloc {
   [_launcherViewController release];
-  [_navigationController release];
   [window release];
   [super dealloc];
 }

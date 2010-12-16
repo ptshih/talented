@@ -61,6 +61,11 @@ typedef enum {
 @property (nonatomic, assign) NSInteger totalPoints;
 @property (nonatomic, assign) NSInteger state;
 
+// Nav actions
+- (IBAction)back;
+- (IBAction)save;
+- (IBAction)load;
+
 - (IBAction)resetLeft;
 - (IBAction)resetMiddle;
 - (IBAction)resetRight;

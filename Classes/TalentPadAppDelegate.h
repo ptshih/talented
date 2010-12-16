@@ -12,12 +12,10 @@
 
 @interface TalentPadAppDelegate : NSObject <UIApplicationDelegate> {
   UIWindow *window;
-  UINavigationController *_navigationController;
   LauncherViewController *_launcherViewController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) UINavigationController *navigationController;
 @property (nonatomic, retain) LauncherViewController *launcherViewController;
 
 - (void)talentDataTestForClass:(NSString *)classString;

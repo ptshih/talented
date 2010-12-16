@@ -28,6 +28,7 @@
 @interface CalculatorViewController (Private)
 
 - (void)saveWithName:(NSString *)saveName;
+- (void)loadWithSaveString:(NSString *)saveString;
 - (NSString *)generateSaveString;
 - (void)resetTreeAtIndex:(NSInteger)index;
 - (NSInteger)getRequiredLevel;
@@ -93,9 +94,32 @@
   [self updateFooterLabels];
 }
 
-#pragma mark IBAction
+#pragma mark Navigation
+- (IBAction)back {
+  [self dismissModalViewControllerAnimated:YES];
+}
+
+#pragma mark Save/Load
 - (IBAction)save {
   [self saveWithName:@"Saved Build"]; 
+}
+
+- (IBAction)load {
+  NSString *tmpString = @"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,3,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0";
+  [self loadWithSaveString:tmpString];
+}
+
+- (void)loadWithSaveString:(NSString *)saveString {
+  NSArray *saveArray = [saveString componentsSeparatedByString:@","];
+  NSInteger i = 0;
+  for (TreeViewController *treeVC in self.treeViewArray) {
+    [treeVC resetState];
+    for (TalentViewController *talentVC in treeVC.talentViewArray) {
+      talentVC.currentRank = [[saveArray objectAtIndex:i] integerValue];
+      i++;
+    }
+    [treeVC updateState];
+  }
 }
 
 - (void)saveWithName:(NSString *)saveName {
@@ -114,17 +138,17 @@
 }
 
 - (NSString *)generateSaveString {
-  NSMutableString *saveString = [NSMutableString string];
+  NSMutableArray *saveArray = [NSMutableArray array];
   // Dump talent's current ranks
   for (TreeViewController *treeVC in self.treeViewArray) {
     for (TalentViewController *talentVC in treeVC.talentViewArray) {
-      
-      [saveString appendFormat:@"%d", talentVC.currentRank];
+      [saveArray addObject:[NSString stringWithFormat:@"%d", talentVC.currentRank]];
     }
   }
-  return saveString;
+  return [saveArray componentsJoinedByString:@","];
 }
 
+#pragma mark Reset
 - (IBAction)resetLeft {
   [self resetTreeAtIndex:0];
 }
@@ -158,7 +182,7 @@
   [self updateStateFromTreeNo:index];
 }
 
-- (IBAction)resetAll {  
+- (IBAction)resetAll {
   self.totalPoints = 0;
   self.state = CalculatorStateEnabled;
   self.specTreeNo = -1;
