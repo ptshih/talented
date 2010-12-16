@@ -133,6 +133,7 @@ static UIImage *_redButtonBackground = nil;
       i++;
       j+= talentVC.currentRank;
     }
+    if (treeVC.treeNo == self.specTreeNo) treeVC.isSpecTree = YES;
     treeVC.pointsInTree = j;
   }
   [self updateStateFromTreeNo:self.specTreeNo];

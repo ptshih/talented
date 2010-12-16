@@ -103,7 +103,20 @@
 		25136CDC12B646D000BEFD01 /* icon_warrior.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CD012B646D000BEFD01 /* icon_warrior.png */; };
 		25136D8012B64BDA00BEFD01 /* -1-0-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136D7D12B64BDA00BEFD01 /* -1-0-gray.png */; };
 		25136D8112B64BDA00BEFD01 /* -1-0-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136D7E12B64BDA00BEFD01 /* -1-0-yellow.png */; };
+		255132FC12BA301B0030931A /* worgen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 255132FB12BA301B0030931A /* worgen.jpg */; };
+		2551330A12BA359B0030931A /* angel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2551330512BA359B0030931A /* angel.jpg */; };
+		2551330B12BA359B0030931A /* arthas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2551330612BA359B0030931A /* arthas.jpg */; };
+		2551330C12BA359B0030931A /* darkportal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2551330712BA359B0030931A /* darkportal.jpg */; };
+		2551330D12BA359B0030931A /* sapphiron.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2551330812BA359B0030931A /* sapphiron.jpg */; };
+		2551330E12BA359B0030931A /* illidan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2551330912BA359B0030931A /* illidan.jpg */; };
 		2570267C12B9EF72000A4D7B /* launcher_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2570267B12B9EF72000A4D7B /* launcher_bg.png */; };
+		257026D712B9F857000A4D7B /* loader_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 257026D612B9F857000A4D7B /* loader_bg.png */; };
+		2570288212BA1770000A4D7B /* deathwing_wings.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2570287D12BA1770000A4D7B /* deathwing_wings.jpg */; };
+		2570288312BA1770000A4D7B /* deathwing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2570287E12BA1770000A4D7B /* deathwing.jpg */; };
+		2570288412BA1770000A4D7B /* goblin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2570287F12BA1770000A4D7B /* goblin.jpg */; };
+		2570288512BA1770000A4D7B /* grimbatol.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2570288012BA1770000A4D7B /* grimbatol.jpg */; };
+		2570288612BA1770000A4D7B /* icecrown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2570288112BA1770000A4D7B /* icecrown.jpg */; };
+		2570291412BA2739000A4D7B /* Default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2570291312BA2739000A4D7B /* Default.jpg */; };
 		257AEA28129E8FB900DE9D51 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA27129E8FB900DE9D51 /* CoreData.framework */; };
 		257AEA34129E901900DE9D51 /* SMADataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA31129E901900DE9D51 /* SMADataCenter.m */; };
 		257AEA35129E901900DE9D51 /* SMACoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA33129E901900DE9D51 /* SMACoreDataStack.m */; };
@@ -746,7 +759,6 @@
 		25EC4EAB12B9E17600D173AB /* warrior_talent_icon_singlemindedfury.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25EC4C4E12B9E17600D173AB /* warrior_talent_icon_singlemindedfury.jpg */; };
 		25EC4EAC12B9E17600D173AB /* warrior_talent_icon_skirmisher.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25EC4C4F12B9E17600D173AB /* warrior_talent_icon_skirmisher.jpg */; };
 		25EC4EAD12B9E17600D173AB /* warrior_talent_icon_thunderstruck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25EC4C5012B9E17600D173AB /* warrior_talent_icon_thunderstruck.jpg */; };
-		25EC4F1F12B9EC6C00D173AB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC4F1E12B9EC6C00D173AB /* Default.png */; };
 		25FBA28512B73E6A00F306BC /* icon-border-header-circle-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28212B73E6A00F306BC /* icon-border-header-circle-gray.png */; };
 		25FBA28612B73E6A00F306BC /* icon-border-header-circle-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28312B73E6A00F306BC /* icon-border-header-circle-yellow.png */; };
 		25FBA28712B73E6A00F306BC /* icon-border-header-lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28412B73E6A00F306BC /* icon-border-header-lock.png */; };
@@ -926,7 +938,20 @@
 		25136CD012B646D000BEFD01 /* icon_warrior.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_warrior.png; sourceTree = "<group>"; };
 		25136D7D12B64BDA00BEFD01 /* -1-0-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "-1-0-gray.png"; sourceTree = "<group>"; };
 		25136D7E12B64BDA00BEFD01 /* -1-0-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "-1-0-yellow.png"; sourceTree = "<group>"; };
+		255132FB12BA301B0030931A /* worgen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = worgen.jpg; sourceTree = "<group>"; };
+		2551330512BA359B0030931A /* angel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angel.jpg; sourceTree = "<group>"; };
+		2551330612BA359B0030931A /* arthas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arthas.jpg; sourceTree = "<group>"; };
+		2551330712BA359B0030931A /* darkportal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darkportal.jpg; sourceTree = "<group>"; };
+		2551330812BA359B0030931A /* sapphiron.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sapphiron.jpg; sourceTree = "<group>"; };
+		2551330912BA359B0030931A /* illidan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = illidan.jpg; sourceTree = "<group>"; };
 		2570267B12B9EF72000A4D7B /* launcher_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launcher_bg.png; sourceTree = "<group>"; };
+		257026D612B9F857000A4D7B /* loader_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loader_bg.png; sourceTree = "<group>"; };
+		2570287D12BA1770000A4D7B /* deathwing_wings.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deathwing_wings.jpg; sourceTree = "<group>"; };
+		2570287E12BA1770000A4D7B /* deathwing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deathwing.jpg; sourceTree = "<group>"; };
+		2570287F12BA1770000A4D7B /* goblin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = goblin.jpg; sourceTree = "<group>"; };
+		2570288012BA1770000A4D7B /* grimbatol.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grimbatol.jpg; sourceTree = "<group>"; };
+		2570288112BA1770000A4D7B /* icecrown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icecrown.jpg; sourceTree = "<group>"; };
+		2570291312BA2739000A4D7B /* Default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Default.jpg; sourceTree = "<group>"; };
 		257AEA22129E8F8900DE9D51 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		257AEA27129E8FB900DE9D51 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		257AEA30129E901900DE9D51 /* SMADataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMADataCenter.h; sourceTree = "<group>"; };
@@ -1587,7 +1612,6 @@
 		25EC4C4E12B9E17600D173AB /* warrior_talent_icon_singlemindedfury.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = warrior_talent_icon_singlemindedfury.jpg; sourceTree = "<group>"; };
 		25EC4C4F12B9E17600D173AB /* warrior_talent_icon_skirmisher.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = warrior_talent_icon_skirmisher.jpg; sourceTree = "<group>"; };
 		25EC4C5012B9E17600D173AB /* warrior_talent_icon_thunderstruck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = warrior_talent_icon_thunderstruck.jpg; sourceTree = "<group>"; };
-		25EC4F1E12B9EC6C00D173AB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		25FBA28212B73E6A00F306BC /* icon-border-header-circle-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-border-header-circle-gray.png"; sourceTree = "<group>"; };
 		25FBA28312B73E6A00F306BC /* icon-border-header-circle-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-border-header-circle-yellow.png"; sourceTree = "<group>"; };
 		25FBA28412B73E6A00F306BC /* icon-border-header-lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-border-header-lock.png"; sourceTree = "<group>"; };
@@ -1831,6 +1855,17 @@
 		25136CC412B646D000BEFD01 /* launcher */ = {
 			isa = PBXGroup;
 			children = (
+				2551330512BA359B0030931A /* angel.jpg */,
+				2551330612BA359B0030931A /* arthas.jpg */,
+				2551330712BA359B0030931A /* darkportal.jpg */,
+				2551330812BA359B0030931A /* sapphiron.jpg */,
+				2551330912BA359B0030931A /* illidan.jpg */,
+				2570287D12BA1770000A4D7B /* deathwing_wings.jpg */,
+				2570287E12BA1770000A4D7B /* deathwing.jpg */,
+				2570287F12BA1770000A4D7B /* goblin.jpg */,
+				2570288012BA1770000A4D7B /* grimbatol.jpg */,
+				2570288112BA1770000A4D7B /* icecrown.jpg */,
+				255132FB12BA301B0030931A /* worgen.jpg */,
 				2570267B12B9EF72000A4D7B /* launcher_bg.png */,
 				25136CC512B646D000BEFD01 /* icon_deathknight.png */,
 				25136CC612B646D000BEFD01 /* icon_druid.png */,
@@ -1985,7 +2020,8 @@
 				25FBAB7012B8EF6500F306BC /* role_dps.png */,
 				25FBAB7112B8EF6500F306BC /* role_tank.png */,
 				25FBAB7212B8EF6500F306BC /* role_healer.png */,
-				25EC4F1E12B9EC6C00D173AB /* Default.png */,
+				257026D612B9F857000A4D7B /* loader_bg.png */,
+				2570291312BA2739000A4D7B /* Default.jpg */,
 			);
 			name = Assets;
 			path = Resources/Assets;
@@ -3490,8 +3526,20 @@
 				25EC4EAB12B9E17600D173AB /* warrior_talent_icon_singlemindedfury.jpg in Resources */,
 				25EC4EAC12B9E17600D173AB /* warrior_talent_icon_skirmisher.jpg in Resources */,
 				25EC4EAD12B9E17600D173AB /* warrior_talent_icon_thunderstruck.jpg in Resources */,
-				25EC4F1F12B9EC6C00D173AB /* Default.png in Resources */,
 				2570267C12B9EF72000A4D7B /* launcher_bg.png in Resources */,
+				257026D712B9F857000A4D7B /* loader_bg.png in Resources */,
+				2570288212BA1770000A4D7B /* deathwing_wings.jpg in Resources */,
+				2570288312BA1770000A4D7B /* deathwing.jpg in Resources */,
+				2570288412BA1770000A4D7B /* goblin.jpg in Resources */,
+				2570288512BA1770000A4D7B /* grimbatol.jpg in Resources */,
+				2570288612BA1770000A4D7B /* icecrown.jpg in Resources */,
+				2570291412BA2739000A4D7B /* Default.jpg in Resources */,
+				255132FC12BA301B0030931A /* worgen.jpg in Resources */,
+				2551330A12BA359B0030931A /* angel.jpg in Resources */,
+				2551330B12BA359B0030931A /* arthas.jpg in Resources */,
+				2551330C12BA359B0030931A /* darkportal.jpg in Resources */,
+				2551330D12BA359B0030931A /* sapphiron.jpg in Resources */,
+				2551330E12BA359B0030931A /* illidan.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

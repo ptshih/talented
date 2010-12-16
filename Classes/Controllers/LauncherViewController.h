@@ -10,9 +10,17 @@
 
 
 @interface LauncherViewController : UIViewController {
-
+  IBOutlet UIButton *_loadButton;
+  IBOutlet UIImageView *_launcherBackground;
+  IBOutlet UIImageView *_launcherBackgroundTwo;
+  IBOutlet UIView *_classView;
+  BOOL _isVisible;
+  BOOL _isAnimating;
+  NSArray *_backgroundArray;
+  NSInteger _backgroundIndex;
 }
 
+@property (nonatomic, retain) NSArray *backgroundArray;
 
 - (IBAction)warrior;
 - (IBAction)paladin;

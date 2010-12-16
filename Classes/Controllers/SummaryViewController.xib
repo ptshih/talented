@@ -154,7 +154,7 @@
 								</object>
 							</object>
 						</object>
-						<string key="NSFrame">{{67, 27}, {186, 186}}</string>
+						<string key="NSFrame">{{67, 30}, {186, 186}}</string>
 						<reference key="NSSuperview" ref="1038188339"/>
 						<reference key="IBUIBackgroundColor" ref="29186038"/>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -172,7 +172,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="949632555"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">2</int>
-							<bytes key="NSRGB">MC45NzI1NDkwODA4IDAuODM1Mjk0MTg3MSAwAA</bytes>
+							<bytes key="NSRGB">MC43MTc2NDcwNzU3IDAuNjAzOTIxNTkyMiAwLjQwMzkyMTYwNDIAA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="286149952"/>
 					</object>
