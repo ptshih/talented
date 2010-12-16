@@ -20,9 +20,13 @@
 #import "ImageManipulator.h"
 #import <QuartzCore/QuartzCore.h>
 
+#import "SMACoreDataStack.h"
+
 #define PRIMARY_SPELL_MARGIN_X 30.0
 #define PRIMARY_SPELL_MARGIN_Y 10.0
 #define PRIMARY_SPELL_OFFSET_Y 180.0
+
+static UIImage *_redButtonBackground = nil;
 
 @interface SummaryViewController (Private)
 
@@ -45,6 +49,10 @@
 @synthesize talentTree = _talentTree;
 @synthesize delegate = _delegate;
 
++ (void)initialize {
+  _redButtonBackground = [[[UIImage imageNamed:@"red_button.png"] stretchableImageWithLeftCapWidth:6 topCapHeight:6] retain];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
@@ -54,12 +62,24 @@
 }
 
 - (void)viewDidLoad {
+  [_redButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
   [_redButton setTitle:self.talentTree.talentTreeName forState:UIControlStateNormal];
   
+#ifdef REMOTE_TALENT_IMAGES
   NSURL *imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL(self.talentTree.icon)];
   NSURLRequest *myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
   NSData *returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
   UIImage *myImage  = [[UIImage alloc] initWithData:returnData];
+#else
+  UIImage *myImage = [UIImage imageNamed:WOW_ICON_LOCAL(self.talentTree.icon)];
+#endif
+  
+#ifdef DOWNLOAD_TALENT_IMAGES
+  NSString *filePath = [[SMACoreDataStack applicationDocumentsDirectory] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.jpg", self.talentTree.icon]];
+  if (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+    [[NSFileManager defaultManager] createFileAtPath:filePath contents:returnData attributes:nil];
+  }
+#endif
   
   [_primarySpellButton setImage:[ImageManipulator roundCornerImageWithImage:myImage withCornerWidth:20 withCornerHeight:20] forState:UIControlStateNormal];
   
@@ -82,13 +102,23 @@
   DLog(@"found primary spells: %@ in tree:%@", self.primarySpells, self.talentTree.talentTreeName);
   
   NSInteger i = 0;
-  for (PrimarySpell *spell in self.primarySpells) {
-    // Temp
+  for (PrimarySpell *spell in self.primarySpells) {    
+#ifdef REMOTE_TALENT_IMAGES
     NSURL *imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL(spell.icon)];
     NSURLRequest *myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
     NSData *returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
     UIImage *myImage  = [[UIImage alloc] initWithData:returnData];
+#else
+    UIImage *myImage = [UIImage imageNamed:WOW_ICON_LOCAL(spell.icon)];
+#endif
 
+#ifdef DOWNLOAD_TALENT_IMAGES
+    NSString *filePath = [[SMACoreDataStack applicationDocumentsDirectory] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.jpg", spell.icon]];
+    if (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+      [[NSFileManager defaultManager] createFileAtPath:filePath contents:returnData attributes:nil];
+    }
+#endif
+    
     PrimarySpellView *primarySpellView = (PrimarySpellView *)[[[NSBundle mainBundle] loadNibNamed:@"PrimarySpellView" owner:self options:nil] objectAtIndex:0];
     
     [primarySpellView.primarySpellIcon setImage:myImage forState:UIControlStateNormal];

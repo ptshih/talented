@@ -104,6 +104,24 @@
 									<string key="NSResourceName">summary-glow.png</string>
 								</object>
 							</object>
+							<object class="IBUIButton" id="892311479">
+								<reference key="NSNextResponder" ref="307259139"/>
+								<int key="NSvFlags">274</int>
+								<string key="NSFrameSize">{186, 186}</string>
+								<reference key="NSSuperview" ref="307259139"/>
+								<reference key="IBUIBackgroundColor" ref="29186038"/>
+								<bool key="IBUIOpaque">NO</bool>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<int key="IBUIContentHorizontalAlignment">0</int>
+								<int key="IBUIContentVerticalAlignment">0</int>
+								<reference key="IBUIFont" ref="167258632"/>
+								<reference key="IBUIHighlightedTitleColor" ref="949632555"/>
+								<object class="NSColor" key="IBUINormalTitleColor">
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
+								</object>
+								<reference key="IBUINormalTitleShadowColor" ref="286149952"/>
+							</object>
 							<object class="IBUIButton" id="478022214">
 								<reference key="NSNextResponder" ref="307259139"/>
 								<int key="NSvFlags">292</int>
@@ -157,10 +175,6 @@
 							<bytes key="NSRGB">MC45NzI1NDkwODA4IDAuODM1Mjk0MTg3MSAwAA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="286149952"/>
-						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">red_button.png</string>
-						</object>
 					</object>
 				</object>
 				<string key="NSFrameSize">{320, 564}</string>
@@ -240,6 +254,15 @@
 					</object>
 					<int key="connectionID">20</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">hideTooltip</string>
+						<reference key="source" ref="892311479"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">22</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -293,6 +316,7 @@
 							<reference ref="113785679"/>
 							<reference ref="954523944"/>
 							<reference ref="478022214"/>
+							<reference ref="892311479"/>
 						</object>
 						<reference key="parent" ref="1038188339"/>
 					</object>
@@ -319,6 +343,12 @@
 						<reference key="parent" ref="1038188339"/>
 						<string key="objectName">dismissButton</string>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">21</int>
+						<reference key="object" ref="892311479"/>
+						<reference key="parent" ref="307259139"/>
+						<string key="objectName">dismissButton</string>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -333,6 +363,8 @@
 					<string>15.IBViewBoundsToFrameTransform</string>
 					<string>17.IBPluginDependency</string>
 					<string>17.IBViewBoundsToFrameTransform</string>
+					<string>21.IBPluginDependency</string>
+					<string>21.IBViewBoundsToFrameTransform</string>
 					<string>4.IBEditorWindowLastContentRect</string>
 					<string>4.IBPluginDependency</string>
 					<string>5.IBPluginDependency</string>
@@ -354,6 +386,8 @@
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">AcJ0AADCdAAAA</bytes>
 					</object>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform"/>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform"/>
 					<string>{{439, 255}, {320, 564}}</string>
@@ -386,7 +420,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">20</int>
+			<int key="maxID">22</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -721,14 +755,12 @@
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<object class="NSArray" key="dict.sortedKeys">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>red_button.png</string>
 				<string>summary-glow.png</string>
 				<string>summary_bg.jpg</string>
 				<string>tree-overview-icon-frame.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>{157, 21}</string>
 				<string>{186, 186}</string>
 				<string>{1, 1}</string>
 				<string>{68, 68}</string>

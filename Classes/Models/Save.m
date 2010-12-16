@@ -11,6 +11,7 @@
 
 @implementation Save 
 
+@dynamic saveSpecTree;
 @dynamic saveName;
 @dynamic middlePoints;
 @dynamic saveString;
@@ -23,6 +24,7 @@
   if (dictionary) {
     Save *newSave = [NSEntityDescription insertNewObjectForEntityForName:@"Save" inManagedObjectContext:context];
     
+    newSave.saveSpecTree = [dictionary objectForKey:@"saveSpecTree"];
     newSave.characterClassId = [dictionary objectForKey:@"characterClassId"];
     newSave.saveName = [dictionary objectForKey:@"saveName"];
     newSave.saveString = [dictionary objectForKey:@"saveString"];

@@ -7,9 +7,13 @@
  *
  */
 
+//#define REMOTE_TALENT_IMAGES // this downloads and uses icons from wowarmory
+//#define DOWNLOAD_TALENT_IMAGES // if this is defined, we will save the icons to disk
+
 #define WOW_ASSETS_URL @"http://us.battle.net/wow-assets/static/images/icons/56/"
 
 #define WOW_ICON_URL(icon) [NSString stringWithFormat:@"%@%@.jpg", WOW_ASSETS_URL, icon]
+#define WOW_ICON_LOCAL(icon) [NSString stringWithFormat:@"%@.jpg", icon]
 
 #define LABEL_COLOR_GREEN RGBCOLOR(25.0,182.0,0.0)
 #define LABEL_COLOR_YELLOW RGBCOLOR(255.0,210.0,0.0)

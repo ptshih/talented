@@ -25,10 +25,12 @@
 #define MAX_POINTS 41
 #define SPEC_POINTS_LIMIT 31
 
+static UIImage *_redButtonBackground = nil;
+
 @interface CalculatorViewController (Private)
 
 - (void)saveWithName:(NSString *)saveName;
-- (void)loadWithSaveString:(NSString *)saveString;
+- (void)loadWithSaveString:(NSString *)saveString andSpecTree:(NSNumber *)specTree;
 - (NSString *)generateSaveString;
 - (void)resetTreeAtIndex:(NSInteger)index;
 - (NSInteger)getRequiredLevel;
@@ -36,6 +38,7 @@
 - (void)updateHeaderPoints;
 - (void)updateHeaderState;
 - (void)setupHeader;
+- (void)setupButtons;
 - (void)setSwapButtonTitle;
 - (void)fetchTrees;
 - (void)prepareSummaries;
@@ -56,6 +59,10 @@
 @synthesize specTreeNo = _specTreeNo;
 @synthesize totalPoints = _totalPoints;
 @synthesize state = _state;
+
++ (void)initialize {
+  _redButtonBackground = [[[UIImage imageNamed:@"red_button.png"] stretchableImageWithLeftCapWidth:5 topCapHeight:5] retain];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -92,6 +99,9 @@
   
   // Setup Footer
   [self updateFooterLabels];
+  
+  // Setup Buttons (red buttons)
+  [self setupButtons];
 }
 
 #pragma mark Navigation
@@ -106,26 +116,38 @@
 
 - (IBAction)load {
   NSString *tmpString = @"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,3,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0";
-  [self loadWithSaveString:tmpString];
+  [self loadWithSaveString:tmpString andSpecTree:[NSNumber numberWithInteger:1]];
 }
 
-- (void)loadWithSaveString:(NSString *)saveString {
+- (void)loadWithSaveString:(NSString *)saveString andSpecTree:(NSNumber *)specTree {
+  [self resetAll];
+  self.specTreeNo = [specTree integerValue];
   NSArray *saveArray = [saveString componentsSeparatedByString:@","];
   NSInteger i = 0;
+  NSInteger j = 0;
   for (TreeViewController *treeVC in self.treeViewArray) {
     [treeVC resetState];
+    j = 0;
     for (TalentViewController *talentVC in treeVC.talentViewArray) {
       talentVC.currentRank = [[saveArray objectAtIndex:i] integerValue];
       i++;
+      j+= talentVC.currentRank;
     }
-    [treeVC updateState];
+    treeVC.pointsInTree = j;
+  }
+  [self updateStateFromTreeNo:self.specTreeNo];
+  
+  // Go back to talentView view if on summaryView
+  UIView *activeView = [self.view.subviews objectAtIndex:1];
+  if ([activeView isEqual:_summaryView]) {
+    [self swapViews];
   }
 }
 
 - (void)saveWithName:(NSString *)saveName {
   NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
   
-  NSDictionary *saveDict = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:self.characterClassId], @"characterClassId", saveName, @"saveName", [self generateSaveString], @"saveString", [NSNumber numberWithInteger:[[self.treeViewArray objectAtIndex:0] pointsInTree]], @"leftPoints", [NSNumber numberWithInteger:[[self.treeViewArray objectAtIndex:1] pointsInTree]], @"middlePoints", [NSNumber numberWithInteger:[[self.treeViewArray objectAtIndex:2] pointsInTree]], @"rightPoints", [NSDate date], @"timestamp", nil];
+  NSDictionary *saveDict = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:self.characterClassId], @"characterClassId", [NSNumber numberWithInteger:self.specTreeNo], @"saveSpecTree", saveName, @"saveName", [self generateSaveString], @"saveString", [NSNumber numberWithInteger:[[self.treeViewArray objectAtIndex:0] pointsInTree]], @"leftPoints", [NSNumber numberWithInteger:[[self.treeViewArray objectAtIndex:1] pointsInTree]], @"middlePoints", [NSNumber numberWithInteger:[[self.treeViewArray objectAtIndex:2] pointsInTree]], @"rightPoints", [NSDate date], @"timestamp", nil];
   
   Save *newSave = [Save addSaveWithDictionary:saveDict inContext:context];
   
@@ -222,27 +244,68 @@
   }
 }
 
-- (void)setupHeader {
+- (void)setupButtons {
+  [_backButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
+  [_loadButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
+  [_saveButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
+  [_swapButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
+  [_resetButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
+}
+
+- (void)setupHeader {  
+#ifdef REMOTE_TALENT_IMAGES
   NSURL *imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL([[self.treeArray objectAtIndex:0] icon])];
   NSURLRequest *myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
   NSData *returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
   UIImage *myImage  = [[UIImage alloc] initWithData:returnData];
+#else
+  UIImage *myImage = [UIImage imageNamed:WOW_ICON_LOCAL([[self.treeArray objectAtIndex:0] icon])];
+#endif
+  
+#ifdef DOWNLOAD_TALENT_IMAGES
+  NSString *filePath = [[SMACoreDataStack applicationDocumentsDirectory] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.jpg", [[self.treeArray objectAtIndex:0] icon]]];
+  if (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+    [[NSFileManager defaultManager] createFileAtPath:filePath contents:returnData attributes:nil];
+  }
+#endif
   
   _leftIcon.image = myImage;
   _leftLabel.text = [[self.treeArray objectAtIndex:0] talentTreeName];
   
+#ifdef REMOTE_TALENT_IMAGES
   imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL([[self.treeArray objectAtIndex:1] icon])];
   myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
   returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
   myImage  = [[UIImage alloc] initWithData:returnData];
+#else
+  myImage = [UIImage imageNamed:WOW_ICON_LOCAL([[self.treeArray objectAtIndex:1] icon])];
+#endif
+  
+#ifdef DOWNLOAD_TALENT_IMAGES
+  filePath = [[SMACoreDataStack applicationDocumentsDirectory] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.jpg", [[self.treeArray objectAtIndex:1] icon]]];
+  if (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+    [[NSFileManager defaultManager] createFileAtPath:filePath contents:returnData attributes:nil];
+  }
+#endif
   
   _middleIcon.image = myImage;
   _middleLabel.text = [[self.treeArray objectAtIndex:1] talentTreeName];
   
+#ifdef REMOTE_TALENT_IMAGES
   imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL([[self.treeArray objectAtIndex:2] icon])];
   myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
   returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
   myImage  = [[UIImage alloc] initWithData:returnData];
+#else
+  myImage = [UIImage imageNamed:WOW_ICON_LOCAL([[self.treeArray objectAtIndex:2] icon])];
+#endif
+  
+#ifdef DOWNLOAD_TALENT_IMAGES
+  filePath = [[SMACoreDataStack applicationDocumentsDirectory] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.jpg", [[self.treeArray objectAtIndex:2] icon]]];
+  if (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+    [[NSFileManager defaultManager] createFileAtPath:filePath contents:returnData attributes:nil];
+  }
+#endif
   
   _rightIcon.image = myImage;
   _rightLabel.text = [[self.treeArray objectAtIndex:2] talentTreeName];

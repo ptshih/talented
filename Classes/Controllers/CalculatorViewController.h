@@ -24,6 +24,11 @@ typedef enum {
   IBOutlet UIButton *_swapButton;
   IBOutlet UIButton *_resetButton;
   
+  // Navigation
+  IBOutlet UIButton *_backButton;
+  IBOutlet UIButton *_loadButton;
+  IBOutlet UIButton *_saveButton;
+  
   // Header Stuff
   IBOutlet UIImageView *_leftIcon;
   IBOutlet UIImageView *_middleIcon;

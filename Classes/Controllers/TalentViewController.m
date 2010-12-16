@@ -11,6 +11,8 @@
 #import "UIImage+Manipulation.h"
 #import "Constants.h"
 
+#import "SMACoreDataStack.h"
+
 static UIImage *_iconYellow = nil;
 static UIImage *_iconGreen = nil;
 static UIImage *_iconGray = nil;
@@ -61,12 +63,23 @@ static UIImage *_abilityYellow = nil;
 }
 
 - (void)prepareTalent {
+#ifdef REMOTE_TALENT_IMAGES
   NSURL *imageUrl = [[NSURL alloc] initWithString:WOW_ICON_URL(self.talent.icon)];
   NSURLRequest *myRequest = [[NSURLRequest alloc] initWithURL:imageUrl];
   NSData *returnData = [NSURLConnection sendSynchronousRequest:myRequest returningResponse:nil error:nil];
   UIImage *myImage  = [[UIImage alloc] initWithData:returnData];
+#else
+  UIImage *myImage = [UIImage imageNamed:WOW_ICON_LOCAL(self.talent.icon)];
+#endif
   
-  _talentColor = myImage;
+#ifdef DOWNLOAD_TALENT_IMAGES
+  NSString *filePath = [[SMACoreDataStack applicationDocumentsDirectory] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.jpg", self.talent.icon]];
+  if (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+    [[NSFileManager defaultManager] createFileAtPath:filePath contents:returnData attributes:nil];
+  }
+#endif
+  
+  _talentColor = [myImage retain];
   _talentGrayscale = [[UIImage convertToGrayscale:myImage] retain];
   [_talentButton setImage:_talentColor forState:UIControlStateNormal];
   

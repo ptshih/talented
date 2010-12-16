@@ -13,6 +13,7 @@
 {
 }
 
+@property (nonatomic, retain) NSNumber * saveSpecTree;
 @property (nonatomic, retain) NSString * saveName;
 @property (nonatomic, retain) NSNumber * middlePoints;
 @property (nonatomic, retain) NSString * saveString;
