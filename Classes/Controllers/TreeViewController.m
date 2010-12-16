@@ -39,6 +39,7 @@
 @implementation TreeViewController
 
 @synthesize talentArray = _talentArray;
+@synthesize talentViewArray = _talentViewArray;
 @synthesize talentViewDict = _talentViewDict;
 @synthesize childDict = _childDict;
 @synthesize arrowViewDict = _arrowViewDict;
@@ -55,6 +56,7 @@
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
     _talentArray = [[NSArray array] retain];
+    _talentViewArray = [[NSMutableArray alloc] init];
     _talentViewDict = [[NSMutableDictionary alloc] init];
     _arrowViewDict = [[NSMutableDictionary alloc] init];
     _childDict = [[NSMutableDictionary alloc] init];
@@ -150,6 +152,7 @@
     tvc.delegate = self;
     tvc.view.frame = CGRectMake(8.0 + ((SPACING_X + T_WIDTH) * [talent.col integerValue]), 8.0 + ((SPACING_Y + T_HEIGHT) * [talent.tier integerValue]), tvc.view.frame.size.width, tvc.view.frame.size.height);
     [self.view addSubview:tvc.view];
+    [self.talentViewArray addObject:tvc];
     [self.talentViewDict setObject:tvc forKey:[talent.talentId stringValue]];
     if (talent.req) {
       // A talent may have multiple children
@@ -439,6 +442,7 @@
   if (_backgroundView) [_backgroundView release];
   if (_masteryGlow) [_masteryGlow release];
   if (_talentArray) [_talentArray release];
+  if (_talentViewArray) [_talentViewArray release];
   if (_talentViewDict) [_talentViewDict release];
   if (_arrowViewDict) [_arrowViewDict release];
   if (_childDict) [_childDict release];

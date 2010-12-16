@@ -15,6 +15,7 @@
 {
 }
 
+@property (nonatomic, retain) NSNumber * index;
 @property (nonatomic, retain) NSNumber * col;
 @property (nonatomic, retain) NSString * talentName;
 @property (nonatomic, retain) NSNumber * talentId;
@@ -25,7 +26,7 @@
 @property (nonatomic, retain) TalentTree * talentTree;
 @property (nonatomic, retain) NSSet* ranks;
 
-+ (Talent *)addTalentWithDictionary:(NSDictionary *)dictionary forTalentTree:(TalentTree *)talentTree inContext:(NSManagedObjectContext *)context;
++ (Talent *)addTalentWithDictionary:(NSDictionary *)dictionary forTalentTree:(TalentTree *)talentTree forIndex:(NSInteger)index inContext:(NSManagedObjectContext *)context;
 
 @end
 

@@ -28,6 +28,8 @@
 
 + (TalentTree *)addTalentTreeWithDictionary:(NSDictionary *)dictionary forCharacterClass:(CharacterClass *)characterClass inContext:(NSManagedObjectContext *)context {
   if (dictionary) {
+    NSInteger i = 0;
+    
     TalentTree *newTalentTree = [NSEntityDescription insertNewObjectForEntityForName:@"TalentTree" inManagedObjectContext:context];
     
     newTalentTree.treeNo = [dictionary objectForKey:@"treeNo"];
@@ -45,8 +47,10 @@
     // Talents
     NSMutableSet *talentsSet = [NSMutableSet set];
     NSArray *talents = [dictionary objectForKey:@"talents"];
+    i = 0;
     for (NSDictionary *talent in talents) {
-      [talentsSet addObject:[Talent addTalentWithDictionary:talent forTalentTree:newTalentTree inContext:context]];
+      [talentsSet addObject:[Talent addTalentWithDictionary:talent forTalentTree:newTalentTree forIndex:i inContext:context]];
+      i++;
     }
     newTalentTree.talents = talentsSet;
     
@@ -62,7 +66,7 @@
     NSMutableSet *primarySpellsSet = [NSMutableSet set];
     NSArray *primarySpells = [dictionary objectForKey:@"primarySpells"];
     
-    NSInteger i = 0;
+    i = 0;
     for (NSDictionary *primarySpell in primarySpells) {
       [primarySpellsSet addObject:[PrimarySpell addPrimarySpellWithDictionary:primarySpell forTalentTree:newTalentTree forIndex:i inContext:context]];
       i++;

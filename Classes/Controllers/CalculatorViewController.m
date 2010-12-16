@@ -12,6 +12,7 @@
 #import "TalentTree.h"
 #import "TalentTree+Fetch.h"
 #import "Talent.h"
+#import "Save.h"
 #import "Constants.h"
 #import "UIColor+i7HexColor.h"
 #import "UIView+Additions.h"
@@ -26,6 +27,8 @@
 
 @interface CalculatorViewController (Private)
 
+- (void)saveWithName:(NSString *)saveName;
+- (NSString *)generateSaveString;
 - (void)resetTreeAtIndex:(NSInteger)index;
 - (NSInteger)getRequiredLevel;
 - (void)updateFooterLabels;
@@ -91,6 +94,37 @@
 }
 
 #pragma mark IBAction
+- (IBAction)save {
+  [self saveWithName:@"Saved Build"]; 
+}
+
+- (void)saveWithName:(NSString *)saveName {
+  NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
+  
+  NSDictionary *saveDict = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:self.characterClassId], @"characterClassId", saveName, @"saveName", [self generateSaveString], @"saveString", [NSNumber numberWithInteger:[[self.treeViewArray objectAtIndex:0] pointsInTree]], @"leftPoints", [NSNumber numberWithInteger:[[self.treeViewArray objectAtIndex:1] pointsInTree]], @"middlePoints", [NSNumber numberWithInteger:[[self.treeViewArray objectAtIndex:2] pointsInTree]], @"rightPoints", [NSDate date], @"timestamp", nil];
+  
+  Save *newSave = [Save addSaveWithDictionary:saveDict inContext:context];
+  
+  if (newSave) {
+    if (context.hasChanges) {
+      if (![context save:nil]) {
+      }
+    }
+  }
+}
+
+- (NSString *)generateSaveString {
+  NSMutableString *saveString = [NSMutableString string];
+  // Dump talent's current ranks
+  for (TreeViewController *treeVC in self.treeViewArray) {
+    for (TalentViewController *talentVC in treeVC.talentViewArray) {
+      
+      [saveString appendFormat:@"%d", talentVC.currentRank];
+    }
+  }
+  return saveString;
+}
+
 - (IBAction)resetLeft {
   [self resetTreeAtIndex:0];
 }
@@ -124,7 +158,7 @@
   [self updateStateFromTreeNo:index];
 }
 
-- (IBAction)resetAll {
+- (IBAction)resetAll {  
   self.totalPoints = 0;
   self.state = CalculatorStateEnabled;
   self.specTreeNo = -1;
@@ -150,6 +184,7 @@
 }
 
 - (IBAction)swapViews {
+  // Animate dissolve this
   [self.view exchangeSubviewAtIndex:0 withSubviewAtIndex:1];
   [self setSwapButtonTitle];
 }
@@ -231,11 +266,15 @@
 
 #pragma mark Prepare Trees
 - (void)prepareTrees {
+  NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"index" ascending:YES];
+  NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor, nil];
+  [sortDescriptor release];
+  
   for (TalentTree *talentTree in self.treeArray) {
     TreeViewController *tvc = [[TreeViewController alloc] initWithNibName:@"TreeViewController" bundle:nil];
     tvc.talentTree = talentTree;
     tvc.delegate = self;
-    tvc.talentArray = [[talentTree talents] allObjects];
+    tvc.talentArray = [talentTree.talents sortedArrayUsingDescriptors:sortDescriptors];
     tvc.characterClassId = self.characterClassId;
     tvc.treeNo = [[talentTree treeNo] integerValue];
     tvc.isSpecTree = (tvc.treeNo == self.specTreeNo) ? YES : NO;

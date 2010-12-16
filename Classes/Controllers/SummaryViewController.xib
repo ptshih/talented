@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="8"/>
+			<integer value="4"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -136,7 +136,7 @@
 								</object>
 							</object>
 						</object>
-						<string key="NSFrame">{{67, 25}, {186, 186}}</string>
+						<string key="NSFrame">{{67, 27}, {186, 186}}</string>
 						<reference key="NSSuperview" ref="1038188339"/>
 						<reference key="IBUIBackgroundColor" ref="29186038"/>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>

@@ -12,6 +12,7 @@
 
 @implementation Talent 
 
+@dynamic index;
 @dynamic col;
 @dynamic talentName;
 @dynamic talentId;
@@ -22,12 +23,13 @@
 @dynamic talentTree;
 @dynamic ranks;
 
-+ (Talent *)addTalentWithDictionary:(NSDictionary *)dictionary forTalentTree:(TalentTree *)talentTree inContext:(NSManagedObjectContext *)context {
++ (Talent *)addTalentWithDictionary:(NSDictionary *)dictionary forTalentTree:(TalentTree *)talentTree forIndex:(NSInteger)index inContext:(NSManagedObjectContext *)context {
   if (dictionary) {
     // Check for dupes
     
     Talent *newTalent = [NSEntityDescription insertNewObjectForEntityForName:@"Talent" inManagedObjectContext:context];
     
+    newTalent.index = [NSNumber numberWithInteger:index];
     newTalent.talentId = [dictionary objectForKey:@"id"];
     newTalent.req = [dictionary objectForKey:@"req"];
     newTalent.talentName = [dictionary objectForKey:@"name"];

@@ -196,6 +196,7 @@
 		25FBAB7412B8EF6500F306BC /* role_tank.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBAB7112B8EF6500F306BC /* role_tank.png */; };
 		25FBAB7512B8EF6500F306BC /* role_healer.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBAB7212B8EF6500F306BC /* role_healer.png */; };
 		25FBABD012B8F6D100F306BC /* ImageManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FBABCF12B8F6D100F306BC /* ImageManipulator.m */; };
+		25FBACBA12B9AD8D00F306BC /* Save.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FBACB912B9AD8D00F306BC /* Save.m */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
@@ -406,6 +407,8 @@
 		25FBAB7212B8EF6500F306BC /* role_healer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = role_healer.png; sourceTree = "<group>"; };
 		25FBABCE12B8F6D100F306BC /* ImageManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageManipulator.h; sourceTree = "<group>"; };
 		25FBABCF12B8F6D100F306BC /* ImageManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageManipulator.m; sourceTree = "<group>"; };
+		25FBACB812B9AD8D00F306BC /* Save.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Save.h; sourceTree = "<group>"; };
+		25FBACB912B9AD8D00F306BC /* Save.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Save.m; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* TalentPad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentPad_Prefix.pch; sourceTree = "<group>"; };
@@ -685,6 +688,8 @@
 				2500E63E12B4CA0D00EB1987 /* Talent.m */,
 				2500E63912B4CA0D00EB1987 /* Rank.h */,
 				2500E63A12B4CA0D00EB1987 /* Rank.m */,
+				25FBACB812B9AD8D00F306BC /* Save.h */,
+				25FBACB912B9AD8D00F306BC /* Save.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1151,6 +1156,7 @@
 				25FBAA7C12B8DB8E00F306BC /* MasteryView.m in Sources */,
 				25FBAB6212B8EB4400F306BC /* UIColor+i7HexColor.m in Sources */,
 				25FBABD012B8F6D100F306BC /* ImageManipulator.m in Sources */,
+				25FBACBA12B9AD8D00F306BC /* Save.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
