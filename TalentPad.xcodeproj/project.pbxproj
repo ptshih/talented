@@ -103,6 +103,7 @@
 		25136CDC12B646D000BEFD01 /* icon_warrior.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136CD012B646D000BEFD01 /* icon_warrior.png */; };
 		25136D8012B64BDA00BEFD01 /* -1-0-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136D7D12B64BDA00BEFD01 /* -1-0-gray.png */; };
 		25136D8112B64BDA00BEFD01 /* -1-0-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25136D7E12B64BDA00BEFD01 /* -1-0-yellow.png */; };
+		2570267C12B9EF72000A4D7B /* launcher_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2570267B12B9EF72000A4D7B /* launcher_bg.png */; };
 		257AEA28129E8FB900DE9D51 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA27129E8FB900DE9D51 /* CoreData.framework */; };
 		257AEA34129E901900DE9D51 /* SMADataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA31129E901900DE9D51 /* SMADataCenter.m */; };
 		257AEA35129E901900DE9D51 /* SMACoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA33129E901900DE9D51 /* SMACoreDataStack.m */; };
@@ -925,6 +926,7 @@
 		25136CD012B646D000BEFD01 /* icon_warrior.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_warrior.png; sourceTree = "<group>"; };
 		25136D7D12B64BDA00BEFD01 /* -1-0-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "-1-0-gray.png"; sourceTree = "<group>"; };
 		25136D7E12B64BDA00BEFD01 /* -1-0-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "-1-0-yellow.png"; sourceTree = "<group>"; };
+		2570267B12B9EF72000A4D7B /* launcher_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launcher_bg.png; sourceTree = "<group>"; };
 		257AEA22129E8F8900DE9D51 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		257AEA27129E8FB900DE9D51 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		257AEA30129E901900DE9D51 /* SMADataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMADataCenter.h; sourceTree = "<group>"; };
@@ -1829,6 +1831,7 @@
 		25136CC412B646D000BEFD01 /* launcher */ = {
 			isa = PBXGroup;
 			children = (
+				2570267B12B9EF72000A4D7B /* launcher_bg.png */,
 				25136CC512B646D000BEFD01 /* icon_deathknight.png */,
 				25136CC612B646D000BEFD01 /* icon_druid.png */,
 				25136CC712B646D000BEFD01 /* icon_hunter.png */,
@@ -3488,6 +3491,7 @@
 				25EC4EAC12B9E17600D173AB /* warrior_talent_icon_skirmisher.jpg in Resources */,
 				25EC4EAD12B9E17600D173AB /* warrior_talent_icon_thunderstruck.jpg in Resources */,
 				25EC4F1F12B9EC6C00D173AB /* Default.png in Resources */,
+				2570267C12B9EF72000A4D7B /* launcher_bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

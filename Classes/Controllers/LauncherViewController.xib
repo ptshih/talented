@@ -55,7 +55,7 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">summary_bg.jpg</string>
+							<string key="NSResourceName">launcher_bg.png</string>
 						</object>
 					</object>
 					<object class="IBUIButton" id="21224956">
@@ -547,7 +547,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>LauncherViewController</string>
 					<string>UIResponder</string>
-					<string>{{55, 215}, {1024, 768}}</string>
+					<string>{{153, 193}, {1024, 768}}</string>
 					<object class="NSMutableDictionary">
 						<string key="NS.key.0">IBCocoaTouchFramework</string>
 						<integer value="2" key="NS.object.0"/>
@@ -953,7 +953,7 @@
 				<string>icon_shaman.png</string>
 				<string>icon_warlock.png</string>
 				<string>icon_warrior.png</string>
-				<string>summary_bg.jpg</string>
+				<string>launcher_bg.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
@@ -967,7 +967,7 @@
 				<string>{64, 64}</string>
 				<string>{64, 64}</string>
 				<string>{64, 64}</string>
-				<string>{174, 174}</string>
+				<string>{20, 748}</string>
 			</object>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">132</string>
