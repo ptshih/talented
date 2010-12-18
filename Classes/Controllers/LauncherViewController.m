@@ -64,16 +64,16 @@ static UIImage *_arthas = nil;
   return self;
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-  [super viewWillAppear:animated];
+- (void)viewDidAppear:(BOOL)animated {
+  [super viewDidAppear:animated];
   _isVisible = YES;
   if (!_isAnimating) {
     [self launcherAnimation];
   }
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
-  [super viewWillDisappear:animated];
+- (void)viewDidDisappear:(BOOL)animated {
+  [super viewDidDisappear:animated];
   _isVisible = NO;
   _isAnimating = NO;
   
