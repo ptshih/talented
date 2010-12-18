@@ -1,0 +1,1048 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 6,
+      "name" : "Caballero de la Muerte",
+      "powerType" : "RUNIC_POWER",
+      "powerTypeId" : 6
+    },
+    "talentTrees" : [ {
+      "name" : "Sangre",
+      "icon" : "spell_deathknight_bloodpresence",
+      "backgroundFile" : "DeathKnightBlood",
+      "overlayColor" : "#ff0000",
+      "description" : "Un guardián oscuro que manipula y corrompe la energía vital para sustentarse frente al ataque del enemigo.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : true,
+        "healer" : false,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 55050,
+        "name" : "Golpe en el corazón",
+        "icon" : "inv_weapon_shortblade_40",
+        "cost" : "1 sangre",
+        "range" : "Rango de ataques C. a C.",
+        "castTime" : "Instantáneo",
+        "requires" : "Requiere Arma cuerpo a cuerpo",
+        "reagents" : [ ],
+        "description" : "Golpea instantáneamente al objetivo y a un máximo de dos enemigos cercanos más y les inflige un 100% de daño con arma más 736 p. al objetivo principal; cada objetivo adicional golpeado recibe un 25% menos de daño que el objetivo anterior. El daño infligido a cada objetivo aumenta un 10% extra por cada una de las enfermedades presentes.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 50029,
+        "name" : "Veterano de la Tercera Guerra",
+        "icon" : "spell_misc_warsongfocus",
+        "reagents" : [ ],
+        "description" : "Aumenta tu aguante total un 9% y tu pericia 6 p.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 50034,
+        "name" : "Ritos de sangre",
+        "icon" : "spell_deathknight_bloodtap",
+        "reagents" : [ ],
+        "description" : "Al usar Golpe letal o Asolar, las runas de escarcha y profanas se convierten en runas de muerte al activarse. Las runas de muerte cuentan como runas de sangre, escarcha o profanas.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 93099,
+        "name" : "Venganza",
+        "icon" : "ability_paladin_shieldofvengeance",
+        "reagents" : [ ],
+        "description" : "Cada vez que recibes daño, ganas un 5% del daño recibido como poder de ataque, hasta un máximo del 10% de tu salud.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77513,
+        "name" : "Escudo de sangre",
+        "icon" : "spell_deathknight_deathstrike",
+        "reagents" : [ ],
+        "description" : "Cada vez que te sanas con tu Golpe letal obtienes un 50% de la cantidad sanada como escudo de absorción de daño. Cada punto de maestría aumenta el escudo un 6.25% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 1939,
+        "name" : "Carnicería",
+        "icon" : "inv_axe_68",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Cuando mates a un enemigo que otorgue experiencia u honor, generarás 10 p. de poder rúnico. Además, también generarás 1 p. de poder rúnico cada 5 segundos mientras estés en combate."
+        }, {
+          "description" : "Cuando mates a un enemigo que otorgue experiencia u honor, generarás hasta 20 p. de poder rúnico. Además, también generarás 2 p. de poder rúnico cada 5 segundos mientras estés en combate."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2017,
+        "name" : "Barrera de filos",
+        "icon" : "ability_upgrademoonglaive",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Cuando tus runas de sangre están en tiempo de reutilización, ganas el efecto de Barrera de filos, que reduce el daño recibido un 2% durante los próximos 10 s."
+        }, {
+          "description" : "Cuando tus runas de sangre están en tiempo de reutilización, ganas el efecto de Barrera de filos, que reduce el daño recibido un 4% durante los próximos 10 s."
+        }, {
+          "description" : "Cuando tus runas de sangre están en tiempo de reutilización, ganas el efecto de Barrera de filos, que reduce el daño recibido un 6% durante los próximos 10 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1938,
+        "name" : "Armadura con filo",
+        "icon" : "inv_shoulder_36",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta tu poder de ataque 2 p. por cada 180 p. de tu valor de armadura."
+        }, {
+          "description" : "Aumenta tu poder de ataque 4 p. por cada 180 p. de tu valor de armadura."
+        }, {
+          "description" : "Aumenta tu poder de ataque 6 p. por cada 180 p. de tu valor de armadura."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12223,
+        "name" : "Transfusión de sangre mejorada",
+        "icon" : "spell_deathknight_bloodtap",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de tu facultad Transfusión de sangre 15 s."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tu facultad Transfusión de sangre 30 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1948,
+        "name" : "Aroma de sangre",
+        "icon" : "ability_rogue_bloodyeye",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Tras esquivar, parar o recibir daño directo, tienes un 15% de probabilidad de ganar el efecto Aroma de sangre, que provoca que tu siguiente golpe cuerpo a cuerpo genere 10 p. de poder rúnico."
+        }, {
+          "description" : "Tras esquivar, parar o recibir daño directo, tienes un 15% de probabilidad de ganar el efecto Aroma de sangre, que provoca que tus 2 golpes cuerpo a cuerpo siguientes generen 10 p. de poder rúnico."
+        }, {
+          "description" : "Tras esquivar, parar o recibir daño directo, tienes un 15% de probabilidad de ganar el efecto Aroma de sangre, que provoca que tus 3 golpes cuerpo a cuerpo siguientes generen 10 p. de poder rúnico."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7462,
+        "name" : "Escarlatina",
+        "icon" : "ability_rogue_vendetta",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Da a tu Hervor de sangre un 50% de probabilidad de afligir a los enemigos con Escarlatina, que reduce el daño físico que infligen un 10% durante 30 s."
+        }, {
+          "description" : "Da a tu Hervor de sangre un 100% de probabilidad de afligir a los enemigos con Escarlatina, que reduce el daño físico que infligen un 10% durante 30 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11270,
+        "name" : "Mano de fatalidad",
+        "icon" : "ability_deathknight_desolation",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de tu Estrangular 30 s."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tu Estrangular 60 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7460,
+        "name" : "Hoja bañada en sangre",
+        "icon" : "ability_criticalstrike",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Tus ataques automáticos tienen un 10% de probabilidad de asestar un Golpe bañado en sangre, que inflige el 25% de daño con arma más un 12.5% por enfermedad sobre el objetivo."
+        }, {
+          "description" : "Tus ataques automáticos tienen un 20% de probabilidad de asestar un Golpe bañado en sangre, que inflige el 25% de daño con arma más un 12.5% por enfermedad sobre el objetivo."
+        }, {
+          "description" : "Tus ataques automáticos tienen un 30% de probabilidad de asestar un Golpe bañado en sangre, que inflige el 25% de daño con arma más un 12.5% por enfermedad sobre el objetivo."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7459,
+        "name" : "Escudo óseo",
+        "icon" : "ability_deathknight_boneshield",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "1 profano",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 1 min.",
+          "description" : "Te rodea con una barrera de remolino de huesos. El escudo comienza con 3 cargas y cada ataque dañino consume una carga. Mientras quede al menos 1 carga, recibirás un 20% menos de daño de todo origen e infligirás un 2% más de daño en todos los ataques, hechizos y facultades. Dura 5 min."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7458,
+        "name" : "Consistencia",
+        "icon" : "spell_holy_devotion",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Aumenta tu valor de armadura con objetos un 3%."
+        }, {
+          "description" : "Aumenta tu valor de armadura con objetos un 7%."
+        }, {
+          "description" : "Aumenta tu valor de armadura con objetos un 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2105,
+        "name" : "Poderío de abominación",
+        "icon" : "ability_warrior_intensifyrage",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Aumenta en un 5% el poder de ataque de los miembros del grupo y de la banda que se encuentren en un radio de 100 m. También aumenta tu fuerza total un 1%."
+        }, {
+          "description" : "Aumenta en un 10% el poder de ataque de los miembros del grupo y de la banda que se encuentren en un radio de 100 m. También aumenta tu fuerza total un 2%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7461,
+        "name" : "Entereza sanguina",
+        "icon" : "ability_deathknight_sanguinfortitude",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Mientras está activa, tu Entereza ligada al hielo reduce el daño recibido un 15% extra y cuesta un 50% menos de poder rúnico para que se active."
+        }, {
+          "description" : "Mientras está activa, tu Entereza ligada al hielo reduce el daño recibido un 30% extra y no cuesta poder rúnico para que se active."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1960,
+        "name" : "Parásito de sangre",
+        "icon" : "spell_shadow_soulleech",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Tus ataques cuerpo a cuerpo tienen un 5% de probabilidad de provocar que el objetivo engendre un gusano de sangre. El gusano de sangre ataca a tus enemigos y se atiborra de sangre hasta que revienta para sanar a los aliados cercanos. Dura un máximo de 20 s."
+        }, {
+          "description" : "Tus ataques cuerpo a cuerpo tienen un 10% de probabilidad de provocar que el objetivo engendre un gusano de sangre. El gusano de sangre ataca a tus enemigos y se atiborra de sangre hasta que revienta para sanar a los aliados cercanos. Dura un máximo de 20 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1936,
+        "name" : "Presencia de sangre mejorada",
+        "icon" : "spell_deathknight_bloodpresence",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Aumenta tu regeneración rúnica un 10% y reduce un 3% la probabilidad de que recibas ataques críticos cuerpo a cuerpo en Presencia de sangre. Además, en Presencia de escarcha o Presencia profana, retienes un 2% de la reducción de daño de Presencia de sangre."
+        }, {
+          "description" : "Aumenta tu regeneración rúnica un 20% y reduce un 6% la probabilidad de que recibas ataques críticos cuerpo a cuerpo en Presencia de sangre. Además, en Presencia de escarcha o Presencia profana, retienes un 4% de la reducción de daño de Presencia de sangre."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1959,
+        "name" : "Voluntad de la necrópolis",
+        "icon" : "ability_creature_cursed_02",
+        "x" : 0,
+        "y" : 4,
+        "req" : 1941,
+        "ranks" : [ {
+          "description" : "Cuando un ataque dañino te deja por debajo del 30% de tu salud máxima, generas una runa de sangre y se reinicia el tiempo de reutilización de tu facultad Transfusión de runa. Además, todo el daño recibido se reduce un 8% durante 8 s. Este efecto no puede tener lugar más de una vez cada 45 s."
+        }, {
+          "description" : "Cuando un ataque dañino te deja por debajo del 30% de tu salud máxima, generas una runa de sangre y se reinicia el tiempo de reutilización de tu facultad Transfusión de runa. Además, todo el daño recibido se reduce un 16% durante 8 s. Este efecto no puede tener lugar más de una vez cada 45 s."
+        }, {
+          "description" : "Cuando un ataque dañino te deja por debajo del 30% de tu salud máxima, generas una runa de sangre y se reinicia el tiempo de reutilización de tu facultad Transfusión de runa. Además, todo el daño recibido se reduce un 25% durante 8 s. Este efecto no puede tener lugar más de una vez cada 45 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1941,
+        "name" : "Transfusión de runa",
+        "icon" : "spell_deathknight_runetap",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "1 sangre",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 30 seg.",
+          "description" : "Convierte una runa de sangre en un 15% de tu salud máxima."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2019,
+        "name" : "Sangre vampírica",
+        "icon" : "spell_shadow_lifedrain",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 1 min.",
+          "description" : "Otorga de forma temporal un 15% de la salud máxima al caballero de la Muerte y aumenta la cantidad de salud generada a través de los hechizos y efectos un 25% durante 10 s. Cuando el efecto se disipa, la salud se pierde."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2259,
+        "name" : "Golpe letal mejorado",
+        "icon" : "spell_deathknight_butcher2",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Aumenta el daño y la sanación de tu Golpe letal un 15% y aumenta su probabilidad de golpe crítico un 3%."
+        }, {
+          "description" : "Aumenta el daño y la sanación de tu Golpe letal un 30% y aumenta su probabilidad de golpe crítico un 6%."
+        }, {
+          "description" : "Aumenta el daño y la sanación de tu Golpe letal un 45% y aumenta su probabilidad de golpe crítico un 9%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7463,
+        "name" : "Plaga carmesí",
+        "icon" : "spell_deathknight_bloodboil",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Aumenta el daño infligido por tu Hervor de sangre un 20% y cuando asestes un Golpe de peste a un objetivo que ya esté infectado con Peste de sangre, habrá un 50% de probabilidad de que tu próximo Hervor de sangre no consuma runas."
+        }, {
+          "description" : "Aumenta el daño infligido por tu Hervor de sangre un 40% y cuando asestes un Golpe de peste a un objetivo que ya esté infectado con Peste de sangre, habrá un 100% de probabilidad de que tu próximo Hervor de sangre no consuma runas."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1961,
+        "name" : "Arma de runa danzante",
+        "icon" : "inv_sword_07",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "60 poder rúnico",
+          "range" : "30 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 1,5 min.",
+          "requires" : "Requiere Arma cuerpo a cuerpo",
+          "description" : "Invoca una segunda arma de runas que lucha sola durante 12 s y realiza los mismos ataques que el caballero de la Muerte pero inflige un 50% de daño reducido. El arma de runas también contribuye a la defensa de su dueño y le otorga un 20% extra de probabilidad de parar mientras esté activa."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Escarcha",
+      "icon" : "spell_deathknight_frostpresence",
+      "backgroundFile" : "DeathKnightFrost",
+      "overlayColor" : "#4c7fff",
+      "description" : "Un presagista helado de la fatalidad; canaliza el poder rúnico e inflige golpes con arma rápidos.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 49143,
+        "name" : "Golpe de Escarcha",
+        "icon" : "spell_deathknight_empowerruneblade2",
+        "cost" : "40 poder rúnico",
+        "range" : "Rango de ataques C. a C.",
+        "castTime" : "Instantáneo",
+        "requires" : "Requiere Arma cuerpo a cuerpo",
+        "reagents" : [ ],
+        "description" : "Golpea instantáneamente al enemigo y le inflige un 110% de daño con arma más 275 p. de daño de Escarcha.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 50887,
+        "name" : "Garras heladas",
+        "icon" : "spell_deathknight_icytalons",
+        "reagents" : [ ],
+        "description" : "Tu velocidad de ataque cuerpo a cuerpo aumenta un 20%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 54637,
+        "name" : "Sangre del norte",
+        "icon" : "inv_weapon_shortblade_79",
+        "reagents" : [ ],
+        "description" : "Cuando golpeas con Golpe sangriento o Pestilencia, la runa de sangre se convertirá en una runa de muerte al activarse. Las runas de muerte cuentan como runas de sangre, escarcha o profanas.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77514,
+        "name" : "Corazón congelado",
+        "icon" : "inv_misc_gem_sapphire_01",
+        "reagents" : [ ],
+        "description" : "Aumenta todo el daño de Escarcha infligido un 16%. Cada punto de maestría aumenta el daño de Escarcha un 2.0% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 2031,
+        "name" : "Maestría en poder rúnico",
+        "icon" : "spell_arcane_arcane01",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta tu poder rúnico máximo 10 p."
+        }, {
+          "description" : "Aumenta tu poder rúnico máximo 20 p."
+        }, {
+          "description" : "Aumenta tu poder rúnico máximo 30 p."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2035,
+        "name" : "Alcance helado",
+        "icon" : "spell_frost_manarecharge",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta 5 m el alcance de tu Toque helado, Cadenas de hielo y Explosión aullante."
+        }, {
+          "description" : "Aumenta 10 m el alcance de tu Toque helado, Cadenas de hielo y Explosión aullante."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2022,
+        "name" : "Nervios de acero helado",
+        "icon" : "ability_dualwield",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta tu probabilidad de golpear con armas cuerpo a cuerpo de una mano un 1% y aumenta el daño infligido por tus armas de mano izquierda un 8%."
+        }, {
+          "description" : "Aumenta tu probabilidad de golpear con armas cuerpo a cuerpo de una mano un 2% y aumenta el daño infligido por tus armas de mano izquierda un 16%."
+        }, {
+          "description" : "Aumenta tu probabilidad de golpear con armas cuerpo a cuerpo de una mano un 3% y aumenta el daño infligido por tus armas de mano izquierda un 25%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2048,
+        "name" : "Aniquilación",
+        "icon" : "inv_weapon_hand_18",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta un 15% el daño infligido por tu facultad Asolar."
+        }, {
+          "description" : "Aumenta un 30% el daño infligido por tu facultad Asolar."
+        }, {
+          "description" : "Aumenta un 45% el daño infligido por tu facultad Asolar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2215,
+        "name" : "Exánime nato",
+        "icon" : "spell_shadow_raisedead",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 2 min.",
+          "description" : "Extrae energía profana para convertirte en un no-muerto durante 10 s. Mientras eres un no-muerto, eres inmune a los efectos de embelesar, miedo y sueño."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11275,
+        "name" : "Sobre caballo bayo",
+        "icon" : "ability_mount_undeadhorse",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Te vuelves tan difícil de detener como la mismísima muerte. La duración de todos los efectos de ralentización de movimiento que se usen frente a ti se reduce un 15% y tu velocidad sobre montura aumenta un 10%. Esto no se acumula con otros efectos de aumento de velocidad de movimiento."
+        }, {
+          "description" : "Te vuelves tan difícil de detener como la mismísima muerte. La duración de todos los efectos de ralentización de movimiento que se usen frente a ti se reduce un 30% y tu velocidad sobre montura aumenta un 20%. Esto no se acumula con otros efectos de aumento de velocidad de movimiento."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1971,
+        "name" : "Invierno interminable",
+        "icon" : "spell_shadow_twilight",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "El coste de tu Helada mental se reduce a 10 p. de poder rúnico."
+        }, {
+          "description" : "Tu Helada mental ya no cuesta poder rúnico."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1993,
+        "name" : "Combate despiadado",
+        "icon" : "inv_sword_112",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Tus hechizos Toque helado, Explosión aullante, Asolar y Golpe de Escarcha infligen un 6% de daño adicional al golpear a objetivos que se encuentran por debajo del 35% de salud."
+        }, {
+          "description" : "Tus hechizos Toque helado, Explosión aullante, Asolar y Golpe de Escarcha infligen un 12% de daño adicional al golpear a objetivos que se encuentran por debajo del 35% de salud."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1981,
+        "name" : "Escalofrío de la tumba",
+        "icon" : "spell_frost_frostshock",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Tus facultades Cadenas de hielo, Explosión aullante, Toque helado y Asolar generan 5 p. de poder rúnico extra."
+        }, {
+          "description" : "Tus facultades Cadenas de hielo, Explosión aullante, Toque helado y Asolar generan 10 p. de poder rúnico extra."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2044,
+        "name" : "Máquina de matar",
+        "icon" : "inv_sword_122",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Tus ataques cuerpo a cuerpo tienen una probabilidad de hacer que tu siguiente Toque helado, Asolar o Golpe de Escarcha aseste un golpe crítico."
+        }, {
+          "description" : "Tus ataques cuerpo a cuerpo tienen una probabilidad de hacer que tu siguiente Toque helado, Asolar o Golpe de Escarcha aseste un golpe crítico. Este efecto ocurre con más frecuencia que con Máquina de matar (Rango 1)."
+        }, {
+          "description" : "Tus ataques cuerpo a cuerpo tienen una probabilidad de hacer que tu siguiente Toque helado, Asolar o Golpe de Escarcha aseste un golpe crítico. Este efecto ocurre con más frecuencia que con Máquina de matar (Rango 2)."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1992,
+        "name" : "Helada blanca",
+        "icon" : "spell_frost_freezingbreath",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Tu Asolar tiene un 15% de probabilidad de hacer que tu siguiente Explosión aullante o Toque helado no consuma runas."
+        }, {
+          "description" : "Tu Asolar tiene un 30% de probabilidad de hacer que tu siguiente Explosión aullante o Toque helado no consuma runas."
+        }, {
+          "description" : "Tu Asolar tiene un 45% de probabilidad de hacer que tu siguiente Explosión aullante o Toque helado no consuma runas."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1979,
+        "name" : "Pilar de Escarcha",
+        "icon" : "ability_deathknight_pillaroffrost",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "1 escarcha",
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 1 min.",
+          "description" : "Invoca el poder de la Escarcha para aumentar la fuerza del caballero de la Muerte un 20%. Unos cristales helados penden del cuerpo del caballero de la Muerte y le proporcionan inmunidad contra movimientos externos como los derribos. Dura 20 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2223,
+        "name" : "Garras heladas mejoradas",
+        "icon" : "spell_deathknight_icytalons",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Aumenta un 10% la celeridad cuerpo a cuerpo y a distancia de todos los miembros de tu banda o grupo en un radio de 100 m y tu velocidad de ataque un 5% extra."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1980,
+        "name" : "Huesos quebradizos",
+        "icon" : "ability_deathknight_brittlebones",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Tu fuerza aumenta un 2% y tu Fiebre de Escarcha congela los huesos de sus víctimas, lo que aumenta el daño físico que reciben un 2%."
+        }, {
+          "description" : "Tu fuerza aumenta un 4% y tu Fiebre de Escarcha congela los huesos de sus víctimas, lo que aumenta el daño físico que reciben un 4%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2260,
+        "name" : "Sabañones",
+        "icon" : "spell_frost_wisp",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Las víctimas de tu enfermedad Fiebre de Escarcha quedan congeladas, reduciendo su velocidad de movimiento un 25% durante 10 s."
+        }, {
+          "description" : "Las víctimas de tu enfermedad Fiebre de Escarcha quedan congeladas, reduciendo su velocidad de movimiento un 50% durante 10 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1999,
+        "name" : "Frío hambriento",
+        "icon" : "inv_staff_15",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "40 poder rúnico",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 1 min.",
+          "description" : "Purga la tierra que rodea al caballero de la Muerte. Los enemigos que se encuentren en un radio de 10 m quedan atrapados en hielo, impidiendo que puedan realizar ninguna acción durante 10 s e infectándolos con Fiebre de Escarcha. Se considera que los enemigos están congelados, pero cualquier daño no infligido con enfermedades romperá el hielo."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2029,
+        "name" : "Presencia de escarcha mejorada",
+        "icon" : "spell_deathknight_frostpresence",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Tu bonus de daño en Presencia de escarcha aumenta un 2% extra. Además, en Presencia de sangre o Presencia profana retienes un 2% de generación de poder rúnico aumentada de Presencia de escarcha."
+        }, {
+          "description" : "Tu bonus de daño en Presencia de escarcha aumenta un 5% extra. Además, en Presencia de sangre o Presencia profana retienes un 4% de generación de poder rúnico aumentada de Presencia de escarcha."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2284,
+        "name" : "Amenaza de Thassarian",
+        "icon" : "ability_dualwieldspecialization",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Con la doble empuñadura, tus facultades Golpe letal, Asolar, Golpe de peste, Golpe con runa, Golpe sangriento y Golpe de Escarcha tienen un 30% de probabilidad de infligir también daño con el arma de mano izquierda."
+        }, {
+          "description" : "Con la doble empuñadura, tus facultades Golpe letal, Asolar, Golpe de peste, Golpe con runa, Golpe sangriento y Golpe de Escarcha tienen un 60% de probabilidad de infligir también daño con el arma de mano izquierda."
+        }, {
+          "description" : "Con la doble empuñadura, tus facultades Golpe letal, Asolar, Golpe de peste, Golpe con runa, Golpe sangriento y Golpe de Escarcha tienen un 100% de probabilidad de infligir también daño con el arma de mano izquierda."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7571,
+        "name" : "Poder de los Páramos Congelados",
+        "icon" : "inv_sword_120",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Cuando empuñas un arma de dos manos, tus ataques automáticos tienen un 15% de probabilidad de generar 10 p. de poder rúnico."
+        }, {
+          "description" : "Cuando empuñas un arma de dos manos, tus ataques automáticos tienen un 30% de probabilidad de generar 10 p. de poder rúnico."
+        }, {
+          "description" : "Cuando empuñas un arma de dos manos, tus ataques automáticos tienen un 45% de probabilidad de generar 10 p. de poder rúnico."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1989,
+        "name" : "Explosión aullante",
+        "icon" : "spell_frost_arcticwinds",
+        "x" : 1,
+        "y" : 6,
+        "req" : 1999,
+        "ranks" : [ {
+          "cost" : "1 escarcha",
+          "range" : "20 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "description" : "Golpea al objetivo con un viento helado que inflige 1285 p. de daño de Escarcha a todos los enemigos en un radio de 10 m."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Profano",
+      "icon" : "spell_deathknight_unholypresence",
+      "backgroundFile" : "DeathKnightUnholy",
+      "overlayColor" : "#33cc33",
+      "description" : "Un maestro de la muerte y la descomposición que extiende infecciones y controla esbirros no-muertos que cumplen su voluntad.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 55090,
+        "name" : "Golpe de la Plaga",
+        "icon" : "spell_deathknight_scourgestrike",
+        "cost" : "1 profano",
+        "range" : "Rango de ataques C. a C.",
+        "castTime" : "Instantáneo",
+        "requires" : "Requiere Arma cuerpo a cuerpo",
+        "reagents" : [ ],
+        "description" : "Un golpe profano que inflige un 100% de daño con arma como daño físico más 561 p. Además, por cada una de tus enfermedades sobre el objetivo, infliges un 12% extra del daño físico infligido como daño de las Sombras.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 52143,
+        "name" : "Maestro de los necrófagos",
+        "icon" : "spell_shadow_animatedead",
+        "reagents" : [ ],
+        "description" : "Reduce el tiempo de reutilización de Levantar a muerto 60 s y el necrófago que invoques con tu hechizo Levantar a muerto se considera tu mascota y queda bajo tu control. A diferencia de los necrófagos de los caballeros de la Muerte normales, tu mascota no tiene una duración limitada.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 91107,
+        "name" : "Poderío profano",
+        "icon" : "spell_shadow_unholystrength",
+        "reagents" : [ ],
+        "description" : "Un poder oscuro recorre tus extremidades y aumenta tu fuerza un 10%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 56835,
+        "name" : "Siega",
+        "icon" : "spell_shadow_shadetruesight",
+        "reagents" : [ ],
+        "description" : "Al usar Golpe sangriento, Pestilencia o Golpe purulento, las runas gastadas se convertirán en runas de muerte al activarse. Las runas de muerte cuentan como runas de sangre, escarcha o profanas.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77515,
+        "name" : "Clamañublo",
+        "icon" : "achievement_zone_westernplaguelands_01",
+        "reagents" : [ ],
+        "description" : "Aumenta el daño infligido por tus enfermedades un 40%. Cada punto de maestría aumenta el daño infligido por tus enfermedades un 5.0% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 2025,
+        "name" : "Orden profana",
+        "icon" : "spell_deathknight_strangulate",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de Atracción letal 5 s y te da un 50% de probabilidad de reiniciar su tiempo de reutilización al infligir un golpe de gracia a un objetivo que otorga experiencia u honor."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de Atracción letal 10 s y te da un 100% de probabilidad de reiniciar su tiempo de reutilización al infligir un golpe de gracia a un objetivo que otorga experiencia u honor."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1932,
+        "name" : "Virulencia",
+        "icon" : "spell_shadow_burningspirit",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta tu probabilidad de golpear con hechizos un 3%. Los hechizos del caballero de la Muerte son todas las facultades que no son golpes directos con arma."
+        }, {
+          "description" : "Aumenta tu probabilidad de golpear con hechizos un 6%. Los hechizos del caballero de la Muerte son todas las facultades que no son golpes directos con arma."
+        }, {
+          "description" : "Aumenta tu probabilidad de golpear con hechizos un 9%. Los hechizos del caballero de la Muerte son todas las facultades que no son golpes directos con arma."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1963,
+        "name" : "Epidemia",
+        "icon" : "spell_shadow_shadowwordpain",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta la duración de Peste de sangre y Fiebre de Escarcha 4 s."
+        }, {
+          "description" : "Aumenta la duración de Peste de sangre y Fiebre de Escarcha 8 s."
+        }, {
+          "description" : "Aumenta la duración de Peste de sangre y Fiebre de Escarcha 12 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2226,
+        "name" : "Profanación",
+        "icon" : "spell_shadow_shadowfiend",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Tus Golpes de peste y Golpes de la Plaga profanan el suelo en un radio de 7 m alrededor del objetivo. Los enemigos dentro de la zona se ralentizan un 25% mientras permanecen sobre suelo profano. Dura 20 s."
+        }, {
+          "description" : "Tus Golpes de peste y Golpes de la Plaga profanan el suelo en un radio de 7 m alrededor del objetivo. Los enemigos dentro de la zona se ralentizan un 50% mientras permanecen sobre suelo profano. Dura 20 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7572,
+        "name" : "Infección pertinaz",
+        "icon" : "ability_creature_disease_05",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Cuando un enemigo disipa tus enfermedades, tienes un 50% de probabilidad de activar una runa de escarcha si se eliminó Fiebre de Escarcha, o una runa profana si se eliminó Peste de sangre."
+        }, {
+          "description" : "Cuando un enemigo disipa tus enfermedades, tienes un 100% de probabilidad de activar una runa de escarcha si se eliminó Fiebre de Escarcha, o una runa profana si se eliminó Peste de sangre."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11178,
+        "name" : "Morbosidad",
+        "icon" : "spell_shadow_deathanddecay",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta el daño y la sanación de Espiral de la muerte un 5% y de Muerte y descomposición un 10%."
+        }, {
+          "description" : "Aumenta el daño y la sanación de Espiral de la muerte un 10% y de Muerte y descomposición un 20%."
+        }, {
+          "description" : "Aumenta el daño y la sanación de Espiral de la muerte un 15% y de Muerte y descomposición un 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2047,
+        "name" : "Corrupción rúnica",
+        "icon" : "spell_shadow_rune",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Reduce el coste de tu Espiral de la muerte 3 p. y provoca que tu facultad Potenciación rúnica ya no reinicie una runa agotada, sino que aumente tu índice de regeneración rúnica un 50% durante 3 s."
+        }, {
+          "description" : "Reduce el coste de tu Espiral de la muerte 6 p. y provoca que tu facultad Potenciación rúnica ya no reinicie una runa agotada, sino que aumente tu índice de regeneración rúnica un 100% durante 3 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7574,
+        "name" : "Frenesí profano",
+        "icon" : "spell_shadow_unholyfrenzy",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "range" : "30 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 3 min.",
+          "description" : "Induce a una unidad amistosa a matar frenéticamente durante 30 s. El objetivo se enfurece, lo que aumenta su celeridad cuerpo a cuerpo y a distancia un 20%, pero provoca que pierda salud igual al 2% de su salud máxima cada 3 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12119,
+        "name" : "Contagio",
+        "icon" : "spell_shadow_plaguecloud",
+        "x" : 2,
+        "y" : 2,
+        "req" : 1963,
+        "ranks" : [ {
+          "description" : "Aumenta el daño de las enfermedades que extiendes mediante Pestilencia un 50%."
+        }, {
+          "description" : "Aumenta el daño de las enfermedades que extiendes mediante Pestilencia un 100%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11179,
+        "name" : "Infusión de Sombras",
+        "icon" : "spell_shadow_requiem",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Cuando lanzas Espiral de la muerte, tienes un 33% de probabilidad de potenciar a tu necrófago activo, lo que aumenta el daño que inflige un 10% durante 30 s. Se acumula hasta 5 veces."
+        }, {
+          "description" : "Cuando lanzas Espiral de la muerte, tienes un 66% de probabilidad de potenciar a tu necrófago activo, lo que aumenta el daño que inflige un 10% durante 30 s. Se acumula hasta 5 veces."
+        }, {
+          "description" : "Cuando lanzas Espiral de la muerte, tienes un 100% de probabilidad de potenciar a tu necrófago activo, lo que aumenta el daño que inflige un 10% durante 30 s. Se acumula hasta 5 veces."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2009,
+        "name" : "Supresión mágica",
+        "icon" : "spell_shadow_antimagicshell",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Aumenta la amortiguación de daño con hechizos de tu Caparazón antimagia un 8% extra y provoca que el daño amortiguado por el Caparazón antimagia energice al caballero de la Muerte con poder rúnico."
+        }, {
+          "description" : "Aumenta la amortiguación de daño con hechizos de tu Caparazón antimagia un 16% extra y aumenta el poder rúnico que se genera cuando el Caparazón antimagia amortigua daño."
+        }, {
+          "description" : "Aumenta la amortiguación de daño con hechizos de tu Caparazón antimagia un 25% extra y aumenta el poder rúnico que se genera cuando el Caparazón antimagia amortigua daño."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2082,
+        "name" : "Ira de Osahendido",
+        "icon" : "inv_weapon_halberd14",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Aumenta el daño de tus facultades Golpe de peste, Golpe de la Plaga y Golpe purulento un 15%."
+        }, {
+          "description" : "Aumenta el daño de tus facultades Golpe de peste, Golpe de la Plaga y Golpe purulento un 30%."
+        }, {
+          "description" : "Aumenta el daño de tus facultades Golpe de peste, Golpe de la Plaga y Golpe purulento un 45%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1996,
+        "name" : "Añublo profano",
+        "icon" : "spell_shadow_contagion",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Provoca que las víctimas de tu Espiral de la muerte se vean rodeadas por un espeluznante enjambre de insectos profanos y que reciban un 10% del daño infligido por la Espiral de la muerte durante 10 s y evitando que las enfermedades de la víctima puedan disiparse."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2221,
+        "name" : "Zona antimagia",
+        "icon" : "spell_deathknight_antimagiczone",
+        "x" : 1,
+        "y" : 4,
+        "req" : 2009,
+        "ranks" : [ {
+          "cost" : "1 profano",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 2 min.",
+          "description" : "Coloca una gran zona antimagia estática que reduce un 75% el daño con hechizos infligido a cualquier miembro de tu grupo o banda que se encuentre dentro. La zona antimagia dura 10 s o hasta que absorbe 11032 p. de daño con hechizos."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2013,
+        "name" : "Presencia profana mejorada",
+        "icon" : "spell_deathknight_unholypresence",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Te otorga un 2% de celeridad extra en Presencia profana. Además, mientras estás en Presencia de sangre o Presencia de escarcha, retienes un 8% de la velocidad de movimiento aumentada de Presencia profana."
+        }, {
+          "description" : "Te otorga un 5% de celeridad extra en Presencia profana. Además, mientras estás en Presencia de sangre o Presencia de escarcha, retienes un 15% de la velocidad de movimiento aumentada de Presencia profana."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2085,
+        "name" : "Transformación oscura",
+        "icon" : "achievement_boss_festergutrotface",
+        "x" : 3,
+        "y" : 4,
+        "req" : 11179,
+        "ranks" : [ {
+          "cost" : "1 profano",
+          "range" : "60 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "description" : "Consume 5 cargas de Infusión de Sombras en tu necrófago para transformarlo en un poderoso monstruo no-muerto durante 30 s. Las facultades del necrófago se potencian y obtienen nuevas funciones mientras la transformación está activa."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2043,
+        "name" : "Pesteador de ébano",
+        "icon" : "ability_creature_cursed_03",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Tus facultades Golpe de peste, Toque helado, Cadenas de hielo y Brote también infectan al objetivo con Peste de ébano, que aumenta un 15% el daño recibido de tus enfermedades y todo el daño mágico recibido un 8% extra."
+        }, {
+          "description" : "Tus facultades Golpe de peste, Toque helado, Cadenas de hielo y Brote también infectan al objetivo con Peste de ébano, que aumenta un 30% el daño recibido de tus enfermedades y todo el daño mágico recibido un 8% extra."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7575,
+        "name" : "Fatalidad súbita",
+        "icon" : "spell_shadow_painspike",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Tus ataques automáticos tienen un 5% de probabilidad de que tu siguiente Espiral de la muerte no cueste poder rúnico."
+        }, {
+          "description" : "Tus ataques automáticos tienen un 10% de probabilidad de que tu siguiente Espiral de la muerte no cueste poder rúnico."
+        }, {
+          "description" : "Tus ataques automáticos tienen un 15% de probabilidad de que tu siguiente Espiral de la muerte no cueste poder rúnico."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2000,
+        "name" : "Invocar gárgola",
+        "icon" : "ability_deathknight_summongargoyle",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "70 poder rúnico",
+          "range" : "30 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 3 min.",
+          "description" : "Una gárgola sobrevuela la zona y bombardea al objetivo con daño de Naturaleza modificado por el poder de ataque del caballero de la Muerte. Dura 30 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

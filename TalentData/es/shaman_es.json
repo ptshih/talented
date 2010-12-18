@@ -1,0 +1,1003 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 7,
+      "name" : "Chamán",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "Elemental",
+      "icon" : "spell_nature_lightning",
+      "backgroundFile" : "ShamanElementalCombat",
+      "overlayColor" : "#cc33cc",
+      "description" : "Un taumaturgo que se vale de las fuerzas destructivas de la naturaleza y de los elementos.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 51490,
+        "name" : "Tormenta de truenos",
+        "icon" : "spell_shaman_thunderstorm",
+        "castTime" : "Lanzamiento instantáneo",
+        "cooldown" : "Reutilización de 45 seg.",
+        "reagents" : [ ],
+        "description" : "Invoca una descarga de relámpagos que te energiza e inflige daño a los enemigos cercanos en un radio de 10 m. Te restaura un 8% de maná e inflige 1421-1616 p. de daño de Naturaleza a todos los enemigos cercanos y los lanza a 20 m. Este hechizo se puede usar mientras se está aturdido.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 62099,
+        "name" : "Chamanismo",
+        "icon" : "spell_unused2",
+        "reagents" : [ ],
+        "description" : "Tus hechizos Descarga de relámpagos, Cadena de relámpagos y Ráfaga de lava ganan un beneficio de un 20% extra de tu poder con hechizos y su tiempo de lanzamiento se reduce 0.5 s.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 60188,
+        "name" : "Furia elemental",
+        "icon" : "spell_fire_volcano",
+        "reagents" : [ ],
+        "description" : "Aumenta un 100% el bonus de daño por golpe crítico de tu Tótem abrasador, de tu Tótem de Magma y de tus hechizos de Fuego, Escarcha y Naturaleza.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77222,
+        "name" : "Sobrecarga elemental",
+        "icon" : "spell_nature_lightningoverload",
+        "reagents" : [ ],
+        "description" : "Otorga un 16% de probabilidad de que ocurra una Sobrecarga elemental. Sobrecarga elemental provoca que una Descarga de relámpagos, una Cadena de relámpagos o una Ráfaga de lava que lances active un segundo hechizo similar sobre el mismo objetivo sin coste extra que inflige un 75% del daño normal y no genere amenaza. Cada punto de maestría aumenta la probabilidad de que ocurra una Descarga elemental un 2% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 11218,
+        "name" : "Agudeza",
+        "icon" : "spell_nature_astralrecalgroup",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta un 1% tu probabilidad de golpe crítico con todos los hechizos y ataques."
+        }, {
+          "description" : "Aumenta un 2% tu probabilidad de golpe crítico con todos los hechizos y ataques."
+        }, {
+          "description" : "Aumenta un 3% tu probabilidad de golpe crítico con todos los hechizos y ataques."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 564,
+        "name" : "Convección",
+        "icon" : "spell_shaman_convection",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Reduce el coste de maná de tus hechizos ofensivos dañinos un 5%."
+        }, {
+          "description" : "Reduce el coste de maná de tus hechizos ofensivos dañinos un 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 563,
+        "name" : "Conmoción",
+        "icon" : "spell_fire_fireball",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta un 2% el daño infligido con tus hechizos Descarga de relámpagos, Cadena de relámpagos, Tormenta de truenos, Ráfaga de lava y Choque."
+        }, {
+          "description" : "Aumenta un 4% el daño infligido con tus hechizos Descarga de relámpagos, Cadena de relámpagos, Tormenta de truenos, Ráfaga de lava y Choque."
+        }, {
+          "description" : "Aumenta un 6% el daño infligido con tus hechizos Descarga de relámpagos, Cadena de relámpagos, Tormenta de truenos, Ráfaga de lava y Choque."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 561,
+        "name" : "Llamada de las llamas",
+        "icon" : "spell_fire_immolation",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta un 10% el daño infligido con tus Tótems de Fuego y Nova de Fuego, y el daño infligido por tu Ráfaga de lava un 5%."
+        }, {
+          "description" : "Aumenta un 20% el daño infligido con tus Tótems de Fuego y Nova de Fuego, y el daño infligido por tu Ráfaga de lava un 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1640,
+        "name" : "Amparo elemental",
+        "icon" : "spell_nature_spiritarmor",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduce el daño mágico recibido un 4%."
+        }, {
+          "description" : "Reduce el daño mágico recibido un 8%."
+        }, {
+          "description" : "Reduce el daño mágico recibido un 12%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 575,
+        "name" : "Reverberación",
+        "icon" : "spell_frost_frostward",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de tus hechizos Choque y Corte de viento 0.5 s."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tus hechizos Choque y Corte de viento 1 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1685,
+        "name" : "Precisión elemental",
+        "icon" : "spell_nature_elementalprecision_1",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta el daño de tus hechizos de Fuego, Escarcha y de Naturaleza un 1% y te otorga un índice de golpe con hechizos igual al 33% de todo espíritu que ganes con objetos o efectos."
+        }, {
+          "description" : "Aumenta el daño de tus hechizos de Fuego, Escarcha y de Naturaleza un 2% y te otorga un índice de golpe con hechizos igual al 66% de todo espíritu que ganes con objetos o efectos."
+        }, {
+          "description" : "Aumenta el daño de tus hechizos de Fuego, Escarcha y de Naturaleza un 3% y te otorga un índice de golpe con hechizos igual al 100% de todo espíritu que ganes con objetos o efectos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11767,
+        "name" : "Trueno ensordecedor",
+        "icon" : "spell_nature_callstorm",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Cuando infliges daño con Descarga de relámpagos o Cadena de relámpagos mientras tu facultad Escudo de relámpagos está activa, tienes un 30% de probabilidad de recuperar un 2% de tu maná y de generar una carga de Escudo de relámpagos adicional, hasta un máximo de 9 cargas."
+        }, {
+          "description" : "Cuando infliges daño con Descarga de relámpagos o Cadena de relámpagos mientras tu facultad Escudo de relámpagos está activa, tienes un 60% de probabilidad de recuperar un 2% de tu maná y de generar una carga de Escudo de relámpagos adicional, hasta un máximo de 9 cargas."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 574,
+        "name" : "Enfoque elemental",
+        "icon" : "spell_shadow_manaburn",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Tras asestar un golpe crítico no periódico con hechizos de Fuego, Escarcha o Naturaleza, entras en un estado de Lanzamiento libre. El estado de Lanzamiento libre reduce el coste de maná de tus próximos 2 hechizos de daño o sanación un 40%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1641,
+        "name" : "Alcance elemental",
+        "icon" : "spell_nature_stormreach",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Aumenta 5 m el alcance de tus hechizos de Descarga de relámpagos, Cadena de relámpagos, Nova de Fuego y Ráfaga de lava y aumenta 7 m el alcance de tus hechizos Choque de llamas y Tótem abrasador."
+        }, {
+          "description" : "Aumenta 10 m el alcance de tus hechizos de Descarga de relámpagos, Cadena de relámpagos, Nova de Fuego y Ráfaga de lava y aumenta 15 m el alcance de tus hechizos Choque de llamas y Tótem abrasador."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2049,
+        "name" : "Juramento elemental",
+        "icon" : "spell_shaman_elementaloath",
+        "x" : 1,
+        "y" : 3,
+        "req" : 574,
+        "ranks" : [ {
+          "description" : "Mientras está activo Lanzamiento libre de Enfoque elemental, infliges un 5% más de daño con hechizos. Además, los miembros de tu grupo o banda en un radio de 100 m reciben un bonus de un 3% de probabilidad de golpe crítico."
+        }, {
+          "description" : "Mientras está activo Lanzamiento libre de Enfoque elemental, infliges un 10% más de daño con hechizos. Además, los miembros de tu grupo o banda en un radio de 100 m reciben un bonus de un 5% de probabilidad de golpe crítico."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2051,
+        "name" : "Flujos de lava",
+        "icon" : "spell_shaman_lavaflow",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Aumenta el bonus de daño con golpe crítico de tu hechizo Ráfaga de lava un 6% extra y el daño periódico de tu Choque de llamas un 20%. Además, cuando se disipa tu Choque de llamas, tu celeridad con hechizos aumenta un 10% durante 6 s."
+        }, {
+          "description" : "Aumenta el bonus de daño con golpe crítico de tu hechizo Ráfaga de lava un 12% extra y el daño periódico de tu Choque de llamas un 40%. Además, cuando se disipa tu Choque de llamas, tu celeridad con hechizos aumenta un 20% durante 6 s."
+        }, {
+          "description" : "Aumenta el bonus de daño con golpe crítico de tu hechizo Ráfaga de lava un 24% extra y el daño periódico de tu Choque de llamas un 60%. Además, cuando se disipa tu Choque de llamas, tu celeridad con hechizos aumenta un 30% durante 6 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11769,
+        "name" : "Fulminación",
+        "icon" : "spell_nature_unrelentingstorm",
+        "x" : 0,
+        "y" : 4,
+        "req" : 11767,
+        "ranks" : [ {
+          "description" : "Cuando tienes más de 3 cargas de Escudo de relámpagos activas, tu hechizo Choque de tierra consumirá las cargas sobrantes, lo que infligirá al instante su daño total al objetivo enemigo."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 573,
+        "name" : "Maestría elemental",
+        "icon" : "spell_nature_wispheal",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 3 min.",
+          "description" : "Cuando se activa, tus próximos hechizos Descarga de relámpagos, Cadena de relámpagos o Ráfaga de lava se convierten en hechizos de lanzamiento instantáneo. Además, tu daño de Fuego, Escarcha y Naturaleza aumenta un 15% y obtienes un 20% de celeridad con hechizos durante 15 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11768,
+        "name" : "Trabazón con la Tierra",
+        "icon" : "spell_nature_stranglevines",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Otorga a tu Tótem Nexo Terrestre un 50% de probabilidad de enraizar a los objetivos cercanos durante 5 s cuando lo lanzas."
+        }, {
+          "description" : "Otorga a tu Tótem Nexo Terrestre un 100% de probabilidad de enraizar a los objetivos cercanos durante 5 s cuando lo lanzas."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 5565,
+        "name" : "Cólera totémica",
+        "icon" : "spell_fire_totemofwrath",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Provoca que los tótems de Fuego aumenten un 10% el poder con hechizos de los miembros de la banda o grupo en un radio de 100 m."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11368,
+        "name" : "Retroacción",
+        "icon" : "ability_vehicle_electrocharge",
+        "x" : 1,
+        "y" : 5,
+        "req" : 573,
+        "ranks" : [ {
+          "description" : "Tus hechizos Descarga de relámpagos y Cadena de relámpagos reducen el tiempo de reutilización restante de tu talento Maestría elemental 1 s."
+        }, {
+          "description" : "Tus hechizos Descarga de relámpagos y Cadena de relámpagos reducen el tiempo de reutilización restante de tu talento Maestría elemental 2 s."
+        }, {
+          "description" : "Tus hechizos Descarga de relámpagos y Cadena de relámpagos reducen el tiempo de reutilización restante de tu talento Maestría elemental 3 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 5566,
+        "name" : "Oleada de lava",
+        "icon" : "spell_shaman_lavasurge",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Da a los pulsos de daño periódico de tu Choque de llamas un 10% de probabilidad de reiniciar el tiempo de reutilización de tu hechizo Ráfaga de lava."
+        }, {
+          "description" : "Da a los pulsos de daño periódico de tu Choque de llamas un 20% de probabilidad de reiniciar el tiempo de reutilización de tu hechizo Ráfaga de lava."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1687,
+        "name" : "Terremoto",
+        "icon" : "spell_shaman_earthquake",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "60% de maná base",
+          "range" : "35 yd range",
+          "castTime" : "Canalizado",
+          "description" : "Provocas que la tierra tiemble y se parta en el área objetivo, lo que inflige 442 p. de daño físico cada 1 s a los enemigos en un radio de 8 m con una probabilidad del 10% de derribar a los objetivos afectados. Dura 8 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Mejora",
+      "icon" : "spell_nature_lightningshield",
+      "backgroundFile" : "ShamanEnhancement",
+      "overlayColor" : "#4c7fff",
+      "description" : "Un guerrero totémico que ataca a los enemigos con armas imbuidas con poder elemental.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 60103,
+        "name" : "Latigazo de lava",
+        "icon" : "ability_shaman_lavalash",
+        "cost" : "4% de maná base",
+        "range" : "Rango de ataques C. a C.",
+        "castTime" : "Instantáneo",
+        "cooldown" : "Reutilización de 10 seg.",
+        "requires" : "Requiere Arma cuerpo a cuerpo",
+        "reagents" : [ ],
+        "description" : "Cargas con lava el arma de tu mano izquierda e infliges instantáneamente un 200% de daño con arma a un objetivo enemigo. El daño aumenta un 40% si tu arma de mano izquierda está encantada con Lengua de Fuego.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 86629,
+        "name" : "Doble empuñadura",
+        "icon" : "ability_dualwield",
+        "reagents" : [ ],
+        "description" : "Permite que las armas de una mano y las armas de mano izquierda se equipen como armas de mano izquierda, te permite parar ataques cuerpo a cuerpo frontales y aumenta tu probabilidad de golpeo un 6% extra.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 30814,
+        "name" : "Presura mental",
+        "icon" : "spell_nature_mentalquickness",
+        "reagents" : [ ],
+        "description" : "Aumenta tu poder con hechizos una cantidad igual al 50% de tu poder de ataque y reduce el coste de maná de tus hechizos instantáneos un 75%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 51522,
+        "name" : "Sabiduría primigenia",
+        "icon" : "spell_shaman_spectraltransformation",
+        "reagents" : [ ],
+        "description" : "Tus ataques cuerpo a cuerpo tienen un 40% de probabilidad de restaurar inmediatamente un 5% de tu maná base.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77223,
+        "name" : "Elementos mejorados",
+        "icon" : "spell_nature_elementalprecision_2",
+        "reagents" : [ ],
+        "description" : "Aumenta todo el daño de Fuego, Escarcha y Naturaleza infligido un 20%. Cada punto de maestría aumenta el daño un 2.5% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 611,
+        "name" : "Armas elementales",
+        "icon" : "spell_fire_flametounge",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta un 20% los bonus pasivos otorgados por tus facultades Arma Lengua de Fuego y Arma de Vida terrestre, un 20% el daño de tus ataques extra con Arma Viento Furioso y un 25% la eficacia de los beneficios activos de tu facultad Desatar elementos."
+        }, {
+          "description" : "Aumenta un 40% los bonus pasivos otorgados por tus facultades Arma Lengua de Fuego y Arma de Vida terrestre, un 40% el daño de tus ataques extra con Arma Viento Furioso y un 50% la eficacia de los beneficios activos de tu facultad Desatar elementos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 5560,
+        "name" : "Golpes enfocados",
+        "icon" : "spell_shaman_focusedstrikes",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta el daño infligido por tus facultades Golpe primigenio y Golpe de tormenta un 15%."
+        }, {
+          "description" : "Aumenta el daño infligido por tus facultades Golpe primigenio y Golpe de tormenta un 30%."
+        }, {
+          "description" : "Aumenta el daño infligido por tus facultades Golpe primigenio y Golpe de tormenta un 45%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 607,
+        "name" : "Escudos mejorados",
+        "icon" : "spell_nature_lightningshield",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta un 5% el daño infligido con tus orbes de Escudo de relámpagos, aumenta la cantidad de maná que ganas con tus orbes de Escudo de agua un 5% y aumenta la cantidad de sanación que hacen tus orbes de Escudo de tierra un 5%."
+        }, {
+          "description" : "Aumenta un 10% el daño infligido con tus orbes de Escudo de relámpagos, aumenta la cantidad de maná que ganas con tus orbes de Escudo de agua un 10% y aumenta la cantidad de sanación que hacen tus orbes de Escudo de tierra un 10%."
+        }, {
+          "description" : "Aumenta un 15% el daño infligido con tus orbes de Escudo de relámpagos, aumenta la cantidad de maná que ganas con tus orbes de Escudo de agua un 15% y aumenta la cantidad de sanación que hacen tus orbes de Escudo de tierra un 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11216,
+        "name" : "Devastación elemental",
+        "icon" : "spell_fire_elementaldevastation",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Cuando infliges daño crítico con un hechizo no periódico, aumenta tu probabilidad de asestar un golpe crítico con ataques cuerpo a cuerpo un 3% durante 10 s."
+        }, {
+          "description" : "Cuando infliges daño crítico con un hechizo no periódico, aumenta tu probabilidad de asestar un golpe crítico con ataques cuerpo a cuerpo un 6% durante 10 s."
+        }, {
+          "description" : "Cuando infliges daño crítico con un hechizo no periódico, aumenta tu probabilidad de asestar un golpe crítico con ataques cuerpo a cuerpo un 9% durante 10 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 602,
+        "name" : "Aluvión",
+        "icon" : "ability_ghoulfrenzy",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta tu velocidad de ataque un 10% en tus 3 próximos golpes después de asestar un golpe crítico."
+        }, {
+          "description" : "Aumenta tu velocidad de ataque un 20% en tus 3 próximos golpes después de asestar un golpe crítico."
+        }, {
+          "description" : "Aumenta tu velocidad de ataque un 30% en tus 3 próximos golpes después de asestar un golpe crítico."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 605,
+        "name" : "Presteza ancestral",
+        "icon" : "spell_lifegivingspeed",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de lanzamiento de tu hechizo Lobo fantasmal 1 s y aumenta la velocidad de movimiento un 7%. No se acumula con otros efectos de aumento de la velocidad de movimiento."
+        }, {
+          "description" : "Reduce el tiempo de lanzamiento de tu hechizo Lobo fantasmal 2 s y aumenta la velocidad de movimiento un 15%. No se acumula con otros efectos de aumento de la velocidad de movimiento."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11432,
+        "name" : "Alcance totémico",
+        "icon" : "spell_nature_agitatingtotem",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta el alcance de los efectos de tus tótems un 15%."
+        }, {
+          "description" : "Aumenta el alcance de los efectos de tus tótems un 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 615,
+        "name" : "Consistencia",
+        "icon" : "spell_holy_devotion",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Aumenta tu aguante un 3% y reduce la duración de los efectos de reducción del movimiento sobre ti un 10%."
+        }, {
+          "description" : "Aumenta tu aguante un 7% y reduce la duración de los efectos de reducción del movimiento sobre ti un 20%."
+        }, {
+          "description" : "Aumenta tu aguante un 10% y reduce la duración de los efectos de reducción del movimiento sobre ti un 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 901,
+        "name" : "Golpe de tormenta",
+        "icon" : "ability_shaman_stormstrike",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "8% de maná base",
+          "range" : "Rango de ataques C. a C.",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 8 seg.",
+          "requires" : "Requiere Arma cuerpo a cuerpo",
+          "description" : "Ataca al instante al enemigo con ambas armas, lo que inflige un 125% de daño con arma y te otorga un 25% extra de probabilidad de asestar un golpe crítico a un enemigo con tus hechizos Descarga de relámpagos, Cadena de relámpagos, Escudo de relámpagos y Choque de tierra durante 15 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2055,
+        "name" : "Choque estático",
+        "icon" : "spell_shaman_staticshock",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Cuando utilizas tus facultades Golpe primigenio, Golpe de tormenta o Latigazo de lava mientras tienes Escudo de relámpagos activo, tienes un 15% de probabilidad de infligir daño igual a un orbe de Escudo de relámpagos sin consumir una carga."
+        }, {
+          "description" : "Cuando utilizas tus facultades Golpe primigenio, Golpe de tormenta o Latigazo de lava mientras tienes Escudo de relámpagos activo, tienes un 30% de probabilidad de infligir daño igual a un orbe de Escudo de relámpagos sin consumir una carga."
+        }, {
+          "description" : "Cuando utilizas tus facultades Golpe primigenio, Golpe de tormenta o Latigazo de lava mientras tienes Escudo de relámpagos activo, tienes un 45% de probabilidad de infligir daño igual a un orbe de Escudo de relámpagos sin consumir una carga."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11220,
+        "name" : "Poder congelado",
+        "icon" : "spell_fire_bluecano",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Aumenta un 5% el daño infligido con tus hechizos Descarga de relámpagos, Cadena de relámpagos, Latigazo de lava y Choque sobre los objetivos afectados por el efecto de tu ataque Estigma de Escarcha, y tu Choque de Escarcha tiene un 50% de probabilidad de paralizar al objetivo con Hielo durante 5 s cuando se usa sobre objetivos a 15 m de ti o más."
+        }, {
+          "description" : "Aumenta un 10% el daño infligido con tus hechizos Descarga de relámpagos, Cadena de relámpagos, Latigazo de lava y Choque sobre los objetivos afectados por el efecto de tu ataque Estigma de Escarcha, y tu Choque de Escarcha tiene un 100% de probabilidad de paralizar al objetivo con Hielo durante 5 s cuando se usa sobre objetivos a 15 m de ti o más."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11770,
+        "name" : "Nova de Fuego mejorada",
+        "icon" : "spell_shaman_improvedfirenova",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Aumenta el daño infligido por tu Nova de Fuego un 10% y reduce el tiempo de reutilización 2 s."
+        }, {
+          "description" : "Aumenta el daño infligido por tu Nova de Fuego un 20% y reduce el tiempo de reutilización 4 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2083,
+        "name" : "Llamas abrasadoras",
+        "icon" : "spell_fire_searingtotem",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Provoca que las descargas abrasadoras de tu Tótem abrasador tengan un 33% de probabilidad de prender fuego a sus objetivos, lo que inflige daño igual al daño infligido por el impacto de Descarga abrasadora durante 15 s. Se acumula hasta 5 veces."
+        }, {
+          "description" : "Provoca que las descargas abrasadoras de tu Tótem abrasador tengan un 67% de probabilidad de prender fuego a sus objetivos, lo que inflige daño igual al daño infligido por el impacto de Descarga abrasadora durante 15 s. Se acumula hasta 5 veces."
+        }, {
+          "description" : "Provoca que las descargas abrasadoras de tu Tótem abrasador tengan un 100% de probabilidad de prender fuego a sus objetivos, lo que inflige daño igual al daño infligido por el impacto de Descarga abrasadora durante 15 s. Se acumula hasta 5 veces."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2056,
+        "name" : "Poder terráneo",
+        "icon" : "spell_nature_earthelemental_totem",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Tus pulsos de Tótem Nexo Terrestre tienen un 50% de probabilidad de eliminar también todos los efectos de frenado sobre ti y sobre los objetivos amistosos cercanos."
+        }, {
+          "description" : "Tus pulsos de Tótem Nexo Terrestre tienen un 100% de probabilidad de eliminar también todos los efectos de frenado sobre ti y sobre los objetivos amistosos cercanos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1693,
+        "name" : "Ira del chamán",
+        "icon" : "spell_nature_shamanrage",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 1 min.",
+          "description" : "Reduce todo el daño recibido un 30% y provoca que tus facultades, tótems y hechizos ofensivos no consuman maná durante 15 s. Este hechizo se puede usar mientras se está aturdido."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1689,
+        "name" : "Ira desatada",
+        "icon" : "spell_nature_unleashedrage",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Aumenta tu pericia 4 p. y aumenta el poder de ataque de todos los miembros del grupo y la banda un 5% si se encuentran en un radio de 100 m del chamán."
+        }, {
+          "description" : "Aumenta tu pericia 8 p. y aumenta el poder de ataque de todos los miembros del grupo y la banda un 10% si se encuentran en un radio de 100 m del chamán."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2057,
+        "name" : "Arma vorágine",
+        "icon" : "spell_shaman_maelstromweapon",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Cuando infliges daño con un arma cuerpo a cuerpo, tienes la probabilidad de reducir el tiempo de lanzamiento de tu siguiente Descarga de relámpagos, Cadena de relámpagos, Maleficio o de cualquier hechizo de sanación un 20%. Se acumula hasta 5 veces. Dura 30 s."
+        }, {
+          "description" : "Cuando infliges daño con un arma cuerpo a cuerpo, tienes la probabilidad (mayor que para el rango 1) de reducir el tiempo de lanzamiento de tu siguiente Descarga de relámpagos, Cadena de relámpagos, Maleficio o de cualquier hechizo de sanación un 20%. Se acumula hasta 5 veces. Dura 30 s."
+        }, {
+          "description" : "Cuando infliges daño con un arma cuerpo a cuerpo, tienes la probabilidad (mayor que para el rango 2) de reducir el tiempo de lanzamiento de tu siguiente Descarga de relámpagos, Cadena de relámpagos, Maleficio o de cualquier hechizo de sanación un 20%. Se acumula hasta 5 veces. Dura 30 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 5563,
+        "name" : "Latigazo de lava mejorado",
+        "icon" : "spell_shaman_improvelavalash",
+        "x" : 2,
+        "y" : 5,
+        "req" : 2083,
+        "ranks" : [ {
+          "description" : "Aumenta un 15% el daño de tu facultad Latigazo de lava y un 10% extra por cada una de tus aplicaciones de Llamas abrasadoras sobre el objetivo, lo que consumirá dichas aplicaciones durante el proceso."
+        }, {
+          "description" : "Aumenta un 30% el daño de tu facultad Latigazo de lava y un 20% extra por cada una de tus aplicaciones de Llamas abrasadoras sobre el objetivo, lo que consumirá dichas aplicaciones durante el proceso."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2058,
+        "name" : "Espíritu feral",
+        "icon" : "spell_shaman_feralspirit",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "12% de maná base",
+          "range" : "30 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 2 min.",
+          "description" : "Invoca 2 espíritus de lobo a las órdenes del chamán. Duran 30 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Restauración",
+      "icon" : "spell_nature_magicimmunity",
+      "backgroundFile" : "ShamanRestoration",
+      "overlayColor" : "#33cc66",
+      "description" : "Un sanador que invoca espíritus ancestrales y el poder purificador del agua para sanar las heridas de los aliados.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : true,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 974,
+        "name" : "Escudo de tierra",
+        "icon" : "spell_nature_skinofearth",
+        "cost" : "19% de maná base",
+        "range" : "40 yd range",
+        "castTime" : "Lanzamiento instantáneo",
+        "reagents" : [ ],
+        "description" : "Protege al objetivo con un escudo de tierra que reduce el tiempo perdido de lanzamiento o canalización cuando recibe daño un 30% y provoca que los ataques sanen al objetivo escudado 1586 p. Este efecto solo puede tener lugar cada pocos segundos. 9 cargas. Dura 10 min. Escudo de tierra solo puede utilizarse con un objetivo a la vez y solo puede haber un escudo elemental activo a la vez sobre el objetivo.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 16213,
+        "name" : "Purificación",
+        "icon" : "spell_frost_wizardmark",
+        "reagents" : [ ],
+        "description" : "Aumenta un 10% la efectividad de tus hechizos de sanación y reduce el tiempo de lanzamiento de tus hechizos Ola de sanación y Ola de sanación superior 0.5 s.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 95862,
+        "name" : "Meditación",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "Permite que un 50% de la regeneración de maná por espíritu continúe mientras estás en combate.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77226,
+        "name" : "Sanación profunda",
+        "icon" : "spell_nature_healingtouch",
+        "reagents" : [ ],
+        "description" : "Aumenta la potencia de tus hechizos de sanación directa un 20%, en función del nivel de salud actual de tu objetivo (los objetivos con la salud más baja se sanan más). Cada punto de maestría aumenta las sanaciones directas un 2.5% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 5568,
+        "name" : "Determinación ancestral",
+        "icon" : "spell_nature_rune",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Reduce un 5% el daño recibido mientras se lanzan hechizos."
+        }, {
+          "description" : "Reduce un 10% el daño recibido mientras se lanzan hechizos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 593,
+        "name" : "Enfoque de las mareas",
+        "icon" : "spell_frost_manarecharge",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Reduce el coste de maná de tus hechizos de sanación un 2%."
+        }, {
+          "description" : "Reduce el coste de maná de tus hechizos de sanación un 4%."
+        }, {
+          "description" : "Reduce el coste de maná de tus hechizos de sanación un 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11177,
+        "name" : "Chispa de vida",
+        "icon" : "spell_nature_wispsplodegreen",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta un 2% tu sanación realizada y un 5% tu sanación recibida."
+        }, {
+          "description" : "Aumenta un 4% tu sanación realizada y un 10% tu sanación recibida."
+        }, {
+          "description" : "Aumenta un 6% tu sanación realizada y un 15% tu sanación recibida."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 583,
+        "name" : "Escudo de agua mejorado",
+        "icon" : "ability_shaman_watershield",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Tienes un 50% de probabilidad de obtener instantáneamente maná como si consumieras un orbe de Escudo de agua cuando ganas un efecto crítico por tus hechizos Ola de sanación, Ola de sanación superior o Mareas Vivas, un 30% de probabilidad cuando ganas un efecto crítico con tu hechizo Oleada de sanación y un 15% de probabilidad cuando ganas un efecto crítico con tu hechizo Sanación en cadena."
+        }, {
+          "description" : "Tienes un 100% de probabilidad de obtener instantáneamente maná como si consumieras un orbe de Escudo de agua cuando ganas un efecto crítico por tus hechizos Ola de sanación, Ola de sanación superior o Mareas Vivas, un 60% de probabilidad cuando ganas un efecto crítico con tu hechizo Oleada de sanación y un 30% de probabilidad cuando ganas un efecto crítico con tu hechizo Sanación en cadena."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 595,
+        "name" : "Enfoque totémico",
+        "icon" : "spell_nature_moonglow",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduce el coste de maná de tus tótems un 15% y aumenta su duración un 20%."
+        }, {
+          "description" : "Reduce el coste de maná de tus tótems un 30% y aumenta su duración un 40%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 5567,
+        "name" : "Perspicacia enfocada",
+        "icon" : "spell_shaman_measuredinsight",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Después de haber lanzado cualquier hechizo de choque, el coste de maná de tu siguiente sanación se reduce un 25% del coste del hechizo de choque y su efectividad de sanación aumenta un 10%."
+        }, {
+          "description" : "Después de haber lanzado cualquier hechizo de choque, el coste de maná de tu siguiente sanación se reduce un 50% del coste del hechizo de choque y su efectividad de sanación aumenta un 20%."
+        }, {
+          "description" : "Después de haber lanzado cualquier hechizo de choque, el coste de maná de tu siguiente sanación se reduce un 75% del coste del hechizo de choque y su efectividad de sanación aumenta un 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1699,
+        "name" : "Guardián de la Naturaleza",
+        "icon" : "spell_nature_natureguardian",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Cada vez que recibas un ataque dañino que reduzca tu salud por debajo del 30%, tu salud máxima aumenta un 5% durante 10 s y tu nivel de amenaza en el atacante se reduce. 30 s de tiempo de reutilización."
+        }, {
+          "description" : "Cada vez que recibas un ataque dañino que reduzca tu salud por debajo del 30%, tu salud máxima aumenta un 10% durante 10 s y tu nivel de amenaza en el atacante se reduce. 30 s de tiempo de reutilización."
+        }, {
+          "description" : "Cada vez que recibas un ataque dañino que reduzca tu salud por debajo del 30%, tu salud máxima aumenta un 15% durante 10 s y tu nivel de amenaza en el atacante se reduce. 30 s de tiempo de reutilización."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 581,
+        "name" : "Sanación ancestral",
+        "icon" : "spell_nature_undyingstrength",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Reduce el daño físico que recibe tu objetivo un 5% durante 15 s después de recibir un efecto crítico de uno de tus hechizos de sanación."
+        }, {
+          "description" : "Reduce el daño físico que recibe tu objetivo un 10% durante 15 s después de recibir un efecto crítico de uno de tus hechizos de sanación."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 591,
+        "name" : "Presteza de la Naturaleza",
+        "icon" : "spell_nature_ravenform",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 2 min.",
+          "description" : "Cuando se activa, tu próximo hechizo de Naturaleza con un tiempo de lanzamiento de base inferior a 10 s se convertirá en un hechizo de lanzamiento instantáneo."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1696,
+        "name" : "Bendición de la Naturaleza",
+        "icon" : "spell_nature_natureblessing",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Aumenta un 5% la efectividad de tus sanaciones directas sobre objetivos con Escudo de tierra."
+        }, {
+          "description" : "Aumenta un 10% la efectividad de tus sanaciones directas sobre objetivos con Escudo de tierra."
+        }, {
+          "description" : "Aumenta un 15% la efectividad de tus sanaciones directas sobre objetivos con Escudo de tierra."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 588,
+        "name" : "Lluvias reconfortantes",
+        "icon" : "spell_nature_giftofthewaterspirit",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Aumenta la cantidad sanada por tu Tótem Corriente de sanación un 25% y por tu hechizo Lluvia de sanación un 15%."
+        }, {
+          "description" : "Aumenta la cantidad sanada por tu Tótem Corriente de sanación un 50% y por tu hechizo Lluvia de sanación un 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2084,
+        "name" : "Limpiar espíritu mejorado",
+        "icon" : "ability_shaman_cleansespirit",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Potencia tu hechizo Limpiar espíritu para que también elimine un efecto mágico de un objetivo amistoso."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11435,
+        "name" : "Aguas de limpieza",
+        "icon" : "spell_nature_regeneration_02",
+        "x" : 3,
+        "y" : 3,
+        "req" : 2084,
+        "ranks" : [ {
+          "description" : "Reduce el coste de Limpiar espíritu un 20% y cuando tu Limpiar espíritu elimina con éxito un efecto dañino, también sanas al objetivo 1193-1344 p."
+        }, {
+          "description" : "Reduce el coste de Limpiar espíritu un 40% y cuando tu Limpiar espíritu elimina con éxito un efecto dañino, también sanas al objetivo 2386-2687 p."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2061,
+        "name" : "Despertar ancestral",
+        "icon" : "spell_shaman_ancestralawakening",
+        "x" : 0,
+        "y" : 4,
+        "req" : 581,
+        "ranks" : [ {
+          "description" : "Cuando realizas sanación crítica con una sanación directa sobre un solo objetivo, invocas a un espíritu ancestral para que te ayude. Esto sana instantáneamente un 10% de la cantidad de sanación realizada al objetivo amistoso de tu grupo o banda que, en un radio de 40 m, tenga el porcentaje de salud más bajo."
+        }, {
+          "description" : "Cuando realizas sanación crítica con una sanación directa sobre un solo objetivo, invocas a un espíritu ancestral para que te ayude. Esto sana instantáneamente un 20% de la cantidad de sanación realizada al objetivo amistoso de tu grupo o banda que, en un radio de 40 m, tenga el porcentaje de salud más bajo."
+        }, {
+          "description" : "Cuando realizas sanación crítica con una sanación directa sobre un solo objetivo, invocas a un espíritu ancestral para que te ayude. Esto sana instantáneamente un 30% de la cantidad de sanación realizada al objetivo amistoso de tu grupo o banda que, en un radio de 40 m, tenga el porcentaje de salud más bajo."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 590,
+        "name" : "Tótem Marea de maná",
+        "icon" : "spell_frost_summonwaterelemental",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 3 min.",
+          "description" : "Invoca un Tótem Marea de maná con un 10% de la salud del taumaturgo a los pies de este durante 12 s. Los miembros del grupo en un radio de 40 m del tótem tendrán su espíritu aumentado un 350%."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7705,
+        "name" : "Corrientes telúricas",
+        "icon" : "spell_lightning_lightningbolt01",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Tu armonía con la energía natural provoca que tu hechizo Descarga de relámpagos restaure maná igual al 20% del daño infligido."
+        }, {
+          "description" : "Tu armonía con la energía natural provoca que tu hechizo Descarga de relámpagos restaure maná igual al 40% del daño infligido."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2063,
+        "name" : "Maremotos",
+        "icon" : "spell_shaman_tidalwaves",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Cuando lanzas Sanación en cadena o Mareas vivas, ganas el efecto de Maremotos, que reduce un 10% el tiempo de lanzamiento de tus hechizos Ola de sanación y Ola de sanación superior y aumenta la probabilidad de efecto crítico de tu hechizo Oleada de sanación un 10%. 2 cargas."
+        }, {
+          "description" : "Cuando lanzas Sanación en cadena o Mareas vivas, ganas el efecto de Maremotos, que reduce un 20% el tiempo de lanzamiento de tus hechizos Ola de sanación y Ola de sanación superior y aumenta la probabilidad de efecto crítico de tu hechizo Oleada de sanación un 20%. 2 cargas."
+        }, {
+          "description" : "Cuando lanzas Sanación en cadena o Mareas vivas, ganas el efecto de Maremotos, que reduce un 30% el tiempo de lanzamiento de tus hechizos Ola de sanación y Ola de sanación superior y aumenta la probabilidad de efecto crítico de tu hechizo Oleada de sanación un 30%. 2 cargas."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2060,
+        "name" : "Bendición de los Eternos",
+        "icon" : "spell_shaman_blessingofeternals",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Otorga un 40% extra de probabilidad de activar el efecto de sanación en el tiempo de tu Vida terrestre cuando sanas a un aliado que está por debajo del 35% de su salud total."
+        }, {
+          "description" : "Otorga un 80% extra de probabilidad de activar el efecto de sanación en el tiempo de tu Vida terrestre cuando sanas a un aliado que está por debajo del 35% de su salud total."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2064,
+        "name" : "Mareas Vivas",
+        "icon" : "spell_nature_riptide",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "10% de maná base",
+          "range" : "40 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 6 seg.",
+          "description" : "Sana a un objetivo aliado 2140 p. y luego 3375 p. durante 15 s. Tu próxima Sanación en cadena lanzada a ese objetivo principal en menos de 15 s consumirá el efecto de sanación en el tiempo y aumentará el efecto de Sanación en cadena un 25%."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

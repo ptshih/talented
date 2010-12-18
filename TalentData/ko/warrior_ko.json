@@ -1,0 +1,1050 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 1,
+      "name" : "전사",
+      "powerType" : "RAGE",
+      "powerTypeId" : 1
+    },
+    "talentTrees" : [ {
+      "name" : "무기",
+      "icon" : "ability_warrior_savageblow",
+      "backgroundFile" : "WarriorArms",
+      "overlayColor" : "#ffb719",
+      "description" : "양손 무기를 사용하는 전투의 달인입니다. 압도적인 공격력을 바탕으로 기민하게 적을 쓰러뜨립니다.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 12294,
+        "name" : "죽음의 일격",
+        "icon" : "ability_warrior_savageblow",
+        "cost" : "분노 25",
+        "range" : "근접 거리",
+        "castTime" : "즉시 시전",
+        "cooldown" : "재사용 대기시간: 4.5초",
+        "requires" : "근접 무기 필요",
+        "reagents" : [ ],
+        "description" : "무기 공격력의 80%에 해당하는 피해와 추가로 9만큼의 피해를 입히고 10초 동안 모든 받는 치유 효과가 10%만큼 감소하도록 상처를 입힙니다.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 12712,
+        "name" : "양손 무기류 전문화",
+        "icon" : "inv_axe_09",
+        "reagents" : [ ],
+        "description" : "양손 무기의 공격력이 10%만큼 증가합니다.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 12296,
+        "name" : "분노 제어",
+        "icon" : "ability_warrior_endlessrage",
+        "reagents" : [ ],
+        "description" : "3초마다 1의 분노가 생성되고 적에게 피해를 입힐 때 25%의 추가 분노가 생성됩니다.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76838,
+        "name" : "일격의 기회",
+        "icon" : "ability_backstab",
+        "reagents" : [ ],
+        "description" : "근접 공격 시 16%의 확률로 추가 근접 공격을 수행하여 일반 공격력의 100%에 해당하는 피해를 입힙니다. 특화력 1당 효과의 발동 확률이 2%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10134,
+        "name" : "전쟁 교본",
+        "icon" : "ability_warrior_unrelentingassault",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "영웅의 일격, 회전베기, 연전연승, 격돌의 공격력이 5%만큼 증가합니다."
+        }, {
+          "description" : "영웅의 일격, 회전베기, 연전연승, 격돌의 공격력이 10%만큼 증가합니다."
+        }, {
+          "description" : "영웅의 일격, 회전베기, 연전연승, 격돌의 공격력이 15%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11163,
+        "name" : "전투 붕대",
+        "icon" : "inv_misc_bandage_05",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "받는 모든 치유 효과가 3%만큼 증가하고 스스로 자신을 치유하는 능력의 효과가 추가로 10%만큼 증가합니다."
+        }, {
+          "description" : "받는 모든 치유 효과가 6%만큼 증가하고 스스로 자신을 치유하는 능력의 효과가 추가로 20%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9664,
+        "name" : "대공습",
+        "icon" : "warrior_talent_icon_blitz",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "돌진 시 5의 추가 분노를 생성하고 주위 1명의 대상을 추가로 기절시킵니다."
+        }, {
+          "description" : "돌진 시 10의 추가 분노를 생성하고 주위 2명의 대상을 추가로 기절시킵니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11416,
+        "name" : "전술 숙련",
+        "icon" : "spell_nature_enchantarmor",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "태세를 변경할 때 추가로 25의 분노를 유지할 수 있습니다."
+        }, {
+          "description" : "태세를 변경할 때 추가로 50의 분노를 유지할 수 있습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8190,
+        "name" : "재기의 바람",
+        "icon" : "ability_hunter_harass",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "기절하거나 이동 불가 효과에 걸렸을 때 10초에 걸쳐 10의 분노와 총 생명력의 2%에 해당하는 생명력을 회복합니다."
+        }, {
+          "description" : "기절하거나 이동 불가 효과에 걸렸을 때 10초에 걸쳐 20의 분노와 총 생명력의 5%에 해당하는 생명력을 회복합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8176,
+        "name" : "치명상",
+        "icon" : "ability_backstab",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "적에게 치명타를 적중시키면 출혈 효과를 일으켜 6초에 걸쳐 근접 무기 공격력의 16%에 해당하는 피해를 입힙니다."
+        }, {
+          "description" : "적에게 치명타를 적중시키면 출혈 효과를 일으켜 6초에 걸쳐 근접 무기 공격력의 32%에 해당하는 피해를 입힙니다."
+        }, {
+          "description" : "적에게 치명타를 적중시키면 출혈 효과를 일으켜 6초에 걸쳐 근접 무기 공격력의 48%에 해당하는 피해를 입힙니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8184,
+        "name" : "전쟁의 북",
+        "icon" : "achievement_bg_winwsg_3-0",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "방패 가격, 자루 공격, 모든 외침에 소모되는 분노가 50%만큼 감소합니다."
+        }, {
+          "description" : "방패 가격, 자루 공격, 모든 외침에 소모되는 분노가 100%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10138,
+        "name" : "피의 맛",
+        "icon" : "ability_rogue_hungerforblood",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "제압이 치명타로 적중할 확률이 20%만큼 증가합니다. 분쇄로 피해를 입혔을 때 33%의 확률로 9초 동안 제압 능력을 사용할 수 있습니다. 이 효과는 5초마다 최대 1번씩만 발동됩니다."
+        }, {
+          "description" : "제압이 치명타로 적중할 확률이 40%만큼 증가합니다. 분쇄로 피해를 입혔을 때 66%의 확률로 9초 동안 제압 능력을 사용할 수 있습니다. 이 효과는 5초마다 최대 1번씩만 발동됩니다."
+        }, {
+          "description" : "제압이 치명타로 적중할 확률이 60%만큼 증가합니다. 분쇄로 피해를 입혔을 때 100%의 확률로 9초 동안 제압 능력을 사용할 수 있습니다. 이 효과는 5초마다 최대 1번씩만 발동됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8192,
+        "name" : "휩쓸기 일격",
+        "icon" : "ability_rogue_slicedice",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "분노 30",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 1분",
+          "description" : "10초 동안 근접 공격 시 주위의 적 1명을 추가로 공격합니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10741,
+        "name" : "꿰뚫기",
+        "icon" : "ability_searingarrow",
+        "x" : 2,
+        "y" : 2,
+        "req" : 8176,
+        "ranks" : [ {
+          "description" : "죽음의 일격, 격돌, 제압의 치명타 피해 보너스가 10%만큼 증가합니다."
+        }, {
+          "description" : "죽음의 일격, 격돌, 제압의 치명타 피해 보너스가 20%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11417,
+        "name" : "무력화 연마",
+        "icon" : "ability_shockwave",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "무력화 효과에 걸린 대상에게 다시 무력화 효과를 입히면 5초 동안 대상이 이동 불가 상태가 됩니다. 이 효과는 매 60초마다 최대 1번씩만 발동됩니다."
+        }, {
+          "description" : "무력화 효과에 걸린 대상에게 다시 무력화 효과를 입히면 5초 동안 대상이 이동 불가 상태가 됩니다. 이 효과는 매 30초마다 최대 1번씩만 발동됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11418,
+        "name" : "격돌 연마",
+        "icon" : "ability_warrior_decisivestrike",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "격돌의 시전 시간이 0.5초만큼 단축되고 공격력이 10%만큼 증가합니다."
+        }, {
+          "description" : "격돌의 시전 시간이 1초만큼 단축되고 공격력이 20%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11223,
+        "name" : "죽음의 침묵",
+        "icon" : "achievement_boss_kingymiron",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 2분",
+          "description" : "다음 10초 동안 능력 사용 시 분노를 소모하지 않고, 평소와 같이 분노를 생성합니다. 내면의 분노 효과 중에는 사용하지 못합니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9662,
+        "name" : "피의 광란",
+        "icon" : "ability_warrior_bloodfrenzy",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "자신이 유발한 출혈 효과에 걸린 대상이 추가로 2%의 물리 피해와 15%의 출혈 피해를 받습니다. 추가로 자동 공격 시 5%의 확률로 20의 추가 분노를 생성합니다."
+        }, {
+          "description" : "자신이 유발한 출혈 효과에 걸린 대상이 추가로 4%의 물리 피해와 30%의 출혈 피해를 받습니다. 추가로 자동 공격 시 10%의 확률로 20의 추가 분노를 생성합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10520,
+        "name" : "양 때리기",
+        "icon" : "warrior_talent_icon_lambstotheslaughter",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "죽음의 일격으로 피해를 입힌 후 다음 마무리 일격, 제압, 죽음의 일격으로 입히는 피해가 10%만큼 증가합니다."
+        }, {
+          "description" : "죽음의 일격으로 피해를 입힌 후 다음 마무리 일격, 제압, 죽음의 일격으로 입히는 피해가 20%만큼 증가합니다."
+        }, {
+          "description" : "죽음의 일격으로 피해를 입힌 후 다음 마무리 일격, 제압, 죽음의 일격으로 입히는 피해가 30%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8208,
+        "name" : "돌격전차",
+        "icon" : "ability_warrior_bullrush",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "전투 중에도 돌진 기술을 사용할 수 있지만, 돌진의 재사용 대기시간이 5초만큼 증가합니다. 돌진 후 10초 내에 사용하는 격돌 혹은 죽음의 일격이 치명타로 적중할 확률이 추가로 25%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8214,
+        "name" : "급살",
+        "icon" : "ability_warrior_improveddisciplines",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "근접 공격을 적중시켰을 때 3%의 확률로 거인의 강타 기술의 재사용 대기시간이 초기화됩니다. 또한 마무리 일격 사용 후 최소 5의 분노를 유지합니다."
+        }, {
+          "description" : "근접 공격을 적중시켰을 때 6%의 확률로 거인의 강타 기술의 재사용 대기시간이 초기화됩니다. 또한 마무리 일격 사용 후 최소 10의 분노를 유지합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8194,
+        "name" : "파괴자",
+        "icon" : "ability_warrior_trauma",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "죽음의 일격으로 근접 치명타를 적중시켰을 때 50%의 확률로 격노하여 12초 동안 공격력이 5%만큼 증가합니다."
+        }, {
+          "description" : "죽음의 일격으로 근접 치명타를 적중시켰을 때 100%의 확률로 격노하여 12초 동안 공격력이 10%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11167,
+        "name" : "쓰러뜨리기",
+        "icon" : "inv_mace_62",
+        "x" : 2,
+        "y" : 5,
+        "req" : 8208,
+        "ranks" : [ {
+          "cost" : "분노 15",
+          "range" : "근접 거리",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 45초",
+          "requires" : "근접 무기 필요",
+          "description" : "대상을 넘어뜨리고 5초 동안 기절시킵니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8222,
+        "name" : "칼날폭풍",
+        "icon" : "ability_warrior_bladestorm",
+        "x" : 1,
+        "y" : 6,
+        "req" : 8208,
+        "ranks" : [ {
+          "cost" : "분노 25",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 1.5분",
+          "requires" : "근접 무기 필요",
+          "description" : "휘몰아치는 파괴의 소용돌이가 되어 주위 모든 적에게 무기 공격력의 150%에 해당하는 피해를 입히고 6초 동안 매 1초마다 소용돌이로 공격합니다. 이 동안에는 기술을 사용할 수 없고 동정심이나 자비심, 어떠한 공포도 느끼지 못하여 죽거나 무장 해제되기 전까지는 어떠한 방법으로도 공격이 저지당하지 않습니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "분노",
+      "icon" : "ability_warrior_innerrage",
+      "backgroundFile" : "WarriorFury",
+      "overlayColor" : "#ff0000",
+      "description" : "양손에 각각 무기를 들고 광폭하게 적을 공격하는 광전사입니다. 적을 질풍과 같이 공격하여 산산조각냅니다.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 23881,
+        "name" : "피의 갈증",
+        "icon" : "spell_nature_bloodlust",
+        "cost" : "분노 20",
+        "range" : "근접 거리",
+        "castTime" : "즉시 시전",
+        "cooldown" : "재사용 대기시간: 3초",
+        "requires" : "근접 무기 필요",
+        "reagents" : [ ],
+        "description" : "즉시 적을 공격하여 7의 피해를 입힙니다. 추가로 다음 3회의 근접 공격을 성공할 시 최대 생명력의 0.5%에 해당하는 생명력을 회복합니다. 8초 동안 지속됩니다. 피해는 전투력에 따라 증가합니다.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 29592,
+        "name" : "정밀함",
+        "icon" : "ability_marksmanship",
+        "reagents" : [ ],
+        "description" : "적중률이 3%만큼 증가합니다.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 23588,
+        "name" : "쌍수 무기 전문화",
+        "icon" : "ability_dualwield",
+        "reagents" : [ ],
+        "description" : "한손 무기와 보조 무기를 보조 무기로 사용할 수 있습니다. 쌍수로 공격하는 동안 모든 물리 공격력이 10%만큼 증가하고 보조 무기의 공격력이 추가로 25%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76856,
+        "name" : "구속되지 않은 분노",
+        "icon" : "ability_warrior_endlessrage",
+        "reagents" : [ ],
+        "description" : "격노를 일으키거나 격노가 필요한 능력의 효과가 38%만큼 증가합니다. 특화력 1당 격노 효과가 추가로 4.70%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9610,
+        "name" : "피의 광기",
+        "icon" : "spell_shadow_summonimp",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "피해를 받으면, 10%의 확률로 5초에 걸쳐 총 생명력의 1.0%에 해당하는 생명력을 회복합니다."
+        }, {
+          "description" : "피해를 받으면, 10%의 확률로 5초에 걸쳐 총 생명력의 2%에 해당하는 생명력을 회복합니다."
+        }, {
+          "description" : "피해를 받으면, 10%의 확률로 5초에 걸쳐 총 생명력의 3.0%에 해당하는 생명력을 회복합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9606,
+        "name" : "전투 무아지경",
+        "icon" : "inv_helmet_06",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "피의 갈증, 죽음의 일격, 방패 밀쳐내기 공격 시 5%의 확률로 5 이상의 분노를 소모하는 다음 특수 공격에 분노가 소모되지 않습니다."
+        }, {
+          "description" : "피의 갈증, 죽음의 일격, 방패 밀쳐내기 공격 시 10%의 확률로 5 이상의 분노를 소모하는 다음 특수 공격에 분노가 소모되지 않습니다."
+        }, {
+          "description" : "피의 갈증, 죽음의 일격, 방패 밀쳐내기 공격 시 15%의 확률로 5 이상의 분노를 소모하는 다음 특수 공격에 분노가 소모되지 않습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9608,
+        "name" : "무자비함",
+        "icon" : "ability_rogue_eviscerate",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "피의 갈증, 죽음의 일격, 방패 밀쳐내기의 치명타 적중률이 5%만큼 증가합니다."
+        }, {
+          "description" : "피의 갈증, 죽음의 일격, 방패 밀쳐내기의 치명타 적중률이 10%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9644,
+        "name" : "집행자",
+        "icon" : "inv_sword_48",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "마무리 일격 사용 시 50%의 확률로 9초 동안 근접 공격 속도가 5%만큼 증가합니다. 최대 5번까지 중복됩니다."
+        }, {
+          "description" : "마무리 일격 사용 시 100%의 확률로 9초 동안 근접 공격 속도가 5%만큼 증가합니다. 최대 5번까지 중복됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9624,
+        "name" : "우렁찬 음성",
+        "icon" : "spell_nature_purge",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "전투의 외침과 지휘의 외침 재사용 대기시간이 15초만큼 감소하고 전투의 외침과 지휘의 외침 사용 시 5의 추가 분노를 생성합니다."
+        }, {
+          "description" : "전투의 외침과 지휘의 외침 재사용 대기시간이 30초만큼 감소하고 전투의 외침과 지휘의 외침 사용 시 10의 추가 분노를 생성합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11415,
+        "name" : "거친 방해",
+        "icon" : "ability_warrior_commandingshout",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "방패 가격 또는 자루 공격으로 주문을 성공적으로 방해했을 때 15초 동안 공격력이 5%만큼 증가합니다."
+        }, {
+          "description" : "방패 가격 또는 자루 공격으로 주문을 성공적으로 방해했을 때 30초 동안 공격력이 5%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9618,
+        "name" : "날카로운 고함",
+        "icon" : "spell_shadow_deathscream",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "cost" : "분노 10",
+          "castTime" : "즉시 시전",
+          "description" : "10미터 내의 모든 적을 멍해지도록 만들어 6초 동안 이동 속도를 50%만큼 감소시킵니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9636,
+        "name" : "질풍",
+        "icon" : "ability_ghoulfrenzy",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "근접 치명타를 적중시키면 다음 3회의 공격 동안 공격 속도가 8%만큼 증가합니다."
+        }, {
+          "description" : "근접 치명타를 적중시키면 다음 3회의 공격 동안 공격 속도가 16%만큼 증가합니다."
+        }, {
+          "description" : "근접 치명타를 적중시키면 다음 3회의 공격 동안 공격 속도가 25%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9630,
+        "name" : "죽음의 소원",
+        "icon" : "spell_shadow_deathpact",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "분노 10",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 3분",
+          "description" : "활성화되면 격노하여 물리 공격력이 20%만큼 향상되지만 받는 모든 피해가 5%만큼 증가합니다. 30초 동안 지속됩니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9612,
+        "name" : "격노",
+        "icon" : "spell_shadow_unholyfrenzy",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "근접 공격 시 3%의 확률로 격노하여 9초 동안 피해 보너스가 3%만큼 증가합니다."
+        }, {
+          "description" : "근접 공격 시 6%의 확률로 격노하여 9초 동안 보너스 피해가 7%만큼 증가합니다."
+        }, {
+          "description" : "근접 공격 시 9%의 확률로 격노하여 9초 동안 피해 보너스가 10%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11414,
+        "name" : "투사의 혼",
+        "icon" : "inv_sword_86",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "생명력이 20% 이하로 내려가면 4초 동안 무기 막기 확률이 100%만큼 증가합니다. 이 효과는 2분마다 최대 한 번씩만 발동됩니다."
+        }, {
+          "description" : "생명력이 20% 이하로 내려가면 8초 동안 무기 막기 확률이 100%만큼 증가합니다. 이 효과는 2분마다 최대 한 번씩만 발동됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11208,
+        "name" : "분노의 강타",
+        "icon" : "ability_hunter_swiftstrike",
+        "x" : 1,
+        "y" : 3,
+        "req" : 9630,
+        "ranks" : [ {
+          "cost" : "분노 20",
+          "range" : "근접 거리",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 6초",
+          "requires" : "근접 무기 필요",
+          "description" : "양손의 근접 무기로 무기 공격력의 80%에 해당하는 피해를 입힙니다. 격노한 동안에만 기술을 쓸 수 있습니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9650,
+        "name" : "광란",
+        "icon" : "ability_warrior_rampage",
+        "x" : 2,
+        "y" : 3,
+        "req" : 11208,
+        "ranks" : [ {
+          "description" : "100미터 반경 내에 있는 모든 파티원과 공격대원의 근접 및 원거리 치명타 적중률이 5%만큼 증가합니다. 추가로 자신의 치명타 적중률이 2%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9648,
+        "name" : "영웅의 격노",
+        "icon" : "warrior_talent_icon_deadlycalm",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 30초",
+          "description" : "모든 이동 불가 효과를 제거합니다. 또한 봉쇄의 재사용 대기시간이 초기화됩니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9634,
+        "name" : "사나운 공격",
+        "icon" : "ability_warrior_furiousresolve",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "자동 공격 시 일정 확률로 10초 동안 대상이 받는 치유 효과를 10%만큼 감소시킵니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9642,
+        "name" : "고기칼",
+        "icon" : "warrior_talent_icon_mastercleaver",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "회전베기나 소용돌이 공격 시 10초 동안 회전베기와 소용돌이의 공격력이 5%만큼 증가합니다. 최대 3번까지 중복됩니다."
+        }, {
+          "description" : "회전베기나 소용돌이 공격 시 10초 동안 회전베기와 소용돌이의 공격력이 10%만큼 증가합니다. 최대 3번까지 중복됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10743,
+        "name" : "강렬한 분노",
+        "icon" : "warrior_talent_icon_furyintheblood",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "광전사의 격노, 무모한 희생, 죽음의 소원 기술의 재사용 대기시간이 10%만큼 감소합니다."
+        }, {
+          "description" : "광전사의 격노, 무모한 희생, 죽음의 소원 기술의 재사용 대기시간이 20%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9654,
+        "name" : "피의 쇄도",
+        "icon" : "ability_warrior_bloodsurge",
+        "x" : 1,
+        "y" : 5,
+        "req" : 11208,
+        "ranks" : [ {
+          "description" : "피의 갈증 적중 시 10%의 확률로 10초 내에 사용하는 다음 격돌은 분노 소모 없이 즉시 시전됩니다."
+        }, {
+          "description" : "피의 갈증 적중 시 20%의 확률로 10초 내에 사용하는 다음 격돌은 분노 소모 없이 즉시 시전됩니다."
+        }, {
+          "description" : "피의 갈증 적중 시 30%의 확률로 10초 내에 사용하는 다음 격돌은 분노 소모 없이 즉시 시전됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10744,
+        "name" : "척후병",
+        "icon" : "warrior_talent_icon_skirmisher",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "봉쇄의 재사용 대기시간이 5초만큼, 영웅의 도약의 재사용 대기시간이 10초만큼 감소합니다."
+        }, {
+          "description" : "봉쇄의 재사용 대기시간이 10초만큼, 영웅의 도약의 재사용 대기시간이 20초만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9658,
+        "name" : "티탄의 손아귀",
+        "icon" : "ability_warrior_titansgrip",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "description" : "양손 도끼, 양손 둔기, 양손 도검을 한손 장비로 사용할 수 있습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9660,
+        "name" : "하나된 분노",
+        "icon" : "warrior_talent_icon_singlemindedfury",
+        "x" : 2,
+        "y" : 6,
+        "ranks" : [ {
+          "description" : "한손 무기 두 개를 쌍수로 사용하면 공격력이 추가로 15%만큼 증가하고, 격돌 시 양손의 무기를 모두 사용합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "방어",
+      "icon" : "ability_warrior_defensivestance",
+      "backgroundFile" : "WarriorProtection",
+      "overlayColor" : "#4c7fff",
+      "description" : "방패를 사용하여 자신과 아군을 안전하게 보호하는 강인한 수호자입니다.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : true,
+        "healer" : false,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 23922,
+        "name" : "방패 밀쳐내기",
+        "icon" : "inv_shield_05",
+        "cost" : "분노 20",
+        "range" : "근접 거리",
+        "castTime" : "즉시 시전",
+        "cooldown" : "재사용 대기시간: 6초",
+        "requires" : "방패 필요",
+        "reagents" : [ ],
+        "description" : "적을 방패로 가격합니다. 전투력에 기반하여 52의 피해를 줍니다. 대상의 마법 효과 1개를 제거합니다. 위협 수준을 크게 증가시킵니다.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 29144,
+        "name" : "파수대장",
+        "icon" : "inv_helmet_21",
+        "reagents" : [ ],
+        "description" : "총 체력이 15%만큼 증가하고, 방패 방어 확률이 15%만큼 증가합니다. 자신을 공격하지 않는 적을 공격할 때 50%의 추가 분노를 얻습니다.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 93098,
+        "name" : "복수심",
+        "icon" : "ability_paladin_shieldofvengeance",
+        "reagents" : [ ],
+        "description" : "피해를 받을 때마다 받은 피해의 5%만큼을, 생명력의 10%까지 전투력으로 전환합니다.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76857,
+        "name" : "결정적 방어",
+        "icon" : "ability_warrior_criticalblock",
+        "reagents" : [ ],
+        "description" : "방패로 공격을 방어할 확률이 12%만큼 증가하고 결정적 방어가 발동할 확률이 12%만큼 증가합니다. 특화력 1당 방어 확률이 추가로 1.5%만큼, 결정적 방어 확률이 추가로 1.5%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10464,
+        "name" : "촉발",
+        "icon" : "ability_warrior_incite",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "영웅의 일격이 치명타로 적중할 확률이 5%만큼 증가합니다. 영웅의 일격이 치명타로 적중하면 33%의 확률로 다음 영웅의 일격도 치명타로 적중합니다. 촉발을 통해 치명타로 적중한 영웅의 일격은 촉발을 재발동시키지 않습니다."
+        }, {
+          "description" : "영웅의 일격이 치명타로 적중할 확률이 10%만큼 증가합니다. 영웅의 일격이 치명타로 적중하면 66%의 확률로 다음 영웅의 일격도 치명타로 적중합니다. 촉발을 통해 치명타로 적중한 영웅의 일격은 촉발을 재발동시키지 않습니다."
+        }, {
+          "description" : "영웅의 일격이 치명타로 적중할 확률이 15%만큼 증가합니다. 영웅의 일격이 치명타로 적중하면 100%의 확률로 다음 영웅의 일격도 치명타로 적중합니다. 촉발을 통해 치명타로 적중한 영웅의 일격은 촉발을 재발동시키지 않습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10474,
+        "name" : "강인함",
+        "icon" : "spell_holy_devotion",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "장비 착용으로 인한 방어도가 3%만큼 증가합니다."
+        }, {
+          "description" : "장비 착용으로 인한 방어도가 6%만큼 증가합니다."
+        }, {
+          "description" : "장비 착용으로 인한 방어도가 10%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10480,
+        "name" : "핏빛 천둥",
+        "icon" : "warrior_talent_icon_bloodandthunder",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "분쇄에 걸린 대상을 천둥벼락으로 공격할 때 50%의 확률로 모든 대상에게 분쇄 효과를 겁니다."
+        }, {
+          "description" : "분쇄에 걸린 대상을 천둥벼락으로 공격할 때 100%의 확률로 모든 대상에게 분쇄 효과를 겁니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10466,
+        "name" : "방패 전문화",
+        "icon" : "inv_shield_06",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "방패로 공격을 방어하면 5의 추가 분노를 생성합니다. 마법 공격을 주문 반사하면 20의 추가 분노를 생성합니다."
+        }, {
+          "description" : "방패로 공격을 방어하면 10의 추가 분노를 생성합니다. 마법 공격을 주문 반사하면 40의 추가 분노를 생성합니다."
+        }, {
+          "description" : "방패로 공격을 방어하면 15의 추가 분노를 생성합니다. 마법 공격을 주문 반사하면 60의 추가 분노를 생성합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10472,
+        "name" : "방패 숙련",
+        "icon" : "ability_warrior_shieldguard",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "방패 막기의 재사용 대기시간이 10초만큼, 방패의 벽의 재사용 대기시간이 60초만큼, 주문 반사의 재사용 대기시간이 1초만큼 감소합니다."
+        }, {
+          "description" : "방패 막기의 재사용 대기시간이 20초만큼, 방패의 벽의 재사용 대기시간이 120초만큼, 주문 반사의 재사용 대기시간이 2초만큼 감소합니다."
+        }, {
+          "description" : "방패 막기의 재사용 대기시간이 30초만큼, 방패의 벽의 재사용 대기시간이 180초만큼, 주문 반사의 재사용 대기시간이 3초만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11170,
+        "name" : "전선 사수",
+        "icon" : "achievement_bg_defendxtowers_av",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "무기 막기 성공 시 치명타 적중률과 결정적 방어 확률이 5초 동안 10%만큼 증가합니다."
+        }, {
+          "description" : "무기 막기 성공 시 치명타 적중률과 결정적 방어 확률이 10초 동안 10%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10468,
+        "name" : "입막음",
+        "icon" : "ability_warrior_shieldbash",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "방패 가격 및 영웅의 투척 사용 시 50%의 확률로 3초 동안 적을 침묵시키고 영웅의 투척의 재사용 대기시간이 15초만큼 감소합니다."
+        }, {
+          "description" : "방패 가격 및 영웅의 투척 사용 시 100%의 확률로 3초 동안 적을 침묵시킵니다. 영웅의 투척의 재사용 대기시간이 30초만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10482,
+        "name" : "최후의 저항",
+        "icon" : "spell_holy_ashestoashes",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 3분",
+          "description" : "일시적으로 최대 생명력이 30%만큼 증가합니다. 20초 동안 지속되며 지속시간이 끝나면 임시 생명력은 사라집니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10478,
+        "name" : "충격의 일격",
+        "icon" : "ability_thunderbolt",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "분노 15",
+          "range" : "근접 거리",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 30초",
+          "requires" : "근접 무기 필요",
+          "description" : "적을 5초 동안 기절시키고 16의 피해를 입힙니다. 전투력에 따라 피해량이 달라집니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10934,
+        "name" : "철통 방어",
+        "icon" : "ability_defend",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "방어 태세에서 근접 공격으로 치명타 공격을 받을 확률이 3%만큼 감소합니다. 추가로 적의 공격을 방어하거나 무기로 막거나 회피하면 10%의 확률로 격노하여 12초 동안 물리 공격력이 5%만큼 증가합니다."
+        }, {
+          "description" : "방어 태세에서 근접 공격으로 치명타 공격을 받을 확률이 6%만큼 감소합니다. 추가로 적의 공격을 방어하거나 무기로 막거나 회피하면 20%의 확률로 격노하여 12초 동안 물리 공격력이 10%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10494,
+        "name" : "전쟁인도자",
+        "icon" : "ability_warrior_warbringer",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "전투 중 그리고 모든 태세에서 돌진, 봉쇄, 가로막기를 사용할 수 있습니다. 추가로 가로막기 사용 시 모든 이동 방해 효과에서 벗어납니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10470,
+        "name" : "복수 연마",
+        "icon" : "ability_warrior_revenge",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "복수의 피해가 30%만큼 증가하고 추가 대상 하나를 공격해 50%만큼의 피해를 입힙니다."
+        }, {
+          "description" : "복수의 피해가 60%만큼 증가하고 추가 대상 하나에게 동일한 양의 피해를 입힙니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10486,
+        "name" : "압도",
+        "icon" : "inv_sword_11",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "분노 15",
+          "range" : "근접 거리",
+          "castTime" : "즉시 시전",
+          "requires" : "방패 필요",
+          "description" : "방어구 가르기 효과로 대상의 방어구를 가릅니다. 추가로, 무기 공격력의 109%에 해당하는 피해를 입히고 대상에 걸린 방어구 가르기 숫자에 비례하여 7의 추가 피해를 입힙니다. 해당 방어구 가르기 효과는 최대 3번까지 중복됩니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11217,
+        "name" : "예견된 승리",
+        "icon" : "ability_warrior_devastate",
+        "x" : 3,
+        "y" : 3,
+        "req" : 10486,
+        "ranks" : [ {
+          "description" : "생명력이 20% 이하인 대상에 압도를 사용하면 25%의 확률로 연전연승 기술이 활성화됩니다. 하지만 연전연승으로 자신 생명력의 5%만 회복할 수 있습니다."
+        }, {
+          "description" : "생명력이 20% 이하인 대상에 압도를 사용하면 50%의 확률로 연전연승 기술이 활성화됩니다. 하지만 연전연승으로 자신 생명력의 5%만 회복할 수 있습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10488,
+        "name" : "천둥충격",
+        "icon" : "warrior_talent_icon_thunderstruck",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "분쇄, 회전베기, 천둥벼락의 공격력이 3%만큼 증가합니다. 추가로 천둥벼락 공격 후 다음 충격파의 공격력이 5%만큼 증가합니다. 최대 3번까지 중복됩니다."
+        }, {
+          "description" : "분쇄, 회전베기, 천둥벼락의 공격력이 6%만큼 증가합니다. 추가로 천둥벼락 공격 후 다음 충격파의 공격력이 10%만큼 증가합니다. 최대 3번까지 중복됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10492,
+        "name" : "경계",
+        "icon" : "ability_warrior_vigilance",
+        "x" : 1,
+        "y" : 4,
+        "req" : 10478,
+        "ranks" : [ {
+          "range" : "30 yd range",
+          "castTime" : "즉시 시전",
+          "description" : "파티원이나 공격대원에게 보호의 시선을 집중시켜 대상이 공격에 적중당할 때마다 도발의 재사용 대기시간이 초기화되고 받은 피해의 20%만큼을 전사 자신이 피해를 받은 것처럼 느껴 복수심 효과를 얻습니다. 30분 동안 지속됩니다. 동시에 하나의 대상에게만 사용할 수 있습니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10484,
+        "name" : "무거운 반격",
+        "icon" : "inv_shield_01",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "방패 막기가 활성화되어 있는 동안 방패 밀쳐내기의 공격력이 추가로 50%만큼 증가합니다."
+        }, {
+          "description" : "방패 막기가 활성화되어 있는 동안 방패 밀쳐내기의 공격력이 추가로 100%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10490,
+        "name" : "강력한 수호",
+        "icon" : "ability_warrior_safeguard",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "가로막기의 대상이 받는 피해가 6초 동안 15%만큼 감소합니다."
+        }, {
+          "description" : "가로막기의 대상이 받는 피해가 6초 동안 30%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10496,
+        "name" : "검과 방패",
+        "icon" : "ability_warrior_swordandboard",
+        "x" : 2,
+        "y" : 5,
+        "req" : 10486,
+        "ranks" : [ {
+          "description" : "압도의 치명타 적중률이 5%만큼 증가합니다. 압도 혹은 복수로 피해를 입혔을 때 10%의 확률로 방패 밀쳐내기의 재사용 대기시간이 초기화되며, 5초 동안 방패 밀쳐내기에 소모되는 분노가 100%만큼 감소합니다."
+        }, {
+          "description" : "압도의 치명타 적중률이 10%만큼 증가합니다. 압도 혹은 복수로 피해를 입혔을 때 20%의 확률로 방패 밀쳐내기의 재사용 대기시간이 초기화되며, 5초 동안 방패 밀쳐내기에 소모되는 분노가 100%만큼 감소합니다."
+        }, {
+          "description" : "압도의 치명타 적중률이 15%만큼 증가합니다. 압도 혹은 복수로 피해를 입혔을 때 30%의 확률로 방패 밀쳐내기의 재사용 대기시간이 초기화되며, 5초 동안 방패 밀쳐내기에 소모되는 분노가 100%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10498,
+        "name" : "충격파",
+        "icon" : "ability_warrior_shockwave",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "분노 15",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 20초",
+          "description" : "충격의 파장을 내보내 전방 10미터 안에 있는 일정한 반경 내의 모든 적 대상에게 16의 피해를 입히고 4초 동안 기절시킵니다. 전투력에 따라 피해량이 달라집니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

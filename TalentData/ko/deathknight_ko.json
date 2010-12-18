@@ -1,0 +1,1048 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 6,
+      "name" : "죽음의 기사",
+      "powerType" : "RUNIC_POWER",
+      "powerTypeId" : 6
+    },
+    "talentTrees" : [ {
+      "name" : "혈기",
+      "icon" : "spell_deathknight_bloodpresence",
+      "backgroundFile" : "DeathKnightBlood",
+      "overlayColor" : "#ff0000",
+      "description" : "어둠의 수호자입니다. 생명의 기운을 조종하고 오염시켜 적이 공습해 오는 순간에도 자신의 생명을 유지합니다.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : true,
+        "healer" : false,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 55050,
+        "name" : "심장 강타",
+        "icon" : "inv_weapon_shortblade_40",
+        "cost" : "혈기 룬 1",
+        "range" : "근접 거리",
+        "castTime" : "즉시 시전",
+        "requires" : "근접 무기 필요",
+        "reagents" : [ ],
+        "description" : "즉시 대상과, 최대 두 명의 가까운 적을 공격하여 주 대상에게 무기 공격력의 100%에 추가로 17의 피해를 입힙니다. 대상에 걸린 자신의 질병 효과 하나당 10%만큼 피해가 증가합니다. 두 번째 대상부터는 받는 피해가 각각 25%씩 감소합니다.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 50029,
+        "name" : "3차 대전쟁의 역전용사",
+        "icon" : "spell_misc_warsongfocus",
+        "reagents" : [ ],
+        "description" : "총 체력이 9%만큼, 숙련이 6만큼 증가합니다.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 50034,
+        "name" : "피의 의례",
+        "icon" : "spell_deathknight_bloodtap",
+        "reagents" : [ ],
+        "description" : "죽음의 일격 혹은 절멸 사용 시 냉기 및 부정 룬이 활성화된 후 죽음의 룬으로 전환됩니다. 죽음의 룬은 혈기 룬, 부정 룬, 냉기 룬으로 간주됩니다.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 93099,
+        "name" : "복수심",
+        "icon" : "ability_paladin_shieldofvengeance",
+        "reagents" : [ ],
+        "description" : "피해를 받을 때마다 받은 피해의 5%만큼을, 생명력의 10%까지 전투력으로 전환합니다.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77513,
+        "name" : "피의 보호막",
+        "icon" : "spell_deathknight_deathstrike",
+        "reagents" : [ ],
+        "description" : "죽음의 일격으로 생명력을 회복할 때마다 회복한 생명력의 50%에 해당하는 생명력을 피해 흡수 보호막으로 전환시킵니다. 특화력 1당 보호막이 추가로 6.25%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 1939,
+        "name" : "도살자",
+        "icon" : "inv_axe_68",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "적을 처치한 후 경험치나 명예 점수를 받으면 룬 마력이 최대 10만큼 생성됩니다. 추가로 전투 중에도 매 5초마다 룬 마력이 1만큼 생성됩니다."
+        }, {
+          "description" : "적을 처치한 후 경험치나 명예 점수를 받으면 룬 마력이 최대 20만큼 생성됩니다. 추가로 전투 중에도 매 5초마다 룬 마력이 2만큼 생성됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2017,
+        "name" : "칼날 보호막",
+        "icon" : "ability_upgrademoonglaive",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "혈기 룬이 모두 재사용 대기 상태일 때, 다음 10초 동안 받는 피해를 2%만큼 감소시키는 칼날 보호막 효과를 얻습니다."
+        }, {
+          "description" : "혈기 룬이 모두 재사용 대기 상태일 때, 다음 10초 동안 받는 피해를 4%만큼 감소시키는 칼날 보호막 효과를 얻습니다."
+        }, {
+          "description" : "혈기 룬이 모두 재사용 대기 상태일 때, 다음 10초 동안 받는 피해를 6%만큼 감소시키는 칼날 보호막 효과를 얻습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1938,
+        "name" : "칼날 갑옷",
+        "icon" : "inv_shoulder_36",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "방어도 180당 전투력이 2만큼 증가합니다."
+        }, {
+          "description" : "방어도 180당 전투력이 4만큼 증가합니다."
+        }, {
+          "description" : "방어도 180당 전투력이 6만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12223,
+        "name" : "혈기 전환 연마",
+        "icon" : "spell_deathknight_bloodtap",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "혈기 전환의 재사용 대기시간이 15초만큼 감소합니다."
+        }, {
+          "description" : "혈기 전환의 재사용 대기시간이 30초만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1948,
+        "name" : "피의 향기",
+        "icon" : "ability_rogue_bloodyeye",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "공격을 회피하거나, 무기로 막거나, 직접 피해를 받으면 15%의 확률로 피의 향기 효과를 얻어 다음 1회의 근접 공격은 10의 룬 마력을 생성합니다."
+        }, {
+          "description" : "공격을 회피하거나, 무기로 막거나, 직접 피해를 받으면 15%의 확률로 피의 향기 효과를 얻어 다음 2회의 근접 공격은 10의 룬 마력을 생성합니다."
+        }, {
+          "description" : "공격을 회피하거나, 무기로 막거나, 직접 피해를 받으면 15%의 확률로 피의 향기 효과를 얻어 다음 3회의 근접 공격은 10의 룬 마력을 생성합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7462,
+        "name" : "핏빛 열병",
+        "icon" : "ability_rogue_vendetta",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "피의 소용돌이 공격 시 50%의 확률로 적에게 핏빛 열병을 일으켜, 30초 동안 물리 공격력을 10%만큼 감소시킵니다."
+        }, {
+          "description" : "피의 소용돌이 공격 시 100%의 확률로 적에게 핏빛 열병을 일으켜, 30초 동안 물리 공격력을 10%만큼 감소시킵니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11270,
+        "name" : "파멸의 손",
+        "icon" : "ability_deathknight_desolation",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "질식시키기 능력의 재사용 대기시간이 30초만큼 감소합니다."
+        }, {
+          "description" : "질식시키기 능력의 재사용 대기시간이 60초만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7460,
+        "name" : "피 묻은 칼날",
+        "icon" : "ability_criticalstrike",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "자동 공격 시 10%의 확률로 피 묻은 칼날 효과를 일으켜, 무기 공격력의 25%에 해당하는 피해를 입히고 대상에게 걸려 있는 자신의 질병 효과 하나당 추가로 12.5%에 해당하는 피해를 입힙니다."
+        }, {
+          "description" : "자동 공격 시 20%의 확률로 피 묻은 칼날 효과를 일으켜, 무기 공격력의 25%에 해당하는 피해를 입히고 대상에게 걸려 있는 자신의 질병 효과 하나당 추가로 12.5%에 해당하는 피해를 입힙니다."
+        }, {
+          "description" : "자동 공격 시 30%의 확률로 피 묻은 칼날 효과를 일으켜, 무기 공격력의 25%에 해당하는 피해를 입히고 대상에게 걸려 있는 자신의 질병 효과 하나당 추가로 12.5%에 해당하는 피해를 입힙니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7459,
+        "name" : "뼈의 보호막",
+        "icon" : "ability_deathknight_boneshield",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "부정 룬 1 ",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 1분",
+          "description" : "소용돌이치는 뼈의 보호막으로 자신을 감쌉니다. 처음에는 3개의 뼈로 시작하여 공격으로 피해를 받을 때마다 1개의 뼈가 사라집니다. 뼈가 1개 이상 남아 있는 동안 모든 받는 피해가 20%만큼 감소하고 모든 공격력이 2%만큼 증가합니다. 5분 동안 지속됩니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7458,
+        "name" : "강인함",
+        "icon" : "spell_holy_devotion",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "장비 착용으로 인한 방어도가 3%만큼 증가합니다."
+        }, {
+          "description" : "장비 착용으로 인한 방어도가 7%만큼 증가합니다."
+        }, {
+          "description" : "장비 착용으로 인한 방어도가 10%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2105,
+        "name" : "누더기골렘의 힘",
+        "icon" : "ability_warrior_intensifyrage",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "100미터 반경 내에 있는 파티원과 공격대원의 전투력이 5%만큼 증가합니다. 자신의 전체 힘이 1%만큼 증가합니다."
+        }, {
+          "description" : "100미터 반경 내에 있는 파티원과 공격대원의 전투력이 10%만큼 증가합니다. 자신의 전체 힘이 2%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7461,
+        "name" : "핏빛 인내력",
+        "icon" : "ability_deathknight_sanguinfortitude",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "얼음같은 인내력으로 감소되는 피해가 추가로 15%만큼 증가하고 얼음같은 인내력 사용 시 소모되는 룬 마력이 50%만큼 감소합니다."
+        }, {
+          "description" : "얼음같은 인내력으로 감소되는 피해가 추가로 30%만큼 증가하고 얼음같은 인내력 사용 시 룬 마력이 소모되지 않습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1960,
+        "name" : "흡혈 기생충",
+        "icon" : "spell_shadow_soulleech",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "근접 공격 시 5%의 확률로 피구더기가 생성됩니다. 피구더기가 적에게 피해를 입히면 피를 흡수하여 주위 아군의 체력을 회복시킵니다. 최대 20초 동안 지속됩니다."
+        }, {
+          "description" : "근접 공격 시 10%의 확률로 피구더기가 생성됩니다. 피구더기가 적에게 피해를 입히면 피를 흡수하여 주위 아군의 체력을 회복시킵니다. 최대 20초 동안 지속됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1936,
+        "name" : "혈기의 형상 연마",
+        "icon" : "spell_deathknight_bloodpresence",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "혈기의 형상을 취하는 동안 룬 재생 속도가 10%만큼 증가하고 근접 치명타 공격에 적중 당할 확률이 3%만큼 감소합니다. 추가로 냉기의 형상 또는 부정의 형상을 취하는 동안 혈기의 형상으로 인한 피해 감소 효과가 2%만큼 유지됩니다."
+        }, {
+          "description" : "혈기의 형상을 취하는 동안 룬 재생 속도가 20%만큼 증가하고 근접 치명타 공격에 적중 당할 확률이 6%만큼 감소합니다. 추가로 냉기의 형상 또는 부정의 형상을 취하는 동안 혈기의 형상으로 인한 피해 감소 효과가 4%만큼 유지됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1959,
+        "name" : "죽음의 요새의 결의",
+        "icon" : "ability_creature_cursed_02",
+        "x" : 0,
+        "y" : 4,
+        "req" : 1941,
+        "ranks" : [ {
+          "description" : "공격을 받아 생명력이 최대 생명력의 30% 아래로 떨어지면, 혈기 룬이 생성되고 룬 전환 능력의 재사용 대기시간이 초기화되며 8초 동안 받는 모든 피해가 8%만큼 감소합니다. 이 효과는 매 45초마다 최대 1번씩만 발동됩니다."
+        }, {
+          "description" : "공격을 받아 생명력이 최대 생명력의 30% 아래로 떨어지면, 혈기 룬이 생성되고 룬 전환 능력의 재사용 대기시간이 초기화되며 8초 동안 받는 모든 피해가 16%만큼 감소합니다. 이 효과는 매 45초마다 최대 1번씩만 발동됩니다."
+        }, {
+          "description" : "공격을 받아 생명력이 최대 생명력의 30% 아래로 떨어지면, 혈기 룬이 생성되고 룬 전환 능력의 재사용 대기시간이 초기화되며 8초 동안 받는 모든 피해가 25%만큼 감소합니다. 이 효과는 매 45초마다 최대 1번씩만 발동됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1941,
+        "name" : "룬 전환",
+        "icon" : "spell_deathknight_runetap",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "혈기 룬 1",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 30초",
+          "description" : "1개의 혈기 룬을 최대 생명력의 15%에 해당하는 생명력으로 전환합니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2019,
+        "name" : "흡혈",
+        "icon" : "spell_shadow_lifedrain",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 1분",
+          "description" : "일시적으로 최대 생명력이 15%만큼 증가하고 주문과 효과로 인한 치유 효과가 25%만큼 증가합니다. 10초 동안 지속됩니다. 효과가 사라지면 임시 생명력은 사라집니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2259,
+        "name" : "죽음의 일격 연마",
+        "icon" : "spell_deathknight_butcher2",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "죽음의 일격으로 입히는 피해와 회복하는 생명력이 15%만큼 증가하고, 죽음의 일격으로 치명타를 적중시킬 확률이 3%만큼 증가합니다."
+        }, {
+          "description" : "죽음의 일격으로 입히는 피해와 회복하는 생명력이 30%만큼 증가하고, 죽음의 일격으로 치명타를 적중시킬 확률이 6%만큼 증가합니다."
+        }, {
+          "description" : "죽음의 일격으로 입히는 피해와 회복하는 생명력이 45%만큼 증가하고, 죽음의 일격으로 치명타를 적중시킬 확률이 9%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7463,
+        "name" : "진홍빛 스컬지",
+        "icon" : "spell_deathknight_bloodboil",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "피의 소용돌이로 입히는 피해가 20%만큼 증가하고, 자신의 피의 역병에 감염된 대상을 역병의 일격으로 공격하면 50%의 확률로 다음 피의 소용돌이는 룬을 소모하지 않습니다."
+        }, {
+          "description" : "피의 소용돌이로 입히는 피해가 40%만큼 증가하고, 자신의 피의 역병에 감염된 대상을 역병의 일격으로 공격하면 100%의 확률로 다음 피의 소용돌이는 룬을 소모하지 않습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1961,
+        "name" : "춤추는 룬 무기",
+        "icon" : "inv_sword_07",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "룬 마력 60 ",
+          "range" : "30 yd range",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 1.5분",
+          "requires" : "근접 무기 필요",
+          "description" : "12초 동안 전투를 도와 줄 두 번째 룬 무기를 소환합니다. 소환된 룬 무기는 죽음의 기사와 같은 공격을 하지만 공격력이 50%만큼 감소합니다. 룬 무기가 소환되어 있는 동안 죽음의 기사는 무기 막기 확률이 추가로 20%만큼 증가합니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "냉기",
+      "icon" : "spell_deathknight_frostpresence",
+      "backgroundFile" : "DeathKnightFrost",
+      "overlayColor" : "#4c7fff",
+      "description" : "얼어붙은 죽음의 사신입니다. 룬 마력의 힘을 기반으로 신속한 일격을 날립니다.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 49143,
+        "name" : "냉기의 일격",
+        "icon" : "spell_deathknight_empowerruneblade2",
+        "cost" : "룬 마력 40 ",
+        "range" : "근접 거리",
+        "castTime" : "즉시 시전",
+        "requires" : "근접 무기 필요",
+        "reagents" : [ ],
+        "description" : "즉시 적을 공격하여 무기 공격력의 110%에 해당하는 피해를 입히고 추가로 7의 냉기 피해를 입힙니다.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 50887,
+        "name" : "얼음 발톱",
+        "icon" : "spell_deathknight_icytalons",
+        "reagents" : [ ],
+        "description" : "근접 공격 속도가 20%만큼 증가합니다.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 54637,
+        "name" : "극지의 피",
+        "icon" : "inv_weapon_shortblade_79",
+        "reagents" : [ ],
+        "description" : "피의 일격과 전염병을 적중시키면 혈기 룬이 죽음의 룬으로 전환됩니다. 죽음의 룬은 혈기 룬, 부정 룬, 냉기 룬으로 간주됩니다.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77514,
+        "name" : "얼어붙은 심장",
+        "icon" : "inv_misc_gem_sapphire_01",
+        "reagents" : [ ],
+        "description" : "모든 냉기 계열 기술의 공격력이 16%만큼 증가합니다. 특화력 1당 냉기 공격력이 추가로 2.0%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 2031,
+        "name" : "룬 마력 전문화",
+        "icon" : "spell_arcane_arcane01",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "최대 룬 마력이 10만큼 증가합니다."
+        }, {
+          "description" : "최대 룬 마력이 20만큼 증가합니다."
+        }, {
+          "description" : "최대 룬 마력이 30만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2035,
+        "name" : "얼음의 테두리",
+        "icon" : "spell_frost_manarecharge",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "얼음 손길, 얼음 결계, 작렬하는 분노의 사정거리가 5미터만큼 증가합니다."
+        }, {
+          "description" : "얼음 손길, 얼음 결계, 작렬하는 분노의 사정거리가 10미터만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2022,
+        "name" : "차가운 강철 신경",
+        "icon" : "ability_dualwield",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "한손 근접 무기의 적중률이 1%만큼, 보조 무기로 입히는 피해가 8%만큼 증가합니다."
+        }, {
+          "description" : "한손 근접 무기의 적중률이 2%만큼, 보조 무기로 입히는 피해가 16%만큼 증가합니다."
+        }, {
+          "description" : "한손 근접 무기의 적중률이 3%만큼, 보조 무기로 입히는 피해가 25%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2048,
+        "name" : "파멸",
+        "icon" : "inv_weapon_hand_18",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "절멸의 공격력이 15%만큼 증가합니다."
+        }, {
+          "description" : "절멸의 공격력이 30%만큼 증가합니다."
+        }, {
+          "description" : "절멸의 공격력이 45%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2215,
+        "name" : "리치의 혼",
+        "icon" : "spell_shadow_raisedead",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 2분",
+          "description" : "부정의 에너지를 끌어내어 10초 동안 언데드가 됩니다. 언데드가 되면 현혹과 공포, 수면에 면역이 됩니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11275,
+        "name" : "창백한 말",
+        "icon" : "ability_mount_undeadhorse",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "죽음처럼 멈추지 않는 존재가 됩니다. 이동 속도 감소 효과의 지속시간이 15%만큼 감소하고 탈것의 속도가 10%만큼 증가합니다. 다른 이동 속도 증가 효과와 중복 적용되지 않습니다."
+        }, {
+          "description" : "죽음처럼 멈추지 않는 존재가 됩니다. 이동 속도 감소 효과의 지속시간이 30%만큼 감소하고 탈것의 속도가 20%만큼 증가합니다. 다른 이동 속도 증가 효과와 중복 적용되지 않습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1971,
+        "name" : "영원한 겨울",
+        "icon" : "spell_shadow_twilight",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "정신 얼리기에 소모되는 룬 마력이 10으로 감소합니다."
+        }, {
+          "description" : "정신 얼리기에 룬 마력을 소모하지 않습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1993,
+        "name" : "무자비한 전투",
+        "icon" : "inv_sword_112",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "생명력이 35% 미만인 적에게 사용하는 얼음 손길, 작렬하는 분노, 절멸, 냉기의 일격은 6%의 추가 피해를 입힙니다."
+        }, {
+          "description" : "생명력이 35% 미만인 적에게 사용하는 얼음 손길, 작렬하는 분노, 절멸, 냉기의 일격은 12%의 추가 피해를 입힙니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1981,
+        "name" : "무덤의 한기",
+        "icon" : "spell_frost_frostshock",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "얼음 결계, 작렬하는 분노, 얼음 손길, 절멸 사용 시 5의 룬 마력을 추가로 생성합니다."
+        }, {
+          "description" : "얼음 결계, 작렬하는 분노, 얼음 손길, 절멸 사용 시 10의 룬 마력을 추가로 생성합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2044,
+        "name" : "도살기",
+        "icon" : "inv_sword_122",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "근접 공격 시 일정 확률로 다음 얼음 손길, 절멸, 냉기의 일격이 항상 치명타로 적중합니다."
+        }, {
+          "description" : "근접 공격 시 일정 확률로 다음 얼음 손길, 절멸, 냉기의 일격이 항상 치명타로 적중합니다. 1 레벨 도살기보다 효과가 발동할 확률이 높습니다."
+        }, {
+          "description" : "근접 공격 시 일정 확률로 다음 얼음 손길, 절멸, 냉기의 일격이 항상 치명타로 적중합니다. 2 레벨 도살기보다 효과가 발동할 확률이 높습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1992,
+        "name" : "단단한 얼음",
+        "icon" : "spell_frost_freezingbreath",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "절멸 공격 시 15%의 확률로 다음 작렬하는 분노 또는 얼음 손길이 룬을 소모하지 않습니다."
+        }, {
+          "description" : "절멸 공격 시 30%의 확률로 다음 작렬하는 분노 또는 얼음 손길이 룬을 소모하지 않습니다."
+        }, {
+          "description" : "절멸 공격 시 45%의 확률로 다음 작렬하는 분노 또는 얼음 손길이 룬을 소모하지 않습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1979,
+        "name" : "얼음 기둥",
+        "icon" : "ability_deathknight_pillaroffrost",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "냉기 룬 1",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 1분",
+          "description" : "냉기의 마력으로 죽음의 기사의 힘이 20%만큼 증가합니다. 죽음의 기사의 몸에 무거운 얼음 결정이 생겨나, 날리기 등 외부 운동 작용에 면역이 됩니다. 20초 동안 계속됩니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2223,
+        "name" : "얼음 발톱 연마",
+        "icon" : "spell_deathknight_icytalons",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "100미터 반경 내 모든 파티원과 공격대원의 근접 및 원거리 공격 속도가 10%만큼 증가하고 자신의 공격 속도가 추가로 5%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1980,
+        "name" : "부러진 뼈",
+        "icon" : "ability_deathknight_brittlebones",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "힘이 2%만큼 증가합니다. 서리 열병으로 대상의 뼈를 얼려 대상이 받는 물리 피해를 2%만큼 증가시킵니다."
+        }, {
+          "description" : "힘이 4%만큼 증가합니다. 서리 열병으로 대상의 뼈를 얼려 대상이 받는 물리 피해를 4%만큼 증가시킵니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2260,
+        "name" : "동창",
+        "icon" : "spell_frost_wisp",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "서리 열병의 희생자를 얼려 10초 동안 이동 속도를 25%만큼 감소시킵니다."
+        }, {
+          "description" : "서리 열병의 희생자를 얼려 10초 동안 이동 속도를 50%만큼 감소시킵니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1999,
+        "name" : "갈망의 한기",
+        "icon" : "inv_staff_15",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "룬 마력 40 ",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 1분",
+          "description" : "죽음의 기사 주위의 땅에서 열기를 정화하고 10미터 내에 있는 적을 얼음으로 가두어 10초 동안 어떤 행동도 하지 못하도록 합니다. 대상은 서리 열병에 걸리고 얼어붙은 상태로 간주되지만 질병 이외의 추가 피해를 입으면 효과가 사라집니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2029,
+        "name" : "냉기의 형상 연마",
+        "icon" : "spell_deathknight_frostpresence",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "냉기의 형상을 취하는 동안 보너스 피해가 추가로 2%만큼 증가합니다. 혈기의 형상 또는 부정의 형상을 취하는 동안 냉기의 형상으로 향상되는 룬 마력 재생 속도의 2%가 유지됩니다."
+        }, {
+          "description" : "냉기의 형상을 취하는 동안 보너스 피해가 추가로 5%만큼 증가합니다. 혈기의 형상 또는 부정의 형상을 취하는 동안 냉기의 형상으로 향상되는 룬 마력 재생 속도의 4%가 유지됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2284,
+        "name" : "타사리안의 위협",
+        "icon" : "ability_dualwieldspecialization",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "쌍수 무기로 죽음의 일격, 절멸, 역병의 일격, 룬의 일격, 피의 일격, 냉기의 일격 사용 시 30%의 확률로 보조 무기로도 피해를 입힙니다."
+        }, {
+          "description" : "쌍수 무기로 죽음의 일격, 절멸, 역병의 일격, 룬의 일격, 피의 일격, 냉기의 일격 사용 시 60%의 확률로 보조 무기로도 피해를 입힙니다."
+        }, {
+          "description" : "쌍수 무기로 죽음의 일격, 절멸, 역병의 일격, 룬의 일격, 피의 일격, 냉기의 일격 사용 시 100%의 확률로 보조 무기로도 피해를 입힙니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7571,
+        "name" : "얼어붙은 황무지의 힘",
+        "icon" : "inv_sword_120",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "양손 무기로 자동 공격 시 15%의 확률로 10의 룬 마력이 생성됩니다."
+        }, {
+          "description" : "양손 무기로 자동 공격 시 30%의 확률로 10의 룬 마력이 생성됩니다."
+        }, {
+          "description" : "양손 무기로 자동 공격 시 45%의 확률로 10의 룬 마력이 생성됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1989,
+        "name" : "작렬하는 분노",
+        "icon" : "spell_frost_arcticwinds",
+        "x" : 1,
+        "y" : 6,
+        "req" : 1999,
+        "ranks" : [ {
+          "cost" : "냉기 룬 1",
+          "range" : "20 yd range",
+          "castTime" : "즉시 시전",
+          "description" : "얼음의 바람을 대상에게 날려 10미터 반경 내에 있는 모든 적에게 33의 냉기 피해를 입힙니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "부정",
+      "icon" : "spell_deathknight_unholypresence",
+      "backgroundFile" : "DeathKnightUnholy",
+      "overlayColor" : "#33cc33",
+      "description" : "죽음과 부패의 대가로 질병을 퍼뜨려 언데드 부하를 통제하고 자신을 따르게 만듭니다.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 55090,
+        "name" : "스컬지의 일격",
+        "icon" : "spell_deathknight_scourgestrike",
+        "cost" : "부정 룬 1 ",
+        "range" : "근접 거리",
+        "castTime" : "즉시 시전",
+        "requires" : "근접 무기 필요",
+        "reagents" : [ ],
+        "description" : "적에게 부정한 일격을 가하여 무기 공격력의 100%에 해당하는 물리 피해와 13의 추가 피해를 입힙니다. 추가로 대상에게 걸려 있는 자신의 질병 하나당 입힌 물리 피해의 12%에 해당하는 암흑 피해를 입힙니다.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 52143,
+        "name" : "구울의 지배자",
+        "icon" : "spell_shadow_animatedead",
+        "reagents" : [ ],
+        "description" : "시체 되살리기의 재사용 대기시간이 60초만큼 감소하고 시체 되살리기로 소환한 구울을 소환수로 부릴 수 있습니다. 일반적인 죽음의 기사의 구울과는 달리, 소환수는 지속시간 제한 없이 유지됩니다.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 91107,
+        "name" : "부정의 힘",
+        "icon" : "spell_shadow_unholystrength",
+        "reagents" : [ ],
+        "description" : "어둠의 힘이 몸에 스며들어 힘이 10%만큼 증가합니다.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 56835,
+        "name" : "영혼 거두기",
+        "icon" : "spell_shadow_shadetruesight",
+        "reagents" : [ ],
+        "description" : "피의 일격, 전염병, 고름 일격 사용 시 소모된 룬이 활성화될 때 죽음의 룬으로 변환됩니다. 죽음의 룬은 혈기 룬, 부정 룬, 냉기 룬으로 간주됩니다.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77515,
+        "name" : "황폐의 인도자",
+        "icon" : "achievement_zone_westernplaguelands_01",
+        "reagents" : [ ],
+        "description" : "질병의 공격력이 40%만큼 증가합니다. 특화력 1당 질병의 공격력이 추가로 5.0%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 2025,
+        "name" : "부정의 명령",
+        "icon" : "spell_deathknight_strangulate",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "죽음의 손아귀 기술의 재사용 대기시간이 5초만큼 감소하고, 적을 처치한 후 경험치나 명예 점수를 받으면 50%의 확률로 죽음의 손아귀의 재사용 대기시간이 초기화됩니다."
+        }, {
+          "description" : "죽음의 손아귀 기술의 재사용 대기시간이 10초만큼 감소하고, 적을 처치한 후 경험치나 명예 점수를 받으면 100%의 확률로 죽음의 손아귀의 재사용 대기시간이 초기화됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1932,
+        "name" : "발병력",
+        "icon" : "spell_shadow_burningspirit",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "무기로 가하는 공격을 제외한 모든 능력과 주문의 적중률이 3%만큼 증가합니다."
+        }, {
+          "description" : "무기로 가하는 공격을 제외한 모든 능력과 주문의 적중률이 6%만큼 증가합니다."
+        }, {
+          "description" : "무기로 가하는 공격을 제외한 모든 능력과 주문의 적중률이 9%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1963,
+        "name" : "유행성 병균",
+        "icon" : "spell_shadow_shadowwordpain",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "피의 역병과 서리 열병의 지속시간이 4초만큼 증가합니다."
+        }, {
+          "description" : "피의 역병과 서리 열병의 지속시간이 8초만큼 증가합니다."
+        }, {
+          "description" : "피의 역병과 서리 열병의 지속시간이 12초만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2226,
+        "name" : "모독",
+        "icon" : "spell_shadow_shadowfiend",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "역병의 일격과 스컬지 일격 공격 시 대상이 서 있는 7미터 반경의 땅에 부정의 기운이 서리게 합니다. 부정한 대지에 서 있는 적들은 이동 속도가 25%만큼 감소합니다. 20초 동안 지속됩니다."
+        }, {
+          "description" : "역병의 일격과 스컬지 일격 공격 시 대상이 서 있는 7미터 반경의 땅에 부정의 기운이 서리게 합니다. 부정한 대지에 서 있는 적들은 이동 속도가 50%만큼 감소합니다. 20초 동안 지속됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7572,
+        "name" : "되돌아오는 감염",
+        "icon" : "ability_creature_disease_05",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "적이 자신의 질병을 무효화하면 50%의 확률로 소모된 룬을 돌려받습니다. 서리 열병이 제거되면 냉기 룬이, 피의 역병이 제거되면 부정 룬이 활성화됩니다."
+        }, {
+          "description" : "적이 자신의 질병을 무효화하면 100%의 확률로 소모된 룬을 돌려받습니다. 서리 열병이 제거되면 냉기 룬이, 피의 역병이 제거되면 부정 룬이 활성화됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11178,
+        "name" : "병독",
+        "icon" : "spell_shadow_deathanddecay",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "죽음의 고리로 인한 공격력과 치유량이 5%만큼 증가하고 죽음과 부패의 공격력이 10%만큼 증가합니다."
+        }, {
+          "description" : "죽음의 고리로 인한 공격력과 치유량이 10%만큼 증가하고 죽음과 부패의 공격력이 20%만큼 증가합니다."
+        }, {
+          "description" : "죽음의 고리로 인한 공격력과 치유량이 15%만큼 증가하고 죽음과 부패의 공격력이 30%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2047,
+        "name" : "룬 부패",
+        "icon" : "spell_shadow_rune",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "죽음의 고리에 소모되는 룬 마력이 3만큼 감소합니다. 룬 강화 능력이 소모된 룬을 초기화시키지 않으며, 3초 동안 룬 재생 속도가 50%만큼 증가합니다."
+        }, {
+          "description" : "죽음의 고리에 소모되는 룬 마력이 6만큼 감소합니다. 룬 강화 능력이 소모된 룬을 초기화시키지 않으며, 3초 동안 룬 재생 속도가 100%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7574,
+        "name" : "부정의 광기",
+        "icon" : "spell_shadow_unholyfrenzy",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "range" : "30 yd range",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 3분",
+          "description" : "우호적인 대상을 30초 동안 죽음의 광란에 빠뜨립니다. 대상은 격노하여 근접 및 원거리 가속이 20%만큼 증가하지만 매 3초마다 최대 생명력의 2%에 해당하는 피해를 입습니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12119,
+        "name" : "병균",
+        "icon" : "spell_shadow_plaguecloud",
+        "x" : 2,
+        "y" : 2,
+        "req" : 1963,
+        "ranks" : [ {
+          "description" : "전염병을 통해 퍼져나간 질병의 피해가 50%만큼 증가합니다."
+        }, {
+          "description" : "전염병을 통해 퍼져나간 질병의 피해가 100%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11179,
+        "name" : "암흑 주입",
+        "icon" : "spell_shadow_requiem",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "죽음의 고리 시전 시 33%의 확률로 구울을 강화시켜 30초 동안 구울의 공격력이 10%만큼 증가합니다. 최대 5번까지 중복됩니다."
+        }, {
+          "description" : "죽음의 고리 시전 시 66%의 확률로 구울을 강화시켜 30초 동안 구울의 공격력이 10%만큼 증가합니다. 최대 5번까지 중복됩니다."
+        }, {
+          "description" : "죽음의 고리 시전 시 100%의 확률로 구울을 강화시켜 30초 동안 구울의 공격력이 10%만큼 증가합니다. 최대 5번까지 중복됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2009,
+        "name" : "마법 억제",
+        "icon" : "spell_shadow_antimagicshell",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "대마법 보호막으로 흡수하는 마법 피해가 추가로 8%만큼 증가하고 대마법 보호막으로 피해를 흡수했을 때 죽음의 기사에게 룬 마력을 불어넣어줍니다."
+        }, {
+          "description" : "대마법 보호막으로 흡수하는 마법 피해가 추가로 16%만큼 증가하고 대마법 보호막으로 피해를 흡수했을 때 생성되는 룬 마력이 증가합니다."
+        }, {
+          "description" : "대마법 보호막으로 흡수하는 마법 피해가 추가로 25%만큼 증가하고 대마법 보호막으로 피해를 흡수했을 때 생성되는 룬 마력이 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2082,
+        "name" : "악의의 일격",
+        "icon" : "inv_weapon_halberd14",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "역병의 일격, 스컬지의 일격, 고름 일격의 공격력이 15%만큼 증가합니다."
+        }, {
+          "description" : "역병의 일격, 스컬지의 일격, 고름 일격의 공격력이 30%만큼 증가합니다."
+        }, {
+          "description" : "역병의 일격, 스컬지의 일격, 고름 일격의 공격력이 45%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1996,
+        "name" : "부정의 파멸충",
+        "icon" : "spell_shadow_contagion",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "죽음의 고리로 피해를 입힌 대상을 타락한 벌레떼로 둘러싸 10초에 걸쳐 죽음의 고리로 입힌 피해의 10%에 해당하는 피해를 입히고 적에게 걸린 질병이 무효화되지 않도록 만듭니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2221,
+        "name" : "대마법 지대",
+        "icon" : "spell_deathknight_antimagiczone",
+        "x" : 1,
+        "y" : 4,
+        "req" : 2009,
+        "ranks" : [ {
+          "cost" : "부정 룬 1 ",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 2분",
+          "description" : "안에 있는 파티원이나 공격대원의 주문 피해를 75%만큼 감소시켜주는 커다란 대마법 지대를 생성합니다. 대마법 지대는 10초 동안 혹은 10042의 주문 피해를 흡수할 때까지 지속됩니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2013,
+        "name" : "부정의 형상 연마",
+        "icon" : "spell_deathknight_unholypresence",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "부정의 형상을 취하는 동안 가속이 추가로 2%만큼 증가합니다. 혈기의 형상이나 냉기의 형상을 취하는 동안 부정의 형상에서 증가하는 이동 속도 증가 효과가 8%만큼 유지됩니다."
+        }, {
+          "description" : "부정의 형상을 취하는 동안 가속이 추가로 5%만큼 증가합니다. 혈기의 형상이나 냉기의 형상을 취하는 동안 부정의 형상에서 증가하는 이동 속도 증가 효과가 15%만큼 유지됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2085,
+        "name" : "어둠의 변신",
+        "icon" : "achievement_boss_festergutrotface",
+        "x" : 3,
+        "y" : 4,
+        "req" : 11179,
+        "ranks" : [ {
+          "cost" : "부정 룬 1 ",
+          "range" : "60 yd range",
+          "castTime" : "즉시 시전",
+          "description" : "구울에게 걸려 있는 5개의 암흑 주입 효과를 소모하여 30초 동안 강력한 언데드 괴물로 변신시킵니다. 변신한 동안 구울은 능력이 강화되고 새로운 능력을 사용합니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2043,
+        "name" : "칠흑의 역병인도자",
+        "icon" : "ability_creature_cursed_03",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "역병의 일격, 얼음 손길, 얼음 결계, 돌발 열병 공격 시 대상에게 칠흑의 역병을 감염시킵니다. 대상이 칠흑의 역병에 감염되면 자신의 질병으로 입히는 피해가 15%만큼, 마법 공격으로 입히는 피해가 추가로 8%만큼 증가합니다."
+        }, {
+          "description" : "역병의 일격, 얼음 손길, 얼음 결계, 돌발 열병 공격 시 대상에게 칠흑의 역병을 감염시킵니다. 대상이 칠흑의 역병에 감염되면 자신의 질병으로 입히는 피해가 30%만큼, 마법 공격으로 입히는 피해가 추가로 8%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7575,
+        "name" : "불시의 파멸",
+        "icon" : "spell_shadow_painspike",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "자동 공격 시 5%의 확률로 다음 죽음의 고리는 룬 마력을 소모하지 않습니다."
+        }, {
+          "description" : "자동 공격 시 10%의 확률로 다음 죽음의 고리는 룬 마력을 소모하지 않습니다."
+        }, {
+          "description" : "자동 공격 시 15%의 확률로 다음 죽음의 고리는 룬 마력을 소모하지 않습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2000,
+        "name" : "가고일 부르기",
+        "icon" : "ability_deathknight_summongargoyle",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "룬 마력 70 ",
+          "range" : "30 yd range",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 3분",
+          "description" : "날아다니는 가고일로 대상을 공격하여 자연 피해를 입힙니다. 죽음의 기사의 전투력에 따라 피해량이 달라집니다. 30초 동안 지속됩니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

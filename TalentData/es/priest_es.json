@@ -1,0 +1,1078 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 5,
+      "name" : "Sacerdote",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "Disciplina",
+      "icon" : "spell_holy_powerwordshield",
+      "backgroundFile" : "PriestDiscipline",
+      "overlayColor" : "#ff7f00",
+      "description" : "Usa la magia para proteger a los aliados de recibir daño y sana sus heridas.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : true,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 47540,
+        "name" : "Penitencia",
+        "icon" : "spell_holy_penance",
+        "cost" : "14% de maná base",
+        "range" : "30 yd range",
+        "castTime" : "Canalizado",
+        "cooldown" : "Reutilización de 12 seg.",
+        "reagents" : [ ],
+        "description" : "Lanza una salva de Luz Sagrada al objetivo, inflige 668-749 p. de daño Sagrado a un enemigo, o 2131-2404 p. de sanación a un aliado de forma instantánea y cada 1 s durante 2 s.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 95860,
+        "name" : "Meditación",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "Permite que un 50% de la regeneración de maná por espíritu continúe mientras estás en combate.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 84732,
+        "name" : "Esclarecimiento",
+        "icon" : "spell_arcane_mindmastery",
+        "reagents" : [ ],
+        "description" : "Intelecto aumentado un 15%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77484,
+        "name" : "Escudo de Disciplina",
+        "icon" : "spell_holy_powerwordshield",
+        "reagents" : [ ],
+        "description" : "Aumenta la potencia de tus hechizos de absorción de daño un 20%. Cada punto de maestría aumenta la potencia de las absorciones un 2.5% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10736,
+        "name" : "Palabra de poder mejorada: escudo",
+        "icon" : "spell_holy_powerwordshield",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta la absorción de daño de tu Palabra de poder: escudo un 5%."
+        }, {
+          "description" : "Aumenta la absorción de daño de tu Palabra de poder: escudo un 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8577,
+        "name" : "Disciplinas gemelas",
+        "icon" : "spell_holy_sealofvengeance",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta un 2% el daño y la sanación realizados por tus hechizos Sagrados y de las Sombras."
+        }, {
+          "description" : "Aumenta un 4% el daño y la sanación realizados por tus hechizos Sagrados y de las Sombras."
+        }, {
+          "description" : "Aumenta un 6% el daño y la sanación realizados por tus hechizos Sagrados y de las Sombras."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8595,
+        "name" : "Agilidad mental",
+        "icon" : "ability_hibernation",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Reduce el coste de maná de tus hechizos instantáneos un 4%."
+        }, {
+          "description" : "Reduce el coste de maná de tus hechizos instantáneos un 7%."
+        }, {
+          "description" : "Reduce el coste de maná de tus hechizos instantáneos un 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8593,
+        "name" : "Evangelización",
+        "icon" : "spell_holy_divineillumination",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Tienes un 100% de probabilidad cuando lanzas Punición y un 100% de probabilidad cuando lanzas Tortura mental de obtener Evangelización. Se acumula hasta 5 veces. Dura 20 s.\n\n\n\nEvangelización (Punición)\n\nAumenta un 2% el daño infligido por tus hechizos Punición, Fuego Sagrado y Penitencia y reduce un 3% el coste de maná de esos hechizos.\n\n\n\nEvangelización oscura (Tortura mental)\n\nAumenta un 1% el daño infligido por tus hechizos de las Sombras periódicos."
+        }, {
+          "description" : "Tienes un 100% de probabilidad cuando lanzas Punición y un 100% de probabilidad cuando lanzas Tortura mental de obtener Evangelización. Se acumula hasta 5 veces. Dura 20 s.\n\n\n\nEvangelización (Punición)\n\nAumenta un 4% el daño infligido por tus hechizos Punición, Fuego Sagrado y Penitencia y reduce un 6% el coste de maná de esos hechizos.\n\n\n\nEvangelización oscura (Tortura mental)\n\nAumenta un 2% el daño infligido por tus hechizos de las Sombras periódicos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11608,
+        "name" : "Arcángel",
+        "icon" : "ability_priest_archangel",
+        "x" : 1,
+        "y" : 1,
+        "req" : 8593,
+        "ranks" : [ {
+          "castTime" : "Lanzamiento instantáneo",
+          "description" : "Consume tus efectos de Evangelización, lo que causa un efecto dependiendo de qué tipo de efecto de Evangelización se consuma.\n\n\n\nArcángel (Evangelización)\n\nRestaura al instante un 1% de tu maná total y aumenta tu sanación realizada un 3% por cada acumulación. Dura 18 s. 30 s de tiempo de reutilización.\n\n\n\nArcángel oscuro (Evangelización oscura)\n\nRestaura al instante un 5% de tu maná total y aumenta el daño infligido con tu Tortura mental, Púa mental, Explosión mental y Palabra de las Sombras: muerte un 4% por cada acumulación. Dura 18 s. 90 s de tiempo de reutilización."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8581,
+        "name" : "Sagrario interno",
+        "icon" : "spell_holy_innerfire",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Tu Fuego interno también reduce todo el daño con hechizos recibido un 2% mientras está activo y el bonus de velocidad de movimiento de tu Voluntad interna aumenta un 2%."
+        }, {
+          "description" : "Tu Fuego interno también reduce todo el daño con hechizos recibido un 4% mientras está activo y el bonus de velocidad de movimiento de tu Voluntad interna aumenta un 4%."
+        }, {
+          "description" : "El daño con hechizos recibido se reduce un 6% mientras Fuego interno está activo y el bonus de velocidad de movimiento de tu Voluntad interna aumenta un 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8607,
+        "name" : "Amparo de alma",
+        "icon" : "ability_priest_soulwarding",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de tu facultad Palabra de poder: escudo 1 s."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tu facultad Palabra de poder: escudo 2 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11224,
+        "name" : "Esperanza renovada",
+        "icon" : "spell_holy_holyprotection",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Aumenta la probabilidad de efecto crítico de tus hechizos Sanación relámpago, Sanación superior, Sanar y Penitencia (Sanar) un 5% sobre los objetivos afectados por el efecto Alma debilitada o bendecidos con tu efecto Gracia."
+        }, {
+          "description" : "Aumenta la probabilidad de efecto crítico de tus hechizos Sanación relámpago, Sanación superior, Sanar y Penitencia (Sanar) un 10% sobre los objetivos afectados por el efecto Alma debilitada o bendecidos con tu efecto Gracia."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8611,
+        "name" : "Infusión de poder",
+        "icon" : "spell_holy_powerinfusion",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "16% de maná base",
+          "range" : "30 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 2 min.",
+          "description" : "Imbuye de energía al objetivo, aumentando su velocidad de lanzamiento de hechizos un 20% y reduciendo el coste de maná de todos los hechizos un 20%. Dura 15 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11812,
+        "name" : "Contrición",
+        "icon" : "ability_priest_atonement",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Cuando infliges daño con Punición, sanas instantáneamente a un objetivo amistoso cercano del grupo o banda con poca salud en un radio de 8 m del objetivo enemigo una cantidad igual al 50% del daño infligido.\n\n\n\nSi el sacerdote se sana con Contrición, el efecto se reduce a la mitad."
+        }, {
+          "description" : "Cuando infliges daño con Punición, sanas instantáneamente a un objetivo amistoso cercano del grupo o banda con poca salud en un radio de 8 m del objetivo enemigo una cantidad igual al 100% del daño infligido.\n\n\n\nSi el sacerdote se sana con Contrición, el efecto se reduce a la mitad."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8591,
+        "name" : "Enfoque interno",
+        "icon" : "spell_frost_windwalkon",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 45 seg.",
+          "description" : "Reduce el coste de maná de tu siguiente Sanación relámpago, Sanación conjunta, Sanación superior o Rezo de sanación un 100% y aumenta su probabilidad de efecto crítico un 25%."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8617,
+        "name" : "Éxtasis",
+        "icon" : "spell_holy_rapture",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Cuando tu Palabra de poder: escudo absorbe el máximo daño posible o se disipa, te energizas al instante con un 1,5% de tu maná total. Este efecto solo puede ocurrir una vez cada 12 s."
+        }, {
+          "description" : "Cuando tu Palabra de poder: escudo absorbe el máximo daño posible o se disipa, te energizas al instante con un 2% de tu maná total. Este efecto solo puede ocurrir una vez cada 12 s."
+        }, {
+          "description" : "Cuando tu Palabra de poder: escudo absorbe el máximo daño posible o se disipa, te energizas al instante con un 2,5% de tu maná total. Este efecto solo puede ocurrir una vez cada 12 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11523,
+        "name" : "Tiempo prestado",
+        "icon" : "spell_holy_borrowedtime",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Otorga un 7% de celeridad con hechizos a tu siguiente hechizo tras lanzar tu Palabra de poder: escudo."
+        }, {
+          "description" : "Otorga un 14% de celeridad con hechizos a tu siguiente hechizo tras lanzar tu Palabra de poder: escudo."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8605,
+        "name" : "Escudo reflectante",
+        "icon" : "ability_priest_reflectiveshield",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Reflecta el 22% del daño que amortiguas con tu Palabra de poder: escudo hacia el atacante. Este daño no causa amenaza."
+        }, {
+          "description" : "Reflecta el 45% del daño que amortiguas con tu Palabra de poder: escudo hacia el atacante. Este daño no causa amenaza."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11813,
+        "name" : "Fuerza del alma",
+        "icon" : "spell_holy_ashestoashes",
+        "x" : 0,
+        "y" : 4,
+        "req" : 11224,
+        "ranks" : [ {
+          "description" : "Cuando sanas a un objetivo con tu hechizo Sanar, la duración del perjuicio Alma debilitada sobre el objetivo se reduce 2 s."
+        }, {
+          "description" : "Cuando sanas a un objetivo con tu hechizo Sanar, la duración del perjuicio Alma debilitada sobre el objetivo se reduce 4 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8609,
+        "name" : "Égida divina",
+        "icon" : "spell_holy_devineaegis",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Las sanaciones críticas y todas las sanaciones con Rezo de sanación crean un escudo protector sobre el objetivo, que absorbe el 10% de la cantidad sanada. Dura 12 s."
+        }, {
+          "description" : "Las sanaciones críticas y todas las sanaciones con Rezo de sanación crean un escudo protector sobre el objetivo, que absorbe el 20% de la cantidad sanada. Dura 12 s."
+        }, {
+          "description" : "Las sanaciones críticas y todas las sanaciones con Rezo de sanación crean un escudo protector sobre el objetivo, que absorbe el 30% de la cantidad sanada. Dura 12 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8623,
+        "name" : "Supresión de dolor",
+        "icon" : "spell_holy_painsupression",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "8% de maná base",
+          "range" : "40 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 3 min.",
+          "description" : "Reduce instantáneamente la amenaza de un objetivo amigo un 5%, reduce todo el daño recibido un 40% y aumenta la resistencia a la disipación un 65% durante 8 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12183,
+        "name" : "Tren de pensamiento",
+        "icon" : "ability_mage_studentofthemind",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Cuando sanas con Sanación superior tienes un 50% de probabilidad de reducir el tiempo de reutilización de tu Enfoque interno 5 s.\n\n\n\nCuando utilizas Punición tienes un 50% de probabilidad de reducir el tiempo de reutilización de tu Penitencia 0.5 s."
+        }, {
+          "description" : "Cuando sanas con Sanación superior tienes un 100% de probabilidad de reducir el tiempo de reutilización de tu Enfoque interno 5 s.\n\n\n\nCuando utilizas Punición tienes un 100% de probabilidad de reducir el tiempo de reutilización de tu Penitencia 0.5 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8621,
+        "name" : "Voluntad centrada",
+        "icon" : "ability_priest_focusedwill",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Siempre que seas víctima de un ataque igual a un daño mayor de un 10% de tu salud total obtienes Voluntad centrada, lo que reduce todo el daño recibido un 4% durante 8 s. Se acumula hasta 2 veces."
+        }, {
+          "description" : "Siempre que seas víctima de un ataque igual a un daño mayor de un 10% de tu salud total obtienes Voluntad centrada, lo que reduce todo el daño recibido un 6% durante 8 s. Se acumula hasta 2 veces."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8625,
+        "name" : "Gracia",
+        "icon" : "spell_holy_hopeandgrace",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Tus hechizos Sanación relámpago, Sanación superior, Sanar y Penitencia bendicen al objetivo con Gracia, que aumenta toda la sanación recibida del sacerdote un 4%. Este efecto se acumula hasta 3 veces. El efecto dura 15 s. Gracia solo puede activarse en un objetivo a la vez."
+        }, {
+          "description" : "Tus hechizos Sanación relámpago, Sanación superior, Sanar y Penitencia bendicen al objetivo con Gracia, que aumenta toda la sanación recibida del sacerdote un 8%. Este efecto se acumula hasta 3 veces. El efecto dura 15 s. Gracia solo puede activarse en un objetivo a la vez."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8603,
+        "name" : "Palabra de poder: barrera",
+        "icon" : "spell_holy_powerwordbarrier",
+        "x" : 1,
+        "y" : 6,
+        "req" : 8609,
+        "ranks" : [ {
+          "cost" : "30% de maná base",
+          "range" : "40 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 2 min.",
+          "description" : "Invoca una barrera Sagrada en la ubicación seleccionada que reduce todo el daño a los objetivos amistosos un 30%. Mientras estés dentro de la barrera, no se interrumpirá el lanzamiento de hechizos por daño. La barrera dura 10 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Sagrado",
+      "icon" : "spell_holy_guardianspirit",
+      "backgroundFile" : "PriestHoly",
+      "overlayColor" : "#9999ff",
+      "description" : "Un sanador versátil que puede invertir el daño hacia individuos o grupos y que sana incluso desde el más allá.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : true,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 88625,
+        "name" : "Palabra Sagrada: Condena",
+        "icon" : "spell_holy_chastise",
+        "cost" : "15% de maná base",
+        "range" : "30 yd range",
+        "castTime" : "Lanzamiento instantáneo",
+        "cooldown" : "Reutilización de 25 seg.",
+        "reagents" : [ ],
+        "description" : "Castiga al enemigo con 561-622 p. de daño Sagrado y lo desorienta durante 3 s.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 95861,
+        "name" : "Meditación",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "Permite que un 50% de la regeneración de maná por espíritu continúe mientras estás en combate.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 87336,
+        "name" : "Sanación espiritual",
+        "icon" : "spell_holy_impholyconcentration",
+        "reagents" : [ ],
+        "description" : "Sanación aumentada un 15%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77485,
+        "name" : "Eco de Luz",
+        "icon" : "spell_holy_aspiration",
+        "reagents" : [ ],
+        "description" : "Tus hechizos de sanación directa sanan un 10% extra durante 6 s. Cada punto de maestría proporciona un 1.25% de sanación extra durante 6 s.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10746,
+        "name" : "Renovar mejorado",
+        "icon" : "spell_holy_renew",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta la cantidad sanada por tu hechizo Renovar un 5%."
+        }, {
+          "description" : "Aumenta la cantidad sanada por tu hechizo Renovar un 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9553,
+        "name" : "Sanación potenciada",
+        "icon" : "spell_holy_greaterheal",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta un 5% la sanación de tu Sanación relámpago, Sanar, Sanación conjunta y Sanación superior."
+        }, {
+          "description" : "Aumenta un 10% la sanación de tu Sanación relámpago, Sanar, Sanación conjunta y Sanación superior."
+        }, {
+          "description" : "Aumenta un 15% la sanación de tu Sanación relámpago, Sanar, Sanación conjunta y Sanación superior."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9549,
+        "name" : "Furia divina",
+        "icon" : "spell_holy_sealofwrath",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de lanzamiento de tus hechizos Punición, Fuego Sagrado, Sanar y Sanación superior 0,15 s."
+        }, {
+          "description" : "Reduce el tiempo de lanzamiento de tus hechizos Punición, Fuego Sagrado, Sanar y Sanación superior 0,35 s."
+        }, {
+          "description" : "Reduce el tiempo de lanzamiento de tus hechizos Punición, Fuego Sagrado, Sanar y Sanación superior 0.5 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11669,
+        "name" : "Rezo desesperado",
+        "icon" : "spell_holy_restoration",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "cost" : "18% de maná base",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 2 min.",
+          "description" : "Sana instantáneamente al taumaturgo 4435-5224 p."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11765,
+        "name" : "Oleada de Luz",
+        "icon" : "spell_holy_surgeoflight",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Cuando utilizas Punición o Sanar tienes un 3% de probabilidad de provocar que tu siguiente Sanación relámpago sea de lanzamiento instantáneo y no cueste maná, pero no podrá asestar un golpe crítico."
+        }, {
+          "description" : "Cuando utilizas Punición o Sanar tienes un 6% de probabilidad de provocar que tu siguiente Sanación relámpago sea de lanzamiento instantáneo y no cueste maná, pero no podrá asestar un golpe crítico."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9561,
+        "name" : "Inspiración",
+        "icon" : "spell_holy_layonhands",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduce el daño físico que recibe tu objetivo un 5% durante 15 s después de recibir un efecto crítico de tus hechizos Sanación relámpago, Sanar, Sanación superior, Sanación conjunta, Penitencia, Rezo de alivio, Rezo de sanación o Círculo de sanación."
+        }, {
+          "description" : "Reduce el daño físico que recibe tu objetivo un 10% durante 15 s después de recibir un efecto crítico de tus hechizos Sanación relámpago, Sanar, Sanación superior, Sanación conjunta, Penitencia, Rezo de alivio, Rezo de sanación o Círculo de sanación."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9593,
+        "name" : "Toque divino",
+        "icon" : "ability_paladin_infusionoflight",
+        "x" : 0,
+        "y" : 2,
+        "req" : 10746,
+        "ranks" : [ {
+          "description" : "Tu Renovar sanará al instante al objetivo un 5% del efecto periódico total."
+        }, {
+          "description" : "Tu Renovar sanará al instante al objetivo un 10% del efecto periódico total."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9577,
+        "name" : "Concentración Sagrada",
+        "icon" : "spell_holy_fanaticism",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Aumenta la cantidad de regeneración de maná que aporta el espíritu mientras estás en combate un 10% extra."
+        }, {
+          "description" : "Aumenta la cantidad de regeneración de maná que aporta el espíritu mientras estás en combate un 20% extra."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11666,
+        "name" : "Pozo de Luz",
+        "icon" : "spell_holy_summonlightwell",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "30% de maná base",
+          "range" : "40 yd range",
+          "castTime" : "Lanzamiento de 0,5 seg.",
+          "cooldown" : "Reutilización de 3 min.",
+          "description" : "Crea un Pozo de Luz Sagrado. Los jugadores amistosos pueden hacer clic en el Pozo de Luz para recuperar 9769 p. de salud durante 6 s. Los ataques que se hagan contra ti que sean iguales al 30% de tu salud total cancelarán el efecto. El Pozo de Luz dura 3 min o 10 cargas."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12184,
+        "name" : "Tomo de Luz",
+        "icon" : "inv_misc_book_07",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de tus hechizos Palabra Sagrada un 15%."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tus hechizos Palabra Sagrada un 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 14738,
+        "name" : "Renovación rápida",
+        "icon" : "ability_paladin_blessedmending",
+        "x" : 0,
+        "y" : 3,
+        "req" : 9593,
+        "ranks" : [ {
+          "description" : "Reduce 0.5 s el tiempo de reutilización global de Renovar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11670,
+        "name" : "Espíritu redentor",
+        "icon" : "inv_enchant_essenceeternallarge",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Al morir, el sacerdote se transforma en Espíritu redentor durante 15 s. El Espíritu redentor no puede moverse, atacar, ser atacado o ser objetivo de ningún hechizo o efecto. Mientras está en esta forma, el sacerdote puede lanzar cualquier hechizo de sanación sin coste. Cuando el efecto acaba, el sacerdote muere."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9573,
+        "name" : "Serendipia",
+        "icon" : "spell_holy_serendipity",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Cuando sanas con Sanación conjunta o Sanación relámpago, el tiempo de lanzamiento de tu siguiente Sanación superior o Rezo de sanación se reduce un 10% y el coste de maná se reduce un 5%. Se acumula hasta 2 veces. Dura 20 s."
+        }, {
+          "description" : "Cuando sanas con Sanación conjunta o Sanación relámpago, el tiempo de lanzamiento de tu siguiente Sanación superior o Rezo de sanación se reduce un 20% y el coste de maná se reduce un 10%. Se acumula hasta 2 veces. Dura 20 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9587,
+        "name" : "Cuerpo y mente",
+        "icon" : "spell_holy_symbolofhope",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Cuando lanzas Palabra de poder: escudo o Salto de fe aumentas la velocidad de movimiento del objetivo un 30% durante 4 s, y tienes un 50% de probabilidad cuando lanzas Curar enfermedad sobre ti de eliminar también 1 efecto de veneno además de las enfermedades."
+        }, {
+          "description" : "Cuando lanzas Palabra de poder: escudo o Salto de fe aumentas la velocidad de movimiento del objetivo un 60% durante 4 s, y tienes un 100% de probabilidad cuando lanzas Curar enfermedad sobre ti de eliminar también 1 efecto de veneno además de las enfermedades."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11667,
+        "name" : "Chakra",
+        "icon" : "priest_icon_chakra",
+        "x" : 1,
+        "y" : 4,
+        "req" : 9577,
+        "ranks" : [ {
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 30 seg.",
+          "description" : "Cuando se activa, con tu siguiente hechizo Sanar, Rezo de sanación, Rezo de alivio o Punición entrarás en un estado de Chakra durante 30 s.\n\n\n\nSerenidad (Sanar)\n\nAumenta un 10% la probabilidad de efecto crítico de tus hechizos de sanación directa y provoca que tus sanaciones directas reinicien la duración de tu Renovar en el objetivo.\n\n\n\nSantuario (Rezo de sanación, Rezo de alivio)\n\nAumenta la sanación realizada por tus hechizos de área de efecto y Renovar un 15% y reduce el tiempo de reutilización de tu Círculo de sanación 2 s.\n\n\n\nCastigar (Punición)\n\nAumenta tu daño total infligido con hechizos de las Sombras y Sagrados un 15%."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11755,
+        "name" : "Revelaciones",
+        "icon" : "ability_priest_bindingprayers",
+        "x" : 2,
+        "y" : 4,
+        "req" : 11667,
+        "ranks" : [ {
+          "description" : "Cuando estás en Chakra: Serenidad o Chakra: Santuario, tu facultad Palabra Sagrada: Condena se transformará en una facultad diferente dependiendo del estado en el que estés.\n\n\n\nPalabra Sagrada: Serenidad\n\nSana al instante 4699-5508 p. al objetivo y aumenta un 25% la probabilidad de efecto crítico de tus efectos de sanación sobre el objetivo durante 6 s. 15 s de tiempo de reutilización.\n\n\n\nPalabra Sagrada: Santuario\n\nBendice el suelo con Luz divina, lo que sana a todos los que estén en su interior 270-321 p. cada 2 s durante 18 s. Solo puede haber un Santuario activo a la vez. 40 s de tiempo de reutilización."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11672,
+        "name" : "Temple bendito",
+        "icon" : "spell_holy_blessedresillience",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Siempre que seas víctima de un ataque igual a un daño mayor de un 10% de tu salud total obtienes Temple bendito, lo que aumenta un 5% toda la sanación recibida durante 10 s."
+        }, {
+          "description" : "Siempre que seas víctima de un ataque igual a un daño mayor de un 10% de tu salud total obtienes Temple bendito, lo que aumenta un 10% toda la sanación recibida durante 10 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9597,
+        "name" : "Prueba de fe",
+        "icon" : "spell_holy_testoffaith",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Aumenta la sanación un 4% en los objetivos amistosos con un 50% de salud o menos."
+        }, {
+          "description" : "Aumenta la sanación un 8% en los objetivos amistosos con un 50% de salud o menos."
+        }, {
+          "description" : "Aumenta la sanación un 12% en los objetivos amistosos con un 50% de salud o menos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11668,
+        "name" : "Estado de ánimo",
+        "icon" : "spell_arcane_mindmastery",
+        "x" : 1,
+        "y" : 5,
+        "req" : 11667,
+        "ranks" : [ {
+          "description" : "Tus hechizos Sanar, Rezo de sanación, Rezo de alivio o Punición que tengan éxito aumentan 2 s la duración de tu estado de Chakra correspondiente."
+        }, {
+          "description" : "Tus hechizos Sanar, Rezo de sanación, Rezo de alivio o Punición que tengan éxito aumentan 4 s la duración de tu estado de Chakra correspondiente."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9595,
+        "name" : "Círculo de sanación",
+        "icon" : "spell_holy_circleofrenewal",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "cost" : "21% de maná base",
+          "range" : "40 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 10 seg.",
+          "description" : "Sana 1609-1776 p. hasta a 5 miembros del grupo o banda amistosos en un radio de 15 m del objetivo. Da prioridad a los miembros del grupo más heridos."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9601,
+        "name" : "Espíritu guardián",
+        "icon" : "spell_holy_guardianspirit",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "6% de maná base",
+          "range" : "40 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 3 min.",
+          "description" : "Invoca un espíritu guardián que vela por el objetivo amistoso. El espíritu aumenta la sanación que recibe el objetivo un 40% y evita que el objetivo muera sacrificándose. Este sacrificio acaba con el efecto pero sana al objetivo un 50% de su salud máxima. Dura 10 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Sombra",
+      "icon" : "spell_shadow_shadowwordpain",
+      "backgroundFile" : "PriestShadow",
+      "overlayColor" : "#b266cc",
+      "description" : "Usa siniestra magia de las Sombras, especialmente hechizos de daño en el tiempo, para erradicar a los enemigos.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 15407,
+        "name" : "Tortura mental",
+        "icon" : "spell_shadow_siphonmana",
+        "cost" : "8% de maná base",
+        "range" : "40 yd range",
+        "castTime" : "Canalizado",
+        "reagents" : [ ],
+        "description" : "Ofusca la mente del objetivo con energía de las Sombras, lo que le inflige 522 p. de daño de las Sombras durante 3 s y ralentiza su velocidad de movimiento un 50%.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 87327,
+        "name" : "Poder de las Sombras",
+        "icon" : "spell_shadow_shadowpower",
+        "reagents" : [ ],
+        "description" : "Daño con hechizos aumentado un 25%.\n\n\n\nAumenta el daño crítico de tus hechizos de las Sombras un 100%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 95740,
+        "name" : "Orbes de las Sombras",
+        "icon" : "spell_priest_shadoworbs",
+        "reagents" : [ ],
+        "description" : "Tienes un 10% de probabilidad de que tus hechizos Palabra de las Sombras: dolor y Tortura mental te otorguen un Orbe de las Sombras cada vez que inflijan daño. Lanzar Explosión mental o Púa mental consume todos los Orbes de las Sombras, lo que aumenta el daño de ese hechizo un 0% por cada Orbe de las Sombras y otorga un 0% más de daño a tus hechizos periódicos durante 15 s. Puedes tener un máximo de 3 orbes.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77486,
+        "name" : "Poder del Orbe de las Sombras",
+        "icon" : "inv_chaos_orb",
+        "reagents" : [ ],
+        "description" : "Aumenta el daño infligido por tus Orbes de las Sombras. Cada punto de maestría aumenta el daño un 1.3% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9032,
+        "name" : "Oscuridad",
+        "icon" : "ability_priest_darkness",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Celeridad con hechizos aumentada un 1%."
+        }, {
+          "description" : "Celeridad con hechizos aumentada un 2%."
+        }, {
+          "description" : "Celeridad con hechizos aumentada un 3%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9036,
+        "name" : "Palabra de las Sombras: dolor mejorada",
+        "icon" : "spell_shadow_shadowwordpain",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta un 3% el daño de tu hechizo Palabra de las Sombras: dolor."
+        }, {
+          "description" : "Aumenta un 6% el daño de tu hechizo Palabra de las Sombras: dolor."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9046,
+        "name" : "Sombras veladas",
+        "icon" : "spell_magic_lesserinvisibilty",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de tu facultad Desvanecerse 3 s y el de tu facultad Maligno de las Sombras 30 s."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tu facultad Desvanecerse 6 s y el de tu facultad Maligno de las Sombras 60 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9040,
+        "name" : "Alarido psíquico mejorado",
+        "icon" : "spell_shadow_psychicscream",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de tu hechizo Alarido psíquico 2 s."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tu hechizo Alarido psíquico 4 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9042,
+        "name" : "Explosión mental mejorada",
+        "icon" : "spell_shadow_unholyfrenzy",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de tu hechizo Explosión mental 0.5 s y con Forma de las Sombras tu Explosión mental también tiene un 33% de probabilidad de reducir todas las sanaciones realizadas al objetivo un 10% durante 10 s."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tu hechizo Explosión mental 1 s y con Forma de las Sombras tu Explosión mental también tiene un 66% de probabilidad de reducir todas las sanaciones realizadas al objetivo un 10% durante 10 s."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tu hechizo Explosión mental 1.5 s y con Forma de las Sombras tu Explosión mental también tiene un 100% de probabilidad de reducir todas las sanaciones realizadas al objetivo un 10% durante 10 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9062,
+        "name" : "Peste devoradora mejorada",
+        "icon" : "spell_shadow_devouringplague.",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Tu Peste devoradora inflige al instante daño igual al 15% de su efecto periódico total."
+        }, {
+          "description" : "Tu Peste devoradora inflige al instante daño igual al 30% de su efecto periódico total."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11673,
+        "name" : "Fe distorsionada",
+        "icon" : "spell_shadow_mindtwisting",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta el daño de tus hechizos de las Sombras un 1% y te otorga un índice de golpe con hechizos igual al 50% de todo espíritu que obtengas de objetos o efectos."
+        }, {
+          "description" : "Aumenta el daño de tus hechizos de las Sombras un 2% y te otorga un índice de golpe con hechizos igual al 100% de todo espíritu que obtengas de objetos o efectos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9064,
+        "name" : "Forma de las Sombras",
+        "icon" : "spell_shadow_shadowform",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "13% de maná base",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 1,5 seg.",
+          "description" : "Adoptas la forma de las Sombras, lo que aumenta el daño de las Sombras que infliges un 15%, reduce un 15% todo el daño que recibes y aumenta un 5% la celeridad con hechizos de todos los miembros del grupo o banda. Sin embargo, no puedes lanzar hechizos Sagrados mientras estés en esta forma."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9068,
+        "name" : "Espectro",
+        "icon" : "spell_shadow_twistedfaith",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Tu facultad Desvanecer ahora tiene un 50% de probabilidad de eliminar todos los efectos de reducción de movimiento."
+        }, {
+          "description" : "Tu facultad Desvanecer ahora tiene un 100% de probabilidad de eliminar todos los efectos de reducción de movimiento."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11606,
+        "name" : "Sombras dominadas",
+        "icon" : "inv_misc_orb_04",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Aumenta un 4% tu probabilidad de obtener un Orbe de las Sombras cuando infliges daño con Tortura mental y Palabra de las Sombras: dolor, y tienes un 50% de probabilidad de obtener un orbe de las Sombras cuando recibes un golpe crítico de cualquier ataque."
+        }, {
+          "description" : "Aumenta un 8% tu probabilidad de obtener un Orbe de las Sombras cuando infliges daño con Tortura mental y Palabra de las Sombras: dolor, y tienes un 100% de probabilidad de obtener un orbe de las Sombras cuando recibes un golpe crítico de cualquier ataque."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9052,
+        "name" : "Silencio",
+        "icon" : "ability_priest_silence",
+        "x" : 0,
+        "y" : 3,
+        "req" : 9040,
+        "ranks" : [ {
+          "cost" : "225 maná",
+          "range" : "30 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 45 seg.",
+          "description" : "Silencia al objetivo impidiendo que lance hechizos durante 5 s. El lanzamiento de hechizos de las víctimas no-jugadoras también se interrumpirá durante 3 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9054,
+        "name" : "Abrazo vampírico",
+        "icon" : "spell_shadow_unsummonbuilding",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "castTime" : "Lanzamiento instantáneo",
+          "description" : "Te llena con el abrazo de energía de las Sombras que provoca que te sanes un 6% y que otros miembros del grupo se sanen un 3% de cualquier daño con hechizos de las Sombras que inflijas a un objetivo durante 30 min."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11778,
+        "name" : "Masoquismo",
+        "icon" : "spell_shadow_misery",
+        "x" : 2,
+        "y" : 3,
+        "req" : 9054,
+        "ranks" : [ {
+          "description" : "Cuando recibes un ataque dañino igual o mayor al 10% de tu salud o te dañas a ti mismo con Palabra de las Sombras: muerte, obtienes al instante un 5% de tu maná total."
+        }, {
+          "description" : "Cuando recibes un ataque dañino igual o mayor al 10% de tu salud o te dañas a ti mismo con Palabra de las Sombras: muerte, obtienes al instante un 10% de tu maná total."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9060,
+        "name" : "Fundir mente",
+        "icon" : "spell_shadow_skull",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Aumenta un 15% el daño infligido con tu Palabra de las Sombras: muerte sobre los objetivos con salud igual o menor al 25%, y cuando infliges daño con Púa mental, el tiempo de lanzamiento de tu siguiente Explosión mental se reduce un 25% y dura 6 s. Fundir mente se puede acumular hasta 2 veces."
+        }, {
+          "description" : "Aumenta un 30% el daño infligido con tu Palabra de las Sombras: muerte sobre los objetivos con salud igual o menor al 25%, y cuando infliges daño con Púa mental, el tiempo de lanzamiento de tu siguiente Explosión mental se reduce un 50% y dura 6 s. Fundir mente se puede acumular hasta 2 veces."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9076,
+        "name" : "Dolor y sufrimiento",
+        "icon" : "spell_shadow_painandsuffering",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Tu Tortura mental tiene un 30% de probabilidad de restablecer la duración de tu Palabra de las Sombras: dolor sobre el objetivo y reduce el daño que recibes de tu propia Palabra de las Sombras: muerte un 20%."
+        }, {
+          "description" : "Tu Tortura mental tiene un 60% de probabilidad de restablecer la duración de tu Palabra de las Sombras: dolor sobre el objetivo y reduce el daño que recibes de tu propia Palabra de las Sombras: muerte un 40%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9074,
+        "name" : "Toque vampírico",
+        "icon" : "spell_holy_stoicism",
+        "x" : 1,
+        "y" : 4,
+        "req" : 9054,
+        "ranks" : [ {
+          "cost" : "16% de maná base",
+          "range" : "40 yd range",
+          "castTime" : "Lanzamiento de 1,5 seg.",
+          "description" : "Inflige 670 p. de daño de las Sombras durante 15 s a tu objetivo y provoca que hasta 10 miembros de la banda o grupo ganen un 1% de su maná máximo cada 10 s cuando infliges daño con Explosión mental."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11663,
+        "name" : "Parálisis",
+        "icon" : "ability_rogue_masterofsubtlety",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Cuando asestas un golpe crítico con tu Explosión mental, provocas que el objetivo no pueda moverse durante 2 s."
+        }, {
+          "description" : "Cuando asestas un golpe crítico con tu Explosión mental, provocas que el objetivo no pueda moverse durante 4 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9072,
+        "name" : "Horror psíquico",
+        "icon" : "spell_shadow_psychichorrors",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "cost" : "16% de maná base",
+          "range" : "30 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 2 min.",
+          "description" : "Aterrorizas al objetivo y provocas que tiemble de horror durante 3 s y que tire las armas de mano principal y a distancia durante 10 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11605,
+        "name" : "Pecado y castigo",
+        "icon" : "spell_holy_prayerofshadowprotection",
+        "x" : 1,
+        "y" : 5,
+        "req" : 9074,
+        "ranks" : [ {
+          "description" : "Cuando se disipa tu Toque vampírico, el que lo haya disipado y todos los enemigos cercanos en un radio de 10 m tienen un 50% de probabilidad de aterrorizarse durante 3 s.\n\n\n\nCuando tu Tortura mental asesta un golpe crítico, el tiempo de reutilización de tu Maligno de las sombras se reduce 5 s."
+        }, {
+          "description" : "Cuando se disipa tu Toque vampírico, el que lo haya disipado y todos los enemigos cercanos en un radio de 10 m tienen un 100% de probabilidad de aterrorizarse durante 3 s.\n\n\n\nCuando tu Tortura mental asesta un golpe crítico, el tiempo de reutilización de tu Maligno de las sombras se reduce 10 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9070,
+        "name" : "Aparición sombría",
+        "icon" : "ability_priest_shadowyapparition",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Cuando infliges daño periódico con tu Palabra de las Sombras: dolor, tienes un 4% de probabilidad de invocar una versión sombría de ti mismo que se moverá lentamente hacia un objetivo que esté afectado por tu Palabra de las Sombras: dolor. Cuando alcance al objetivo, infligirá instantáneamente 482 p. de daño de las Sombras. \n\n    \n\nMientras te mueves, la probabilidad de invocar a la aparición sombría aumenta un 20%. Puedes tener un máximo de 4 Apariciones sombrías activas a la vez."
+        }, {
+          "description" : "Cuando infliges daño periódico con tu Palabra de las Sombras: dolor, tienes un 8% de probabilidad de invocar una versión sombría de ti mismo que se moverá lentamente hacia un objetivo que esté afectado por tu Palabra de las Sombras: dolor. Cuando alcance al objetivo, infligirá instantáneamente 482 p. de daño de las Sombras. \n\n    \n\nMientras te mueves, la probabilidad de invocar a la aparición sombría aumenta un 40%. Puedes tener un máximo de 4 Apariciones sombrías activas a la vez."
+        }, {
+          "description" : "Cuando infliges daño periódico con tu Palabra de las Sombras: dolor, tienes un 12% de probabilidad de invocar una versión sombría de ti mismo que se moverá lentamente hacia un objetivo que esté afectado por tu Palabra de las Sombras: dolor. Cuando alcance al objetivo, infligirá instantáneamente 482 p. de daño de las Sombras. \n\n    \n\nMientras te mueves, la probabilidad de invocar a la aparición sombría aumenta un 60%. Puedes tener un máximo de 4 Apariciones sombrías activas a la vez."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9080,
+        "name" : "Dispersión",
+        "icon" : "spell_shadow_dispersion",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 2 min.",
+          "description" : "Te conviertes en energía de las Sombras pura y reduces todo el daño recibido un 90%. No puedes atacar ni lanzar hechizos, pero regeneras un 6% de maná cada 1 s durante 6 s. \n\n\n\nDispersión se puede lanzar mientras estás aturdido, asustado o silenciado, quita todos los efectos de frenado y de reducción del movimiento al lanzarlo y te hace inmune a ellos mientras dura."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

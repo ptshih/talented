@@ -1,0 +1,1003 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 7,
+      "name" : "주술사",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "정기",
+      "icon" : "spell_nature_lightning",
+      "backgroundFile" : "ShamanElementalCombat",
+      "overlayColor" : "#cc33cc",
+      "description" : "자연과 정령의 파괴적인 힘을 이용합니다.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 51490,
+        "name" : "천둥폭풍",
+        "icon" : "spell_shaman_thunderstorm",
+        "castTime" : "즉시 시전",
+        "cooldown" : "재사용 대기시간: 45초",
+        "reagents" : [ ],
+        "description" : "주술사의 정기를 채워주고 적에게 피해를 주는 번개의 화살을 불러내어 자신의 마나를 8%만큼 회복시키고 10미터 반경 내에 있는 주위 모든 적에게 56의 자연 피해를 준 후 20미터 밖으로 멀리 밀쳐냅니다. 기절 상태에서도 사용할 수 있습니다.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 62099,
+        "name" : "주술의 힘",
+        "icon" : "spell_unused2",
+        "reagents" : [ ],
+        "description" : "번개 화살, 연쇄 번개, 용암 폭발 사용 시 주문력 증가 효과를 20%만큼 추가로 받습니다. 번개 화살, 연쇄 번개, 용암 폭발의 시전 시간이 0.5초만큼 감소합니다.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 60188,
+        "name" : "정기의 격노",
+        "icon" : "spell_fire_volcano",
+        "reagents" : [ ],
+        "description" : "불타는 토템, 용암 토템, 화염, 냉기, 자연 주문이 치명타로 적중할 경우 보너스 피해가 100%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77222,
+        "name" : "정기 과부하",
+        "icon" : "spell_nature_lightningoverload",
+        "reagents" : [ ],
+        "description" : "16%의 확률로 정기 과부하를 일으킵니다. 정기 과부하 효과를 받으면 번개 화살, 연쇄 번개, 용암 폭발 공격 시 같은 대상에게 마나를 소모하지 않고 추가 공격을 발동시켜 일반 공격력의 75%에 해당하는 피해를 입힙니다. 이 추가 공격은 위협 수준을 생성하지 않습니다. 특화력 1당 효과가 발동할 확률이 추가로 2%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 11218,
+        "name" : "예리함",
+        "icon" : "spell_nature_astralrecalgroup",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "치명타 및 주문 극대화 적중도가 1%만큼 증가합니다."
+        }, {
+          "description" : "치명타 및 주문 극대화 적중도가 2%만큼 증가합니다."
+        }, {
+          "description" : "치명타 및 주문 극대화 적중도가 3%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 564,
+        "name" : "정기의 흐름",
+        "icon" : "spell_shaman_convection",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "공격 주문에 소모되는 마나가 5%만큼 감소합니다."
+        }, {
+          "description" : "공격 주문에 소모되는 마나가 10%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 563,
+        "name" : "강력한 충격",
+        "icon" : "spell_fire_fireball",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "번개 화살, 연쇄 번개, 천둥폭풍, 용암 폭발, 충격 계열 주문의 공격력이 2%만큼 증가합니다."
+        }, {
+          "description" : "번개 화살, 연쇄 번개, 천둥폭풍, 용암 폭발, 충격 계열 주문의 공격력이 4%만큼 증가합니다."
+        }, {
+          "description" : "번개 화살, 연쇄 번개, 천둥폭풍, 용암 폭발, 충격 계열 주문의 공격력이 6%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 561,
+        "name" : "불꽃의 부름",
+        "icon" : "spell_fire_immolation",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "불의 토템과 불꽃 회오리의 공격력이 10%만큼, 용암 폭발 주문의 공격력이 5%만큼 증가합니다."
+        }, {
+          "description" : "불의 토템과 불꽃 회오리의 공격력이 20%만큼, 용암 폭발 주문의 공격력이 10%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1640,
+        "name" : "정기의 수호",
+        "icon" : "spell_nature_spiritarmor",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "받는 마법 피해가 4%만큼 감소합니다."
+        }, {
+          "description" : "받는 마법 피해가 8%만큼 감소합니다."
+        }, {
+          "description" : "받는 마법 피해가 12%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 575,
+        "name" : "산울림",
+        "icon" : "spell_frost_frostward",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "충격 계열 주문과 날카로운 바람의 재사용 대기시간이 0.5초만큼 단축됩니다."
+        }, {
+          "description" : "충격 계열 주문과 날카로운 바람의 재사용 대기시간이 1초만큼 단축됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1685,
+        "name" : "정기의 정밀함",
+        "icon" : "spell_nature_elementalprecision_1",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "화염, 냉기, 자연 주문의 공격력이 1%만큼 증가하고 아이템이나 강화 효과로 받는 정신력의 33%만큼 주문 적중도가 증가합니다."
+        }, {
+          "description" : "화염, 냉기, 자연 주문의 공격력이 2%만큼 증가하고 아이템이나 강화 효과로 받는 정신력의 66%만큼 주문 적중도가 증가합니다."
+        }, {
+          "description" : "화염, 냉기, 자연 주문의 공격력이 3%만큼 증가하고 아이템이나 강화 효과로 받는 정신력의 100%만큼 주문 적중도가 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11767,
+        "name" : "연쇄 천둥",
+        "icon" : "spell_nature_callstorm",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "번개 보호막이 활성화되어 있는 동안 번개 화살이나 연쇄 번개로 적에게 피해를 입히면 30%의 확률로 자신의 마나의 2%에 해당하는 마나를 회복하며, 번개 구슬이 생성됩니다. 번개 구슬은 최대 9개까지 축적됩니다."
+        }, {
+          "description" : "번개 보호막이 활성화되어 있는 동안 번개 화살이나 연쇄 번개로 적에게 피해를 입히면 60%의 확률로 자신의 마나의 2%에 해당하는 마나를 회복하며, 번개 구슬이 생성됩니다. 번개 구슬은 최대 9개까지 축적됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 574,
+        "name" : "정기의 집중",
+        "icon" : "spell_shadow_manaburn",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "주기적인 피해를 제외한 화염, 냉기, 자연 계열 공격 주문이 극대화 효과를 발휘하면 정신 집중 상태를 취합니다. 정신 집중 상태에서는 다음 2회의 공격 및 치유 주문의 마나 소비량이 40%만큼 감소됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1641,
+        "name" : "정기의 테두리",
+        "icon" : "spell_nature_stormreach",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "번개 화살, 연쇄 번개, 불꽃 회오리, 용암 폭발의 사정거리가 5미터만큼 증가하고 충격 주문과 불타는 토템의 사정거리가 7미터만큼 증가합니다."
+        }, {
+          "description" : "번개 화살, 연쇄 번개, 불꽃 회오리, 용암 폭발의 사정거리가 10미터만큼 증가하고 충격 주문과 불타는 토템의 사정거리가 15미터만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2049,
+        "name" : "정령의 서약",
+        "icon" : "spell_shaman_elementaloath",
+        "x" : 1,
+        "y" : 3,
+        "req" : 574,
+        "ranks" : [ {
+          "description" : "정기의 집중으로 정신 집중이 활성화되면 주문 공격력이 5%만큼 증가합니다. 추가로 100미터 반경 내에 있는 파티원 혹은 공격대원의 치명타 및 주문 극대화 적중도가 3%만큼 증가합니다."
+        }, {
+          "description" : "정기의 집중으로 정신 집중이 활성화되면 주문 공격력이 10%만큼 증가합니다. 추가로 100미터 반경 내에 있는 파티원 혹은 공격대원의 치명타 및 주문 극대화 적중도가 5%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2051,
+        "name" : "용암 분출",
+        "icon" : "spell_shaman_lavaflow",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "용암 폭발 주문의 치명타 피해 보너스가 추가로 6%만큼, 화염 충격 주문의 주기적인 피해가 20%만큼 증가합니다. 또한 자신의 화염 충격 주문이 무효화되면 6초 동안 주문 가속이 10%만큼 증가합니다."
+        }, {
+          "description" : "용암 폭발 주문의 치명타 피해 보너스가 추가로 12%만큼, 화염 충격 주문의 주기적인 피해가 40%만큼 증가합니다. 또한 자신의 화염 충격 주문이 무효화되면 6초 동안 주문 가속이 20%만큼 증가합니다."
+        }, {
+          "description" : "용암 폭발 주문의 치명타 피해 보너스가 추가로 24%만큼, 화염 충격 주문의 주기적인 피해가 60%만큼 증가합니다. 또한 자신의 화염 충격 주문이 무효화되면 6초 동안 주문 가속이 30%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11769,
+        "name" : "성난 부르짖음",
+        "icon" : "spell_nature_unrelentingstorm",
+        "x" : 0,
+        "y" : 4,
+        "req" : 11767,
+        "ranks" : [ {
+          "description" : "번개 보호막의 번개 구슬이 3개를 초과한 동안, 대지 충격을 시전하면 3개의 구슬을 제외하고 남는 구슬을 전부 소모하여 즉시 대상에게 소모된 구슬의 총 피해에 해당하는 피해를 입힙니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 573,
+        "name" : "정기의 깨달음",
+        "icon" : "spell_nature_wispheal",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 3분",
+          "description" : "활성화되면 다음 번개 화살, 연쇄 번개, 용암 폭발 주문은 즉시 시전됩니다. 추가로 화염, 냉기, 자연 계열 주문의 공격력이 15%만큼 증가하고 15초 동안 주문 가속이 20%만큼 증가합니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11768,
+        "name" : "대지의 올가미",
+        "icon" : "spell_nature_stranglevines",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "속박의 토템 시전 시 50%의 확률로 5초 동안 주위 대상을 이동 불가 상태로 만듭니다."
+        }, {
+          "description" : "속박의 토템 시전 시 100%의 확률로 5초 동안 주위 대상을 이동 불가 상태로 만듭니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 5565,
+        "name" : "토템의 분노",
+        "icon" : "spell_fire_totemofwrath",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "불의 토템 100미터 반경 내에 있는 파티원과 공격대원의 주문력이 10%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11368,
+        "name" : "역순환",
+        "icon" : "ability_vehicle_electrocharge",
+        "x" : 1,
+        "y" : 5,
+        "req" : 573,
+        "ranks" : [ {
+          "description" : "번개 화살, 연쇄 번개 주문 시전 시 정기의 깨달음 특성의 재사용 대기시간이 1초만큼 감소합니다."
+        }, {
+          "description" : "번개 화살, 연쇄 번개 주문 시전 시 정기의 깨달음 특성의 재사용 대기시간이 2초만큼 감소합니다."
+        }, {
+          "description" : "번개 화살, 연쇄 번개 주문 시전 시 정기의 깨달음 특성의 재사용 대기시간이 3초만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 5566,
+        "name" : "용암 쇄도",
+        "icon" : "spell_shaman_lavasurge",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "화염 충격으로 주기적인 피해를 입히면 10%의 확률로 용암 폭발의 재사용 대기시간이 초기화됩니다."
+        }, {
+          "description" : "화염 충격으로 주기적인 피해를 입히면 20%의 확률로 용암 폭발의 재사용 대기시간이 초기화됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1687,
+        "name" : "지진",
+        "icon" : "spell_shaman_earthquake",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "기본 마나의 60% ",
+          "range" : "35 yd range",
+          "castTime" : "정신 집중",
+          "description" : "대상 지역의 땅을 흔들고 파괴하여 8미터 반경 안에 있는 적에게 매 1초마다 15의 물리 피해를 입힙니다. 10%의 확률로 대상을 넘어뜨립니다. 8초 동안 지속됩니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "고양",
+      "icon" : "spell_nature_lightningshield",
+      "backgroundFile" : "ShamanEnhancement",
+      "overlayColor" : "#4c7fff",
+      "description" : "토템을 사용하는 전사입니다. 정령의 힘이 깃든 무기로 적을 공격합니다.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 60103,
+        "name" : "용암 채찍",
+        "icon" : "ability_shaman_lavalash",
+        "cost" : "기본 마나의 4% ",
+        "range" : "근접 거리",
+        "castTime" : "즉시 시전",
+        "cooldown" : "재사용 대기시간: 10초",
+        "requires" : "근접 무기 필요",
+        "reagents" : [ ],
+        "description" : "보조 무기에 용암의 열기를 주입하여 즉시 적 대상에게 무기 공격력의 200%에 해당하는 피해를 입힙니다. 보조 무기에 불꽃의 무기 효과가 활성화되어 있으면 피해가 40%만큼 증가합니다.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 86629,
+        "name" : "쌍수 무기",
+        "icon" : "ability_dualwield",
+        "reagents" : [ ],
+        "description" : "두 가지의 한손 무기를 동시에 착용할 수 있습니다. 정면의 근접 공격을 무기로 막을 수 있습니다. 적중률이 추가로 6%만큼 증가합니다.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 30814,
+        "name" : "기민한 정신",
+        "icon" : "spell_nature_mentalquickness",
+        "reagents" : [ ],
+        "description" : "주문력이 전투력의 50%만큼 증가하고 즉시 시전 주문에 소모되는 마나가 75%만큼 감소합니다.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 51522,
+        "name" : "고대의 지혜",
+        "icon" : "spell_shaman_spectraltransformation",
+        "reagents" : [ ],
+        "description" : "근접 공격 시 40%의 확률로 기본 마나의 5%에 해당하는 마나를 즉시 회복합니다.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77223,
+        "name" : "원소 강화",
+        "icon" : "spell_nature_elementalprecision_2",
+        "reagents" : [ ],
+        "description" : "화염, 냉기, 자연 공격력이 20%만큼 증가합니다. 특화력 1당 공격력이 추가로 2.5%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 611,
+        "name" : "자연의 무기",
+        "icon" : "spell_fire_flametounge",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "불꽃의 무기와 대지생명의 무기로 받는 지속 보너스가 20%만큼 증가하고, 질풍의 무기의 추가 공격 피해가 20%만큼 증가하며, 정기 폭발 능력의 현재 효과가 25%만큼 증가합니다."
+        }, {
+          "description" : "불꽃의 무기와 대지생명의 무기로 받는 지속 보너스가 40%만큼 증가하고, 질풍의 무기의 추가 공격 피해가 40%만큼 증가하며, 정기 폭발 능력의 현재 효과가 50%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 5560,
+        "name" : "집중의 일격",
+        "icon" : "spell_shaman_focusedstrikes",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "원시의 일격과 폭풍의 일격의 공격력이 15%만큼 증가합니다."
+        }, {
+          "description" : "원시의 일격과 폭풍의 일격의 공격력이 30%만큼 증가합니다."
+        }, {
+          "description" : "원시의 일격과 폭풍의 일격의 공격력이 45%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 607,
+        "name" : "보호막 연마",
+        "icon" : "spell_nature_lightningshield",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "번개 보호막 구슬의 공격력이 5%만큼, 물의 보호막 구슬로 흡수하는 마나의 양이 5%만큼, 대지의 보호막 구슬로 회복되는 생명력이 5%만큼 증가합니다."
+        }, {
+          "description" : "번개 보호막 구슬의 공격력이 10%만큼, 물의 보호막 구슬로 흡수하는 마나의 양이 10%만큼, 대지의 보호막 구슬로 회복되는 생명력이 10%만큼 증가합니다."
+        }, {
+          "description" : "번개 보호막 구슬의 공격력이 15%만큼, 물의 보호막 구슬로 흡수하는 마나의 양이 15%만큼, 대지의 보호막 구슬로 회복되는 생명력이 15%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11216,
+        "name" : "정기의 파괴력",
+        "icon" : "spell_fire_elementaldevastation",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "주기적인 피해를 제외한 공격 주문이 극대화 효과를 발휘하면 10초 동안 근접 공격의 치명타 적중률이 3%만큼 증가합니다."
+        }, {
+          "description" : "주기적인 피해를 제외한 공격 주문이 극대화 효과를 발휘하면 10초 동안 근접 공격의 치명타 적중률이 6%만큼 증가합니다."
+        }, {
+          "description" : "주기적인 피해를 제외한 공격 주문이 극대화 효과를 발휘하면 10초 동안 근접 공격의 치명타 적중률이 9%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 602,
+        "name" : "질풍",
+        "icon" : "ability_ghoulfrenzy",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "치명타를 적중시키면 다음 3회의 무기 공격은 공격 속도가 10%만큼 증가합니다."
+        }, {
+          "description" : "치명타를 적중시키면 다음 3회의 무기 공격은 공격 속도가 20%만큼 증가합니다."
+        }, {
+          "description" : "치명타를 적중시키면 다음 3회의 무기 공격은 공격 속도가 30%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 605,
+        "name" : "고대의 신속함",
+        "icon" : "spell_lifegivingspeed",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "늑대 정령 주문의 시전 시간이 1초만큼 감소하고 이동 속도가 7%만큼 증가합니다. 다른 이동 속도 증가 효과와 중복 적용되지 않습니다."
+        }, {
+          "description" : "늑대 정령 주문의 시전 시간이 2초만큼 감소하고 이동 속도가 15%만큼 증가합니다. 다른 이동 속도 증가 효과와 중복 적용되지 않습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11432,
+        "name" : "토템의 테두리",
+        "icon" : "spell_nature_agitatingtotem",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "토템의 효과 범위가 15%만큼 증가합니다."
+        }, {
+          "description" : "토템의 효과 범위가 30%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 615,
+        "name" : "강인함",
+        "icon" : "spell_holy_devotion",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "체력이 3%만큼 증가하고 감속 효과의 지속시간이 10%만큼 감소합니다."
+        }, {
+          "description" : "체력이 7%만큼 증가하고 감속 효과의 지속시간이 20%만큼 감소합니다."
+        }, {
+          "description" : "체력이 10%만큼 증가하고 감속 효과의 지속시간이 30%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 901,
+        "name" : "폭풍의 일격",
+        "icon" : "ability_shaman_stormstrike",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "기본 마나의 8% ",
+          "range" : "근접 거리",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 8초",
+          "requires" : "근접 무기 필요",
+          "description" : "양쪽 손에 장착한 무기로 즉시 적을 공격하여 무기 공격력의 125%에 해당하는 피해를 입히고 15초 동안 번개 화살, 연쇄 번개, 번개 보호막, 대지 충격이 극대화 효과를 발휘할 확률이 25%만큼 증가합니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2055,
+        "name" : "전하 충격",
+        "icon" : "spell_shaman_staticshock",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "번개 보호막이 활성화되어 있을 때 원시의 일격, 폭풍의 일격, 용암 채찍으로 피해를 입히면 15%의 확률로 번개 보호막 구슬을 소모하지 않은 채 번개 보호막 구슬 하나에 해당하는 피해를 입힙니다."
+        }, {
+          "description" : "번개 보호막이 활성화되어 있을 때 원시의 일격, 폭풍의 일격, 용암 채찍으로 피해를 입히면 30%의 확률로 번개 보호막 구슬을 소모하지 않은 채 번개 보호막 구슬 하나에 해당하는 피해를 입힙니다."
+        }, {
+          "description" : "번개 보호막이 활성화되어 있을 때 원시의 일격, 폭풍의 일격, 용암 채찍으로 피해를 입히면 45%의 확률로 번개 보호막 구슬을 소모하지 않은 채 번개 보호막 구슬 하나에 해당하는 피해를 입힙니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11220,
+        "name" : "얼음 강화",
+        "icon" : "spell_fire_bluecano",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "자신의 냉기의 무기 효과가 걸려 있는 대상 공격 시 번개 화살, 연쇄 번개, 용암 채찍, 충격 계열 주문의 공격력이 5%만큼 증가하고, 15미터 이상 떨어져 있는 적에게 냉기 충격을 시전하면 50%의 확률로 5초 동안 대상을 얼음으로 가두어 이동 불가 상태로 만듭니다."
+        }, {
+          "description" : "자신의 냉기의 무기 효과가 걸려 있는 대상 공격 시 번개 화살, 연쇄 번개, 용암 채찍, 충격 계열 주문의 공격력이 10%만큼 증가하고, 15미터 이상 떨어져 있는 적에게 냉기 충격을 시전하면 100%의 확률로 5초 동안 대상을 얼음으로 가두어 이동 불가 상태로 만듭니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11770,
+        "name" : "불꽃 회오리 연마",
+        "icon" : "spell_shaman_improvedfirenova",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "불꽃 회오리의 공격력이 10%만큼 증가하고 재사용 대기시간이 2초만큼 감소합니다."
+        }, {
+          "description" : "불꽃 회오리의 공격력이 20%만큼 증가하고 재사용 대기시간이 4초만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2083,
+        "name" : "이글거리는 불길",
+        "icon" : "spell_fire_searingtotem",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "불타는 토템이 내뿜는 불타는 화살이 33%의 확률로 대상에 옮겨 붙어 15초에 걸쳐 불타는 화살의 피해량과 동일한 피해를 입힙니다. 5번까지 중첩됩니다."
+        }, {
+          "description" : "불타는 토템이 내뿜는 불타는 화살이 67%의 확률로 대상에 옮겨 붙어 15초에 걸쳐 불타는 화살의 피해량과 동일한 피해를 입힙니다. 5번까지 중첩됩니다."
+        }, {
+          "description" : "불타는 토템이 내뿜는 불타는 화살이 100%의 확률로 대상에 옮겨 붙어 15초에 걸쳐 불타는 화살의 피해량과 동일한 피해를 입힙니다. 5번까지 중첩됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2056,
+        "name" : "대지의 힘",
+        "icon" : "spell_nature_earthelemental_totem",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "속박의 토템이 진동할 때마다 50%의 확률로 자신과 주위 아군 대상에 걸린 모든 감속 효과를 제거합니다."
+        }, {
+          "description" : "속박의 토템이 진동할 때마다 100%의 확률로 자신과 주위 아군 대상에 걸린 모든 감속 효과를 제거합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1693,
+        "name" : "주술의 분노",
+        "icon" : "spell_nature_shamanrage",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 1분",
+          "description" : "받는 모든 피해가 30%만큼 감소하고, 마나를 소모하지 않고 기술, 토템, 공격 주문을 시전할 수 있습니다. 15초 동안 지속됩니다. 기절한 동안에는 사용할 수 없습니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1689,
+        "name" : "해방된 분노",
+        "icon" : "spell_nature_unleashedrage",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "숙련이 4만큼 증가합니다. 100미터 반경 내의 모든 파티원과 공격대원의 전투력이 5%만큼 증가합니다."
+        }, {
+          "description" : "숙련이 8만큼 증가합니다. 100미터 반경 내의 모든 파티원과 공격대원의 전투력이 10%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2057,
+        "name" : "소용돌이치는 무기",
+        "icon" : "spell_shaman_maelstromweapon",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "근접 공격으로 피해를 입히면 일정 확률로 다음 번개 화살, 연쇄 번개, 주술 및 치유 계열 주문의 시전 시간과 소모되는 마나가 20%만큼 감소합니다. 5번까지 중복됩니다. 30초 동안 지속됩니다."
+        }, {
+          "description" : "근접 공격으로 피해를 입히면 일정 확률(1 레벨보다 높음)로 다음 번개 화살, 연쇄 번개, 주술 및 치유 계열 주문의 시전 시간과 소모되는 마나가 20%만큼 감소합니다. 5번까지 중복됩니다. 30초 동안 지속됩니다."
+        }, {
+          "description" : "근접 공격으로 피해를 입히면 일정 확률(2 레벨보다 높음)로 다음 번개 화살, 연쇄 번개, 주술 및 치유 계열 주문의 시전 시간과 소모되는 마나가 20%만큼 감소합니다. 5번까지 중복됩니다. 30초 동안 지속됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 5563,
+        "name" : "용암 채찍 연마",
+        "icon" : "spell_shaman_improvelavalash",
+        "x" : 2,
+        "y" : 5,
+        "req" : 2083,
+        "ranks" : [ {
+          "description" : "용암 채찍의 공격력을 15%만큼 증가시키고 대상에 걸린 이글거리는 불길 효과를 소모하여 효과 하나당 10%의 추가 피해를 입힙니다."
+        }, {
+          "description" : "용암 채찍의 공격력을 30%만큼 증가시키고 대상에 걸린 이글거리는 불길 효과를 소모하여 효과 하나당 20%의 추가 피해를 입힙니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2058,
+        "name" : "야수 정령",
+        "icon" : "spell_shaman_feralspirit",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "기본 마나의 12% ",
+          "range" : "30 yd range",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 2분",
+          "description" : "주술사가 부릴 수 있는 늑대 정령 2마리를 소환합니다. 30초 동안 지속됩니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "복원",
+      "icon" : "spell_nature_magicimmunity",
+      "backgroundFile" : "ShamanRestoration",
+      "overlayColor" : "#33cc66",
+      "description" : "고대의 영혼과 정화하는 물의 힘을 불러내어 아군의 부상을 치유합니다.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : true,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 974,
+        "name" : "대지의 보호막",
+        "icon" : "spell_nature_skinofearth",
+        "cost" : "기본 마나의 19% ",
+        "range" : "40 yd range",
+        "castTime" : "즉시 시전",
+        "reagents" : [ ],
+        "description" : "대상을 대지의 보호막으로 감싸 피해를 입을 시 정신 집중이나 주문 시전이 지연되는 시간이 30%만큼 감소하게 하고 보호막이 걸린 대상이 공격을 받을 시 53의 생명력을 회복하도록 합니다. 이 효과는 몇초마다 한 번씩만 발휘됩니다. 9회 사용 가능하며 10분 동안 지속됩니다. 대지의 보호막은 동시에 한 대상에게만 걸 수 있으며 주술사의 보호막은 대상마다 동시에 하나만 효과를 발휘할 수 있습니다.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 16213,
+        "name" : "심신의 정화",
+        "icon" : "spell_frost_wizardmark",
+        "reagents" : [ ],
+        "description" : "치유 주문의 효과가 10%만큼 증가하고 치유의 물결과 상급 치유의 물결 주문의 시전 시간이 0.5초만큼 감소합니다.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 95862,
+        "name" : "명상",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "전투 중 정신력으로 인한 마나 회복 속도가 50%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77226,
+        "name" : "깊은 치유",
+        "icon" : "spell_nature_healingtouch",
+        "reagents" : [ ],
+        "description" : "대상의 현재 생명력에 따라 직접 치유 주문의 치유 효과를 최대 20%만큼 증가시킵니다. 생명력이 낮은 대상은 생명력을 더 많이 회복합니다. 특화력 1당 직접 치유 효과가 추가로 최대 2.5%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 5568,
+        "name" : "선인의 결의",
+        "icon" : "spell_nature_rune",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "주문 시전 중 받는 피해가 5%만큼 감소합니다."
+        }, {
+          "description" : "주문 시전 중 받는 피해가 10%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 593,
+        "name" : "해일의 집중",
+        "icon" : "spell_frost_manarecharge",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "치유 주문에 소비되는 마나가 2%만큼 감소합니다."
+        }, {
+          "description" : "치유 주문에 소비되는 마나가 4%만큼 감소합니다."
+        }, {
+          "description" : "치유 주문에 소비되는 마나가 6%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11177,
+        "name" : "생명의 불꽃",
+        "icon" : "spell_nature_wispsplodegreen",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "자신이 시전하는 주문의 치유 효과가 2%만큼, 받는 치유 효과가 5%만큼 증가합니다."
+        }, {
+          "description" : "자신이 시전하는 주문의 치유 효과가 4%만큼, 받는 치유 효과가 10%만큼 증가합니다."
+        }, {
+          "description" : "자신이 시전하는 주문의 치유 효과가 6%만큼, 받는 치유 효과가 15%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 583,
+        "name" : "물의 보호막 연마",
+        "icon" : "ability_shaman_watershield",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "치유의 물결, 상급 치유의 물결, 성난 해일 주문이 극대화 효과를 발휘했을 때 50%의 확률로 물의 보호막 구슬을 소모했을 때와 같이 즉시 마나를 회복합니다. 치유의 파도가 극대화 효과를 발휘했을 때는 30%, 연쇄 치유가 극대화 효과를 발휘했을 때는 15%의 확률로 즉시 마나를 회복합니다."
+        }, {
+          "description" : "치유의 물결, 상급 치유의 물결, 성난 해일 주문이 극대화 효과를 발휘했을 때 100%의 확률로 물의 보호막 구슬을 소모했을 때와 같이 즉시 마나를 회복합니다. 치유의 파도가 극대화 효과를 발휘했을 때는 60%, 연쇄 치유가 극대화 효과를 발휘했을 때는 30%의 확률로 즉시 마나를 회복합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 595,
+        "name" : "토템 집중",
+        "icon" : "spell_nature_moonglow",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "토템 주문에 소모되는 마나가 15%만큼 감소하고 토템의 지속시간이 20%만큼 증가합니다."
+        }, {
+          "description" : "토템 주문에 소모되는 마나가 30%만큼 감소하고 토템의 지속시간이 40%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 5567,
+        "name" : "지각력 집중",
+        "icon" : "spell_shaman_measuredinsight",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "충격 계열 주문 시전 시 해당 충격 주문에 소비되는 마나의 25%만큼 다음 치유 주문에 소비되는 마나가 감소하고 치유 효과가 10%만큼 증가합니다."
+        }, {
+          "description" : "충격 계열 주문 시전 시 해당 충격 주문에 소비되는 마나의 50%만큼 다음 치유 주문에 소비되는 마나가 감소하고 치유 효과가 20%만큼 증가합니다."
+        }, {
+          "description" : "충격 계열 주문 시전 시 해당 충격 주문에 소비되는 마나의 75%만큼 다음 치유 주문에 소비되는 마나가 감소하고 치유 효과가 30%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1699,
+        "name" : "자연의 수호자",
+        "icon" : "spell_nature_natureguardian",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "공격을 받아 생명력이 30% 미만으로 감소할 시 10초 동안 최대 생명력이 5%만큼 증가하고 공격자에 대한 위협 수준이 감소합니다. 이 효과는 30초마다 1번씩만 발동됩니다."
+        }, {
+          "description" : "공격을 받아 생명력이 30% 미만으로 감소할 시 10초 동안 최대 생명력이 10%만큼 증가하고 공격자에 대한 위협 수준이 감소합니다. 이 효과는 30초마다 1번씩만 발동됩니다."
+        }, {
+          "description" : "공격을 받아 생명력이 30% 미만으로 감소할 시 10초 동안 최대 생명력이 15%만큼 증가하고 공격자에 대한 위협 수준이 감소합니다. 이 효과는 30초마다 1번씩만 발동됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 581,
+        "name" : "선인의 치유력",
+        "icon" : "spell_nature_undyingstrength",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "치유 주문이 극대화 효과를 발휘했을 때 15초 동안 대상이 받는 물리 피해를 5%만큼 감소시킵니다."
+        }, {
+          "description" : "치유 주문이 극대화 효과를 발휘했을 때 15초 동안 대상이 받는 물리 피해를 10%만큼 감소시킵니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 591,
+        "name" : "자연의 신속함",
+        "icon" : "spell_nature_ravenform",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 2분",
+          "description" : "활성화되면 기본 시전 시간이 10초 미만인 다음 자연계 주문은 시전 시간 없이 바로 발동됩니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1696,
+        "name" : "자연의 축복",
+        "icon" : "spell_nature_natureblessing",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "대지의 보호막이 걸린 대상에게 시전하는 직접 치유 주문의 효과가 5%만큼 증가합니다."
+        }, {
+          "description" : "대지의 보호막이 걸린 대상에게 시전하는 직접 치유 주문의 효과가 10%만큼 증가합니다."
+        }, {
+          "description" : "대지의 보호막이 걸린 대상에게 시전하는 직접 치유 주문의 효과가 15%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 588,
+        "name" : "위안의 빗물",
+        "icon" : "spell_nature_giftofthewaterspirit",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "치유의 토템의 치유 효과가 25%만큼, 치유의 비 주문의 치유 효과가 15%만큼 증가합니다."
+        }, {
+          "description" : "치유의 토템의 치유 효과가 50%만큼, 치유의 비 주문의 치유 효과가 30%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2084,
+        "name" : "영혼 정화 연마",
+        "icon" : "ability_shaman_cleansespirit",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "강화된 영혼 정화 주문으로 아군 대상에게 걸린 마법 효과도 제거합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11435,
+        "name" : "정화의 물",
+        "icon" : "spell_nature_regeneration_02",
+        "x" : 3,
+        "y" : 3,
+        "req" : 2084,
+        "ranks" : [ {
+          "description" : "영혼 정화에 소모되는 마나가 20%만큼 감소하고, 영혼 정화로 해로운 효과 하나를 해제하면 대상의 생명력이 43만큼 회복됩니다."
+        }, {
+          "description" : "영혼 정화에 소모되는 마나가 40%만큼 감소하고, 영혼 정화로 해로운 효과 하나를 해제하면 대상의 생명력이 87만큼 회복됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2061,
+        "name" : "고대의 각성",
+        "icon" : "spell_shaman_ancestralawakening",
+        "x" : 0,
+        "y" : 4,
+        "req" : 581,
+        "ranks" : [ {
+          "description" : "단일 대상 직접 치유 주문으로 극대화 효과를 발휘하면 고대의 영혼이 소환되어 40미터 반경에서 백분율 생명력이 가장 낮은 파티원 혹은 공격대원의 생명력을 치유된 생명력의 10%만큼 회복시킵니다."
+        }, {
+          "description" : "단일 대상 직접 치유 주문으로 극대화 효과를 발휘하면 고대의 영혼이 소환되어 40미터 반경에서 백분율 생명력이 가장 낮은 파티원 혹은 공격대원의 생명력을 치유된 생명력의 20%만큼 회복시킵니다."
+        }, {
+          "description" : "단일 대상 직접 치유 주문으로 극대화 효과를 발휘하면 고대의 영혼이 소환되어 40미터 반경에서 백분율 생명력이 가장 낮은 파티원 혹은 공격대원의 생명력을 치유된 생명력의 30%만큼 회복시킵니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 590,
+        "name" : "마나 해일 토템",
+        "icon" : "spell_frost_summonwaterelemental",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 3분",
+          "description" : "시전자의 위치에 시전자 생명력의 10%에 해당하는 생명력을 지닌 마나 해일 토템을 소환하여 주위 40미터 반경 내의 파티원의 정신력을 350%만큼 증가시킵니다. 12초 동안 지속됩니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7705,
+        "name" : "자연의 전류",
+        "icon" : "spell_lightning_lightningbolt01",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "자연에 대한 친화력을 발휘하여 번개 화살로 입힌 피해의 20%에 해당하는 마나를 회복합니다."
+        }, {
+          "description" : "자연에 대한 친화력을 발휘하여 번개 화살로 입힌 피해의 40%에 해당하는 마나를 회복합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2063,
+        "name" : "굽이치는 물결",
+        "icon" : "spell_shaman_tidalwaves",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "연쇄 치유 혹은 성난 해일 시전 시 굽이치는 물결 효과를 얻어 치유의 물결과 상급 치유의 물결 주문의 시전 시간이 10%만큼 단축되고 치유의 파도 주문이 극대화 효과를 발휘할 확률이 10%만큼 증가합니다. 2회 사용할 수 있습니다."
+        }, {
+          "description" : "연쇄 치유 혹은 성난 해일 시전 시 굽이치는 물결 효과를 얻어 치유의 물결과 상급 치유의 물결 주문의 시전 시간이 20%만큼 단축되고 치유의 파도 주문이 극대화 효과를 발휘할 확률이 20%만큼 증가합니다. 2회 사용할 수 있습니다."
+        }, {
+          "description" : "연쇄 치유 혹은 성난 해일 시전 시 굽이치는 물결 효과를 얻어 치유의 물결과 상급 치유의 물결 주문의 시전 시간이 30%만큼 단축되고 치유의 파도 주문이 극대화 효과를 발휘할 확률이 30%만큼 증가합니다. 2회 사용할 수 있습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2060,
+        "name" : "영원의 축복",
+        "icon" : "spell_shaman_blessingofeternals",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "전체 생명력이 35% 이하인 대상에게 대지의 생명의 지속적인 치유 효과가 발동될 확률이 40%만큼 증가합니다."
+        }, {
+          "description" : "전체 생명력이 35% 이하인 대상에게 대지의 생명의 지속적인 치유 효과가 발동될 확률이 80%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2064,
+        "name" : "성난 해일",
+        "icon" : "spell_nature_riptide",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "기본 마나의 10% ",
+          "range" : "40 yd range",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 6초",
+          "description" : "아군 대상의 생명력을 75만큼 회복시키고 15초에 걸쳐 115의 생명력을 회복시킵니다. 15초 내에 대상에게 시전하는 다음 연쇄 치유 주문은 지속적인 치유 효과를 흡수하여 연쇄 치유의 치유 효과를 25%만큼 증가시킵니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

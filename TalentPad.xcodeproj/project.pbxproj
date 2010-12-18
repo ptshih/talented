@@ -174,6 +174,46 @@
 		25E080FF12B509D100646BC7 /* ability-frame-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25E080FD12B509D100646BC7 /* ability-frame-yellow.png */; };
 		25E0810612B50AF100646BC7 /* ability-frame-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25E0810412B50AF100646BC7 /* ability-frame-gray.png */; };
 		25E083D112B5A45100646BC7 /* UIImage+Manipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E083CF12B5A45100646BC7 /* UIImage+Manipulation.m */; };
+		25E13BA212BD05CE0071FE6E /* deathknight_ko.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B7712BD05CE0071FE6E /* deathknight_ko.json */; };
+		25E13BA312BD05CE0071FE6E /* druid_ko.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B7812BD05CE0071FE6E /* druid_ko.json */; };
+		25E13BA412BD05CE0071FE6E /* hunter_ko.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B7912BD05CE0071FE6E /* hunter_ko.json */; };
+		25E13BA512BD05CE0071FE6E /* mage_ko.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B7A12BD05CE0071FE6E /* mage_ko.json */; };
+		25E13BA612BD05CE0071FE6E /* paladin_ko.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B7B12BD05CE0071FE6E /* paladin_ko.json */; };
+		25E13BA712BD05CE0071FE6E /* priest_ko.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B7C12BD05CE0071FE6E /* priest_ko.json */; };
+		25E13BA812BD05CE0071FE6E /* rogue_ko.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B7D12BD05CE0071FE6E /* rogue_ko.json */; };
+		25E13BA912BD05CE0071FE6E /* shaman_ko.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B7E12BD05CE0071FE6E /* shaman_ko.json */; };
+		25E13BAA12BD05CE0071FE6E /* warlock_ko.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B7F12BD05CE0071FE6E /* warlock_ko.json */; };
+		25E13BAB12BD05CE0071FE6E /* warrior_ko.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B8012BD05CE0071FE6E /* warrior_ko.json */; };
+		25E13BAC12BD05CE0071FE6E /* deathknight_ru.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B8212BD05CE0071FE6E /* deathknight_ru.json */; };
+		25E13BAD12BD05CE0071FE6E /* druid_ru.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B8312BD05CE0071FE6E /* druid_ru.json */; };
+		25E13BAE12BD05CE0071FE6E /* hunter_ru.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B8412BD05CE0071FE6E /* hunter_ru.json */; };
+		25E13BAF12BD05CE0071FE6E /* mage_ru.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B8512BD05CE0071FE6E /* mage_ru.json */; };
+		25E13BB012BD05CE0071FE6E /* paladin_ru.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B8612BD05CE0071FE6E /* paladin_ru.json */; };
+		25E13BB112BD05CE0071FE6E /* priest_ru.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B8712BD05CE0071FE6E /* priest_ru.json */; };
+		25E13BB212BD05CE0071FE6E /* rogue_ru.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B8812BD05CE0071FE6E /* rogue_ru.json */; };
+		25E13BB312BD05CE0071FE6E /* shaman_ru.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B8912BD05CE0071FE6E /* shaman_ru.json */; };
+		25E13BB412BD05CE0071FE6E /* warlock_ru.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B8A12BD05CE0071FE6E /* warlock_ru.json */; };
+		25E13BB512BD05CE0071FE6E /* warrior_ru.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B8B12BD05CE0071FE6E /* warrior_ru.json */; };
+		25E13BB612BD05CE0071FE6E /* deathknight_es.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B8D12BD05CE0071FE6E /* deathknight_es.json */; };
+		25E13BB712BD05CE0071FE6E /* druid_es.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B8E12BD05CE0071FE6E /* druid_es.json */; };
+		25E13BB812BD05CE0071FE6E /* hunter_es.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B8F12BD05CE0071FE6E /* hunter_es.json */; };
+		25E13BB912BD05CE0071FE6E /* mage_es.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B9012BD05CE0071FE6E /* mage_es.json */; };
+		25E13BBA12BD05CE0071FE6E /* paladin_es.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B9112BD05CE0071FE6E /* paladin_es.json */; };
+		25E13BBB12BD05CE0071FE6E /* priest_es.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B9212BD05CE0071FE6E /* priest_es.json */; };
+		25E13BBC12BD05CE0071FE6E /* rogue_es.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B9312BD05CE0071FE6E /* rogue_es.json */; };
+		25E13BBD12BD05CE0071FE6E /* shaman_es.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B9412BD05CE0071FE6E /* shaman_es.json */; };
+		25E13BBE12BD05CE0071FE6E /* warlock_es.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B9512BD05CE0071FE6E /* warlock_es.json */; };
+		25E13BBF12BD05CE0071FE6E /* warrior_es.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B9612BD05CE0071FE6E /* warrior_es.json */; };
+		25E13BC012BD05CE0071FE6E /* deathknight_de.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B9812BD05CE0071FE6E /* deathknight_de.json */; };
+		25E13BC112BD05CE0071FE6E /* druid_de.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B9912BD05CE0071FE6E /* druid_de.json */; };
+		25E13BC212BD05CE0071FE6E /* hunter_de.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B9A12BD05CE0071FE6E /* hunter_de.json */; };
+		25E13BC312BD05CE0071FE6E /* mage_de.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B9B12BD05CE0071FE6E /* mage_de.json */; };
+		25E13BC412BD05CE0071FE6E /* paladin_de.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B9C12BD05CE0071FE6E /* paladin_de.json */; };
+		25E13BC512BD05CE0071FE6E /* priest_de.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B9D12BD05CE0071FE6E /* priest_de.json */; };
+		25E13BC612BD05CE0071FE6E /* rogue_de.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B9E12BD05CE0071FE6E /* rogue_de.json */; };
+		25E13BC712BD05CE0071FE6E /* shaman_de.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13B9F12BD05CE0071FE6E /* shaman_de.json */; };
+		25E13BC812BD05CE0071FE6E /* warlock_de.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13BA012BD05CE0071FE6E /* warlock_de.json */; };
+		25E13BC912BD05CE0071FE6E /* warrior_de.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13BA112BD05CE0071FE6E /* warrior_de.json */; };
 		25EC4C5112B9E17600D173AB /* ability_ambush.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25EC49F412B9E17600D173AB /* ability_ambush.jpg */; };
 		25EC4C5212B9E17600D173AB /* ability_backstab.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25EC49F512B9E17600D173AB /* ability_backstab.jpg */; };
 		25EC4C5312B9E17600D173AB /* ability_bullrush.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25EC49F612B9E17600D173AB /* ability_bullrush.jpg */; };
@@ -1047,6 +1087,46 @@
 		25E0810412B50AF100646BC7 /* ability-frame-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ability-frame-gray.png"; sourceTree = "<group>"; };
 		25E083CE12B5A45100646BC7 /* UIImage+Manipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Manipulation.h"; sourceTree = "<group>"; };
 		25E083CF12B5A45100646BC7 /* UIImage+Manipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Manipulation.m"; sourceTree = "<group>"; };
+		25E13B7712BD05CE0071FE6E /* deathknight_ko.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deathknight_ko.json; sourceTree = "<group>"; };
+		25E13B7812BD05CE0071FE6E /* druid_ko.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = druid_ko.json; sourceTree = "<group>"; };
+		25E13B7912BD05CE0071FE6E /* hunter_ko.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hunter_ko.json; sourceTree = "<group>"; };
+		25E13B7A12BD05CE0071FE6E /* mage_ko.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mage_ko.json; sourceTree = "<group>"; };
+		25E13B7B12BD05CE0071FE6E /* paladin_ko.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = paladin_ko.json; sourceTree = "<group>"; };
+		25E13B7C12BD05CE0071FE6E /* priest_ko.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = priest_ko.json; sourceTree = "<group>"; };
+		25E13B7D12BD05CE0071FE6E /* rogue_ko.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rogue_ko.json; sourceTree = "<group>"; };
+		25E13B7E12BD05CE0071FE6E /* shaman_ko.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shaman_ko.json; sourceTree = "<group>"; };
+		25E13B7F12BD05CE0071FE6E /* warlock_ko.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warlock_ko.json; sourceTree = "<group>"; };
+		25E13B8012BD05CE0071FE6E /* warrior_ko.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warrior_ko.json; sourceTree = "<group>"; };
+		25E13B8212BD05CE0071FE6E /* deathknight_ru.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deathknight_ru.json; sourceTree = "<group>"; };
+		25E13B8312BD05CE0071FE6E /* druid_ru.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = druid_ru.json; sourceTree = "<group>"; };
+		25E13B8412BD05CE0071FE6E /* hunter_ru.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hunter_ru.json; sourceTree = "<group>"; };
+		25E13B8512BD05CE0071FE6E /* mage_ru.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mage_ru.json; sourceTree = "<group>"; };
+		25E13B8612BD05CE0071FE6E /* paladin_ru.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = paladin_ru.json; sourceTree = "<group>"; };
+		25E13B8712BD05CE0071FE6E /* priest_ru.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = priest_ru.json; sourceTree = "<group>"; };
+		25E13B8812BD05CE0071FE6E /* rogue_ru.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rogue_ru.json; sourceTree = "<group>"; };
+		25E13B8912BD05CE0071FE6E /* shaman_ru.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shaman_ru.json; sourceTree = "<group>"; };
+		25E13B8A12BD05CE0071FE6E /* warlock_ru.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warlock_ru.json; sourceTree = "<group>"; };
+		25E13B8B12BD05CE0071FE6E /* warrior_ru.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warrior_ru.json; sourceTree = "<group>"; };
+		25E13B8D12BD05CE0071FE6E /* deathknight_es.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deathknight_es.json; sourceTree = "<group>"; };
+		25E13B8E12BD05CE0071FE6E /* druid_es.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = druid_es.json; sourceTree = "<group>"; };
+		25E13B8F12BD05CE0071FE6E /* hunter_es.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hunter_es.json; sourceTree = "<group>"; };
+		25E13B9012BD05CE0071FE6E /* mage_es.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mage_es.json; sourceTree = "<group>"; };
+		25E13B9112BD05CE0071FE6E /* paladin_es.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = paladin_es.json; sourceTree = "<group>"; };
+		25E13B9212BD05CE0071FE6E /* priest_es.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = priest_es.json; sourceTree = "<group>"; };
+		25E13B9312BD05CE0071FE6E /* rogue_es.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rogue_es.json; sourceTree = "<group>"; };
+		25E13B9412BD05CE0071FE6E /* shaman_es.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shaman_es.json; sourceTree = "<group>"; };
+		25E13B9512BD05CE0071FE6E /* warlock_es.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warlock_es.json; sourceTree = "<group>"; };
+		25E13B9612BD05CE0071FE6E /* warrior_es.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warrior_es.json; sourceTree = "<group>"; };
+		25E13B9812BD05CE0071FE6E /* deathknight_de.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deathknight_de.json; sourceTree = "<group>"; };
+		25E13B9912BD05CE0071FE6E /* druid_de.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = druid_de.json; sourceTree = "<group>"; };
+		25E13B9A12BD05CE0071FE6E /* hunter_de.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hunter_de.json; sourceTree = "<group>"; };
+		25E13B9B12BD05CE0071FE6E /* mage_de.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mage_de.json; sourceTree = "<group>"; };
+		25E13B9C12BD05CE0071FE6E /* paladin_de.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = paladin_de.json; sourceTree = "<group>"; };
+		25E13B9D12BD05CE0071FE6E /* priest_de.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = priest_de.json; sourceTree = "<group>"; };
+		25E13B9E12BD05CE0071FE6E /* rogue_de.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rogue_de.json; sourceTree = "<group>"; };
+		25E13B9F12BD05CE0071FE6E /* shaman_de.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shaman_de.json; sourceTree = "<group>"; };
+		25E13BA012BD05CE0071FE6E /* warlock_de.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warlock_de.json; sourceTree = "<group>"; };
+		25E13BA112BD05CE0071FE6E /* warrior_de.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warrior_de.json; sourceTree = "<group>"; };
 		25EC49F412B9E17600D173AB /* ability_ambush.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_ambush.jpg; sourceTree = "<group>"; };
 		25EC49F512B9E17600D173AB /* ability_backstab.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_backstab.jpg; sourceTree = "<group>"; };
 		25EC49F612B9E17600D173AB /* ability_bullrush.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_bullrush.jpg; sourceTree = "<group>"; };
@@ -1919,6 +1999,10 @@
 		255135FB12BB474A0030931A /* TalentData */ = {
 			isa = PBXGroup;
 			children = (
+				25E13B7612BD05CE0071FE6E /* ko */,
+				25E13B8112BD05CE0071FE6E /* ru */,
+				25E13B8C12BD05CE0071FE6E /* es */,
+				25E13B9712BD05CE0071FE6E /* de */,
 				255135FC12BB474A0030931A /* en */,
 				2551360712BB474A0030931A /* fr */,
 			);
@@ -2160,6 +2244,74 @@
 				25DC75DF12B5B523000F70F6 /* NSString+ConvenienceMethods.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		25E13B7612BD05CE0071FE6E /* ko */ = {
+			isa = PBXGroup;
+			children = (
+				25E13B7712BD05CE0071FE6E /* deathknight_ko.json */,
+				25E13B7812BD05CE0071FE6E /* druid_ko.json */,
+				25E13B7912BD05CE0071FE6E /* hunter_ko.json */,
+				25E13B7A12BD05CE0071FE6E /* mage_ko.json */,
+				25E13B7B12BD05CE0071FE6E /* paladin_ko.json */,
+				25E13B7C12BD05CE0071FE6E /* priest_ko.json */,
+				25E13B7D12BD05CE0071FE6E /* rogue_ko.json */,
+				25E13B7E12BD05CE0071FE6E /* shaman_ko.json */,
+				25E13B7F12BD05CE0071FE6E /* warlock_ko.json */,
+				25E13B8012BD05CE0071FE6E /* warrior_ko.json */,
+			);
+			path = ko;
+			sourceTree = "<group>";
+		};
+		25E13B8112BD05CE0071FE6E /* ru */ = {
+			isa = PBXGroup;
+			children = (
+				25E13B8212BD05CE0071FE6E /* deathknight_ru.json */,
+				25E13B8312BD05CE0071FE6E /* druid_ru.json */,
+				25E13B8412BD05CE0071FE6E /* hunter_ru.json */,
+				25E13B8512BD05CE0071FE6E /* mage_ru.json */,
+				25E13B8612BD05CE0071FE6E /* paladin_ru.json */,
+				25E13B8712BD05CE0071FE6E /* priest_ru.json */,
+				25E13B8812BD05CE0071FE6E /* rogue_ru.json */,
+				25E13B8912BD05CE0071FE6E /* shaman_ru.json */,
+				25E13B8A12BD05CE0071FE6E /* warlock_ru.json */,
+				25E13B8B12BD05CE0071FE6E /* warrior_ru.json */,
+			);
+			path = ru;
+			sourceTree = "<group>";
+		};
+		25E13B8C12BD05CE0071FE6E /* es */ = {
+			isa = PBXGroup;
+			children = (
+				25E13B8D12BD05CE0071FE6E /* deathknight_es.json */,
+				25E13B8E12BD05CE0071FE6E /* druid_es.json */,
+				25E13B8F12BD05CE0071FE6E /* hunter_es.json */,
+				25E13B9012BD05CE0071FE6E /* mage_es.json */,
+				25E13B9112BD05CE0071FE6E /* paladin_es.json */,
+				25E13B9212BD05CE0071FE6E /* priest_es.json */,
+				25E13B9312BD05CE0071FE6E /* rogue_es.json */,
+				25E13B9412BD05CE0071FE6E /* shaman_es.json */,
+				25E13B9512BD05CE0071FE6E /* warlock_es.json */,
+				25E13B9612BD05CE0071FE6E /* warrior_es.json */,
+			);
+			path = es;
+			sourceTree = "<group>";
+		};
+		25E13B9712BD05CE0071FE6E /* de */ = {
+			isa = PBXGroup;
+			children = (
+				25E13B9812BD05CE0071FE6E /* deathknight_de.json */,
+				25E13B9912BD05CE0071FE6E /* druid_de.json */,
+				25E13B9A12BD05CE0071FE6E /* hunter_de.json */,
+				25E13B9B12BD05CE0071FE6E /* mage_de.json */,
+				25E13B9C12BD05CE0071FE6E /* paladin_de.json */,
+				25E13B9D12BD05CE0071FE6E /* priest_de.json */,
+				25E13B9E12BD05CE0071FE6E /* rogue_de.json */,
+				25E13B9F12BD05CE0071FE6E /* shaman_de.json */,
+				25E13BA012BD05CE0071FE6E /* warlock_de.json */,
+				25E13BA112BD05CE0071FE6E /* warrior_de.json */,
+			);
+			path = de;
 			sourceTree = "<group>";
 		};
 		25EC49F312B9E17600D173AB /* talents */ = {
@@ -3636,6 +3788,46 @@
 				2551362312BB474A0030931A /* shaman_fr.json in Resources */,
 				2551362412BB474A0030931A /* warlock_fr.json in Resources */,
 				2551362512BB474A0030931A /* warrior_fr.json in Resources */,
+				25E13BA212BD05CE0071FE6E /* deathknight_ko.json in Resources */,
+				25E13BA312BD05CE0071FE6E /* druid_ko.json in Resources */,
+				25E13BA412BD05CE0071FE6E /* hunter_ko.json in Resources */,
+				25E13BA512BD05CE0071FE6E /* mage_ko.json in Resources */,
+				25E13BA612BD05CE0071FE6E /* paladin_ko.json in Resources */,
+				25E13BA712BD05CE0071FE6E /* priest_ko.json in Resources */,
+				25E13BA812BD05CE0071FE6E /* rogue_ko.json in Resources */,
+				25E13BA912BD05CE0071FE6E /* shaman_ko.json in Resources */,
+				25E13BAA12BD05CE0071FE6E /* warlock_ko.json in Resources */,
+				25E13BAB12BD05CE0071FE6E /* warrior_ko.json in Resources */,
+				25E13BAC12BD05CE0071FE6E /* deathknight_ru.json in Resources */,
+				25E13BAD12BD05CE0071FE6E /* druid_ru.json in Resources */,
+				25E13BAE12BD05CE0071FE6E /* hunter_ru.json in Resources */,
+				25E13BAF12BD05CE0071FE6E /* mage_ru.json in Resources */,
+				25E13BB012BD05CE0071FE6E /* paladin_ru.json in Resources */,
+				25E13BB112BD05CE0071FE6E /* priest_ru.json in Resources */,
+				25E13BB212BD05CE0071FE6E /* rogue_ru.json in Resources */,
+				25E13BB312BD05CE0071FE6E /* shaman_ru.json in Resources */,
+				25E13BB412BD05CE0071FE6E /* warlock_ru.json in Resources */,
+				25E13BB512BD05CE0071FE6E /* warrior_ru.json in Resources */,
+				25E13BB612BD05CE0071FE6E /* deathknight_es.json in Resources */,
+				25E13BB712BD05CE0071FE6E /* druid_es.json in Resources */,
+				25E13BB812BD05CE0071FE6E /* hunter_es.json in Resources */,
+				25E13BB912BD05CE0071FE6E /* mage_es.json in Resources */,
+				25E13BBA12BD05CE0071FE6E /* paladin_es.json in Resources */,
+				25E13BBB12BD05CE0071FE6E /* priest_es.json in Resources */,
+				25E13BBC12BD05CE0071FE6E /* rogue_es.json in Resources */,
+				25E13BBD12BD05CE0071FE6E /* shaman_es.json in Resources */,
+				25E13BBE12BD05CE0071FE6E /* warlock_es.json in Resources */,
+				25E13BBF12BD05CE0071FE6E /* warrior_es.json in Resources */,
+				25E13BC012BD05CE0071FE6E /* deathknight_de.json in Resources */,
+				25E13BC112BD05CE0071FE6E /* druid_de.json in Resources */,
+				25E13BC212BD05CE0071FE6E /* hunter_de.json in Resources */,
+				25E13BC312BD05CE0071FE6E /* mage_de.json in Resources */,
+				25E13BC412BD05CE0071FE6E /* paladin_de.json in Resources */,
+				25E13BC512BD05CE0071FE6E /* priest_de.json in Resources */,
+				25E13BC612BD05CE0071FE6E /* rogue_de.json in Resources */,
+				25E13BC712BD05CE0071FE6E /* shaman_de.json in Resources */,
+				25E13BC812BD05CE0071FE6E /* warlock_de.json in Resources */,
+				25E13BC912BD05CE0071FE6E /* warrior_de.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

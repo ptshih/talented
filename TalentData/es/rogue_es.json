@@ -1,0 +1,1000 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 4,
+      "name" : "Pícaro",
+      "powerType" : "ENERGY",
+      "powerTypeId" : 3
+    },
+    "talentTrees" : [ {
+      "name" : "Asesinato",
+      "icon" : "ability_rogue_eviscerate",
+      "backgroundFile" : "RogueAssassination",
+      "overlayColor" : "#7fcc7f",
+      "description" : "Un maestro letal de venenos que despacha víctimas con brutales golpes con dagas.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 1329,
+        "name" : "Mutilar",
+        "icon" : "ability_rogue_shadowstrikes",
+        "cost" : "60 energía",
+        "range" : "Rango de ataques C. a C.",
+        "castTime" : "Instantáneo",
+        "requires" : "Requiere Dagas",
+        "reagents" : [ ],
+        "description" : "Ataque instantáneo con ambas armas que inflige un 63% de daño con arma más 181 p. extra con cada arma. El daño aumenta un 20% frente a objetivos envenenados. Da 2 p. de combo.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 84601,
+        "name" : "Resolución del asesino",
+        "icon" : "ability_rogue_sinistercalling",
+        "reagents" : [ ],
+        "description" : "Al blandir dagas, tu energía máxima aumenta 20 p. y tu daño cuerpo a cuerpo aumenta un 15%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 14117,
+        "name" : "Venenos mejorados",
+        "icon" : "ability_poisons",
+        "reagents" : [ ],
+        "description" : "Aumenta la posibilidad de aplicar Veneno mortal al objetivo un 20% y la frecuencia de aplicar Veneno instantáneo a tu objetivo un 50%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76803,
+        "name" : "Venenos pujantes",
+        "icon" : "trade_brewpoison",
+        "reagents" : [ ],
+        "description" : "Aumenta el daño infligido por tus venenos un 28%. Cada punto de maestría aumenta el daño un 3.5% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 6514,
+        "name" : "Ímpetu mortal",
+        "icon" : "ability_rogue_deadlymomentum",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Tras haber matado a un oponente que aporte experiencia u honor, tienes un 50% de probabilidades de aumentar la probabilidad de golpe crítico de tu siguiente ataque durante 10 s un 40% y de restablecer la duración de tus facultades Hacer picadillo y Reponerse."
+        }, {
+          "description" : "Tras haber matado a un oponente que aporte experiencia u honor, la probabilidad de golpe crítico de tu siguiente ataque durante 10 s aumenta un 40% y se restablece la duración de tus facultades Hacer picadillo y Reponerse."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 276,
+        "name" : "Golpe de gracia",
+        "icon" : "ability_rogue_eviscerate",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta un 7% el daño infligido con tus facultades Eviscerar y Envenenar."
+        }, {
+          "description" : "Aumenta un 14% el daño infligido con tus facultades Eviscerar y Envenenar."
+        }, {
+          "description" : "Aumenta un 20% el daño infligido con tus facultades Eviscerar y Envenenar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 269,
+        "name" : "Letalidad",
+        "icon" : "ability_criticalstrike",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta un 10% el bonus de daño por golpe crítico de tus facultades Golpe siniestro, Puñalada, Mutilar y Hemorragia."
+        }, {
+          "description" : "Aumenta un 20% el bonus de daño por golpe crítico de tus facultades Golpe siniestro, Puñalada, Mutilar y Hemorragia."
+        }, {
+          "description" : "Aumenta un 30% el bonus de daño por golpe crítico de tus facultades Golpe siniestro, Puñalada, Mutilar y Hemorragia."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 273,
+        "name" : "Crueldad",
+        "icon" : "ability_druid_disembowel",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Da a tus remates cuerpo a cuerpo un 20% de probabilidad de añadir 1 p. de combo a tu objetivo."
+        }, {
+          "description" : "Da a tus remates cuerpo a cuerpo un 40% de probabilidad de añadir 1 p. de combo a tu objetivo."
+        }, {
+          "description" : "Da a tus remates cuerpo a cuerpo un 60% de probabilidad de añadir 1 p. de combo a tu objetivo."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1721,
+        "name" : "Aceleración",
+        "icon" : "ability_rogue_quickrecovery",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumentan todos los efectos de sanación sobre ti un 10% y aumenta tu velocidad de movimiento un 8%. No se acumula con otros efectos de aumento de la velocidad de movimiento."
+        }, {
+          "description" : "Aumentan todos los efectos de sanación sobre ti un 20% y aumenta tu velocidad de movimiento un 15%. No se acumula con otros efectos de aumento de la velocidad de movimiento."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 277,
+        "name" : "Heridas perforadoras",
+        "icon" : "ability_backstab",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta un 10% la probabilidad de golpe crítico de tu facultad Puñalada y la probabilidad de golpe crítico de tu facultad Mutilar un 5%."
+        }, {
+          "description" : "Aumenta un 20% la probabilidad de golpe crítico de tu facultad Puñalada y la probabilidad de golpe crítico de tu facultad Mutilar un 10%."
+        }, {
+          "description" : "Aumenta un 30% la probabilidad de golpe crítico de tu facultad Puñalada y la probabilidad de golpe crítico de tu facultad Mutilar un 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 6515,
+        "name" : "Porra",
+        "icon" : "ability_rogue_blackjack",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Incluso después de que Porrazo desaparezca, sus efectos persistirán sobre los enemigos, lo que reducirá el daño que inflijan un 35% durante 8 s."
+        }, {
+          "description" : "Incluso después de que Porrazo desaparezca, sus efectos persistirán sobre los enemigos, lo que reducirá el daño que inflijan un 70% durante 8 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2065,
+        "name" : "Brebaje letal",
+        "icon" : "ability_rogue_deadlybrew",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Cuando aplicas un veneno instantáneo, hiriente o de aturdimiento mental a un objetivo, tienes un 50% de probabilidad de aplicar Veneno entorpecedor."
+        }, {
+          "description" : "Cuando aplicas un veneno instantáneo, hiriente o de aturdimiento mental a un objetivo, tienes un 100% de probabilidad de aplicar Veneno entorpecedor."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 280,
+        "name" : "Sangre fría",
+        "icon" : "spell_ice_lament",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 2 min.",
+          "description" : "Cuando se activa, genera 25 p. de energía y aumenta un 100% la probabilidad de golpe crítico de tu siguiente facultad ofensiva no periódica."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 682,
+        "name" : "Venenos inmundos",
+        "icon" : "ability_rogue_feigndeath",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Aumenta un 7% el daño infligido con tus venenos y te da un 33% de la probabilidad normal de aplicar venenos con las armas cuerpo a cuerpo que lleves equipadas cuando usas la facultad Abanico de cuchillos."
+        }, {
+          "description" : "Aumenta un 14% el daño infligido con tus venenos y te da un 67% de la probabilidad normal de aplicar venenos con las armas cuerpo a cuerpo que lleves equipadas cuando usas la facultad Abanico de cuchillos."
+        }, {
+          "description" : "Aumenta un 20% el daño infligido con tus venenos y te da un 100% de la probabilidad normal de aplicar venenos con las armas cuerpo a cuerpo que lleves equipadas cuando usas la facultad Abanico de cuchillos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11209,
+        "name" : "Impasibilidad",
+        "icon" : "ability_rogue_deadenednerves",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Reduce todo el daño recibido un 3%."
+        }, {
+          "description" : "Reduce todo el daño recibido un 7%."
+        }, {
+          "description" : "Reduce todo el daño recibido un 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 283,
+        "name" : "Sellar destino",
+        "icon" : "ability_rogue_stayofexecution",
+        "x" : 1,
+        "y" : 3,
+        "req" : 280,
+        "ranks" : [ {
+          "description" : "Tus golpes críticos de facultades que añaden p. de combo tienen un 50% de probabilidad de añadir un punto de combo extra."
+        }, {
+          "description" : "Tus golpes críticos de facultades que añaden p. de combo tienen un 100% de probabilidad de añadir un punto de combo extra."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 6516,
+        "name" : "Propósito asesino",
+        "icon" : "spell_shadow_deathscream",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Cuando utilizas Puñalada contra un enemigo que tenga menos de un 35% de salud, recuperas instantáneamente 15 p. de energía."
+        }, {
+          "description" : "Cuando utilizas Puñalada contra un enemigo que tenga menos de un 35% de salud, recuperas instantáneamente 30 p. de energía."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 281,
+        "name" : "Exterminar",
+        "icon" : "ability_hunter_rapidkilling",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Mientras estás en sigilo y durante 20 segundos después de que se desactive el modo sigilo, regeneras un 30% de energía extra."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1715,
+        "name" : "Maestro envenenador",
+        "icon" : "ability_creature_poison_06",
+        "x" : 2,
+        "y" : 4,
+        "req" : 682,
+        "ranks" : [ {
+          "description" : "Aumenta un 8% el daño con hechizos que recibe cualquier objetivo al que hayas envenenado, provoca que tu facultad Envenenar ya no consuma Veneno mortal y reduce la duración de todos los efectos de veneno que te hayan aplicado un 50%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 278,
+        "name" : "Exponer armadura mejorado",
+        "icon" : "ability_warrior_riposte",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Da un 50% de probabilidad de recuperar todos los puntos de combo gastados al usar tu facultad Exponer armadura."
+        }, {
+          "description" : "Da un 100% de probabilidad de recuperar todos los puntos de combo gastados al usar tu facultad Exponer armadura."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2070,
+        "name" : "Acortar",
+        "icon" : "ability_rogue_cuttothechase",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Tus facultades Eviscerar y Envenenar tienen un 33% de probabilidad de actualizar la duración de tu Hacer picadillo a su máximo de 5 p. de combo."
+        }, {
+          "description" : "Tus facultades Eviscerar y Envenenar tienen un 67% de probabilidad de actualizar la duración de tu Hacer picadillo a su máximo de 5 p. de combo."
+        }, {
+          "description" : "Tus facultades Eviscerar y Envenenar tienen un 100% de probabilidad de actualizar la duración de tu Hacer picadillo a su máximo de 5 p. de combo."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 6517,
+        "name" : "Heridas envenenadas",
+        "icon" : "ability_rogue_venomouswounds",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Cada vez que tu Ruptura o Garrote infligen daño a un enemigo al que has envenenado, tienes un 30% de probabilidad de infligir 697 p. de daño de Naturaleza extra y de recuperar 10 p. de energía. Si un enemigo muere mientras está afectado por tu Ruptura, recuperas energía de forma proporcional a la duración restante de Ruptura."
+        }, {
+          "description" : "Cada vez que tu Ruptura o Garrote infligen daño a un enemigo al que has envenenado, tienes un 60% de probabilidad de infligir 697 p. de daño de Naturaleza extra y de recuperar 10 p. de energía. Si un enemigo muere mientras está afectado por tu Ruptura, recuperas energía de forma proporcional a la duración restante de Ruptura."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2071,
+        "name" : "Vendetta",
+        "icon" : "ability_rogue_deadliness",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "range" : "30 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 2 min.",
+          "description" : "Marca a un enemigo para morir, lo que aumenta todo el daño que infliges al objetivo un 20% y te otorga una visión infalible de tu objetivo, independientemente de ocultaciones como Sigilo e Invisibilidad. Dura 30 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Combate",
+      "icon" : "ability_backstab",
+      "backgroundFile" : "RogueCombat",
+      "overlayColor" : "#ff7f00",
+      "description" : "Un maestro del arte de la espada que usa la agilidad y la astucia para enfrentarse cuerpo a cuerpo contra los enemigos.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 13877,
+        "name" : "Aluvión de acero",
+        "icon" : "ability_warrior_punishingblow",
+        "cost" : "25 energía",
+        "castTime" : "Instantáneo",
+        "cooldown" : "Reutilización de 30 seg.",
+        "reagents" : [ ],
+        "description" : "Cuando está activo, los ataques del pícaro golpean a un oponente cercano extra, pero la regeneración de energía se reduce un 20%. Dura 15 s.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 13852,
+        "name" : "Ambidesteridad",
+        "icon" : "ability_dualwield",
+        "reagents" : [ ],
+        "description" : "Aumenta un 75% el daño infligido con tu arma secundaria y tu arma arrojadiza.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 61329,
+        "name" : "Vitalidad",
+        "icon" : "ability_warrior_revenge",
+        "reagents" : [ ],
+        "description" : "Aumenta tu índice de regeneración de energía un 25% y tu poder de ataque un 20%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76806,
+        "name" : "Daga de guardamano",
+        "icon" : "inv_weapon_shortblade_15",
+        "reagents" : [ ],
+        "description" : "Tus ataques con la mano derecha tienen un 16% de probabilidad de otorgarte un ataque extra con la mano izquierda. Cada punto de maestría aumenta la probabilidad un 2.00% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 6395,
+        "name" : "Reponerse mejorado",
+        "icon" : "ability_rogue_improvedrecuperate",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Provoca que tu facultad Reponerse restaure un 1% extra de tu salud máxima y reduce todo el daño recibido un 3% mientras tu facultad Reponerse está activa."
+        }, {
+          "description" : "Provoca que tu facultad Reponerse restaure un 2% extra de tu salud máxima y reduce todo el daño recibido un 6% mientras tu facultad Reponerse está activa."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 201,
+        "name" : "Golpe siniestro mejorado",
+        "icon" : "spell_shadow_ritualofsacrifice",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta el daño infligido con tu facultad Golpe siniestro un 10% y reduce su coste de energía 2 p."
+        }, {
+          "description" : "Aumenta el daño infligido con tu facultad Golpe siniestro un 20% y reduce su coste de energía 4 p."
+        }, {
+          "description" : "Aumenta el daño infligido con tu facultad Golpe siniestro un 30% y reduce su coste de energía 6 p."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 181,
+        "name" : "Precisión",
+        "icon" : "ability_marksmanship",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta tu probabilidad de golpear con armas y ataques con venenos un 2%."
+        }, {
+          "description" : "Aumenta tu probabilidad de golpear con armas y ataques con venenos un 4%."
+        }, {
+          "description" : "Aumenta tu probabilidad de golpear con armas y ataques con venenos un 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1827,
+        "name" : "Hacer picadillo mejorado",
+        "icon" : "ability_rogue_slicedice",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta un 25% la duración de tu facultad Hacer picadillo."
+        }, {
+          "description" : "Aumenta un 50% la duración de tu facultad Hacer picadillo."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 222,
+        "name" : "Sprint mejorado",
+        "icon" : "ability_rogue_sprint",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Da un 50% de probabilidad de eliminar todos los efectos de reducción de movimiento cuando activas tu facultad Sprint."
+        }, {
+          "description" : "Da un 100% de probabilidad de eliminar todos los efectos de reducción de movimiento cuando activas tu facultad Sprint."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1122,
+        "name" : "Agresión",
+        "icon" : "ability_racial_avatar",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta un 7% el daño infligido con tus facultades Golpe siniestro, Puñalada y Eviscerar."
+        }, {
+          "description" : "Aumenta un 14% el daño infligido con tus facultades Golpe siniestro, Puñalada y Eviscerar."
+        }, {
+          "description" : "Aumenta un 20% el daño infligido con tus facultades Golpe siniestro, Puñalada y Eviscerar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 206,
+        "name" : "Patada mejorada",
+        "icon" : "ability_kick",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Provoca que tu facultad Patada también silencie al objetivo durante 1.50 s."
+        }, {
+          "description" : "Provoca que tu facultad Patada silencie al objetivo durante 3 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 186,
+        "name" : "Reflejos de relámpago",
+        "icon" : "spell_nature_invisibilty",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Aumenta un 3% tu probabilidad de esquivar ataques enemigos y un 2% tu velocidad de ataque."
+        }, {
+          "description" : "Aumenta un 6% tu probabilidad de esquivar ataques enemigos y un 4% tu velocidad de ataque."
+        }, {
+          "description" : "Aumenta un 9% tu probabilidad de esquivar ataques enemigos y un 6% tu velocidad de ataque."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11171,
+        "name" : "Golpe revelador",
+        "icon" : "inv_sword_97",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "40 energía",
+          "range" : "Rango de ataques C. a C.",
+          "castTime" : "Instantáneo",
+          "requires" : "Requiere Arma cuerpo a cuerpo",
+          "description" : "Un golpe instantáneo que inflige un 81% de tu daño con arma normal y aumenta un 20% la efectividad de tu siguiente remate ofensivo sobre el objetivo durante 15 s. Otorga 1 p. de combo."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 6511,
+        "name" : "Cuero reforzado",
+        "icon" : "ability_rogue_reinforcedleather",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Aumenta el valor de tu armadura por objetos de tela y cuero un 25%."
+        }, {
+          "description" : "Aumenta el valor de tu armadura por objetos de tela y cuero un 50%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 203,
+        "name" : "Gubia mejorada",
+        "icon" : "ability_gouge",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Aumenta 1 s la duración de tu facultad Gubia y reduce su coste de energía 15 p."
+        }, {
+          "description" : "Aumenta 2 s la duración de tu facultad Gubia y reduce su coste de energía 30 p."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1825,
+        "name" : "Potencia de combate",
+        "icon" : "inv_weapon_shortblade_38",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Le da a tus ataques cuerpo a cuerpo de la mano izquierda que acierten una probabilidad de un 20% de generar 5 p. de energía."
+        }, {
+          "description" : "Le da a tus ataques cuerpo a cuerpo de la mano izquierda que acierten una probabilidad de un 20% de generar 10 p. de energía."
+        }, {
+          "description" : "Le da a tus ataques cuerpo a cuerpo de la mano izquierda que acierten una probabilidad de un 20% de generar 15 p. de energía."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1706,
+        "name" : "Malabares cortantes",
+        "icon" : "ability_rogue_bladetwisting",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Da a tus ataques cuerpo a cuerpo dañinos un 20% de probabilidad de atontar al objetivo, lo que reduce un 70% su velocidad de movimiento durante 4 s."
+        }, {
+          "description" : "Da a tus ataques cuerpo a cuerpo dañinos un 40% de probabilidad de atontar al objetivo, lo que reduce un 70% su velocidad de movimiento durante 8 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2072,
+        "name" : "Especialización en lanzamiento",
+        "icon" : "ability_rogue_throwingspecialization",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Aumenta el alcance de Lanzar y Lanzamiento mortal 5 m y le da a tu facultad Lanzamiento mortal un 50% de probabilidad de interrumpir al objetivo durante 3 s."
+        }, {
+          "description" : "Aumenta el alcance de Lanzar y Lanzamiento mortal 10 m y le da a tu facultad Lanzamiento mortal un 100% de probabilidad de interrumpir al objetivo durante 3 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 205,
+        "name" : "Subidón de adrenalina",
+        "icon" : "spell_shadow_shadowworddominate",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 3 min.",
+          "description" : "Aumenta tu índice de velocidad de regeneración de energía un 100% y tu velocidad de ataque cuerpo a cuerpo un 20% durante 15 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2074,
+        "name" : "Combate salvaje",
+        "icon" : "ability_creature_disease_03",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Aumenta tu poder de ataque total un 2% y todo el daño físico infligido a los enemigos que has envenenado aumenta un 2%."
+        }, {
+          "description" : "Aumenta tu poder de ataque total un 4% y todo el daño físico infligido a los enemigos que has envenenado aumenta un 4%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11174,
+        "name" : "Astucia del bandido",
+        "icon" : "ability_rogue_preyontheweak",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Tus facultades Golpe siniestro y Golpe revelador tienen un 33% de probabilidad de otorgarte una perspicacia gradual sobre las defensas de un oponente, lo que aumenta el daño a ese objetivo hasta un 30%. Los oponentes se pueden adaptar con el tiempo y anular este beneficio, y golpear a un oponente diferente reiniciará el ciclo."
+        }, {
+          "description" : "Tus facultades Golpe siniestro y Golpe revelador tienen un 67% de probabilidad de otorgarte una perspicacia gradual sobre las defensas de un oponente, lo que aumenta el daño a ese objetivo hasta un 30%. Los oponentes se pueden adaptar con el tiempo y anular este beneficio, y golpear a un oponente diferente reiniciará el ciclo."
+        }, {
+          "description" : "Tus facultades Golpe siniestro y Golpe revelador tienen un 100% de probabilidad de otorgarte una perspicacia gradual sobre las defensas de un oponente, lo que aumenta el daño a ese objetivo hasta un 30%. Los oponentes se pueden adaptar con el tiempo y anular este beneficio, y golpear a un oponente diferente reiniciará el ciclo."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 6513,
+        "name" : "Hojas inquietas",
+        "icon" : "ability_rogue_restlessblades",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Tus remates dañinos reducen el tiempo de reutilización de tus facultades Subidón de adrenalina, Asesinato múltiple y Sprint 1 s por cada punto de combo."
+        }, {
+          "description" : "Tus remates dañinos reducen el tiempo de reutilización de tus facultades Subidón de adrenalina, Asesinato múltiple y Sprint 2 s por cada punto de combo."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2076,
+        "name" : "Asesinato múltiple",
+        "icon" : "ability_rogue_murderspree",
+        "x" : 1,
+        "y" : 6,
+        "req" : 205,
+        "ranks" : [ {
+          "range" : "10 yd range",
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 2 min.",
+          "requires" : "Requiere Arma cuerpo a cuerpo",
+          "description" : "Camina entre las sombras de un enemigo a otro en un radio de 10 m, atacando a un enemigo cada 0,5 segundos con ambas armas hasta realizar 5 asaltos y aumenta todo el daño infligido un 20% mientras dure. Se puede golpear al mismo objetivo varias veces. No alcanza a objetivos invisibles o en sigilo."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Sutileza",
+      "icon" : "ability_stealth",
+      "backgroundFile" : "RogueSubtlety",
+      "overlayColor" : "#4c7fff",
+      "description" : "Un acechador oscuro que aparece de las sombras para asaltar a su víctima por sorpresa.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 36554,
+        "name" : "Paso de las Sombras",
+        "icon" : "ability_rogue_shadowstep",
+        "cost" : "10 energía",
+        "range" : "25 yd range",
+        "castTime" : "Instantáneo",
+        "cooldown" : "Reutilización de 20 seg.",
+        "reagents" : [ ],
+        "description" : "Provoca que des un paso en las sombras y reaparezcas detrás de un objetivo enemigo. Tu siguiente Emboscada o Garrote asestados durante 10 s infligirán un 30% de daño extra y tu velocidad de movimiento aumentará un 70% durante 3 s.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 31223,
+        "name" : "Maestro de la sutileza",
+        "icon" : "ability_rogue_masterofsubtlety",
+        "reagents" : [ ],
+        "description" : "Los ataques realizados mientras estás en modo sigilo y durante los 6 s posteriores a abandonar el modo sigilo infligen un 10% extra de daño.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 31220,
+        "name" : "Llamada siniestra",
+        "icon" : "ability_rogue_sinistercalling",
+        "reagents" : [ ],
+        "description" : "Aumenta tu agilidad total un 25% y aumenta el porcentaje de bonus de daño de Puñalada y de Hemorragia un 25% adicional.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76808,
+        "name" : "Verdugo",
+        "icon" : "inv_axe_06",
+        "reagents" : [ ],
+        "description" : "Aumenta el daño infligido por tus remates y la eficacia de tu facultad Hacer picadillo un 16%. Cada punto de maestría aumenta el daño un 2.0% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 244,
+        "name" : "Acechador nocturno",
+        "icon" : "ability_stealth",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta tu velocidad mientras tienes activo el sigilo un 7% y reduce el tiempo de reutilización de tu facultad Sigilo 3 s."
+        }, {
+          "description" : "Aumenta tu velocidad mientras tienes activo el sigilo un 15% y reduce el tiempo de reutilización de tu facultad Sigilo 6 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 263,
+        "name" : "Emboscada mejorada",
+        "icon" : "ability_rogue_ambush",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta un 20% la probabilidad de golpe crítico de tu facultad Emboscada y su daño un 5%."
+        }, {
+          "description" : "Aumenta un 40% la probabilidad de golpe crítico de tu facultad Emboscada y su daño un 10%."
+        }, {
+          "description" : "Aumenta un 60% la probabilidad de golpe crítico de tu facultad Emboscada y su daño un 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2244,
+        "name" : "Golpes despiadados",
+        "icon" : "ability_warrior_decisivestrike",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Tus remates tienen un 7% de probabilidad por cada punto de combo de restaurar 25 p. de energía."
+        }, {
+          "description" : "Tus remates tienen un 14% de probabilidad por cada punto de combo de restaurar 25 p. de energía."
+        }, {
+          "description" : "Tus remates tienen un 20% de probabilidad por cada punto de combo de restaurar 25 p. de energía."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 247,
+        "name" : "Elusión",
+        "icon" : "spell_magic_lesserinvisibilty",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de tus facultades Esfumarse y Ceguera 30 s y de tu facultad Capa de las Sombras 15 s."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tus facultades Esfumarse y Ceguera 60 s y de tu facultad Capa de las Sombras 30 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2077,
+        "name" : "Acecho",
+        "icon" : "ability_rogue_waylay",
+        "x" : 1,
+        "y" : 1,
+        "req" : 263,
+        "ranks" : [ {
+          "description" : "Los golpes que asestes con Emboscada y con Puñalada tienen un 50% de probabilidad de desequilibrar a un objetivo, lo que aumenta el tiempo entre sus ataques cuerpo a cuerpo y a distancia un 20% y reduce su velocidad de movimiento un 50% durante 8 s."
+        }, {
+          "description" : "Los golpes que asestes con Emboscada y con Puñalada tienen un 100% de probabilidad de desequilibrar a un objetivo, lo que aumenta el tiempo entre sus ataques cuerpo a cuerpo y a distancia un 20% y reduce su velocidad de movimiento un 50% durante 8 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 261,
+        "name" : "Oportunidad",
+        "icon" : "ability_rogue_bloodsplatter",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta el daño infligido con tus facultades Puñalada, Garrote, Mutilar y Emboscada un 10%."
+        }, {
+          "description" : "Aumenta el daño infligido con tus facultades Puñalada, Garrote, Mutilar y Emboscada un 20%."
+        }, {
+          "description" : "Aumenta el daño infligido con tus facultades Puñalada, Garrote, Mutilar y Emboscada un 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 245,
+        "name" : "Iniciativa",
+        "icon" : "spell_shadow_fumble",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Te da un 50% de probabilidad de añadir 1 p. de combo extra a tu objetivo cuando usas tus facultades de Golpe bajo, Emboscada o Garrote."
+        }, {
+          "description" : "Te da un 100% de probabilidad de añadir 1 p. de combo extra a tu objetivo cuando usas tus facultades de Golpe bajo, Emboscada o Garrote."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11665,
+        "name" : "Recuperación enérgica",
+        "icon" : "ability_rogue_sturdyrecuperate",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Potencia tu facultad Reponerse y provoca que su efecto periódico también restaure 4 p. de energía."
+        }, {
+          "description" : "Potencia tu facultad Reponerse y provoca que su efecto periódico también restaure 8 p. de energía."
+        }, {
+          "description" : "Potencia tu facultad Reponerse y provoca que su efecto periódico también restaure 12 p. de energía."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 6519,
+        "name" : "Descubrir debilidad",
+        "icon" : "ability_rogue_findweakness",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Tus facultades Emboscada, Garrote y Golpe bajo descubren una abertura en las defensas del objetivo, lo que provoca que todos tus ataques ignoren un 25% de la armadura de ese enemigo durante 10 s."
+        }, {
+          "description" : "Tus facultades Emboscada, Garrote y Golpe bajo descubren una abertura en las defensas del objetivo, lo que provoca que todos tus ataques ignoren un 50% de la armadura de ese enemigo durante 10 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 681,
+        "name" : "Hemorragia",
+        "icon" : "spell_shadow_lifedrain",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "35 energía",
+          "range" : "Rango de ataques C. a C.",
+          "castTime" : "Instantáneo",
+          "requires" : "Requiere Arma cuerpo a cuerpo",
+          "description" : "Un golpe instantáneo que inflige un 69% de daño con arma (un 100% si se lleva equipada una daga) y provoca que el objetivo reciba un 30% de daño extra por efectos de sangrado durante 1 min. Otorga 1 p. de combo."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2078,
+        "name" : "Honor entre ladrones",
+        "icon" : "ability_rogue_honoramongstthieves",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Aumenta un 5% la probabilidad de golpe crítico cuerpo a cuerpo de todos los miembros del grupo o banda. Cuando alguien de tu grupo o banda asesta un golpe crítico con un hechizo o facultad, tienes un 33% de probabilidad de ganar un punto de combo en tu objetivo actual. Este efecto no puede tener lugar más de una vez cada 4 s."
+        }, {
+          "description" : "Aumenta un 5% la probabilidad de golpe crítico cuerpo a cuerpo de todos los miembros del grupo o banda. Cuando alguien de tu grupo o banda asesta un golpe crítico con un hechizo o facultad, tienes un 66% de probabilidad de ganar un punto de combo en tu objetivo actual. Este efecto no puede tener lugar más de una vez cada 3 s."
+        }, {
+          "description" : "Aumenta un 5% la probabilidad de golpe crítico cuerpo a cuerpo de todos los miembros del grupo o banda. Cuando alguien de tu grupo o banda asesta un golpe crítico con un hechizo o facultad, tienes un 100% de probabilidad de ganar un punto de combo en tu objetivo actual. Este efecto no puede tener lugar más de una vez cada 2 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 381,
+        "name" : "Premeditación",
+        "icon" : "spell_shadow_possession",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "range" : "30 yd range",
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 20 seg.",
+          "description" : "Al usarlo añade 2 p. de combo a tu objetivo. Tienes que añadir o utilizar los puntos de combo en 20 s o se perderán."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11664,
+        "name" : "Sombras envolventes",
+        "icon" : "ability_rogue_envelopingshadows",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Reduce el daño recibido por los ataques de área de efecto un 10% y aumenta la duración de tu facultad Amago 1 s."
+        }, {
+          "description" : "Reduce el daño recibido por los ataques de área de efecto un 20% y aumenta la duración de tu facultad Amago 2 s."
+        }, {
+          "description" : "Reduce el daño recibido por los ataques de área de efecto un 30% y aumenta la duración de tu facultad Amago 3 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1722,
+        "name" : "Burlar a la muerte",
+        "icon" : "ability_rogue_cheatdeath",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Tienes un 33% de probabilidad de que cualquier ataque capaz de acabar con tu vida te reduzca en su lugar a un 10% de tu salud máxima. Además, cualquier daño recibido se reducirá un 90% durante 3 s. Este efecto solo ocurre una vez por minuto."
+        }, {
+          "description" : "Tienes un 66% de probabilidad de que cualquier ataque capaz de acabar con tu vida te reduzca en su lugar a un 10% de tu salud máxima. Además, cualquier daño recibido se reducirá un 90% durante 3 s. Este efecto solo ocurre una vez por minuto."
+        }, {
+          "description" : "Tienes un 100% de probabilidad de que cualquier ataque capaz de acabar con tu vida te reduzca en su lugar a un 10% de tu salud máxima. Además, cualquier daño recibido se reducirá un 90% durante 3 s. Este efecto solo ocurre una vez por minuto."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 284,
+        "name" : "Preparación",
+        "icon" : "ability_rogue_preparation",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 5 min.",
+          "description" : "Cuando se activa, esta facultad termina inmediatamente el tiempo de reutilización de tus facultades Evasión, Sprint, Esfumarse y Paso de las Sombras."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 6520,
+        "name" : "Vena sangrienta",
+        "icon" : "ability_rogue_sanguinaryvein",
+        "x" : 2,
+        "y" : 4,
+        "req" : 681,
+        "ranks" : [ {
+          "description" : "Aumenta un 5% el daño que infliges a los objetivos afectados con un efecto de sangrado."
+        }, {
+          "description" : "Aumenta un 10% el daño que infliges a los objetivos afectados con un efecto de sangrado."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2080,
+        "name" : "Matanza desde las Sombras",
+        "icon" : "ability_rogue_slaughterfromtheshadows",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Reduce el coste de energía de tus facultades Puñalada y Emboscada 7 p. y el coste de energía de tus facultades Hemorragia y Abanico de cuchillos 2 p."
+        }, {
+          "description" : "Reduce el coste de energía de tus facultades Puñalada y Emboscada 14 p. y el coste de energía de tus facultades Hemorragia y Abanico de cuchillos 4 p."
+        }, {
+          "description" : "Reduce el coste de energía de tus facultades Puñalada y Emboscada 20 p. y el coste de energía de tus facultades Hemorragia y Abanico de cuchillos 6 p."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1123,
+        "name" : "Espadas dentadas",
+        "icon" : "inv_sword_17",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Tu Eviscerar tiene un 10% de probabilidad por cada punto de combo de reiniciar la duración de tu Ruptura sobre el objetivo."
+        }, {
+          "description" : "Tu Eviscerar tiene un 20% de probabilidad por cada punto de combo de reiniciar la duración de tu Ruptura sobre el objetivo."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2081,
+        "name" : "Danza de las Sombras",
+        "icon" : "ability_rogue_shadowdance",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 1 min.",
+          "description" : "Entras en la Danza de las Sombras durante 6 s, que permite el uso de las facultades Porrazo, Garrote, Emboscada, Golpe bajo, Premeditación, Robar y Desactivar trampa aunque no estés en sigilo."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

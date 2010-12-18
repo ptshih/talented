@@ -1,0 +1,1046 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 2,
+      "name" : "Paladín",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "Sagrado",
+      "icon" : "spell_holy_holybolt",
+      "backgroundFile" : "PALADINHOLY",
+      "overlayColor" : "#ff7f00",
+      "description" : "Invoca el poder de la Luz para proteger y sanar.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : true,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 20473,
+        "name" : "Choque Sagrado",
+        "icon" : "spell_holy_searinglight",
+        "cost" : "8% de maná base",
+        "range" : "20 yd range",
+        "castTime" : "Lanzamiento instantáneo",
+        "cooldown" : "Reutilización de 6 seg.",
+        "reagents" : [ ],
+        "description" : "Golpea al objetivo con energía Sagrada, inflige 1294-1399 p. de daño Sagrado a un enemigo o sana 3571-3866 p. a un aliado y otorga una carga de Poder Sagrado.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 85102,
+        "name" : "Camino de la Luz",
+        "icon" : "spell_holy_championsgrace",
+        "reagents" : [ ],
+        "description" : "Aumenta un 15% la efectividad de tus hechizos de sanación.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 95859,
+        "name" : "Meditación",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "Permite que un 50% de la regeneración de maná por espíritu continúe mientras estás en combate.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76669,
+        "name" : "Sanación iluminada",
+        "icon" : "spell_holy_absolution",
+        "reagents" : [ ],
+        "description" : "Tus hechizos de sanación directa colocan un escudo de absorción sobre el objetivo por un 10% de la cantidad sanada que dura 8 s. Cada punto de maestría aumenta la cantidad absorbida un 1.25% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10099,
+        "name" : "Juez de la Luz",
+        "icon" : "spell_holy_healingaura",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta un 6% la probabilidad de efecto crítico de tus Sentencias y Veredicto del templario."
+        }, {
+          "description" : "Aumenta un 12% la probabilidad de efecto crítico de tus Sentencias y Veredicto del templario."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12189,
+        "name" : "Protector del inocente",
+        "icon" : "ability_paladin_protectoroftheinnocent",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Lanzar una sanación con objetivo a cualquier objetivo, excepto tú mismo, también te sana 1115-1282 p."
+        }, {
+          "description" : "Lanzar una sanación con objetivo a cualquier objetivo, excepto tú mismo, también te sana 2229-2564 p."
+        }, {
+          "description" : "Lanzar una sanación con objetivo a cualquier objetivo, excepto tú mismo, también te sana 3344-3847 p."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10127,
+        "name" : "Sentencias del puro",
+        "icon" : "ability_paladin_judgementofthepure",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Tu Sentencia aumenta tu celeridad de lanzamiento y cuerpo a cuerpo un 3% durante 1 min."
+        }, {
+          "description" : "Tu Sentencia aumenta tu celeridad de lanzamiento y cuerpo a cuerpo un 6% durante 1 min."
+        }, {
+          "description" : "Tu Sentencia aumenta tu celeridad de lanzamiento y cuerpo a cuerpo un 9% durante 1 min."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11213,
+        "name" : "Claridad de propósito",
+        "icon" : "spell_paladin_clarityofpurpose",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de lanzamiento de tus hechizos Luz Sagrada y Luz divina 0.15 s."
+        }, {
+          "description" : "Reduce el tiempo de lanzamiento de tus hechizos Luz Sagrada y Luz divina 0.3 s."
+        }, {
+          "description" : "Reduce el tiempo de lanzamiento de tus hechizos Luz Sagrada y Luz divina 0.5 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10097,
+        "name" : "Última palabra",
+        "icon" : "spell_holy_holyguidance",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Le da a tu Palabra de gloria un 30% más de probabilidad de golpe crítico al utilizarlo contra objetivos con un 35% de salud o menos."
+        }, {
+          "description" : "Le da a tu Palabra de gloria un 60% más de probabilidad de golpe crítico al utilizarlo contra objetivos con un 35% de salud o menos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11780,
+        "name" : "Luz llameante",
+        "icon" : "spell_holy_holybolt",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta el daño de tu Choque Sagrado y Exorcismo un 10%."
+        }, {
+          "description" : "Aumenta el daño de tu Choque Sagrado y Exorcismo un 20%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10109,
+        "name" : "Acusar",
+        "icon" : "spell_holy_excorcism_02",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Reduce el coste de maná de Exorcismo un 38%. Además, al lanzar Choque Sagrado tienes un 25% de probabilidad de que tu siguiente hechizo Exorcismo sea instantáneo y no cueste maná."
+        }, {
+          "description" : "Reduce el coste de maná de Exorcismo un 75%. Además, al lanzar Choque Sagrado tienes un 50% de probabilidad de que tu siguiente hechizo Exorcismo sea instantáneo y no cueste maná."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11202,
+        "name" : "Favor divino",
+        "icon" : "spell_holy_divineillumination",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 3 min.",
+          "description" : "Aumenta un 20% tu celeridad de lanzamiento de hechizos y un 20% la probabilidad de golpe crítico de tus hechizos durante 20 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10129,
+        "name" : "Infusión de Luz",
+        "icon" : "ability_paladin_infusionoflight",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Aumenta la probabilidad de efecto crítico de tu Choque Sagrado un 5%. Además, los efectos críticos de tu Choque Sagrado reducen el tiempo de lanzamiento de tu siguiente Luz Sagrada o Luz divina 0.75 s."
+        }, {
+          "description" : "Aumenta la probabilidad de efecto crítico de tu Choque Sagrado un 10%. Además, los efectos críticos de tu Choque Sagrado reducen el tiempo de lanzamiento de tu siguiente Luz Sagrada o Luz divina 1.50 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11771,
+        "name" : "Amanecer",
+        "icon" : "inv_qirajidol_sun",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Tu Destello de Luz, Luz Sagrada y Luz divina tienen un 10% de probabilidad de hacer que tu siguiente Choque Sagrado no active un tiempo de reutilización si se usa antes de 12 s."
+        }, {
+          "description" : "Tu Destello de Luz, Luz Sagrada y Luz divina tienen un 20% de probabilidad de hacer que tu siguiente Choque Sagrado no active un tiempo de reutilización si se usa antes de 12 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10113,
+        "name" : "Sentencias iluminadas",
+        "icon" : "ability_paladin_enlightenedjudgements",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Otorga un índice de golpe igual al 50% de todo espíritu que ganes con objetos o efectos y aumenta el alcance de tu Sentencia 5 m. Además, tu Sentencia te sana al instante 1122-1289 p."
+        }, {
+          "description" : "Otorga un índice de golpe igual al 100% de todo espíritu que ganes con objetos o efectos y aumenta el alcance de tu Sentencia 10 m. Además, tu Sentencia te sana al instante 2242-2577 p."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10133,
+        "name" : "Señal de la Luz",
+        "icon" : "ability_paladin_beaconoflight",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "6% de maná base",
+          "range" : "60 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "description" : "El objetivo se convierte en una Señal de la Luz para todos los miembros de tu grupo o banda que se encuentren en un radio de 60 m. Cada sanación que lances sobre miembros de tu grupo o banda sanarán también a la señal un 50% de la cantidad sanada. Solo un objetivo puede ser la Señal de la Luz a la vez. Dura 5 min."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11215,
+        "name" : "Velocidad de la Luz",
+        "icon" : "paladin_icon_speedoflight",
+        "x" : 2,
+        "y" : 3,
+        "req" : 10129,
+        "ranks" : [ {
+          "description" : "Otorga un 1% de celeridad con hechizos y reduce el tiempo de reutilización de Radiancia Sagrada 10 s. Al lanzar Radiancia Sagrada aumenta tu velocidad de movimiento un 20% durante 4 s."
+        }, {
+          "description" : "Otorga un 2% de celeridad con hechizos y reduce el tiempo de reutilización de Radiancia Sagrada 20 s. Al lanzar Radiancia Sagrada aumenta tu velocidad de movimiento un 40% durante 4 s."
+        }, {
+          "description" : "Otorga un 3% de celeridad con hechizos y reduce el tiempo de reutilización de Radiancia Sagrada 30 s. Al lanzar Radiancia Sagrada aumenta tu velocidad de movimiento un 60% durante 4 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10121,
+        "name" : "Limpieza Sagrada",
+        "icon" : "ability_paladin_sacredcleansing",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Tu hechizo Limpiar ahora también disipa 1 efecto mágico."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11779,
+        "name" : "Convicción",
+        "icon" : "ability_paladin_conviction",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Te da un 1% de bonus de daño y sanación durante 15 s después de asestar un golpe crítico con un golpe de arma, un hechizo o una facultad. Este efecto se acumula 3 veces."
+        }, {
+          "description" : "Te da un 2% de bonus de daño y sanación durante 15 s después de asestar un golpe crítico con un golpe de arma, un hechizo o una facultad. Este efecto se acumula 3 veces."
+        }, {
+          "description" : "Te da un 3% de bonus de daño y sanación durante 15 s después de asestar un golpe crítico con un golpe de arma, un hechizo o una facultad. Este efecto se acumula 3 veces."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10115,
+        "name" : "Maestría en auras",
+        "icon" : "spell_holy_auramastery",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 2 min.",
+          "description" : "Provoca que tu Aura de concentración haga inmunes a los efectos de Silencio e Interrumpir a todos los objetivos afectados y mejore el efecto del resto de las auras un 100%. Dura 6 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12151,
+        "name" : "Dechado de virtudes",
+        "icon" : "spell_holy_avenginewrath",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de tu Protección divina 10 s, el de Mano de sacrificio 15 s y el tiempo de Cólera vengativa 30 s."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tu Protección divina 20 s, el de Mano de sacrificio 30 s y el tiempo de Cólera vengativa 60 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11168,
+        "name" : "Torre de Radiancia",
+        "icon" : "achievement_bg_winsoa",
+        "x" : 1,
+        "y" : 5,
+        "req" : 10133,
+        "ranks" : [ {
+          "description" : "Sanar directamente al objetivo de tu Señal de la Luz con Destello de Luz, Luz Sagrada o Luz divina tiene un 33% de probabilidad de generar Poder Sagrado."
+        }, {
+          "description" : "Sanar directamente al objetivo de tu Señal de la Luz con Destello de Luz, Luz Sagrada o Luz divina tiene un 66% de probabilidad de generar Poder Sagrado."
+        }, {
+          "description" : "Sanar directamente al objetivo de tu Señal de la Luz con Destello de Luz, Luz Sagrada o Luz divina tiene un 100% de probabilidad de generar Poder Sagrado."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10117,
+        "name" : "Vida bendita",
+        "icon" : "spell_holy_blessedlife",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Tienes un 50% de probabilidad de obtener una carga de Poder Sagrado cuando recibas daño directo. Este efecto solo puede suceder una vez cada 8 segundos."
+        }, {
+          "description" : "Tienes un 100% de probabilidad de obtener una carga de Poder Sagrado cuando recibas daño directo. Este efecto solo puede suceder una vez cada 8 segundos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11203,
+        "name" : "Luz del alba",
+        "icon" : "spell_paladin_lightofdawn",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "1 poder Sagrado",
+          "castTime" : "Lanzamiento instantáneo",
+          "description" : "Envía una ola de energía de sanación ante ti, lo que te sana 925-1028 p. a ti y a todos los objetivos amistosos en un cono de hasta 30 m."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Protección",
+      "icon" : "ability_paladin_shieldofthetemplar",
+      "backgroundFile" : "PALADINPROTECTION",
+      "overlayColor" : "#4c7fff",
+      "description" : "Usa magia Sagrada para protegerse y defender a los aliados de los atacantes.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : true,
+        "healer" : false,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 31935,
+        "name" : "Escudo de vengador",
+        "icon" : "spell_holy_avengersshield",
+        "cost" : "6% de maná base",
+        "range" : "30 yd range",
+        "castTime" : "Lanzamiento instantáneo",
+        "cooldown" : "Reutilización de 15 seg.",
+        "requires" : "Requiere Escudos",
+        "reagents" : [ ],
+        "description" : "Lanza un escudo Sagrado al enemigo que inflige 2747-3306 p. de daño Sagrado, lo que silencia e interrumpe el lanzamiento de hechizos durante 3 s. Entonces salta a enemigos cercanos adicionales. Afecta a un total de 3 objetivos.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 53592,
+        "name" : "Tocado por la Luz",
+        "icon" : "ability_paladin_touchedbylight",
+        "reagents" : [ ],
+        "description" : "Aumenta un 15% tu aguante total, aumenta tu golpe con hechizos un 8% y aumenta tu poder con hechizos una cantidad igual al 60% de tu fuerza.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 84839,
+        "name" : "Venganza",
+        "icon" : "ability_paladin_shieldofvengeance",
+        "reagents" : [ ],
+        "description" : "Cada vez que recibes daño, ganas un 5% del daño recibido como poder de ataque, hasta un máximo del 10% de tu salud.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 31878,
+        "name" : "Sentencias del sabio",
+        "icon" : "ability_paladin_judgementofthewise",
+        "reagents" : [ ],
+        "description" : "Tu Sentencia te otorga un 30% de tu maná base durante 10 s.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76671,
+        "name" : "Baluarte divino",
+        "icon" : "spell_holy_holyprotection",
+        "reagents" : [ ],
+        "description" : "Aumenta tu probabilidad de bloquear ataques cuerpo a cuerpo un 18%. Cada punto de maestría aumenta la probabilidad de bloqueo un 2.25% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 12198,
+        "name" : "Divinidad",
+        "icon" : "spell_holy_blindingheal",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta las sanaciones que realices y los efectos de sanación que recibas un 2%."
+        }, {
+          "description" : "Aumenta las sanaciones que realices y los efectos de sanación que recibas un 4%."
+        }, {
+          "description" : "Aumenta las sanaciones que realices y los efectos de sanación que recibas un 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10324,
+        "name" : "Sellos del puro",
+        "icon" : "inv_mace_46",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta un 6% el daño infligido por tu Sello de Rectitud, Sello de Verdad y Sello de Justicia."
+        }, {
+          "description" : "Aumenta un 12% el daño infligido por tu Sello de Rectitud, Sello de Verdad y Sello de Justicia."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12152,
+        "name" : "Gloria eterna",
+        "icon" : "inv_torch_thrown",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Tu Palabra de gloria tiene un 15% de probabilidad de no consumir Poder Sagrado."
+        }, {
+          "description" : "Tu Palabra de gloria tiene un 30% de probabilidad de no consumir Poder Sagrado."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10372,
+        "name" : "Sentencias del justo",
+        "icon" : "ability_paladin_judgementsofthejust",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Tu Sentencia reduce la velocidad de ataque cuerpo a cuerpo y a distancia del objetivo un 10% durante 20 s. También aumenta la duración del efecto de tu Sello de Justicia 0.5 s."
+        }, {
+          "description" : "Tu Sentencia reduce la velocidad de ataque cuerpo a cuerpo y a distancia del objetivo un 20% durante 20 s. También aumenta la duración del efecto de tu Sello de Justicia 1 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10332,
+        "name" : "Consistencia",
+        "icon" : "spell_holy_devotion",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta tu valor de armadura con objetos un 3%."
+        }, {
+          "description" : "Aumenta tu valor de armadura con objetos un 6%."
+        }, {
+          "description" : "Aumenta tu valor de armadura con objetos un 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10336,
+        "name" : "Martillo de Justicia mejorado",
+        "icon" : "spell_holy_sealofmight",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de tu hechizo Martillo de Justicia 10 s."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tu hechizo Martillo de Justicia 20 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10344,
+        "name" : "Suelo santo",
+        "icon" : "spell_holy_innerfire",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Aumenta un 20% el daño de tu Consagración y reduce un 40% su coste de maná."
+        }, {
+          "description" : "Aumenta un 40% el daño de tu Consagración y reduce un 80% su coste de maná."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10346,
+        "name" : "Salvaguardia",
+        "icon" : "spell_nature_lightningshield",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Reduce un 2% la probabilidad de recibir golpes críticos de ataques cuerpo a cuerpo y reduce un 3% todo el daño recibido. Además, cuando bloqueas o esquivas un ataque cuerpo a cuerpo, ganas un 1% del maná máximo."
+        }, {
+          "description" : "Reduce un 4% la probabilidad de recibir golpes críticos de ataques cuerpo a cuerpo y reduce un 7% todo el daño recibido. Además, cuando bloqueas o esquivas un ataque cuerpo a cuerpo, ganas un 2% del maná máximo."
+        }, {
+          "description" : "Reduce un 6% la probabilidad de recibir golpes críticos de ataques cuerpo a cuerpo y reduce un 10% todo el daño recibido. Además, cuando bloqueas o esquivas un ataque cuerpo a cuerpo, ganas un 3% del maná máximo."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10374,
+        "name" : "Martillo del honrado",
+        "icon" : "ability_paladin_hammeroftherighteous",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "12% de maná base",
+          "range" : "Rango de ataques C. a C.",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 4,5 seg.",
+          "requires" : "Requiere Arma cuerpo a cuerpo 1M",
+          "description" : "Da un martillazo al objetivo actual que inflige un 30% de daño con arma, lo que causa una ola de Luz que golpea a todos los objetivos en un radio de 8 m e inflige 615-876 p. de daño Sagrado. Otorga una carga de Poder Sagrado."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11159,
+        "name" : "Cólera del Iluminado",
+        "icon" : "inv_mace_82",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Aumenta un 50% el daño de tu Golpe de cruzado y Sentencia y un 15% la probabilidad de golpe crítico de tu Cólera Sagrada y Martillo de cólera."
+        }, {
+          "description" : "Aumenta un 100% el daño de tu Golpe de cruzado y Sentencia y un 30% la probabilidad de golpe crítico de tu Cólera Sagrada y Martillo de cólera."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11161,
+        "name" : "Expiación",
+        "icon" : "spell_holy_blessingofstrength",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Tras bloquear un ataque, tienes un 10% de probabilidad de que tus siguientes 4 golpes con arma durante 8 s generen un ataque extra."
+        }, {
+          "description" : "Tras bloquear un ataque, tienes un 20% de probabilidad de que tus siguientes 4 golpes con arma durante 8 s generen un ataque extra."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11607,
+        "name" : "Escudo del honrado",
+        "icon" : "ability_paladin_shieldofvengeance",
+        "x" : 1,
+        "y" : 3,
+        "req" : 10346,
+        "ranks" : [ {
+          "cost" : "1 poder Sagrado",
+          "range" : "Rango de ataques C. a C.",
+          "castTime" : "Lanzamiento instantáneo",
+          "requires" : "Requiere Escudos",
+          "description" : "Embiste a tu objetivo con tu escudo, lo que inflige daño Sagrado. Consume todas las cargas de Poder Sagrado para determinar el daño infligido:\n\n\n\n1 Poder Sagrado: 598 p. de daño\n\n2 Poder Sagrado: 1794 p. de daño\n\n3 Poder Sagrado: 3588 p. de daño"
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11193,
+        "name" : "Gran cruzado",
+        "icon" : "inv_helmet_74",
+        "x" : 2,
+        "y" : 3,
+        "req" : 10374,
+        "ranks" : [ {
+          "description" : "Cuando tu Golpe de cruzado o tu Martillo del honrado infligen daño a tu objetivo primario, tienen un 10% de probabilidad de reiniciar el tiempo de reutilización de tu siguiente Escudo de vengador."
+        }, {
+          "description" : "Cuando tu Golpe de cruzado o tu Martillo del honrado infligen daño a tu objetivo primario, tienen un 20% de probabilidad de reiniciar el tiempo de reutilización de tu siguiente Escudo de vengador."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10680,
+        "name" : "Vindicación",
+        "icon" : "spell_holy_vindication",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Tu Golpe de cruzado y tu Martillo del honrado reducen el daño físico infligido por sus objetivos primarios un 10% durante 30 s. Además, tu Martillo de Justicia interrumpirá las criaturas que sean inmunes a los aturdimientos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10356,
+        "name" : "Escudo Sagrado",
+        "icon" : "spell_holy_blessingofprotection",
+        "x" : 1,
+        "y" : 4,
+        "req" : 11607,
+        "ranks" : [ {
+          "description" : "Usar Escudo del honrado o Inquisición aumenta un 10% la cantidad que bloquea tu escudo durante 20 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11221,
+        "name" : "Custodiado por la Luz",
+        "icon" : "ability_paladin_gaurdedbythelight",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Aumenta tu Palabra de gloria un 5% cuando la usas para sanarte a ti mismo y permite que tu Palabra de gloria provoque Escudo Sagrado."
+        }, {
+          "description" : "Aumenta tu Palabra de gloria un 10% cuando la usas para sanarte a ti mismo y permite que tu Palabra de gloria provoque Escudo Sagrado. Además, toda sobresanación creará un escudo protector igual a la cantidad sobresanada que dura 6 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10334,
+        "name" : "Guardián divino",
+        "icon" : "spell_holy_powerwordbarrier",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "range" : "100 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 2 min.",
+          "description" : "Todos los miembros de tu grupo o banda, excepto el paladín, reciben un 20% menos de daño durante 6 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10370,
+        "name" : "Deber sagrado",
+        "icon" : "spell_holy_divineintervention",
+        "x" : 1,
+        "y" : 5,
+        "req" : 10356,
+        "ranks" : [ {
+          "description" : "Tus Sentencias tienen un 25% de probabilidad de provocar que tu siguiente Escudo del honrado aseste un golpe crítico. Dura 15 s."
+        }, {
+          "description" : "Tus Sentencias tienen un 50% de probabilidad de provocar que tu siguiente Escudo del honrado aseste un golpe crítico. Dura 15 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10340,
+        "name" : "Escudo del templario",
+        "icon" : "ability_paladin_shieldofthetemplar",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Reduce 20 s el tiempo de reutilización de Cólera vengativa y 45 s el de Guardián de los antiguos reyes. Además, tu Súplica divina generará 1 p. de Poder Sagrado."
+        }, {
+          "description" : "Reduce 40 s el tiempo de reutilización de Cólera vengativa y 80 s el de Guardián de los antiguos reyes. Además, tu Súplica divina generará 2 p. de Poder Sagrado."
+        }, {
+          "description" : "Reduce 60 s el tiempo de reutilización de Cólera vengativa y 120 s el de Guardián de los antiguos reyes. Además, tu Súplica divina generará 3 p. de Poder Sagrado."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10350,
+        "name" : "Defensor candente",
+        "icon" : "spell_holy_ardentdefender",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 3 min.",
+          "description" : "Reduce el daño recibido un 20% durante 10 s. Al estar activo Defensor candente, el siguiente ataque que normalmente te mataría te sanará hasta un 15% de tu salud máxima."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Reprensión",
+      "icon" : "spell_holy_auraoflight",
+      "backgroundFile" : "PALADINCOMBAT",
+      "overlayColor" : "#ff0000",
+      "description" : "Un cruzado justo que juzga y castiga a los oponentes con armas y magia Sagrada.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 85256,
+        "name" : "Veredicto del templario",
+        "icon" : "spell_paladin_templarsverdict",
+        "cost" : "1 poder Sagrado",
+        "range" : "Rango de ataques C. a C.",
+        "castTime" : "Lanzamiento instantáneo",
+        "requires" : "Requiere Arma cuerpo a cuerpo",
+        "reagents" : [ ],
+        "description" : "Un ataque instantáneo con arma que inflige un porcentaje de daño con arma. Consume todas las cargas de Poder Sagrado para aumentar el daño infligido:\n\n\n\n1 Poder Sagrado: 30% de daño con arma\n\n2 Poder Sagrado: 90% de daño con arma\n\n3 Poder Sagrado: 235% de daño con arma",
+        "keyAbility" : true
+      }, {
+        "spellId" : 20113,
+        "name" : "Especialización en armas de dos manos",
+        "icon" : "inv_hammer_04",
+        "reagents" : [ ],
+        "description" : "Aumenta un 20% el daño infligido con las armas cuerpo a cuerpo de dos manos.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 53503,
+        "name" : "Vaina de Luz",
+        "icon" : "ability_paladin_sheathoflight",
+        "reagents" : [ ],
+        "description" : "Aumenta tu poder con hechizos una cantidad igual al 30% de tu poder de ataque y aumenta un 8% tu probabilidad de golpear con hechizos.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 89901,
+        "name" : "Sentencias del audaz",
+        "icon" : "ability_paladin_judgementofthewise",
+        "reagents" : [ ],
+        "description" : "Tu Sentencia te otorga un 25% de tu maná base durante 10 s.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76672,
+        "name" : "Mano de Luz",
+        "icon" : "ability_paladin_blessedhands",
+        "reagents" : [ ],
+        "description" : "Tus ataques automáticos tienen un 8% de probabilidad de otorgar Mano de Luz, lo que provoca que tu siguiente facultad de Poder Sagrado no consuma Poder Sagrado y que se lance como si se hubiesen consumido 3 cargas de Poder Sagrado. Cada punto de maestría aumenta la probabilidad un 1% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10647,
+        "name" : "Ojo por ojo",
+        "icon" : "spell_holy_eyeforaneye",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Todos los ataques mágicos contra ti tienen un 20% de probabilidad de infligir un 30% del daño recibido al atacante."
+        }, {
+          "description" : "Todos los ataques mágicos contra ti tienen un 40% de probabilidad de infligir un 30% del daño recibido al atacante."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10651,
+        "name" : "Cruzada",
+        "icon" : "spell_holy_crusade",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta un 10% el daño de tu Golpe de cruzado, Martillo del honrado y Veredicto del templario y un 10% el daño y la sanación de tu Choque Sagrado. Además, durante 15 s después de matar a un enemigo que aporte experiencia u honor, tu siguiente Luz Sagrada sana un 100% extra."
+        }, {
+          "description" : "Aumenta un 20% el daño de tu Golpe de cruzado, Martillo del honrado y Veredicto del templario y un 20% el daño y la sanación de tu Choque Sagrado. Además, durante 15 s después de matar a un enemigo que aporte experiencia u honor, tu siguiente Luz Sagrada sana un 200% extra."
+        }, {
+          "description" : "Aumenta un 30% el daño de tu Golpe de cruzado, Martillo del honrado y Veredicto del templario y un 30% el daño y la sanación de tu Choque Sagrado. Además, durante 15 s después de matar a un enemigo que aporte experiencia u honor, tu siguiente Luz Sagrada sana un 300% extra."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11612,
+        "name" : "Sentencia mejorada",
+        "icon" : "ability_paladin_judgementblue",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta el alcance de tu Sentencia 10 m."
+        }, {
+          "description" : "Aumenta el alcance de tu Sentencia 20 m."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12153,
+        "name" : "Favor del Guardián",
+        "icon" : "spell_holy_sealofprotection",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de tu Mano de protección 60 s y aumenta la duración de tu Mano de libertad 2 s."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tu Mano de protección 2 min y aumenta la duración de tu Mano de libertad 4 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11269,
+        "name" : "Imperio de la ley",
+        "icon" : "inv_relics_libramofhope",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta un 5% la probabilidad de efecto crítico de tu Golpe de cruzado, Martillo del honrado y Palabra de gloria."
+        }, {
+          "description" : "Aumenta un 10% la probabilidad de efecto crítico de tu Golpe de cruzado, Martillo del honrado y Palabra de gloria."
+        }, {
+          "description" : "Aumenta un 15% la probabilidad de efecto crítico de tu Golpe de cruzado, Martillo del honrado y Palabra de gloria."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11611,
+        "name" : "Búsqueda de justicia",
+        "icon" : "spell_holy_persuitofjustice",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Tienes un 50% de probabilidad de obtener una carga de Poder Sagrado cuando te golpea un efecto de Aturdir, Miedo o Inmovilizar. Además, aumenta la velocidad de movimiento y la velocidad de movimiento sobre la montura un 8%. Este efecto no se acumula con otros efectos de aumento de velocidad de movimiento."
+        }, {
+          "description" : "Tienes un 100% de probabilidad de obtener una carga de Poder Sagrado cuando te golpea un efecto de Aturdir, Miedo o Inmovilizar. Además, aumenta la velocidad de movimiento y la velocidad de movimiento sobre la montura un 15%. Este efecto no se acumula con otros efectos de aumento de velocidad de movimiento."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10665,
+        "name" : "Comunión",
+        "icon" : "ability_paladin_judgementofthewise",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Tus auras aumentan el daño infligido por tu grupo o banda un 3% y tu daño un 2% extra. Además, tu Sentencia provoca Reposición.\n\n\n\nReposición: Otorga a hasta 10 miembros del grupo o banda una regeneración de maná igual al 1% de su maná máximo cada 10 s. Dura 15 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10661,
+        "name" : "El arte de la guerra",
+        "icon" : "ability_paladin_artofwar",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Tus ataques automáticos tienen un 7% de probabilidad de hacer que tu siguiente Exorcismo sea instantáneo y gratuito y que inflija un 100% de daño extra."
+        }, {
+          "description" : "Tus ataques automáticos tienen un 14% de probabilidad de hacer que tu siguiente Exorcismo sea instantáneo y gratuito y que inflija un 100% de daño extra."
+        }, {
+          "description" : "Tus ataques automáticos tienen un 20% de probabilidad de hacer que tu siguiente Exorcismo sea instantáneo y gratuito y que inflija un 100% de daño extra."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11610,
+        "name" : "Largo brazo de la ley",
+        "icon" : "ability_paladin_judgementred",
+        "x" : 2,
+        "y" : 2,
+        "req" : 11612,
+        "ranks" : [ {
+          "description" : "Tu Sentencia tiene un 50% de probabilidad de aumentar un 45% tu velocidad de movimiento durante 4 s cuando se usa con objetivos a 15 m de ti o más."
+        }, {
+          "description" : "Tu Sentencia tiene un 100% de probabilidad de aumentar un 45% tu velocidad de movimiento durante 4 s cuando se usa con objetivos a 15 m de ti o más."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11204,
+        "name" : "Tormenta divina",
+        "icon" : "ability_paladin_divinestorm",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "5% de maná base",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 4,5 seg.",
+          "requires" : "Requiere Arma cuerpo a cuerpo",
+          "description" : "Un ataque instantáneo que inflige un 60% de daño con arma a todos los enemigos en un radio de 8 m. La Tormenta divina sana a hasta 3 miembros del grupo o banda un total del 25% del daño infligido."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11207,
+        "name" : "Reprimenda",
+        "icon" : "spell_holy_fistofjustice",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "10% de maná base",
+          "range" : "Rango de ataques C. a C.",
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 10 seg.",
+          "description" : "Interrumpe el lanzamiento de hechizos y evita que se lance cualquier hechizo de esa escuela durante 4 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11372,
+        "name" : "Santidad de batalla",
+        "icon" : "inv_sword_136",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Los efectos de celeridad reducen el tiempo de reutilización de tus facultades Golpe de cruzado y Tormenta divina."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10643,
+        "name" : "Sellos de mando",
+        "icon" : "ability_warrior_innerrage",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Tu Sello de Rectitud, Sello de Verdad y Sello de Justicia ahora infligen un 7% de daño con arma cada vez que golpeas. Además, tu Sello de Rectitud ahora golpea a hasta 2 objetivos adicionales."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10669,
+        "name" : "Cólera santificada",
+        "icon" : "ability_paladin_sanctifiedwrath",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Aumenta la probabilidad de golpe crítico de Martillo de cólera un 20%, reduce el tiempo de reutilización de Cólera vengativa 20 s y permite el uso de Martillo de cólera en todo momento mientras dure Cólera vengativa."
+        }, {
+          "description" : "Aumenta la probabilidad de golpe crítico de Martillo de cólera un 40%, reduce el tiempo de reutilización de Cólera vengativa 40 s y permite el uso de Martillo de cólera en todo momento mientras dure Cólera vengativa."
+        }, {
+          "description" : "Aumenta la probabilidad de golpe crítico de Martillo de cólera un 60%, reduce el tiempo de reutilización de Cólera vengativa 60 s y permite el uso de Martillo de cólera en todo momento mientras dure Cólera vengativa."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11271,
+        "name" : "Sanación desinteresada",
+        "icon" : "spell_holy_rune",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Cuando sanas a otros con tu Palabra de gloria, aumenta la efectividad de la sanación un 25% y aumenta tu daño infligido un 2% por cada carga de Poder Sagrado durante 10 s."
+        }, {
+          "description" : "Cuando sanas a otros con tu Palabra de gloria, aumenta la efectividad de la sanación un 50% y aumenta tu daño infligido un 4% por cada carga de Poder Sagrado durante 10 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10663,
+        "name" : "Arrepentimiento",
+        "icon" : "spell_holy_prayerofhealing",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "9% de maná base",
+          "range" : "20 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 1 min.",
+          "description" : "Pone al enemigo objetivo en estado de meditación incapacitándolo hasta 1 min. Cualquier daño despertará al objetivo. Solo funciona contra demonios, dragonantes, gigantes, humanoides y no-muertos."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10633,
+        "name" : "Propósito divino",
+        "icon" : "spell_holy_divinepurpose",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Los siguientes ataques tienen un 20% de probabilidad de generar Poder Sagrado:\n\n\n\n- Sentencia\n\n- Exorcismo\n\n- Veredicto del templario\n\n- Tormenta divina\n\n- Inquisición\n\n- Cólera Sagrada\n\n- Martillo de Cólera"
+        }, {
+          "description" : "Los siguientes ataques tienen un 40% de probabilidad de generar Poder Sagrado:\n\n\n\n- Sentencia\n\n- Exorcismo\n\n- Veredicto del templario\n\n- Tormenta divina\n\n- Inquisición\n\n- Cólera Sagrada\n\n- Martillo de Cólera"
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10677,
+        "name" : "Inquisición de fe",
+        "icon" : "ability_paladin_righteousvengeance",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Aumenta el daño periódico de tu Sello de Verdad un 10% y la duración de tu Inquisición un 50%."
+        }, {
+          "description" : "Aumenta el daño periódico de tu Sello de Verdad un 20% y la duración de tu Inquisición un 100%."
+        }, {
+          "description" : "Aumenta el daño periódico de tu Sello de Verdad un 30% y la duración de tu Inquisición un 150%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11211,
+        "name" : "Actos de sacrificio",
+        "icon" : "ability_paladin_blessedhands",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Reduce un 10% el tiempo de reutilización y un 10% el coste de maná de tu Mano de libertad, Mano de salvación y Mano de sacrificio. Además, tu Limpiar eliminará un efecto de reducción del movimiento si lo lanzas sobre ti mismo."
+        }, {
+          "description" : "Reduce un 20% el tiempo de reutilización y un 20% el coste de maná de tu Mano de libertad, Mano de salvación y Mano de sacrificio. Además, tu Limpiar eliminará un efecto de reducción del movimiento si lo lanzas sobre ti mismo."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11222,
+        "name" : "Fanatismo",
+        "icon" : "spell_holy_proclaimchampion_02",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "3 poder Sagrado",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 2 min.",
+          "description" : "Tu Golpe de cruzado genera 3 cargas de Poder Sagrado por cada golpe durante los siguientes 20 s. Requiere 3 cargas de Poder Sagrado, pero no consume Poder Sagrado."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,1029 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 8,
+      "name" : "Mago",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "Arcano",
+      "icon" : "spell_holy_magicalsentry",
+      "backgroundFile" : "MageArcane",
+      "overlayColor" : "#b233ff",
+      "description" : "Manipula energías Arcanas; juega con la esencia del tiempo y el espacio.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 44425,
+        "name" : "Tromba Arcana",
+        "icon" : "ability_mage_arcanebarrage",
+        "cost" : "12% de maná base",
+        "range" : "40 yd range",
+        "castTime" : "Lanzamiento instantáneo",
+        "cooldown" : "Reutilización de 4 seg.",
+        "reagents" : [ ],
+        "description" : "Lanza contra el objetivo enemigo descargas de energía Arcana, lo que inflige 1018-1227 p. de daño Arcano.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 84671,
+        "name" : "Especialización Arcana",
+        "icon" : "spell_fire_twilightfire",
+        "reagents" : [ ],
+        "description" : "Aumenta el daño de tus hechizos Arcanos un 25%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76547,
+        "name" : "Adepto de maná",
+        "icon" : "spell_arcane_manatap",
+        "reagents" : [ ],
+        "description" : "Aumenta todo el daño con hechizos que infliges hasta un 12%, en función de la cantidad de maná que el mago tiene sin gastar. Cada punto de maestría aumenta el daño infligido hasta un 1.5% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9154,
+        "name" : "Concentración Arcana",
+        "icon" : "spell_shadow_manaburn",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Te da un 3% de probabilidad de entrar en estado de Lanzamiento libre después de que cualquier hechizo de daño alcance un objetivo. El estado de Lanzamiento libre reduce el coste de maná de tu próximo hechizo de daño un 100%."
+        }, {
+          "description" : "Te da un 6% de probabilidad de entrar en estado de Lanzamiento libre después de que cualquier hechizo de daño alcance un objetivo. El estado de Lanzamiento libre reduce el coste de maná de tu próximo hechizo de daño un 100%."
+        }, {
+          "description" : "Te da un 10% de probabilidad de entrar en estado de Lanzamiento libre después de que cualquier hechizo de daño alcance un objetivo. El estado de Lanzamiento libre reduce el coste de maná de tu próximo hechizo de daño un 100%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9166,
+        "name" : "Contrahechizo mejorado",
+        "icon" : "spell_frost_iceshock",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Tu contrahechizo también silencia al objetivo durante 2 s."
+        }, {
+          "description" : "Tu contrahechizo también silenciará al objetivo durante 4 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9200,
+        "name" : "Presencia viento abisal",
+        "icon" : "ability_mage_netherwindpresence",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta tu celeridad con hechizos un 1%."
+        }, {
+          "description" : "Aumenta tu celeridad con hechizos un 2%."
+        }, {
+          "description" : "Aumenta tu celeridad con hechizos un 3%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9170,
+        "name" : "Torturar a los débiles",
+        "icon" : "spell_arcane_focusedpower",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Tus hechizos de daño Arcano infligen un 2% más de daño sobre los objetivos frenados o ralentizados."
+        }, {
+          "description" : "Tus hechizos de daño Arcano infligen un 4% más de daño sobre los objetivos frenados o ralentizados."
+        }, {
+          "description" : "Tus hechizos de daño Arcano infligen un 6% más de daño sobre los objetivos frenados o ralentizados."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10864,
+        "name" : "Invocación",
+        "icon" : "spell_arcane_invocation",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Ganas un 5% de bonus de daño durante 8 s al interrumpir un hechizo con éxito."
+        }, {
+          "description" : "Ganas un 10% de bonus de daño durante 8 s al interrumpir un hechizo con éxito."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10737,
+        "name" : "Misiles Arcanos mejorados",
+        "icon" : "spell_nature_starfall",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta en 1 el número de misiles disparados por tu hechizo Misiles Arcanos."
+        }, {
+          "description" : "Aumenta en 2 el número de misiles disparados por tu hechizo Misiles Arcanos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9172,
+        "name" : "Traslación mejorada",
+        "icon" : "spell_arcane_blink",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta tu velocidad un 35% durante 3 s después de lanzar el hechizo Traslación."
+        }, {
+          "description" : "Aumenta tu velocidad un 70% durante 3 s después de lanzar el hechizo Traslación."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9192,
+        "name" : "Corrientes Arcanas",
+        "icon" : "ability_mage_potentspirit",
+        "x" : 0,
+        "y" : 2,
+        "req" : 9174,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de tus hechizos Presencia mental, Poder Arcano e Invisibilidad un 12% y el tiempo de reutilización de tu hechizo Evocación 1 min."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tus hechizos Presencia mental, Poder Arcano e Invisibilidad un 25% y el tiempo de reutilización de tu hechizo Evocación 2 min."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9174,
+        "name" : "Presencia mental",
+        "icon" : "spell_nature_enchantarmor",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 2 min.",
+          "description" : "Cuando se activa, tu próximo hechizo de mago con un tiempo de lanzamiento inferior a 10 s se convertirá en un hechizo de lanzamiento instantáneo."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9198,
+        "name" : "Tromba de misiles",
+        "icon" : "ability_mage_missilebarrage",
+        "x" : 2,
+        "y" : 2,
+        "req" : 10737,
+        "ranks" : [ {
+          "description" : "Da a tu Explosión Arcana un 101% de probabilidad, y a tu Tromba Arcana, Bola de Fuego, Descarga de Escarcha y Descarga de Pirofrío un 51% de probabilidad de reducir la duración canalizada de tus siguientes Misiles Arcanos $S1 s, reduce el coste de maná un $s3% y se dispararán misiles cada 0.5 s."
+        }, {
+          "description" : "Da a tu Explosión Arcana un 101% de probabilidad, y a tu Tromba Arcana, Bola de Fuego, Descarga de Escarcha y Descarga de Pirofrío un 51% de probabilidad de reducir la duración canalizada de tus siguientes Misiles Arcanos $S1 s, reduce el coste de maná un $s3% y se dispararán misiles cada 0.5 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9178,
+        "name" : "Capa centelleante",
+        "icon" : "spell_arcane_prismaticcloak",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Reduce el daño recibido un 2% y reduce el tiempo de desvanecimiento de tu Invisibilidad 1 s."
+        }, {
+          "description" : "Reduce el daño recibido un 4% y reduce el tiempo de desvanecimiento de tu Invisibilidad 2 s."
+        }, {
+          "description" : "Reduce el daño recibido un 6% y reduce el tiempo de desvanecimiento de tu Invisibilidad 3 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9142,
+        "name" : "Polimorfia mejorada",
+        "icon" : "spell_nature_polymorph",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Cuando un objetivo al que has lanzado polimorfia recibe daño, el objetivo queda aturdido durante 1.5 s. Este efecto no puede tener lugar más de una vez cada 10 s."
+        }, {
+          "description" : "Cuando un objetivo al que has lanzado polimorfia recibe daño, el objetivo queda aturdido durante 3 s. Este efecto no puede tener lugar más de una vez cada 10 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10733,
+        "name" : "Tácticas Arcanas",
+        "icon" : "spell_arcane_arcanetactics",
+        "x" : 1,
+        "y" : 3,
+        "req" : 9174,
+        "ranks" : [ {
+          "description" : "Aumenta un 3% el daño de todos los miembros de la banda o grupo en un radio de 100 m."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9188,
+        "name" : "Absorción de encantador",
+        "icon" : "ability_mage_incantersabsorbtion",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Cuando tu Escudo de maná o Resguardo del mago absorben daño, tu daño con hechizos aumenta un 10% de la cantidad absorbida durante 10 s. Además, cuando se destruye tu Escudo de maná, se repele 12 m a todos los enemigos en un radio de 6 m."
+        }, {
+          "description" : "Cuando tu Escudo de maná o Resguardo del mago absorben daño, tu daño con hechizos aumenta un 20% de la cantidad absorbida durante 10 s. Además, cuando se destruye tu Escudo de maná, se repele 12 m a todos los enemigos en un radio de 6 m."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11825,
+        "name" : "Deflagración Arcana mejorada",
+        "icon" : "spell_nature_wispsplode",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización global de tu hechizo Explosión Arcana 0.25 s y reduce la amenaza generada un 40%."
+        }, {
+          "description" : "Reduce el tiempo de reutilización global de tu hechizo Explosión Arcana 0.5 s y reduce la amenaza generada un 80%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9180,
+        "name" : "Potencia Arcana",
+        "icon" : "spell_arcane_arcanepotency",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Aumenta la probabilidad de golpe crítico de tus dos siguientes hechizos dañinos un 7% tras ganar Lanzamiento libre o Presencia mental."
+        }, {
+          "description" : "Aumenta la probabilidad de golpe crítico de tus dos siguientes hechizos dañinos un 15% tras ganar Lanzamiento libre o Presencia mental."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9196,
+        "name" : "Ralentizar",
+        "icon" : "spell_nature_slow",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "12% de maná base",
+          "range" : "35 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "description" : "Reduce la velocidad de movimiento del objetivo un 60%, aumenta el tiempo entre los ataques a distancia un 60% y aumenta el tiempo de lanzamiento un 30%. Dura 15 s. Ralentizar solo puede estar activo en un único objetivo a la vez."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11367,
+        "name" : "Vórtice abisal",
+        "icon" : "spell_arcane_blast",
+        "x" : 2,
+        "y" : 4,
+        "req" : 9196,
+        "ranks" : [ {
+          "description" : "Da a tu hechizo Explosión Arcana un 50% de probabilidad de aplicar el hechizo Ralentizar a cualquier objetivo al que dañe si ningún objetivo está afectado actualmente por Ralentizar."
+        }, {
+          "description" : "Da a tu hechizo Explosión Arcana un 100% de probabilidad de aplicar el hechizo Ralentizar a cualquier objetivo al que dañe si ningún objetivo está afectado actualmente por Ralentizar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10578,
+        "name" : "Enfocar magia",
+        "icon" : "spell_arcane_studentofmagic",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "cost" : "6% de maná base",
+          "range" : "30 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "description" : "Aumenta la probabilidad del objetivo de asestar un golpe crítico con hechizos un 3% durante 30 min. Cuando el objetivo asesta un golpe crítico, aumenta tu probabilidad de asestar golpes críticos con hechizos un 3% durante 10 s. No se puede lanzar sobre sí mismo. Límite de 1 objetivo."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9194,
+        "name" : "Gema de maná mejorada",
+        "icon" : "inv_misc_gem_emerald_01",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "El maná que obtengas con tu gema de maná también aumenta tu poder con hechizos un 1% de tu maná máximo durante 10 s."
+        }, {
+          "description" : "El maná que obtengas con tu gema de maná también aumenta tu poder con hechizos un 2% de tu maná máximo durante 10 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9186,
+        "name" : "Poder Arcano",
+        "icon" : "spell_nature_lightning",
+        "x" : 1,
+        "y" : 6,
+        "req" : 9196,
+        "ranks" : [ {
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 2 min.",
+          "description" : "Cuando se activa, infliges un 20% más de daño con hechizos pero lanzar los hechizos cuesta un 10% más de maná. Este efecto dura 15 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Fuego",
+      "icon" : "spell_fire_firebolt02",
+      "backgroundFile" : "MageFire",
+      "overlayColor" : "#ff7f00",
+      "description" : "Prende a los enemigos con bolas de fuego y con el aliento de los dragones.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 11366,
+        "name" : "Piroexplosión",
+        "icon" : "spell_fire_fireball02",
+        "cost" : "17% de maná base",
+        "range" : "40 yd range",
+        "castTime" : "Lanzamiento de 5 seg.",
+        "reagents" : [ ],
+        "description" : "Lanza una inmensa roca ígnea que inflige 1278-1593 p. de daño de Fuego y 820 p. de daño de Fuego extra durante 12 s.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 84668,
+        "name" : "Especialización en Fuego",
+        "icon" : "spell_fire_fire",
+        "reagents" : [ ],
+        "description" : "Aumenta un 25% el daño de tus hechizos de Fuego.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76595,
+        "name" : "Quemadura relámpago",
+        "icon" : "spell_fire_selfdestruct",
+        "reagents" : [ ],
+        "description" : "Aumenta el daño infligido por tus efectos de daño de Fuego periódicos un 20%. Cada punto de maestría aumenta el daño periódico infligido un 2.5% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10545,
+        "name" : "Maestro de los elementos",
+        "icon" : "spell_fire_masterofelements",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Tus golpes críticos de hechizos te devuelven el 15% de su coste de maná base."
+        }, {
+          "description" : "Tus golpes críticos de hechizos te devuelven el 30% de su coste de maná base."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10531,
+        "name" : "Alma ardiente",
+        "icon" : "spell_burningsoul",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Reduce un 23% el tiempo de lanzamiento perdido al recibir ataques dañinos."
+        }, {
+          "description" : "Reduce un 46% el tiempo de lanzamiento perdido al recibir ataques dañinos."
+        }, {
+          "description" : "Reduce un 70% el tiempo de lanzamiento perdido al recibir ataques dañinos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10523,
+        "name" : "Explosión de Fuego mejorada",
+        "icon" : "spell_fire_fireball",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta la probabilidad de golpe crítico de tu hechizo Explosión de Fuego un 4% y aumenta su alcance 5 m."
+        }, {
+          "description" : "Aumenta la probabilidad de golpe crítico de tu hechizo Explosión de Fuego un 8% y aumenta su alcance 10 m."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10529,
+        "name" : "Ignición",
+        "icon" : "spell_fire_incinerate",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Los golpes críticos de tus hechizos de daño de Fuego provocan que el objetivo arda y reciba un 13% adicional del daño durante 4 s."
+        }, {
+          "description" : "Los golpes críticos de tus hechizos de daño de Fuego provocan que el objetivo arda y reciba un 26% adicional del daño durante 4 s."
+        }, {
+          "description" : "Los golpes críticos de tus hechizos de daño de Fuego provocan que el objetivo arda y reciba un 40% adicional del daño durante 4 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11434,
+        "name" : "Poder de Fuego",
+        "icon" : "spell_fire_immolation",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta un 1% el daño de tus hechizos de Fuego y da a tu Orbe de Fuego un 33% de probabilidad de explotar e infligir 1033-1214 p. de daño cuando se agote."
+        }, {
+          "description" : "Aumenta un 2% el daño de tus hechizos de Fuego y da a tu Orbe de Fuego un 66% de probabilidad de explotar e infligir 1033-1214 p. de daño cuando se agote."
+        }, {
+          "description" : "Aumenta un 3% el daño de tus hechizos de Fuego y da a tu Orbe de Fuego un 100% de probabilidad de explotar e infligir 1033-1214 p. de daño cuando se agote."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10555,
+        "name" : "Velocidad llameante",
+        "icon" : "spell_fire_burningspeed",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Te da un 5% de probabilidad de aumentar tu velocidad de movimiento un 50% y de eliminar todos los efectos que evitan el movimiento al recibir un golpe en un ataque cuerpo a cuerpo o a distancia. El efecto dura 8 s."
+        }, {
+          "description" : "Te da un 10% de probabilidad de aumentar tu velocidad de movimiento un 50% y de eliminar todos los efectos que evitan el movimiento al recibir un golpe en un ataque cuerpo a cuerpo o a distancia. El efecto dura 8 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10537,
+        "name" : "Impacto",
+        "icon" : "spell_fire_meteorstorm",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Da a tus hechizos dañinos un 5% de probabilidad de reiniciar el tiempo de reutilización de Explosión de Fuego y de hacer que la siguiente Explosión de Fuego aturda al objetivo durante 2 s y propague todos los efectos de daño en el tiempo a todos los enemigos cercanos en un radio de 12 m."
+        }, {
+          "description" : "Da a tus hechizos dañinos un 10% de probabilidad de reiniciar el tiempo de reutilización de Explosión de Fuego y de hacer que la siguiente Explosión de Fuego aturda al objetivo durante 2 s y propague todos los efectos de daño en el tiempo a todos los enemigos cercanos en un radio de 12 m."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11433,
+        "name" : "Cauterizar",
+        "icon" : "spell_fire_rune",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Tienes un 50% de probabilidad de que un ataque que normalmente te mataría te otorgue hasta un 40% de tu salud máxima. Sin embargo, quemarás un 12% de tu salud máxima cada 1.50 s durante los siguientes 6 s. Este efecto solo ocurre una vez por minuto."
+        }, {
+          "description" : "Tienes un 100% de probabilidad de que un ataque que normalmente te mataría te otorgue hasta un 40% de tu salud máxima. Sin embargo, quemarás un 12% de tu salud máxima cada 1.50 s durante los siguientes 6 s. Este efecto solo ocurre una vez por minuto."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10551,
+        "name" : "Ola explosiva",
+        "icon" : "spell_holy_excorcism_02",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "7% de maná base",
+          "range" : "40 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 15 seg.",
+          "description" : "Una ola de llamas irradia hacia el exterior de la ubicación objetivo, lo que inflige 775-912 p. de daño de Fuego a todos los enemigos atrapados en el interior de la explosión y los ralentiza un 70% durante 3 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10573,
+        "name" : "Buena racha",
+        "icon" : "ability_mage_hotstreak",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Tus hechizos ya no activan Misiles Arcanos. En su lugar, tus golpes críticos con Bola de Fuego, Descarga de Pirofrío, Agostar, Piroexplosión o Explosión de Fuego, tienen una probabilidad de que el próximo lanzamiento de Piroexplosión en 15 s sea instantáneo y no cueste maná."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10547,
+        "name" : "Agostar mejorado",
+        "icon" : "spell_fire_soulburn",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Reduce el coste de maná de tu hechizo Agostar un 50%."
+        }, {
+          "description" : "Reduce el coste de maná de tu hechizo Agostar un 100%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10543,
+        "name" : "Escudos de arrabio",
+        "icon" : "spell_fire_firearmor",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Reduce 1 s el tiempo de utilización global de tu hechizo Resguardo del mago y tu Velocidad llameante también elimina todos los efectos de reducción del movimiento, además de activarse cuando Resguardo del mago se disipa con la absorción de daño."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10561,
+        "name" : "Combustión",
+        "icon" : "spell_fire_sealoffire",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "range" : "40 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 2 min.",
+          "description" : "Combina tus efectos de Fuego periódicos en un objetivo enemigo, pero no los consume, lo que inflige al instante 894-1053 p. de daño de Fuego por golpe crítico y crea un nuevo efecto periódico que dura 10 s e inflige daño por tiempo igual a la suma de los efectos combinados."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12121,
+        "name" : "Buena racha mejorado",
+        "icon" : "ability_mage_hotstreak",
+        "x" : 2,
+        "y" : 3,
+        "req" : 10573,
+        "ranks" : [ {
+          "description" : "Siempre que asestes 2 golpes críticos no periódicos seguidos con tus hechizos Bola de Fuego, Descarga de Pirofrío, Agostar, Piroexplosión o Explosión de Fuego, tienes un 50% de probabilidad de activar tu efecto Buena racha."
+        }, {
+          "description" : "Siempre que asestes 2 golpes críticos no periódicos seguidos con tus hechizos Bola de Fuego, Descarga de Pirofrío, Agostar, Piroexplosión o Explosión de Fuego, tienes un 100% de probabilidad de activar tu efecto Buena racha."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11431,
+        "name" : "Acelerador de ignición",
+        "icon" : "ability_mage_firestarter",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Tu Armadura de arrabio te permite lanzar el hechizo Agostar mientras estás en movimiento en lugar de reducir la probabilidad de que te asesten un golpe crítico."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10734,
+        "name" : "Fogonazo mejorado",
+        "icon" : "spell_fire_selfdestruct",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de lanzamiento de tu hechizo Fogonazo un 50% y te da un 50% de probabilidad de que tu siguiente hechizo Ola explosiva también active Fogonazo en la misma ubicación si la Ola explosiva afecta a dos o más objetivos."
+        }, {
+          "description" : "Reduce el tiempo de lanzamiento de tu hechizo Fogonazo un 100% y te da un 100% de probabilidad de que tu siguiente hechizo Ola explosiva también active Fogonazo en la misma ubicación si la Ola explosiva afecta a dos o más objetivos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10571,
+        "name" : "Aliento de dragón",
+        "icon" : "inv_misc_head_dragon_01",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "7% de maná base",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 20 seg.",
+          "description" : "Los objetivos situados en un cono frente al taumaturgo reciben 1087-1260 p. de daño de Fuego y quedan desorientados durante 5 s. Cualquier ataque directo que inflija daño reanimará a los objetivos."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10563,
+        "name" : "Furia de arrabio",
+        "icon" : "spell_fire_moltenblood",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Aumenta el daño de todos los hechizos que lances contra objetivos que tengan menos del 35% de salud un 4%."
+        }, {
+          "description" : "Aumenta el daño de todos los hechizos que lances contra objetivos que tengan menos del 35% de salud un 8%."
+        }, {
+          "description" : "Aumenta el daño de todos los hechizos que lances contra objetivos que tengan menos del 35% de salud un 12%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10559,
+        "name" : "Pirómano",
+        "icon" : "spell_fire_burnout",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Aumenta un 5% la celeridad con hechizos si 3 o más objetivos están recibiendo daño de Fuego en el tiempo de tus hechizos."
+        }, {
+          "description" : "Aumenta un 10% la celeridad con hechizos si 3 o más objetivos están recibiendo daño de Fuego en el tiempo de tus hechizos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10541,
+        "name" : "Masa crítica",
+        "icon" : "spell_nature_wispheal",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Tus hechizos Bomba viva y Orbe de llamas infligen un 5% más de daño y tus hechizos Piroexplosión y Agostar tienen un 33% de probabilidad de provocar que tu objetivo sea vulnerable al daño con hechizos, lo que aumenta un 5% la probabilidad de golpe crítico contra ese objetivo y dura 30 s."
+        }, {
+          "description" : "Tus hechizos Bomba viva y Orbe de llamas infligen un 10% más de daño y tus hechizos Piroexplosión y Agostar tienen un 66% de probabilidad de provocar que tu objetivo sea vulnerable al daño con hechizos, lo que aumenta un 5% la probabilidad de golpe crítico contra ese objetivo y dura 30 s."
+        }, {
+          "description" : "Tus hechizos Bomba viva y Orbe de llamas infligen un 15% más de daño y tus hechizos Piroexplosión y Agostar tienen un 100% de probabilidad de provocar que tu objetivo sea vulnerable al daño con hechizos, lo que aumenta un 5% la probabilidad de golpe crítico contra ese objetivo y dura 30 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10577,
+        "name" : "Bomba viva",
+        "icon" : "ability_mage_livingbomb",
+        "x" : 1,
+        "y" : 6,
+        "req" : 10571,
+        "ranks" : [ {
+          "cost" : "22% de maná base",
+          "range" : "40 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "description" : "El objetivo se convierte en una bomba viva y recibe 1532 p. de daño de Fuego durante 12 s. Después de 12 s el objetivo explota e inflige 383 p. de daño de Fuego a un máximo de 3 enemigos en un radio de 10 m. Límite de 3 objetivos."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Escarcha",
+      "icon" : "spell_frost_frostbolt02",
+      "backgroundFile" : "MageFrost",
+      "overlayColor" : "#4c99ff",
+      "description" : "Congela a los enemigos en el sitio y los hace añicos con magia de Escarcha.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 31687,
+        "name" : "Invocar elemental de agua",
+        "icon" : "spell_frost_summonwaterelemental_2",
+        "cost" : "16% de maná base",
+        "castTime" : "Lanzamiento instantáneo",
+        "cooldown" : "Reutilización de 3 min.",
+        "reagents" : [ ],
+        "description" : "Invoca un elemental de agua que lucha por el taumaturgo.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 84669,
+        "name" : "Especialización en Escarcha",
+        "icon" : "spell_fire_bluefire",
+        "reagents" : [ ],
+        "description" : "Aumenta el daño de tus hechizos de Escarcha un 25%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76613,
+        "name" : "Abrasión de Escarcha",
+        "icon" : "spell_frost_frostarmor",
+        "reagents" : [ ],
+        "description" : "Todos tus hechizos infligen un 20% de daño extra contra objetivos congelados. Cada punto de maestría aumenta el daño un 2.5% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9862,
+        "name" : "Escarcha temprana",
+        "icon" : "spell_frost_chillingbolt",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de lanzamiento de tu hechizo Descarga de Escarcha 0.30 s. Este efecto queda inactivo durante 15 s después de usarlo."
+        }, {
+          "description" : "Reduce el tiempo de lanzamiento de tu hechizo Descarga de Escarcha 0.6 s. Este efecto queda inactivo durante 15 s después de usarlo."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11157,
+        "name" : "Hielo penetrante",
+        "icon" : "spell_frost_frostbolt",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta un 1% la probabilidad de golpe crítico de tus hechizos."
+        }, {
+          "description" : "Aumenta un 2% la probabilidad de golpe crítico de tus hechizos."
+        }, {
+          "description" : "Aumenta un 3% la probabilidad de golpe crítico de tus hechizos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11158,
+        "name" : "Trizar",
+        "icon" : "spell_frost_frostshock",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Multiplica por 2 la probabilidad de golpe crítico de todos tus hechizos contra objetivos congelados y aumenta un 10% el daño infligido por tu Descarga de Escarcha contra objetivos congelados."
+        }, {
+          "description" : "Multiplica por 3 la probabilidad de golpe crítico de todos tus hechizos contra objetivos congelados y aumenta un 20% el daño infligido por tu Descarga de Escarcha contra objetivos congelados."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9846,
+        "name" : "Témpanos de hielo",
+        "icon" : "spell_frost_icefloes",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de tus hechizos Nova de Escarcha, Cono de frío, Bloque de hielo, Mordedura de frío, Barrera de hielo y Venas heladas un 7%."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tus hechizos Nova de Escarcha, Cono de frío, Bloque de hielo, Mordedura de frío, Barrera de hielo y Venas heladas un 14%."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tus hechizos Nova de Escarcha, Cono de frío, Bloque de hielo, Mordedura de frío, Barrera de hielo y Venas heladas un 20%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11325,
+        "name" : "Cono de frío mejorado",
+        "icon" : "spell_frost_glacier",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Tu Cono de frío también congela a los objetivos durante 2 s."
+        }, {
+          "description" : "Tu Cono de frío también congela a los objetivos durante 4 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11156,
+        "name" : "Escalofrío incisivo",
+        "icon" : "spell_frost_piercingchill",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Tus golpes críticos con Descarga de Escarcha aplicarán el efecto de enfriamiento a 1 objetivo cercano extra."
+        }, {
+          "description" : "Tus golpes críticos con Descarga de Escarcha aplicarán el efecto de enfriamiento a 2 objetivos cercanos extra."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9854,
+        "name" : "Escarcha permanente",
+        "icon" : "spell_frost_wisp",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Tus efectos de enfriamiento reducen un 4% extra la velocidad del objetivo y un 3% la sanación recibida del objetivo. Además, cada vez que infliges daño con hechizos, se sana a tu elemental de agua un 5% de la cantidad infligida."
+        }, {
+          "description" : "Tus efectos de enfriamiento reducen un 7% extra la velocidad del objetivo y un 7% la sanación recibida del objetivo. Además, cada vez que infliges daño con hechizos, se sana a tu elemental de agua un 10% de la cantidad infligida."
+        }, {
+          "description" : "Tus efectos de enfriamiento reducen un 10% extra la velocidad del objetivo y un 10% la sanación recibida del objetivo. Además, cada vez que infliges daño con hechizos, se sana a tu elemental de agua un 15% de la cantidad infligida."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9860,
+        "name" : "Fragmentos de hielo",
+        "icon" : "spell_frost_iceshards",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Añade un efecto de enfriamiento al hechizo Ventisca. Este efecto disminuye un 25% la velocidad de movimiento. Dura 2 s. Además, aumenta el alcance de tu hechizo Lanza de hielo 2 m."
+        }, {
+          "description" : "Añade un efecto de enfriamiento al hechizo Ventisca. Este efecto disminuye un 40% la velocidad de movimiento. Dura 1.50 s. Además, aumenta el alcance de tu hechizo Lanza de hielo 5 m."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9858,
+        "name" : "Venas heladas",
+        "icon" : "spell_frost_coldhearted",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "3% de maná base",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 3 min.",
+          "description" : "Acelera tu lanzamiento de hechizos, aumenta la velocidad con la que lanzas hechizos un 20% y reduce el retraso sufrido por los ataques dañinos mientras lanzas hechizos un 100%. Dura 20 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9876,
+        "name" : "Dedos de Escarcha",
+        "icon" : "ability_mage_wintersgrasp",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Da a tus efectos de enfriamiento un 7% de probabilidad de otorgarte el efecto Dedos de Escarcha, lo que provoca que tu próximo hechizo Lanza de hielo o Congelación profunda actúe como si tu objetivo estuviese congelado. Dedos de Escarcha puede acumular hasta 2 cargas y dura 15 s."
+        }, {
+          "description" : "Da a tus efectos de enfriamiento un 14% de probabilidad de otorgarte el efecto Dedos de Escarcha, lo que provoca que tu próximo hechizo Lanza de hielo o Congelación profunda actúe como si tu objetivo estuviese congelado. Dedos de Escarcha puede acumular hasta 2 cargas y dura 15 s."
+        }, {
+          "description" : "Da a tus efectos de enfriamiento un 20% de probabilidad de otorgarte el efecto Dedos de Escarcha, lo que provoca que tu próximo hechizo Lanza de hielo o Congelación profunda actúe como si tu objetivo estuviese congelado. Dedos de Escarcha puede acumular hasta 2 cargas y dura 15 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11371,
+        "name" : "Congelar mejorado",
+        "icon" : "spell_frost_summonwaterelemental",
+        "x" : 3,
+        "y" : 2,
+        "req" : 9876,
+        "ranks" : [ {
+          "description" : "Da al hechizo Congelar de tu elemental de agua un 33% de probabilidad de otorgar 2 cargas de Dedos de Escarcha."
+        }, {
+          "description" : "Da al hechizo Congelar de tu elemental de agua un 66% de probabilidad de otorgar 2 cargas de Dedos de Escarcha."
+        }, {
+          "description" : "Da al hechizo Congelar de tu elemental de agua un 100% de probabilidad de otorgar 2 cargas de Dedos de Escarcha."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9894,
+        "name" : "Invierno duradero",
+        "icon" : "spell_frost_arcticwinds",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Reduce el coste de maná de todos tus hechizos un 3%. Además, tu hechizo Descarga de Escarcha tiene un 33% de probabilidad de otorgar hasta a 10 miembros de tu grupo o banda una regeneración de maná equivalente al 1% de su maná máximo durante 10 s."
+        }, {
+          "description" : "Reduce el coste de maná de todos tus hechizos un 6%. Además, tu hechizo Descarga de Escarcha tiene un 66% de probabilidad de otorgar hasta a 10 miembros de tu grupo o banda una regeneración de maná equivalente al 1% de su maná máximo durante 10 s."
+        }, {
+          "description" : "Reduce el coste de maná de todos tus hechizos un 10%. Además, tu hechizo Descarga de Escarcha tiene un 100% de probabilidad de otorgar hasta a 10 miembros de tu grupo o banda una regeneración de maná equivalente al 1% de su maná máximo durante 10 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9870,
+        "name" : "Mordedura de frío",
+        "icon" : "spell_frost_wizardmark",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 8 min.",
+          "description" : "Cuando se activa, este hechizo elimina el tiempo de reutilización de todos los hechizos de Escarcha que hayas lanzado recientemente."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9890,
+        "name" : "Congelación cerebral",
+        "icon" : "ability_mage_brainfreeze",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Tus hechizos ya no activan Misiles Arcanos. En su lugar, tus hechizos de daño de Escarcha con efectos escalofriantes tienen un 5% de probabilidad de provocar que tu siguiente hechizo Bola de Fuego o Descarga de Pirofrío sea de lanzamiento instantáneo y que no cueste maná. Cuando Descarga de Pirofrío es instantáneo, puede beneficiarse de Dedos de Escarcha. Descarga de Pirofrío no puede activar Congelación cerebral."
+        }, {
+          "description" : "Tus hechizos ya no activan Misiles Arcanos. En su lugar, tus hechizos de daño de Escarcha con efectos escalofriantes tienen un 10% de probabilidad de provocar que tu siguiente hechizo Bola de Fuego o Descarga de Pirofrío sea de lanzamiento instantáneo y que no cueste maná. Cuando Descarga de Pirofrío es instantáneo, puede beneficiarse de Dedos de Escarcha. Descarga de Pirofrío no puede activar Congelación cerebral."
+        }, {
+          "description" : "Tus hechizos ya no activan Misiles Arcanos. En su lugar, tus hechizos de daño de Escarcha con efectos escalofriantes tienen un 15% de probabilidad de provocar que tu siguiente hechizo Bola de Fuego o Descarga de Pirofrío sea de lanzamiento instantáneo y que no cueste maná. Cuando Descarga de Pirofrío es instantáneo, puede beneficiarse de Dedos de Escarcha. Descarga de Pirofrío no puede activar Congelación cerebral."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9880,
+        "name" : "Barrera destrozada",
+        "icon" : "ability_mage_coldasice",
+        "x" : 0,
+        "y" : 4,
+        "req" : 9882,
+        "ranks" : [ {
+          "description" : "Otorga a tu hechizo Barrera de hielo un 100% de probabilidad de congelar a todos los objetivos que se encuentren en un radio de 10 m durante 2 s cuando se destruye."
+        }, {
+          "description" : "Otorga a tu hechizo Barrera de hielo un 100% de probabilidad de congelar a todos los objetivos que se encuentren en un radio de 10 m durante 4 s cuando se destruye."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9882,
+        "name" : "Barrera de hielo",
+        "icon" : "spell_ice_lament",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "21% de maná base",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 30 seg.",
+          "description" : "Te protege instantáneamente con un escudo que absorbe 3373 p. de daño. Dura 1 min. Mientras el escudo esté activo, el daño no retrasará el lanzamiento de hechizos."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11373,
+        "name" : "Barrera reactiva",
+        "icon" : "spell_frost_manarecharge",
+        "x" : 2,
+        "y" : 4,
+        "req" : 9882,
+        "ranks" : [ {
+          "description" : "Da al taumaturgo un 50% de probabilidad de que el hechizo Barrera de hielo se lance automáticamente sin coste de maná al recibir daño que reduzca la vida del taumaturgo a menos del 50%. Este efecto respeta el tiempo de reutilización de Barrera de hielo y comenzará el tiempo de reutilización al activarse."
+        }, {
+          "description" : "Da al taumaturgo un 100% de probabilidad de que el hechizo Barrera de hielo se lance automáticamente sin coste de maná al recibir daño que reduzca la vida del taumaturgo a menos del 50%. Este efecto respeta el tiempo de reutilización de Barrera de hielo y comenzará el tiempo de reutilización al activarse."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11169,
+        "name" : "Orbe de Pirofrío",
+        "icon" : "spell_firefrostorb",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Transforma tu Orbe de llamas en un Orbe de Pirofrío, lo que provoca que tu Orbe de Pirofrío se beneficie de tu Especialización en Escarcha. Además, reduce un 10% extra la velocidad de los objetivos ralentizados por el efecto de enfriamiento de tu Descarga de Pirofrío."
+        }, {
+          "description" : "Tu Orbe de Pirofrío obtiene un efecto de enfriamiento que ralentiza a los objetivos dañados por el Orbe de Pirofrío un 40% durante 4 s. Además, reduce la velocidad de movimiento de los objetivos ralentizados por el efecto de enfriamiento de tu Descarga de Pirofrío un 20% adicional."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9898,
+        "name" : "Congelación profunda",
+        "icon" : "ability_mage_deepfreeze",
+        "x" : 1,
+        "y" : 6,
+        "req" : 9882,
+        "ranks" : [ {
+          "cost" : "9% de maná base",
+          "range" : "35 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 30 seg.",
+          "description" : "Aturde al objetivo durante 5 s. Solo se puede usar en objetivos congelados. Inflige de 1530 a 1859 p. de daño a los objetivos que son inmunes de forma permanente al aturdimiento."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

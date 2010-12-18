@@ -1,0 +1,1050 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 1,
+      "name" : "Guerrero",
+      "powerType" : "RAGE",
+      "powerTypeId" : 1
+    },
+    "talentTrees" : [ {
+      "name" : "Armas",
+      "icon" : "ability_warrior_savageblow",
+      "backgroundFile" : "WarriorArms",
+      "overlayColor" : "#ffb719",
+      "description" : "Un maestro de las armas de dos manos curtido en la batalla, usa la movilidad y los ataques implacables para derribar a sus oponentes.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 12294,
+        "name" : "Golpe mortal",
+        "icon" : "ability_warrior_savageblow",
+        "cost" : "25 ira",
+        "range" : "Rango de ataques C. a C.",
+        "castTime" : "Instantáneo",
+        "cooldown" : "Reutilización de 4,5 seg.",
+        "requires" : "Requiere Arma cuerpo a cuerpo",
+        "reagents" : [ ],
+        "description" : "Un golpe sanguinario que inflige un 80% de daño con arma más 380 p. y hiere al objetivo, lo que reduce la eficacia de cualquier sanación recibida un 10% durante 10 s.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 12712,
+        "name" : "Especialización en armas de dos manos",
+        "icon" : "inv_axe_09",
+        "reagents" : [ ],
+        "description" : "Aumenta un 10% el daño infligido con las armas cuerpo a cuerpo de dos manos.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 12296,
+        "name" : "Control de inquina",
+        "icon" : "ability_warrior_endlessrage",
+        "reagents" : [ ],
+        "description" : "Generas 1 p. de ira cada 3 s y un 25% de ira extra por el daño infligido.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76838,
+        "name" : "Golpe de oportunidad",
+        "icon" : "ability_backstab",
+        "reagents" : [ ],
+        "description" : "Tus ataques cuerpo a cuerpo tienen un 16% de activar al instante un ataque cuerpo a cuerpo extra que inflige un 100% del daño normal. Cada punto de maestría aumenta esta probabilidad un 2% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10134,
+        "name" : "Academia militar",
+        "icon" : "ability_warrior_unrelentingassault",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta el daño de Golpe heroico, Rajar, Ataque de la victoria y Embate un 5%."
+        }, {
+          "description" : "Aumenta el daño de Golpe heroico, Rajar, Ataque de la victoria y Embate un 10%."
+        }, {
+          "description" : "Aumenta el daño de Golpe heroico, Rajar, Ataque de la victoria y Embate un 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11163,
+        "name" : "Vendaje de batalla",
+        "icon" : "inv_misc_bandage_05",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta las sanaciones recibidas un 3% y la eficacia de tus facultades de autosanación un 10% extra."
+        }, {
+          "description" : "Aumenta las sanaciones recibidas un 6% y la eficacia de tus facultades de autosanación un 20% extra."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9664,
+        "name" : "Ataque relámpago",
+        "icon" : "warrior_talent_icon_blitz",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Tu Cargar genera 5 p. de ira adicional y aturde a un objetivo cercano extra."
+        }, {
+          "description" : "Tu Cargar genera 10 p. de ira adicional y aturde a 2 objetivos cercanos extra."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11416,
+        "name" : "Maestría táctica",
+        "icon" : "spell_nature_enchantarmor",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Retienes hasta 25 p. extra de tu ira cuando cambias de Actitud."
+        }, {
+          "description" : "Retienes hasta 50 p. extra de tu ira cuando cambias de Actitud."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8190,
+        "name" : "Segundo aliento",
+        "icon" : "ability_hunter_harass",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Cada vez que recibes un golpe con un efecto de aturdimiento o inmovilizador, generas 10 p. de ira y un 2% de tu salud total durante 10 s."
+        }, {
+          "description" : "Cada vez que recibes un golpe con un efecto de aturdimiento o inmovilizador, generas 20 p. de ira y un 5% de tu salud total durante 10 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8176,
+        "name" : "Heridas profundas",
+        "icon" : "ability_backstab",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Tus golpes críticos hacen sangrar al enemigo e infligen un 16% de tu daño medio de arma cuerpo a cuerpo durante 6 s."
+        }, {
+          "description" : "Tus golpes críticos hacen sangrar al enemigo e infligen un 32% de tu daño medio de arma cuerpo a cuerpo durante 6 s."
+        }, {
+          "description" : "Tus golpes críticos hacen sangrar al enemigo e infligen un 48% de tu daño medio de arma cuerpo a cuerpo durante 6 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8184,
+        "name" : "Tambores de guerra",
+        "icon" : "achievement_bg_winwsg_3-0",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduce un 50% el coste de ira de tu Azote de escudo, Zurrar y gritos que cuesten ira."
+        }, {
+          "description" : "Reduce un 100% el coste de ira de tu Azote de escudo, Zurrar y gritos que cuesten ira."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10138,
+        "name" : "Gusto por la sangre",
+        "icon" : "ability_rogue_hungerforblood",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Aumenta un 20% la probabilidad de golpe crítico de Abrumar. Además, cada vez que tu facultad Desgarrar inflige daño tiene un 33% de probabilidad de permitir el uso de Abrumar durante 9 s. Este efecto no se dará más de una vez cada 5 s."
+        }, {
+          "description" : "Aumenta un 40% la probabilidad de golpe crítico de Abrumar. Además, cada vez que tu facultad Desgarrar inflige daño tiene un 66% de probabilidad de permitir el uso de Abrumar durante 9 s. Este efecto no se dará más de una vez cada 5 s."
+        }, {
+          "description" : "Aumenta un 60% la probabilidad de golpe crítico de Abrumar. Además, cada vez que tu facultad Desgarrar inflige daño tiene un 100% de probabilidad de permitir el uso de Abrumar durante 9 s. Este efecto no se dará más de una vez cada 5 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8192,
+        "name" : "Golpes de barrido",
+        "icon" : "ability_rogue_slicedice",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "30 ira",
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 1 min.",
+          "description" : "Tus ataques cuerpo a cuerpo golpean a un oponente cercano adicional. Dura 10 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10741,
+        "name" : "Empalar",
+        "icon" : "ability_searingarrow",
+        "x" : 2,
+        "y" : 2,
+        "req" : 8176,
+        "ranks" : [ {
+          "description" : "Aumenta un 10% el bonus de daño por golpe crítico de tu Golpe mortal, Embate y Abrumar."
+        }, {
+          "description" : "Aumenta un 20% el bonus de daño por golpe crítico de tu Golpe mortal, Embate y Abrumar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11417,
+        "name" : "Seccionar mejorado",
+        "icon" : "ability_shockwave",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Volver a aplicar Seccionar inmoviliza al objetivo durante 5 s. Este efecto no se puede dar más de una vez cada 60 s."
+        }, {
+          "description" : "Volver a aplicar Seccionar inmoviliza al objetivo durante 5 s. Este efecto no se puede dar más de una vez cada 30 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11418,
+        "name" : "Embate mejorado",
+        "icon" : "ability_warrior_decisivestrike",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de golpe de Embate 0.5 s y aumenta un 10% su daño."
+        }, {
+          "description" : "Reduce el tiempo de golpe de Embate 1 s y aumenta un 20% su daño."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11223,
+        "name" : "Calma mortal",
+        "icon" : "achievement_boss_kingymiron",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 2 min.",
+          "description" : "Durante 10 s, ninguna de tus facultades cuesta ira, pero sigues generando ira. No se puede utilizar durante Ira interna."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9662,
+        "name" : "Frenesí sangriento",
+        "icon" : "ability_warrior_bloodfrenzy",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Tus sangrados provocan que los objetivos reciban un 2% de daño físico y un 15% de daño de sangrado extra. Además, tus ataques automáticos tienen un 5% de probabilidad de generar 20 p. de ira extra."
+        }, {
+          "description" : "Tus sangrados provocan que los objetivos reciban un 4% de daño físico y un 30% de daño de sangrado extra. Además, tus ataques automáticos tienen un 10% de probabilidad de generar 20 p. de ira extra."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10520,
+        "name" : "Corderos al matadero",
+        "icon" : "warrior_talent_icon_lambstotheslaughter",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Tras asestar un Golpe mortal, tus siguientes Ejecutar, Abrumar o Golpe mortal infligirán un 10% más de daño."
+        }, {
+          "description" : "Tras asestar un Golpe mortal, tus siguientes Ejecutar, Abrumar o Golpe mortal infligirán un 20% más de daño."
+        }, {
+          "description" : "Tras asestar un Golpe mortal, tus siguientes Ejecutar, Abrumar o Golpe mortal infligirán un 30% más de daño."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8208,
+        "name" : "Fuerza irresistible",
+        "icon" : "ability_warrior_bullrush",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Tu facultad Cargar ahora se puede usar en combate, pero el tiempo de reutilización de Cargar aumenta 5 s. Tras Cargar, tus próximos Embate o Golpe mortal tienen un 25% extra de probabilidad de infligir un golpe crítico si se usan en 10 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8214,
+        "name" : "Muerte súbita",
+        "icon" : "ability_warrior_improveddisciplines",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Tus golpes cuerpo a cuerpo tienen un 3% de probabilidad de reiniciar el tiempo de reutilización de tu Machaque colosal y conservas 5 p. de ira tras usar Ejecutar."
+        }, {
+          "description" : "Tus golpes cuerpo a cuerpo tienen un 6% de probabilidad de reiniciar el tiempo de reutilización de tu Machaque colosal y conservas 10 p. de ira tras usar Ejecutar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8194,
+        "name" : "Equipo de demolición",
+        "icon" : "ability_warrior_trauma",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Los golpes críticos de tu Golpe mortal tienen un 50% de enfurecerte, lo que aumenta todo el daño que infliges un 5% durante 12 s."
+        }, {
+          "description" : "Los golpes críticos de tu Golpe mortal tienen un 100% de enfurecerte, lo que aumenta todo el daño que infliges un 10% durante 12 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11167,
+        "name" : "Derribar",
+        "icon" : "inv_mace_62",
+        "x" : 2,
+        "y" : 5,
+        "req" : 8208,
+        "ranks" : [ {
+          "cost" : "15 ira",
+          "range" : "Rango de ataques C. a C.",
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 45 seg.",
+          "requires" : "Requiere Arma cuerpo a cuerpo",
+          "description" : "Derriba al objetivo y lo aturde durante 5 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8222,
+        "name" : "Filotormenta",
+        "icon" : "ability_warrior_bladestorm",
+        "x" : 1,
+        "y" : 6,
+        "req" : 8208,
+        "ranks" : [ {
+          "cost" : "25 ira",
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 1,5 min.",
+          "requires" : "Requiere Arma cuerpo a cuerpo",
+          "description" : "Te conviertes en un torbellino de fuerza destructiva y golpeas a todos los objetivos cercanos e infliges un 150% del daño con arma y realizarás un ataque con Torbellino cada 1 s durante 6 s. Mientras estés bajo los efectos de Filotormenta no sentirás piedad, remordimiento o miedo y no podrán detenerte a no ser que te maten o desarmen, pero no podrás utilizar otras facultades."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Furia",
+      "icon" : "ability_warrior_innerrage",
+      "backgroundFile" : "WarriorFury",
+      "overlayColor" : "#ff0000",
+      "description" : "Un violento guerrero que lleva un arma en cada mano; encadena un aluvión de ataques para hacer pedazos a sus oponentes.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 23881,
+        "name" : "Sed de sangre",
+        "icon" : "spell_nature_bloodlust",
+        "cost" : "20 ira",
+        "range" : "Rango de ataques C. a C.",
+        "castTime" : "Instantáneo",
+        "cooldown" : "Reutilización de 3 seg.",
+        "requires" : "Requiere Arma cuerpo a cuerpo",
+        "reagents" : [ ],
+        "description" : "Ataca instantáneamente al objetivo, lo que le inflige 170 p. de daño. Además, los siguientes 3 ataques cuerpo a cuerpo que alcancen al objetivo restaurarán el 0.5% de la salud máxima. Este efecto dura 8 s. El daño se basa en tu poder de ataque.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 29592,
+        "name" : "Precisión",
+        "icon" : "ability_marksmanship",
+        "reagents" : [ ],
+        "description" : "Aumenta tu probabilidad de golpear con tus ataques un 3%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 23588,
+        "name" : "Especialización en doble empuñadura",
+        "icon" : "ability_dualwield",
+        "reagents" : [ ],
+        "description" : "Te permite equipar armas de una mano y de mano izquierda en la mano izquierda. Aumenta un 10% todo el daño físico y un 25% el daño infligido por los ataques con tu arma secundaria.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76856,
+        "name" : "Furia indomable",
+        "icon" : "ability_warrior_endlessrage",
+        "reagents" : [ ],
+        "description" : "Aumenta el beneficio de todas las facultades que provocan o requieren que estés enfurecido un 38%. Cada punto de maestría aumenta los efectos de Enfurecer un 4.70% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9610,
+        "name" : "Manía sangrienta",
+        "icon" : "spell_shadow_summonimp",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Tienes un 10% de probabilidad de regenerar un 1.0% de tu salud total durante 5 s después de haber recibido daño."
+        }, {
+          "description" : "Tienes un 10% de probabilidad de regenerar un 2% de tu salud total durante 5 s después de haber recibido daño."
+        }, {
+          "description" : "Tienes un 10% de probabilidad de regenerar un 3.0% de tu salud total durante 5 s después de haber recibido daño."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9606,
+        "name" : "Trance de batalla",
+        "icon" : "inv_helmet_06",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Los golpes de tus facultades Sed de sangre, Golpe mortal y Embate con escudo tienen un 5% de probabilidad de hacer que tu siguiente ataque especial que cueste más de 5 p. de ira no consuma ira."
+        }, {
+          "description" : "Los golpes de tus facultades Sed de sangre, Golpe mortal y Embate con escudo tienen un 10% de probabilidad de hacer que tu siguiente ataque especial que cueste más de 5 p. de ira no consuma ira."
+        }, {
+          "description" : "Los golpes de tus facultades Sed de sangre, Golpe mortal y Embate con escudo tienen un 15% de probabilidad de hacer que tu siguiente ataque especial que cueste más de 5 p. de ira no consuma ira."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9608,
+        "name" : "Crueldad",
+        "icon" : "ability_rogue_eviscerate",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta la probabilidad de golpe crítico de Sed de sangre, Golpe mortal y Embate con escudo un 5%."
+        }, {
+          "description" : "Aumenta la probabilidad de golpe crítico de Sed de sangre, Golpe mortal y Embate con escudo un 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9644,
+        "name" : "Verdugo",
+        "icon" : "inv_sword_48",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Tus golpes de Ejecutar tienen un 50% de probabilidad de mejorar tu velocidad de ataque cuerpo a cuerpo un 5% durante 9 s. Este efecto se acumula hasta 5 veces."
+        }, {
+          "description" : "Tus golpes de Ejecutar tienen un 100% de probabilidad de mejorar tu velocidad de ataque cuerpo a cuerpo un 5% durante 9 s. Este efecto se acumula hasta 5 veces."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9624,
+        "name" : "Voz retumbante",
+        "icon" : "spell_nature_purge",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de tu Grito de batalla y Grito de orden 15 s y provoca que esas facultades generan 5 p. de ira extra."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tu Grito de batalla y Grito de orden 30 s y provoca que esas facultades generan 10 p. de ira extra."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11415,
+        "name" : "Interrupción brusca",
+        "icon" : "ability_warrior_commandingshout",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Interrumpir con éxito un hechizo con Azote de escudo o Zurrar aumenta tu daño un 5% durante 15 s."
+        }, {
+          "description" : "Interrumpir con éxito un hechizo con Azote de escudo o Zurrar aumenta tu daño un 5% durante 30 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9618,
+        "name" : "Aullido perforador",
+        "icon" : "spell_shadow_deathscream",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "cost" : "10 ira",
+          "castTime" : "Instantáneo",
+          "description" : "Provoca que todos los enemigos en un radio de 10 m queden atontados, reduciendo la velocidad de movimiento un 50% durante 6 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9636,
+        "name" : "Aluvión",
+        "icon" : "ability_ghoulfrenzy",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Aumenta tu velocidad de ataque un 8% en tus 3 próximos golpes después de asestar un golpe crítico cuerpo a cuerpo."
+        }, {
+          "description" : "Aumenta tu velocidad de ataque un 16% en tus 3 próximos golpes después de asestar un golpe crítico cuerpo a cuerpo."
+        }, {
+          "description" : "Aumenta tu velocidad de ataque un 25% en tus 3 próximos golpes después de asestar un golpe crítico cuerpo a cuerpo."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9630,
+        "name" : "Deseo de muerte",
+        "icon" : "spell_shadow_deathpact",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "10 ira",
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 3 min.",
+          "description" : "Cuando está activo te enfureces, lo que aumenta tu daño físico un 20% pero aumenta todo el daño recibido un 5%. Dura 30 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9612,
+        "name" : "Enfurecer",
+        "icon" : "spell_shadow_unholyfrenzy",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Tus golpes cuerpo a cuerpo tienen un 3% de probabilidad de enfurecerte, lo que te otorga un 3% de bonus de daño durante 9 s."
+        }, {
+          "description" : "Tus golpes cuerpo a cuerpo tienen un 6% de probabilidad de enfurecerte, lo que te otorga un 7% de bonus de daño durante 9 s."
+        }, {
+          "description" : "Tus golpes cuerpo a cuerpo tienen un 9% de probabilidad de enfurecerte, lo que te otorga un 10% de bonus de daño durante 9 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11414,
+        "name" : "Muerte a espada",
+        "icon" : "inv_sword_86",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Aumenta un 100% tu probabilidad de parar durante 4 s siempre que alcances un 20% de salud o menos. Este efecto solo ocurre una vez cada 2 min."
+        }, {
+          "description" : "Aumenta un 100% tu probabilidad de parar durante 8 s siempre que alcances un 20% de salud o menos. Este efecto solo ocurre una vez cada 2 min."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11208,
+        "name" : "Arremetida enfurecida",
+        "icon" : "ability_hunter_swiftstrike",
+        "x" : 1,
+        "y" : 3,
+        "req" : 9630,
+        "ranks" : [ {
+          "cost" : "20 ira",
+          "range" : "Rango de ataques C. a C.",
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 6 seg.",
+          "requires" : "Requiere Arma cuerpo a cuerpo",
+          "description" : "Una poderosa arremetida que inflige un 80% de daño con arma de ambas armas cuerpo a cuerpo. Solo se puede utilizar mientras se está enfurecido."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9650,
+        "name" : "Desenfreno",
+        "icon" : "ability_warrior_rampage",
+        "x" : 2,
+        "y" : 3,
+        "req" : 11208,
+        "ranks" : [ {
+          "description" : "Aumenta un 5% la probabilidad de golpe crítico de todos los miembros del grupo o banda en un radio de 100 m. Además, aumenta tu probabilidad de golpe crítico un 2% extra."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9648,
+        "name" : "Furia heroica",
+        "icon" : "warrior_talent_icon_deadlycalm",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 30 seg.",
+          "description" : "Quita todos los efectos inmovilizadores y reinicia el tiempo de reutilización de tu facultad Interceptar."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9634,
+        "name" : "Ataques furiosos",
+        "icon" : "ability_warrior_furiousresolve",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Tus ataques automáticos tienen una probabilidad de reducir toda la sanación realizada al objetivo un 10% durante 10 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9642,
+        "name" : "Cuchilla de carne",
+        "icon" : "warrior_talent_icon_mastercleaver",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Infligir daño con Rajar o Torbellino aumenta un 5% el daño de Rajar y Torbellino durante 10 s. Este efecto se acumula hasta 3 veces."
+        }, {
+          "description" : "Infligir daño con Rajar o Torbellino aumenta un 10% el daño de Rajar y Torbellino durante 10 s. Este efecto se acumula hasta 3 veces."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10743,
+        "name" : "Intensificar ira",
+        "icon" : "warrior_talent_icon_furyintheblood",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de tus facultades Ira rabiosa, Temeridad y Deseo de muerte un 10%."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tus facultades Ira rabiosa, Temeridad y Deseo de muerte un 20%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9654,
+        "name" : "Oleada de sangre",
+        "icon" : "ability_warrior_bloodsurge",
+        "x" : 1,
+        "y" : 5,
+        "req" : 11208,
+        "ranks" : [ {
+          "description" : "Tus golpes de Sed de sangre tienen un 10% de probabilidad de provocar que tu siguiente Embate sea instantáneo y gratuito durante 10 s."
+        }, {
+          "description" : "Tus golpes de Sed de sangre tienen un 20% de probabilidad de provocar que tu siguiente Embate sea instantáneo y gratuito durante 10 s."
+        }, {
+          "description" : "Tus golpes de Sed de sangre tienen un 30% de probabilidad de provocar que tu siguiente Embate sea instantáneo y gratuito durante 10 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10744,
+        "name" : "Hostigador",
+        "icon" : "warrior_talent_icon_skirmisher",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de tu facultad Interceptar 5 s y tu Salto heroico 10 s."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tu facultad Interceptar 10 s y tu Salto heroico 20 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9658,
+        "name" : "Empuñadura de titán",
+        "icon" : "ability_warrior_titansgrip",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "description" : "Te permite equipar hachas, mazas y espadas de dos manos en una mano."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9660,
+        "name" : "Furia enfilada",
+        "icon" : "warrior_talent_icon_singlemindedfury",
+        "x" : 2,
+        "y" : 6,
+        "ranks" : [ {
+          "description" : "Cuando utilizas doble empuñadura con armas de una mano, infliges un 15% de daño extra y golpeas con Embate con ambas armas."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Protección",
+      "icon" : "ability_warrior_defensivestance",
+      "backgroundFile" : "WarriorProtection",
+      "overlayColor" : "#4c7fff",
+      "description" : "Un firme protector que usa un escudo para protegerse a sí mismo y a sus aliados.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : true,
+        "healer" : false,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 23922,
+        "name" : "Embate con escudo",
+        "icon" : "inv_shield_05",
+        "cost" : "20 ira",
+        "range" : "Rango de ataques C. a C.",
+        "castTime" : "Instantáneo",
+        "cooldown" : "Reutilización de 6 seg.",
+        "requires" : "Requiere Escudos",
+        "reagents" : [ ],
+        "description" : "Embiste al objetivo con tu escudo, lo que inflige 1990-2077 p. de daño (en función del poder de ataque) y disipa 1 efecto mágico en el objetivo. También genera una gran cantidad de amenaza.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 29144,
+        "name" : "Centinela",
+        "icon" : "inv_helmet_21",
+        "reagents" : [ ],
+        "description" : "Aumenta tu aguante total un 15% y tu probabilidad de bloqueo un 15%. También generas un 50% de ira adicional al atacar a objetivos que no te tienen seleccionado como objetivo.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 93098,
+        "name" : "Venganza",
+        "icon" : "ability_paladin_shieldofvengeance",
+        "reagents" : [ ],
+        "description" : "Cada vez que recibes daño, ganas un 5% del daño recibido como poder de ataque, hasta un máximo del 10% de tu salud.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76857,
+        "name" : "Bloqueo crítico",
+        "icon" : "ability_warrior_criticalblock",
+        "reagents" : [ ],
+        "description" : "Aumenta tu probabilidad de bloqueo un 12% y tu probabilidad de bloqueo crítico un 12%. Cada punto de maestría aumenta tu probabilidad de bloqueo un 1.5% extra y tu probabilidad de bloqueo crítico un 1.5% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10464,
+        "name" : "Incitar",
+        "icon" : "ability_warrior_incite",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta la probabilidad de golpe crítico de tu Golpe heroico un 5%, y da a tus golpes críticos de Golpe heroico un 33% de probabilidad de que tu siguiente Golpe heroico también aseste un golpe crítico. Estos críticos garantizados no pueden volver a activar el efecto de Incitar."
+        }, {
+          "description" : "Aumenta la probabilidad de golpe crítico de tu Golpe heroico un 10%, y da a tus golpes críticos de Golpe heroico un 66% de probabilidad de que tu siguiente Golpe heroico también aseste un golpe crítico. Estos críticos garantizados no pueden volver a activar el efecto de Incitar."
+        }, {
+          "description" : "Aumenta la probabilidad de golpe crítico de tu Golpe heroico un 15%, y da a tus golpes críticos de Golpe heroico un 100% de probabilidad de que tu siguiente Golpe heroico también aseste un golpe crítico. Estos críticos garantizados no pueden volver a activar el efecto de Incitar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10474,
+        "name" : "Consistencia",
+        "icon" : "spell_holy_devotion",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta tu valor de armadura con objetos un 3%."
+        }, {
+          "description" : "Aumenta tu valor de armadura con objetos un 6%."
+        }, {
+          "description" : "Aumenta tu valor de armadura con objetos un 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10480,
+        "name" : "Sangre y truenos",
+        "icon" : "warrior_talent_icon_bloodandthunder",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Al utilizar Atronar con un objetivo afectado por tu facultad Desgarrar, tienes un 50% de probabilidad de afectar a todos los objetivos con Desgarrar."
+        }, {
+          "description" : "Al utilizar Atronar con un objetivo afectado por tu facultad Desgarrar, tienes un 100% de probabilidad de afectar a todos los objetivos con Desgarrar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10466,
+        "name" : "Especialización en escudos",
+        "icon" : "inv_shield_06",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Generas 5 p. de ira extra cuando bloqueas un ataque. Generas 20 p. de ira extra cuando utilizas Reflejo de hechizos con un ataque mágico."
+        }, {
+          "description" : "Generas 10 p. de ira extra cuando bloqueas un ataque. Generas 40 p. de ira extra cuando utilizas Reflejo de hechizos con un ataque mágico."
+        }, {
+          "description" : "Generas 15 p. de ira extra cuando bloqueas un ataque. Generas 60 p. de ira extra cuando utilizas Reflejo de hechizos con un ataque mágico."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10472,
+        "name" : "Maestría con escudos",
+        "icon" : "ability_warrior_shieldguard",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de tu facultad Bloquear con escudo 10 s, el de Muro de escudo 60 s y el de Reflejar hechizos 1 s."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tu facultad Bloquear con escudo 20 s, el de Muro de escudo 120 s y el de Reflejar hechizos 2 s."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tu facultad Bloquear con escudo 30 s, el de Muro de escudo 180 s y el de Reflejar hechizos 3 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11170,
+        "name" : "Defender el frente",
+        "icon" : "achievement_bg_defendxtowers_av",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Mejora tu probabilidad de golpe crítico y bloqueo crítico un 10% durante 5 s tras realizar una parada con éxito."
+        }, {
+          "description" : "Mejora tu probabilidad de golpe crítico y bloqueo crítico un 10% durante 10 s tras realizar una parada con éxito."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10468,
+        "name" : "Orden de mordaza",
+        "icon" : "ability_warrior_shieldbash",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Da a tu Azote de escudo y Lanzamiento heroico un 50% de probabilidad de silenciar al objetivo durante 3 s. También reduce el tiempo de reutilización de tu Lanzamiento heroico 15 s."
+        }, {
+          "description" : "Da a tu Azote de escudo y Lanzamiento heroico un 100% de probabilidad de silenciar al objetivo durante 3 s. También reduce el tiempo de reutilización de tu Lanzamiento heroico 30 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10482,
+        "name" : "Última carga",
+        "icon" : "spell_holy_ashestoashes",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 3 min.",
+          "description" : "Te otorga temporalmente el 30% de tu salud máxima durante 20 s. Se pierde la salud cuando se acaba el efecto."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10478,
+        "name" : "Arremetida de conmoción",
+        "icon" : "ability_thunderbolt",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "15 ira",
+          "range" : "Rango de ataques C. a C.",
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 30 seg.",
+          "requires" : "Requiere Arma cuerpo a cuerpo",
+          "description" : "Aturde al enemigo durante 5 s y le inflige 387 p. de daño en base al poder de ataque."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10934,
+        "name" : "Bastión de defensa",
+        "icon" : "ability_defend",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Reduce la probabilidad de que recibas golpes críticos con ataques cuerpo a cuerpo un 3% en actitud defensiva. Además, cuando bloqueas, paras o esquivas un ataque tienes un 10% de probabilidad de enfurecerte, lo que aumenta el daño físico infligido un 5% durante 12 s."
+        }, {
+          "description" : "Reduce la probabilidad de que recibas golpes críticos con ataques cuerpo a cuerpo un 6% en actitud defensiva. Además, cuando bloqueas, paras o esquivas un ataque tienes un 20% de probabilidad de enfurecerte, lo que aumenta el daño físico infligido un 10% durante 12 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10494,
+        "name" : "Belisario",
+        "icon" : "ability_warrior_warbringer",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Tus facultades Cargar, Interceptar e Intervenir ahora se pueden usar en combate y en cualquier actitud. Además, tu facultad Intervenir eliminará todos los efectos de reducción de movimiento."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10470,
+        "name" : "Revancha mejorada",
+        "icon" : "ability_warrior_revenge",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Aumenta el daño de tu facultad Revancha un 30% y hace que Revancha inflija un 50% de daño a un objetivo adicional."
+        }, {
+          "description" : "Aumenta el daño de tu facultad Revancha un 60% y hace que Revancha golpee a un objetivo adicional."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10486,
+        "name" : "Devastar",
+        "icon" : "inv_sword_11",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "15 ira",
+          "range" : "Rango de ataques C. a C.",
+          "castTime" : "Instantáneo",
+          "requires" : "Requiere Escudos",
+          "description" : "Hiende la armadura del objetivo, lo que provoca el efecto de Hender armadura. Además inflige un 109% de daño con arma más 302 p. en cada aplicación de Hender armadura sobre el objetivo. El efecto de Hender armadura se puede acumular hasta 3 veces."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11217,
+        "name" : "Victoria inminente",
+        "icon" : "ability_warrior_devastate",
+        "x" : 3,
+        "y" : 3,
+        "req" : 10486,
+        "ranks" : [ {
+          "description" : "Usar Devastar con un objetivo con un 20% de salud o menos tiene un 25% de probabilidad de permitirte utilizar Ataque de la victoria, pero ese Ataque de la victoria solo sana un 5% de tu salud."
+        }, {
+          "description" : "Usar Devastar con un objetivo con un 20% de salud o menos tiene un 50% de probabilidad de permitirte utilizar Ataque de la victoria, pero ese Ataque de la victoria solo sana un 5% de tu salud."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10488,
+        "name" : "Atronado",
+        "icon" : "warrior_talent_icon_thunderstruck",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Aumenta un 3% el daño de tu Desgarrar, Rajar y Atronar. Además, tu Atronar aumenta un 5% el daño de tu siguiente Ola de choque. Se acumula hasta 3 veces."
+        }, {
+          "description" : "Aumenta un 6% el daño de tu Desgarrar, Rajar y Atronar. Además, tu Atronar aumenta un 10% el daño de tu siguiente Ola de choque. Se acumula hasta 3 veces."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10492,
+        "name" : "Vigilancia",
+        "icon" : "ability_warrior_vigilance",
+        "x" : 1,
+        "y" : 4,
+        "req" : 10478,
+        "ranks" : [ {
+          "range" : "30 yd range",
+          "castTime" : "Instantáneo",
+          "description" : "Enfoca tu mirada protectora en un objetivo de grupo o banda. Cada vez que recibe un impacto de un ataque, tu tiempo de reutilización de Provocar se reinicia y obtienes Venganza como si te infligiesen un 20% del daño a ti. Dura 30 min. Este efecto solo puede estar activo sobre un objetivo cada vez."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10484,
+        "name" : "Repercusiones serias",
+        "icon" : "inv_shield_01",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Mientras tu Bloqueo con escudo está activo, tu Embate con escudo golpea con un 50% de daño extra."
+        }, {
+          "description" : "Mientras tu Bloqueo con escudo está activo, tu Embate con escudo golpea con un 100% de daño extra."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10490,
+        "name" : "Salvaguarda",
+        "icon" : "ability_warrior_safeguard",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Reduce el daño recibido por el objetivo de tu facultad Intervenir un 15% durante 6 s."
+        }, {
+          "description" : "Reduce el daño recibido por el objetivo de tu facultad Intervenir un 30% durante 6 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10496,
+        "name" : "Escudo y espada",
+        "icon" : "ability_warrior_swordandboard",
+        "x" : 2,
+        "y" : 5,
+        "req" : 10486,
+        "ranks" : [ {
+          "description" : "Aumenta la probabilidad de golpe crítico de Devastar un 5%. Cuando tus facultades Devastar o Revancha infligen daño, tienen un 10% de probabilidad de reiniciar el tiempo de reutilización de Embate con escudo y de reducir su coste un 100% durante 5 s."
+        }, {
+          "description" : "Aumenta la probabilidad de golpe crítico de Devastar un 10%. Cuando tus facultades Devastar o Revancha infligen daño, tienen un 20% de probabilidad de reiniciar el tiempo de reutilización de Embate con escudo y de reducir su coste un 100% durante 5 s."
+        }, {
+          "description" : "Aumenta la probabilidad de golpe crítico de Devastar un 15%. Cuando tus facultades Devastar o Revancha infligen daño, tienen un 30% de probabilidad de reiniciar el tiempo de reutilización de Embate con escudo y de reducir su coste un 100% durante 5 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10498,
+        "name" : "Ola de choque",
+        "icon" : "ability_warrior_shockwave",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "15 ira",
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 20 seg.",
+          "description" : "Envía una ola de fuerza frente a ti, lo que inflige 387 p. de daño (basado en el poder de ataque) y aturde a todos los objetivos enemigos que se encuentren en un radio de 10 m en un cono frontal durante 4 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

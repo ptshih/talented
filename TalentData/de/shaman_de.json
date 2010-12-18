@@ -1,0 +1,1003 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 7,
+      "name" : "Schamane",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "Elementar",
+      "icon" : "spell_nature_lightning",
+      "backgroundFile" : "ShamanElementalCombat",
+      "overlayColor" : "#cc33cc",
+      "description" : "Ein Zauberwirker, der die zerstörerischen Kräfte der Natur und der Elemente kanalisiert.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 51490,
+        "name" : "Gewitter",
+        "icon" : "spell_shaman_thunderstorm",
+        "castTime" : "Spontanzauber",
+        "cooldown" : "45 Sek. Abklingzeit",
+        "reagents" : [ ],
+        "description" : "Ihr ruft einen Blitzschlag hernieder, der Euch auflädt und bei allen Feinden im Umkreis von 10 Metern Schaden verursacht. Stellt 8% Eures Manas wieder her, alle Feinde erleiden 1421 bis 1616 Naturschaden und werden 20 Meter zurückgestoßen. Dieser Zauber kann genutzt werden, während ein Betäubungseffekt auf Euch wirkt.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 62099,
+        "name" : "Schamanismus",
+        "icon" : "spell_unused2",
+        "reagents" : [ ],
+        "description" : "Eure Zauber 'Blitzschlag', 'Kettenblitzschlag' und 'Lavaeruption' profitieren durch Eure Zauberkraft um 20% mehr und haben eine um 0.5 Sek. verringerte Zauberzeit.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 60188,
+        "name" : "Elementarfuror",
+        "icon" : "spell_fire_volcano",
+        "reagents" : [ ],
+        "description" : "Erhöht den kritischen Schadensbonus Eurer Feuer-, Frost- und Naturzauber sowie des Totems der Verbrennung und des Totems des glühenden Magmas um 100%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77222,
+        "name" : "Elementare Überladung",
+        "icon" : "spell_nature_lightningoverload",
+        "reagents" : [ ],
+        "description" : "Gewährt eine Chance von 16% auf das Auftreten einer Elementaren Überladung. Durch diese Elementare Überladung wird von den Zaubern 'Blitzschlag', 'Kettenblitzschlag' oder 'Lavaeruption' ein zweiter, identischer Zauber ausgelöst, der kostenlos ist, 75% des normalen Schadens verursacht und keine Bedrohung hervorruft. Jeder Punkt Meisterschaft erhöht die Chance auf eine Elementare Überladung um zusätzlich 2%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 11218,
+        "name" : "Scharfsinn",
+        "icon" : "spell_nature_astralrecalgroup",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht die kritische Trefferchance aller Eurer Zauber und Angriffe um 1%."
+        }, {
+          "description" : "Erhöht die kritische Trefferchance aller Eurer Zauber und Angriffe um 2%."
+        }, {
+          "description" : "Erhöht die kritische Trefferchance aller Eurer Zauber und Angriffe um 3%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 564,
+        "name" : "Konvektion",
+        "icon" : "spell_shaman_convection",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Reduziert die Manakosten Eurer Schaden verursachenden Offensivzauber um 5%."
+        }, {
+          "description" : "Reduziert die Manakosten Eurer Schaden verursachenden Offensivzauber um 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 563,
+        "name" : "Erschütterung",
+        "icon" : "spell_fire_fireball",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht den Schaden Eurer Schockzauber sowie Eurer Zauber 'Blitzschlag', 'Kettenblitzschlag', 'Gewitter' und 'Lavaeruption' um 2%."
+        }, {
+          "description" : "Erhöht den Schaden Eurer Schockzauber sowie Eurer Zauber 'Blitzschlag', 'Kettenblitzschlag', 'Gewitter' und 'Lavaeruption' um 4%."
+        }, {
+          "description" : "Erhöht den Schaden Eurer Schockzauber sowie Eurer Zauber 'Blitzschlag', 'Kettenblitzschlag', 'Gewitter' und 'Lavaeruption' um 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 561,
+        "name" : "Ruf der Flamme",
+        "icon" : "spell_fire_immolation",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Erhöht den Schaden Eurer Feuertotems und Eures Zaubers 'Feuernova' um 10% sowie den von Eurem Zauber 'Lavaeruption' verursachten Schaden um 5%."
+        }, {
+          "description" : "Erhöht den Schaden Eurer Feuertotems und Eures Zaubers 'Feuernova' um 20% sowie den von Eurem Zauber 'Lavaeruption' verursachten Schaden um 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1640,
+        "name" : "Schutz der Elemente",
+        "icon" : "spell_nature_spiritarmor",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Verringert den erlittenen Magieschaden um 4%."
+        }, {
+          "description" : "Verringert den erlittenen Magieschaden um 8%."
+        }, {
+          "description" : "Verringert den erlittenen Magieschaden um 12%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 575,
+        "name" : "Nachklingen",
+        "icon" : "spell_frost_frostward",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Verringert die Abklingzeit Eurer Schockzauber sowie Eures Zaubers 'Windstoß' um 0.5 Sek."
+        }, {
+          "description" : "Verringert die Abklingzeit Eurer Schockzauber sowie Eures Zaubers 'Windstoß' um 1 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1685,
+        "name" : "Elementare Präzision",
+        "icon" : "spell_nature_elementalprecision_1",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Erhöht Euren Feuer-, Frost- und Naturschaden um 1% und gewährt Euch Zaubertrefferwertung in Höhe von 33% der Willenskraft, die Ihr durch Gegenstände oder Effekte erhaltet."
+        }, {
+          "description" : "Erhöht Euren Feuer-, Frost- und Naturschaden um 2% und gewährt Euch Zaubertrefferwertung in Höhe von 66% der Willenskraft, die Ihr durch Gegenstände oder Effekte erhaltet."
+        }, {
+          "description" : "Erhöht Euren Feuer-, Frost- und Naturschaden um 3% und gewährt Euch Zaubertrefferwertung in Höhe von 100% der Willenskraft, die Ihr durch Gegenstände oder Effekte erhaltet."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11767,
+        "name" : "Rollender Donner",
+        "icon" : "spell_nature_callstorm",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Wenn Ihr mit Euren Zaubern 'Blitzschlag' oder 'Kettenblitzschlag' Schaden verursacht, während Euer 'Blitzschlagschild' aktiv ist, habt Ihr eine Chance von 30%, 2% Eures Mana zurückzuerhalten und eine zusätzliche Aufladung von 'Blitzschlagschild' zu erzeugen, bis zu einem Maximum von 9 Aufladungen."
+        }, {
+          "description" : "Wenn Ihr mit Euren Zaubern 'Blitzschlag' oder 'Kettenblitzschlag' Schaden verursacht, während Euer 'Blitzschlagschild' aktiv ist, habt Ihr eine Chance von 60%, 2% Eures Mana zurückzuerhalten und eine zusätzliche Aufladung von 'Blitzschlagschild' zu erzeugen, bis zu einem Maximum von 9 Aufladungen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 574,
+        "name" : "Elementarfokus",
+        "icon" : "spell_shadow_manaburn",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Versetzt Euch in einen Freizauberzustand, nachdem Ihr mit einem Feuer-, Frost- oder Naturschadenszauber einen unregelmäßigen kritischen Treffer erzielt habt. Der Freizauberzustand verringert die Manakosten Eurer nächsten 2 Schadens- oder Heilzauber um 40%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1641,
+        "name" : "Elementare Reichweite",
+        "icon" : "spell_nature_stormreach",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Erhöht die Reichweite Eurer Zauber 'Blitzschlag', 'Kettenblitzschlag', 'Feuernova' und 'Lavaeruption' um 5 Meter und erhöht die Reichweite Eurer Schockzauber sowie Eures Totems der Verbrennung um 7 Meter."
+        }, {
+          "description" : "Erhöht die Reichweite Eurer Zauber 'Blitzschlag', 'Kettenblitzschlag', 'Feuernova' und 'Lavaeruption' um 10 Meter und erhöht die Reichweite Eurer Schockzauber sowie Eures Totems der Verbrennung um 15 Meter."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2049,
+        "name" : "Elementarer Schwur",
+        "icon" : "spell_shaman_elementaloath",
+        "x" : 1,
+        "y" : 3,
+        "req" : 574,
+        "ranks" : [ {
+          "description" : "Ist der Freizaubereffekt Eures Talents 'Elementarfokus' aktiv, wird Euer Zauberschaden um 5% erhöht. Zusätzlich wird die kritische Trefferchance aller Gruppen- und Schlachtzugsmitglieder innerhalb von 100 Metern um 3% erhöht."
+        }, {
+          "description" : "Ist der Freizaubereffekt Eures Talents 'Elementarfokus' aktiv, wird Euer Zauberschaden um 10% erhöht. Zusätzlich wird die kritische Trefferchance aller Gruppen- und Schlachtzugsmitglieder innerhalb von 100 Metern um 5% erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2051,
+        "name" : "Lavastrom",
+        "icon" : "spell_shaman_lavaflow",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Erhöht den kritischen Schadensbonus Eures Zaubers 'Lavaeruption' um zusätzlich 6% und den regelmäßigen Schaden Eures Zaubers 'Flammenschock' um 20%. Zusätzlich wird, wenn Euer Zauber 'Flammenschock' gebannt wird, Euer Zaubertempo 6 Sek. lang um 10% erhöht."
+        }, {
+          "description" : "Erhöht den kritischen Schadensbonus Eures Zaubers 'Lavaeruption' um zusätzlich 12% und den regelmäßigen Schaden Eures Zaubers 'Flammenschock' um 40%. Zusätzlich wird, wenn Euer Zauber 'Flammenschock' gebannt wird, Euer Zaubertempo 6 Sek. lang um 20% erhöht."
+        }, {
+          "description" : "Erhöht den kritischen Schadensbonus Eures Zaubers 'Lavaeruption' um zusätzlich 24% und den regelmäßigen Schaden Eures Zaubers 'Flammenschock' um 60%. Zusätzlich wird, wenn Euer Zauber 'Flammenschock' gebannt wird, Euer Zaubertempo 6 Sek. lang um 30% erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11769,
+        "name" : "Entladung",
+        "icon" : "spell_nature_unrelentingstorm",
+        "x" : 0,
+        "y" : 4,
+        "req" : 11767,
+        "ranks" : [ {
+          "description" : "Wenn Ihr über mehr als 3 aktive Aufladungen von 'Blitzschlagschild' verfügt, zehrt Euer Zauber 'Erdschock' alle überzähligen Ladungen auf und fügt dem feindlichen Ziel sofort ihren gesamten Schaden zu."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 573,
+        "name" : "Elementarbeherrschung",
+        "icon" : "spell_nature_wispheal",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Spontanzauber",
+          "cooldown" : "3 Min. Abklingzeit",
+          "description" : "Bei Aktivierung wird Euer nächstes Wirken von 'Blitzschlag', 'Kettenblitzschlag' oder 'Lavaeruption' zu einem Spontanzauber. Zusätzlich wird 15 Sek. lang Euer Feuer-, Frost- und Naturschaden um 15% und Euer Zaubertempo um 20% erhöht."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11768,
+        "name" : "Griff der Erde",
+        "icon" : "spell_nature_stranglevines",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Euer Totem der Erdbindung hat eine Chance von 50%, Ziele 5 Sek. lang festzuwurzeln, wenn es aufgestellt wird."
+        }, {
+          "description" : "Euer Totem der Erdbindung hat eine Chance von 100%, Ziele 5 Sek. lang festzuwurzeln, wenn es aufgestellt wird."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 5565,
+        "name" : "Totemischer Zorn",
+        "icon" : "spell_fire_totemofwrath",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Gewährt Euren Feuertotems die Eigenschaft, die Zaubermacht Eurer Gruppen- und Schlachtzugsmitglieder im Umkreis von 100 Metern um 10% zu erhöhen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11368,
+        "name" : "Rückkopplung",
+        "icon" : "ability_vehicle_electrocharge",
+        "x" : 1,
+        "y" : 5,
+        "req" : 573,
+        "ranks" : [ {
+          "description" : "Eure Zauber 'Blitzschlag' und 'Kettenblitzschlag' verringern die verbleibende Abklingzeit Eures Talents 'Elementarbeherrschung' um 1 Sek."
+        }, {
+          "description" : "Eure Zauber 'Blitzschlag' und 'Kettenblitzschlag' verringern die verbleibende Abklingzeit Eures Talents 'Elementarbeherrschung' um 2 Sek."
+        }, {
+          "description" : "Eure Zauber 'Blitzschlag' und 'Kettenblitzschlag' verringern die verbleibende Abklingzeit Eures Talents 'Elementarbeherrschung' um 3 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 5566,
+        "name" : "Lavasog",
+        "icon" : "spell_shaman_lavasurge",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Gewährt dem regelmäßigen Schaden Eures Zaubers 'Flammenschock' eine Chance von 10%, die Abklingzeit Eures Zaubers 'Lavaeruption' abzuschließen."
+        }, {
+          "description" : "Gewährt dem regelmäßigen Schaden Eures Zaubers 'Flammenschock' eine Chance von 20%, die Abklingzeit Eures Zaubers 'Lavaeruption' abzuschließen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1687,
+        "name" : "Erdbeben",
+        "icon" : "spell_shaman_earthquake",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "60% des Grundmanas",
+          "range" : "35 yd range",
+          "castTime" : "Kanalisiert",
+          "description" : "Ihr beschwört ein Erdbeben im Zielgebiet. Die Erde beginnt zu brechen und fügt Gegnern in einem Radius von 8 Metern alle 1 Sek. 442 körperlichen Schaden zu. Es besteht eine Chance von 10%, dass betroffene Ziele niedergestoßen werden. Hält 8 Sek. lang an."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Verstärkung",
+      "icon" : "spell_nature_lightningshield",
+      "backgroundFile" : "ShamanEnhancement",
+      "overlayColor" : "#4c7fff",
+      "description" : "Ein totemischer Krieger, der seine Feinde mit Waffen bekämpft, die mit Elementarmagie erfüllt wurden.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 60103,
+        "name" : "Lavapeitsche",
+        "icon" : "ability_shaman_lavalash",
+        "cost" : "4% des Grundmanas",
+        "range" : "Nahkampfreichweite",
+        "castTime" : "Sofort",
+        "cooldown" : "10 Sek. Abklingzeit",
+        "requires" : "Benötigt Nahkampfwaffe",
+        "reagents" : [ ],
+        "description" : "Lädt Eure Schildhandwaffe mit Lava auf und verursacht sofort 200% Waffenschaden dieser Waffe. Der Schaden ist um 40% erhöht, wenn Eure Schildhandwaffe mit 'Flammenzunge' verzaubert ist.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 86629,
+        "name" : "Beidhändigkeit",
+        "icon" : "ability_dualwield",
+        "reagents" : [ ],
+        "description" : "Ermöglicht Euch die Verwendung von Einhand- und Schildhandwaffen in der Schildhand. Gestattet es Euch zudem, frontale Nahkampfangriffe zu parieren und erhöht Eure Trefferchance um zusätzliche 6%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 30814,
+        "name" : "Geistige Schnelligkeit",
+        "icon" : "spell_nature_mentalquickness",
+        "reagents" : [ ],
+        "description" : "Erhöht Eure Zaubermacht um einen Betrag, der 50% Eurer Angriffskraft entspricht, und verringert die Manakosten Eurer Spontanzauber um 75%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 51522,
+        "name" : "Urtümliche Weisheit",
+        "icon" : "spell_shaman_spectraltransformation",
+        "reagents" : [ ],
+        "description" : "Eure Nahkampfangriffe haben eine Chance von 40%, dass Ihr sofort 5% Eures Grundmanas gewinnt.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77223,
+        "name" : "Verstärkte Elemente",
+        "icon" : "spell_nature_elementalprecision_2",
+        "reagents" : [ ],
+        "description" : "Erhöht jeglichen verursachten Feuer-, Frost- und Naturschaden um 20%. Jeder Punkt Meisterschaft erhöht den Schaden um zusätzlich 2.5%",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 611,
+        "name" : "Elementarwaffen",
+        "icon" : "spell_fire_flametounge",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht die passiven Boni Eurer Fähigkeiten 'Waffe der Flammenzunge' und 'Waffe der Lebensgeister' um 20%, den Schaden der zusätzlichen Angriffe Eurer 'Waffe des Windzorns' um 20% und die Wirksamkeit der anhaltenden Boni Eurer Fähigkeit 'Elemente entfesseln' um 25%."
+        }, {
+          "description" : "Erhöht die passiven Boni Eurer Fähigkeiten 'Waffe der Flammenzunge' und 'Waffe der Lebensgeister' um 40%, den Schaden der zusätzlichen Angriffe Eurer 'Waffe des Windzorns' um 40% und die Wirksamkeit der anhaltenden Boni Eurer Fähigkeit 'Elemente entfesseln' um 50%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 5560,
+        "name" : "Fokussierte Schläge",
+        "icon" : "spell_shaman_focusedstrikes",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht den von Euren Fähigkeiten 'Urtümlicher Schlag' und 'Sturmschlag' verursachten Schaden um 15%."
+        }, {
+          "description" : "Erhöht den von Euren Fähigkeiten 'Urtümlicher Schlag' und 'Sturmschlag' verursachten Schaden um 30%."
+        }, {
+          "description" : "Erhöht den von Euren Fähigkeiten 'Urtümlicher Schlag' und 'Sturmschlag' verursachten Schaden um 45%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 607,
+        "name" : "Verbesserte Schilde",
+        "icon" : "spell_nature_lightningshield",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht den Schaden der Aufladungen Eures Blitzschlagschilds um 5%, erhöht das durch die Aufladungen Eures Wasserschilds gewonnene Mana um 5% und erhöht den von den Aufladungen Eures Erdschilds geheilten Wert um 5%."
+        }, {
+          "description" : "Erhöht den Schaden der Aufladungen Eures Blitzschlagschilds um 10%, erhöht das durch die Aufladungen Eures Wasserschilds gewonnene Mana um 10% und erhöht den von den Aufladungen Eures Erdschilds geheilten Wert um 10%."
+        }, {
+          "description" : "Erhöht den Schaden der Aufladungen Eures Blitzschlagschilds um 15%, erhöht das durch die Aufladungen Eures Wasserschilds gewonnene Mana um 15% und erhöht den von den Aufladungen Eures Erdschilds geheilten Wert um 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11216,
+        "name" : "Elementarverwüstung",
+        "icon" : "spell_fire_elementaldevastation",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Kritische Treffer Eurer unregelmäßigen Offensivzauber erhöhen 10 Sek. lang die Chance auf einen kritischen Treffer mit Nahkampfangriffen um 3%."
+        }, {
+          "description" : "Kritische Treffer Eurer unregelmäßigen Offensivzauber erhöhen 10 Sek. lang die Chance auf einen kritischen Treffer mit Nahkampfangriffen um 6%."
+        }, {
+          "description" : "Kritische Treffer Eurer unregelmäßigen Offensivzauber erhöhen 10 Sek. lang die Chance auf einen kritischen Treffer mit Nahkampfangriffen um 9%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 602,
+        "name" : "Schlaghagel",
+        "icon" : "ability_ghoulfrenzy",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Nach dem Erzielen eines kritischen Treffers wird Euer Angriffstempo für die nächsten 3 Schwünge um 10% erhöht."
+        }, {
+          "description" : "Nach dem Erzielen eines kritischen Treffers wird Euer Angriffstempo für die nächsten 3 Schwünge um 20% erhöht."
+        }, {
+          "description" : "Nach dem Erzielen eines kritischen Treffers wird Euer Angriffstempo für die nächsten 3 Schwünge um 30% erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 605,
+        "name" : "Schnelligkeit der Ahnen",
+        "icon" : "spell_lifegivingspeed",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Verringert die Zauberzeit Eures Zaubers 'Geisterwolf' um 1 Sek. und erhöht die Bewegungsgeschwindigkeit um 7%. Nicht stapelbar mit anderen Effekten, die das Bewegungstempo erhöhen."
+        }, {
+          "description" : "Verringert die Zauberzeit Eures Zaubers 'Geisterwolf' um 2 Sek. und erhöht die Bewegungsgeschwindigkeit um 15%. Nicht stapelbar mit anderen Effekten, die das Bewegungstempo erhöhen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11432,
+        "name" : "Totemische Reichweite",
+        "icon" : "spell_nature_agitatingtotem",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Erhöht die Reichweite der Effekte Eurer Totems um 15%."
+        }, {
+          "description" : "Erhöht die Reichweite der Effekte Eurer Totems um 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 615,
+        "name" : "Zähigkeit",
+        "icon" : "spell_holy_devotion",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Erhöht Eure Ausdauer um 3% und verringert die Dauer von auf Euch wirkenden bewegungsverlangsamenden Effekten um 10%."
+        }, {
+          "description" : "Erhöht Eure Ausdauer um 7% und verringert die Dauer von auf Euch wirkenden bewegungsverlangsamenden Effekten um 20%."
+        }, {
+          "description" : "Erhöht Eure Ausdauer um 10% und verringert die Dauer von auf Euch wirkenden bewegungsverlangsamenden Effekten um 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 901,
+        "name" : "Sturmschlag",
+        "icon" : "ability_shaman_stormstrike",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "8% des Grundmanas",
+          "range" : "Nahkampfreichweite",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "8 Sek. Abklingzeit",
+          "requires" : "Benötigt Nahkampfwaffe",
+          "description" : "Greift das Ziel sofort mit beiden Waffen an, verursacht 125% Waffenschaden und gewährt 15 Sek. lang eine zusätzliche Chance von 25%, den Feind mit Euren Zaubern 'Blitzschlag', 'Kettenblitzschlag', 'Blitzschild' und 'Erdschock' kritisch zu treffen."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2055,
+        "name" : "Statischer Schock",
+        "icon" : "spell_shaman_staticshock",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Wenn Ihr Eure Fähigkeiten 'Urtümlicher Schlag', 'Sturmschlag' oder 'Lavapeitsche' einsetzt, während Euer Blitzschlagschild aktiv ist, besteht eine Chance von 15%, Schaden in Höhe einer Aufladung Eures Blitzschlagschildes zu verursachen, ohne dass eine Aufladung verbraucht wird."
+        }, {
+          "description" : "Wenn Ihr Eure Fähigkeiten 'Urtümlicher Schlag', 'Sturmschlag' oder 'Lavapeitsche' einsetzt, während Euer Blitzschlagschild aktiv ist, besteht eine Chance von 30%, Schaden in Höhe einer Aufladung Eures Blitzschlagschildes zu verursachen, ohne dass eine Aufladung verbraucht wird."
+        }, {
+          "description" : "Wenn Ihr Eure Fähigkeiten 'Urtümlicher Schlag', 'Sturmschlag' oder 'Lavapeitsche' einsetzt, während Euer Blitzschlagschild aktiv ist, besteht eine Chance von 45%, Schaden in Höhe einer Aufladung Eures Blitzschlagschildes zu verursachen, ohne dass eine Aufladung verbraucht wird."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11220,
+        "name" : "Gefrorene Kraft",
+        "icon" : "spell_fire_bluecano",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Erhöht den Schaden Eurer Zauber 'Blitzschlag', 'Kettenblitzschlag' und 'Lavapeitsche' sowie aller Schockzauber um 5%, wenn das Ziel vom Effekt Eures Frostbrandangriffs betroffen ist. Zusätzlich hat Euer Zauber 'Frostschock' eine Chance von 50%, Ziele 5 Sek. lang an Ort und Stelle festzufrieren, wenn sie sich 15 Meter oder weiter entfernt von Euch befinden."
+        }, {
+          "description" : "Erhöht den Schaden Eurer Zauber 'Blitzschlag', 'Kettenblitzschlag' und 'Lavapeitsche' sowie aller Schockzauber um 10%, wenn das Ziel vom Effekt Eures Frostbrandangriffs betroffen ist. Zusätzlich hat Euer Zauber 'Frostschock' eine Chance von 100%, Ziele 5 Sek. lang an Ort und Stelle festzufrieren, wenn sie sich 15 Meter oder weiter entfernt von Euch befinden."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11770,
+        "name" : "Verbesserte Feuernova",
+        "icon" : "spell_shaman_improvedfirenova",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Erhöht den verursachten Schaden Eures Zaubers 'Feuernova' um 10% und verringert seine Abklingzeit um 2 Sek."
+        }, {
+          "description" : "Erhöht den verursachten Schaden Eures Zaubers 'Feuernova' um 20% und verringert seine Abklingzeit um 4 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2083,
+        "name" : "Sengende Flammen",
+        "icon" : "spell_fire_searingtotem",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Gewährt dem Zauber 'Sengender Blitz' Eures Totems der Verbrennung eine Chance von 33%, sein Ziel in Brand zu setzen und ihm so im Verlauf von 15 Sek. zusätzlich Schaden in Höhe des Trefferschadens von 'Sengender Blitz' zuzufügen. Bis zu 5-mal stapelbar."
+        }, {
+          "description" : "Gewährt dem Zauber 'Sengender Blitz' Eures Totems der Verbrennung eine Chance von 67%, sein Ziel in Brand zu setzen und ihm so im Verlauf von 15 Sek. zusätzlich Schaden in Höhe des Trefferschadens von 'Sengender Blitz' zuzufügen. Bis zu 5-mal stapelbar."
+        }, {
+          "description" : "Gewährt dem Zauber 'Sengender Blitz' Eures Totems der Verbrennung eine Chance von 100%, sein Ziel in Brand zu setzen und ihm so im Verlauf von 15 Sek. zusätzlich Schaden in Höhe des Trefferschadens von 'Sengender Blitz' zuzufügen. Bis zu 5-mal stapelbar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2056,
+        "name" : "Irdische Kraft",
+        "icon" : "spell_nature_earthelemental_totem",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Jeder Puls Eures Totems der Erdbindung hat eine Chance von 50%, jegliche auf Euch oder nahe befreundete Ziele wirkenden Verlangsamungseffekte zu entfernen."
+        }, {
+          "description" : "Jeder Puls Eures Totems der Erdbindung hat eine Chance von 100%, jegliche auf Euch oder nahe befreundete Ziele wirkenden Verlangsamungseffekte zu entfernen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1693,
+        "name" : "Schamanistische Wut",
+        "icon" : "spell_nature_shamanrage",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Sofort",
+          "cooldown" : "1 Min. Abklingzeit",
+          "description" : "Verringert jeglichen erlittenen Schaden um 30% und ermöglicht Euch die kostenlose Nutzung von Fähigkeiten, Totems und Offensivzaubern. Hält 15 Sek. lang an. Diese Fähigkeit kann nicht im betäubten Zustand eingesetzt werden."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1689,
+        "name" : "Entfesselte Wut",
+        "icon" : "spell_nature_unleashedrage",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Erhöht Eure Waffenkunde um 4. Erhöht die Angriffskraft aller Gruppen- und Schlachtzugsmitglieder im Umkreis von 100 Metern um den Schamanen um 5%."
+        }, {
+          "description" : "Erhöht Eure Waffenkunde um 8. Erhöht die Angriffskraft aller Gruppen- und Schlachtzugsmitglieder im Umkreis von 100 Metern um den Schamanen um 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2057,
+        "name" : "Waffe des Mahlstroms",
+        "icon" : "spell_shaman_maelstromweapon",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Wenn Ihr mit einer Nahkampfwaffe Schaden verursacht, besteht eine Chance, dass die Zauberzeit und Manakosten Eures nächsten Heilzaubers oder 'Blitzschlag', 'Kettenblitzschlag', oder 'Verhexen' um 20% verringert werden. Bis zu 5-mal stapelbar. Hält 30 Sek. lang an."
+        }, {
+          "description" : "Wenn Ihr mit einer Nahkampfwaffe Schaden verursacht, besteht eine Chance (höher als bei Rang 1), dass die Zauberzeit und Manakosten Eures nächsten Heilzaubers oder 'Blitzschlag', 'Kettenblitzschlag' oder 'Verhexen' um 20% verringert werden. Bis zu 5-mal stapelbar. Hält 30 Sek. lang an."
+        }, {
+          "description" : "Wenn Ihr mit einer Nahkampfwaffe Schaden verursacht, besteht eine Chance (höher als bei Rang 2), dass die Zauberzeit und Manakosten Eures nächsten Heilzaubers oder 'Blitzschlag', 'Kettenblitzschlag' oder 'Verhexen' um 20% verringert werden. Bis zu 5-mal stapelbar. Hält 30 Sek. lang an."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 5563,
+        "name" : "Verbesserte Lavapeitsche",
+        "icon" : "spell_shaman_improvelavalash",
+        "x" : 2,
+        "y" : 5,
+        "req" : 2083,
+        "ranks" : [ {
+          "description" : "Erhöht den Schaden Eurer Fähigkeit 'Lavapeitsche' um 15%. Zudem wird für jeden auf das Ziel wirkenden Stapel von 'Sengende Flammen' der Schaden von 'Lavapeitsche' um zusätzlich 10% erhöht, die Stapel werden dabei jedoch aufgezehrt."
+        }, {
+          "description" : "Erhöht den Schaden Eurer Fähigkeit 'Lavapeitsche' um 30%. Zudem wird für jeden auf das Ziel wirkenden Stapel von 'Sengende Flammen' der Schaden von 'Lavapeitsche' um zusätzlich 20% erhöht, die Stapel werden dabei jedoch aufgezehrt."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2058,
+        "name" : "Wildgeist",
+        "icon" : "spell_shaman_feralspirit",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "12% des Grundmanas",
+          "range" : "30 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "2 Min. Abklingzeit",
+          "description" : "Beschwört zwei Geisterwölfe, die unter dem Befehl des Schamanen stehen. Hält 30 Sek. lang an."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Wiederherstellung",
+      "icon" : "spell_nature_magicimmunity",
+      "backgroundFile" : "ShamanRestoration",
+      "overlayColor" : "#33cc66",
+      "description" : "Ein Heiler, der die Ahnengeister und die läuternde Kraft des Wassers herbeiruft, um die Wunden seiner Verbündeten zu heilen.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : true,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 974,
+        "name" : "Erdschild",
+        "icon" : "spell_nature_skinofearth",
+        "cost" : "19% des Grundmanas",
+        "range" : "40 yd range",
+        "castTime" : "Spontanzauber",
+        "reagents" : [ ],
+        "description" : "Schützt das Ziel mit einem Erdschild, der die erhöhte Zauberdauer oder verringerte Kanalisierungsdauer durch erlittenen Schaden um 30% verringert und Angriffe das geschützte Ziel um 1586 heilen lässt. Dieser Effekt tritt nur einmal alle paar Sekunden auf. 9 Aufladungen. Hält 10 Min. lang an. Der Erdschild kann immer nur auf einem Ziel gleichzeitig aktiv sein, und auf jedem Ziel kann nur ein Elementarschild aktiv sein.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 16213,
+        "name" : "Läuterung",
+        "icon" : "spell_frost_wizardmark",
+        "reagents" : [ ],
+        "description" : "Erhöht die Wirksamkeit Eurer Heilzauber um 10% und verringert die Zauberzeit Eurer Zauber 'Welle der Heilung' und 'Große Welle der Heilung' um 0.5 Sek.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 95862,
+        "name" : "Meditation",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "Lässt 50% Eurer durch Willenskraft erzeugten Manaregeneration weiterlaufen, während Ihr Euch im Kampf befindet.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77226,
+        "name" : "Tiefe Heilung",
+        "icon" : "spell_nature_healingtouch",
+        "reagents" : [ ],
+        "description" : "Erhöht die Wirksamkeit Eurer direkten Heilzauber um bis zu 20%, basierend auf der aktuellen Gesundheit Eures Ziels (Ziele mit niedriger Gesundheit erhalten mehr Heilung). Jeder Punkt Meisterschaft verstärkt Eure direkten Heilungen um zusätzlich 2.5%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 5568,
+        "name" : "Entschlossenheit der Ahnen",
+        "icon" : "spell_nature_rune",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Verringert Euren während des Wirkens von Zaubern erlittenen Schaden um 5%."
+        }, {
+          "description" : "Verringert Euren während des Wirkens von Zaubern erlittenen Schaden um 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 593,
+        "name" : "Gezeitenfokus",
+        "icon" : "spell_frost_manarecharge",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Verringert die Manakosten Eurer Heilzauber um 2%."
+        }, {
+          "description" : "Verringert die Manakosten Eurer Heilzauber um 4%."
+        }, {
+          "description" : "Verringert die Manakosten Eurer Heilzauber um 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11177,
+        "name" : "Lebensfunke",
+        "icon" : "spell_nature_wispsplodegreen",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht Eure gewirkte Heilung um 2% und Eure erhaltene Heilung um 5%."
+        }, {
+          "description" : "Erhöht Eure gewirkte Heilung um 4% und Eure erhaltene Heilung um 10%."
+        }, {
+          "description" : "Erhöht Eure gewirkte Heilung um 6% und Eure erhaltene Heilung um 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 583,
+        "name" : "Verbesserter Wasserschild",
+        "icon" : "ability_shaman_watershield",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Wenn Ihr mit 'Welle der Heilung', 'Große Welle der Heilung' oder 'Springflut' einen kritischen Effekt erzielt, besteht eine Chance von 50%, dass Ihr sofort Mana gewinnt, als wäre eine Kugel des Wasserschilds verbraucht worden. Wenn Ihr mit 'Heilende Woge' einen kritischen Effekt erzielt, liegt die Chance, diesen Effekt auszulösen, bei 30% und bei 15%, wenn Ihr mit 'Kettenheilung' einen kritischen Effekt erzielt."
+        }, {
+          "description" : "Wenn Ihr mit 'Welle der Heilung', 'Große Welle der Heilung' oder 'Springflut' einen kritischen Effekt erzielt, besteht eine Chance von 100%, dass Ihr sofort Mana gewinnt, als wäre eine Kugel des Wasserschilds verbraucht worden. Wenn Ihr mit 'Heilende Woge' einen kritischen Effekt erzielt, liegt die Chance, diesen Effekt auszulösen, bei 60% und bei 30%, wenn Ihr mit 'Kettenheilung' einen kritischen Effekt erzielt."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 595,
+        "name" : "Totemfokus",
+        "icon" : "spell_nature_moonglow",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Verringert die Manakosten Eurer Totems um 15% und erhöht ihre Dauer um 20%."
+        }, {
+          "description" : "Verringert die Manakosten Eurer Totems um 30% und erhöht ihre Dauer um 40%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 5567,
+        "name" : "Fokussierte Einsicht",
+        "icon" : "spell_shaman_measuredinsight",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Nach dem Wirken eines Schockzaubers werden die Manakosten Eurer nächsten Heilung um 25% der Kosten des Schockzaubers verringert und die Heilwirkung um 10% erhöht."
+        }, {
+          "description" : "Nach dem Wirken eines Schockzaubers werden die Manakosten Eurer nächsten Heilung um 50% der Kosten des Schockzaubers verringert und die Heilwirkung um 20% erhöht."
+        }, {
+          "description" : "Nach dem Wirken eines Schockzaubers werden die Manakosten Eurer nächsten Heilung um 75% der Kosten des Schockzaubers verringert und die Heilwirkung um 30% erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1699,
+        "name" : "Wächter der Natur",
+        "icon" : "spell_nature_natureguardian",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Wenn Ihr einen Angriff erleidet, der Eure Gesundheit unter 30% senkt, wird Eure maximale Gesundheit 10 Sek. lang um 5% erhöht und Eure Bedrohung gegenüber dem Angreifer verringert. 30 Sek. Abklingzeit."
+        }, {
+          "description" : "Wenn Ihr einen Angriff erleidet, der Eure Gesundheit unter 30% senkt, wird Eure maximale Gesundheit 10 Sek. lang um 10% erhöht und Eure Bedrohung gegenüber dem Angreifer verringert. 30 Sek. Abklingzeit."
+        }, {
+          "description" : "Wenn Ihr einen Angriff erleidet, der Eure Gesundheit unter 30% senkt, wird Eure maximale Gesundheit 10 Sek. lang um 15% erhöht und Eure Bedrohung gegenüber dem Angreifer verringert. 30 Sek. Abklingzeit."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 581,
+        "name" : "Heilung der Ahnen",
+        "icon" : "spell_nature_undyingstrength",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Verringert den erlittenen körperlichen Schaden eines Ziels 15 Sek. lang um 5%, nachdem es einen kritischen Effekt durch einen Eurer Heilzauber erhalten hat."
+        }, {
+          "description" : "Verringert den erlittenen körperlichen Schaden eines Ziels 15 Sek. lang um 10%, nachdem es einen kritischen Effekt durch einen Eurer Heilzauber erhalten hat."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 591,
+        "name" : "Schnelligkeit der Natur",
+        "icon" : "spell_nature_ravenform",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Spontanzauber",
+          "cooldown" : "2 Min. Abklingzeit",
+          "description" : "Bei Aktivierung wird Euer nächster Naturzauber mit einer Zauberzeit von weniger als 10 Sek. ein Spontanzauber."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1696,
+        "name" : "Segen der Natur",
+        "icon" : "spell_nature_natureblessing",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Erhöht die Wirksamkeit Eurer direkten Heilung auf Ziele, auf denen 'Erdschild' aktiv ist, um 5%."
+        }, {
+          "description" : "Erhöht die Wirksamkeit Eurer direkten Heilung auf Ziele, auf denen 'Erdschild' aktiv ist, um 10%."
+        }, {
+          "description" : "Erhöht die Wirksamkeit Eurer direkten Heilung auf Ziele, auf denen 'Erdschild' aktiv ist, um 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 588,
+        "name" : "Sanfter Regen",
+        "icon" : "spell_nature_giftofthewaterspirit",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Erhöht den von Eurem Totem des heilenden Flusses geheilten Wert um 25% und Effekt Eures Zaubers 'Heilender Regen' um 15%."
+        }, {
+          "description" : "Erhöht den von Eurem Totem des heilenden Flusses geheilten Wert um 50% und Effekt Eures Zaubers 'Heilender Regen' um 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2084,
+        "name" : "Verbesserte Geistläuterung",
+        "icon" : "ability_shaman_cleansespirit",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Erfüllt Euren Zauber 'Geistläuterung' mit der Macht, auch einen magischen Effekt von seinem Ziel zu entfernen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11435,
+        "name" : "Läuterndes Wasser",
+        "icon" : "spell_nature_regeneration_02",
+        "x" : 3,
+        "y" : 3,
+        "req" : 2084,
+        "ranks" : [ {
+          "description" : "Verringert die Manakosten Eures Zaubers 'Geistläuterung' um 20%. Zudem werden, wenn Euer Zauber 'Geistläuterung' erfolgreich einen schädlichen Effekt entfernt, gleichzeitig 1193 bis 1344 Gesundheit des Ziels wiederhergestellt."
+        }, {
+          "description" : "Verringert die Manakosten Eures Zaubers 'Geistläuterung' um 40%. Zudem werden, wenn Euer Zauber 'Geistläuterung' erfolgreich einen schädlichen Effekt entfernt, gleichzeitig 2386 bis 2687 Gesundheit des Ziels wiederhergestellt."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2061,
+        "name" : "Erwachen der Ahnen",
+        "icon" : "spell_shaman_ancestralawakening",
+        "x" : 0,
+        "y" : 4,
+        "req" : 581,
+        "ranks" : [ {
+          "description" : "Erzielt Ihr mit einem direkten Einzelziel-Heilzauber einen kritischen Effekt, wird ein Ahnengeist beschworen, der sofort das Gruppen- oder Schlachtzugsmitglied mit der geringsten Gesundheit innerhalb von 40 Metern um 10% des von Euch geheilten Wertes heilt."
+        }, {
+          "description" : "Erzielt Ihr mit einem direkten Einzelziel-Heilzauber einen kritischen Effekt, wird ein Ahnengeist beschworen, der sofort das Gruppen- oder Schlachtzugsmitglied mit der geringsten Gesundheit innerhalb von 40 Metern um 20% des von Euch geheilten Wertes heilt."
+        }, {
+          "description" : "Erzielt Ihr mit einem direkten Einzelziel-Heilzauber einen kritischen Effekt, wird ein Ahnengeist beschworen, der sofort das Gruppen- oder Schlachtzugsmitglied mit der geringsten Gesundheit innerhalb von 40 Metern um 30% des von Euch geheilten Wertes heilt."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 590,
+        "name" : "Totem der Manaflut",
+        "icon" : "spell_frost_summonwaterelemental",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Spontanzauber",
+          "cooldown" : "3 Min. Abklingzeit",
+          "description" : "Beschwört 12 Sek. lang ein Totem der Manaflut zu Füßen des Zaubernden, das über 10% seiner Gesundheit verfügt und die Willenskraft von Gruppenmitgliedern in einem Umkreis von 40 Metern um 350% erhöht."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7705,
+        "name" : "Tellurische Ströme",
+        "icon" : "spell_lightning_lightningbolt01",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Durch Eure Anpassung an die Energien der Natur stellt Euer Zauber 'Blitzschlag' Mana in Höhe von 20% seines verursachten Schadens her."
+        }, {
+          "description" : "Durch Eure Anpassung an die Energien der Natur stellt Euer Zauber 'Blitzschlag' Mana in Höhe von 40% seines verursachten Schadens her."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2063,
+        "name" : "Flutwellen",
+        "icon" : "spell_shaman_tidalwaves",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Beim Wirken von 'Kettenheilung' oder 'Springflut' erhaltet Ihr den Effekt 'Flutwellen', der die Zauberzeit Eurer Zauber 'Welle der Heilung' und 'Große Welle der Heilung' um 10% verringert und die Chance auf einen kritischen Effekt Eures Zaubers 'Heilende Woge' um 10% erhöht. Dieser Effekt hat 2 Aufladungen."
+        }, {
+          "description" : "Beim Wirken von 'Kettenheilung' oder 'Springflut' erhaltet Ihr den Effekt 'Flutwellen', der die Zauberzeit Eurer Zauber 'Welle der Heilung' und 'Große Welle der Heilung' um 20% verringert und die Chance auf einen kritischen Effekt Eures Zaubers 'Heilende Woge' um 20% erhöht. Dieser Effekt hat 2 Aufladungen."
+        }, {
+          "description" : "Beim Wirken von 'Kettenheilung' oder 'Springflut' erhaltet Ihr den Effekt 'Flutwellen', der die Zauberzeit Eurer Zauber 'Welle der Heilung' und 'Große Welle der Heilung' um 30% verringert und die Chance auf einen kritischen Effekt Eures Zaubers 'Heilende Woge' um 30% erhöht. Dieser Effekt hat 2 Aufladungen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2060,
+        "name" : "Segen der Ewigen",
+        "icon" : "spell_shaman_blessingofeternals",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Wenn Ihr einen Verbündeten heilt, der über weniger als 35% Gesamtgesundheit verfügt, wird Eure Chance, den Effekt von 'Lebensgeister' auszulösen, der Heilung über Zeit hervorruft, um 40% erhöht."
+        }, {
+          "description" : "Wenn Ihr einen Verbündeten heilt, der über weniger als 35% Gesamtgesundheit verfügt, wird Eure Chance, den Effekt von 'Lebensgeister' auszulösen, der Heilung über Zeit hervorruft, um 80% erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2064,
+        "name" : "Springflut",
+        "icon" : "spell_nature_riptide",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "10% des Grundmanas",
+          "range" : "40 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "6 Sek. Abklingzeit",
+          "description" : "Heilt ein freundliches Ziel um 2140 und im Verlauf von 15 Sek. um weitere 3375 Gesundheit. Euer nächstes Wirken von 'Kettenheilung' innerhalb von 15 Sek., das dieses Ziel als Hauptziel hat, zehrt den Effekt auf, der Heilung über Zeit verursacht, und erhöht den von 'Kettenheilung' geheilten Wert um 25%."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

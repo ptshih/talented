@@ -1,0 +1,1050 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 1,
+      "name" : "Krieger",
+      "powerType" : "RAGE",
+      "powerTypeId" : 1
+    },
+    "talentTrees" : [ {
+      "name" : "Waffen",
+      "icon" : "ability_warrior_savageblow",
+      "backgroundFile" : "WarriorArms",
+      "overlayColor" : "#ffb719",
+      "description" : "Ein kampfgestählter Meister im Kampf mit Zweihandwaffen, der sein Geschick und seine überwältigenden Angriffe nutzt, um seine Gegner niederzuzwingen.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 12294,
+        "name" : "Tödlicher Stoß",
+        "icon" : "ability_warrior_savageblow",
+        "cost" : "25 Wut",
+        "range" : "Nahkampfreichweite",
+        "castTime" : "Sofort",
+        "cooldown" : "4,5 Sek. Abklingzeit",
+        "requires" : "Benötigt Nahkampfwaffe",
+        "reagents" : [ ],
+        "description" : "Ein heimtückischer Stoß, der 80% Waffenschaden plus 380 verursacht und das Ziel verwundet, wodurch seine erhaltene Heilung 10 Sek. lang um 10% verringert wird.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 12712,
+        "name" : "Zweihandwaffenspezialisierung",
+        "icon" : "inv_axe_09",
+        "reagents" : [ ],
+        "description" : "Erhöht den Schaden, den Ihr mit Zweihand-Nahkampfwaffen zufügt, um 10%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 12296,
+        "name" : "Aggressionskontrolle",
+        "icon" : "ability_warrior_endlessrage",
+        "reagents" : [ ],
+        "description" : "Ihr erzeugt alle 3 Sek. 1 Wut und durch verursachten Schaden 25% zusätzliche Wut.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76838,
+        "name" : "Zusätzliche Angriffe",
+        "icon" : "ability_backstab",
+        "reagents" : [ ],
+        "description" : "Gewährt eine Chance von 16%, dass Eure Nahkampfangriffe einen zusätzlichen Nahkampfangriff auslösen, der 100% des normalen Schadens verursacht. Jeder Punkt Meisterschaft erhöht die Chance um zusätzlich 2%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10134,
+        "name" : "Kriegsakademie",
+        "icon" : "ability_warrior_unrelentingassault",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht den verursachten Schaden Eurer Fähigkeiten 'Heldenhafter Stoß', 'Spalten', 'Siegesrausch' und 'Zerschmettern' um 5%."
+        }, {
+          "description" : "Erhöht den verursachten Schaden Eurer Fähigkeiten 'Heldenhafter Stoß', 'Spalten', 'Siegesrausch' und 'Zerschmettern' um 10%."
+        }, {
+          "description" : "Erhöht den verursachten Schaden Eurer Fähigkeiten 'Heldenhafter Stoß', 'Spalten', 'Siegesrausch' und 'Zerschmettern' um 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11163,
+        "name" : "Feldverbandskasten",
+        "icon" : "inv_misc_bandage_05",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht jegliche erhaltene Heilung um 3% und die Wirksamkeit Eurer Selbstheilungseffekte um zusätzlich 10%."
+        }, {
+          "description" : "Erhöht jegliche erhaltene Heilung um 6% und die Wirksamkeit Eurer Selbstheilungseffekte um zusätzlich 20%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9664,
+        "name" : "Blitz",
+        "icon" : "warrior_talent_icon_blitz",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Eure Fähigkeit 'Anstürmen' erzeugt zusätzliche 5 Wut und betäubt ein weiteres nahes Ziel."
+        }, {
+          "description" : "Eure Fähigkeit 'Anstürmen' erzeugt zusätzliche 10 Wut und betäubt weitere 2 nahe Ziele."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11416,
+        "name" : "Taktiker",
+        "icon" : "spell_nature_enchantarmor",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Ihr behaltet bis zu 25 zusätzliche Wut, wenn Ihr die Haltung ändert."
+        }, {
+          "description" : "Ihr behaltet bis zu 50 zusätzliche Wut, wenn Ihr die Haltung ändert."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8190,
+        "name" : "Kräfte sammeln",
+        "icon" : "ability_hunter_harass",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Jedes Mal, wenn Ihr von einem Betäubungs- oder Unbeweglichkeitseffekt getroffen werdet, erzeugt Ihr im Verlauf von 10 Sek. insgesamt 10 Wut und regeneriert 2% Eurer gesamten Gesundheit."
+        }, {
+          "description" : "Jedes Mal, wenn Ihr von einem Betäubungs- oder Unbeweglichkeitseffekt getroffen werdet, erzeugt Ihr im Verlauf von 10 Sek. insgesamt 20 Wut und regeneriert 5% Eurer gesamten Gesundheit."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8176,
+        "name" : "Tiefe Wunden",
+        "icon" : "ability_backstab",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Eure kritischen Treffer lassen das Ziel bluten und verursachen 6 Sek. lang 16% des durchschnittlichen Schadens Eurer Nahkampfwaffe."
+        }, {
+          "description" : "Eure kritischen Treffer lassen das Ziel bluten und verursachen 6 Sek. lang 32% des durchschnittlichen Schadens Eurer Nahkampfwaffe."
+        }, {
+          "description" : "Eure kritischen Treffer lassen das Ziel bluten und verursachen 6 Sek. lang 48% des durchschnittlichen Schadens Eurer Nahkampfwaffe."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8184,
+        "name" : "Trommeln des Krieges",
+        "icon" : "achievement_bg_winwsg_3-0",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Verringert die Wutkosten Eurer Fähigkeiten 'Schildschlag' und 'Zuschlagen' sowie aller Rufe um 50%."
+        }, {
+          "description" : "Verringert die Wutkosten Eurer Fähigkeiten 'Schildschlag' und 'Zuschlagen' sowie aller Rufe um 100%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10138,
+        "name" : "Verlangen nach Blut",
+        "icon" : "ability_rogue_hungerforblood",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Erhöht die kritische Trefferchance Eurer Fähigkeit 'Überwältigen' um 20%. Zudem besteht, wenn Eure Fähigkeit 'Verwunden' Schaden verursacht, eine Chance von 33%, dass 9 Sek. lang Eure Fähigkeit 'Überwältigen' genutzt werden kann. Dieser Effekt kann nur ein Mal alle 5 Sek. auftreten."
+        }, {
+          "description" : "Erhöht die kritische Trefferchance Eurer Fähigkeit 'Überwältigen' um 40%. Zudem besteht, wenn Eure Fähigkeit 'Verwunden' Schaden verursacht, eine Chance von 66%, dass 9 Sek. lang Eure Fähigkeit 'Überwältigen' genutzt werden kann. Dieser Effekt kann nur ein Mal alle 5 Sek. auftreten."
+        }, {
+          "description" : "Erhöht die kritische Trefferchance Eurer Fähigkeit 'Überwältigen' um 60%. Zudem besteht, wenn Eure Fähigkeit 'Verwunden' Schaden verursacht, eine Chance von 100%, dass 9 Sek. lang Eure Fähigkeit 'Überwältigen' genutzt werden kann. Dieser Effekt kann nur ein Mal alle 5 Sek. auftreten."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8192,
+        "name" : "Weitreichende Stöße",
+        "icon" : "ability_rogue_slicedice",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "30 Wut",
+          "castTime" : "Sofort",
+          "cooldown" : "1 Min. Abklingzeit",
+          "description" : "Eure Nahkampfangriffe treffen einen zusätzlichen nahen Gegner. Hält 10 Sek. lang an."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10741,
+        "name" : "Durchbohren",
+        "icon" : "ability_searingarrow",
+        "x" : 2,
+        "y" : 2,
+        "req" : 8176,
+        "ranks" : [ {
+          "description" : "Erhöht den kritischen Schadensbonus Eurer Fähigkeiten 'Tödlicher Stoß', 'Zerschmettern' und 'Überwältigen' um 10%."
+        }, {
+          "description" : "Erhöht den kritischen Schadensbonus Eurer Fähigkeiten 'Tödlicher Stoß', 'Zerschmettern' und 'Überwältigen' um 20%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11417,
+        "name" : "Verbesserte Kniesehne",
+        "icon" : "ability_shockwave",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Wenn Ihr Eure Fähigkeit 'Kniesehne' erneut auf ein Ziel anwendet, macht Ihr es 5 Sek. lang unbeweglich. Dieser Effekt kann nur ein Mal alle 60 Sek. auftreten."
+        }, {
+          "description" : "Wenn Ihr Eure Fähigkeit 'Kniesehne' erneut auf ein Ziel anwendet, macht Ihr es 5 Sek. lang unbeweglich. Dieser Effekt kann nur ein Mal alle 30 Sek. auftreten."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11418,
+        "name" : "Verbessertes Zerschmettern",
+        "icon" : "ability_warrior_decisivestrike",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Verringert die Schwungzeit Eurer Fähigkeit 'Zerschmettern' um 0.5 Sek. und erhöht ihren Schaden um 10%."
+        }, {
+          "description" : "Verringert die Schwungzeit Eurer Fähigkeit 'Zerschmettern' um 1 Sek. und erhöht ihren Schaden um 20%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11223,
+        "name" : "Tödliche Stille",
+        "icon" : "achievement_boss_kingymiron",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "castTime" : "Sofort",
+          "cooldown" : "2 Min. Abklingzeit",
+          "description" : "Für die nächsten 10 Sek. kostet keine Eurer Fähigkeiten Wut, Ihr erzeugt jedoch weiterhin Wut. Kann nicht genutzt werden, während 'Innere Wut' aktiv ist."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9662,
+        "name" : "Blutraserei",
+        "icon" : "ability_warrior_bloodfrenzy",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Von Euch verursachter Blutungsschaden erhöht den erlittenen Schaden des Ziels um 2% zusätzlichen körperlichen Schaden und 15% Blutungsschaden. Zudem gewähren Eure automatischen Angriffe eine Chance von 5%, zusätzlich 20 Wut zu erzeugen."
+        }, {
+          "description" : "Von Euch verursachter Blutungsschaden erhöht den erlittenen Schaden des Ziels um 4% zusätzlichen körperlichen Schaden und 30% Blutungsschaden. Zudem gewähren Eure automatischen Angriffe eine Chance von 10%, zusätzlich 20 Wut zu erzeugen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10520,
+        "name" : "Lämmer zur Schlachtbank",
+        "icon" : "warrior_talent_icon_lambstotheslaughter",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Nach der Nutzung Eurer Fähigkeit 'Tödlicher Stoß', verursacht Eure nächste Anwendung von 'Hinrichten', 'Überwältigen' oder 'Tödlicher Stoß' 10% mehr Schaden."
+        }, {
+          "description" : "Nach der Nutzung Eurer Fähigkeit 'Tödlicher Stoß', verursacht Eure nächste Anwendung von 'Hinrichten', 'Überwältigen' oder 'Tödlicher Stoß' 20% mehr Schaden."
+        }, {
+          "description" : "Nach der Nutzung Eurer Fähigkeit 'Tödlicher Stoß', verursacht Eure nächste Anwendung von 'Hinrichten', 'Überwältigen' oder 'Tödlicher Stoß' 30% mehr Schaden."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8208,
+        "name" : "Dampfwalze",
+        "icon" : "ability_warrior_bullrush",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Eure Fähigkeit 'Sturmangriff' kann nun im Kampf verwendet werden, ihre Abklingzeit wird jedoch um 5 Sek. erhöht. Nach dem Sturmangriff hat innerhalb von 10 Sek. Euer nächstes Wirken von 'Zerschmettern' oder 'Tödlicher Stoß' eine zusätzlich um 25% erhöhte kritische Trefferchance."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8214,
+        "name" : "Plötzlicher Tod",
+        "icon" : "ability_warrior_improveddisciplines",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Eure Nahkampftreffer haben eine Chance von 3%, dass die Abklingzeit Eurer Fähigkeit 'Kolossales Schmettern' abgeschlossen wird. Zudem behaltet Ihr nach der Nutzung von 'Hinrichten' 5 Wut."
+        }, {
+          "description" : "Eure Nahkampftreffer haben eine Chance von 6%, dass die Abklingzeit Eurer Fähigkeit 'Kolossales Schmettern' abgeschlossen wird. Zudem behaltet Ihr nach der Nutzung von 'Hinrichten' 10 Wut."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8194,
+        "name" : "Abrisskommando",
+        "icon" : "ability_warrior_trauma",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Gewährt kritischen Treffern Eurer Fähigkeit 'Tödlicher Stoß' eine Chance von 50%, Euch in einen Wutzustand zu versetzen, wodurch Euer verursachter Schaden 12 Sek. lang um 5% erhöht wird."
+        }, {
+          "description" : "Gewährt kritischen Treffern Eurer Fähigkeit 'Tödlicher Stoß' eine Chance von 100%, Euch in einen Wutzustand zu versetzen, wodurch Euer verursachter Schaden 12 Sek. lang um 10% erhöht wird."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11167,
+        "name" : "Niederwerfen",
+        "icon" : "inv_mace_62",
+        "x" : 2,
+        "y" : 5,
+        "req" : 8208,
+        "ranks" : [ {
+          "cost" : "15 Wut",
+          "range" : "Nahkampfreichweite",
+          "castTime" : "Sofort",
+          "cooldown" : "45 Sek. Abklingzeit",
+          "requires" : "Benötigt Nahkampfwaffe",
+          "description" : "Stößt das Ziel zu Boden und betäubt es 5 Sek. lang."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8222,
+        "name" : "Klingensturm",
+        "icon" : "ability_warrior_bladestorm",
+        "x" : 1,
+        "y" : 6,
+        "req" : 8208,
+        "ranks" : [ {
+          "cost" : "25 Wut",
+          "castTime" : "Sofort",
+          "cooldown" : "1,5 Min. Abklingzeit",
+          "requires" : "Benötigt Nahkampfwaffe",
+          "description" : "Ihr werdet zu einem Wirbelsturm zerstörerischer Kraft. Alle nahen Ziele erleiden sofort 150% Waffenschaden. Für die nächsten 6 Sek. werdet Ihr alle 1 Sek. einen Wirbelwindangriff durchführen. Während 'Klingensturm' aktiv ist, fühlt Ihr weder Mitleid, noch Bedauern oder Furcht und es gibt keine Möglichkeit, Euch aufzuhalten, es sei denn, Ihr werdet getötet oder entwaffnet. Während dieser Zeit könnt Ihr keine anderen Fähigkeiten einsetzen."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Furor",
+      "icon" : "ability_warrior_innerrage",
+      "backgroundFile" : "WarriorFury",
+      "overlayColor" : "#ff0000",
+      "description" : "Ein tobender Berserker, der mit einer Waffe in jeder Hand seine Feinde in einem Wirbel aus Stahl in Fetzen zerlegt.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 23881,
+        "name" : "Blutdurst",
+        "icon" : "spell_nature_bloodlust",
+        "cost" : "20 Wut",
+        "range" : "Nahkampfreichweite",
+        "castTime" : "Sofort",
+        "cooldown" : "3 Sek. Abklingzeit",
+        "requires" : "Benötigt Nahkampfwaffe",
+        "reagents" : [ ],
+        "description" : "Greift das Ziel sofort an und verursacht 170 Schaden. Zusätzlich werden die nächsten erfolgreichen 3 Nahkampfangriffe 0.5% der maximalen Gesundheit wiederherstellen. Dieser Effekt hält 8 Sek. lang an. Schaden basiert auf Angriffskraft.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 29592,
+        "name" : "Präzision",
+        "icon" : "ability_marksmanship",
+        "reagents" : [ ],
+        "description" : "Erhöht Eure Trefferchance um 3%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 23588,
+        "name" : "Beidhändigkeitsspezialisierung",
+        "icon" : "ability_dualwield",
+        "reagents" : [ ],
+        "description" : "Gestattet es Euch, Einhand- und Schildhandwaffen in der Schildhand zu führen. Erhöht zudem jeglichen verursachten körperlichen Schaden um 10% sowie den Schaden Eurer Angriffe mit der Schildhand um zusätzlich 25%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76856,
+        "name" : "Ungezügelte Wut",
+        "icon" : "ability_warrior_endlessrage",
+        "reagents" : [ ],
+        "description" : "Erhöht den Bonus, den Ihr durch Fähigkeiten erhaltet, die Euch in einen Wutzustand versetzen oder die einen Wutzustand benötigen, um 38%. Jeder Punkt Meisterschaft erhöht Wuteffekte um zusätzlich 4.70%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9610,
+        "name" : "Blutwahnsinn",
+        "icon" : "spell_shadow_summonimp",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Es besteht eine Chance von 10%, dass Ihr nach erlittenem Schaden im Verlauf von 5 Sek. 1.0% Eurer gesamten Gesundheit regeneriert."
+        }, {
+          "description" : "Es besteht eine Chance von 10%, dass Ihr nach erlittenem Schaden im Verlauf von 5 Sek. 2% Eurer gesamten Gesundheit regeneriert."
+        }, {
+          "description" : "Es besteht eine Chance von 10%, dass Ihr nach erlittenem Schaden im Verlauf von 5 Sek. 3.0% Eurer gesamten Gesundheit regeneriert."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9606,
+        "name" : "Kampftrance",
+        "icon" : "inv_helmet_06",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Eure Fähigkeiten 'Blutdurst', 'Tödlicher Stoß' und 'Schildschlag' gewähren eine Chance von 5%, die Wutkosten Eurer nächsten Spezialfähigkeit, die mehr als 5 Wut kostet, um 100% zu verringern."
+        }, {
+          "description" : "Eure Fähigkeiten 'Blutdurst', 'Tödlicher Stoß' und 'Schildschlag' gewähren eine Chance von 10%, die Wutkosten Eurer nächsten Spezialfähigkeit, die mehr als 5 Wut kostet, um 100% zu verringern."
+        }, {
+          "description" : "Eure Fähigkeiten 'Blutdurst', 'Tödlicher Stoß' und 'Schildschlag' gewähren eine Chance von 15%, die Wutkosten Eurer nächsten Spezialfähigkeit, die mehr als 5 Wut kostet, um 100% zu verringern."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9608,
+        "name" : "Grausamkeit",
+        "icon" : "ability_rogue_eviscerate",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht die kritische Trefferchance Eurer Fähigkeiten 'Blutdurst', 'Tödlicher Stoß' und 'Schildschlag' um 5%."
+        }, {
+          "description" : "Erhöht die kritische Trefferchance Eurer Fähigkeiten 'Blutdurst', 'Tödlicher Stoß' und 'Schildschlag' um 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9644,
+        "name" : "Scharfrichter",
+        "icon" : "inv_sword_48",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Gewährt Treffern Eurer Fähigkeit 'Hinrichten' eine Chance von 50%, Euer Nahkampftempo 9 Sek. lang um 5% zu erhöhen. Dieser Effekt ist bis zu 5-mal stapelbar."
+        }, {
+          "description" : "Gewährt Treffern Eurer Fähigkeit 'Hinrichten' eine Chance von 100%, Euer Nahkampftempo 9 Sek. lang um 5% zu erhöhen. Dieser Effekt ist bis zu 5-mal stapelbar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9624,
+        "name" : "Donnernde Stimme",
+        "icon" : "spell_nature_purge",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Verringert die Abklingzeit Eurer Fähigkeiten 'Schlachtruf' und 'Befehlsruf' um 15 Sek. Zudem erzeugen diese Fähigkeiten zusätzlich 5 Wut."
+        }, {
+          "description" : "Verringert die Abklingzeit Eurer Fähigkeiten 'Schlachtruf' und 'Befehlsruf' um 30 Sek. Zudem erzeugen diese Fähigkeiten zusätzlich 10 Wut."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11415,
+        "name" : "Unhöfliche Unterbrechung",
+        "icon" : "ability_warrior_commandingshout",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Das erfolgreiche Unterbrechen eines gewirkten Zauber mittels Eurer Fähigkeiten 'Schildschlag' oder 'Zuschlagen' erhöht Euren Schaden 15 Sek. lang um 5%."
+        }, {
+          "description" : "Das erfolgreiche Unterbrechen eines gewirkten Zauber mittels Eurer Fähigkeiten 'Schildschlag' oder 'Zuschlagen' erhöht Euren Schaden 30 Sek. lang um 5%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9618,
+        "name" : "Durchdringendes Heulen",
+        "icon" : "spell_shadow_deathscream",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "cost" : "10 Wut",
+          "castTime" : "Sofort",
+          "description" : "Macht 6 Sek. lang alle Gegner in einem Umkreis von 10 Metern benommen, verlangsamt ihr Bewegungstempo um 50%."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9636,
+        "name" : "Schlaghagel",
+        "icon" : "ability_ghoulfrenzy",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Erhöht Euer Angriffstempo für die nächsten 3 Waffenschwünge um 8%, nachdem Ihr einen kritischen Nahkampftreffer erzielt habt."
+        }, {
+          "description" : "Erhöht Euer Angriffstempo für die nächsten 3 Waffenschwünge um 16%, nachdem Ihr einen kritischen Nahkampftreffer erzielt habt."
+        }, {
+          "description" : "Erhöht Euer Angriffstempo für die nächsten 3 Waffenschwünge um 25%, nachdem Ihr einen kritischen Nahkampftreffer erzielt habt."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9630,
+        "name" : "Todeswunsch",
+        "icon" : "spell_shadow_deathpact",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "10 Wut",
+          "castTime" : "Sofort",
+          "cooldown" : "3 Min. Abklingzeit",
+          "description" : "Bei Aktivierung werdet Ihr wütend und erhöht so Euren verursachten körperlichen Schaden um 20%. Jeglicher erlittene Schaden wird jedoch ebenfalls um 5% erhöht. Hält 30 Sek. lang an."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9612,
+        "name" : "Wutanfall",
+        "icon" : "spell_shadow_unholyfrenzy",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Eure Nahkampftreffer haben eine Chance von 3%, Euch in einen Wutzustand zu versetzen, wodurch Ihr 9 Sek. lang einen Schadensbonus von 3% erhaltet."
+        }, {
+          "description" : "Eure Nahkampftreffer haben eine Chance von 6%, Euch in einen Wutzustand zu versetzen, wodurch Ihr 9 Sek. lang einen Schadensbonus von 7% erhaltet."
+        }, {
+          "description" : "Eure Nahkampftreffer haben eine Chance von 9%, Euch in einen Wutzustand zu versetzen, wodurch Ihr 9 Sek. lang einen Schadensbonus von 10% erhaltet."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11414,
+        "name" : "Durch das Schwert umkommen",
+        "icon" : "inv_sword_86",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Wenn Eure Gesundheit auf 20% oder weniger sinkt, wird Eure Parierchance 4 Sek. lang um 100% erhöht. Dieser Effekt kann nur ein Mal alle 2 Min. auftreten."
+        }, {
+          "description" : "Wenn Eure Gesundheit auf 20% oder weniger sinkt, wird Eure Parierchance 8 Sek. lang um 100% erhöht. Dieser Effekt kann nur ein Mal alle 2 Min. auftreten."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11208,
+        "name" : "Wütender Schlag",
+        "icon" : "ability_hunter_swiftstrike",
+        "x" : 1,
+        "y" : 3,
+        "req" : 9630,
+        "ranks" : [ {
+          "cost" : "20 Wut",
+          "range" : "Nahkampfreichweite",
+          "castTime" : "Sofort",
+          "cooldown" : "6 Sek. Abklingzeit",
+          "requires" : "Benötigt Nahkampfwaffe",
+          "description" : "Ein mächtiger Schlag, der 80% Waffenschaden beider Nahkampfwaffen verursacht. Kann nur während eines Wutanfalls benutzt werden."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9650,
+        "name" : "Toben",
+        "icon" : "ability_warrior_rampage",
+        "x" : 2,
+        "y" : 3,
+        "req" : 11208,
+        "ranks" : [ {
+          "description" : "Erhöht die kritische Trefferchance aller Gruppen- und Schlachtzugsmitglieder innerhalb von 100 Metern um 5%. Verbessert zudem Eure kritische Trefferchance um zusätzliche 2%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9648,
+        "name" : "Heldenhafter Furor",
+        "icon" : "warrior_talent_icon_deadlycalm",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "castTime" : "Sofort",
+          "cooldown" : "30 Sek. Abklingzeit",
+          "description" : "Entfernt jegliche Effekte, die Bewegungsunfähigkeit verursachen und schließt die Abklingzeit von 'Abfangen' ab."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9634,
+        "name" : "Wütende Angriffe",
+        "icon" : "ability_warrior_furiousresolve",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Eure automatischen Angriffe haben eine Chance, jegliche erhaltene Heilung des Ziels 10 Sek. lang um 10% zu verringern."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9642,
+        "name" : "Metzger",
+        "icon" : "warrior_talent_icon_mastercleaver",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Erhöht den von Euren Fähigkeiten 'Spalten' und 'Wirbelwind' verursachten Schaden 10 Sek. lang um 5%. Dieser Effekt ist bis zu 3-mal stapelbar."
+        }, {
+          "description" : "Erhöht den von Euren Fähigkeiten 'Spalten' und 'Wirbelwind' verursachten Schaden 10 Sek. lang um 10%. Dieser Effekt ist bis zu 3-mal stapelbar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10743,
+        "name" : "Wut verstärken",
+        "icon" : "warrior_talent_icon_furyintheblood",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Verringert die Abklingzeit Eurer Fähigkeiten 'Berserkerwut', 'Tollkühnheit' und 'Todeswunsch' um 10%."
+        }, {
+          "description" : "Verringert die Abklingzeit Eurer Fähigkeiten 'Berserkerwut', 'Tollkühnheit' und 'Todeswunsch' um 20%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9654,
+        "name" : "Schäumendes Blut",
+        "icon" : "ability_warrior_bloodsurge",
+        "x" : 1,
+        "y" : 5,
+        "req" : 11208,
+        "ranks" : [ {
+          "description" : "Treffer Eurer Fähigkeit 'Blutdurst' gewähren eine Chance von 10%, Euer nächstes Wirken von 'Zerschmettern' innerhalb der nächsten 10 Sek. zu einer kostenlosen Spontanfähigkeit zu machen."
+        }, {
+          "description" : "Treffer Eurer Fähigkeit 'Blutdurst' gewähren eine Chance von 20%, Euer nächstes Wirken von 'Zerschmettern' innerhalb der nächsten 10 Sek. zu einer kostenlosen Spontanfähigkeit zu machen."
+        }, {
+          "description" : "Treffer Eurer Fähigkeit 'Blutdurst' gewähren eine Chance von 30%, Euer nächstes Wirken von 'Zerschmettern' innerhalb der nächsten 10 Sek. zu einer kostenlosen Spontanfähigkeit zu machen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10744,
+        "name" : "Scharmützler",
+        "icon" : "warrior_talent_icon_skirmisher",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Verringert die Abklingzeit Eurer Fähigkeit 'Abfangen' um 5 Sek. und die Abklingzeit Eurer Fähigkeit 'Heldenhafter Sprung' um 10 Sek."
+        }, {
+          "description" : "Verringert die Abklingzeit Eurer Fähigkeit 'Abfangen' um 10 Sek. und die Abklingzeit Eurer Fähigkeit 'Heldenhafter Sprung' um 20 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9658,
+        "name" : "Titanengriff",
+        "icon" : "ability_warrior_titansgrip",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "description" : "Gestattet es Euch, Zweihandäxte, -streitkolben und -schwerter in einer Hand zu führen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9660,
+        "name" : "Zielstrebiger Furor",
+        "icon" : "warrior_talent_icon_singlemindedfury",
+        "x" : 2,
+        "y" : 6,
+        "ranks" : [ {
+          "description" : "Während Ihr mit zwei Einhandwaffen ausgerüstet seid, wird Euer gesamter verursachter Schaden um 15% erhöht. Zudem trifft Eure Fähigkeit 'Zerschmettern' das Ziel mit beiden Waffen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Schutz",
+      "icon" : "ability_warrior_defensivestance",
+      "backgroundFile" : "WarriorProtection",
+      "overlayColor" : "#4c7fff",
+      "description" : "Ein tapferer Beschützer, der einen Schild nutzt, um sich und seine Verbündeten zu schützen.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : true,
+        "healer" : false,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 23922,
+        "name" : "Schildschlag",
+        "icon" : "inv_shield_05",
+        "cost" : "20 Wut",
+        "range" : "Nahkampfreichweite",
+        "castTime" : "Sofort",
+        "cooldown" : "6 Sek. Abklingzeit",
+        "requires" : "Benötigt Schilde",
+        "reagents" : [ ],
+        "description" : "Verpasst dem Ziel einen heftigen Schlag mit Eurem Schild und verursacht so 1990 bis 2077 Schaden (basierend auf Angriffskraft). Bannt zusätzlich 1 magischen Effekt des Ziels. Erzeugt außerdem ein hohes Maß an Bedrohung.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 29144,
+        "name" : "Schildwache",
+        "icon" : "inv_helmet_21",
+        "reagents" : [ ],
+        "description" : "Erhöht Eure gesamte Ausdauer um 15% und Eure Blockchance um 15%. Zudem wird, wenn Ihr Ziele angreift, die Euch nicht als Ziel erfasst haben, Eure erzeugte Wut um 50% erhöht.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 93098,
+        "name" : "Rache",
+        "icon" : "ability_paladin_shieldofvengeance",
+        "reagents" : [ ],
+        "description" : "Jedes Mal, wenn Ihr Schaden erleidet, gewinnt Ihr Angriffskraft in Höhe von 5% des erlittenen Schadens, bis zu einem Maximum von 10% Eurer Gesundheit.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76857,
+        "name" : "Kritisches Blocken",
+        "icon" : "ability_warrior_criticalblock",
+        "reagents" : [ ],
+        "description" : "Erhöht Eure Blockchance um 12% und Eure kritische Blockchance um 12%. Jeder Punkt Meisterschaft erhöht Eure Blockchance um zusätzlich 1.5% und Eure kritische Blockchance um zusätzlich 1.5%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10464,
+        "name" : "Anstacheln",
+        "icon" : "ability_warrior_incite",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht die kritische Trefferchance Eurer Fähigkeit 'Heldenhafter Stoß' um 5%. Zudem gewähren kritische Treffer Eurer Fähigkeit 'Heldenhafter Stoß' eine Chance von 33%, dass die nächste Anwendung dieser Fähigkeit ebenfalls einen kritischen Treffer erzielt. Diese garantierten kritischen Treffer können den Effekt 'Anstacheln' nicht erneut auslösen."
+        }, {
+          "description" : "Erhöht die kritische Trefferchance Eurer Fähigkeit 'Heldenhafter Stoß' um 10%. Zudem gewähren kritische Treffer Eurer Fähigkeit 'Heldenhafter Stoß' eine Chance von 66%, dass die nächste Anwendung dieser Fähigkeit ebenfalls einen kritischen Treffer erzielt. Diese garantierten kritischen Treffer können den Effekt 'Anstacheln' nicht erneut auslösen."
+        }, {
+          "description" : "Erhöht die kritische Trefferchance Eurer Fähigkeit 'Heldenhafter Stoß' um 15%. Zudem gewähren kritische Treffer Eurer Fähigkeit 'Heldenhafter Stoß' eine Chance von 100%, dass die nächste Anwendung dieser Fähigkeit ebenfalls einen kritischen Treffer erzielt. Diese garantierten kritischen Treffer können den Effekt 'Anstacheln' nicht erneut auslösen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10474,
+        "name" : "Zähigkeit",
+        "icon" : "spell_holy_devotion",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht Euren durch Gegenstände erzielten Rüstungswert um 3%."
+        }, {
+          "description" : "Erhöht Euren durch Gegenstände erzielten Rüstungswert um 6%."
+        }, {
+          "description" : "Erhöht Euren durch Gegenstände erzielten Rüstungswert um 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10480,
+        "name" : "Blut und Donner",
+        "icon" : "warrior_talent_icon_bloodandthunder",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Wenn Ihr Eure Fähigkeit 'Donnerknall' auf ein Ziel anwendet, das vom Effekt Eurer Fähigkeit 'Verwunden' betroffen ist, besteht eine Chance von 50%, dass der Effekt auf alle Ziele von 'Donnerknall' ausgebreitet wird."
+        }, {
+          "description" : "Wenn Ihr Eure Fähigkeit 'Donnerknall' auf ein Ziel anwendet, das vom Effekt Eurer Fähigkeit 'Verwunden' betroffen ist, besteht eine Chance von 100%, dass der Effekt auf alle Ziele von 'Donnerknall' ausgebreitet wird."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10466,
+        "name" : "Schildspezialisierung",
+        "icon" : "inv_shield_06",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Wenn Ihr einen Angriff erfolgreich blockt, erzeugt Ihr zusätzlich 5 Wut. Wenn Ihr mittels Eurer Fähigkeit 'Zauberreflexion' einen magischen Angriff reflektiert, erzeugt Ihr zusätzlich 20 Wut."
+        }, {
+          "description" : "Wenn Ihr einen Angriff erfolgreich blockt, erzeugt Ihr zusätzlich 10 Wut. Wenn Ihr mittels Eurer Fähigkeit 'Zauberreflexion' einen magischen Angriff reflektiert, erzeugt Ihr zusätzlich 40 Wut."
+        }, {
+          "description" : "Wenn Ihr einen Angriff erfolgreich blockt, erzeugt Ihr zusätzlich 15 Wut. Wenn Ihr mittels Eurer Fähigkeit 'Zauberreflexion' einen magischen Angriff reflektiert, erzeugt Ihr zusätzlich 60 Wut."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10472,
+        "name" : "Schildbeherrschung",
+        "icon" : "ability_warrior_shieldguard",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Verringert die Abklingzeit Eurer Fähigkeit 'Schildblock' um 10 Sek., Eurer Fähigkeit 'Schildwall' um 60 Sek. und Eurer Fähigkeit 'Zauberreflexion' um 1 Sek."
+        }, {
+          "description" : "Verringert die Abklingzeit Eurer Fähigkeit 'Schildblock' um 20 Sek., die Abklingzeit Eurer Fähigkeit 'Schildwall' um 120 Sek. und die Abklingzeit Eurer Fähigkeit 'Zauberreflexion' um  2 Sek."
+        }, {
+          "description" : "Verringert die Abklingzeit Eurer Fähigkeit 'Schildblock' um 30 Sek., die Abklingzeit Eurer Fähigkeit 'Schildwall' um 180 Sek. und die Abklingzeit Eurer Fähigkeit 'Zauberreflexion' um  3 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11170,
+        "name" : "Stellung halten",
+        "icon" : "achievement_bg_defendxtowers_av",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Nach erfolgreichem Parieren wird Eure kritische Trefferchance und kritische Blockchance 5 Sek. lang um 10% erhöht."
+        }, {
+          "description" : "Nach erfolgreichem Parieren wird Eure kritische Trefferchance und kritische Blockchance 10 Sek. lang um 10% erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10468,
+        "name" : "Auf die Kehle zielen",
+        "icon" : "ability_warrior_shieldbash",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Gewährt Euren Fähigkeiten 'Schildhieb' und 'Heldenhafter Wurf' eine Chance von 50%, das Ziel 3 Sek. lang zum Schweigen zu bringen. Verringert zudem die Abklingzeit Eurer Fähigkeit 'Heldenhafter Wurf' um 15 Sek."
+        }, {
+          "description" : "Gewährt Euren Fähigkeiten 'Schildhieb' und 'Heldenhafter Wurf' eine Chance von 100%, das Ziel 3 Sek. lang zum Schweigen zu bringen. Verringert zudem die Abklingzeit Eurer Fähigkeit 'Heldenhafter Wurf' um 30 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10482,
+        "name" : "Letztes Gefecht",
+        "icon" : "spell_holy_ashestoashes",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Sofort",
+          "cooldown" : "3 Min. Abklingzeit",
+          "description" : "Gewährt Euch 20 Sek. lang 30% Eurer maximalen Gesundheit. Wenn der Effekt abklingt, geht die zusätzliche Gesundheit wieder verloren."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10478,
+        "name" : "Erschütternder Schlag",
+        "icon" : "ability_thunderbolt",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "15 Wut",
+          "range" : "Nahkampfreichweite",
+          "castTime" : "Sofort",
+          "cooldown" : "30 Sek. Abklingzeit",
+          "requires" : "Benötigt Nahkampfwaffe",
+          "description" : "Betäubt 5 Sek. lang den Gegner und verursacht 387 Schaden (basierend auf Angriffskraft)."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10934,
+        "name" : "Verteidigungsbastion",
+        "icon" : "ability_defend",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "In der Verteidigungshaltung wird Eure Chance, kritische Nahkampftreffer zu erleiden, um 3% verringert. Zudem besteht, wenn Ihr einen Angriff blockt, pariert oder ihm ausweicht, eine Chance von 10%, dass Ihr wütend werdet und Euer verursachter körperlicher Schaden 12 Sek. lang um 5% erhöht wird."
+        }, {
+          "description" : "In der Verteidigungshaltung wird Eure Chance, kritische Nahkampftreffer zu erleiden, um 6% verringert. Zudem besteht, wenn Ihr einen Angriff blockt, pariert oder ihm ausweicht, eine Chance von 20%, dass Ihr wütend werdet und Euer verursachter körperlicher Schaden 12 Sek. lang um 10% erhöht wird."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10494,
+        "name" : "Kriegstreiber",
+        "icon" : "ability_warrior_warbringer",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Eure Fähigkeiten 'Sturmangriff', 'Abfangen' und 'Einschreiten' sind nun während des Kampfes und in jeder Haltung nutzbar. Zusätzlich entfernt Eure Fähigkeit 'Einschreiten' jegliche bewegungseinschränkenden Effekte."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10470,
+        "name" : "Verbesserte Rache",
+        "icon" : "ability_warrior_revenge",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Erhöht den verursachten Schaden Eurer Fähigkeit 'Rache' um 30% und lässt sie ein weiteres Ziel treffen, das 50% des Schadens erleidet."
+        }, {
+          "description" : "Erhöht den verursachten Schaden Eurer Fähigkeit 'Rache' um 60% und lässt sie ein weiteres Ziel treffen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10486,
+        "name" : "Verwüsten",
+        "icon" : "inv_sword_11",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "15 Wut",
+          "range" : "Nahkampfreichweite",
+          "castTime" : "Sofort",
+          "requires" : "Benötigt Schilde",
+          "description" : "Zerreißt die Rüstung des Ziels und ruft den Effekt 'Rüstung zerreißen' hervor. Verursacht pro Stapel dieses Effektes auf dem Ziel zusätzlich 109% Waffenschaden plus 302. Der Effekt 'Rüstung zerreißen' ist bis zu 3-mal stapelbar."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11217,
+        "name" : "Bevorstehender Sieg",
+        "icon" : "ability_warrior_devastate",
+        "x" : 3,
+        "y" : 3,
+        "req" : 10486,
+        "ranks" : [ {
+          "description" : "Wenn Ihr Eure Fähigkeit 'Verwüsten' auf ein Ziel anwendet, das über 20% Gesundheit oder weniger verfügt, besteht eine Chance von 25%, dass Ihr 'Siegesrausch' einsetzen könnt. Diese Nutzung von 'Siegesrausch' heilt Euch jedoch lediglich um 5% Eurer Gesundheit."
+        }, {
+          "description" : "Wenn Ihr Eure Fähigkeit 'Verwüsten' auf ein Ziel anwendet, das über 20% Gesundheit oder weniger verfügt, besteht eine Chance von 50%, dass Ihr 'Siegesrausch' einsetzen könnt. Diese Nutzung von 'Siegesrausch' heilt Euch jedoch lediglich um 5% Eurer Gesundheit."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10488,
+        "name" : "Vom Donner gerührt",
+        "icon" : "warrior_talent_icon_thunderstruck",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Erhöht den Schaden Eurer Fähigkeiten  'Verwunden', 'Spalten' und 'Donnerknall' um 3%. Zusätzlich erhöht 'Donnerknall' den Schaden Eurer nächsten Anwendung von 'Schockwelle' um 5%. Bis zu 3-mal stapelbar."
+        }, {
+          "description" : "Erhöht den Schaden Eurer Fähigkeiten  'Verwunden', 'Spalten' und 'Donnerknall' um 6%. Zusätzlich erhöht 'Donnerknall' den Schaden Eurer nächsten Anwendung von 'Schockwelle' um 10%. Bis zu 3-mal stapelbar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10492,
+        "name" : "Wachsamkeit",
+        "icon" : "ability_warrior_vigilance",
+        "x" : 1,
+        "y" : 4,
+        "req" : 10478,
+        "ranks" : [ {
+          "range" : "30 yd range",
+          "castTime" : "Sofort",
+          "description" : "Fokussiert Euren schützenden Blick auf ein Gruppen- oder Schlachtzugsmitglied. Jedes Mal, wenn das Ziel von einem Angriff getroffen wird, wird die Abklingzeit Eurer Fähigkeit 'Spott' beendet und Ihr erhaltet den Effekt 'Rache' in einem Maße, als hättet Ihr 20% des Schadens erlitten. Hält 30 Min. lang an. Dieser Effekt kann nur auf jeweils einem Ziel wirken."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10484,
+        "name" : "Heftige Rückwirkung",
+        "icon" : "inv_shield_01",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Während Eure Fähigkeit 'Schildblock' aktiv ist, verursacht Eure Fähigkeit 'Schildschlag' 50% zusätzlichen Schaden."
+        }, {
+          "description" : "Während Eure Fähigkeit 'Schildblock' aktiv ist, verursacht Eure Fähigkeit 'Schildschlag' 100% zusätzlichen Schaden."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10490,
+        "name" : "Sicherung",
+        "icon" : "ability_warrior_safeguard",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Verringert den von dem Ziel Eurer Fertigkeit 'Einschreiten' erlittenen Schaden 6 Sek. lang um 15%."
+        }, {
+          "description" : "Reduziert den von dem Ziel Eurer Fähigkeit 'Einschreiten' erlittenen Schaden 6 Sek. lang um 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10496,
+        "name" : "Schwert und Schild",
+        "icon" : "ability_warrior_swordandboard",
+        "x" : 2,
+        "y" : 5,
+        "req" : 10486,
+        "ranks" : [ {
+          "description" : "Erhöht die kritische Trefferchance Eurer Fähigkeit 'Verwüsten' um 5%. Zudem besteht eine Chance von 10%, dass wenn Eure Fähigkeiten 'Verwüsten' oder 'Rache' Schaden verursachen, die Abklingzeit Eurer Fähigkeit 'Schildschlag' abgeschlossen wird und ihre Kosten 5 Sek. lang um 100% verringert werden."
+        }, {
+          "description" : "Erhöht die kritische Trefferchance Eurer Fähigkeit 'Verwüsten' um 10%. Zudem besteht eine Chance von 20%, dass wenn Eure Fähigkeiten 'Verwüsten' oder 'Rache' Schaden verursachen, die Abklingzeit Eurer Fähigkeit 'Schildschlag' abgeschlossen wird und ihre Kosten 5 Sek. lang um 100% verringert werden."
+        }, {
+          "description" : "Erhöht die kritische Trefferchance Eurer Fähigkeit 'Verwüsten' um 15%. Zudem besteht eine Chance von 30%, dass wenn Eure Fähigkeiten 'Verwüsten' oder 'Rache' Schaden verursachen, die Abklingzeit Eurer Fähigkeit 'Schildschlag' abgeschlossen wird und ihre Kosten 5 Sek. lang um 100% verringert werden."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10498,
+        "name" : "Schockwelle",
+        "icon" : "ability_warrior_shockwave",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "15 Wut",
+          "castTime" : "Sofort",
+          "cooldown" : "20 Sek. Abklingzeit",
+          "description" : "Schickt Euch eine Druckwelle voraus, die 387 Schaden verursacht (basierend auf Angriffskraft) und in einem kegelförmigen Bereich von 10 Metern alle gegnerischen Ziele 4 Sek. lang betäubt."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

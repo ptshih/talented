@@ -1,0 +1,953 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 9,
+      "name" : "흑마법사",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "고통",
+      "icon" : "spell_shadow_deathcoil",
+      "backgroundFile" : "WarlockCurses",
+      "overlayColor" : "#00ff99",
+      "description" : "암흑 마법의 대가입니다. 공포, 흡수, 주기적인 피해 주문을 전문적으로 사용합니다.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 30108,
+        "name" : "불안정한 고통",
+        "icon" : "spell_shadow_unstableaffliction_3",
+        "cost" : "기본 마나의 15% ",
+        "range" : "40 yd range",
+        "castTime" : "시전 시간 1.5초",
+        "reagents" : [ ],
+        "description" : "어둠의 기운이 천천히 대상을 파괴하여 15초에 걸쳐 50의 피해를 입힙니다. 추가로, 누군가가 불안정한 고통을 무효화할 경우 해당 시전자는 90의 피해를 입고 5초 동안 침묵 상태가 됩니다. 흑마법사마다 한 대상에 하나의 불안정한 고통 또는 제물을 사용할 수 있습니다.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 87339,
+        "name" : "암흑 마법 숙련",
+        "icon" : "spell_shadow_spectralsight",
+        "reagents" : [ ],
+        "description" : "암흑 계열 주문의 공격력이 25%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77215,
+        "name" : "강한 고통",
+        "icon" : "ability_warlock_everlastingaffliction",
+        "reagents" : [ ],
+        "description" : "모든 암흑 계열 주문의 주기적인 피해가 13%만큼 증가합니다. 특화력 1당 주기적인 암흑 피해가 추가로 1.63%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 11100,
+        "name" : "파멸과 어둠",
+        "icon" : "spell_shadow_curseofsargeras",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "고통의 파멸과 운명의 파멸 주문의 극대화 확률이 4%만큼 증가합니다."
+        }, {
+          "description" : "고통의 파멸과 운명의 파멸 주문의 극대화 확률이 8%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11110,
+        "name" : "생명력 전환 연마",
+        "icon" : "spell_shadow_burningspirit",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "생명력 전환으로 얻는 마나가 10%만큼 증가합니다."
+        }, {
+          "description" : "생명력 전환으로 얻는 마나가 20%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11104,
+        "name" : "부패 연마",
+        "icon" : "spell_shadow_abominationexplosion",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "부패의 공격력이 4%만큼 증가합니다."
+        }, {
+          "description" : "부패의 공격력이 8%만큼 증가합니다."
+        }, {
+          "description" : "부패의 공격력이 12%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11214,
+        "name" : "액운",
+        "icon" : "ability_warlock_jinx",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "원소의 저주 시전 시 저주가 걸린 대상 주위 20미터 반경 내 최대 15명의 적 대상이 영향을 받습니다.\n\n\n\n무력화 저주가 걸린 대상의 에너지, 분노, 집중, 룬 마력 재생 속도가 5%만큼 감소합니다."
+        }, {
+          "description" : "원소의 저주 시전 시 저주가 걸린 대상 주위 40미터 반경 내 15명의 적 대상이 영향을 받습니다.\n\n\n\n무력화 저주가 걸린 대상의 에너지, 분노, 집중, 룬 마력 재생 속도가 10%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11112,
+        "name" : "영혼 착취",
+        "icon" : "ability_warlock_soulsiphon",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "생명력 흡수로 흡수하는 생명력과 영혼 흡수로 입히는 피해가 대상에 걸려 있는 자신의 고통 효과마다 3%만큼씩 증가합니다. 추가 효과는 최대 9%까지 증가합니다."
+        }, {
+          "description" : "생명력 흡수로 흡수하는 생명력과 영혼 흡수로 입히는 피해가 대상에 걸려 있는 자신의 고통 효과마다 6%만큼씩 증가합니다. 추가 효과는 최대 18%까지 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11420,
+        "name" : "생명력 착취",
+        "icon" : "spell_shadow_requiem",
+        "x" : 2,
+        "y" : 1,
+        "req" : 11112,
+        "ranks" : [ {
+          "description" : "부패로 피해를 입힐 때마다 25%의 확률로 자신의 총 생명력의 2%에 해당하는 생명력을 즉시 회복합니다."
+        }, {
+          "description" : "부패로 피해를 입힐 때마다 50%의 확률로 자신의 총 생명력의 2%에 해당하는 생명력을 즉시 회복합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11128,
+        "name" : "피로의 저주",
+        "icon" : "spell_shadow_grimward",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "기본 마나의 6% ",
+          "range" : "30 yd range",
+          "castTime" : "즉시 시전",
+          "description" : "30초 동안 대상의 이동 속도를 50%만큼 감소시킵니다. 흑마법사마다 한 대상에 하나의 저주만 걸 수 있습니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11114,
+        "name" : "공포 연마",
+        "icon" : "spell_shadow_possession",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "공포 주문의 공포 효과가 사라질 때 대상에게 악몽을 남깁니다. 악몽 효과에 걸린 적은 5초 동안 이동 속도가 15%만큼 감소합니다."
+        }, {
+          "description" : "공포 주문의 공포 효과가 사라질 때 대상에게 악몽을 남깁니다. 악몽 효과에 걸린 적은 5초 동안 이동 속도가 30%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11134,
+        "name" : "박멸",
+        "icon" : "ability_warlock_eradication",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "부패로 피해를 입힐 때 6%의 확률로 10초 동안 주문 시전 속도가 6%만큼 증가합니다."
+        }, {
+          "description" : "부패로 피해를 입힐 때 6%의 확률로 10초 동안 주문 시전 속도가 12%만큼 증가합니다."
+        }, {
+          "description" : "부패로 피해를 입힐 때 6%의 확률로 10초 동안 주문 시전 속도가 20%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11140,
+        "name" : "공포의 울부짖음 연마",
+        "icon" : "spell_shadow_deathscream",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "공포의 울부짖음의 시전 시간이 0.8초만큼 단축됩니다."
+        }, {
+          "description" : "공포의 울부짖음의 시전 시간이 1.5초만큼 단축됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11366,
+        "name" : "영혼 바꾸기",
+        "icon" : "ability_warlock_soulswap",
+        "x" : 1,
+        "y" : 3,
+        "req" : 11112,
+        "ranks" : [ {
+          "cost" : "기본 마나의 18% ",
+          "range" : "40 yd range",
+          "castTime" : "즉시 시전",
+          "description" : "즉시 9의 피해를 입히고 대상에게서 주기적인 암흑 피해 효과를 제거합니다.\n\n\n\n20초 내에 다른 대상에게 영혼 바꾸기: 내보내기를 시전하면 대상은 9의 피해를 입고 이전 대상에게서 제거된 주기적인 암흑 피해 효과를 그대로 받습니다.\n\n\n\n같은 대상에게 영혼 바꾸기를 시전할 수 없습니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11124,
+        "name" : "어둠의 선물",
+        "icon" : "spell_shadow_shadowembrace",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "어둠의 화살과 유령 출몰 시전 시 어둠의 선물 효과를 일으켜 자신의 주문으로 대상에게 입히는 모든 주기적인 암흑 피해를 3%만큼 증가시킵니다. 12초 동안 지속됩니다. 최대 3번까지 중복됩니다."
+        }, {
+          "description" : "어둠의 화살과 유령 출몰 시전 시 어둠의 선물 효과를 일으켜 자신의 주문으로 대상에게 입히는 모든 주기적인 암흑 피해를 4%만큼 증가시킵니다. 12초 동안 지속됩니다. 최대 3번까지 중복됩니다."
+        }, {
+          "description" : "어둠의 화살과 유령 출몰 시전 시 어둠의 선물 효과를 일으켜 자신의 주문으로 대상에게 입히는 모든 주기적인 암흑 피해를 5%만큼 증가시킵니다. 최대 3번까지 중복됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11142,
+        "name" : "죽음의 은총",
+        "icon" : "spell_shadow_deathsembrace",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "생명력이 25% 이하일 때 생명력 흡수로 자신의 총 생명력의 1%에 해당하는 생명력을 추가로 회복합니다.\n\n\n\n대상의 생명력이 25% 이하일 때 암흑 계열 주문의 공격력이 4%만큼 증가합니다."
+        }, {
+          "description" : "생명력이 25% 이하일 때 생명력 흡수로 자신의 총 생명력의 2%에 해당하는 생명력을 추가로 회복합니다.\n\n\n\n대상의 생명력이 25% 이하일 때 암흑 계열 주문의 공격력이 8%만큼 증가합니다."
+        }, {
+          "description" : "생명력이 25% 이하일 때 생명력 흡수로 자신의 총 생명력의 3%에 해당하는 생명력을 추가로 회복합니다.\n\n\n\n대상의 생명력이 25% 이하일 때 암흑 계열 주문의 공격력이 12%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11122,
+        "name" : "일몰",
+        "icon" : "spell_shadow_twilight",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "부패, 생명력 흡수로 적에게 피해를 입힌 직후 2%의 확률로 어둠의 무아지경 상태로 빠져들게 합니다. 이 상태에선 다음 어둠의 화살의 시전 시간이 100%만큼 단축됩니다."
+        }, {
+          "description" : "부패, 생명력 흡수로 적에게 피해를 입힌 직후 4%의 확률로 어둠의 무아지경 상태로 빠져들게 합니다. 이 상태에선 다음 어둠의 화살의 시전 시간이 100%만큼 단축됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11419,
+        "name" : "영혼 불사르기: 부패의 씨앗",
+        "icon" : "spell_shadow_seedofdestruction",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "부패의 씨앗 주문에 영혼 불사르기 효과를 부여합니다.\n\n\n\n부패의 씨앗이 터지면 모든 적 대상에게 부패 효과를 입힙니다. 부패의 씨앗이 성공적으로 폭발하면 영혼의 조각을 돌려받습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11150,
+        "name" : "영원한 고통",
+        "icon" : "ability_warlock_everlastingaffliction",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "부패, 부패의 씨앗, 불안정한 고통이 치명타 효과를 발휘할 확률이 5%만큼 증가합니다.\n\n\n\n생명력 흡수, 영혼 흡수, 유령 출몰 주문 시전 시 33%의 확률로 대상에 걸린 부패 효과의 지속시간이 초기화됩니다."
+        }, {
+          "description" : "부패, 부패의 씨앗, 불안정한 고통이 치명타 효과를 발휘할 확률이 10%만큼 증가합니다.\n\n\n\n생명력 흡수, 영혼 흡수, 유령 출몰 주문 시전 시 66%의 확률로 대상에 걸린 부패 효과의 지속시간이 초기화됩니다."
+        }, {
+          "description" : "부패, 부패의 씨앗, 불안정한 고통이 치명타 효과를 발휘할 확률이 15%만큼 증가합니다.\n\n\n\n생명력 흡수, 영혼 흡수, 유령 출몰 주문 시전 시 100%의 확률로 대상에 걸린 부패 효과의 지속시간이 초기화됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11200,
+        "name" : "병균 확산",
+        "icon" : "spell_shadow_lastingaffliction",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "파멸과 저주 주문의 전역 재사용 대기시간이 0.25초만큼 감소합니다.\n\n\n\n생명력이 25% 미만인 대상에게 영혼 흡수로 피해를 입히면 50%의 확률로 불안정한 고통의 지속시간을 초기화시킵니다."
+        }, {
+          "description" : "파멸과 저주 주문의 전역 재사용 대기시간이 0.5초만큼 감소합니다.\n\n\n\n생명력이 25% 미만인 대상에게 영혼 흡수로 피해를 입히면 100%의 확률로 불안정한 고통의 지속시간을 초기화시킵니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11152,
+        "name" : "유령 출몰",
+        "icon" : "ability_warlock_haunt",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "기본 마나의 12% ",
+          "range" : "40 yd range",
+          "castTime" : "시전 시간 1.5초",
+          "cooldown" : "재사용 대기시간: 8초",
+          "description" : "대상에게 유령의 영혼을 보내 31의 암흑 피해를 입히고 12초 동안 대상에게 걸려 있는 자신의 지속적인 효과로 인한 모든 암흑 피해를 20%만큼 증가시킵니다. 유령 출몰 주문의 효과가 다하거나 무효화되면 영혼은 흑마법사에게 돌아오고 입힌 피해의 100%에 해당하는 생명력을 회복시킵니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "악마",
+      "icon" : "spell_shadow_metamorphosis",
+      "backgroundFile" : "WarlockSummoning",
+      "overlayColor" : "#ff0000",
+      "description" : "강력한 악마를 거느리고 화염과 암흑 마법을 사용합니다.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 30146,
+        "name" : "지옥수호병 소환",
+        "icon" : "spell_shadow_summonfelguard",
+        "cost" : "기본 마나의 80% ",
+        "castTime" : "시전 시간 6초",
+        "reagents" : [ ],
+        "description" : "지옥수호병을 소환하여 부립니다.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 84740,
+        "name" : "악마의 지식",
+        "icon" : "spell_fire_twilightimmolation",
+        "reagents" : [ ],
+        "description" : "화염 및 암흑 계열 주문의 공격력이 15%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77219,
+        "name" : "악령술의 대가",
+        "icon" : "spell_shadow_shadowpact",
+        "reagents" : [ ],
+        "description" : "소환한 악마와 악마로 변신한 흑마법사의 공격력이 12%만큼 증가합니다. 특화력 1당 공격력이 추가로 1.5%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10994,
+        "name" : "악마의 은총",
+        "icon" : "spell_shadow_metamorphosis",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "전체 체력이 4%만큼 증가합니다."
+        }, {
+          "description" : "전체 체력이 7%만큼 증가합니다."
+        }, {
+          "description" : "전체 체력이 10%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10992,
+        "name" : "어둠의 기술",
+        "icon" : "ability_warlock_darkarts",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "임프의 불화살 시전 시간이 0.25만큼 단축되고, 지옥수호병의 군단의 일격 공격력이 5%만큼 증가하며, 지옥사냥개의 어둠의 이빨 공격력이 5%만큼 증가합니다."
+        }, {
+          "description" : "임프의 불화살 시전 시간이 0.50초만큼 단축되고, 지옥수호병의 군단의 일격 공격력이 10%만큼 증가하며, 지옥사냥개의 어둠의 이빨 공격력이 10%만큼 증가합니다."
+        }, {
+          "description" : "임프의 불화살 시전 시간이 0.75초만큼 단축되고, 지옥수호병의 군단의 일격 공격력이 15%만큼 증가하며, 지옥사냥개의 어둠의 이빨 공격력이 15%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11206,
+        "name" : "지옥의 결속력",
+        "icon" : "spell_shadow_felmending",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "50%의 확률로 흑마법사가 입힌 주문 피해의 15%만큼 소환수의 생명력이 회복됩니다."
+        }, {
+          "description" : "100%의 확률로 흑마법사가 입힌 주문 피해의 15%만큼 소환수의 생명력이 회복됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11713,
+        "name" : "악마 환생",
+        "icon" : "spell_shadow_demonictactics",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "소환한 악마가 죽으면, 악마 환생 효과를 얻어 다음 시전하는 악마 소환 주문의 시전 시간이 50%만큼 감소합니다. 10초 동안 지속됩니다. 2분의 재사용 대기시간이 있습니다."
+        }, {
+          "description" : "소환한 악마가 죽으면, 악마 환생 효과를 얻어 다음 시전하는 악마 소환 주문의 시전 시간이 100%만큼 감소합니다. 10초 동안 지속됩니다. 2분의 재사용 대기시간이 있습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11020,
+        "name" : "마나 섭취",
+        "icon" : "spell_shadow_manafeed",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "소환한 악마가 기본 능력으로 치명타 공격을 적중시키면 흑마법사가 즉시 총 마나의 2%에 해당하는 마나를 회복합니다.\n\n\n\n마나 흡수나 생명력 전환 주문으로 마나를 얻을 때마다 소환된 악마도 해당 마나의 30%만큼을 얻습니다."
+        }, {
+          "description" : "소환한 악마가 기본 능력으로 치명타 공격을 적중시키면 흑마법사가 즉시 총 마나의 4%에 해당하는 마나를 회복합니다.\n\n\n\n마나 흡수나 생명력 전환 주문으로 마나를 얻을 때마다 소환된 악마도 해당 마나의 60%만큼을 얻습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11190,
+        "name" : "악마의 보호",
+        "icon" : "spell_shadow_ragingscream",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "악마의 갑옷이 활성화되어 있는 동안 주문과 효과로 회복되는 생명력이 5%만큼 증가하고 마의 갑옷이 활성화되어 있는 동안 회복되는 생명력이 50%만큼 증가합니다."
+        }, {
+          "description" : "악마의 갑옷이 활성화되어 있는 동안 주문과 효과로 회복되는 생명력이 10%만큼 증가하고 마의 갑옷이 활성화되어 있는 동안 회복되는 생명력이 100%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11014,
+        "name" : "소환의 대가",
+        "icon" : "spell_shadow_impphaseshift",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "임프와 보이드워커, 서큐버스, 지옥사냥개, 지옥수호병 소환 주문의 시전 시간이 0.5초만큼 단축되고 소비되는 마나가 50%만큼 감소됩니다."
+        }, {
+          "description" : "임프와 보이드워커, 서큐버스, 지옥사냥개, 지옥수호병 소환 주문의 시전 시간이 1초만큼 단축되고 소비되는 마나가 100%만큼 감소됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11198,
+        "name" : "파멸의 예언",
+        "icon" : "spell_nature_removecurse",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "운명의 파멸로 피해를 입힐 때 악마를 소환할 확률이 10%만큼 증가합니다.\n\n\n\n또한 어둠의 화살, 굴단의 손, 소각 주문 시전 시 5%의 확률로 악마 형상의 재사용 대기시간이 15초만큼 감소합니다."
+        }, {
+          "description" : "운명의 파멸로 피해를 입힐 때 악마를 소환할 확률이 20%만큼 증가합니다.\n\n\n\n또한 어둠의 화살, 굴단의 손, 소각 주문 시전 시 10%의 확률로 악마 형상의 재사용 대기시간이 15초만큼 감소합니다."
+        }, {
+          "description" : "운명의 파멸로 피해를 입힐 때 악마를 소환할 확률이 30%만큼 증가합니다.\n\n\n\n또한 어둠의 화살, 굴단의 손, 소각 주문 시전 시 15%의 확률로 악마 형상의 재사용 대기시간이 15초만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11160,
+        "name" : "악마의 권능",
+        "icon" : "ability_warlock_demonicempowerment",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "기본 마나의 6% ",
+          "range" : "100 yd range",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 1분",
+          "description" : "악마에게 권능을 부여합니다.\n\n\n\n임프 - 임프의 총 생명력의 30%에 해당하는 생명력을 즉시 회복시킵니다.\n\n\n\n보이드워커 - 20초 동안 생명력이 20%만큼, 주문과 공격의 위협 수준이 20%만큼 증가합니다.\n\n\n\n서큐버스 - 즉시 소멸하여 상급 은신 상태를 취합니다. 소멸 시 모든 기절, 감속, 이동 방해 효과에서 벗어납니다.\n\n\n\n지옥사냥개 - 지옥사냥개에게 걸린 모든 해로운 효과를 무효화합니다.\n\n\n\n지옥수호병 - 지옥수호병이 즉시 모든 기절, 감속, 이동 방해 효과에서 벗어나고 15초 동안 해당 효과에 면역이 됩니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10998,
+        "name" : "생명력 집중 연마",
+        "icon" : "spell_shadow_lifedrain",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "생명력 집중 주문으로 이전되는 생명력이 10%만큼 증가하고 소비되는 생명력이 10%만큼 감소합니다. 추가로 생명력 집중 효과를 받는 도중 소환된 악마가 받는 피해가 15%만큼 감소합니다."
+        }, {
+          "description" : "생명력 집중 주문으로 이전되는 생명력이 20%만큼 증가하고 소비되는 생명력이 20%만큼 감소합니다. 추가로 생명력 집중 효과를 받는 도중 소환된 악마가 받는 피해가 30%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11024,
+        "name" : "화산핵",
+        "icon" : "ability_warlock_moltencore",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "제물로 피해를 입히면 2%의 확률로 화산핵 효과를 얻어 15초 내에 시전하는 다음 3회의 소각 주문이 강화됩니다.\n\n\n\n공격력이 6%만큼 증가하고 시전 시간이 10%만큼 감소합니다."
+        }, {
+          "description" : "제물로 피해를 입히면 4%의 확률로 화산핵 효과를 얻어 15초 내에 시전하는 다음 3회의 소각 주문이 강화됩니다.\n\n\n\n공격력이 12%만큼 증가하고 시전 시간이 20%만큼 감소합니다."
+        }, {
+          "description" : "제물로 피해를 입히면 6%의 확률로 화산핵 효과를 얻어 15초 내에 시전하는 다음 3회의 소각 주문이 강화됩니다.\n\n\n\n공격력이 18%만큼 증가하고 시전 시간이 30%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11201,
+        "name" : "굴단의 손",
+        "icon" : "inv_summerfest_firespirit",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "기본 마나의 7% ",
+          "range" : "40 yd range",
+          "castTime" : "시전 시간 2초",
+          "cooldown" : "재사용 대기시간: 12초",
+          "description" : "적 대상에게 유성을 떨어뜨려 63의 암흑 피해를 입히고, 4미터 반경에 15초 동안 범위 내 모든 대상이 자신의 악마에게서 치명타 공격을 받을 확률이 10%만큼 증가하는 마법 오라를 일으킵니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11814,
+        "name" : "불길함의 오라",
+        "icon" : "spell_shadow_sealofkings",
+        "x" : 2,
+        "y" : 3,
+        "req" : 11201,
+        "ranks" : [ {
+          "description" : "굴단의 손이 떨어지면 4미터 반경 내 모든 적이 2초 동안 이동 불가 상태가 되고, 6초 후에도 굴단의 저주 효과 범위 내에 있으면 4초 동안 기절합니다."
+        }, {
+          "description" : "굴단의 손이 떨어지면 4미터 반경 내 모든 적이 3초 동안 이동 불가 상태가 되고, 6초 후에도 굴단의 저주 효과 범위 내에 있으면 이동 불가였던 시간만큼 추가로 기절합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11188,
+        "name" : "고대 흑마법서",
+        "icon" : "ability_warlock_ancientgrimoire",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "지옥불정령과 파멸의 수호병이 지속하는 시간이 10초만큼 증가합니다."
+        }, {
+          "description" : "지옥불정령과 파멸의 수호병이 지속하는 시간이 20초만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11189,
+        "name" : "불지옥",
+        "icon" : "ability_warlock_inferno",
+        "x" : 1,
+        "y" : 4,
+        "req" : 11201,
+        "ranks" : [ {
+          "description" : "지옥의 불길의 범위가 10미터만큼 증가하고 이동 중에도 지옥의 불길을 시전할 수 있습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11034,
+        "name" : "죽음의 예언",
+        "icon" : "spell_fire_fireball02",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "어둠의 화살이나 소각, 영혼의 불꽃으로 생명력이 25% 이하인 대상을 공격하면 10초 동안 영혼의 불꽃 주문의 시전 시간이 20%만큼 감소합니다."
+        }, {
+          "description" : "어둠의 화살이나 소각, 영혼의 불꽃으로 생명력이 25% 이하인 대상을 공격하면 10초 동안 영혼의 불꽃 주문의 시전 시간이 40%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11199,
+        "name" : "화장",
+        "icon" : "ability_warlock_cremation",
+        "x" : 1,
+        "y" : 5,
+        "req" : 11189,
+        "ranks" : [ {
+          "description" : "지옥의 불길의 공격력이 15%만큼 증가하고, 굴단의 손 시전 시 50%의 확률로 대상에 걸린 자신의 제물 효과의 지속시간이 초기화됩니다."
+        }, {
+          "description" : "지옥의 불길의 공격력이 30%만큼 증가하고, 굴단의 손 시전 시 100%의 확률로 대상에 걸린 자신의 제물 효과의 지속시간이 초기화됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11042,
+        "name" : "악마의 서약",
+        "icon" : "spell_shadow_demonicpact",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "주문력이 2%만큼 증가하고, 소환된 악마가 주위 모든 아군 파티원 또는 공격대원에게 악마의 서약 효과를 겁니다.\n\n\n\n악마의 서약 효과를 받으면 주문력이 10%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11044,
+        "name" : "탈태",
+        "icon" : "spell_shadow_demonform",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "description" : "30초 동안 악마로 변신합니다. 이 동안에는 방어도가 600%만큼, 공격력이 20%만큼 증가하고 근접 공격으로 치명타 공격을 받을 확률이 6%만큼, 기절과 감속 효과의 지속시간이 50%만큼 감소합니다. 악마 형상 상태에서는 기본 능력에 추가로 악마의 능력을 사용할 수 있습니다. 3분의 재사용 대기시간이 필요합니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "파괴",
+      "icon" : "spell_shadow_rainoffire",
+      "backgroundFile" : "WarlockDestruction",
+      "overlayColor" : "#ff7f00",
+      "description" : "악마의 화염을 불러내어 적을 불태우고 파괴합니다.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 17962,
+        "name" : "점화",
+        "icon" : "spell_fire_fireball",
+        "cost" : "기본 마나의 16% ",
+        "range" : "40 yd range",
+        "castTime" : "즉시 시전",
+        "cooldown" : "재사용 대기시간: 10초",
+        "reagents" : [ ],
+        "description" : "대상에게 걸려 있는 자신의 제물 주문의 주기적인 피해의 60%에 해당하는 화염 피해를 즉시 입힙니다.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 84739,
+        "name" : "재앙",
+        "icon" : "spell_fire_meteorstorm",
+        "reagents" : [ ],
+        "description" : "화염 계열 주문의 공격력이 25%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77220,
+        "name" : "불바다",
+        "icon" : "spell_fire_moltenblood",
+        "reagents" : [ ],
+        "description" : "화염 계열 주문의 공격력이 10%만큼 증가합니다. 특화력 1당 화염 계열 주문의 공격력이 추가로 1.25%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10938,
+        "name" : "파멸",
+        "icon" : "spell_shadow_deathpact",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "어둠의 화살과 혼돈의 화살, 제물의 시전 시간이 0.1초만큼 단축됩니다."
+        }, {
+          "description" : "어둠의 화살과 혼돈의 화살, 제물의 시전 시간이 0.3초만큼 단축됩니다."
+        }, {
+          "description" : "어둠의 화살과 혼돈의 화살, 제물의 시전 시간이 0.5초만큼 단축됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10936,
+        "name" : "어둠과 불길",
+        "icon" : "spell_shadow_shadowandflame",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "어둠의 화살과 소각 주문의 공격력이 4%만큼 증가합니다. 어둠의 화살 공격 시 33%의 확률로 어둠의 화살 연마 효과가 발동합니다.\n\n\n\n어둠의 화살 연마 효과가 발동하면 대상은 주문 피해에 취약한 상태가 되며 30초 동안 치명타 공격에 적중 당할 확률이 5%만큼 증가합니다."
+        }, {
+          "description" : "어둠의 화살과 소각 주문의 공격력이 8%만큼 증가합니다. 어둠의 화살 공격 시 66%의 확률로 어둠의 화살 연마 효과가 발동합니다.\n\n\n\n어둠의 화살 연마 효과가 발동하면 대상은 주문 피해에 취약한 상태가 되며 30초 동안 치명타 공격에 적중 당할 확률이 5%만큼 증가합니다."
+        }, {
+          "description" : "어둠의 화살과 소각 주문의 공격력이 12%만큼 증가합니다. 어둠의 화살 공격 시 100%의 확률로 어둠의 화살 연마 효과가 발동합니다.\n\n\n\n어둠의 화살 연마 효과가 발동하면 대상은 주문 피해에 취약한 상태가 되며 30초 동안 치명타 공격에 적중 당할 확률이 5%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10960,
+        "name" : "제물 연마",
+        "icon" : "spell_fire_immolation",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "제물 주문의 공격력이 10%만큼 증가합니다."
+        }, {
+          "description" : "제물 주문의 공격력이 20%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11197,
+        "name" : "영혼의 불꽃 연마",
+        "icon" : "spell_fire_fireball02",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "영혼의 불꽃으로 피해를 입힌 후 15초 동안 주문 가속이 7%만큼 증가합니다. 이 효과는 15초의 재사용 대기시간이 있습니다."
+        }, {
+          "description" : "영혼의 불꽃으로 피해를 입힌 후 15초 동안 주문 가속이 15%만큼 증가합니다. 이 효과는 15초의 재사용 대기시간이 있습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11181,
+        "name" : "불보라",
+        "icon" : "spell_fire_selfdestruct",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "영혼의 불꽃 주문의 시전 시간이 0.5초만큼, 소각의 시전 시간이 0.13 초만큼 감소합니다."
+        }, {
+          "description" : "영혼의 불꽃 주문의 시전 시간이 1초만큼, 소각의 시전 시간이 0.25 초만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11196,
+        "name" : "불타는 고통 연마",
+        "icon" : "spell_fire_soulburn",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "생명력이 25% 이하인 적에게 불타는 고통이 극대화 효과를 발휘할 확률이 20%만큼 증가합니다."
+        }, {
+          "description" : "생명력이 25% 이하인 적에게 불타는 고통이 극대화 효과를 발휘할 확률이 40%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10940,
+        "name" : "재앙의 여파",
+        "icon" : "spell_fire_fire",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "불의 비 주문 사용 시 6%의 확률로 대상을 2초 동안 기절시키고, 점화 사용 시 50%의 확률로 5초 동안 대상을 멍한 상태로 만듭니다."
+        }, {
+          "description" : "불의 비 주문 사용 시 12%의 확률로 대상을 2초 동안 기절시키고, 점화 사용 시 100%의 확률로 5초 동안 대상을 멍한 상태로 만듭니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10978,
+        "name" : "역류",
+        "icon" : "ability_warlock_backdraft",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "점화 주문 시전 시 다음 시전하는 3회의 어둠의 화살, 소각, 혼돈의 화살 주문은 시전 시간 및 전역 재사용 대기시간이 10%만큼 감소합니다. 15초 동안 지속됩니다."
+        }, {
+          "description" : "점화 주문 시전 시 다음 시전하는 3회의 어둠의 화살, 소각, 혼돈의 화살 주문은 시전 시간이 20%만큼 감소합니다. 15초 동안 지속됩니다."
+        }, {
+          "description" : "점화 주문 시전 시 다음 시전하는 3회의 어둠의 화살, 소각, 혼돈의 화살 주문은 시전 시간이 30%만큼 감소합니다. 15초 동안 지속됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10948,
+        "name" : "어둠의 연소",
+        "icon" : "spell_shadow_scourgebuild",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "기본 마나의 15% ",
+          "range" : "40 yd range",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 15초",
+          "description" : "즉시 적을 강타하여 36의 암흑 피해를 입힙니다. 이 주문이 걸린 지 5초 내에 대상이 죽고 경험치나 명예 점수를 받으면 영혼의 조각 3개를 얻습니다. 생명력이 20% 미만인 대상에게만 사용할 수 있습니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11182,
+        "name" : "타오르는 불씨",
+        "icon" : "ability_warlock_burningembers",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "영혼의 불꽃과 임프의 불화살 시전 시 대상에게 타오르는 불씨를 남겨 7초 동안 입힌 피해의 15%에 해당하는 지속적인 피해를 입힙니다.\n\n\n\n7초 동안 타오르는 불씨 효과는 매 1초마다 최대 1의 암흑 피해를 입힙니다."
+        }, {
+          "description" : "영혼의 불꽃과 임프의 불화살 시전 시 대상에게 타오르는 불씨를 남겨 7초 동안 입힌 피해의 30%에 해당하는 지속적인 피해를 입힙니다.\n\n\n\n타오르는 불씨는 7초 동안 매 1초마다 최대 2의 화염 피해를 입힙니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10970,
+        "name" : "영혼 갈취",
+        "icon" : "spell_shadow_soulleech_3",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "어둠의 연소, 영혼의 불꽃, 혼돈의 화살로 피해를 입히면 총 생명력과 총 마나의 2%만큼을 즉시 회복하고 재충전 효과를 얻습니다.\n\n\n\n재충전 - 최대 10명의 파티원 혹은 공격대원이 매 10초마다 최대 마나의 1%에 해당하는 마나를 회복합니다. 15초 동안 지속됩니다."
+        }, {
+          "description" : "어둠의 연소, 영혼의 불꽃, 혼돈의 화살로 피해를 입히면 총 생명력과 총 마나의 4%만큼을 즉시 회복하고 재충전 효과를 얻습니다.\n\n\n\n재충전 - 최대 10명의 파티원 혹은 공격대원이 매 10초마다 최대 마나의 1%에 해당하는 마나를 회복합니다. 15초 동안 지속됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10958,
+        "name" : "반발력",
+        "icon" : "spell_fire_playingwithfire",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "물리 공격을 받았을 때 8%의 확률로 다음 어둠의 화살 및 소각의 시전 시간이 100%만큼 단축됩니다. 이 효과는 8초 동안 지속되며 8초마다 1번씩만 발동됩니다."
+        }, {
+          "description" : "물리 공격을 받았을 때 16%의 확률로 다음 어둠의 화살 및 소각의 시전 시간이 100%만큼 단축됩니다. 이 효과는 8초 동안 지속되며 8초마다 1번씩만 발동됩니다."
+        }, {
+          "description" : "물리 공격을 받았을 때 25%의 확률로 다음 어둠의 화살 및 소각의 시전 시간이 100%만큼 단축됩니다. 이 효과는 8초 동안 지속되며 8초마다 1번씩만 발동됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12120,
+        "name" : "황천의 수호",
+        "icon" : "spell_fire_felfireward",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "암흑계 수호 효과를 황천의 수호로 변환시킵니다. 주문을 사용하려면 악마의 갑옷이나 마의 갑옷이 필요합니다.\n\n\n\n황천의 수호\n\n30초 동안 129의 주문 피해를 흡수합니다. 30초의 재사용 대기시간이 있습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10984,
+        "name" : "유황 불길",
+        "icon" : "ability_warlock_fireandbrimstone",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "제물에 걸린 대상에게 소각과 혼돈의 화살 주문으로 입히는 피해가 2%만큼 증가하고, 점화 주문이 극대화 효과를 발휘할 확률이 5%만큼 증가합니다."
+        }, {
+          "description" : "제물에 걸린 대상에게 소각과 혼돈의 화살 주문으로 입히는 피해가 4%만큼 증가하고, 점화 주문이 극대화 효과를 발휘할 확률이 10%만큼 증가합니다."
+        }, {
+          "description" : "제물에 걸린 대상에게 소각과 혼돈의 화살 주문으로 입히는 피해가 6%만큼 증가하고, 점화 주문이 극대화 효과를 발휘할 확률이 15%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10980,
+        "name" : "어둠의 격노",
+        "icon" : "spell_shadow_shadowfury",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "기본 마나의 27% ",
+          "range" : "30 yd range",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 20초",
+          "description" : "어둠의 격노를 주위로 방출하여 8미터 반경 내의 모든 적에게 27의 암흑 피해를 입히고 3초 동안 기절시킵니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10964,
+        "name" : "황천의 보호",
+        "icon" : "spell_shadow_netherprotection",
+        "x" : 3,
+        "y" : 4,
+        "req" : 12120,
+        "ranks" : [ {
+          "description" : "암흑계 수호, 황천의 수호 또는 기타 효과로 피해를 흡수하면 황천의 보호 효과가 발동하여 12초 동안 받는 해당 마법 계열의 모든 피해가 15%만큼 감소합니다."
+        }, {
+          "description" : "암흑계 수호, 황천의 수호 또는 기타 효과로 피해를 흡수하면 황천의 보호 효과가 발동하여 12초 동안 받는 해당 마법 계열의 모든 피해가 30%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10982,
+        "name" : "임프 강화",
+        "icon" : "ability_warlock_empoweredimp",
+        "x" : 0,
+        "y" : 5,
+        "req" : 11182,
+        "ranks" : [ {
+          "description" : "임프가 불화살을 시전하면 2%의 확률로 8초내에 시전하는 흑마법사의 영혼의 불꽃은 즉시 시전됩니다."
+        }, {
+          "description" : "임프가 불화살을 시전하면 4%의 확률로 8초내에 시전하는 흑마법사의 영혼의 불꽃은 즉시 시전됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10962,
+        "name" : "대혼란의 파멸",
+        "icon" : "ability_warlock_baneofhavoc",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "cost" : "기본 마나의 10% ",
+          "range" : "40 yd range",
+          "castTime" : "즉시 시전",
+          "description" : "5분 동안 대상을 파멸에 빠뜨려 흑마법사가 다른 대상에게 입히는 모든 피해의 15%에 해당하는 피해를 받게 합니다.\n\n\n\n동시에 하나의 대상에만 대혼란의 파멸을 걸 수 있으며, 흑마법사마다 대상에 동시에 하나의 파멸만 걸 수 있습니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10986,
+        "name" : "혼돈의 화살",
+        "icon" : "ability_warlock_chaosbolt",
+        "x" : 1,
+        "y" : 6,
+        "req" : 10984,
+        "ranks" : [ {
+          "cost" : "기본 마나의 7% ",
+          "range" : "40 yd range",
+          "castTime" : "시전 시간 2.5초",
+          "cooldown" : "재사용 대기시간: 12초",
+          "description" : "혼돈의 불꽃을 적에게 발사하여 0의 화염 피해를 입힙니다. 혼돈의 화살은 저항할 수 없고 모든 흡수 효과를 관통합니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

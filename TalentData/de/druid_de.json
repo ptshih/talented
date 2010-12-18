@@ -1,0 +1,1081 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 11,
+      "name" : "Druide",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "Gleichgewicht",
+      "icon" : "spell_nature_starfall",
+      "backgroundFile" : "DruidBalance",
+      "overlayColor" : "#cc4ccc",
+      "description" : "Kann die Gestalt eines machtvollen Mondkin annehmen. Seine Arkan- und Naturmagie zerstört Feinde aus der Entfernung.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 78674,
+        "name" : "Sternensog",
+        "icon" : "spell_arcane_arcane03",
+        "cost" : "11% des Grundmanas",
+        "range" : "40 yd range",
+        "castTime" : "2 Sek. Zauber",
+        "cooldown" : "15 Sek. Abklingzeit",
+        "reagents" : [ ],
+        "description" : "Ihr vereint die Mächte der Sonne und des Mondes und schleudert einen vernichtenden Energiestoß auf das Ziel. Fügt dem Ziel 1279 bis 1714 Zaubersturmschaden zu und erzeugt 15 Solar- oder Lunarenergie (der jeweils für Euch nützlichere Energiewert erhält den Bonus).",
+        "keyAbility" : true
+      }, {
+        "spellId" : 16913,
+        "name" : "Mondzorn",
+        "icon" : "spell_nature_moonglow",
+        "reagents" : [ ],
+        "description" : "Arkan- und Naturzauberschaden um 15% erhöht.\n\n\n\nErhöht den kritischen Schadensbonus Eurer Zauber 'Zorn', 'Mondfeuer', 'Sternenfeuer', 'Sternensog', 'Insektenschwarm' und 'Sternenregen' um 100%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77492,
+        "name" : "Totale Finsternis",
+        "icon" : "ability_druid_eclipse",
+        "reagents" : [ ],
+        "description" : "Erhöht den Bonusschaden durch 'Finsternis' um 12%. Jeder Punkt Meisterschaft erhöht den Bonus um zusätzlich 1.5%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 8359,
+        "name" : "Anmut der Natur",
+        "icon" : "spell_nature_naturesblessing",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Wenn Ihr Eure Zauber 'Mondfeuer', 'Nachwachsen' oder 'Insektenschwarm' wirkt, gewinnt Ihr 15 Sek. lang 5% Zaubertempo. Dieser Effekt hat 1 Min. Abklingzeit. Wenn Ihr eine Mond- oder Sonnenfinsternis erreicht, wird die Abklingzeit von 'Anmut der Natur' sofort abgeschlossen."
+        }, {
+          "description" : "Wenn Ihr Eure Zauber 'Mondfeuer', 'Nachwachsen' oder 'Insektenschwarm' wirkt, gewinnt Ihr 15 Sek. lang 10% Zaubertempo. Dieser Effekt hat 1 Min. Abklingzeit. Wenn Ihr eine Mond- oder Sonnenfinsternis erreicht, wird die Abklingzeit von 'Anmut der Natur' sofort abgeschlossen."
+        }, {
+          "description" : "Wenn Ihr Eure Zauber 'Mondfeuer', 'Nachwachsen' oder 'Insektenschwarm' wirkt, gewinnt Ihr 15 Sek. lang 15% Zaubertempo. Dieser Effekt hat 1 Min. Abklingzeit. Wenn Ihr eine Mond- oder Sonnenfinsternis erreicht, wird die Abklingzeit von 'Anmut der Natur' sofort abgeschlossen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8349,
+        "name" : "Zorniges Sternenlicht",
+        "icon" : "spell_nature_abolishmagic",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Verringert die Zauberzeit Eurer Zauber 'Zorn' und 'Sternenfeuer' um 0,15 Sek."
+        }, {
+          "description" : "Verringert die Zauberzeit Eurer Zauber 'Zorn' und 'Sternenfeuer' um 0,25 Sek."
+        }, {
+          "description" : "Verringert die Zauberzeit Eurer Zauber 'Zorn' und 'Sternenfeuer' um 0.5 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11281,
+        "name" : "Erhabenheit der Natur",
+        "icon" : "inv_staff_01",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht die kritische Trefferchance Eurer Zauber um 2%."
+        }, {
+          "description" : "Erhöht die kritische Trefferchance Eurer Zauber um 4%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11284,
+        "name" : "Genesis",
+        "icon" : "spell_arcane_arcane03",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Erhöht die hervorgerufene Heilung Eurer regelmäßigen Zauber sowie Eures Zaubers 'Rasche Heilung' um 2% und erhöht die Effektdauer Euer Zauber 'Mondfeuer' und 'Insektenschwarm' um 2 Sek."
+        }, {
+          "description" : "Erhöht die hervorgerufene Heilung Eurer regelmäßigen Zauber sowie Eures Zaubers 'Rasche Heilung' um 4% und erhöht die Effektdauer Euer Zauber 'Mondfeuer' und 'Insektenschwarm' um 4 Sek."
+        }, {
+          "description" : "Erhöht die hervorgerufene Heilung Eurer regelmäßigen Zauber sowie Eures Zaubers 'Rasche Heilung' um 6% und erhöht die Effektdauer Euer Zauber 'Mondfeuer' und 'Insektenschwarm' um 6 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8353,
+        "name" : "Mondschein",
+        "icon" : "spell_nature_sentinal",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Verringert die Manakosten Eurer Schadens- und Heilzauber um 3%."
+        }, {
+          "description" : "Verringert die Manakosten Eurer Schadens- und Heilzauber um 6%."
+        }, {
+          "description" : "Verringert die Manakosten Eurer Schadens- und Heilzauber um 9%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8383,
+        "name" : "Gleichgewicht der Kräfte",
+        "icon" : "ability_druid_balanceofpower",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Erhöht Euren Natur- und Arkanschaden um 1% und erhöht Eure Zaubertrefferwertung zusätzlich um einen Wert, der 50% Eurer Willenskraft entspricht."
+        }, {
+          "description" : "Erhöht Euren Natur- und Arkanschaden um 2% und erhöht Eure Zaubertrefferwertung zusätzlich um einen Wert, der 100% Eurer Willenskraft entspricht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8389,
+        "name" : "Euphorie",
+        "icon" : "achievement_boss_valithradreamwalker",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Wenn Ihr Euch nicht im Zustand einer Finsternis befindet, habt Ihr eine Chance von 12%, die beim Verursachen von Schaden mit 'Zorn' und 'Sternenfeuer' erzeugte Solar- oder Lunarenergie zu verdoppeln.\n\n\n\nErreicht Ihr eine Sonnen- oder Mondfinsternis, werden sofort 8% Eures gesamten Manas wiederhergestellt."
+        }, {
+          "description" : "Wenn Ihr Euch nicht im Zustand einer Finsternis befindet, habt Ihr eine Chance von 24%, die beim Verursachen von Schaden mit 'Zorn' und 'Sternenfeuer' erzeugte Solar- oder Lunarenergie zu verdoppeln.\n\n\n\nErreicht Ihr eine Sonnen- oder Mondfinsternis, werden sofort 16% Eures gesamten Manas wiederhergestellt."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11278,
+        "name" : "Mondkingestalt",
+        "icon" : "spell_nature_forceofnature",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "13% des Grundmanas",
+          "castTime" : "Sofort",
+          "description" : "Verwandelt Euch in eine Mondkingestalt. In dieser Gestalt wird Euer Arkan- und Naturzauberschaden um 10%, der Rüstungsbonus durch Gegenstände um 120% und die Zaubertempowertung aller nahen Gruppen- und Schlachtzugsmitglieder sowie befreundeten Ziele in einem Umkreis von 100 Metern um 5% erhöht. In Mondkingestalt können keine Heil- oder Wiederbelebungszauber gewirkt werden.\n\n\n\nDer Akt des Gestaltwandelns befreit den Zaubernden von Verwandlungs- und bewegungseinschränkenden Effekten."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11282,
+        "name" : "Taifun",
+        "icon" : "ability_druid_typhoon",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "32% des Grundmanas",
+          "range" : "30 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "20 Sek. Abklingzeit",
+          "description" : "Ihr beschwört einen wilden Taifun, der feindlichen Zielen im Umkreis von 30 Metern bei Kontakt 1175 Naturschaden zufügt, sie zurückstößt und 6 Sek. lang benommen macht."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8381,
+        "name" : "Sternschnuppen",
+        "icon" : "ability_mage_arcanebarrage",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Wenn Ihr Eure Zauber 'Mondfeuer' oder 'Insektenschwarm' wirkt, besteht eine Chance von 2%, die Abklingzeit Eures Zaubers 'Sternensog' sofort abzuschließen und seine Zauberzeit um 100% zu verringern. Hält 8 Sek. lang an."
+        }, {
+          "description" : "Wenn Ihr Eure Zauber 'Mondfeuer' oder 'Insektenschwarm' wirkt, besteht eine Chance von 4%, die Abklingzeit Eures Zaubers 'Sternensog' sofort abzuschließen und seine Zauberzeit um 100% zu verringern. Hält 8 Sek. lang an."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8391,
+        "name" : "Eulkinraserei",
+        "icon" : "ability_druid_owlkinfrenzy",
+        "x" : 1,
+        "y" : 3,
+        "req" : 11278,
+        "ranks" : [ {
+          "description" : "In Mondkingestalt haben gegen Euch geführte Angriffe eine Chance von 5%, Euch in Raserei zu versetzen, wodurch Euer verursachter Schaden um 10% erhöht wird und Ihr beim Wirken von Gleichgewichtszaubern durch erlittenen Schaden keine Verzögerung der Zauberzeit erleidet. Hält 10 Sek. lang an."
+        }, {
+          "description" : "In Mondkingestalt haben gegen Euch geführte Angriffe eine Chance von 10%, Euch in Raserei zu versetzen, wodurch Euer verursachter Schaden um 10% erhöht wird und Ihr beim Wirken von Gleichgewichtszaubern durch erlittenen Schaden keine Verzögerung der Zauberzeit erleidet. Hält 10 Sek. lang an."
+        }, {
+          "description" : "In Mondkingestalt haben gegen Euch geführte Angriffe eine Chance von 15%, Euch in Raserei zu versetzen, wodurch Euer verursachter Schaden um 10% erhöht wird und Ihr beim Wirken von Gleichgewichtszaubern durch erlittenen Schaden keine Verzögerung der Zauberzeit erleidet. Hält 10 Sek. lang an."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8379,
+        "name" : "Windböen",
+        "icon" : "ability_druid_galewinds",
+        "x" : 2,
+        "y" : 3,
+        "req" : 11282,
+        "ranks" : [ {
+          "description" : "Erhöht den Schaden Eurer Zauber 'Hurrikan' und 'Taifun' um 15% und die Reichweite Eures Zaubers 'Wirbelsturm' um 2 Meter."
+        }, {
+          "description" : "Erhöht den Schaden Eurer Zauber 'Hurrikan' und 'Taifun' um 30% und die Reichweite Eures Zaubers 'Wirbelsturm' um 4 Meter."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8361,
+        "name" : "Sonnenstrahl",
+        "icon" : "ability_vehicle_sonicshockwave",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "18% des Grundmanas",
+          "range" : "40 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "1 Min. Abklingzeit",
+          "description" : "Ihr beschwört einen Sonnenstrahl über der Position des feindlichen Ziels, wodurch der gewirkte Zauber des Ziels unterbrochen wird. Alle feindlichen Ziele, die sich innerhalb des Strahlradius von 5 Metern aufhalten, werden zum Schweigen gebracht, solange der Strahl besteht. Der Sonnenstrahl hält 10 Sek. lang an."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12149,
+        "name" : "Traumzustand",
+        "icon" : "ability_druid_dreamstate",
+        "x" : 0,
+        "y" : 4,
+        "req" : 8389,
+        "ranks" : [ {
+          "description" : "Wenn Ihr 'Anregen' auf Euch selbst wirkt, gewinnt Ihr während der Dauer des Effekts zusätzlich 15% Eures Gesamtmanas."
+        }, {
+          "description" : "Wenn Ihr 'Anregen' auf Euch selbst wirkt, gewinnt Ihr während der Dauer des Effekts zusätzlich 30% Eures Gesamtmanas."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8399,
+        "name" : "Naturgewalt",
+        "icon" : "ability_druid_forceofnature",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "12% des Grundmanas",
+          "range" : "40 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "3 Min. Abklingzeit",
+          "description" : "Beschwört 3 Treants, die das Ziel 30 Sek. lang angreifen."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12150,
+        "name" : "Sonnenfeuer",
+        "icon" : "ability_mage_firestarter",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Während 'Sonnenfinsternis' wird Euer Zauber 'Mondfeuer' zu 'Sonnenfeuer' umgewandelt."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11277,
+        "name" : "Erde und Mond",
+        "icon" : "ability_druid_earthandsky",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Eure Zauber 'Zorn' und 'Sternenfeuer' lösen beim Ziel den Effekt 'Erde und Mond' aus, durch den der erlittene Zauberschaden des Ziels 12 Sek. lang um 8% erhöht wird. Zudem wird Euer Zauberschaden um 2% erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8403,
+        "name" : "Pilzbewuchs",
+        "icon" : "creature_sporemushroom",
+        "x" : 1,
+        "y" : 5,
+        "req" : 8399,
+        "ranks" : [ {
+          "description" : "Sterben Eure Treants oder werden Eure Wildpilze ausgelöst, entsteht an diesem Ort ein Pilzbewuchs, welcher den Boden im Umkreis von 8 Metern bedeckt und feindliche Ziele um 25% verlangsamt. Hält 10 Sek. lang an."
+        }, {
+          "description" : "Sterben Eure Treants oder werden Eure Wildpilze ausgelöst, entsteht an diesem Ort ein Pilzbewuchs, welcher den Boden im Umkreis von 8 Metern bedeckt und feindliche Ziele um 50% verlangsamt. Hält 10 Sek. lang an."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8393,
+        "name" : "Mondregen",
+        "icon" : "achievement_worldevent_lunar",
+        "x" : 2,
+        "y" : 5,
+        "req" : 12150,
+        "ranks" : [ {
+          "description" : "Beim Zaubern von 'Mondfeuer' erhaltet Ihr 'Mondregen'. 'Mondregen' erhöht den direkten Schaden, der von Eurem Zauber 'Mondfeuer' verursacht wird, um 15% und verringert die Manakosten um 10%. Dieser Effekt wird verstärkt und seine Dauer zurückgesetzt, wenn Ihr Euch bewegt. Bis zu 3 Mal stapelbar. Hält 3 Sek. lang an."
+        }, {
+          "description" : "Beim Zaubern von 'Mondfeuer' erhaltet Ihr 'Mondregen'. 'Mondregen' erhöht den direkten Schaden, der von Eurem Zauber 'Mondfeuer' verursacht wird, um 30% und verringert die Manakosten um 20%. Dieser Effekt wird verstärkt und seine Dauer zurückgesetzt, wenn Ihr Euch bewegt. Bis zu 3 Mal stapelbar. Hält 3 Sek. lang an."
+        }, {
+          "description" : "Beim Zaubern von 'Mondfeuer' erhaltet Ihr 'Mondregen'. 'Mondregen' erhöht den direkten Schaden, der von Eurem Zauber 'Mondfeuer' verursacht wird, um 45% und verringert die Manakosten um 30%. Dieser Effekt wird verstärkt und seine Dauer zurückgesetzt, wenn Ihr Euch bewegt. Bis zu 3 Mal stapelbar. Hält 3 Sek. lang an."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8405,
+        "name" : "Sternenregen",
+        "icon" : "ability_druid_starfall",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "35% des Grundmanas",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "1,5 Min. Abklingzeit",
+          "description" : "Ihr beschwört einen Sternenschauer vom Himmel, der auf alle Ziele innerhalb von 40 Metern um den Zaubernden herniedergeht. Jeder Stern verursacht 353 bis 406 Arkanschaden. Es werden maximal 20 Sterne beschworen. Hält 10 Sek. lang an.\n\n\n\nGestaltwandel in eine Tiergestalt oder Aufsitzen brechen den Effekt ab. Jedweder Effekt, der Euch die Kontrolle über Euren Charakter verlieren lässt, führt zum Abbruch von 'Sternenregen'."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Wilder Kampf",
+      "icon" : "ability_racial_bearform",
+      "backgroundFile" : "DruidFeralCombat",
+      "overlayColor" : "#ff00ff",
+      "description" : "Nimmt die Gestalt einer Großkatze an, um zu beißen und blutende Wunden zu schlagen oder eine mächtige Bärengestalt, um Schaden zu absorbieren und Verbündete zu schützen.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : true,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 33917,
+        "name" : "Zerfleischen",
+        "icon" : "ability_druid_mangle2",
+        "reagents" : [ ],
+        "description" : "Zerfleischt das Ziel, verursacht Schaden und lässt es 1 Min. lang zusätzlichen Schaden durch Blutungseffekte erleiden. Diese Fähigkeit kann in Katzen- und Bärengestalt angewendet werden.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 87335,
+        "name" : "Instinkt der Wildnis",
+        "icon" : "ability_ambush",
+        "reagents" : [ ],
+        "description" : "Verringert die Chance, dass Gegner Euch beim Schleichen entdecken.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 84735,
+        "name" : "Aggression",
+        "icon" : "ability_druid_predatoryinstincts",
+        "reagents" : [ ],
+        "description" : "Erhöht Eure Angriffskraft um 25%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 84840,
+        "name" : "Rache",
+        "icon" : "ability_paladin_shieldofvengeance",
+        "reagents" : [ ],
+        "description" : "Jedes Mal, wenn Ihr in Bärengestalt Schaden erleidet, erhaltet Ihr 5% des erlittenen Schadens als Angriffskraft, bis zu einem Maximum von 10% Eurer Gesundheit. Das Verwandeln in die Katzengestalt beendet diesen Effekt.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77494,
+        "name" : "Wilder Verteidiger",
+        "icon" : "ability_racial_cannibalize",
+        "reagents" : [ ],
+        "description" : "Erhöht den von Eurer Fähigkeit 'Wilde Verteidigung' absorbierten Schaden um 32%. Jeder Punkt Meisterschaft erhöht die Absorption um zusätzlich 4%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 77493,
+        "name" : "Rasiermesserscharfe Krallen",
+        "icon" : "inv_misc_monsterclaw_05",
+        "reagents" : [ ],
+        "description" : "Erhöht den von Euren Blutungseffekten verursachten Schaden um 25%. Jeder Punkt Meisterschaft erhöht den Blutungsschaden um zusätzlich 3.1%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 8295,
+        "name" : "Schnelligkeit der Wildnis",
+        "icon" : "spell_nature_spiritwolf",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht Euer Bewegungstempo in Katzengestalt um 15% und Eure Ausweichchance um 2%, während Ihr in Katzen- oder Bärengestalt seid."
+        }, {
+          "description" : "Erhöht Euer Bewegungstempo in Katzengestalt um 30% und Eure Ausweichchance um 4%, während Ihr in Katzen- oder Bärengestalt seid."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11716,
+        "name" : "Ingrimm",
+        "icon" : "spell_holy_blessingofstamina",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht Euer maximales Mana um 5%. Zudem wird Euch eine Chance von 33% gewährt, 10 Wut zu gewinnen, wenn Ihr Bärengestalt annehmt und Ihr behaltet bis zu 33 Eurer Energie, wenn Ihr Katzengestalt annehmt."
+        }, {
+          "description" : "Erhöht Euer maximales Mana um 10%. Zudem wird Euch eine Chance von 66% gewährt, 10 Wut zu gewinnen, wenn Ihr Bärengestalt annehmt und Ihr behaltet bis zu 66 Eurer Energie, wenn Ihr Katzengestalt annehmt."
+        }, {
+          "description" : "Erhöht Euer maximales Mana um 15%. Zudem wird Euch eine Chance von 100% gewährt, 10 Wut zu gewinnen, wenn Ihr Bärengestalt annehmt und Ihr behaltet bis zu 100 Eurer Energie, wenn Ihr Katzengestalt annehmt."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9026,
+        "name" : "Raubtierschläge",
+        "icon" : "ability_hunter_pet_cat",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht die kritische Trefferchance Eurer Fähigkeit 'Verheeren' bei Zielen, die über mehr als 80% Gesundheit verfügen, um 25%.\n\n\n\nEure Finishing-Moves gewähren pro Combopunkt eine Chance von 10%, dass Euer nächster gewirkter Naturzauber mit Zauberzeit, dessen Basiszauberzeit weniger als 10 Sek. beträgt, zu einem kostenlosen Spontanzauber wird."
+        }, {
+          "description" : "Erhöht die kritische Trefferchance Eurer Fähigkeit 'Verheeren' bei Zielen, die über mehr als 80% Gesundheit verfügen, um 50%.\n\n\n\nEure Finishing-Moves gewähren pro Combopunkt eine Chance von 20%, dass Euer nächster gewirkter Naturzauber mit Zauberzeit, dessen Basiszauberzeit weniger als 10 Sek. beträgt, zu einem kostenlosen Spontanzauber wird."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8760,
+        "name" : "Infizierte Wunden",
+        "icon" : "ability_druid_infectedwound",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Eure Angriffe 'Schreddern', 'Zermalmen', 'Verheeren' und 'Zerfleischen' schlagen dem Ziel eine infizierte Wunde. Die infizierte Wunde verringert das Bewegungstempo des Ziels um 25% und sein Angriffstempo um 10%. Hält 12 Sek. lang an."
+        }, {
+          "description" : "Eure Angriffe 'Schreddern', 'Zermalmen', 'Verheeren' und 'Zerfleischen' schlagen dem Ziel eine infizierte Wunde. Die infizierte Wunde verringert das Bewegungstempo des Ziels um 50% und sein Angriffstempo um 20%. Hält 12 Sek. lang an."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8305,
+        "name" : "Wilde Hiebe",
+        "icon" : "ability_druid_mangle.tga",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Eure automatischen Angriffe in Katzen- und Bärengestalt haben eine Chance von 5%, einen wilden Hieb hervorzurufen, der 310% Waffenschaden verursacht. Dieser Effekt kann innerhalb von 3 Sek. nur einmal auftreten."
+        }, {
+          "description" : "Eure automatischen Angriffe in Katzen- und Bärengestalt haben eine Chance von 10%, einen wilden Hieb hervorzurufen, der 310% Waffenschaden verursacht. Dieser Effekt kann innerhalb von 3 Sek. nur einmal auftreten."
+        }, {
+          "description" : "Eure automatischen Angriffe in Katzen- und Bärengestalt haben eine Chance von 15%, einen wilden Hieb hervorzurufen, der 310% Waffenschaden verursacht. Dieser Effekt kann innerhalb von 3 Sek. nur einmal auftreten."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8761,
+        "name" : "Urfuror",
+        "icon" : "ability_racial_cannibalize",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Verleiht Euch eine Chance von 50%, zusätzliche 5 Wut zu gewinnen, wenn Ihr in Bärengestalt einen kritischen Treffer erzielt. Gewährt Euren kritischen Treffern aus Fähigkeiten, die Combopunkte erzeugen, eine Chance von 50%, dem Ziel einen zusätzlichen Combopunkt hinzuzufügen, wenn Ihr Euch in Katzengestalt befindet."
+        }, {
+          "description" : "Verleiht Euch eine Chance von 100%, zusätzliche 5 Wut zu gewinnen, wenn Ihr in Bärengestalt einen kritischen Treffer erzielt. Gewährt Euren kritischen Treffern aus Fähigkeiten, die Combopunkte erzeugen, eine Chance von 100%, dem Ziel einen zusätzlichen Combopunkt hinzuzufügen, wenn Ihr Euch in Katzengestalt befindet."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11285,
+        "name" : "Wilde Aggression",
+        "icon" : "ability_druid_demoralizingroar",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Erhöht den Schaden Eurer Fähigkeit 'Wilder Biss' um 5% und lässt Eure Fertigkeit 'Feenfeuer' (Tiergestalt) 2 Stapel des Effekts 'Feenfeuer' hervorrufen."
+        }, {
+          "description" : "Erhöht den Schaden Eurer Fähigkeit 'Wilder Biss' um 10% und lässt Eure Fertigkeit 'Feenfeuer (Tiergestalt)' 3 Stapel des Effekts 'Feenfeuer' hervorrufen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8323,
+        "name" : "König des Dschungels",
+        "icon" : "ability_druid_kingofthejungle",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Für die Dauer Eurer Fähigkeit 'Wutanfall' wird Euer verursachter Schaden in Bärengestalt um 5% erhöht und Eure Fähigkeit 'Tigerfuror' stellt sofort 20 Energie wieder her."
+        }, {
+          "description" : "Für die Dauer Eurer Fähigkeit 'Wutanfall' wird Euer verursachter Schaden in Bärengestalt um 10% erhöht und Eure Fähigkeit 'Tigerfuror' stellt sofort 40 Energie wieder her."
+        }, {
+          "description" : "Für die Dauer Eurer Fähigkeit 'Wutanfall' wird Euer verursachter Schaden in Bärengestalt um 15% erhöht und Eure Fähigkeit 'Tigerfuror' stellt sofort 60 Energie wieder her."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8299,
+        "name" : "Wilde Attacke",
+        "icon" : "ability_hunter_pet_bear",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Lehrt 'Wilde Attacke (Bär)' und 'Wilde Attacke (Katze)'.\n\n\n\nWilde Attacke (Bär) - Stürmt auf einen Gegner zu, macht ihn 4 Sek. lang unbeweglich und unterbricht gewirkte Zauber. 15 Sekunden Abklingzeit.\n\n\n\nWilde Attacke (Katze) - Springt hinter einen Gegner und macht ihn 3 Sek. lang benommen. 30 Sekunden Abklingzeit."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8301,
+        "name" : "Stampede",
+        "icon" : "spell_druid_feralchargecat",
+        "x" : 2,
+        "y" : 2,
+        "req" : 8299,
+        "ranks" : [ {
+          "description" : "Erhöht nach der Benutzung von 'Wilde Attacke (Bär)' Euer Nahkampftempo 8 Sek. lang um 15%. Zusätzlich ist es Euch innerhalb von 10 Sek. nach der Anwendung von 'Wilde Attacke (Katze)' möglich, Euer nächstes 'Verheeren' zu nutzen, ohne dass Verstohlenheit notwendig ist, zudem werden die Energiekosten der Fähigkeit um 50% verringert."
+        }, {
+          "description" : "Erhöht nach der Benutzung von 'Wilde Attacke (Bär)' Euer Nahkampftempo 8 Sek. lang um 30%. Zusätzlich ist es Euch innerhalb von 10 Sek. nach der Anwendung von 'Wilde Attacke (Katze)' möglich, Euer nächstes 'Verheeren' zu nutzen, ohne dass Verstohlenheit notwendig ist. Zudem werden die Energiekosten der Fähigkeit um 100% verringert."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8293,
+        "name" : "Dickes Fell",
+        "icon" : "inv_misc_pelt_bear_03",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Erhöht Euren durch Gegenstände aus Stoff und Leder erzielten Rüstungswert um 4%, erhöht Euren Rüstungswert in Bärengestalt um weitere 11% und verringert Eure Chance, von Nahkampfangriffen kritisch getroffen zu werden, um 2%."
+        }, {
+          "description" : "Erhöht Euren durch Gegenstände aus Stoff und Leder erzielten Rüstungswert um 7%, erhöht Euren Rüstungswert in Bärengestalt um weitere 22% und verringert Eure Chance, von Nahkampfangriffen kritisch getroffen zu werden, um 4%."
+        }, {
+          "description" : "Erhöht Euren durch Gegenstände aus Stoff und Leder erzielten Rüstungswert um 10%, erhöht Euren Rüstungswert in Bärengestalt um weitere 33% und verringert Eure Chance, von Nahkampfangriffen kritisch getroffen zu werden, um 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8325,
+        "name" : "Rudelführer",
+        "icon" : "spell_nature_unyeildingstamina",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Befindet Ihr Euch in Bären- oder Katzengestalt, erhöht das Talent 'Rudelführer' die kritische Trefferchance aller Gruppen- und Schlachtzugsmitglieder in einem Umkreis von 100 Metern um 5%. Zusätzlich werdet Ihr, wenn Ihr in Katzen- oder Bärengestalt kritische Treffer erzielt, um 4% Eurer gesamten Gesundheit geheilt und gewinnt 4% Eures maximalen Manas hinzu. Dieser Effekt kann nur ein Mal alle 6 Sek. eintreten."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8307,
+        "name" : "Brutaler Hieb",
+        "icon" : "ability_druid_bash",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Erhöht die Betäubungsdauer Eurer Fähigkeiten 'Hieb' und 'Anspringen' um 0.5 Sek., verringert die Abklingzeit von 'Hieb' um 5 Sek. und verringert die Abklingzeit von 'Schädelstoß' um 25 Sek. Zudem werden Opfer Eurer Fähigkeit 'Schädelstoß' mit einem Effekt belegt, der ihre Manakosten 10 Sek. lang um 5% erhöht."
+        }, {
+          "description" : "Erhöht die Betäubungsdauer Eurer Fähigkeiten 'Hieb' und 'Anspringen' um 1 Sek., verringert die Abklingzeit von 'Hieb' um 10 Sek. und verringert die Abklingzeit von 'Schädelstoß' um 50 Sek. Zudem werden Opfer Eurer Fähigkeit 'Schädelstoß' mit einem Effekt belegt, der ihre Manakosten 10 Sek. lang um 10% erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8303,
+        "name" : "Beschützerinstinkt",
+        "icon" : "ability_druid_healinginstincts",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Erhöht Eure Heilzauber um bis zu 50% Eurer Beweglichkeit und Eure in Katzengestalt erhaltene Heilung um 10%."
+        }, {
+          "description" : "Erhöht Eure Heilzauber um bis zu 100% Eurer Beweglichkeit und Eure in Katzengestalt erhaltene Heilung um 20%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8335,
+        "name" : "Urtümliche Inbrunst",
+        "icon" : "ability_mount_jungletiger",
+        "x" : 0,
+        "y" : 4,
+        "req" : 8323,
+        "ranks" : [ {
+          "description" : "'Tigerfuror' und 'Berserker' erhöhen während ihrer Dauer zusätzlich Eure maximale Energie um 10 und Eure Fähigkeiten 'Wutanfall' und 'Berserker' erzeugen sofort 6 Wut."
+        }, {
+          "description" : "'Tigerfuror' und 'Berserker' erhöhen während ihrer Dauer zusätzlich Eure maximale Energie um 20 und Eure Fähigkeiten 'Wutanfall' und 'Berserker' erzeugen sofort 12 Wut."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8313,
+        "name" : "Überlebensinstinkte",
+        "icon" : "ability_druid_tigersroar",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Sofort",
+          "cooldown" : "3 Min. Abklingzeit",
+          "description" : "Verringert 12 Sek. lang sämtlichen erlittenen Schaden um 50%. Kann nur in Katzen- oder Bärengestalt benutzt werden."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8759,
+        "name" : "Endloses Blutbad",
+        "icon" : "spell_deathknight_bloodboil",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Erhöht die Effektdauer Eurer Fähigkeit 'Krallenhieb' um 3 Sek. und die Eurer Fähigkeiten 'Wildes Brüllen' sowie 'Pulverisieren' um 4 Sek."
+        }, {
+          "description" : "Erhöht die Effektdauer Eurer Fähigkeit 'Krallenhieb' um 6 Sek. und die Eurer Fähigkeiten 'Wildes Brüllen' sowie 'Pulverisieren' um 8 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8758,
+        "name" : "Natürliche Reaktion",
+        "icon" : "ability_bullrush",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Verringert in Bärengestalt Euren erlittenen Schaden um 6% und erhöht Eure Ausweichchance um 3%. Zusätzlich erzeugt Ihr bei jedem Ausweichen in Bärengestalt 1 Wut."
+        }, {
+          "description" : "Verringert in Bärengestalt Euren erlittenen Schaden um 12% und erhöht Eure Ausweichchance um 6%. Zusätzlich erzeugt Ihr bei jedem Ausweichen in Bärengestalt 3 Wut."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8341,
+        "name" : "Blut im Wasser",
+        "icon" : "inv_misc_food_134_meat",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Wenn Ihr Eure Fähigkeit 'Wilder Biss' gegen ein Ziel anwendet, dessen Gesundheit weniger als 25% beträgt, besteht eine Chance von 50%, dass Euer Effekt 'Zerfetzen' auf dem Ziel sofort auf die volle Dauer zurückgesetzt wird."
+        }, {
+          "description" : "Wenn Ihr Eure Fähigkeit 'Wilder Biss' gegen ein Ziel anwendet, dessen Gesundheit weniger als 25% beträgt, besteht eine Chance von 100%, dass Euer Effekt 'Zerfetzen' auf dem Ziel sofort auf die volle Dauer zurückgesetzt wird."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8343,
+        "name" : "Beißen und Reißen",
+        "icon" : "ability_druid_primalagression",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Erhöht den von Euren Fähigkeiten 'Zermalmen' und 'Schreddern' an blutenden Zielen verursachten Schaden um 7% und erhöht die kritische Trefferchance Eurer Fähigkeit 'Wilder Biss' auf blutenden Zielen um 8%."
+        }, {
+          "description" : "Erhöht den von Euren Fähigkeiten 'Zermalmen' und 'Schreddern' an blutenden Zielen verursachten Schaden um 13% und erhöht die kritische Trefferchance Eurer Fähigkeit 'Wilder Biss' auf blutenden Zielen um 17%."
+        }, {
+          "description" : "Erhöht den von Euren Fähigkeiten 'Zermalmen' und 'Schreddern' an blutenden Zielen verursachten Schaden um 20% und erhöht die kritische Trefferchance Eurer Fähigkeit 'Wilder Biss' auf blutenden Zielen um 25%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8319,
+        "name" : "Pulverisieren",
+        "icon" : "ability_smash",
+        "x" : 2,
+        "y" : 5,
+        "req" : 8343,
+        "ranks" : [ {
+          "cost" : "15 Wut",
+          "range" : "Nahkampfreichweite",
+          "castTime" : "Sofort",
+          "description" : "Verursacht 120% Waffenschaden plus weiteren Schaden in Höhe von 485 für jeden Stapel von 'Aufschlitzen' auf dem Ziel. Erhöht außerdem 10 Sek. lang für jeden Stapel von 'Aufschlitzen', der dadurch verbraucht wird, Eure Chance, im Nahkampf kritische Treffer zu erzielen, um 3%."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8347,
+        "name" : "Berserker",
+        "icon" : "ability_druid_berserk",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "castTime" : "Sofort",
+          "cooldown" : "3 Min. Abklingzeit",
+          "description" : "Der regelmäßige Schaden Eurer Fähigkeit 'Aufschlitzen' hat eine Chance von 30%, die Abklingzeit Eurer Fähigkeit 'Zerfleischen (Bär)' zurückzusetzen und sie keine Wut kosten zu lassen. Zusätzlich gewährt Euch 'Aufschlitzen', dass 'Zerfleischen (Bär)' bis zu 3 Ziele trifft und reduziert die Energiekosten aller Eurer Fähigkeiten in Katzengestalt um 50%. Hält 15 Sek. lang an. Während 'Berserker' aktiv ist, kann 'Tigerfuror' nicht genutzt werden.\n\n\n\nEntfernt sofort Furchteffekte und macht Euch während seiner Dauer gegen sie immun."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Wiederherstellung",
+      "icon" : "spell_nature_healingtouch",
+      "backgroundFile" : "DruidRestoration",
+      "overlayColor" : "#66cc33",
+      "description" : "Nutzt Zauber, die Heilung über Zeit hervorrufen, um seine Verbündeten am Leben zu halten und nimmt, wenn es nötig ist, die Gestalt eines Baumes an.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : true,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 18562,
+        "name" : "Rasche Heilung",
+        "icon" : "inv_relics_idolofrejuvenation",
+        "cost" : "10% des Grundmanas",
+        "range" : "40 yd range",
+        "castTime" : "Spontanzauber",
+        "cooldown" : "15 Sek. Abklingzeit",
+        "reagents" : [ ],
+        "description" : "Zehrt einen auf das Ziel wirkenden Effekt von 'Verjüngung' oder 'Nachwachsen' auf, um es sofort um 4734 zu heilen.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 85101,
+        "name" : "Meditation",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "Lässt 50% Eurer durch Willenskraft erzeugten Manaregeneration weiterlaufen, während Ihr Euch im Kampf befindet.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 87305,
+        "name" : "Gabe der Natur",
+        "icon" : "spell_nature_spiritarmor",
+        "reagents" : [ ],
+        "description" : "Heilung um 25% erhöht.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77495,
+        "name" : "Symbiose",
+        "icon" : "spell_nature_healingway",
+        "reagents" : [ ],
+        "description" : "Erhöht die Wirksamkeit Eurer anderen Heilzauber bei Zielen, die bereits von einem Eurer Heilung über Zeit gewährenden Zauber betroffen sind, um 10%. Jeder Punkt Meisterschaft erhöht die Heilwirkung um zusätzlich 1.25%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 8227,
+        "name" : "Segen des Hains",
+        "icon" : "spell_shaman_spiritlink",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht die verursachte Heilung Eures Zaubers 'Verjüngung' um 2% und den direkten Schaden Eures Zaubers 'Mondfeuer' um 3%."
+        }, {
+          "description" : "Erhöht die verursachte Heilung Eures Zaubers 'Verjüngung' um 4% und den direkten Schaden Eures Zaubers 'Mondfeuer' um 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8237,
+        "name" : "Schnellwandlung",
+        "icon" : "spell_nature_wispsplode",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Verringert die Manakosten aller Gestaltwandelzauber um 10% und erhöht die Dauer Euer Verwandlung in den Baum des Lebens um 5 Sek."
+        }, {
+          "description" : "Verringert die Manakosten aller Gestaltwandelzauber um 20% und erhöht die Dauer Euer Verwandlung in den Baum des Lebens um 10 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11699,
+        "name" : "Naturalist",
+        "icon" : "spell_nature_healingtouch",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Verringert die Zauberzeit Eurer Zauber 'Heilende Berührung' und 'Pflege' um 0.3 Sek."
+        }, {
+          "description" : "Verringert die Zauberzeit Eurer Zauber 'Heilende Berührung' und 'Pflege' um 0.5 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11715,
+        "name" : "Herz der Wildnis",
+        "icon" : "spell_holy_blessingofagility",
+        "x" : 3,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht Eure Intelligenz um 2%. Zusätzlich wird in Bärengestalt Eure Ausdauer um 2% erhöht, in Katzengestalt Eure Angriffskraft um 3%."
+        }, {
+          "description" : "Erhöht Eure Intelligenz um 4%. Zusätzlich wird in Bärengestalt Eure Ausdauer um 4% erhöht, in Katzengestalt Eure Angriffskraft um 7%."
+        }, {
+          "description" : "Erhöht Eure Intelligenz um 6%. Zusätzlich wird in Bärengestalt Eure Ausdauer um 6% erhöht, in Katzengestalt Eure Angriffskraft um 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11279,
+        "name" : "Beharrlichkeit",
+        "icon" : "achievement_zone_darnassus",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Verringert jeglichen erlittenen Zauberschaden um 2%."
+        }, {
+          "description" : "Verringert jeglichen erlittenen Zauberschaden um 4%."
+        }, {
+          "description" : "Verringert jeglichen erlittenen Zauberschaden um 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8277,
+        "name" : "Meisterlicher Gestaltwandler",
+        "icon" : "ability_druid_mastershapeshifter",
+        "x" : 1,
+        "y" : 1,
+        "req" : 8237,
+        "ranks" : [ {
+          "description" : "Verleiht einen Effekt, der so lang aktiv ist, wie sich der Druide in der jeweiligen gestaltveränderten Form befindet.\n\n\n\nBärengestalt - Erhöht körperlichen Schaden um 4%.\n\n\n\nKatzengestalt - Erhöht kritische Trefferchance um 4%.\n\n\n\nMondkingestalt - Erhöht Zauberschaden um 4%.\n\n\n\nBaumgestalt/normale Gestalt - Erhöht Heilung um 4%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8245,
+        "name" : "Verbesserte Verjüngung",
+        "icon" : "spell_nature_rejuvenation",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Erhöht den Effekt Eurer Zauber 'Verjüngung' und 'Rasche Heilung' um 5%."
+        }, {
+          "description" : "Erhöht den Effekt Eurer Zauber 'Verjüngung' und 'Rasche Heilung' um 10%."
+        }, {
+          "description" : "Erhöht den Effekt Eurer Zauber 'Verjüngung' und 'Rasche Heilung' um 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8253,
+        "name" : "Samenkorn des Lebens",
+        "icon" : "ability_druid_giftoftheearthmother",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Wenn Ihr mit Euren Zaubern 'Rasche Heilung', 'Nachwachsen', 'Pflege' oder 'Heilende Berührung' einen kritischen Effekt erzielt, pflanzt Ihr dem Ziel ein 'Samenkorn des Lebens' ein. Das Samenkorn wird erblühen, wenn das Ziel das nächste Mal angegriffen wird und es so um 10% des geheilten Wertes heilen. Hält 15 Sek. lang an."
+        }, {
+          "description" : "Wenn Ihr mit Euren Zaubern 'Rasche Heilung', 'Nachwachsen', 'Pflege' oder 'Heilende Berührung' einen kritischen Effekt erzielt, pflanzt Ihr dem Ziel ein 'Samenkorn des Lebens' ein. Das Samenkorn wird erblühen, wenn das Ziel das nächste Mal angegriffen wird und es so um 20% des geheilten Wertes heilen. Hält 15 Sek. lang an."
+        }, {
+          "description" : "Wenn Ihr mit Euren Zaubern 'Rasche Heilung', 'Nachwachsen', 'Pflege' oder 'Heilende Berührung' einen kritischen Effekt erzielt, pflanzt Ihr dem Ziel ein 'Samenkorn des Lebens' ein. Das Samenkorn wird erblühen, wenn das Ziel das nächste Mal angegriffen wird und es so um 30% des geheilten Wertes heilen. Hält 15 Sek. lang an."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8269,
+        "name" : "Revitalisieren",
+        "icon" : "ability_druid_replenish",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Die regelmäßige Heilung Eurer Zauber 'Verjüngung' und 'Blühendes Leben' hat eine Chance von 20%, sofort 1% Eures gesamten Manas wiederherzustellen. Dieser Effekt kann nur einmal alle 12 Sek. auftreten.\n\n\n\nGewährt zusätzlich den Effekt 'Erfrischung', wenn Ihr Euren Zauber 'Blühendes Leben' wirkt oder auffrischt.\n\n\n\nErfrischung - Gewährt bis zu 10 Gruppen- oder Schlachtzugsmitgliedern alle 10 Sek. Manaregeneration in Höhe von 1% ihres maximalen Manas. Hält 15 Sek. lang an."
+        }, {
+          "description" : "Die regelmäßige Heilung Eurer Zauber 'Verjüngung' und 'Blühendes Leben' hat eine Chance von 20%, sofort 2% Eures gesamten Manas wiederherzustellen. Dieser Effekt kann nur einmal alle 12 Sek. auftreten.\n\n\n\nGewährt zusätzlich den Effekt 'Erfrischung', wenn Ihr Euren Zauber 'Blühendes Leben' wirkt oder auffrischt.\n\n\n\nErfrischung - Gewährt bis zu 10 Gruppen- oder Schlachtzugsmitgliedern alle 10 Sek. Manaregeneration in Höhe von 1% ihres maximalen Manas. Hält 15 Sek. lang an."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8249,
+        "name" : "Schnelligkeit der Natur",
+        "icon" : "spell_nature_ravenform",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Spontanzauber",
+          "cooldown" : "3 Min. Abklingzeit",
+          "description" : "Bei Aktivierung wird Euer nächster Naturzauber mit einer Basiszauberzeit von weniger als 10 Sek. zu einem Spontanzauber."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11712,
+        "name" : "Sturmgrimms Furor",
+        "icon" : "inv_staff_90",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Verringert die Manakosten Eures Zaubers 'Zorn' um 50%. Zudem besteht, wenn Ihr mittels Eures Zaubers 'Zorn' Schaden verursacht, eine Chance von 6%, dass Euer nächstes Wirken von 'Sternenfeuer' innerhalb von 8 Sek. zu einem Spontanzauber wird."
+        }, {
+          "description" : "Verringert die Manakosten Eures Zaubers 'Zorn' um 100% und bei der Nutzung Eures Zaubers 'Zorn' besteht eine Chance von 12%, dass Euer nächster Zauber 'Sternenfeuer' zu einem Spontanzauber wird. Sturmgrimms Furor hält 8 Sek. lang an."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8255,
+        "name" : "Überfluss der Natur",
+        "icon" : "spell_nature_resistnature",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Erhöht die Chance auf einen kritischen Effekt Eures Zaubers 'Nachwachsen' um 20%. Zudem besteht eine Chance von 33%, dass wenn Ihr mit Euren Zaubern 'Heilende Berührung' und 'Pflege' einen kritischen Effekt erzielt, die verbleibende Abklingzeit Eures Zaubers 'Rasche Heilung' um 0,5 Sek. verringert wird."
+        }, {
+          "description" : "Erhöht die Chance auf einen kritischen Effekt Eures Zaubers 'Nachwachsen' um 40%. Zudem besteht eine Chance von 66%, dass, wenn Ihr mit Euren Zaubern 'Heilende Berührung' und 'Pflege' einen kritischen Effekt erzielt, die verbleibende Abklingzeit Eures Zaubers 'Rasche Heilung' um 0,5 Sek. verringert wird."
+        }, {
+          "description" : "Erhöht die Chance auf einen kritischen Effekt Eures Zaubers 'Nachwachsen' um 60%. Zudem besteht eine Chance von 100%, dass, wenn Ihr mit Euren Zaubern 'Heilende Berührung' und 'Pflege' einen kritischen Effekt erzielt, die verbleibende Abklingzeit Eures Zaubers 'Rasche Heilung' um 0,5 Sek. verringert wird."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8762,
+        "name" : "Machtvolle Berührung",
+        "icon" : "ability_druid_empoweredtouch",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Erhöht die hervorgerufene Heilung Eurer Zauber 'Heilende Berührung' und 'Pflege' um 5%. Gewährt diesen beiden Zaubern zudem eine Chance von 50%, den auf das Ziel wirkenden Effekt Eures Zaubers 'Blühendes Leben' auf seine maximale Dauer zurückzusetzen."
+        }, {
+          "description" : "Erhöht die hervorgerufene Heilung Eurer Zauber 'Heilende Berührung' und 'Pflege' um 10%. Zudem setzen diese beiden Zauber den auf das Ziel wirkenden Effekt Eures Zaubers 'Blühendes Leben' auf seine maximale Dauer zurück."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12146,
+        "name" : "Malfurions Gabe",
+        "icon" : "spell_shaman_giftearthmother",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Jedes Mal, wenn Ihr mit Eurem Zauber 'Blühendes Leben' heilt, besteht eine Chance von 2%, dass Omen der Klarsicht ausgelöst wird."
+        }, {
+          "description" : "Jedes Mal, wenn Ihr mit Eurem Zauber 'Blühendes Leben' heilt, besteht eine Chance von 4%, dass Omen der Klarsicht ausgelöst wird."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8263,
+        "name" : "Erblühen",
+        "icon" : "inv_misc_herb_talandrasrose",
+        "x" : 0,
+        "y" : 4,
+        "req" : 8253,
+        "ranks" : [ {
+          "description" : "Wenn Ihr mittels Eures Zaubers 'Rasche Heilung' heilt, entspringt dem Boden unter dem Ziel ein heilender Blumenteppich, der im Verlauf von 7 Sek. alle befreundeten Ziele im Umkreis von 8 Metern um einen Wert heilt, der 10% des von Eurem Zauber 'Rasche Heilung' geheilten Werts entspricht. Befinden sich mehr als 6 Spieler in diesem Bereich, wird mit jedem weiteren die Wirksamkeit der Heilung verringert."
+        }, {
+          "description" : "Wenn Ihr mittels Eures Zaubers 'Rasche Heilung' heilt, entspringt dem Boden unter dem Ziel ein heilender Blumenteppich, der im Verlauf von 7 Sek. alle befreundeten Ziele im Umkreis von 8 Metern um einen Wert heilt, der 20% des von Eurem Zauber 'Rasche Heilung' geheilten Werts entspricht. Befinden sich mehr als 6 Spieler in diesem Bereich, wird mit jedem weiteren die Wirksamkeit der Heilung verringert."
+        }, {
+          "description" : "Wenn Ihr mittels Eures Zaubers 'Rasche Heilung' heilt, entspringt dem Boden unter dem Ziel ein heilender Blumenteppich, der im Verlauf von 7 Sek. alle befreundeten Ziele im Umkreis von 8 Metern um einen Wert heilt, der 30% des von Eurem Zauber 'Rasche Heilung' geheilten Werts entspricht. Befinden sich mehr als 6 Spieler in diesem Bereich, wird mit jedem weiteren die Wirksamkeit der Heilung verringert."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8279,
+        "name" : "Wildwuchs",
+        "icon" : "ability_druid_flourish",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "27% des Grundmanas",
+          "range" : "40 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "10 Sek. Abklingzeit",
+          "description" : "Regeneriert in einem Umkreis von 30 Metern um das Ziel im Verlauf von 7 Sek. insgesamt 2597 Gesundheit von bis zu 5 freundlichen Gruppen- oder Schlachtzugsmitgliedern. Die Heilung der am schwersten verletzten Gruppenmitglieder wird priorisiert. Die Heilung erfolgt anfangs schnell und wird mit zunehmender Dauer von 'Wildwuchs' langsamer."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8763,
+        "name" : "Heilung der Natur",
+        "icon" : "ability_shaman_cleansespirit",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Erfüllt Euren Zauber 'Verderbnis entfernen' mit der Macht, auch einen magischen Effekt von seinem Ziel zu entfernen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8267,
+        "name" : "Schutz der Natur",
+        "icon" : "ability_druid_naturalperfection",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Jedes Mal, wenn Ihr einen Treffer erleidet, während Eure Gesundheit 50% oder weniger beträgt, besteht eine Chance von 50%, dass Ihr ohne Manakosten automatisch 'Verjüngung' auf Euch selbst wirkt."
+        }, {
+          "description" : "Jedes Mal, wenn Ihr einen Treffer erleidet, während Eure Gesundheit 50% oder weniger beträgt, besteht eine Chance von 100%, dass Ihr ohne Manakosten automatisch 'Verjüngung' auf Euch selbst wirkt."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11280,
+        "name" : "Gabe der Erdmutter",
+        "icon" : "ability_druid_manatree",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Erhöht die Endheilung Eures Zaubers 'Blühendes Leben' um 5%. Außerdem heilt Euer Zauber 'Verjüngung' sofort um 5% des gesamten regelmäßigen Effekts."
+        }, {
+          "description" : "Erhöht die Endheilung Eures Zaubers 'Blühendes Leben' um 10%. Außerdem heilt Euer Zauber 'Verjüngung' sofort um 10% des gesamten regelmäßigen Effekts."
+        }, {
+          "description" : "Erhöht die Endheilung Eures Zaubers 'Blühendes Leben' um 15%. Außerdem heilt Euer Zauber 'Verjüngung' sofort um 15% des gesamten regelmäßigen Effekts."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8265,
+        "name" : "Rasche Verjüngung",
+        "icon" : "ability_druid_empoweredrejuvination",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Verringert die globale Abklingzeit Eures Zaubers 'Verjüngung' um 0.5 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8271,
+        "name" : "Baum des Lebens",
+        "icon" : "ability_druid_treeoflife",
+        "x" : 1,
+        "y" : 6,
+        "req" : 8279,
+        "ranks" : [ {
+          "cost" : "6% des Grundmanas",
+          "castTime" : "Sofort",
+          "cooldown" : "3 Min. Abklingzeit",
+          "description" : "Verwandelt Euch in die Gestalt eines Baums des Lebens, wodurch sich Eure Heilung um 15% und Eure Rüstung um 120% erhöht. Darüber hinaus werden in dieser Gestalt einige Eurer Zauber verstärkt. Hält 30 Sek. lang an.\n\n\n\nVerstärkte Zauber: Blühendes Leben, Wildwuchs, Nachwachsen, Wucherwurzeln, Zorn"
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

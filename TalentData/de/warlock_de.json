@@ -1,0 +1,953 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 9,
+      "name" : "Hexenmeister",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "Gebrechen",
+      "icon" : "spell_shadow_deathcoil",
+      "backgroundFile" : "WarlockCurses",
+      "overlayColor" : "#00ff99",
+      "description" : "Ein Meister der Schattenmagie, dessen Spezialität es sowohl ist, im Lauf der Zeit Schaden zuzufügen, als auch Furcht- und Schwächungszauber zu wirken.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 30108,
+        "name" : "Instabiles Gebrechen",
+        "icon" : "spell_shadow_unstableaffliction_3",
+        "cost" : "15% des Grundmanas",
+        "range" : "40 yd range",
+        "castTime" : "1,5 Sek. Zauber",
+        "reagents" : [ ],
+        "description" : "Schattenenergie zerstört langsam das Ziel, 15 Sek. lang werden insgesamt 1095 Schaden verursacht. Sollte 'Instabiles Gebrechen' gebannt werden, erleidet der Bannende 1971 Schaden und wird 5 Sek. lang zum Schweigen gebracht. Es kann pro Hexenmeister jeweils nur ein Effekt von 'Feuerbrand' oder 'Instabiles Gebrechen' gleichzeitig auf einem beliebigen Ziel aktiv sein.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 87339,
+        "name" : "Schattenbeherrschung",
+        "icon" : "spell_shadow_spectralsight",
+        "reagents" : [ ],
+        "description" : "Erhöht den Schaden von Schattenzaubern um 25%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77215,
+        "name" : "Potente Gebrechen",
+        "icon" : "ability_warlock_everlastingaffliction",
+        "reagents" : [ ],
+        "description" : "Erhöht jeglichen von Euch verursachten regelmäßigen Schattenschaden um 13%. Jeder Punkt Meisterschaft erhöht den regelmäßigen Schattenschaden um zusätzlich 1.63%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 11100,
+        "name" : "Finstere Omen",
+        "icon" : "spell_shadow_curseofsargeras",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht die kritische Trefferchance Eurer Zauber 'Omen der Pein' und 'Omen der Verdammnis' um 4%."
+        }, {
+          "description" : "Erhöht die kritische Trefferchance Eurer Zauber 'Omen der Pein' und 'Omen der Verdammnis' um 8%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11110,
+        "name" : "Verbesserter Aderlass",
+        "icon" : "spell_shadow_burningspirit",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht die durch Euren Zauber 'Aderlass' gewährte Manamenge um 10%."
+        }, {
+          "description" : "Erhöht die durch Euren Zauber 'Aderlass' gewährte Manamenge um 20%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11104,
+        "name" : "Verbesserte Verderbnis",
+        "icon" : "spell_shadow_abominationexplosion",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht den Schaden Eures Zaubers 'Verderbnis' um 4%."
+        }, {
+          "description" : "Erhöht den Schaden Eures Zaubers 'Verderbnis' um 8%."
+        }, {
+          "description" : "Erhöht den Schaden Eures Zaubers 'Verderbnis' um 12%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11214,
+        "name" : "Unglücksbringer",
+        "icon" : "ability_warlock_jinx",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Euer Zauber 'Fluch der Elemente' breitet sich auch auf bis zu 15 feindliche Ziele im Umkreis von 20 Metern um das verfluchte Ziel aus.\n\n\n\nZudem verringert Euer Zauber 'Fluch der Schwäche' zusätzlich die Energie-, Fokus-, Wut- oder Runenmachterzeugung des Ziels um 5%."
+        }, {
+          "description" : "Euer Zauber 'Fluch der Elemente' breitet sich auch auf bis zu 15 feindliche Ziele im Umkreis von 40 Metern um das verfluchte Ziel aus.\n\n\n\nZudem verringert Euer Zauber 'Fluch der Schwäche' zusätzlich die Energie-, Fokus-, Wut- oder Runenmachterzeugung des Ziels um 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11112,
+        "name" : "Seelenentzug",
+        "icon" : "ability_warlock_soulsiphon",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Erhöht die durch Eure Zauber 'Blutsauger' und 'Seelendieb' abgezogene Menge pro auf das Ziel wirkenden Gebrechenseffekt um zusätzliche 3%, bis zu einem Maximum von 9% zusätzlichem Effekt."
+        }, {
+          "description" : "Erhöht die durch Eure Zauber 'Blutsauger' und 'Seelendieb' abgezogene Menge pro auf das Ziel wirkenden Gebrechenseffekt um zusätzliche 6%, bis zu einem Maximum von 18% zusätzlichem Effekt."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11420,
+        "name" : "Lebensentzug",
+        "icon" : "spell_shadow_requiem",
+        "x" : 2,
+        "y" : 1,
+        "req" : 11112,
+        "ranks" : [ {
+          "description" : "Wenn Ihr mittels Eures Zaubers 'Verderbnis' Schaden verursacht, besteht eine Chance von 25%, dass Ihr sofort um 2% Eurer gesamten Gesundheit geheilt werdet."
+        }, {
+          "description" : "Wenn Ihr mittels Eures Zaubers 'Verderbnis' Schaden verursacht, besteht eine Chance von 50%, dass Ihr sofort um 2% Eurer gesamten Gesundheit geheilt werdet."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11128,
+        "name" : "Fluch der Erschöpfung",
+        "icon" : "spell_shadow_grimward",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "6% des Grundmanas",
+          "range" : "30 yd range",
+          "castTime" : "Spontanzauber",
+          "description" : "Verringert das Bewegungstempo des Ziels 30 Sek. lang um 50%. Es kann immer nur jeweils ein Fluch pro Hexenmeister auf einem beliebigen Ziel aktiv sein."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11114,
+        "name" : "Verbesserte Furcht",
+        "icon" : "spell_shadow_possession",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Euer Zauber 'Furcht' ruft beim Ende seiner Dauer den Effekt 'Alptraum' hervor. Dieser Effekt verringert 5 Sek. lang das Bewegungstempo des Ziels um 15%."
+        }, {
+          "description" : "Euer Zauber 'Furcht' ruft beim Ende seiner Dauer den Effekt 'Alptraum' hervor. Dieser Effekt verringert 5 Sek. lang das Bewegungstempo des Ziels um 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11134,
+        "name" : "Ausrottung",
+        "icon" : "ability_warlock_eradication",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Wenn Ihr durch den Zauber 'Verderbnis' Schaden verursacht, besteht eine Chance von 6%, dass Euer Zaubertempo 10 Sek. lang um 6% erhöht wird."
+        }, {
+          "description" : "Wenn Ihr durch den Zauber 'Verderbnis' Schaden verursacht, besteht eine Chance von 6%, dass Euer Zaubertempo 10 Sek. lang um 12% erhöht wird."
+        }, {
+          "description" : "Wenn Ihr durch den Zauber 'Verderbnis' Schaden verursacht, besteht eine Chance von 6%, dass Euer Zaubertempo 10 Sek. lang um 20% erhöht wird."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11140,
+        "name" : "Verbessertes Schreckensgeheul",
+        "icon" : "spell_shadow_deathscream",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Verringert die Zauberzeit Eures Zaubers 'Schreckensgeheul' um 0.8 Sek."
+        }, {
+          "description" : "Verringert die Zauberzeit Eures Zaubers 'Schreckensgeheul' um 1.5 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11366,
+        "name" : "Seelentausch",
+        "icon" : "ability_warlock_soulswap",
+        "x" : 1,
+        "y" : 3,
+        "req" : 11112,
+        "ranks" : [ {
+          "cost" : "18% des Grundmanas",
+          "range" : "40 yd range",
+          "castTime" : "Spontanzauber",
+          "description" : "Ihr verursacht sofort 169 Schaden und zehrt Eure auf das Ziel wirkenden regelmäßigen Schattenschadenseffekte auf.\n\n\n\nWirkt Ihr innerhalb von 20 Sek. Euren Zauber 'Seelentausch: Einhauchen' auf ein weiteres Ziel, wird es mit den aufgezehrten Effekten belegt und erleidet sofort 169 Schaden.\n\n\n\n'Seelentausch' kann nicht zweimal hintereinander auf das gleiche Ziel gewirkt werden."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11124,
+        "name" : "Umschlingende Schatten",
+        "icon" : "spell_shadow_shadowembrace",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Eure Zauber 'Schattenblitz' und 'Heimsuchung' verursachen den Effekt 'Umschlingende Schatten', der jeglichen von Euch verursachten regelmäßigen Schattenschaden gegen das Ziel um 3% erhöht. Hält 12 Sek. lang an. Bis zu 3-mal stapelbar."
+        }, {
+          "description" : "Eure Zauber 'Schattenblitz' und 'Heimsuchung' verursachen den Effekt 'Umschlingende Schatten', der jeglichen von Euch verursachten regelmäßigen Schattenschaden gegen das Ziel um 4% erhöht. Hält 12 Sek. lang an. Bis zu 3-mal stapelbar."
+        }, {
+          "description" : "Eure Zauber 'Schattenblitz' und 'Heimsuchung' verursachen den Effekt 'Umschlingende Schatten', der jeglichen von Euch verursachten regelmäßigen Schattenschaden gegen das Ziel um 5% erhöht. Bis zu 3-mal stapelbar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11142,
+        "name" : "Umarmung des Todes",
+        "icon" : "spell_shadow_deathsembrace",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Wenn Ihr über 25% Gesundheit oder weniger verfügt, wird der von Eurem Zauber 'Blutsauger' geheilte Wert um 1% erhöht.\n\n\n\nErhöht den verursachten Schaden Eurer Schattenzauber um 4%, wenn Euer Ziel über 25% Gesundheit oder weniger verfügt."
+        }, {
+          "description" : "Wenn Ihr über 25% Gesundheit oder weniger verfügt, wird der von Eurem Zauber 'Blutsauger' geheilte Wert um 2% erhöht.\n\n\n\nErhöht den verursachten Schaden Eurer Schattenzauber um 8%, wenn Euer Ziel über 25% Gesundheit oder weniger verfügt."
+        }, {
+          "description" : "Wenn Ihr über 25% Gesundheit oder weniger verfügt, wird der von Eurem Zauber 'Blutsauger' geheilte Wert um 3% erhöht.\n\n\n\nErhöht den verursachten Schaden Eurer Schattenzauber um 12%, wenn Euer Ziel über 25% Gesundheit oder weniger verfügt."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11122,
+        "name" : "Einbruch der Nacht",
+        "icon" : "spell_shadow_twilight",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Gewährt Euren Zaubern 'Verderbnis' und 'Blutsauger' eine Chance von 2%, Euch in einen Schattentrancezustand zu versetzen, nachdem Ihr dem Feind Schaden zugefügt habt. Der Schattentrancezustand verringert die Zauberzeit Eures nächsten Zaubers 'Schattenblitz' um 100%."
+        }, {
+          "description" : "Gewährt Euren Zaubern 'Verderbnis' und 'Blutsauger' eine Chance von 4%, Euch in einen Schattentrancezustand zu versetzen, nachdem Ihr dem Feind Schaden zugefügt habt. Der Schattentrancezustand verringert die Zauberzeit Eures nächsten Zaubers 'Schattenblitz' um 100%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11419,
+        "name" : "Seelenbrand: Saat der Verderbnis",
+        "icon" : "spell_shadow_seedofdestruction",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Erfüllt Euren Zauber 'Saat der Verderbnis' mit der Macht des Seelenbrands.\n\n\n\nDer Detonationseffekt Eures Zaubers 'Saat der Verderbnis' wird alle feindlichen Ziele mit dem Effekt Eures Zaubers 'Verderbnis' belegen. Ist die Detonation erfolgreich, wird der Seelensplitter zurückerstattet."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11150,
+        "name" : "Immerwährende Gebrechen",
+        "icon" : "ability_warlock_everlastingaffliction",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Erhöht die kritische Trefferchance Eurer Zauber 'Verderbnis', 'Saat der Verderbnis' und 'Instabiles Gebrechen' um 5%.\n\n\n\nDarüber hinaus haben Eure Zauber 'Blutsauger', 'Seelendieb' und 'Heimsuchung' eine Chance von 33%, die Dauer Eures Zaubers 'Verderbnis' auf dem Ziel zurückzusetzen."
+        }, {
+          "description" : "Erhöht die kritische Trefferchance Eurer Zauber 'Verderbnis', 'Saat der Verderbnis' und 'Instabiles Gebrechen' um 10%.\n\n\n\nDarüber hinaus haben Eure Zauber 'Blutsauger', 'Seelendieb' und 'Heimsuchung' eine Chance von 66%, die Dauer Eures Zaubers 'Verderbnis' auf dem Ziel zurückzusetzen."
+        }, {
+          "description" : "Erhöht die kritische Trefferchance Eurer Zauber 'Verderbnis', 'Saat der Verderbnis' und 'Instabiles Gebrechen' um 15%.\n\n\n\nDarüber hinaus haben Eure Zauber 'Blutsauger', 'Seelendieb' und 'Heimsuchung' eine Chance von 100%, die Dauer Eures Zaubers 'Verderbnis' auf dem Ziel zurückzusetzen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11200,
+        "name" : "Pandemie",
+        "icon" : "spell_shadow_lastingaffliction",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Verringert die globale Abklingzeit Eurer Omen und Flüche um 0,25 Sek.\n\n\n\nGewährt Eurem Zauber 'Seelendieb' eine Chance von 50%, die Dauer Eures auf das Ziel wirkenden Effekts von 'Instabiles Gebrechen' aufzufrischen, wenn Euer Ziel über weniger als 25% Gesundheit verfügt."
+        }, {
+          "description" : "Verringert die globale Abklingzeit Eurer Omen und Flüche um 0,5 Sek.\n\n\n\nGewährt Eurem Zauber 'Seelendieb' eine Chance von 100%, die Dauer Eures auf das Ziel wirkenden Effekts von 'Instabiles Gebrechen' aufzufrischen, wenn Euer Ziel über weniger als 25% Gesundheit verfügt."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11152,
+        "name" : "Heimsuchung",
+        "icon" : "ability_warlock_haunt",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "12% des Grundmanas",
+          "range" : "40 yd range",
+          "castTime" : "1,5 Sek. Zauber",
+          "cooldown" : "8 Sek. Abklingzeit",
+          "description" : "Ihr entsendet eine verderbte Seele in das Ziel, die 684 Schattenschaden verursacht und 12 Sek. lang den Schaden aller Eurer Schaden über Zeit verursachenden Effekte auf dem Ziel um 20% erhöht. Endet die Heimsuchung oder wird sie gebannt, kehrt die Seele zu Euch zurück, um Euch um 100% des von ihr verursachten Schadens zu heilen."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Dämonologie",
+      "icon" : "spell_shadow_metamorphosis",
+      "backgroundFile" : "WarlockSummoning",
+      "overlayColor" : "#ff0000",
+      "description" : "Ein Hexenmeister, der Schatten- und Feuermagie zusammen mit mächtigen Dämonen nutzt.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 30146,
+        "name" : "Teufelswache beschwören",
+        "icon" : "spell_shadow_summonfelguard",
+        "cost" : "80% des Grundmanas",
+        "castTime" : "6 Sek. Zauber",
+        "reagents" : [ ],
+        "description" : "Beschwört eine Teufelswache, die unter dem Befehl des Hexenmeisters steht.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 84740,
+        "name" : "Dämonisches Wissen",
+        "icon" : "spell_fire_twilightimmolation",
+        "reagents" : [ ],
+        "description" : "Erhöht Euren Feuer- und Schattenzauberschaden um 15%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77219,
+        "name" : "Meister der Dämonologie",
+        "icon" : "spell_shadow_shadowpact",
+        "reagents" : [ ],
+        "description" : "Erhöht den von Euren Dämonendienern verursachten Schaden und den Schaden, den Ihr verursacht, während Ihr in einen Dämonen verwandelt seid, um 12%. Jeder Punkt Meisterschaft erhöht den Schaden um zusätzlich 1.5%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10994,
+        "name" : "Dämonische Umarmung",
+        "icon" : "spell_shadow_metamorphosis",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht Eure gesamte Ausdauer um 4%."
+        }, {
+          "description" : "Erhöht Eure gesamte Ausdauer um 7%."
+        }, {
+          "description" : "Erhöht Eure gesamte Ausdauer um 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10992,
+        "name" : "Dunkle Künste",
+        "icon" : "ability_warlock_darkarts",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Verringert die Zauberzeit des Zaubers 'Feuerblitz' Eures Wichtels um 0.25 Sek., erhöht den verursachten Schaden der Fähigkeit 'Legionshieb' Eurer Teufelswache um 5% und erhöht den verursachten Schaden der Fähigkeit 'Schattenbiss' Eures Teufelsjägers um 5%."
+        }, {
+          "description" : "Verringert die Zauberzeit des Zaubers 'Feuerblitz' Eures Wichtels um 0.50 Sek., erhöht den verursachten Schaden der Fähigkeit 'Legionshieb' Eurer Teufelswache um 10% und erhöht den verursachten Schaden der Fähigkeit 'Schattenbiss' Eures Teufelsjägers um 10%."
+        }, {
+          "description" : "Verringert die Zauberzeit des Zaubers 'Feuerblitz' Eures Wichtels um 0.75 Sek., erhöht den verursachten Schaden der Fähigkeit 'Legionshieb' Eurer Teufelswache um 15% und erhöht den verursachten Schaden der Fähigkeit 'Schattenbiss' Eures Teufelsjägers um 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11206,
+        "name" : "Teufelssynergie",
+        "icon" : "spell_shadow_felmending",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Ihr habt eine Chance von 50%, Euren Begleiter um 15% des von Euch verursachten Zauberschadens zu heilen."
+        }, {
+          "description" : "Ihr habt eine Chance von 100%, Euren Begleiter um 15% des von Euch verursachten Zauberschadens zu heilen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11713,
+        "name" : "Dämonische Wiedergeburt",
+        "icon" : "spell_shadow_demonictactics",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Stirbt Euer beschworener Dämon, erhaltet Ihr den Effekt 'Dämonische Wiedergeburt', wodurch die Zauberzeit Eures nächsten Beschwörungszaubers um 50% verringert wird. Hält 10 Sek. lang an. Dieser Effekt hat eine Abklingzeit von 2 Min."
+        }, {
+          "description" : "Stirbt Euer beschworener Dämon, erhaltet Ihr den Effekt 'Dämonische Wiedergeburt', wodurch die Zauberzeit Eures nächsten Beschwörungszaubers um 100% verringert wird. Hält 10 Sek. lang an. Dieser Effekt hat eine Abklingzeit von 2 Min."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11020,
+        "name" : "Mananachschub",
+        "icon" : "spell_shadow_manafeed",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Wenn Euer Dämon mit einem einfachen Angriff einen kritischen Treffer erzielt, gewinnt Ihr sofort 2% Eures gesamten Manas.\n\n\n\nWenn Ihr durch Eure Zauber 'Mana entziehen' oder 'Aderlass' Mana gewinnt, gewinnt Euer Dämon Mana in Höhe von 30% Eures erhaltenen Manas."
+        }, {
+          "description" : "Wenn Euer Dämon mit einem einfachen Angriff einen kritischen Treffer erzielt, gewinnt Ihr sofort 4% Eures gesamten Manas.\n\n\n\nWenn Ihr durch Eure Zauber 'Mana entziehen' oder 'Aderlass' Mana gewinnt, gewinnt Euer Dämon Mana in Höhe von 60% Eures erhaltenen Manas."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11190,
+        "name" : "Dämonische Ägide",
+        "icon" : "spell_shadow_ragingscream",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Erhöht die von Eurer Dämonenrüstung verliehene, durch Zauber und Effekte erzeugte Gesundheit um zusätzliche 5% und die von Eurer Teufelsrüstung regenerierte Gesundheit um 50%."
+        }, {
+          "description" : "Erhöht die von Eurer Dämonenrüstung verliehene, durch Zauber und Effekte erzeugte Gesundheit um zusätzliche 10% und die von Eurer Teufelsrüstung regenerierte Gesundheit um 100%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11014,
+        "name" : "Meister der Beschwörung",
+        "icon" : "spell_shadow_impphaseshift",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Verringert die Zauberzeit Eures Beschwörungszaubers für Wichtel, Leerwandler, Sukkubus, Teufelsjäger und Teufelswache um 0,5 Sek. und die Manakosten um 50%."
+        }, {
+          "description" : "Verringert die Zauberzeit Eures Beschwörungszaubers für Wichtel, Leerwandler, Sukkubus, Teufelsjäger und Teufelswache um 1 Sek. und die Manakosten um 100%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11198,
+        "name" : "Drohende Verdammnis",
+        "icon" : "spell_nature_removecurse",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Erhöht die Chance, dass Euer 'Omen der Verdammnis' bei verursachtem Schaden einen Dämon erschafft um 10%.\n\n\n\nZudem wird Euren Zaubern 'Schattenblitz', 'Hand von Gul'dan' oder 'Verbrennen' eine Chance von 5% gewährt, die Abklingzeit Eurer Dämonengestalt um 15 Sek. zu verringern."
+        }, {
+          "description" : "Erhöht die Chance, dass Euer 'Omen der Verdammnis' bei verursachtem Schaden einen Dämon erschafft um 20%.\n\n\n\nZudem wird Euren Zaubern 'Schattenblitz', 'Hand von Gul'dan' oder 'Verbrennen' eine Chance von 10% gewährt, die Abklingzeit Eurer Dämonengestalt um 15 Sek. zu verringern."
+        }, {
+          "description" : "Erhöht die Chance, dass Euer 'Omen der Verdammnis' bei verursachtem Schaden einen Dämon erschafft um 30%.\n\n\n\nZudem wird Euren Zaubern 'Schattenblitz', 'Hand von Gul'dan' oder 'Verbrennen' eine Chance von 15% gewährt, die Abklingzeit Eurer Dämonengestalt um 15 Sek. zu verringern."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11160,
+        "name" : "Dämonische Energie",
+        "icon" : "ability_warlock_demonicempowerment",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "6% des Grundmanas",
+          "range" : "100 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "1 Min. Abklingzeit",
+          "description" : "Erfüllt den beschworenen Dämon des Hexenmeisters mit Macht.\n\n\n\nWichtel - Heilt den Wichtel sofort um 30% seiner gesamten Gesundheit.\n\n\n\nLeerwandler - Erhöht die Gesundheit des Leerwandlers um 20% und die von seinen Zaubern und Angriffen verursachte Bedrohung um 20%. Hält 20 Sek. lang an.\n\n\n\nSukkubus - Verschwindet sofort in eine verbesserte Unsichtbarkeit. Das Verschwinden entfernt alle Betäubungen, Verlangsamungen und bewegungseinschränkenden Effekte von dem Sukkubus.\n\n\n\nTeufelsjäger - Bannt alle auf den Teufelsjäger wirkenden magischen Effekte.\n\n\n\nTeufelswache - Entfernt alle Betäubungen, Verlangsamungen und bewegungseinschränkenden Effekte von der Teufelswache und macht sie 15 Sek. lang dagegen immun."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10998,
+        "name" : "Verbesserte Lebenslinie",
+        "icon" : "spell_shadow_lifedrain",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Erhöht die durch Euren Zauber 'Lebenslinie' übertragene Gesundheit um 10% und verringert die Gesundheitskosten um 10%. Zusätzlich wird der erlittene Schaden Eures Dämons, wenn er unter dem Effekt von 'Lebenslinie' steht, um 15% verringert."
+        }, {
+          "description" : "Erhöht die durch Euren Zauber 'Lebenslinie' übertragene Gesundheit um 20% und verringert die Gesundheitskosten um 20%. Zusätzlich wird der erlittene Schaden Eures Dämons, wenn er unter dem Effekt von 'Lebenslinie' steht, um 30% verringert."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11024,
+        "name" : "Geschmolzener Kern",
+        "icon" : "ability_warlock_moltencore",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Es besteht eine Chance von 2%, dass Ihr den Effekt 'Geschmolzener Kern' erhaltet, wenn Euer Zauber 'Feuerbrand' Schaden verursacht. Der Effekt 'Geschmolzener Kern' erfüllt Euren Zauber 'Verbrennen' mit Macht, wodurch sein Schaden um 6% erhöht und seine Zauberzeit um 10% verringert wird. Der Effekt 'Geschmolzener Kern' hält 15 Sek. lang an und hat innerhalb dieser Zeit 3 Aufladungen."
+        }, {
+          "description" : "Es besteht eine Chance von 4%, dass Ihr den Effekt 'Geschmolzener Kern' erhaltet, wenn Euer Zauber 'Feuerbrand' Schaden verursacht. Der Effekt 'Geschmolzener Kern' erfüllt Euren Zauber 'Verbrennen' mit Macht, wodurch sein Schaden um 12% erhöht und seine Zauberzeit um 20% verringert wird. Der Effekt 'Geschmolzener Kern' hält 15 Sek. lang an und hat innerhalb dieser Zeit 3 Aufladungen."
+        }, {
+          "description" : "Es besteht eine Chance von 6%, dass Ihr den Effekt 'Geschmolzener Kern' erhaltet, wenn Euer Zauber 'Feuerbrand' Schaden verursacht. Der Effekt 'Geschmolzener Kern' erfüllt Euren Zauber 'Verbrennen' mit Macht, wodurch sein Schaden um 18% erhöht und seine Zauberzeit um 30% verringert wird. Der Effekt 'Geschmolzener Kern' hält 15 Sek. lang an und hat innerhalb dieser Zeit 3 Aufladungen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11201,
+        "name" : "Hand von Gul'dan",
+        "icon" : "inv_summerfest_firespirit",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "7% des Grundmanas",
+          "range" : "40 yd range",
+          "castTime" : "2 Sek. Zauber",
+          "cooldown" : "12 Sek. Abklingzeit",
+          "description" : "Beschwört einen Meteor auf das feindliche Ziel hinab, der 1348 bis 1575 Schattenschaden verursacht und in einem Umkreis von 4 Metern eine magische Aura hervorruft, welche die kritische Trefferchance der Dämonen von Hexenmeistern gegen alle Ziele innerhalb dieser Aura um 10% erhöht. Die Aura hält 15 Sek. lang an."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11814,
+        "name" : "Aura des Unheils",
+        "icon" : "spell_shadow_sealofkings",
+        "x" : 2,
+        "y" : 3,
+        "req" : 11201,
+        "ranks" : [ {
+          "description" : "Wenn Euer Zauber 'Hand von Gul'dan' trifft, werden alle Gegner im Umkreis von 4 Metern 2 Sek. lang bewegungsunfähig. Wenn sich diese Ziele nach Ablauf von 6 Sek. noch immer innerhalb der Effektaura von 'Fluch des Gul'dan' aufhalten, werden sie für den gleichen Zeitraum der Bewegungsunfähigkeit betäubt."
+        }, {
+          "description" : "Wenn Euer Zauber 'Hand von Gul'dan' trifft, werden alle Gegner im Umkreis von 4 Metern 3 Sek. lang bewegungsunfähig. Wenn sich diese Ziele nach Ablauf von 6 Sek. noch immer innerhalb der Effektaura von 'Fluch des Gul'dan' aufhalten, werden sie für den gleichen Zeitraum der Bewegungsunfähigkeit betäubt."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11188,
+        "name" : "Uraltes Grimoire",
+        "icon" : "ability_warlock_ancientgrimoire",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Erhöht die Verweildauer Eurer beschworenen Höllenbestie und Verdammniswache um 10 Sek."
+        }, {
+          "description" : "Erhöht die Verweildauer Eurer beschworenen Höllenbestie und Verdammniswache um 20 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11189,
+        "name" : "Inferno",
+        "icon" : "ability_warlock_inferno",
+        "x" : 1,
+        "y" : 4,
+        "req" : 11201,
+        "ranks" : [ {
+          "description" : "Erhöht den Radius Eures Zaubers 'Höllenfeuer' um 10 Meter und Ihr könnt diesen Zauber nun aus der Bewegung heraus kanalisieren."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11034,
+        "name" : "Dezimierung",
+        "icon" : "spell_fire_fireball02",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Wenn Ihr Eure Zauber 'Schattenblitz', 'Verbrennen' oder 'Seelenfeuer' auf ein Ziel wirkt, das über 25% Gesundheit oder weniger verfügt, wird die Zauberzeit Eures Zaubers 'Seelenfeuer' 10 Sek. lang um 20% verringert."
+        }, {
+          "description" : "Wenn Ihr Eure Zauber 'Schattenblitz', 'Verbrennen' oder 'Seelenfeuer' auf ein Ziel wirkt, das über 25% Gesundheit oder weniger verfügt, wird die Zauberzeit Eures Zaubers 'Seelenfeuer' 10 Sek. lang um 40% verringert."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11199,
+        "name" : "Einäscherung",
+        "icon" : "ability_warlock_cremation",
+        "x" : 1,
+        "y" : 5,
+        "req" : 11189,
+        "ranks" : [ {
+          "description" : "Erhöht den Schaden Eures Zaubers 'Höllenfeuer' um 15% und Eure 'Hand von Gul'dan' hat eine Chance von 50%, die Dauer Eures Zaubers 'Feuerbrand' auf dem Ziel zurückzusetzen."
+        }, {
+          "description" : "Erhöht den Schaden Eures Zaubers 'Höllenfeuer' um 30% und Eure 'Hand von Gul'dan' hat eine Chance von 100%, die Dauer Eures Zaubers 'Feuerbrand' auf dem Ziel zurückzusetzen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11042,
+        "name" : "Dämonischer Pakt",
+        "icon" : "spell_shadow_demonicpact",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Erhöht Euren Zauberschaden um 2% und Euer beschworener Dämon gewährt allen nahen befreundeten Gruppen- oder Schlachtzugsmitgliedern den Effekt 'Dämonischer Pakt'.\n\n\n\nDer Effekt 'Dämonischer Pakt' erhöht die Zaubermacht um 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11044,
+        "name" : "Metamorphose",
+        "icon" : "spell_shadow_demonform",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "description" : "Ihr verwandelt Euch 30 Sek. lang in einen Dämon. Diese Gestalt erhöht Eure Rüstung um 600%, Euren Schaden um 20% und die Chance, einen kritischen Nahkampftreffer zu erleiden, wird um 6% verringert. Die Dauer auf Euch wirkender Betäubungs- und Verlangsamungseffekte wird um 50% verringert. Zusätzlich zu Euren Fähigkeiten gewinnt Ihr einige einzigartige Dämonenfähigkeiten. 3 Minuten Abklingzeit."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Zerstörung",
+      "icon" : "spell_shadow_rainoffire",
+      "backgroundFile" : "WarlockDestruction",
+      "overlayColor" : "#ff7f00",
+      "description" : "Ruft dämonisches Feuer hernieder, um Feinde zu verbrennen und zu zerstören.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 17962,
+        "name" : "Feuersbrunst",
+        "icon" : "spell_fire_fireball",
+        "cost" : "16% des Grundmanas",
+        "range" : "40 yd range",
+        "castTime" : "Spontanzauber",
+        "cooldown" : "10 Sek. Abklingzeit",
+        "reagents" : [ ],
+        "description" : "Fügt einem Gegner sofort Schaden in Höhe von 60% eines auf ihn wirkenden Effekts Eures Zaubers 'Feuerbrand' zu.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 84739,
+        "name" : "Kataklysmus",
+        "icon" : "spell_fire_meteorstorm",
+        "reagents" : [ ],
+        "description" : "Erhöht Euren Feuerzauberschaden um 25%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77220,
+        "name" : "Feurige Apokalypse",
+        "icon" : "spell_fire_moltenblood",
+        "reagents" : [ ],
+        "description" : "Erhöht jeglichen von Euch verursachten Feuerschaden um 10%. Jeder Punkt Meisterschaft erhöht den Feuerschaden um zusätzlich 1.25%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10938,
+        "name" : "Dunkle Macht",
+        "icon" : "spell_shadow_deathpact",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Verringert die Zauberzeit Eurer Zauber 'Schattenblitz', 'Chaosblitz' und 'Feuerbrand' um 0.1 Sek."
+        }, {
+          "description" : "Verringert die Zauberzeit Eurer Zauber 'Schattenblitz', 'Chaosblitz' und 'Feuerbrand' um 0.3 Sek."
+        }, {
+          "description" : "Verringert die Zauberzeit Eurer Zauber 'Schattenblitz', 'Chaosblitz' und 'Feuerbrand' um 0.5 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10936,
+        "name" : "Schatten und Flamme",
+        "icon" : "spell_shadow_shadowandflame",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht den verursachten Schaden Eurer Zauber 'Schattenblitz' und 'Verbrennen' um 4%. Zudem gewährt Euer Zauber 'Schattenblitz' eine Chance von 33%, das Ziel mit dem Effekt 'Verbesserter Schattenblitz' zu belegen.\n\n\n\nDer Effekt 'Verbesserter Schattenblitz' erhöht die kritische Zaubertrefferchance gegen dieses Ziel 30 Sek. lang um 5%."
+        }, {
+          "description" : "Erhöht den verursachten Schaden Eurer Zauber 'Schattenblitz' und 'Verbrennen' um 8%. Zudem gewährt Euer Zauber 'Schattenblitz' eine Chance von 66%, das Ziel mit dem Effekt 'Verbesserter Schattenblitz' zu belegen.\n\n\n\nDer Effekt 'Verbesserter Schattenblitz' erhöht die kritische Zaubertrefferchance gegen dieses Ziel 30 Sek. lang um 5%."
+        }, {
+          "description" : "Erhöht den verursachten Schaden Eurer Zauber 'Schattenblitz' und 'Verbrennen' um 12%. Zudem gewährt Euer Zauber 'Schattenblitz' eine Chance von 100%, das Ziel mit dem Effekt 'Verbesserter Schattenblitz' zu belegen.\n\n\n\nDer Effekt 'Verbesserter Schattenblitz' erhöht die kritische Zaubertrefferchance gegen dieses Ziel 30 Sek. lang um 5%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10960,
+        "name" : "Verbesserter Feuerbrand",
+        "icon" : "spell_fire_immolation",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht den verursachten Schaden Eures Zaubers 'Feuerbrand' um 10%."
+        }, {
+          "description" : "Erhöht den verursachten Schaden Eures Zaubers 'Feuerbrand' um 20%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11197,
+        "name" : "Verbessertes Seelenfeuer",
+        "icon" : "spell_fire_fireball02",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Wenn Ihr mittels Eures Zaubers 'Seelenfeuer' Schaden verursacht, wird Euer Zaubertempo 15 Sek. lang um 7% erhöht. Dieser Effekt hat eine Abklingzeit von 15 Sek."
+        }, {
+          "description" : "Wenn Ihr mittels Eures Zaubers 'Seelenfeuer' Schaden verursacht, wird Euer Zaubertempo 15 Sek. lang um 15% erhöht. Dieser Effekt hat eine Abklingzeit von 15 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11181,
+        "name" : "Glutsturm",
+        "icon" : "spell_fire_selfdestruct",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Verringert die Zauberzeit Eures Zaubers 'Seelenfeuer' um 0.5 Sek. und Eures Zaubers 'Verbrennen' um 0.13 Sek."
+        }, {
+          "description" : "Verringert die Zauberzeit Eures Zaubers 'Seelenfeuer' um 1 Sek. und Eures Zaubers 'Verbrennen' um 0.25 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11196,
+        "name" : "Verbesserter sengender Schmerz",
+        "icon" : "spell_fire_soulburn",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Erhöht bei Zielen, die über 25% Gesundheit oder weniger verfügen, die kritische Trefferchance Eures Zaubers 'Sengender Schmerz' um 20%."
+        }, {
+          "description" : "Erhöht bei Zielen, die über 25% Gesundheit oder weniger verfügen, die kritische Trefferchance Eures Zaubers 'Sengender Schmerz' um 40%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10940,
+        "name" : "Nachwirkung",
+        "icon" : "spell_fire_fire",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Euer Zauber 'Feuerregen' hat eine Chance von 6%, Ziele 2 Sek. lang zu betäuben und Euer Zauber 'Feuersbrunst' hat eine Chance von 50%, das Ziel 5 Sek. lang benommen zu machen."
+        }, {
+          "description" : "Euer Zauber 'Feuerregen' hat eine Chance von 12%, Ziele 2 Sek. lang zu betäuben und Euer Zauber 'Feuersbrunst' hat eine Chance von 100%, das Ziel 5 Sek. lang benommen zu machen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10978,
+        "name" : "Pyrolyse",
+        "icon" : "ability_warlock_backdraft",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Wenn Ihr 'Feuersbrunst' wirkt, wird die Zauberzeit Eurer Zauber 'Schattenblitz', 'Verbrennen' und 'Chaosblitz' um 10% verringert. 3 Aufladungen. Hält 15 Sek. lang an."
+        }, {
+          "description" : "Wenn Ihr 'Feuersbrunst' wirkt, wird die Zauberzeit Eurer Zauber 'Schattenblitz', 'Verbrennen' und 'Chaosblitz' um 20% verringert. 3 Aufladungen. Hält 15 Sek. lang an."
+        }, {
+          "description" : "Wenn Ihr 'Feuersbrunst' wirkt, wird die Zauberzeit Eurer Zauber 'Schattenblitz', 'Verbrennen' und 'Chaosblitz' um 30% verringert. 3 Aufladungen. Hält 15 Sek. lang an."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10948,
+        "name" : "Schattenbrand",
+        "icon" : "spell_shadow_scourgebuild",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "15% des Grundmanas",
+          "range" : "40 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "15 Sek. Abklingzeit",
+          "description" : "Überzieht das Ziel sofort mit 678 bis 745 Schattenschaden. Wenn das Ziel innerhalb von 5 Sek. nach 'Schattenbrand' stirbt und Erfahrung oder Ehrenpunkte gewährt, erhält der Zaubernde 3 Seelensplitter. Kann nur auf Gegner angewandt werden, die über weniger als 20% Gesundheit verfügen."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11182,
+        "name" : "Brennende Funken",
+        "icon" : "ability_warlock_burningembers",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Euer Zauber 'Seelenfeuer' und der Zauber 'Feuerblitz' Eures Wichtels belegen das Ziel mit dem Effekt 'Brennende Funken', der ihm im Verlauf von 7 Sek. zusätzlich Schaden in Höhe von 15% des verursachten Schadens zufügt.\n\n\n\nDer Effekt 'Brennende Funken' verursacht 7 Sek. lang alle 1 Sek. bis zu 28 Feuerschaden."
+        }, {
+          "description" : "Euer Zauber 'Seelenfeuer' und der Zauber 'Feuerblitz' Eures Wichtels belegen das Ziel mit dem Effekt 'Brennende Funken', der ihm im Verlauf von 7 Sek. zusätzlich Schaden in Höhe von 30% des verursachten Schadens zufügt.\n\n\n\nDer Effekt 'Brennende Funken' verursacht 7 Sek. lang alle 1 Sek. bis zu 34 Feuerschaden."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10970,
+        "name" : "Seele entziehen",
+        "icon" : "spell_shadow_soulleech_3",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Wenn Eure Zauber 'Schattenbrand', 'Chaosblitz' oder 'Seelenfeuer' Schaden verursachen, stellen sie sofort 2% Eurer gesamten Gesundheit und Eures gesamten Manas wieder her. Zudem gewähren sie den Effekt 'Erfrischung'.\n\n\n\nErfrischung - Gewährt bis zu 10 Gruppen- oder Schlachtzugsmitgliedern alle 10 Sek. Manaregeneration in Höhe von 1% ihres maximalen Manas. Hält 15 Sek. lang an."
+        }, {
+          "description" : "Wenn Eure Zauber 'Schattenbrand', 'Chaosblitz' oder 'Seelenfeuer' Schaden verursachen, stellen sie sofort 4% Eurer gesamten Gesundheit und Eures gesamten Manas wieder her. Zudem gewähren sie den Effekt 'Erfrischung'.\n\n\n\nErfrischung - Gewährt bis zu 10 Gruppen- oder Schlachtzugsmitgliedern alle 10 Sek. Manaregeneration in Höhe von 1% ihres maximalen Manas. Hält 15 Sek. lang an."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10958,
+        "name" : "Heimzahlen",
+        "icon" : "spell_fire_playingwithfire",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Gewährt Euch eine Chance von 8%, dass durch erlittene körperliche Treffer die Zauberzeit Eures nächsten Wirkens von 'Schattenblitz' oder 'Verbrennen' um 100% verringert wird. Dieser Effekt hält 8 Sek. lang an. Kann nur ein Mal innerhalb von 8 Sek. auftreten."
+        }, {
+          "description" : "Gewährt Euch eine Chance von 16%, dass durch erlittene körperliche Treffer die Zauberzeit Eures nächsten Wirkens von 'Schattenblitz' oder 'Verbrennen' um 100% verringert wird. Dieser Effekt hält 8 Sek. lang an. Kann nur ein Mal innerhalb von 8 Sek. auftreten."
+        }, {
+          "description" : "Gewährt Euch eine Chance von 25%, dass durch erlittene körperliche Treffer die Zauberzeit Eures nächsten Wirkens von 'Schattenblitz' oder 'Verbrennen' um 100% verringert wird. Dieser Effekt hält 8 Sek. lang an. Kann nur ein Mal innerhalb von 8 Sek. auftreten."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12120,
+        "name" : "Netherzauberschutz",
+        "icon" : "spell_fire_felfireward",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Wandelt Euren Zauber 'Schattenzauberschutz' in 'Netherzauberschutz' um. Damit die Transformation vor sich gehen kann, muss einer Eurer Zauber 'Dämonenrüstung' oder 'Teufelsrüstung' aktiv sein.\n\n\n\nNetherzauberschutz\n\nAbsorbiert 3253 Zauberschaden. Hält 30 Sek. lang an. 30 Sek. Abklingzeit."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10984,
+        "name" : "Feuer und Schwefel",
+        "icon" : "ability_warlock_fireandbrimstone",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Erhöht den verursachten Schaden Eurer Zauber 'Verbrennen' und 'Chaosblitz' an Zielen, die vom Effekt Eures Zaubers 'Feuerbrand' betroffen sind, um 2%. Zudem wird die kritische Trefferchance Eures Zaubers 'Feuersbrunst' um 5% erhöht."
+        }, {
+          "description" : "Erhöht den verursachten Schaden Eurer Zauber 'Verbrennen' und 'Chaosblitz' an Zielen, die vom Effekt Eures Zaubers 'Feuerbrand' betroffen sind, um 4%. Zudem wird die kritische Trefferchance Eures Zaubers 'Feuersbrunst' um 10% erhöht."
+        }, {
+          "description" : "Erhöht den verursachten Schaden Eurer Zauber 'Verbrennen' und 'Chaosblitz' an Zielen, die vom Effekt Eures Zaubers 'Feuerbrand' betroffen sind, um 6%. Zudem wird die kritische Trefferchance Eures Zaubers 'Feuersbrunst' um 15% erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10980,
+        "name" : "Schattenfuror",
+        "icon" : "spell_shadow_shadowfury",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "27% des Grundmanas",
+          "range" : "30 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "20 Sek. Abklingzeit",
+          "description" : "Der Schattenfuror wird entfesselt, verursacht 635 bis 754 Schattenschaden und betäubt 3 Sek. lang alle Gegner im Umkreis von 8 Metern."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10964,
+        "name" : "Netherschutz",
+        "icon" : "spell_shadow_netherprotection",
+        "x" : 3,
+        "y" : 4,
+        "req" : 12120,
+        "ranks" : [ {
+          "description" : "Wenn Ihr durch Eure Zauber 'Schattenzauberschutz', 'Netherzauberschutz' oder andere Effekte Zauberschaden absorbiert, gewinnt Ihr den Effekt 'Netherschutz', welcher jeglichen durch diese Zauberart erlittenen Schaden 12 Sek. lang um 15% verringert."
+        }, {
+          "description" : "Wenn Ihr durch Eure Zauber 'Schattenzauberschutz', 'Netherzauberschutz' oder andere Effekte Zauberschaden absorbiert, gewinnt Ihr den Effekt 'Netherschutz', welcher jeglichen durch diese Zauberart erlittenen Schaden 12 Sek. lang um 30% verringert."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10982,
+        "name" : "Machterfüllter Wichtel",
+        "icon" : "ability_warlock_empoweredimp",
+        "x" : 0,
+        "y" : 5,
+        "req" : 11182,
+        "ranks" : [ {
+          "description" : "Von Eurem Wichtel gewirkte Feuerblitze haben eine Chance von 2%, Euer nächstes innerhalb von 8 Sek. gewirktes 'Seelenfeuer' zu einem Spontanzauber werden zu lassen."
+        }, {
+          "description" : "Von Eurem Wichtel gewirkte Feuerblitze haben eine Chance von 4%, Euer nächstes innerhalb von 8 Sek. gewirktes 'Seelenfeuer' zu einem Spontanzauber werden zu lassen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10962,
+        "name" : "Omen der Verwüstung",
+        "icon" : "ability_warlock_baneofhavoc",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "cost" : "10% des Grundmanas",
+          "range" : "40 yd range",
+          "castTime" : "Spontanzauber",
+          "description" : "Belegt das Ziel 5 Min. lang mit einem Omen, durch das es 15% jeglichen an anderen Zielen verursachten Schadens des Hexenmeisters erleidet.\n\n\n\nEs kann pro Hexenmeister nur jeweils ein Effekt von 'Omen der Verwüstung' gleichzeitig aktiv sein und pro Hexenmeister kann nur ein Omen auf einem Ziel gleichzeitig aktiv sein."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10986,
+        "name" : "Chaosblitz",
+        "icon" : "ability_warlock_chaosbolt",
+        "x" : 1,
+        "y" : 6,
+        "req" : 10984,
+        "ranks" : [ {
+          "cost" : "7% des Grundmanas",
+          "range" : "40 yd range",
+          "castTime" : "2,5 Sek. Zauber",
+          "cooldown" : "12 Sek. Abklingzeit",
+          "description" : "Schleudert einen Blitz chaotischen Feuers auf den Feind und verursacht 1232 bis 1549 Feuerschaden. Dem Chaosblitz kann nicht widerstanden werden und er durchschlägt alle Absorptionseffekte."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

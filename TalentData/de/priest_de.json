@@ -1,0 +1,1078 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 5,
+      "name" : "Priester",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "Disziplin",
+      "icon" : "spell_holy_powerwordshield",
+      "backgroundFile" : "PriestDiscipline",
+      "overlayColor" : "#ff7f00",
+      "description" : "Nutzt Magie, um Verbündete vor Schaden zu schützen und ihre Wunden zu heilen.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : true,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 47540,
+        "name" : "Sühne",
+        "icon" : "spell_holy_penance",
+        "cost" : "14% des Grundmanas",
+        "range" : "30 yd range",
+        "castTime" : "Kanalisiert",
+        "cooldown" : "12 Sek. Abklingzeit",
+        "reagents" : [ ],
+        "description" : "Schleudert eine Salve heiligen Lichts, die einem feindlichen Ziel 668 bis 749 Heiligschaden zufügt oder ein befreundetes Ziel sofort um 2131 bis 2404 heilt sowie 2 Sek. lang alle 1 Sek. um einen zusätzlichen Betrag.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 95860,
+        "name" : "Meditation",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "Lässt 50% Eurer durch Willenskraft erzeugten Manaregeneration weiterlaufen, während Ihr Euch im Kampf befindet.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 84732,
+        "name" : "Erleuchtung",
+        "icon" : "spell_arcane_mindmastery",
+        "reagents" : [ ],
+        "description" : "Intelligenz um 15% erhöht.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77484,
+        "name" : "Schilddisziplin",
+        "icon" : "spell_holy_powerwordshield",
+        "reagents" : [ ],
+        "description" : "Erhöht das Potenzial Eurer Schaden absorbierenden Zauber um 20%. Jeder Punkt Meisterschaft erhöht das Absorptionspotenzial um zusätzlich 2.5%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10736,
+        "name" : "Verbessertes Machtwort: Schild",
+        "icon" : "spell_holy_powerwordshield",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht den von Eurem Zauber 'Machtwort: Schild' absorbierten Schaden um 5%."
+        }, {
+          "description" : "Erhöht den von Eurem Zauber 'Machtwort: Schild' absorbierten Schaden um 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8577,
+        "name" : "Zwillingsdisziplinen",
+        "icon" : "spell_holy_sealofvengeance",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht Euren Schatten- und Heiligzauberschaden sowie Eure Heilung um 2%."
+        }, {
+          "description" : "Erhöht Euren Schatten- und Heiligzauberschaden sowie Eure Heilung um 4%."
+        }, {
+          "description" : "Erhöht Euren Schatten- und Heiligzauberschaden sowie Eure Heilung um 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8595,
+        "name" : "Mentale Beweglichkeit",
+        "icon" : "ability_hibernation",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Verringert die Manakosten Eurer Spontanzauber um 4%."
+        }, {
+          "description" : "Verringert die Manakosten Eurer Spontanzauber um 7%."
+        }, {
+          "description" : "Verringert die Manakosten Eurer Spontanzauber um 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8593,
+        "name" : "Prediger",
+        "icon" : "spell_holy_divineillumination",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Beim Wirken Eures Zaubers 'Heilige Pein' besteht eine Chance von 100% und beim Wirken Eures Zaubers 'Gedankenschinden' eine Chance von 100%, den Effekt 'Prediger' zu erhalten. Bis zu 5-mal stapelbar. Hält 20 Sek. lang an.\n\n\n\nPrediger (Heilige Pein)\n\nErhöht den Schaden Eurer Zauber 'Heilige Pein', 'Heiliges Feuer' und 'Sühne' um 2% und verringert die Manakosten dieser Zauber um 3%.\n\n\n\nDunkler Prediger (Gedankenschinden)\n\nErhöht den Schaden Eurer regelmäßigen Schattenzauber um 1%."
+        }, {
+          "description" : "Beim Wirken Eures Zaubers 'Heilige Pein' besteht eine Chance von 100% und beim Wirken Eures Zaubers 'Gedankenschinden' eine Chance von 100%, den Effekt 'Prediger' zu erhalten. Bis zu 5-mal stapelbar. Hält 20 Sek. lang an.\n\n\n\nPrediger (Heilige Pein)\n\nErhöht den Schaden Eurer Zauber 'Heilige Pein', 'Heiliges Feuer' und 'Sühne' um 4% und verringert die Manakosten dieser Zauber um 6%.\n\n\n\nDunkler Prediger (Gedankenschinden)\n\nErhöht den Schaden Eurer regelmäßigen Schattenzauber um 2%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11608,
+        "name" : "Erzengel",
+        "icon" : "ability_priest_archangel",
+        "x" : 1,
+        "y" : 1,
+        "req" : 8593,
+        "ranks" : [ {
+          "castTime" : "Spontanzauber",
+          "description" : "Zehrt Euren Effekt 'Prediger' auf und löst abhängig von der Art des aufgezehrten 'Prediger'-Effekts einen weiteren Effekt aus.\n\n\n\nErzengel (Prediger)\n\nStellt sofort 1% Eures gesamten Manas wieder her und erhöht Eure hervorgerufene Heilung pro Stapel um 3%. Hält 18 Sek. lang an. 30 Sek. Abklingzeit.\n\n\n\nDunkler Erzengel (Dunkler Prediger)\n\nStellt sofort 5% Eures gesamten Manas wieder her und erhöht den Schaden Eurer Zauber 'Gedankenschinden', 'Gedankenstachel', 'Gedankenschlag' und 'Schattenwort: Tod' pro Stapel um 4%. Hält 18 Sek. lang an. 90 Sek. Abklingzeit."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8581,
+        "name" : "Inneres Sanktum",
+        "icon" : "spell_holy_innerfire",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Während Euer Zauber 'Inneres Feuer' aktiv ist, wird zusätzlich Euer erlittener Zauberschaden um 2% verringert. Zudem wird der Bewegungstempobonus Eures Zaubers 'Innerer Wille' um 2% erhöht."
+        }, {
+          "description" : "Während Euer Zauber 'Inneres Feuer' aktiv ist, wird zusätzlich Euer erlittener Zauberschaden um 4% verringert. Zudem wird der Bewegungstempobonus Eures Zaubers 'Innerer Wille' um 4% erhöht."
+        }, {
+          "description" : "Während Euer Zauber 'Inneres Feuer' aktiv ist, wird zusätzlich Euer erlittener Zauberschaden um 6% verringert. Zudem wird der Bewegungstempobonus Eures Zaubers 'Innerer Wille' um 6% erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8607,
+        "name" : "Seelenwehr",
+        "icon" : "ability_priest_soulwarding",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Verringert die Abklingzeit Eures Zaubers 'Machtwort: Schild' um 1 Sek."
+        }, {
+          "description" : "Verringert die Abklingzeit Eures Zaubers 'Machtwort: Schild' um 2 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11224,
+        "name" : "Erneuerte Hoffnung",
+        "icon" : "spell_holy_holyprotection",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Erhöht die Chance auf kritische Effekte Eurer Zauber 'Blitzheilung', 'Heilung', 'Große Heilung' und 'Sühne' (Heilung) um 5%, wenn das Ziel von 'Geschwächte Seele' oder von Eurem Effekt 'Barmherzigkeit' betroffen ist."
+        }, {
+          "description" : "Erhöht die Chance auf kritische Effekte Eurer Zauber 'Blitzheilung', 'Heilung', 'Große Heilung' und 'Sühne' (Heilung) um 10%, wenn das Ziel von 'Geschwächte Seele' oder von Eurem Effekt 'Barmherzigkeit' betroffen ist."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8611,
+        "name" : "Seele der Macht",
+        "icon" : "spell_holy_powerinfusion",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "16% des Grundmanas",
+          "range" : "30 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "2 Min. Abklingzeit",
+          "description" : "Erfüllt das Ziel mit Macht, erhöht das Zaubertempo um 20% und senkt die Manakosten jeglicher Zauber um 20%. Hält 15 Sek. lang an."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11812,
+        "name" : "Abbitte",
+        "icon" : "ability_priest_atonement",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Wenn Ihr mittels Eures Zaubers 'Heilige Pein' Schaden verursacht, wird innerhalb von 8 Metern ein befreundetes Gruppen- oder Schlachtzugsmitglied mit niedriger Gesundheit sofort um 50% des verursachten Schadens geheilt.\n\n\n\nWird der Priester selbst durch 'Abbitte' geheilt, wird der Effekt des Zaubers halbiert."
+        }, {
+          "description" : "Wenn Ihr mittels Eures Zaubers 'Heilige Pein' Schaden verursacht, wird innerhalb von 8 Metern ein befreundetes Gruppen- oder Schlachtzugsmitglied mit niedriger Gesundheit sofort um 100% des verursachten Schadens geheilt.\n\n\n\nWird der Priester selbst durch 'Abbitte' geheilt, wird der Effekt des Zaubers halbiert."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8591,
+        "name" : "Innerer Fokus",
+        "icon" : "spell_frost_windwalkon",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Spontanzauber",
+          "cooldown" : "45 Sek. Abklingzeit",
+          "description" : "Verringert die Manakosten Eures nächsten Wirkens von 'Blitzheilung', 'Verbindende Heilung', 'Große Heilung' oder 'Gebet der Heilung' um 100% und erhöht die Chance auf einen kritischen Effekt um 25%."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8617,
+        "name" : "Euphorie",
+        "icon" : "spell_holy_rapture",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Wenn der Effekt Eures Zaubers 'Machtwort: Schild' gebannt oder durch absorbierten Schaden beendet wird, gewinnt Ihr sofort 1,5% Eures maximalen Manas. Dieser Effekt kann nur ein Mal alle 12 Sek. auftreten."
+        }, {
+          "description" : "Wenn der Effekt Eures Zaubers 'Machtwort: Schild' gebannt oder durch absorbierten Schaden beendet wird, gewinnt Ihr sofort 2% Eures maximalen Manas. Dieser Effekt kann nur ein Mal alle 12 Sek. auftreten."
+        }, {
+          "description" : "Wenn der Effekt Eures Zaubers 'Machtwort: Schild' gebannt oder durch absorbierten Schaden beendet wird, gewinnt Ihr sofort 2,5% Eures maximalen Manas. Dieser Effekt kann nur ein Mal alle 12 Sek. auftreten."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11523,
+        "name" : "Zeit schinden",
+        "icon" : "spell_holy_borrowedtime",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Gewährt Eurem nächsten Zauber nach dem Wirken von 'Machtwort: Schild' 7% Zaubertempo."
+        }, {
+          "description" : "Gewährt Eurem nächsten Zauber nach dem Wirken von 'Machtwort: Schild' 14% Zaubertempo."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8605,
+        "name" : "Reflektierender Schild",
+        "icon" : "ability_priest_reflectiveshield",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "22% des Schadens, den Ihr durch 'Machtwort: Schild' absorbiert, werden auf den Angreifer zurückgeworfen. Dieser Schaden verursacht keine Bedrohung."
+        }, {
+          "description" : "45% des Schadens, den Ihr durch 'Machtwort: Schild' absorbiert, werden auf den Angreifer zurückgeworfen. Dieser Schaden verursacht keine Bedrohung."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11813,
+        "name" : "Stärkung der Seele",
+        "icon" : "spell_holy_ashestoashes",
+        "x" : 0,
+        "y" : 4,
+        "req" : 11224,
+        "ranks" : [ {
+          "description" : "Wenn Ihr ein Ziel mittels 'Heilung' heilt, welches vom Effekt 'Geschwächte Seele' betroffen ist, wird die verbleibende Dauer dieses Effekts um 2 Sek. verringert."
+        }, {
+          "description" : "Wenn Ihr ein Ziel mittels 'Heilung' heilt, welches vom Effekt 'Geschwächte Seele' betroffen ist, wird die verbleibende Dauer dieses Effekts um 4 Sek. verringert."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8609,
+        "name" : "Göttliche Aegis",
+        "icon" : "spell_holy_devineaegis",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Kritische Heilungen sowie alle Heilungen durch Euren Zauber 'Gebet der Heilung' hüllen das Ziel in einen schützenden Schild, der Schaden in Höhe von 10% des geheilten Wertes absorbiert. Hält 12 Sek. lang an."
+        }, {
+          "description" : "Kritische Heilungen sowie alle Heilungen durch Euren Zauber 'Gebet der Heilung' hüllen das Ziel in einen schützenden Schild, der Schaden in Höhe von 20% des geheilten Wertes absorbiert. Hält 12 Sek. lang an."
+        }, {
+          "description" : "Kritische Heilungen sowie alle Heilungen durch Euren Zauber 'Gebet der Heilung' hüllen das Ziel in einen schützenden Schild, der Schaden in Höhe von 30% des geheilten Wertes absorbiert. Hält 12 Sek. lang an."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8623,
+        "name" : "Schmerzunterdrückung",
+        "icon" : "spell_holy_painsupression",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "8% des Grundmanas",
+          "range" : "40 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "3 Min. Abklingzeit",
+          "description" : "Verringert die Bedrohung eines befreundeten Ziels sofort um 5%, 8 Sek. lang wird jeglicher erlittene Schaden um 40% verringert und die Chance, Bannzaubern zu widerstehen, um 65% erhöht."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12183,
+        "name" : "Gedankengang",
+        "icon" : "ability_mage_studentofthemind",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Beim Wirken von 'Große Heilung' besteht eine Chance von 50%, dass die Abklingzeit Eures Zaubers 'Innerer Fokus' um 5 Sek. verringert wird.\n\n\n\nBeim Wirken von 'Heilige Pein' besteht eine Chance von 50%, dass die Abklingzeit Eures Zaubers 'Sühne' um 0.5 Sek. verringert wird."
+        }, {
+          "description" : "Beim Wirken von 'Große Heilung' besteht eine Chance von 100%, dass die Abklingzeit Eures Zaubers 'Innerer Fokus' um 5 Sek. verringert wird.\n\n\n\nBeim Wirken von 'Heilige Pein' besteht eine Chance von 100%, dass die Abklingzeit Eures Zaubers 'Sühne' um 0.5 Sek. verringert wird."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8621,
+        "name" : "Fokussierter Wille",
+        "icon" : "ability_priest_focusedwill",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Erleidet Ihr einen Treffer in Höhe von mindestens 10% Eurer gesamten Gesundheit, erhaltet Ihr den Effekt 'Fokussierter Wille', welcher Euren erlittenen Schaden 8 Sek. lang um 4% verringert. Bis zu 2-mal stapelbar."
+        }, {
+          "description" : "Erleidet Ihr einen Treffer in Höhe von mindestens 10% Eurer gesamten Gesundheit, erhaltet Ihr den Effekt 'Fokussierter Wille', welcher Euren erlittenen Schaden 8 Sek. lang um 6% verringert. Bis zu 2-mal stapelbar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8625,
+        "name" : "Barmherzigkeit",
+        "icon" : "spell_holy_hopeandgrace",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Eure Zauber 'Blitzheilung', 'Heilung', 'Große Heilung' und 'Sühne' segnen das Ziel mit Barmherzigkeit, die seine durch den Priester erhaltene Heilung um 4% erhöht. Dieser Effekt ist bis zu 3-mal stapelbar und hält 15 Sek. lang an. 'Barmherzigkeit' kann jeweils nur auf ein Ziel wirken."
+        }, {
+          "description" : "Eure Zauber 'Blitzheilung', 'Heilung', 'Große Heilung' und 'Sühne' segnen das Ziel mit Barmherzigkeit, die seine durch den Priester erhaltene Heilung um 8% erhöht. Dieser Effekt ist bis zu 3-mal stapelbar und hält 15 Sek. lang an. 'Barmherzigkeit' kann jeweils nur auf ein Ziel wirken."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8603,
+        "name" : "Machtwort: Barriere",
+        "icon" : "spell_holy_powerwordbarrier",
+        "x" : 1,
+        "y" : 6,
+        "req" : 8609,
+        "ranks" : [ {
+          "cost" : "30% des Grundmanas",
+          "range" : "40 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "2 Min. Abklingzeit",
+          "description" : "Beschwört eine heilige Barriere im angewählten Gebiet, die jeglichen erlittenen Schaden aller befreundeten Ziele innerhalb ihres Bereiches um 30% verringert. Innerhalb der Barriere wird das Wirken von Zaubern durch erlittenen Schaden nicht unterbrochen. Die Barriere hält 10 Sek. lang an."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Heilig",
+      "icon" : "spell_holy_guardianspirit",
+      "backgroundFile" : "PriestHoly",
+      "overlayColor" : "#9999ff",
+      "description" : "Ein vielseitiger Heiler, der den von Gruppenmitgliedern oder Einzelnen erlittenen Schaden rückgängig machen und sogar noch nach seinem Tode heilen kann.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : true,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 88625,
+        "name" : "Segenswort: Züchtigung",
+        "icon" : "spell_holy_chastise",
+        "cost" : "15% des Grundmanas",
+        "range" : "30 yd range",
+        "castTime" : "Spontanzauber",
+        "cooldown" : "25 Sek. Abklingzeit",
+        "reagents" : [ ],
+        "description" : "Züchtigt das Ziel, verursacht 561 bis 622 Heiligschaden und macht es 3 Sek. lang desorientiert.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 95861,
+        "name" : "Meditation",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "Lässt 50% Eurer durch Willenskraft erzeugten Manaregeneration weiterlaufen, während Ihr Euch im Kampf befindet.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 87336,
+        "name" : "Spirituelle Heilung",
+        "icon" : "spell_holy_impholyconcentration",
+        "reagents" : [ ],
+        "description" : "Heilung um 15% erhöht.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77485,
+        "name" : "Echo des Lichts",
+        "icon" : "spell_holy_aspiration",
+        "reagents" : [ ],
+        "description" : "Eure direkten Heilzauber rufen im Verlauf von 6 Sek. eine Heilung von 10% hervor. Jeder Punkt Meisterschaft gewährt im Verlauf von 6 Sek. eine zusätzliche Heilung von 1.25%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10746,
+        "name" : "Verbesserte Erneuerung",
+        "icon" : "spell_holy_renew",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht den durch Euren Zauber 'Erneuerung' geheilten Wert um 5%."
+        }, {
+          "description" : "Erhöht den durch Euren Zauber 'Erneuerung' geheilten Wert um 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9553,
+        "name" : "Machtvolle Heilung",
+        "icon" : "spell_holy_greaterheal",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht die Heilung Eurer Zauber 'Blitzheilung', 'Heilung', 'Verbindende Heilung' und 'Große Heilung' um 5%."
+        }, {
+          "description" : "Erhöht die Heilung Eurer Zauber 'Blitzheilung', 'Heilung', 'Verbindende Heilung' und 'Große Heilung' um 10%."
+        }, {
+          "description" : "Erhöht die Heilung Eurer Zauber 'Blitzheilung', 'Heilung', 'Verbindende Heilung' und 'Große Heilung' um 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9549,
+        "name" : "Göttlicher Furor",
+        "icon" : "spell_holy_sealofwrath",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Verringert die Zauberzeit Eurer Zauber 'Heilige Pein', 'Heiliges Feuer', 'Heilung' und 'Große Heilung' um 0,15 Sek."
+        }, {
+          "description" : "Verringert die Zauberzeit Eurer Zauber 'Heilige Pein', 'Heiliges Feuer', 'Heilung' und 'Große Heilung' um 0,35 Sek."
+        }, {
+          "description" : "Verringert die Zauberzeit Eurer Zauber 'Heilige Pein', 'Heiliges Feuer', 'Heilung' und 'Große Heilung' um 0.5 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11669,
+        "name" : "Verzweifeltes Gebet",
+        "icon" : "spell_holy_restoration",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "cost" : "18% des Grundmanas",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "2 Min. Abklingzeit",
+          "description" : "Heilt den Zaubernden sofort um 4435 bis 5224."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11765,
+        "name" : "Woge des Lichts",
+        "icon" : "spell_holy_surgeoflight",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Beim Wirken Eurer Zauber 'Heilige Pein' oder 'Heilung' besteht eine Chance von 3%, dass Euer nächstes Wirken von 'Blitzheilung' zu einem kostenlosen Spontanzauber wird, der jedoch keinen kritischen Treffer erzielen kann."
+        }, {
+          "description" : "Beim Wirken Eurer Zauber 'Heilige Pein' oder 'Heilung' besteht eine Chance von 6%, dass Euer nächstes Wirken von 'Blitzheilung' zu einem kostenlosen Spontanzauber wird, der jedoch keinen kritischen Treffer erzielen kann."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9561,
+        "name" : "Inspiration",
+        "icon" : "spell_holy_layonhands",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Verringert den erlittenen körperlichen Schaden Eures Ziels 15 Sek. lang um 5%, nachdem dieses einen kritischen Effekt von Eurem Zauber 'Blitzheilung', 'Heilung', 'Große Heilung', 'Verbindende Heilung', 'Sühne', 'Gebet der Besserung', 'Gebet der Heilung' oder 'Kreis der Heilung' erhalten hat."
+        }, {
+          "description" : "Verringert den erlittenen körperlichen Schaden Eures Ziels 15 Sek. lang um 10%, nachdem dieses einen kritischen Effekt von Eurem Zauber 'Blitzheilung', 'Heilung', 'Große Heilung', 'Verbindende Heilung', 'Sühne', 'Gebet der Besserung', 'Gebet der Heilung' oder 'Kreis der Heilung' erhalten hat."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9593,
+        "name" : "Göttliche Berührung",
+        "icon" : "ability_paladin_infusionoflight",
+        "x" : 0,
+        "y" : 2,
+        "req" : 10746,
+        "ranks" : [ {
+          "description" : "Euer Zauber 'Erneuerung' heilt das Ziel sofort um 5% seines gesamten regelmäßigen Effektes."
+        }, {
+          "description" : "Euer Zauber 'Erneuerung' heilt das Ziel sofort um 10% seines gesamten regelmäßigen Effektes."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9577,
+        "name" : "Heilige Konzentration",
+        "icon" : "spell_holy_fanaticism",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Erhöht Eure auf Willenskraft basierende Manaregeneration im Kampf um zusätzlich 10%."
+        }, {
+          "description" : "Erhöht Eure auf Willenskraft basierende Manaregeneration im Kampf um zusätzlich 20%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11666,
+        "name" : "Brunnen des Lichts",
+        "icon" : "spell_holy_summonlightwell",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "30% des Grundmanas",
+          "range" : "40 yd range",
+          "castTime" : "0,5 Sek. Zauber",
+          "cooldown" : "3 Min. Abklingzeit",
+          "description" : "Erschafft einen heiligen Brunnen des Lichts. Befreundete Spieler können den Brunnen des Lichts anklicken, um im Verlauf von 6 Sek. insgesamt 9769  Gesundheit wiederherzustellen. Erlittener Schaden, der 30% Eurer gesamten Gesundheit entspricht, bricht den Effekt ab. Der Brunnen des Lichts bleibt 3 Min. lang bestehen oder bis 10 Aufladungen verbraucht sind."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12184,
+        "name" : "Foliant des Lichts",
+        "icon" : "inv_misc_book_07",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Verringert die Abklingzeit Eurer Segensworte um 15%."
+        }, {
+          "description" : "Verringert die Abklingzeit Eurer Segensworte um 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 14738,
+        "name" : "Rapide Erneuerung",
+        "icon" : "ability_paladin_blessedmending",
+        "x" : 0,
+        "y" : 3,
+        "req" : 9593,
+        "ranks" : [ {
+          "description" : "Verringert die globale Abklingzeit Eures Zaubers 'Erneuerung' um 0.5 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11670,
+        "name" : "Geist der Erlösung",
+        "icon" : "inv_enchant_essenceeternallarge",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Bei seinem Tod verwandelt sich der Priester 15 Sek. lang in einen Geist der Erlösung. Der Geist kann sich weder bewegen oder angreifen, noch kann er das Ziel von Zaubern oder Effekten sein. In dieser Gestalt kann der Priester jeglichen Heilzauber ohne irgendwelche Kosten wirken. Nach Ablauf der Verwandlung stirbt der Priester."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9573,
+        "name" : "Glücksfall",
+        "icon" : "spell_holy_serendipity",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Wenn Ihr 'Verbindende Heilung' oder 'Blitzheilung' wirkt, wird die Zauberzeit Eures nächsten Wirkens von 'Große Heilung' oder 'Gebet der Heilung' um 10% verringert und die Manakosten um 5% reduziert. Bis zu 2 Mal stapelbar. Hält 20 Sek. lang an."
+        }, {
+          "description" : "Wenn Ihr 'Verbindende Heilung' oder 'Blitzheilung' wirkt, wird die Zauberzeit Eures nächsten Wirkens von 'Große Heilung' oder 'Gebet der Heilung' um 20% verringert und die Manakosten um 10% reduziert. Bis zu 2 Mal stapelbar. Hält 20 Sek. lang an."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9587,
+        "name" : "Körper und Geist",
+        "icon" : "spell_holy_symbolofhope",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Wenn Ihr 'Machtwort: Schild' oder 'Glaubenssprung' wirkt, wird das Bewegungstempo des Ziels 4 Sek. lang um 30% erhöht. Zudem besteht eine Chance von 50%, dass Ihr beim Wirken von 'Krankheit heilen' auf Euch selbst, zusätzlich zu den Krankheiten einen Gifteffekt entfernt."
+        }, {
+          "description" : "Wenn Ihr 'Machtwort: Schild' oder 'Glaubenssprung' wirkt, wird das Bewegungstempo des Ziels 4 Sek. lang um 60% erhöht. Zudem besteht eine Chance von 100%, dass Ihr beim Wirken von 'Krankheit heilen' auf Euch selbst, zusätzlich zu den Krankheiten einen Gifteffekt entfernt."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11667,
+        "name" : "Chakra",
+        "icon" : "priest_icon_chakra",
+        "x" : 1,
+        "y" : 4,
+        "req" : 9577,
+        "ranks" : [ {
+          "castTime" : "Spontanzauber",
+          "cooldown" : "30 Sek. Abklingzeit",
+          "description" : "Bei Aktivierung stimmt Euch Euer nächstes Wirken von 'Heilung', 'Gebet der Heilung'/'Gebet der Besserung' oder 'Heilige Pein' auf ein entsprechendes Chakra ein. Hält 30 Sek. lang an.\n\n\n\nEpiphanie (Heilung)\n\nErhöht die kritische Effektchance Eurer direkten Heilzauber um 10% und Eure direkten Heilungen setzen die Dauer eines wirkenden Effekts von 'Erneuerung' auf dem Ziel zurück.\n\n\n\nRefugium (Gebet der Heilung, Gebet der Besserung)\n\nErhöht die hervorgerufene Heilung Eurer Heilzauber mit Flächeneffekt sowie 'Erneurung' um 15% und verringert die Abklingzeit von 'Kreis der Heilung' um 2 Sek.\n\n\n\nZüchtigung (Heilige Pein)\n\nErhöht den gesamten verursachten Schaden Eurer Schatten- und Heiligzauber um 15%."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11755,
+        "name" : "Offenbarungen",
+        "icon" : "ability_priest_bindingprayers",
+        "x" : 2,
+        "y" : 4,
+        "req" : 11667,
+        "ranks" : [ {
+          "description" : "Während Ihr auf 'Chakra: Epiphanie' oder 'Chakra: Refugium' eingestimmt seid, wandelt sich Euer Zauber 'Segenswort: Züchtigung' in einen anderen Zauber um, dessen Art von Eurer Einstimmung abhängig ist.\n\n\n\nSegenswort: Epiphanie\n\nHeilt das Ziel sofort um 4699 bis 5508 und erhöht die Chance auf einen kritischen Effekt Eurer Heilzauber auf diesem Ziel 6 Sek. lang um 25%. 15 Sek. Abklingzeit.\n\n\n\nSegenswort: Refugium\n\nWeiht den Boden mit einem heiligen Licht, wodurch alle Verbündeten in diesem Bereich alle 2 Sek. um 270 bis 321 geheilt werden. Hält 18 Sek. lang an. Es kann jeweils nur ein Refugium gleichzeitig aktiv sein. 40 Sek. Abklingzeit."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11672,
+        "name" : "Gesegnete Abhärtung",
+        "icon" : "spell_holy_blessedresillience",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Erleidet Ihr einen Treffer in Höhe von mindestens 10% Eurer gesamten Gesundheit, erhaltet Ihr den Effekt 'Gesegnete Abhärtung', welcher Eure erhaltene Heilung 10 Sek. lang um 5% erhöht."
+        }, {
+          "description" : "Erleidet Ihr einen Treffer in Höhe von mindestens 10% Eurer gesamten Gesundheit, erhaltet Ihr den Effekt 'Gesegnete Abhärtung', welcher Eure erhaltene Heilung 10 Sek. lang um 10% erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9597,
+        "name" : "Prüfung des Glaubens",
+        "icon" : "spell_holy_testoffaith",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Erhöht die erhaltene Heilung von befreundeten Zielen, deren Gesundheit 50% oder weniger beträgt, um 4%."
+        }, {
+          "description" : "Erhöht die erhaltene Heilung von befreundeten Zielen, deren Gesundheit 50% oder weniger beträgt, um 8%."
+        }, {
+          "description" : "Erhöht die erhaltene Heilung von befreundeten Zielen, deren Gesundheit 50% oder weniger beträgt, um 12%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11668,
+        "name" : "Gemütsruhe",
+        "icon" : "spell_arcane_mindmastery",
+        "x" : 1,
+        "y" : 5,
+        "req" : 11667,
+        "ranks" : [ {
+          "description" : "Erfolgreiches Wirken von 'Heilung', 'Gebet der Heilung'/'Gebet der Besserung' oder 'Heilige Pein' verlängert die Dauer der Einstimmung auf das entsprechende Chakra um 2 Sek."
+        }, {
+          "description" : "Erfolgreiches Wirken von 'Heilung', 'Gebet der Heilung'/'Gebet der Besserung' oder 'Heilige Pein' verlängert die Dauer der Einstimmung auf das entsprechende Chakra um 4 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9595,
+        "name" : "Kreis der Heilung",
+        "icon" : "spell_holy_circleofrenewal",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "cost" : "21% des Grundmanas",
+          "range" : "40 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "10 Sek. Abklingzeit",
+          "description" : "Heilt bis zu 5 befreundete Gruppen- oder Schlachtzugsmitglieder im Umkreis von 15 Metern um das Ziel um 1609 bis 1776. Die Heilung der am schwersten verletzten Gruppenmitglieder wird priorisiert."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9601,
+        "name" : "Schutzgeist",
+        "icon" : "spell_holy_guardianspirit",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "6% des Grundmanas",
+          "range" : "40 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "3 Min. Abklingzeit",
+          "description" : "Ruft einen Schutzgeist herbei, der ein freundliches Ziel bewacht. Der Geist erhöht die erhaltene Heilung des Ziels um 40% und verhindert, dass das Ziel stirbt, indem er sich selbst opfert. Dieses Opfer beendet den Effekt, heilt das Ziel jedoch um 50% seiner maximalen Gesundheit. Hält 10 Sek. lang an."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Schatten",
+      "icon" : "spell_shadow_shadowwordpain",
+      "backgroundFile" : "PriestShadow",
+      "overlayColor" : "#b266cc",
+      "description" : "Nutzt sinistre Schattenmagien, um Feinde durch Schaden über Zeit auszulöschen.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 15407,
+        "name" : "Gedankenschinden",
+        "icon" : "spell_shadow_siphonmana",
+        "cost" : "8% des Grundmanas",
+        "range" : "40 yd range",
+        "castTime" : "Kanalisiert",
+        "reagents" : [ ],
+        "description" : "Greift die Gedanken des Ziels mit Schattenenergie an. Verursacht im Verlauf von 3 Sek. 522 Schattenschaden und verringert das Bewegungstempo des Ziels um 50%.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 87327,
+        "name" : "Schattenmacht",
+        "icon" : "spell_shadow_shadowpower",
+        "reagents" : [ ],
+        "description" : "Erhöht den Zauberschaden um 25%.\n\n\n\nErhöht den kritischen Schaden Eurer Schattenzauber um 100%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 95740,
+        "name" : "Schattenkugeln",
+        "icon" : "spell_priest_shadoworbs",
+        "reagents" : [ ],
+        "description" : "Jedes Mal, wenn Eure Zauber 'Schattenwort: Schmerz' oder 'Gedankenschinden' Schaden verursachen, besteht eine Chance von 10%, dass Euch eine Schattenkugel gewährt wird. Das Wirken Eurer Zauber 'Gedankenschlag' oder 'Gedankenstachel' zehrt alle Schattenkugeln auf und erhöht den Schaden dieser Zauber pro aufgezehrter Kugel um 0%. Zudem wird Euer verursachter regelmäßiger Schattenschaden 15 Sek. lang um 0% erhöht. Ihr könnt maximal 3 Kugeln ansammeln.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77486,
+        "name" : "Schattenkugelmacht",
+        "icon" : "inv_chaos_orb",
+        "reagents" : [ ],
+        "description" : "Erhöht den von Euren Schattenkugeln verursachten Schaden. Jeder Punkt Meisterschaft erhöht den Schaden um zusätzlich 1.3%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9032,
+        "name" : "Dunkelheit",
+        "icon" : "ability_priest_darkness",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Zaubertempo um 1% erhöht."
+        }, {
+          "description" : "Zaubertempo um 2% erhöht."
+        }, {
+          "description" : "Zaubertempo um 3% erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9036,
+        "name" : "Verbessertes Schattenwort: Schmerz",
+        "icon" : "spell_shadow_shadowwordpain",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht den Schaden Eures Zaubers 'Schattenwort: Schmerz' um 3%."
+        }, {
+          "description" : "Erhöht den Schaden Eures Zaubers 'Schattenwort: Schmerz' um 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9046,
+        "name" : "Schattenschleier",
+        "icon" : "spell_magic_lesserinvisibilty",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Verringert die Abklingzeit Eurer Fähigkeit 'Verblassen' um 3 Sek. und verringert die Abklingzeit Eures Schattengeistes um 30 Sek."
+        }, {
+          "description" : "Verringert die Abklingzeit Eurer Fähigkeit 'Verblassen' um 6 Sek. und verringert die Abklingzeit Eures Schattengeistes um 60 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9040,
+        "name" : "Verbesserter psychischer Schrei",
+        "icon" : "spell_shadow_psychicscream",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Verringert die Abklingzeit Eures Zaubers 'Psychischer Schrei' um 2 Sek."
+        }, {
+          "description" : "Verringert die Abklingzeit Eures Zaubers 'Psychischer Schrei' um 4 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9042,
+        "name" : "Verbesserter Gedankenschlag",
+        "icon" : "spell_shadow_unholyfrenzy",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Verringert die Abklingzeit Eures Zaubers 'Gedankenschlag' um 0.5 Sek. Zudem hat in Schattengestalt Euer Zauber 'Gedankenschlag' eine Chance von 33%, die erhaltene Heilung des Ziels 10 Sek. lang um 10% zu verringern."
+        }, {
+          "description" : "Verringert die Abklingzeit Eures Zaubers 'Gedankenschlag' um 1 Sek. Zudem hat in Schattengestalt Euer Zauber 'Gedankenschlag' eine Chance von 66%, die erhaltene Heilung des Ziels 10 Sek. lang um 10% zu verringern."
+        }, {
+          "description" : "Verringert die Abklingzeit Eures Zaubers 'Gedankenschlag' um 1.5 Sek. Zudem hat in Schattengestalt Euer Zauber 'Gedankenschlag' eine Chance von 100%, die erhaltene Heilung des Ziels 10 Sek. lang um 10% zu verringern."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9062,
+        "name" : "Verbesserte verschlingende Seuche",
+        "icon" : "spell_shadow_devouringplague.",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Euer Zauber 'Verschlingende Seuche' verursacht sofort Schaden in Höhe von 15% seines gesamten regelmäßigen Effekts."
+        }, {
+          "description" : "Euer Zauber 'Verschlingende Seuche' verursacht sofort Schaden in Höhe von 30% seines gesamten regelmäßigen Effekts."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11673,
+        "name" : "Okkultismus",
+        "icon" : "spell_shadow_mindtwisting",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Erhöht Euren Schattenzauberschaden um 1% und erhöht Eure Zaubertrefferwertung um einen Betrag, der 50% Eurer durch Gegenstände und Effekte erhaltenen Willenskraft entspricht."
+        }, {
+          "description" : "Erhöht Euren Schattenzauberschaden um 2% und erhöht Eure Zaubertrefferwertung um einen Betrag, der 100% Eurer durch Gegenstände und Effekte erhaltenen Willenskraft entspricht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9064,
+        "name" : "Schattengestalt",
+        "icon" : "spell_shadow_shadowform",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "13% des Grundmanas",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "1,5 Sek. Abklingzeit",
+          "description" : "Ihr nehmt eine Schattengestalt an, erhöht Euren Schattenschaden um 15% und verringert Euren erlittenen Schaden um 15%. Zudem erhöht Ihr die Zaubertempowertung aller Gruppen- und Schlachtzugsmitglieder um 5%. Ihr könnt in dieser Gestalt jedoch keine Heiligzauber wirken."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9068,
+        "name" : "Trugbild",
+        "icon" : "spell_shadow_twistedfaith",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Das Wirken Eurer Fähigkeit 'Verblassen' hat nun eine Chance von 50%, jegliche bewegungseinschränkenden Effekte zu entfernen."
+        }, {
+          "description" : "Das Wirken Eurer Fähigkeit 'Verblassen' hat nun eine Chance von 100%, jegliche bewegungseinschränkenden Effekte zu entfernen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11606,
+        "name" : "Dienstbare Schatten",
+        "icon" : "inv_misc_orb_04",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Erhöht Eure Chance, eine Schattenkugel zu erhalten, wenn Ihr mit Euren Zaubern 'Gedankenschinden' oder 'Schattenwort: Schmerz' Schaden verursacht, um 4%. Zudem erhaltet Ihr eine Chance von 50%, eine Schattenkugel zu erhalten, wenn Ihr einen kritischen Treffer erleidet."
+        }, {
+          "description" : "Erhöht Eure Chance, eine Schattenkugel zu erhalten, wenn Ihr mit Euren Zaubern 'Gedankenschinden' oder 'Schattenwort: Schmerz' Schaden verursacht, um 8%. Zudem erhaltet Ihr eine Chance von 100%, eine Schattenkugel zu erhalten, wenn Ihr einen kritischen Treffer erleidet."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9052,
+        "name" : "Stille",
+        "icon" : "ability_priest_silence",
+        "x" : 0,
+        "y" : 3,
+        "req" : 9040,
+        "ranks" : [ {
+          "cost" : "225 Mana",
+          "range" : "30 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "45 Sek. Abklingzeit",
+          "description" : "Bringt das Ziel zum Schweigen, sodass es 5 Sek. lang keine Zauber wirken kann. Das Zauberwirken von Nichtspieler-Zielen ist ebenfalls 3 Sek. lang unterbrochen."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9054,
+        "name" : "Vampirumarmung",
+        "icon" : "spell_shadow_unsummonbuilding",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "castTime" : "Spontanzauber",
+          "description" : "Die Umarmung der Schattenenergie umschlingt Euch. Wenn Ihr mittels Eurer Einzelzielzauber Schaden verursacht, werdet Ihr um 6% und Eure Gruppenmitglieder um 3% des von Euch verursachten Schattenschadens geheilt. Hält 30 Min. lang an."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11778,
+        "name" : "Masochismus",
+        "icon" : "spell_shadow_misery",
+        "x" : 2,
+        "y" : 3,
+        "req" : 9054,
+        "ranks" : [ {
+          "description" : "Wenn Ihr durch einen Angriff Schaden erleidet, der 10% Eurer gesamten Gesundheit oder mehr entspricht, oder Euch selbst durch Euren Zauber 'Schattenwort: Tod' Schaden zufügt, gewinnt Ihr sofort 5% Eures gesamten Manas zurück."
+        }, {
+          "description" : "Wenn Ihr durch einen Angriff Schaden erleidet, der 10% Eurer gesamten Gesundheit oder mehr entspricht, oder Euch selbst durch Euren Zauber 'Schattenwort: Tod' Schaden zufügt, gewinnt Ihr sofort 10% Eures gesamten Manas zurück."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9060,
+        "name" : "Gedankenschmelze",
+        "icon" : "spell_shadow_skull",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Erhöht den Schaden Eures Zaubers 'Schattenwort: Tod' bei Zielen, die über 25% Gesundheit oder weniger verfügen, um 15%. Zudem wird, wenn Ihr mittels 'Gedankenstachel' Schaden verursacht, die Zauberzeit Eures nächsten Wirkens von 'Gedankenschlag' 6 Sek. lang um 25% verringert. Der Effekt 'Gedankenschmelze' ist bis zu 2-mal stapelbar."
+        }, {
+          "description" : "Erhöht den Schaden Eures Zaubers 'Schattenwort: Tod' bei Zielen, die über 25% Gesundheit oder weniger verfügen, um 30%. Zudem wird, wenn Ihr mittels 'Gedankenstachel' Schaden verursacht, die Zauberzeit Eures nächsten Wirkens von 'Gedankenschlag' 6 Sek. lang um 50% verringert. Der Effekt 'Gedankenschmelze' ist bis zu 2-mal stapelbar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9076,
+        "name" : "Schmerz und Leid",
+        "icon" : "spell_shadow_painandsuffering",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Euer Zauber 'Gedankenschinden' hat eine Chance von 30%, die Dauer von 'Schattenwort: Schmerz' auf dem Ziel zu erneuern, zudem wird der von Euch durch Euer 'Schattenwort: Tod' erlittene Schaden um 20% verringert."
+        }, {
+          "description" : "Euer Zauber 'Gedankenschinden' hat eine Chance von 60%, die Dauer von 'Schattenwort: Schmerz' auf dem Ziel zu erneuern, zudem wird der von Euch durch Euer 'Schattenwort: Tod' erlittene Schaden um 40% verringert."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9074,
+        "name" : "Vampirberührung",
+        "icon" : "spell_holy_stoicism",
+        "x" : 1,
+        "y" : 4,
+        "req" : 9054,
+        "ranks" : [ {
+          "cost" : "16% des Grundmanas",
+          "range" : "40 yd range",
+          "castTime" : "1,5 Sek. Zauber",
+          "description" : "Fügt dem Ziel im Verlauf von 15 Sek. insgesamt 670 Schattenschaden zu und gewährt bis zu 10 Gruppen- oder Schlachtzugsmitgliedern alle 10 Sek. 1% ihres maximalen Manas, wenn Ihr durch 'Gedankenschlag' Schaden verursacht."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11663,
+        "name" : "Paralyse",
+        "icon" : "ability_rogue_masterofsubtlety",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Wenn Euer Zauber 'Gedankenschlag' einen kritischen Treffer erzielt, wird das Ziel 2 Sek. lang bewegungsunfähig."
+        }, {
+          "description" : "Wenn Euer Zauber 'Gedankenschlag' einen kritischen Treffer erzielt, wird das Ziel 4 Sek. lang bewegungsunfähig."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9072,
+        "name" : "Psychisches Entsetzen",
+        "icon" : "spell_shadow_psychichorrors",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "cost" : "16% des Grundmanas",
+          "range" : "30 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "2 Min. Abklingzeit",
+          "description" : "Ihr versetzt das Ziel 3 Sek. lang in Angst und Schrecken, sodass es vor Furcht erzittert und für 10 Sek. seine Waffenhand- und Distanzwaffe fallen lässt."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11605,
+        "name" : "Sünde und Strafe",
+        "icon" : "spell_holy_prayerofshadowprotection",
+        "x" : 1,
+        "y" : 5,
+        "req" : 9074,
+        "ranks" : [ {
+          "description" : "Wenn Euer Zauber 'Vampirberührung' gebannt wird, besteht eine Chance von 50%, dass sowohl der Bannende als auch alle feindlichen Ziele im Umkreis von 10 Metern um ihn herum sofort 3 Sek. lang von Schrecken erfüllt flüchten.\n\n\n\nWenn Euer Zauber Gedankenschlag einen kritischen Treffer erzielt, wird die verbleibende Abklingzeit Eures Schattengeists um 5 Sek. verringert."
+        }, {
+          "description" : "Wenn Euer Zauber 'Vampirberührung' gebannt wird, besteht eine Chance von 100%, dass sowohl der Bannende als auch alle feindlichen Ziele im Umkreis von 10 Metern um ihn herum sofort 3 Sek. lang von Schrecken erfüllt flüchten.\n\n\n\nWenn Euer Zauber Gedankenschlag einen kritischen Treffer erzielt, wird die verbleibende Abklingzeit Eures Schattengeists um 10 Sek. verringert."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9070,
+        "name" : "Schattenhafte Erscheinung",
+        "icon" : "ability_priest_shadowyapparition",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Wenn Ihr mittels Eures Zaubers 'Schattenwort: Schmerz' regelmäßigen Schaden verursacht, besteht eine Chance von 4%, dass ein Schatten Eurer selbst beschworen wird, der sich langsam auf das Ziel zubewegt, welches vom Effekt Eures Zaubers 'Schattenwort: Schmerz' betroffen ist. Sobald die Erscheinung das Ziel erreicht, wird sie sofort 482 Schattenschaden verursachen.\n\n\n\nWährend Ihr Euch bewegt, wird die Chance, eine schattenhafte Erscheinung zu beschwören, auf 20% erhöht. Es können maximal 4 schattenhafte Erscheinungen gleichzeitig aktiv sein."
+        }, {
+          "description" : "Wenn Ihr mittels Eures Zaubers 'Schattenwort: Schmerz' regelmäßigen Schaden verursacht, besteht eine Chance von 8%, dass ein Schatten Eurer selbst beschworen wird, der sich langsam auf das Ziel zubewegt, welches vom Effekt Eures Zaubers 'Schattenwort: Schmerz' betroffen ist. Sobald die Erscheinung das Ziel erreicht, wird sie sofort 482 Schattenschaden verursachen.\n\n\n\nWährend Ihr Euch bewegt, wird die Chance, eine schattenhafte Erscheinung zu beschwören, auf 40% erhöht. Es können maximal 4 schattenhafte Erscheinungen gleichzeitig aktiv sein."
+        }, {
+          "description" : "Wenn Ihr mittels Eures Zaubers 'Schattenwort: Schmerz' regelmäßigen Schaden verursacht, besteht eine Chance von 12%, dass ein Schatten Eurer selbst beschworen wird, der sich langsam auf das Ziel zubewegt, welches vom Effekt Eures Zaubers 'Schattenwort: Schmerz' betroffen ist. Sobald die Erscheinung das Ziel erreicht, wird sie sofort 482 Schattenschaden verursachen.\n\n\n\nWährend Ihr Euch bewegt, wird die Chance, eine schattenhafte Erscheinung zu beschwören, auf 60% erhöht. Es können maximal 4 schattenhafte Erscheinungen gleichzeitig aktiv sein."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9080,
+        "name" : "Dispersion",
+        "icon" : "spell_shadow_dispersion",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "castTime" : "Sofort",
+          "cooldown" : "2 Min. Abklingzeit",
+          "description" : "Löst Euch zu reiner Schattenenergie auf und verringert jeglichen erlittenen Schaden um 90%. Ihr könnt weder angreifen noch Zauber wirken, regeneriert jedoch 6 Sek. lang alle 1 Sek. 6% Mana.\n\n\n\n'Dispersion' kann gewirkt werden, während Betäubungs-, Furcht- oder Stilleeffekte auf Euch wirken. Bei Anwendung werden alle wirkenden Verlangsamungs- und bewegungseinschränkenden Effekte entfernt und Ihr werdet für die Dauer des Effektes von 'Dispersion' gegen sie immun."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

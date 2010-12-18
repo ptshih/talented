@@ -1,0 +1,1029 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 8,
+      "name" : "마법사",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "비전",
+      "icon" : "spell_holy_magicalsentry",
+      "backgroundFile" : "MageArcane",
+      "overlayColor" : "#b233ff",
+      "description" : "비전 에너지를 조작하여 시간과 공간의 구조를 변형시킵니다.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 44425,
+        "name" : "비전 탄막",
+        "icon" : "ability_mage_arcanebarrage",
+        "cost" : "기본 마나의 12% ",
+        "range" : "40 yd range",
+        "castTime" : "즉시 시전",
+        "cooldown" : "재사용 대기시간: 4초",
+        "reagents" : [ ],
+        "description" : "적 대상에게 비전 에너지의 화살을 발사하여 40의 비전 피해를 입힙니다.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 84671,
+        "name" : "비전 전문화",
+        "icon" : "spell_fire_twilightfire",
+        "reagents" : [ ],
+        "description" : "비전 주문의 공격력이 25%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76547,
+        "name" : "마나 숙련가",
+        "icon" : "spell_arcane_manatap",
+        "reagents" : [ ],
+        "description" : "소모하지 않은 마나의 양에 따라 모든 주문 공격력이 최대 12%만큼 증가합니다. 특화력 1당 공격력이 추가로 최대 1.5%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9154,
+        "name" : "신비한 정신집중",
+        "icon" : "spell_shadow_manaburn",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "공격 마법이 대상에 적중한 이후 3%의 확률로 정신 집중 상태를 취합니다. 정신 집중 상태에서는 다음 공격 주문의 마나 소비량이 100%만큼 감소됩니다."
+        }, {
+          "description" : "공격 마법이 대상에 적중한 이후 6%의 확률로 정신 집중 상태를 취합니다. 정신 집중 상태에서는 다음 공격 주문의 마나 소비량이 100%만큼 감소됩니다."
+        }, {
+          "description" : "공격 마법이 대상에 적중한 이후 10%의 확률로 정신 집중 상태를 취합니다. 정신 집중 상태에서는 다음 공격 주문의 마나 소비량이 100%만큼 감소됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9166,
+        "name" : "마법 차단 연마",
+        "icon" : "spell_frost_iceshock",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "마법 차단 시 2초 동안 대상을 침묵시킵니다."
+        }, {
+          "description" : "마법 차단 시 4초 동안 대상을 침묵시킵니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9200,
+        "name" : "황천바람의 현신",
+        "icon" : "ability_mage_netherwindpresence",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "주문 가속이 1%만큼 증가합니다."
+        }, {
+          "description" : "주문 가속이 2%만큼 증가합니다."
+        }, {
+          "description" : "주문 가속이 3%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9170,
+        "name" : "약점 고문",
+        "icon" : "spell_arcane_focusedpower",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "이동 속도나 공격 속도가 느려진 대상에게 비전 계열 주문의 공격력이 2%만큼 증가합니다."
+        }, {
+          "description" : "이동 속도나 공격 속도가 느려진 대상에게 비전 계열 주문의 공격력이 4%만큼 증가합니다."
+        }, {
+          "description" : "이동 속도나 공격 속도가 느려진 대상에게 비전 계열 주문의 공격력이 6%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10864,
+        "name" : "기원",
+        "icon" : "spell_arcane_invocation",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "주문을 성공적으로 방해하면 8초 동안 공격력이 추가로 5%만큼 증가합니다."
+        }, {
+          "description" : "주문을 성공적으로 방해하면 8초 동안 공격력이 추가로 10%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10737,
+        "name" : "신비한 화살 연마",
+        "icon" : "spell_nature_starfall",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "신비한 화살 주문 사용 시 발사되는 화살의 수가 1개만큼 증가합니다."
+        }, {
+          "description" : "신비한 화살 주문 사용 시 발사되는 화살의 수가 2개만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9172,
+        "name" : "점멸 연마",
+        "icon" : "spell_arcane_blink",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "점멸 시전 후 3초 동안 이동 속도가 35%만큼 증가합니다."
+        }, {
+          "description" : "점멸 시전 후 3초 동안 이동 속도가 70%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9192,
+        "name" : "신비한 순환",
+        "icon" : "ability_mage_potentspirit",
+        "x" : 0,
+        "y" : 2,
+        "req" : 9174,
+        "ranks" : [ {
+          "description" : "냉정, 신비의 마법 강화, 투명화 주문의 재사용 대기시간이 12%만큼, 환기의 재사용 대기시간이 1분만큼 감소합니다."
+        }, {
+          "description" : "냉정, 신비의 마법 강화, 투명화 주문의 재사용 대기시간이 25%만큼, 환기의 재사용 대기시간이 2분만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9174,
+        "name" : "냉정",
+        "icon" : "spell_nature_enchantarmor",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 2분",
+          "description" : "활성화되면 시전 시간이 10초 미만인 다음 주문은 시전 시간 없이 바로 발동됩니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9198,
+        "name" : "화살 탄막",
+        "icon" : "ability_mage_missilebarrage",
+        "x" : 2,
+        "y" : 2,
+        "req" : 10737,
+        "ranks" : [ {
+          "description" : "신비한 화살이 매 0.6초마다 발사됩니다."
+        }, {
+          "description" : "신비한 화살이 매 0.5초마다 발사됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9178,
+        "name" : "굴절의 망토",
+        "icon" : "spell_arcane_prismaticcloak",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "받는 모든 피해가 2%만큼 감소하고 투명해지기까지 필요한 시간이 1초만큼 감소합니다."
+        }, {
+          "description" : "받는 모든 피해가 4%만큼 감소하고 투명해지기까지 필요한 시간이 2초만큼 감소합니다."
+        }, {
+          "description" : "받는 모든 피해가 6%만큼 감소하고 투명해지기까지 필요한 시간이 3초만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9142,
+        "name" : "변이 연마",
+        "icon" : "spell_nature_polymorph",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "자신이 변이시킨 대상이 피해를 받으면 1.5초 동안 기절합니다. 이 효과는 매 10초마다 한 번씩만 발동됩니다."
+        }, {
+          "description" : "자신이 변이시킨 대상이 피해를 받으면 3초 동안 기절합니다. 이 효과는 매 10초마다 한 번씩만 발동됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10733,
+        "name" : "비전 전술",
+        "icon" : "spell_arcane_arcanetactics",
+        "x" : 1,
+        "y" : 3,
+        "req" : 9174,
+        "ranks" : [ {
+          "description" : "100미터 내에 있는 모든 파티원과 공격대원의 공격력이 3%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9188,
+        "name" : "주문술사의 흡수력",
+        "icon" : "ability_mage_incantersabsorbtion",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "마나 보호막 또는 마법계 수호로 피해를 흡수하면 10초 동안 흡수한 피해의 10%만큼 자신의 주문 공격력이 증가합니다. 추가로 마나 보호막이 파괴되면 6미터 반경 내의 모든 적을 12미터 밖으로 멀리 밀쳐냅니다."
+        }, {
+          "description" : "마나 보호막 또는 마법계 수호로 피해를 흡수하면 10초 동안 흡수한 피해의 20%만큼 자신의 주문 공격력이 증가합니다. 추가로 마나 보호막이 파괴되면 6미터 반경 내의 모든 적을 12미터 밖으로 멀리 밀쳐냅니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11825,
+        "name" : "신비한 폭발 연마",
+        "icon" : "spell_nature_wispsplode",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "신비한 폭발 주문의 전역 재사용 대기시간이 0.25초만큼 감소하고 생성되는 위협이 40%만큼 감소합니다."
+        }, {
+          "description" : "신비한 폭발 주문의 전역 재사용 대기시간이 0.5초만큼 감소하고 생성되는 위협이 80%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9180,
+        "name" : "신비한 잠재력",
+        "icon" : "spell_arcane_arcanepotency",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "정신 집중 상태가 되었을 때 혹은 냉정이 활성화되어 있을 때 다음 2회의 공격 주문이 극대화 효과를 발휘할 확률이 7%만큼 증가합니다."
+        }, {
+          "description" : "정신 집중 상태가 되었을 때 혹은 냉정이 활성화되어 있을 때 다음 2회의 공격 주문이 극대화 효과를 발휘할 확률이 15%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9196,
+        "name" : "감속",
+        "icon" : "spell_nature_slow",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "기본 마나의 12% ",
+          "range" : "35 yd range",
+          "castTime" : "즉시 시전",
+          "description" : "대상의 이동 속도를 60%만큼 감소시키고 원거리 공격 간격을 60%만큼 늘이며 시전 시간을 30%만큼 증가시킵니다. 15초 동안 지속됩니다. 동시에 한 대상에게만 걸 수 있습니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11367,
+        "name" : "황천의 소용돌이",
+        "icon" : "spell_arcane_blast",
+        "x" : 2,
+        "y" : 4,
+        "req" : 9196,
+        "ranks" : [ {
+          "description" : "비전 작렬 주문으로 피해를 입혔을 때 50%의 확률로 감속 효과를 받지 않은 대상에게 감속 효과를 겁니다."
+        }, {
+          "description" : "비전 작렬 주문으로 피해를 입혔을 때 100%의 확률로 감속 효과를 받지 않은 대상에게 감속 효과를 겁니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10578,
+        "name" : "마법 집중",
+        "icon" : "spell_arcane_studentofmagic",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "cost" : "기본 마나의 6% ",
+          "range" : "30 yd range",
+          "castTime" : "즉시 시전",
+          "description" : "30분 동안 대상의 주문 극대화 적중률이 3%만큼 증가합니다. 대상의 주문이 극대화 효과를 발휘하면 마법 집중을 시전한 마법사의 주문 극대화 확률이 10초 동안 3%만큼 증가합니다. 자신에게 시전할 수 없으며 하나의 대상에만 적용됩니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9194,
+        "name" : "마나석 연마",
+        "icon" : "inv_misc_gem_emerald_01",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "마나석으로 마나를 회복하면 10초 동안 최대 마나의 1%만큼 주문력이 증가합니다."
+        }, {
+          "description" : "마나석으로 마나를 회복하면 10초 동안 최대 마나의 2%만큼 주문력이 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9186,
+        "name" : "신비의 마법 강화",
+        "icon" : "spell_nature_lightning",
+        "x" : 1,
+        "y" : 6,
+        "req" : 9196,
+        "ranks" : [ {
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 2분",
+          "description" : "활성화되면 주문 공격력이 20%만큼 증가하지만 소모되는 마나가 10%만큼 증가합니다. 이 효과는 15초 동안 지속됩니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "화염",
+      "icon" : "spell_fire_firebolt02",
+      "backgroundFile" : "MageFire",
+      "overlayColor" : "#ff7f00",
+      "description" : "화염구와 용의 숨결을 사용하여 적을 불태웁니다.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 11366,
+        "name" : "불덩이 작렬",
+        "icon" : "spell_fire_fireball02",
+        "cost" : "기본 마나의 17% ",
+        "range" : "40 yd range",
+        "castTime" : "시전 시간 5초",
+        "reagents" : [ ],
+        "description" : "엄청난 크기의 불덩이를 던져 34의 화염 피해를 입히고 추가로 12초에 걸쳐 총 20의 화염 피해를 입힙니다.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 84668,
+        "name" : "화염 마법 전문화",
+        "icon" : "spell_fire_fire",
+        "reagents" : [ ],
+        "description" : "화염 계열 주문의 공격력이 25%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76595,
+        "name" : "살 태우기",
+        "icon" : "spell_fire_selfdestruct",
+        "reagents" : [ ],
+        "description" : "주기적인 화염 피해의 공격력이 20%만큼 증가합니다. 특화력 1당 주기적인 피해가 추가로 2.5%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10545,
+        "name" : "원소 마법의 대가",
+        "icon" : "spell_fire_masterofelements",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "주문이 극대화 효과를 발휘할 경우 기본 마나 소모량의 15%만큼을 다시 돌려받습니다."
+        }, {
+          "description" : "주문이 극대화 효과를 발휘할 경우 기본 마나 소모량의 30%만큼을 다시 돌려받습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10531,
+        "name" : "불타는 영혼",
+        "icon" : "spell_burningsoul",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "주문 시전 시 피해로 인한 시전 시간 손실이 23%만큼 감소합니다."
+        }, {
+          "description" : "주문 시전 시 피해로 인한 시전 시간 손실이 46%만큼 감소합니다."
+        }, {
+          "description" : "주문 시전 시 피해로 인한 시전 시간 손실이 70%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10523,
+        "name" : "화염 작렬 연마",
+        "icon" : "spell_fire_fireball",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "화염 작렬 주문의 극대화 확률이 4%만큼 증가하고 사거리가 5미터만큼 증가합니다."
+        }, {
+          "description" : "화염 작렬 주문의 극대화 확률이 8%만큼 증가하고 사거리가 10미터만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10529,
+        "name" : "작열",
+        "icon" : "spell_fire_incinerate",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "화염 주문이 치명타로 적중했을 때, 4초에 걸쳐 입힌 피해의 13%에 해당하는 추가 피해를 입힙니다."
+        }, {
+          "description" : "화염 주문이 치명타로 적중했을 때, 4초에 걸쳐 입힌 피해의 26%에 해당하는 추가 피해를 입힙니다."
+        }, {
+          "description" : "화염 주문이 치명타로 적중했을 때, 4초에 걸쳐 입힌 피해의 40%에 해당하는 추가 피해를 입힙니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11434,
+        "name" : "화염 마법 강화",
+        "icon" : "spell_fire_immolation",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "화염 계열 주문의 공격력이 1%만큼 증가하고 화염 구슬 시전 시 33%의 확률로 지속시간이 다한 화염 구슬을 폭발시켜 43의 피해를 입힙니다."
+        }, {
+          "description" : "화염 계열 주문의 공격력이 2%만큼 증가하고 화염 구슬 시전 시 66%의 확률로 지속시간이 다한 화염 구슬을 폭발시켜 43의 피해를 입힙니다."
+        }, {
+          "description" : "화염 계열 주문의 공격력이 3%만큼 증가하고 화염 구슬 시전 시 100%의 확률로 지속시간이 다한 화염 구슬을 폭발시켜 43의 피해를 입힙니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10555,
+        "name" : "타오르는 속도",
+        "icon" : "spell_fire_burningspeed",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "근접 및 원거리 공격에 적중당했을 경우 5%의 확률로 8초 동안 이동 속도가 50%만큼 증가하고 모든 이동 방해 효과를 무효화합니다."
+        }, {
+          "description" : "근접 및 원거리 공격에 적중당했을 경우 10%의 확률로 8초 동안 이동 속도가 50%만큼 증가하고 모든 이동 방해 효과를 무효화합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10537,
+        "name" : "충돌",
+        "icon" : "spell_fire_meteorstorm",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "공격 주문 시전 시 5%의 확률로 화염 작렬 주문의 재사용 대기시간이 초기화되며 다음 시전하는 화염 작렬은 2초 동안 대상을 기절시키고 적 대상에게서 12미터 반경 내에 있는 주위 적에게 지속적인 화염 피해를 입힙니다."
+        }, {
+          "description" : "공격 주문 시전 시 10%의 확률로 화염 작렬 주문의 재사용 대기시간이 초기화되며 다음 시전하는 화염 작렬은 2초 동안 대상을 기절시키고 적 대상에게서 12미터 반경 내에 있는 주위 적에게 지속적인 화염 피해를 입힙니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11433,
+        "name" : "마비시키기",
+        "icon" : "spell_fire_rune",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "50%의 확률로 자신을 죽음에 이르게 만들 수 있는 공격을 받으면 최대 생명력의 40%에 해당하는 생명력을 회복합니다. 하지만 다음 6초 동안 매 1.50초마다 최대 생명력의 12%에 해당하는 생명력을 잃습니다. 이 효과는 매 1분마다 최대 1번씩만 발동됩니다."
+        }, {
+          "description" : "100%의 확률로 자신을 죽음에 이르게 만들 수 있는 공격을 받으면 최대 생명력의 40%에 해당하는 생명력을 회복합니다. 하지만 다음 6초 동안 매 1.50초마다 최대 생명력의 12%에 해당하는 생명력을 잃습니다. 이 효과는 매 1분마다 최대 1번씩만 발동됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10551,
+        "name" : "화염 폭풍",
+        "icon" : "spell_holy_excorcism_02",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "기본 마나의 7% ",
+          "range" : "40 yd range",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 15초",
+          "description" : "불의 파도가 대상 지역으로 뿜어져 나와 모든 적을 불길로 감싸 32의 화염 피해를 입히고 3초 동안 이동 속도를 70%만큼 느려지게 만듭니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10573,
+        "name" : "몰아치는 열기",
+        "icon" : "ability_mage_hotstreak",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "주문 시전 시 신비한 화살이 발동하지 않으며, 화염구, 냉기화염 화살, 불태우기, 불덩이 작렬, 화염 작렬 주문이 극대화 효과를 발휘하면 일정 확률로 15초내에 시전하는 다음 불덩이 작렬 주문은 즉시 시전되며 마나를 소모하지 않습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10547,
+        "name" : "불태우기 연마",
+        "icon" : "spell_fire_soulburn",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "불태우기 주문에 소모되는 마나가 50%만큼 감소합니다."
+        }, {
+          "description" : "불태우기 주문에 소모되는 마나가 100%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10543,
+        "name" : "타오르는 보호막",
+        "icon" : "spell_fire_firearmor",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "마법계 수호 주문의 전역 재사용 대기시간이 1초만큼 감소하고 마법계 수호 효과가 피해를 흡수하여 사라질 때 타오르는 속도를 발동시킵니다. 타오르는 속도가 발동되면 모든 감속 효과가 제거됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10561,
+        "name" : "발화",
+        "icon" : "spell_fire_sealoffire",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "range" : "40 yd range",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 2분",
+          "description" : "대상에게 걸려 있는 화염 계열의 지속적인 피해 효과를 모두 결합하여 즉시 40의 화염 피해를 입히고 새로운 주기적인 효과를 일으켜 10초 동안 매 주기마다 결합된 효과의 총 피해와 동일한 양의 피해를 입힙니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12121,
+        "name" : "몰아치는 열기 연마",
+        "icon" : "ability_mage_hotstreak",
+        "x" : 2,
+        "y" : 3,
+        "req" : 10573,
+        "ranks" : [ {
+          "description" : "주기적인 효과를 제외한 화염구, 냉기화염 화살, 불태우기, 불덩이 작렬, 화염 작렬 주문이 2번 연속 극대화 효과를 발휘하면 50%의 확률로 몰아치는 열기 효과가 발동합니다."
+        }, {
+          "description" : "주기적인 효과를 제외한 화염구, 냉기화염 화살, 불태우기, 불덩이 작렬, 화염 작렬 주문이 2번 연속 극대화 효과를 발휘하면 100%의 확률로 몰아치는 열기 효과가 발동합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11431,
+        "name" : "화염 촉발",
+        "icon" : "ability_mage_firestarter",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "타오르는 갑옷이 활성화되어 있는 동안 이동 중 불태우기 주문을 시전할 수 있으며 치명타 공격을 당할 확률이 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10734,
+        "name" : "불기둥 연마",
+        "icon" : "spell_fire_selfdestruct",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "불기둥 주문의 시전 시간이 50%만큼 감소합니다. 화염 폭풍 시전 시 둘 이상의 대상이 화염 폭풍에 영향을 받으면 50%의 확률로 그 위치에 자동으로 불기둥이 생겨납니다."
+        }, {
+          "description" : "불기둥 주문의 시전 시간이 100%만큼 감소합니다. 화염 폭풍 시전 시 둘 이상의 대상이 화염 폭풍에 영향을 받으면 100%의 확률로 그 위치에 자동으로 불기둥이 생겨납니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10571,
+        "name" : "용의 숨결",
+        "icon" : "inv_misc_head_dragon_01",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "기본 마나의 7% ",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 20초",
+          "description" : "시전자 전방의 적에게 45의 화염 피해를 입히고 5초 동안 방황하게 만듭니다. 직접 피해를 입으면 효과가 사라집니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10563,
+        "name" : "타오르는 격노",
+        "icon" : "spell_fire_moltenblood",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "생명력이 35% 미만인 적에 대해 모든 계열의 주문 공격력이 4%만큼 증가합니다."
+        }, {
+          "description" : "생명력이 35% 미만인 적에 대해 모든 계열의 주문 공격력이 8%만큼 증가합니다."
+        }, {
+          "description" : "생명력이 35% 미만인 적에 대해 모든 계열의 주문 공격력이 12%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10559,
+        "name" : "광기의 화염술사",
+        "icon" : "spell_fire_burnout",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "자신의 지속적인 화염 피해를 받는 대상이 3명 이상이 되면 주문 가속이 5%만큼 증가합니다."
+        }, {
+          "description" : "자신의 지속적인 화염 피해를 받는 대상이 3명 이상이 되면 주문 가속이 10%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10541,
+        "name" : "임계 질량",
+        "icon" : "spell_nature_wispheal",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "살아있는 폭탄과 화염 구슬 주문의 공격력이 5%만큼 증가합니다. 불덩이 작렬, 불태우기 주문 시전 시 33%의 확률로 대상을 주문 공격에 취약하게 만들어 30초 동안 대상에게 주문 치명타를 적중시킬 확률을 5%만큼 증가시킵니다."
+        }, {
+          "description" : "살아있는 폭탄과 화염 구슬 주문의 공격력이 10%만큼 증가합니다. 불덩이 작렬, 불태우기 주문 시전 시 66%의 확률로 대상을 주문 공격에 취약하게 만들어 30초 동안 대상에게 주문 치명타를 적중시킬 확률을 5%만큼 증가시킵니다."
+        }, {
+          "description" : "살아있는 폭탄과 화염 구슬 주문의 공격력이 15%만큼 증가합니다. 불덩이 작렬, 불태우기 주문 시전 시 100%의 확률로 대상을 주문 공격에 취약하게 만들어 30초 동안 대상에게 주문 치명타를 적중시킬 확률을 5%만큼 증가시킵니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10577,
+        "name" : "살아있는 폭탄",
+        "icon" : "ability_mage_livingbomb",
+        "x" : 1,
+        "y" : 6,
+        "req" : 10571,
+        "ranks" : [ {
+          "cost" : "기본 마나의 22% ",
+          "range" : "40 yd range",
+          "castTime" : "즉시 시전",
+          "description" : "대상은 살아있는 폭탄이 되어 12초에 걸쳐 60의 화염 피해를 입습니다. 대상은 12초 후 폭발하여 10미터 반경 내에 있는 최대 3명의 적에게 15의 화염 피해를 입힙니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "냉기",
+      "icon" : "spell_frost_frostbolt02",
+      "backgroundFile" : "MageFrost",
+      "overlayColor" : "#4c99ff",
+      "description" : "냉기 마법을 사용하여 적을 얼려 움직이지 못하게 하고 깨뜨려 처치합니다.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 31687,
+        "name" : "물의 정령 소환",
+        "icon" : "spell_frost_summonwaterelemental_2",
+        "cost" : "기본 마나의 16% ",
+        "castTime" : "즉시 시전",
+        "cooldown" : "재사용 대기시간: 3분",
+        "reagents" : [ ],
+        "description" : "시전자의 명령을 따르는 물의 정령을 소환합니다.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 84669,
+        "name" : "냉기 마법 전문화",
+        "icon" : "spell_fire_bluefire",
+        "reagents" : [ ],
+        "description" : "냉기 계열 주문의 공격력이 25%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76613,
+        "name" : "서리 불태우기",
+        "icon" : "spell_frost_frostarmor",
+        "reagents" : [ ],
+        "description" : "얼어붙은 대상에게 모든 주문의 공격력이 20%만큼 증가합니다. 특화력 1당 공격력이 추가로 2.5%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9862,
+        "name" : "이른 서리",
+        "icon" : "spell_frost_chillingbolt",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "얼음 화살 주문의 시전 시간이 0.30초만큼 감소합니다. 사용 후 15초 동안 효과가 비활성화됩니다."
+        }, {
+          "description" : "얼음 화살 주문의 시전 시간이 0.6초만큼 감소합니다. 사용 후 15초 동안 효과가 비활성화됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11157,
+        "name" : "사무치는 냉기",
+        "icon" : "spell_frost_frostbolt",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "주문의 극대화 적중률이 1%만큼 증가합니다."
+        }, {
+          "description" : "주문의 극대화 적중률이 2%만큼 증가합니다."
+        }, {
+          "description" : "주문의 극대화 적중률이 3%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11158,
+        "name" : "산산조각",
+        "icon" : "spell_frost_frostshock",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "얼어붙은 적을 주문으로 공격했을 때 극대화 효과를 발휘할 확률이 2배로 증가하고 얼어붙은 적에 대한 얼음 화살의 공격력이 10%만큼 증가합니다."
+        }, {
+          "description" : "얼어붙은 적을 주문으로 공격했을 때 극대화 효과를 발휘할 확률이 3배로 증가하고 얼어붙은 적에 대한 얼음 화살의 공격력이 20%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9846,
+        "name" : "빙하",
+        "icon" : "spell_frost_icefloes",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "얼음 회오리, 냉기 돌풍, 얼음 방패, 매서운 한파, 얼음 보호막, 얼음 핏줄의 재사용 대기시간이 7%만큼 단축됩니다."
+        }, {
+          "description" : "얼음 회오리, 냉기 돌풍, 얼음 방패, 매서운 한파, 얼음 보호막, 얼음 핏줄의 재사용 대기시간이 14%만큼 단축됩니다."
+        }, {
+          "description" : "얼음 회오리, 냉기 돌풍, 얼음 방패, 매서운 한파, 얼음 보호막, 얼음 핏줄의 재사용 대기시간이 20%만큼 단축됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11325,
+        "name" : "냉기 돌풍 연마",
+        "icon" : "spell_frost_glacier",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "냉기 돌풍 공격 시 대상을 2초 동안 얼립니다."
+        }, {
+          "description" : "냉기 돌풍 공격 시 대상을 4초 동안 얼립니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11156,
+        "name" : "살을 에는 한기",
+        "icon" : "spell_frost_piercingchill",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "얼음 화살이 치명타로 적중하면 주위 1명의 추가 대상에게 빙결 효과를 입힙니다."
+        }, {
+          "description" : "얼음 화살이 치명타로 적중하면 주위 2명의 추가 대상에게 빙결 효과를 입힙니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9854,
+        "name" : "영구 결빙",
+        "icon" : "spell_frost_wisp",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "빙결 효과에 걸린 대상의 속도가 추가로 4%만큼 감소하고 대상이 받는 치유 효과가 3%만큼 감소합니다. 또한 주문 피해를 입힐 때마다 물의 정령이 마법사가 입힌 피해의 5%에 해당하는 생명력을 회복합니다."
+        }, {
+          "description" : "빙결 효과에 걸린 대상의 속도가 추가로 7%만큼 감소하고 대상이 받는 치유 효과가 7%만큼 감소합니다. 또한 주문 피해를 입힐 때마다 물의 정령이 마법사가 입힌 피해의 10%에 해당하는 생명력을 회복합니다."
+        }, {
+          "description" : "빙결 효과에 걸린 대상의 속도가 추가로 10%만큼 감소하고 대상이 받는 치유 효과가 10%만큼 감소합니다. 또한 주문 피해를 입힐 때마다 물의 정령이 마법사가 입힌 피해의 15%에 해당하는 생명력을 회복합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9860,
+        "name" : "얼음 파편",
+        "icon" : "spell_frost_iceshards",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "눈보라 주문에 피해를 입을 때 빙결에 걸리도록 합니다. 빙결 효과는 적의 이동 속도를 25%만큼 감소시킵니다. 2초 동안 지속됩니다. 추가로 얼음창 주문의 사거리가 2미터만큼 증가합니다."
+        }, {
+          "description" : "눈보라 주문에 피해를 입을 때 빙결에 걸리도록 합니다. 빙결 효과는 적의 이동 속도를 40%만큼 감소시킵니다. 1.50초 동안 지속됩니다. 추가로 얼음창 주문의 사거리가 5미터만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9858,
+        "name" : "얼음 핏줄",
+        "icon" : "spell_frost_coldhearted",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "기본 마나의 3% ",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 3분",
+          "description" : "주문 시전을 빠르게 하여, 주문 시전 속도를 20%만큼 증가시키고 주문 시전 중 피해로 인한 시전 밀림 효과를 100%만큼 감소시킵니다. 20초 동안 지속됩니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9876,
+        "name" : "서리의 손가락",
+        "icon" : "ability_mage_wintersgrasp",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "적을 빙결시키면 7%의 확률로 서리의 손가락 효과를 받습니다. 효과를 받은 동안에는 다음 시전하는 얼음창, 동결 주문이 얼어붙은 대상을 공격하는 효과를 냅니다. 서리의 손가락은 2번까지 중복되며 15초 동안 지속됩니다."
+        }, {
+          "description" : "적을 빙결시키면 14%의 확률로 서리의 손가락 효과를 받습니다. 효과를 받은 동안에는 다음 시전하는 얼음창, 동결 주문이 얼어붙은 대상을 공격하는 효과를 냅니다. 서리의 손가락은 2번까지 중복되며 15초 동안 지속됩니다."
+        }, {
+          "description" : "적을 빙결시키면 20%의 확률로 서리의 손가락 효과를 받습니다. 효과를 받은 동안에는 다음 시전하는 얼음창, 동결 주문이 얼어붙은 대상을 공격하는 효과를 냅니다. 서리의 손가락은 2번까지 중복되며 15초 동안 지속됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11371,
+        "name" : "얼리기 연마",
+        "icon" : "spell_frost_summonwaterelemental",
+        "x" : 3,
+        "y" : 2,
+        "req" : 9876,
+        "ranks" : [ {
+          "description" : "물의 정령이 얼리기 주문을 시전할 때 33%의 확률로 2번의 서리의 손가락 효과를 받습니다."
+        }, {
+          "description" : "물의 정령이 얼리기 주문을 시전할 때 66%의 확률로 2번의 서리의 손가락 효과를 받습니다."
+        }, {
+          "description" : "물의 정령이 얼리기 주문을 시전할 때 100%의 확률로 2번의 서리의 손가락 효과를 받습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9894,
+        "name" : "인내의 겨울",
+        "icon" : "spell_frost_arcticwinds",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "모든 주문에 소모되는 마나가 3%만큼 감소합니다. 추가로 얼음 화살 주문 시전 시 33%의 확률로 10초에 걸쳐 최대 10명의 파티원 또는 공격대원의 마나를 최대 마나의 1%만큼 회복시킵니다."
+        }, {
+          "description" : "모든 주문에 소모되는 마나가 6%만큼 감소합니다. 추가로 얼음 화살 주문 시전 시 66%의 확률로 10초에 걸쳐 최대 10명의 파티원 또는 공격대원의 마나를 최대 마나의 1%만큼 회복시킵니다."
+        }, {
+          "description" : "모든 주문에 소모되는 마나가 10%만큼 감소합니다. 추가로 얼음 화살 주문 시전 시 100%의 확률로 10초에 걸쳐 최대 10명의 파티원 또는 공격대원의 마나를 최대 마나의 1%만큼 회복시킵니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9870,
+        "name" : "매서운 한파",
+        "icon" : "spell_frost_wizardmark",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 8분",
+          "description" : "최근 사용한 모든 냉기 주문의 재사용 대기시간을 초기화시켜 바로 사용할 수 있도록 합니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9890,
+        "name" : "두뇌 빙결",
+        "icon" : "ability_mage_brainfreeze",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "주문 시전 시 신비한 화살이 발동하지 않습니다. 빙결 효과가 있는 냉기 공격 주문을 시전할 때 5%의 확률로 다음 화염구 또는 냉기화염 화살이 마나를 소비하지 않고 즉시 시전됩니다. 냉기화염 화살이 즉시 시전되면 서리의 손가락 효과를 받습니다. 두뇌 빙결은 냉기화염 화살로 발동하지 않습니다."
+        }, {
+          "description" : "주문 시전 시 신비한 화살이 발동하지 않습니다. 빙결 효과가 있는 냉기 공격 주문을 시전할 때 10%의 확률로 다음 화염구 또는 냉기화염 화살이 마나를 소비하지 않고 즉시 시전됩니다. 냉기화염 화살이 즉시 시전되면 서리의 손가락 효과를 받습니다. 두뇌 빙결은 냉기화염 화살로 발동하지 않습니다."
+        }, {
+          "description" : "주문 시전 시 신비한 화살이 발동하지 않습니다. 빙결 효과가 있는 냉기 공격 주문을 시전할 때 15%의 확률로 다음 화염구 또는 냉기화염 화살이 마나를 소비하지 않고 즉시 시전됩니다. 냉기화염 화살이 즉시 시전되면 서리의 손가락 효과를 받습니다. 두뇌 빙결은 냉기화염 화살로 발동하지 않습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9880,
+        "name" : "부서지는 보호막",
+        "icon" : "ability_mage_coldasice",
+        "x" : 0,
+        "y" : 4,
+        "req" : 9882,
+        "ranks" : [ {
+          "description" : "얼음 보호막이 파괴되면 100%의 확률로 10미터 반경 내에 있는 모든 적들을 2초 동안 얼어붙게 만듭니다."
+        }, {
+          "description" : "얼음 보호막이 파괴되면 100%의 확률로 10미터 반경 내에 있는 모든 적들을 4초 동안 얼어붙게 만듭니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9882,
+        "name" : "얼음 보호막",
+        "icon" : "spell_ice_lament",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "기본 마나의 21% ",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 30초",
+          "description" : "즉시 보호막을 생성하여 132의 피해를 흡수합니다. 1분 동안 지속됩니다. 보호막이 지속되는 동안은 피해를 입어도 마법 시전이 지연되지 않습니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11373,
+        "name" : "반발 보호막",
+        "icon" : "spell_frost_manarecharge",
+        "x" : 2,
+        "y" : 4,
+        "req" : 9882,
+        "ranks" : [ {
+          "description" : "생명력이 50% 아래로 내려갈 수 있는 공격을 받으면 50%의 확률로 마나를 소모하지 않고 얼음 보호막을 자동으로 시전합니다. 얼음 보호막의 재사용 대기시간이 남아 있는 동안에는 얼음 보호막을 시전할 수 없으며, 시전 시 얼음 보호막의 재사용 대기시간을 발동시킵니다."
+        }, {
+          "description" : "생명력이 50% 아래로 내려갈 수 있는 공격을 받으면 100%의 확률로 마나를 소모하지 않고 얼음 보호막을 자동으로 시전합니다. 얼음 보호막의 재사용 대기시간이 남아 있는 동안에는 얼음 보호막을 시전할 수 없으며, 시전 시 얼음 보호막의 재사용 대기시간을 발동시킵니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11169,
+        "name" : "냉기화염 구슬",
+        "icon" : "spell_firefrostorb",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "화염 구슬을 냉기화염 구슬로 전환하여 냉기 마법 전문화의 효과를 받게 합니다. 추가로 냉기화염 화살의 빙결 효과에 걸린 대상의 속도를 10%만큼 더 감소시킵니다."
+        }, {
+          "description" : "냉기화염 구슬에 빙결 효과를 더하여 냉기화염 구슬에 피해를 받은 대상의 속도를 4초 동안 40%만큼 감소시킵니다. 추가로 냉기화염 화살의 빙결 효과에 걸린 대상의 속도를 20%만큼 더 감소시킵니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9898,
+        "name" : "동결",
+        "icon" : "ability_mage_deepfreeze",
+        "x" : 1,
+        "y" : 6,
+        "req" : 9882,
+        "ranks" : [ {
+          "cost" : "기본 마나의 9% ",
+          "range" : "35 yd range",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 30초",
+          "description" : "5초 동안 대상을 기절시킵니다. 얼어붙은 대상에게만 사용할 수 있습니다. 기절에 면역인 대상에게는 65에서 74의 피해를 입힙니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

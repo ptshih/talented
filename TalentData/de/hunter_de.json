@@ -1,0 +1,990 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 3,
+      "name" : "Jäger",
+      "powerType" : "FOCUS",
+      "powerTypeId" : 2
+    },
+    "talentTrees" : [ {
+      "name" : "Tierherrschaft",
+      "icon" : "ability_hunter_bestialdiscipline",
+      "backgroundFile" : "HunterBeastMastery",
+      "overlayColor" : "#ff004c",
+      "description" : "Ein Herr der Wildnis, der viele verschiedene Tiere zähmen kann, damit sie ihm im Kampf beistehen.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 19577,
+        "name" : "Einschüchterung",
+        "icon" : "ability_devour",
+        "cost" : "35 Fokus",
+        "range" : "100 yd range",
+        "castTime" : "Sofort",
+        "cooldown" : "1 Min. Abklingzeit",
+        "reagents" : [ ],
+        "description" : "Befiehlt Eurem Tier, sein Ziel einzuschüchtern. Verursacht ein hohes Maß an Bedrohung und betäubt das Ziel 3 Sek. lang. Hält 15 Sek. lang an.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 87325,
+        "name" : "Tierführer",
+        "icon" : "ability_hunter_animalhandler",
+        "reagents" : [ ],
+        "description" : "Angriffskraft um 15% erhöht.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76657,
+        "name" : "Herr der Tiere",
+        "icon" : "ability_hunter_beasttaming",
+        "reagents" : [ ],
+        "description" : "Erhöht den von Euren Tieren verursachten Schaden um 14%. Jeder Punkt Meisterschaft erhöht den von Euren Tieren verursachten Schaden um zusätzlich 1.7%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9494,
+        "name" : "Verbessertes Fass!",
+        "icon" : "ability_hunter_silenthunter",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht die kritische Trefferchance von 'Fass!' um 5%."
+        }, {
+          "description" : "Erhöht die kritische Trefferchance von 'Fass!' um 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9490,
+        "name" : "Eins mit der Natur",
+        "icon" : "ability_hunter_onewithnature",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht den Angriffskraftbonus Eurer Fähigkeit 'Aspekt des Falken' um 10% und den durch Eure Fähigkeit 'Aspekt des Fuchses' wiederhergestellten Fokus um 1."
+        }, {
+          "description" : "Erhöht den Angriffskraftbonus Eurer Fähigkeit 'Aspekt des Falken' um 20% und den durch Eure Fähigkeit 'Aspekt des Fuchses' wiederhergestellten Fokus um 2."
+        }, {
+          "description" : "Erhöht den Angriffskraftbonus Eurer Fähigkeit 'Aspekt des Falken' um 30% und den durch Eure Fähigkeit 'Aspekt des Fuchses' wiederhergestellten Fokus um 3."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9492,
+        "name" : "Wildtierdisziplin",
+        "icon" : "ability_hunter_bestialdiscipline",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht die Fokusregeneration Eurer Tiere um 10%."
+        }, {
+          "description" : "Erhöht die Fokusregeneration Eurer Tiere um 20%."
+        }, {
+          "description" : "Erhöht die Fokusregeneration Eurer Tiere um 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9502,
+        "name" : "Orientierung",
+        "icon" : "ability_hunter_pathfinding2",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Erhöht den Tempo-Bonus Eures 'Aspekt des Geparden' und 'Aspekt des Rudels' um 4% und erhöht Eure Reitgeschwindigkeit um 5%. Die Erhöhung der Reitgeschwindigkeit ist nicht mit anderen Effekten stapelbar."
+        }, {
+          "description" : "Erhöht den Tempo-Bonus Eures 'Aspekt des Geparden' und 'Aspekt des Rudels' um 8% und erhöht Eure Reitgeschwindigkeit um 10%. Die Erhöhung der Reitgeschwindigkeit ist nicht mit anderen Effekten stapelbar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9514,
+        "name" : "Geistbande",
+        "icon" : "ability_druid_demoralizingroar",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Regeneriert alle 10 Sek. 1% Eurer Gesundheit und der Eures Tiers, und erhöht sowohl Eure erhaltene Heilung, als auch die Eures Tiers um 5%. Der Effekt ist wirksam, so lang Euer Tier aktiv ist."
+        }, {
+          "description" : "Regeneriert alle 10 Sek. 2% Eurer gesamten Gesundheit und der Eures Tiers, und erhöht sowohl Eure erhaltene Heilung, als auch die Eures Tiers um 10%. Der Effekt ist wirksam, so lang Euer Tier aktiv ist."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9512,
+        "name" : "Raserei",
+        "icon" : "inv_misc_monsterclaw_03",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Nach dem Ausführen eines einfachen Angriffs gewinnt Euer Tier 2% Angriffstempo. Hält 10 Sek. lang an. Bis zu 5-mal stapelbar."
+        }, {
+          "description" : "Nach dem Ausführen eines einfachen Angriffs gewinnt Euer Tier 4% Angriffstempo. Hält 10 Sek. lang an. Bis zu 5-mal stapelbar."
+        }, {
+          "description" : "Nach dem Ausführen eines einfachen Angriffs gewinnt Euer Tier 6% Angriffstempo. Hält 10 Sek. lang an. Bis zu 5-mal stapelbar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9510,
+        "name" : "Verbessertes Tier heilen",
+        "icon" : "ability_hunter_mendpet",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Gewährt Eurem Zauber 'Tier heilen' eine Chance von 25%, pro Tick 1 Fluch-, Krankheits-, Magie- oder Gifteffekt von Eurem Tier zu entfernen."
+        }, {
+          "description" : "Gewährt Eurem Zauber 'Tier heilen' eine Chance von 50%, pro Tick 1 Fluch-, Krankheits-, Magie- oder Gifteffekt von Eurem Tier zu entfernen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9530,
+        "name" : "Kobrastöße",
+        "icon" : "ability_hunter_cobrastrikes",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Es besteht eine Chance von 5%, dass durch Treffer Eurer Fähigkeit 'Arkaner Schuss' die nächsten 2 einfachen Angriffe Eures Tiers kritische Treffer erzielen."
+        }, {
+          "description" : "Es besteht eine Chance von 10%, dass durch Treffer Eurer Fähigkeit 'Arkaner Schuss' die nächsten 2 einfachen Angriffe Eures Tiers kritische Treffer erzielen."
+        }, {
+          "description" : "Es besteht eine Chance von 15%, dass durch Treffer Eurer Fähigkeit 'Arkaner Schuss' die nächsten 2 einfachen Angriffe Eures Tiers kritische Treffer erzielen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9504,
+        "name" : "Eifer",
+        "icon" : "ability_hunter_aspectoftheviper",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Sofort",
+          "cooldown" : "2 Min. Abklingzeit",
+          "description" : "Stellt sowohl für Euch als auch für Euren Begleiter sofort 50 Fokus wieder her."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9520,
+        "name" : "Feuer konzentrieren",
+        "icon" : "ability_hunter_focusfire",
+        "x" : 2,
+        "y" : 2,
+        "req" : 9512,
+        "ranks" : [ {
+          "castTime" : "Spontanzauber",
+          "cooldown" : "15 Sek. Abklingzeit",
+          "description" : "Zehrt Rasereieffekte Eures Tiers auf, stellt dabei 4 Fokus Eures Tiers wieder her und erhöht Euer Distanztempo pro aufgezehrtem Stapel Raserei um 3%. Hält 15 Sek. lang an."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9534,
+        "name" : "Langlebigkeit",
+        "icon" : "ability_hunter_longevity",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Verringert die Abklingzeiten Eurer Fähigkeiten 'Zorn des Wildtiers' und 'Einschüchterung' sowie der Spezialfähigkeiten Eures Tiers um 10%."
+        }, {
+          "description" : "Verringert die Abklingzeiten Eurer Fähigkeiten 'Zorn des Wildtiers' und 'Einschüchterung' sowie der Spezialfähigkeiten Eures Tiers um 20%."
+        }, {
+          "description" : "Verringert die Abklingzeiten Eurer Fähigkeiten 'Zorn des Wildtiers' und 'Einschüchterung' sowie der Spezialfähigkeiten Eures Tiers um 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9528,
+        "name" : "Beißwut",
+        "icon" : "achievement_bg_kill_carrier_opposing_flagroom",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Wenn Ihr mit Eurer Fähigkeit 'Fass!' zwei Mal hintereinander einen kritischen Treffer erzielt, wird die dritte Anwendung 10% mehr Schaden verursachen und die Fokuskosten werden um 5 verringert."
+        }, {
+          "description" : "Wenn Ihr mit Eurer Fähigkeit 'Fass!' zwei Mal hintereinander einen kritischen Treffer erzielt, wird die dritte Anwendung 20% mehr Schaden verursachen und die Fokuskosten werden um 10 verringert."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11714,
+        "name" : "Tiger & Schimäre",
+        "icon" : "ability_hunter_pet_chimera",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Wenn Ihr einen Nahkampftreffer erleidet, wird die Abklingzeit Eurer Fähigkeit 'Rückzug' sofort um 2 Sek. verringert.\n\n\n\nWenn Ihr einen Distanz- oder Zaubertreffer erleidet, wird die Abklingzeit Eurer Fähigkeit 'Abschreckung' sofort um 4 Sek. verringert.\n\n\n\nDiese Effekte haben eine Abklingzeit von 2 Sek."
+        }, {
+          "description" : "Wenn Ihr einen Nahkampftreffer erleidet, wird die Abklingzeit Eurer Fähigkeit 'Rückzug' sofort um 4 Sek. verringert.\n\n\n\nWenn Ihr einen Distanz- oder Zaubertreffer erleidet, wird die Abklingzeit Eurer Fähigkeit 'Abschreckung' sofort um 8 Sek. verringert.\n\n\n\nDiese Effekte haben eine Abklingzeit von 2 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9524,
+        "name" : "Zorn des Wildtiers",
+        "icon" : "ability_druid_ferociousbite",
+        "x" : 1,
+        "y" : 4,
+        "req" : 9504,
+        "ranks" : [ {
+          "cost" : "45 Fokus",
+          "range" : "100 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "2 Min. Abklingzeit",
+          "description" : "Versetzt Euer Tier in einen Kampfrausch, wodurch es 10 Sek. lang 20% zusätzlichen Schaden verursacht. Einmal im Kampfrausch, gibt es keine Möglichkeit mehr, Euer Tier zu stoppen, es sei denn, es wird getötet."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9518,
+        "name" : "Wilde Inspiration",
+        "icon" : "ability_hunter_ferociousinspiration",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Der gesamte Schaden aller Gruppen- und Schlachtzugsmitglieder im Umkreis von 100 Metern um Euren Begleiter wird um 3% erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9538,
+        "name" : "Seelenverwandtschaft",
+        "icon" : "ability_hunter_separationanxiety",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Erhöht Euren maximalen Fokus sowie den Eures Tiers um 5."
+        }, {
+          "description" : "Erhöht Euren maximalen Fokus sowie den Eures Tiers um 10."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9536,
+        "name" : "Wildes Herz",
+        "icon" : "ability_hunter_beastwithin",
+        "x" : 1,
+        "y" : 5,
+        "req" : 9524,
+        "ranks" : [ {
+          "description" : "Wenn Euer Tier unter dem Einfluss von 'Zorn des Wildtiers' steht, verfallt Ihr ebenfalls in Wut und verursacht 10% zusätzlichen Schaden, während die Fokuskosten aller Eurer Schüsse und Fähigkeiten um 50% verringert sind. Hält 10 Sek. lang an."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9522,
+        "name" : "Kräftigung",
+        "icon" : "ability_hunter_invigeration",
+        "x" : 2,
+        "y" : 5,
+        "req" : 9518,
+        "ranks" : [ {
+          "description" : "Erzielt Euer Tier mit einem einfachen Angriff einen kritischen Treffer, regeneriert Ihr sofort 3 Fokus."
+        }, {
+          "description" : "Erzielt Euer Tier mit einem einfachen Angriff einen kritischen Treffer, regeneriert Ihr sofort 6 Fokus."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9542,
+        "name" : "Herr der Tiere",
+        "icon" : "ability_hunter_beastmastery",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "description" : "Ihr habt die Kunst der Wildtierausbildung gemeistert und erhaltet die Fähigkeit exotische Tiere zu zähmen. Die Gesamtzahl der Fertigkeitspunkte Eures Tiers wird um 4 erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Treffsicherheit",
+      "icon" : "ability_hunter_focusedaim",
+      "backgroundFile" : "HunterMarksmanship",
+      "overlayColor" : "#4c99ff",
+      "description" : "Ein meisterlicher Bogen- und Scharfschütze, der seine Feinde am besten aus großer Entfernung zur Strecke bringt.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 19434,
+        "name" : "Gezielter Schuss",
+        "icon" : "inv_spear_07",
+        "cost" : "50 Fokus",
+        "range" : "5-40 yd range",
+        "castTime" : "3 Sek. Zauber",
+        "requires" : "Benötigt Distanzwaffe",
+        "reagents" : [ ],
+        "description" : "Ein machtvoller gezielter Schuss, der 65% Distanzwaffenschaden plus 698 verursacht.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 87326,
+        "name" : "Köcher von Meisterhand",
+        "icon" : "inv_misc_quiver_06",
+        "reagents" : [ ],
+        "description" : "Erhöht den Schaden automatischer Distanzangriffe um 15%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76659,
+        "name" : "Pfeilregen",
+        "icon" : "ability_hunter_wildquiver",
+        "reagents" : [ ],
+        "description" : "Gewährt eine Chance von 14%, dass Eure Distanzangriffe einen zusätzlichen Distanzangriff auslösen. Jeder Punkt Meisterschaft erhöht die Chance um zusätzlich 2%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9390,
+        "name" : "An die Kehle gehen",
+        "icon" : "ability_hunter_goforthethroat",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Durch Eure kritischen automatischen Distanztreffer erzeugt Euer Tier 5 Fokus."
+        }, {
+          "description" : "Durch Eure kritischen automatischen Distanztreffer erzeugt Euer Tier 10 Fokus."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9380,
+        "name" : "Effizienz",
+        "icon" : "ability_hunter_focusedaim",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Verringert die Fokuskosten Eurer Fähigkeit 'Arkaner Schuss' um 1 sowie die Fokuskosten Eurer Fähigkeiten 'Explosivschuss' und 'Schimärenschuss' um 2."
+        }, {
+          "description" : "Verringert die Fokuskosten Eurer Fähigkeit 'Arkaner Schuss' um 2 sowie die Fokuskosten Eurer Fähigkeiten 'Explosivschuss' und 'Schimärenschuss' um 4."
+        }, {
+          "description" : "Verringert die Fokuskosten Eurer Fähigkeit 'Arkaner Schuss' um 3 sowie die Fokuskosten Eurer Fähigkeiten 'Explosivschuss' und 'Schimärenschuss' um 6."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9378,
+        "name" : "Schneller Tod",
+        "icon" : "ability_hunter_rapidkilling",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Nach dem Töten eines Gegners, der Erfahrung oder Ehre gewährt, verursacht Euer nächstes Wirken von 'Gezielter Schuss', 'Zuverlässiger Schuss' oder 'Kobraschuss' 10% zusätzlichen Schaden. Hält 20 Sek. lang an."
+        }, {
+          "description" : "Nach dem Töten eines Gegners, der Erfahrung oder Ehre gewährt, verursacht Euer nächstes Wirken von 'Gezielter Schuss', 'Zuverlässiger Schuss' oder 'Kobraschuss' 20% zusätzlichen Schaden. Hält 20 Sek. lang an."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9396,
+        "name" : "Beiß!",
+        "icon" : "ability_hunter_sickem",
+        "x" : 0,
+        "y" : 1,
+        "req" : 9390,
+        "ranks" : [ {
+          "description" : "Wenn Ihr mit Euren Fähigkeiten 'Arkaner Schuss', 'Gezielter Schuss' oder 'Explosivschuss' einen kritischen Treffer erzielt, werden 12 Sek. lang die Fokuskosten des nächsten einfachen Angriffs Eures Tiers um 50% verringert."
+        }, {
+          "description" : "Wenn Ihr mit Euren Fähigkeiten 'Arkaner Schuss', 'Gezielter Schuss' oder 'Explosivschuss' einen kritischen Treffer erzielt, werden 12 Sek. lang die Fokuskosten des nächsten einfachen Angriffs Eures Tiers um 100% verringert."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9402,
+        "name" : "Verbesserter zuverlässiger Schuss",
+        "icon" : "ability_hunter_improvedsteadyshot",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Sobald Ihr Eure Fähigkeit 'Zuverlässiger Schuss' 2-mal hintereinander wirkt, wird Euer Distanzangriffstempo 8 Sek. lang um 5% erhöht."
+        }, {
+          "description" : "Sobald Ihr Eure Fähigkeit 'Zuverlässiger Schuss' 2-mal hintereinander wirkt, wird Euer Distanzangriffstempo 8 Sek. lang um 10% erhöht."
+        }, {
+          "description" : "Sobald Ihr Eure Fähigkeit 'Zuverlässiger Schuss' 2-mal hintereinander wirkt, wird Euer Distanzangriffstempo 8 Sek. lang um 15% erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9398,
+        "name" : "Sorgfältiges Zielen",
+        "icon" : "ability_hunter_zenarchery",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Wenn Euer Ziel über 80% Gesundheit oder mehr verfügt, wird die kritische Trefferchance Eurer Fähigkeiten 'Zuverlässiger Schuss', 'Gezielter Schuss' und 'Kobraschuss' um 30% erhöht."
+        }, {
+          "description" : "Wenn Euer Ziel über 80% Gesundheit oder mehr verfügt, wird die kritische Trefferchance Eurer Fähigkeiten 'Zuverlässiger Schuss', 'Gezielter Schuss' und 'Kobraschuss' um 60% erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9424,
+        "name" : "Unterdrückender Schuss",
+        "icon" : "ability_theblackarrow",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "35 Fokus",
+          "range" : "5-35 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "20 Sek. Abklingzeit",
+          "requires" : "Benötigt Distanzwaffe",
+          "description" : "Ein Schuss, der das Ziel 3 Sek. lang zum Schweigen bringt und so das Wirken von Zaubern verhindert."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9406,
+        "name" : "Erschütterndes Sperrfeuer",
+        "icon" : "ability_hunter_efficiency",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Erfolgreiche Angriffe mit 'Schimärenschuss' und 'Mehrfachschuss' haben eine Chance von 50%, das Ziel 4 Sek. lang benommen zu machen."
+        }, {
+          "description" : "Erfolgreiche Angriffe mit 'Schimärenschuss' und 'Mehrfachschuss' haben eine Chance von 100%, das Ziel 4 Sek. lang benommen zu machen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11225,
+        "name" : "Durchschlagende Schüsse",
+        "icon" : "ability_hunter_piercingshots",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Die kritischen Treffer Eurer Fähigkeiten 'Gezielter Schuss', 'Zuverlässiger Schuss' und 'Schimärenschuss' lassen das Ziel im Verlauf von 8 Sek. für 10% des verursachten Schadens bluten."
+        }, {
+          "description" : "Die kritischen Treffer Eurer Fähigkeiten 'Gezielter Schuss', 'Zuverlässiger Schuss' und 'Schimärenschuss' lassen das Ziel im Verlauf von 8 Sek. für 20% des verursachten Schadens bluten."
+        }, {
+          "description" : "Die kritischen Treffer Eurer Fähigkeiten 'Gezielter Schuss', 'Zuverlässiger Schuss' und 'Schimärenschuss' lassen das Ziel im Verlauf von 8 Sek. für 30% des verursachten Schadens bluten."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9408,
+        "name" : "Bombardement",
+        "icon" : "ability_marksmanship",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Erzielt Ihr mit 'Mehrfachschuss' einen kritischen Treffer, werden die Fokuskosten Eures nächsten Wirkens von 'Mehrfachschuss' um 25% verringert."
+        }, {
+          "description" : "Erzielt Ihr mit 'Mehrfachschuss' einen kritischen Treffer, werden die Fokuskosten Eures nächsten Wirkens von 'Mehrfachschuss' um 50% verringert."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9412,
+        "name" : "Aura des Volltreffers",
+        "icon" : "ability_trueshot",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Erhöht die Angriffskraft von Gruppen- und Schlachtzugsmitgliedern in einem Umkreis von 100 Metern um 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9416,
+        "name" : "Terminieren",
+        "icon" : "ability_warrior_focusedrage",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Eure Fähigkeiten 'Zuverlässiger Schuss' und 'Kobraschuss' gewähren zusätzlich 3 Fokus, wenn Euer Ziel über 25% Gesundheit oder weniger verfügt."
+        }, {
+          "description" : "Eure Fähigkeiten 'Zuverlässiger Schuss' und 'Kobraschuss' gewähren zusätzlich 6 Fokus, wenn Euer Ziel über 25% Gesundheit oder weniger verfügt."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9420,
+        "name" : "Widerstand ist zwecklos",
+        "icon" : "ability_hunter_resistanceisfutile",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Wenn Euer markiertes Ziel versucht, zu rennen, zu flüchten oder sich zu bewegen, besteht eine Chance von 4%, dass Euer nächstes 'Fass!' auf das markierte Ziel innerhalb von 8 Sek. die Fokuskosten zurückerstattet."
+        }, {
+          "description" : "Wenn Euer markiertes Ziel versucht, zu rennen, zu flüchten oder sich zu bewegen, besteht eine Chance von 8%, dass Euer nächstes 'Fass!' auf das markierte Ziel innerhalb von 8 Sek. die Fokuskosten zurückerstattet."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9422,
+        "name" : "Rasche Erholung",
+        "icon" : "ability_hunter_rapidregeneration",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Steht Ihr unter dem Effekt von 'Schnellfeuer', gewinnt Ihr alle 3 Sek. 6 Fokus. Wird 'Schneller Tod' ausgelöst, gewinnt Ihr sofort 25 Fokus."
+        }, {
+          "description" : "Steht Ihr unter dem Effekt von 'Schnellfeuer', gewinnt Ihr alle 3 Sek. 12 Fokus. Wird 'Schneller Tod' ausgelöst, gewinnt Ihr sofort 50 Fokus."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9418,
+        "name" : "Meisterschütze",
+        "icon" : "ability_hunter_mastermarksman",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Bei der Nutzung von 'Zuverlässiger Schuss' besteht eine Chance von 20%, dass Ihr den Effekt 'Meisterschütze' erhaltet, der 30 Sek. lang anhält. Nachdem 5 Stapel dieses Effekts erreicht wurden, werden 10 Sek. lang die Zauberzeit und Fokuskosten Eurer nächsten Anwendung von 'Gezielter Schuss' um 100% verringert."
+        }, {
+          "description" : "Bei der Nutzung von 'Zuverlässiger Schuss' besteht eine Chance von 40%, dass Ihr den Effekt 'Meisterschütze' erhaltet, der 30 Sek. lang anhält. Nachdem 5 Stapel dieses Effekts erreicht wurden, werden 10 Sek. lang die Zauberzeit und Fokuskosten Eurer nächsten Anwendung von 'Gezielter Schuss' um 100% verringert."
+        }, {
+          "description" : "Bei der Nutzung von 'Zuverlässiger Schuss' besteht eine Chance von 60%, dass Ihr den Effekt 'Meisterschütze' erhaltet, der 30 Sek. lang anhält. Nachdem 5 Stapel dieses Effekts erreicht wurden, werden 10 Sek. lang die Zauberzeit und Fokuskosten Eurer nächsten Anwendung von 'Gezielter Schuss' um 100% verringert."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9404,
+        "name" : "Bereitschaft",
+        "icon" : "ability_hunter_readiness",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Sofort",
+          "cooldown" : "3 Min. Abklingzeit",
+          "description" : "Bei Aktivierung schließt diese Fähigkeit die Abklingzeit aller anderen Jägerfähigkeiten sofort ab."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9426,
+        "name" : "Impromptu",
+        "icon" : "ability_hunter_posthaste",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Verringert die Abklingzeit Eurer Fähigkeit 'Schnellfeuer' um 1 Min. und erhöht Euer Bewegungstempo nach der Nutzung von 'Rückzug' 4 Sek. lang um 15%."
+        }, {
+          "description" : "Verringert die Abklingzeit Eurer Fähigkeit 'Schnellfeuer' um 2 Min. und erhöht Euer Bewegungstempo nach der Nutzung von 'Rückzug' 4 Sek. lang um 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9428,
+        "name" : "Zum Tode verurteilt",
+        "icon" : "ability_hunter_assassinate",
+        "x" : 2,
+        "y" : 5,
+        "req" : 9418,
+        "ranks" : [ {
+          "description" : "Eure Fähigkeiten 'Arkaner Schuss' und 'Schimärenschuss' gewähren eine Chance von 50%, dass Euer Ziel sofort mit dem Effekt 'Zum Tode verurteilt' belegt wird.\n\n\n\nDer Effekt 'Zum Tode verurteilt' gewährt die gleichen Boni wie Eure Fähigkeit 'Mal des Jägers', kann jedoch nicht gebannt werden und schränkt weder Verstohlenheit noch Unsichtbarkeit ein. Hält 15 Sek. lang an."
+        }, {
+          "description" : "Eure Fähigkeiten 'Arkaner Schuss' und 'Schimärenschuss' gewähren eine Chance von 100%, dass Euer Ziel sofort mit dem Effekt 'Zum Tode verurteilt' belegt wird.\n\n\n\nDer Effekt 'Zum Tode verurteilt' gewährt die gleichen Boni wie Eure Fähigkeit 'Mal des Jägers', kann jedoch nicht gebannt werden und schränkt weder Verstohlenheit noch Unsichtbarkeit ein. Hält 15 Sek. lang an."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9430,
+        "name" : "Schimärenschuss",
+        "icon" : "ability_hunter_chimerashot2",
+        "x" : 1,
+        "y" : 6,
+        "req" : 9418,
+        "ranks" : [ {
+          "cost" : "50 Fokus",
+          "range" : "5-40 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "10 Sek. Abklingzeit",
+          "requires" : "Benötigt Distanzwaffe",
+          "description" : "Ein sofortiger Schuss, der Distanzwaffenschaden plus 874 verursacht und die Dauer Eures auf das Ziel wirkenden Effekts von 'Schlangengift' auffrischt. Zudem werdet Ihr um 5% Eurer gesamten Gesundheit geheilt."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Überleben",
+      "icon" : "ability_hunter_camouflage",
+      "backgroundFile" : "HunterSurvival",
+      "overlayColor" : "#ff9900",
+      "description" : "Ein zäher Fährtenleser, der am liebsten Tiergifte, Sprengstoffe und Fallen als tödliche Waffen nutzt.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 53301,
+        "name" : "Explosivschuss",
+        "icon" : "ability_hunter_explosiveshot",
+        "cost" : "50 Fokus",
+        "range" : "5-40 yd range",
+        "castTime" : "Spontanzauber",
+        "cooldown" : "6 Sek. Abklingzeit",
+        "requires" : "Benötigt Distanzwaffe",
+        "reagents" : [ ],
+        "description" : "Feuert ein Explosivgeschoss, das einem Gegner 407 Feuerschaden zufügt. Die Sprengladungen verursachen 2 Sek. lang pro Sekunde weiteren Schaden.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 84729,
+        "name" : "In die Wildnis",
+        "icon" : "achievement_zone_alteracmountains_01",
+        "reagents" : [ ],
+        "description" : "Angriffskraft um 15% erhöht.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76658,
+        "name" : "Essenz der Viper",
+        "icon" : "spell_frost_arcticwinds",
+        "reagents" : [ ],
+        "description" : "Erhöht jeglichen von Euch verursachten Elementarschaden um 8%. Jeder Punkt Meisterschaft erhöht den Elementarschaden um zusätzlich 1.0%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9442,
+        "name" : "Jäger vs. Wildnis",
+        "icon" : "ability_hunter_huntervswild",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht Eure gesamte Ausdauer um 4%."
+        }, {
+          "description" : "Erhöht Eure gesamte Ausdauer um 7%."
+        }, {
+          "description" : "Erhöht Eure gesamte Ausdauer um 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9432,
+        "name" : "Mehrladewaffen",
+        "icon" : "ability_hunter_improvedtracking",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht das Distanzangriffstempo um 1%"
+        }, {
+          "description" : "Erhöht das Distanzangriffstempo um 2%"
+        }, {
+          "description" : "Erhöht das Distanzangriffstempo um 3%"
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9450,
+        "name" : "Verbessertes Schlangengift",
+        "icon" : "ability_hunter_quickshot",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Eure Fähigkeit 'Schlangengift' verursacht zusätzlich sofort Schaden in Höhe von 15% ihres gesamten regelmäßigen Effekts.\n\n\n\nErhöht zudem die kritische Trefferchance des regelmäßigen Effekts Eurer Fähigkeit 'Schlangengift' um 5%."
+        }, {
+          "description" : "Eure Fähigkeit 'Schlangengift' verursacht zusätzlich sofort Schaden in Höhe von 30% ihres gesamten regelmäßigen Effekts.\n\n\n\nErhöht zudem die kritische Trefferchance des regelmäßigen Effekts Eurer Fähigkeit 'Schlangengift' um 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9444,
+        "name" : "Überlebenstaktik",
+        "icon" : "ability_rogue_feigndeath",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Verringert die Chance, dass Euren Fallen widerstanden wird, um 2% und verringert die Abklingzeit Eurer Fähigkeit 'Rückzug' um 2 Sek."
+        }, {
+          "description" : "Verringert die Chance, dass Euren Fallen widerstanden wird, um 4% und verringert die Abklingzeit Eurer Fähigkeit 'Rückzug' um 4 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10753,
+        "name" : "Fallenbeherrschung",
+        "icon" : "ability_ensnare",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Frostfalle und Eiskältefalle - Erhöht die Dauer um 10%.\n\n\n\nFeuerbrandfalle, Sprengfalle und Schwarzer Pfeil - Erhöht den regelmäßigen Schaden um 10%.\n\n\n\nSchlangenfalle - Erhöht die Anzahl der beschworenen Schlangen um 2."
+        }, {
+          "description" : "Frostfalle und Eiskältefalle - Erhöht die Dauer um 20%.\n\n\n\nFeuerbrandfalle, Sprengfalle und Schwarzer Pfeil - Erhöht den regelmäßigen Schaden um 20%.\n\n\n\nSchlangenfalle - Erhöht die Anzahl der beschworenen Schlangen um 4."
+        }, {
+          "description" : "Frostfalle und Eiskältefalle - Erhöht die Dauer um 30%.\n\n\n\nFeuerbrandfalle, Sprengfalle und Schwarzer Pfeil - Erhöht den regelmäßigen Schaden um 30%.\n\n\n\nSchlangenfalle - Erhöht die Anzahl der beschworenen Schlangen um 6."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9440,
+        "name" : "Einfangen",
+        "icon" : "spell_nature_stranglevines",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Sowohl Eure Frostfalle als auch Eure Schlangenfalle setzen bei ihrer Auslösung alle Ziele gefangen. Jedes der Ziele wird 2 Sek. lang bewegungsunfähig."
+        }, {
+          "description" : "Sowohl Eure Frostfalle als auch Eure Schlangenfalle setzen bei ihrer Auslösung alle Ziele gefangen. Jedes der Ziele wird 4 Sek. lang bewegungsunfähig."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9472,
+        "name" : "Kein Entkommen",
+        "icon" : "ability_hunter_pointofnoescape",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Erhöht die kritische Distanztrefferchance aller Eurer Angriffe gegen Ziele, die vom Effekt Eurer Frost- oder Eiskältefalle betroffen sind, um 3%."
+        }, {
+          "description" : "Erhöht die kritische Distanztrefferchance aller Eurer Angriffe gegen Ziele, die vom Effekt Eurer Frost- oder Eiskältefalle betroffen sind, um 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9484,
+        "name" : "Jagdfieber",
+        "icon" : "ability_hunter_thrillofthehunt",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Bei der Nutzung Eurer Fähigkeiten 'Arkaner Schuss', 'Explosivschuss' und 'Schwarzer Pfeil' besteht eine Chance von 5%, dass Ihr sofort 40% der Grundfokuskosten des Schusses zurückerlangt."
+        }, {
+          "description" : "Bei der Nutzung Eurer Fähigkeiten 'Arkaner Schuss', 'Explosivschuss' und 'Schwarzer Pfeil' besteht eine Chance von 10%, dass Ihr sofort 40% der Grundfokuskosten des Schusses zurückerlangt."
+        }, {
+          "description" : "Bei der Nutzung Eurer Fähigkeiten 'Arkaner Schuss', 'Explosivschuss' und 'Schwarzer Pfeil' besteht eine Chance von 15%, dass Ihr sofort 40% der Grundfokuskosten des Schusses zurückerlangt."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9448,
+        "name" : "Gegenangriff",
+        "icon" : "ability_warrior_challange",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "3% des Grundmanas",
+          "range" : "Nahkampfreichweite",
+          "castTime" : "Sofort",
+          "cooldown" : "5 Sek. Abklingzeit",
+          "description" : "Ein Schlag, der aktiv wird, nachdem ein gegnerischer Angriff pariert wurde. Dieser Angriff verursacht 391 Schaden und macht das Ziel 5 Sek. lang bewegungsunfähig. Auf 'Gegenangriff' kann nicht mit 'Blocken', 'Ausweichen' oder 'Parieren' reagiert werden."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9452,
+        "name" : "Sichern und Laden",
+        "icon" : "ability_hunter_lockandload",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Wird ein Ziel durch Eure Eiskälte- oder Frostfalle gefangen, besteht eine Chance von 50%, dass Eure nächsten 2 Anwendungen von 'Arkaner Schuss' oder 'Explosivschuss' keine Abklingzeit auslösen und keinen Fokus kosten."
+        }, {
+          "description" : "Wird ein Ziel durch Eure Eiskälte- oder Frostfalle gefangen, besteht eine Chance von 100%, dass Eure nächsten 2 Anwendungen von 'Arkaner Schuss' oder 'Explosivschuss' keine Abklingzeit auslösen und keinen Fokus kosten."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9460,
+        "name" : "Improvisation",
+        "icon" : "ability_hunter_resourcefulness",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Verringert die Abklingzeit aller Eurer Fallen sowie Eurer Fähigkeit 'Schwarzer Pfeil' um 2 Sek."
+        }, {
+          "description" : "Verringert die Abklingzeit aller Eurer Fallen sowie Eurer Fähigkeit 'Schwarzer Pfeil' um 4 Sek."
+        }, {
+          "description" : "Verringert die Abklingzeit aller Eurer Fallen sowie Eurer Fähigkeit 'Schwarzer Pfeil' um 6 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9482,
+        "name" : "Spiegelnde Klingen",
+        "icon" : "inv_weapon_shortblade_99",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Wenn Ihr einen Zaubertreffer erleidet, während 'Abschreckung' aktiv ist, besteht eine Chance von 50%, dass der Zauber auf den Zaubernden reflektiert wird."
+        }, {
+          "description" : "Wenn Ihr einen Zaubertreffer erleidet, während 'Abschreckung' aktiv ist, besteht eine Chance von 100%, dass der Zauber auf den Zaubernden reflektiert wird."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9462,
+        "name" : "T.N.T.",
+        "icon" : "inv_misc_bomb_05",
+        "x" : 2,
+        "y" : 3,
+        "req" : 9452,
+        "ranks" : [ {
+          "description" : "Wenn der regelmäßige Effekt Eurer Fähigkeiten 'Feuerbrandfalle', 'Sprengfalle' oder 'Schwarzer Pfeil' Schaden verursacht, besteht eine Chance von 6%, dass 'Sichern und Laden' ausgelöst wird."
+        }, {
+          "description" : "Wenn der regelmäßige Effekt Eurer Fähigkeiten 'Feuerbrandfalle', 'Sprengfalle' oder 'Schwarzer Pfeil' Schaden verursacht, besteht eine Chance von 12%, dass 'Sichern und Laden' ausgelöst wird."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9464,
+        "name" : "Giftkunde",
+        "icon" : "inv_alchemy_enchantedvial",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Erhöht den regelmäßigen kritischen Schaden Eurer Fähigkeiten 'Schlangengift' und 'Schwarzer Pfeil' um 50%."
+        }, {
+          "description" : "Erhöht den regelmäßigen kritischen Schaden Eurer Fähigkeiten 'Schlangengift' und 'Schwarzer Pfeil' um 100%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9468,
+        "name" : "Wyverngift",
+        "icon" : "inv_spear_02",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "10 Fokus",
+          "range" : "5-35 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "1 Min. Abklingzeit",
+          "requires" : "Benötigt Distanzwaffe",
+          "description" : "Ein Gift, welches das Ziel 30 Sek. lang einschlafen lässt. Jeglicher erlittene Schaden hebt den Effekt wieder auf. Sobald das Ziel erwacht, verursacht der Giftpfeil im Verlauf von 6 Sek. insgesamt 2460 Naturschaden. Auf dem Ziel kann gleichzeitig nur ein Gift pro Jäger aktiv sein."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9474,
+        "name" : "Kontaktgifte",
+        "icon" : "ability_hunter_potentvenom",
+        "x" : 2,
+        "y" : 4,
+        "req" : 9468,
+        "ranks" : [ {
+          "description" : "Erhöht Euren Schaden an Zielen, die vom Effekt Eurer Fähigkeit 'Schlangengift' betroffen sind, um 5%.\n\n\n\nWird 'Wyverngift' gebannt, wird der Bannende ebenfalls für 25% der verbliebenen Dauer von 'Wyverngift' betroffen."
+        }, {
+          "description" : "Erhöht Euren Schaden an Zielen, die vom Effekt Eurer Fähigkeit 'Schlangengift' betroffen sind, um 10%.\n\n\n\nWird 'Wyverngift' gebannt, wird der Bannende ebenfalls für 50% der verbliebenen Dauer von 'Wyverngift' betroffen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9476,
+        "name" : "Jagdgesellschaft",
+        "icon" : "ability_hunter_huntingparty",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Erhöht Eure gesamte Beweglichkeit um zusätzliche 2%. Zudem wird das Nahkampf- und Distanzangriffstempo aller Gruppen- und Schlachtzugsmitglieder um 10% erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9478,
+        "name" : "Scharfschützentraining",
+        "icon" : "ability_hunter_longshots",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Erhöht die kritische Trefferchance Eurer Fähigkeit 'Tödlicher Schuss' um 5%. Wenn Ihr 6 Sek. lang stillsteht, wird der verursachte Schaden Eurer Fähigkeiten 'Zuverlässiger Schuss' und 'Kobraschuss' 15 Sek. lang um 2% erhöht."
+        }, {
+          "description" : "Erhöht die kritische Trefferchance Eurer Fähigkeit 'Tödlicher Schuss' um 10%. Wenn Ihr 6 Sek. lang stillsteht, wird der verursachte Schaden Eurer Fähigkeiten 'Zuverlässiger Schuss' und 'Kobraschuss' 15 Sek. lang um 4% erhöht."
+        }, {
+          "description" : "Erhöht die kritische Trefferchance Eurer Fähigkeit 'Tödlicher Schuss' um 15%. Wenn Ihr 6 Sek. lang stillsteht, wird der verursachte Schaden Eurer Fähigkeiten 'Zuverlässiger Schuss' und 'Kobraschuss' 15 Sek. lang um 6% erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11698,
+        "name" : "Schlangenfächer",
+        "icon" : "ability_hunter_serpentswiftness",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Ziele, die von Eurer Fähigkeit 'Mehrfachschuss' getroffen werden, erleiden auch Schaden durch Euer Schlangengift. Hält 6 Sek. lang an."
+        }, {
+          "description" : "Ziele, die von Eurer Fähigkeit 'Mehrfachschuss' getroffen werden, erleiden auch Schaden durch Euer Schlangengift. Hält 9 Sek. lang an."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9480,
+        "name" : "Schwarzer Pfeil",
+        "icon" : "spell_shadow_painspike",
+        "x" : 1,
+        "y" : 6,
+        "req" : 9468,
+        "ranks" : [ {
+          "cost" : "35 Fokus",
+          "range" : "5-40 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "30 Sek. Abklingzeit",
+          "requires" : "Benötigt Distanzwaffe",
+          "description" : "Feuert einen schwarzen Pfeil auf das Ziel ab, der im Verlauf von 15 Sek. 2440 Schattenschaden verursacht. Der schwarze Pfeil teilt sich eine Abklingzeit mit anderen Feuerfallen."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

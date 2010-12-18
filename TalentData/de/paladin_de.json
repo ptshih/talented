@@ -1,0 +1,1046 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 2,
+      "name" : "Paladin",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "Heilig",
+      "icon" : "spell_holy_holybolt",
+      "backgroundFile" : "PALADINHOLY",
+      "overlayColor" : "#ff7f00",
+      "description" : "Ruft zum Schutz und zur Heilung die Mächte des Lichts herbei.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : true,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 20473,
+        "name" : "Heiliger Schock",
+        "icon" : "spell_holy_searinglight",
+        "cost" : "8% des Grundmanas",
+        "range" : "20 yd range",
+        "castTime" : "Spontanzauber",
+        "cooldown" : "6 Sek. Abklingzeit",
+        "reagents" : [ ],
+        "description" : "Trifft das Ziel mit heiliger Energie. Verursacht 1294 bis 1399 Heiligschaden bei Feinden oder heilt 3571 bis 3866 bei Verbündeten. Gewährt eine Aufladung Heiliger Kraft.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 85102,
+        "name" : "Im Lichte wandeln",
+        "icon" : "spell_holy_championsgrace",
+        "reagents" : [ ],
+        "description" : "Erhöht die Wirksamkeit Eurer Heilzauber um 15%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 95859,
+        "name" : "Meditation",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "Lässt 50% Eurer durch Willenskraft erzeugten Manaregeneration weiterlaufen, während Ihr Euch im Kampf befindet.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76669,
+        "name" : "Erleuchtete Heilung",
+        "icon" : "spell_holy_absolution",
+        "reagents" : [ ],
+        "description" : "Eure direkten Heilzauber gewähren dem Ziel einen Schaden absorbierenden Schild, dessen Stärke 10% der gewirkten Heilung entsprucht und der 8 Sek. lang anhält. Jeder Punkt Meisterschaft erhöht den absorbierten Wert um zusätzlich 1.25%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10099,
+        "name" : "Gebieter des Lichts",
+        "icon" : "spell_holy_healingaura",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht die Chance auf einen kritischen Effekt Eurer Richturteile sowie Eures Zaubers 'Urteil des Templers' um 6%."
+        }, {
+          "description" : "Erhöht die Chance auf einen kritischen Effekt Eurer Richturteile sowie Eures Zaubers 'Urteil des Templers' um 12%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12189,
+        "name" : "Beschützer der Unschuldigen",
+        "icon" : "ability_paladin_protectoroftheinnocent",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Wenn Ihr einen angewählten Verbündeten heilt, heilt Ihr auch Euch selbst um 1115 bis 1282. Dieser Effekt tritt nicht ein, wenn Ihr Euch selbst heilt."
+        }, {
+          "description" : "Wenn Ihr einen angewählten Verbündeten heilt, heilt Ihr auch Euch selbst um 2229 bis 2564. Dieser Effekt tritt nicht ein, wenn Ihr Euch selbst heilt."
+        }, {
+          "description" : "Wenn Ihr einen angewählten Verbündeten heilt, heilt Ihr auch Euch selbst um 3344 bis 3847. Dieser Effekt tritt nicht ein, wenn Ihr Euch selbst heilt."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10127,
+        "name" : "Richturteile des Reinen",
+        "icon" : "ability_paladin_judgementofthepure",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Euer Zauber 'Richturteil' erhöht Euer Nahkampf- und Zaubertempo 1 Min. lang um 3%."
+        }, {
+          "description" : "Euer Zauber 'Richturteil' erhöht Euer Nahkampf- und Zaubertempo 1 Min. lang um 6%."
+        }, {
+          "description" : "Euer Zauber 'Richturteil' erhöht Euer Nahkampf- und Zaubertempo 1 Min. lang um 9%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11213,
+        "name" : "Klares Ziel",
+        "icon" : "spell_paladin_clarityofpurpose",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Verringert die Zauberzeit Eurer Zauber 'Heiliges Licht' und 'Göttliches Licht' um 0.15 Sek."
+        }, {
+          "description" : "Verringert die Zauberzeit Eurer Zauber 'Heiliges Licht' und 'Göttliches Licht' um 0.3 Sek."
+        }, {
+          "description" : "Verringert die Zauberzeit Eurer Zauber 'Heiliges Licht' und 'Göttliches Licht' um 0.5 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10097,
+        "name" : "Das letzte Wort",
+        "icon" : "spell_holy_holyguidance",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Gewährt Eurem Zauber 'Wort der Herrlichkeit' eine um 30% erhöhte kritische Trefferchance, wenn sie auf Ziele angewandt wird, die über 35% Gesundheit oder weniger verfügen."
+        }, {
+          "description" : "Gewährt Eurem Zauber 'Wort der Herrlichkeit' eine um 60% erhöhte kritische Trefferchance, wenn sie auf Ziele angewandt wird, die über 35% Gesundheit oder weniger verfügen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11780,
+        "name" : "Sengendes Licht",
+        "icon" : "spell_holy_holybolt",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Erhöht den verursachten Schaden Eurer Zauber 'Heiliger Schock' und 'Exorzismus' um 10%."
+        }, {
+          "description" : "Erhöht den verursachten Schaden Eurer Zauber 'Heiliger Schock' und 'Exorzismus' um 20%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10109,
+        "name" : "Denunzieren",
+        "icon" : "spell_holy_excorcism_02",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Verringert die Manakosten Eures Zaubers 'Exorzismus' um 38%. Zudem besteht beim Wirken von 'Heiliger Schock' eine Chance von 25%, dass Euer nächstes Wirken von 'Exorzismus' zu einem kostenlosen Spontanzauber wird."
+        }, {
+          "description" : "Verringert die Manakosten Eures Zaubers 'Exorzismus' um 75%. Zudem besteht beim Wirken von 'Heiliger Schock' eine Chance von 50%, dass Euer nächstes Wirken von 'Exorzismus' zu einem kostenlosen Spontanzauber wird."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11202,
+        "name" : "Göttliche Gunst",
+        "icon" : "spell_holy_divineillumination",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Spontanzauber",
+          "cooldown" : "3 Min. Abklingzeit",
+          "description" : "Erhöht Euer Zaubertempo um 20% und die Chance auf einen kritischen Zaubereffekt um 20%. Hält 20 Sek. lang an."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10129,
+        "name" : "Lichtenergie",
+        "icon" : "ability_paladin_infusionoflight",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Erhöht die Chance auf einen kritischen Effekt Eures Zaubers 'Heiliger Schock' um 5%. Zudem verringern kritische Effekte Eures Zaubers 'Heiliger Schock' die Zauberzeit Eures nächsten Wirkens von 'Heiliges Licht' oder 'Göttliches Licht' um 0.75 Sek."
+        }, {
+          "description" : "Erhöht die Chance auf einen kritischen Effekt Eures Zaubers 'Heiliger Schock' um 10%. Zudem verringern kritische Effekte Eures Zaubers 'Heiliger Schock' die Zauberzeit Eures nächsten Wirkens von 'Heiliges Licht' oder 'Göttliches Licht' um 1.50 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11771,
+        "name" : "Tagesanbruch",
+        "icon" : "inv_qirajidol_sun",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Gewährt Euren Zaubern 'Lichtblitz', 'Heiliges Licht' und 'Göttliches Licht' eine Chance von 10%, dass Euer nächstes Wirken von 'Heiliger Schock' innerhalb von 12 Sek. keine Abklingzeit auslöst."
+        }, {
+          "description" : "Gewährt Euren Zaubern 'Lichtblitz', 'Heiliges Licht' und 'Göttliches Licht' eine Chance von 20%, dass Euer nächstes Wirken von 'Heiliger Schock' innerhalb von 12 Sek. keine Abklingzeit auslöst."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10113,
+        "name" : "Erleuchtete Richturteile",
+        "icon" : "ability_paladin_enlightenedjudgements",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Gewährt Euch Trefferwertung in Höhe von 50% aller durch Gegenstände oder Effekte erhaltenen Willenskraft und erhöht die Reichweite Eures Zaubers 'Richturteil' um 5 Meter. Zudem heilt Euch Euer Zauber 'Richturteil' sofort um 1122 bis 1289."
+        }, {
+          "description" : "Gewährt Euch Trefferwertung in Höhe von 100% aller durch Gegenstände oder Effekte erhaltenen Willenskraft und erhöht die Reichweite Eures Zaubers 'Richturteil' um 10 Meter. Zudem heilt Euch Euer Zauber 'Richturteil' sofort um 2242 bis 2577."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10133,
+        "name" : "Flamme des Glaubens",
+        "icon" : "ability_paladin_beaconoflight",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "6% des Grundmanas",
+          "range" : "60 yd range",
+          "castTime" : "Spontanzauber",
+          "description" : "Das Ziel wird für alle Gruppen- und Schlachtzugsmitglieder in einem Radius von 60 Metern zu einer Flamme des Glaubens. Alle auf diese Gruppen- und Schlachtzugsmitglieder gewirkten Heilungen heilen auch die Flamme um 50% des geheilten Wertes. Es kann immer nur ein Ziel zur gleichen Zeit eine Flamme des Glaubens sein. Hält 5 Min. lang an."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11215,
+        "name" : "Geschwindigkeit des Lichts",
+        "icon" : "paladin_icon_speedoflight",
+        "x" : 2,
+        "y" : 3,
+        "req" : 10129,
+        "ranks" : [ {
+          "description" : "Gewährt 1% Zaubertempo und verringert die Abklingzeit Eure Zaubers 'Heiliges Strahlen' um 10 Sek. Zudem erhöht das Wirken von 'Heiliges Strahlen' Euer Bewegungstempo 4 Sek. lang 20%."
+        }, {
+          "description" : "Gewährt 2% Zaubertempo und verringert die Abklingzeit Eure Zaubers 'Heiliges Strahlen' um 20 Sek. Zudem erhöht das Wirken von 'Heiliges Strahlen' Euer Bewegungstempo 4 Sek. lang 40%."
+        }, {
+          "description" : "Gewährt 3% Zaubertempo und verringert die Abklingzeit Eure Zaubers 'Heiliges Strahlen' um 30 Sek. Zudem erhöht das Wirken von 'Heiliges Strahlen' Euer Bewegungstempo 4 Sek. lang 60%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10121,
+        "name" : "Heilige Läuterung",
+        "icon" : "ability_paladin_sacredcleansing",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Euer Zauber 'Reinigung' bannt nun auch 1 Magieeffekt."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11779,
+        "name" : "Schuldspruch",
+        "icon" : "ability_paladin_conviction",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Gewährt Euch, nachdem Ihr einen kritischen Treffer mit einem Waffenangriff, Zauber oder einer Fähigkeit erzielt habt, 15 Sek. lang einen Bonus von 1% auf Schaden und Heilung. Dieser Effekt ist bis zu 3-mal stapelbar."
+        }, {
+          "description" : "Gewährt Euch, nachdem Ihr einen kritischen Treffer mit einem Waffenangriff, Zauber oder einer Fähigkeit erzielt habt, 15 Sek. lang einen Bonus von 2% auf Schaden und Heilung. Dieser Effekt ist bis zu 3-mal stapelbar."
+        }, {
+          "description" : "Gewährt Euch, nachdem Ihr einen kritischen Treffer mit einem Waffenangriff, Zauber oder einer Fähigkeit erzielt habt, 15 Sek. lang einen Bonus von 3% auf Schaden und Heilung. Dieser Effekt ist bis zu 3-mal stapelbar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10115,
+        "name" : "Aurenbeherrschung",
+        "icon" : "spell_holy_auramastery",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Sofort",
+          "cooldown" : "2 Min. Abklingzeit",
+          "description" : "Verleiht allen durch Eure Fähigkeit 'Aura der Konzentration' gestärkten Zielen Immunität gegen Unterbrechungs- und Stilleeffekte. Die Effekte aller anderen Auren werden um 100% erhöht. Hält 6 Sek. lang an."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12151,
+        "name" : "Tugendhaftes Vorbild",
+        "icon" : "spell_holy_avenginewrath",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Verringert die Abklingzeit Eures Zaubers 'Göttlicher Schutz' um 10 Sek., die Abklingzeit Eures Zaubers 'Hand der Aufopferung' um 15 Sek. und die Abklingzeit Eures Zaubers 'Zornige Vergeltung' um 30 Sek."
+        }, {
+          "description" : "Verringert die Abklingzeit Eures Zaubers 'Göttlicher Schutz' um 20 Sek., die Abklingzeit Eures Zaubers 'Hand der Aufopferung' um 30 Sek. und die Abklingzeit Eures Zaubers 'Zornige Vergeltung' um 60 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11168,
+        "name" : "Turm der Strahlen",
+        "icon" : "achievement_bg_winsoa",
+        "x" : 1,
+        "y" : 5,
+        "req" : 10133,
+        "ranks" : [ {
+          "description" : "Heilt Ihr das Ziel Eures Zaubers 'Flamme des Glaubens' mittels Eurer Zauber 'Lichtblitz', 'Heiliges Licht' oder 'Göttliches Licht', besteht eine Chance von 33%, dass Ihr eine Aufladung Heiliger Kraft erzeugt."
+        }, {
+          "description" : "Heilt Ihr das Ziel Eures Zaubers 'Flamme des Glaubens' mittels Eurer Zauber 'Lichtblitz', 'Heiliges Licht' oder 'Göttliches Licht', besteht eine Chance von 66%, dass Ihr eine Aufladung Heiliger Kraft erzeugt."
+        }, {
+          "description" : "Heilt Ihr das Ziel Eures Zaubers 'Flamme des Glaubens' mittels Eurer Zauber 'Lichtblitz', 'Heiliges Licht' oder 'Göttliches Licht', besteht eine Chance von 100%, dass Ihr eine Aufladung Heiliger Kraft erzeugt."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10117,
+        "name" : "Gesegnetes Leben",
+        "icon" : "spell_holy_blessedlife",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Es besteht eine Chance von 50%, dass Ihr eine Aufladung Heilige Kraft gewinnt, wenn Ihr direkten Schaden erleidet. Dieser Effekt kann nur ein Mal alle 8 Sek. auftreten."
+        }, {
+          "description" : "Es besteht eine Chance von 100%, dass Ihr eine Aufladung Heilige Kraft gewinnt, wenn Ihr direkten Schaden erleidet. Dieser Effekt kann nur ein Mal alle 8 Sek. auftreten."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11203,
+        "name" : "Licht der Morgendämmerung",
+        "icon" : "spell_paladin_lightofdawn",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "1 Heilige Macht",
+          "castTime" : "Spontanzauber",
+          "description" : "Verbraucht jegliche Heilige Kraft, um Euch eine Welle heilender Energien vorauszuschicken, die in einem frontalen kegelförmigen Bereich von 30 Metern bis zu 5 der am schwersten verletzten Gruppen- oder Schlachtzugsmitglieder pro Aufladung Heiliger Kraft um 925 bis 1028 heilt."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Schutz",
+      "icon" : "ability_paladin_shieldofthetemplar",
+      "backgroundFile" : "PALADINPROTECTION",
+      "overlayColor" : "#4c7fff",
+      "description" : "Nutzt heilige Magie, um sich und seine Verbündeten vor Angreifern zu schützen.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : true,
+        "healer" : false,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 31935,
+        "name" : "Schild des Rächers",
+        "icon" : "spell_holy_avengersshield",
+        "cost" : "6% des Grundmanas",
+        "range" : "30 yd range",
+        "castTime" : "Spontanzauber",
+        "cooldown" : "15 Sek. Abklingzeit",
+        "requires" : "Benötigt Schilde",
+        "reagents" : [ ],
+        "description" : "Schleudert einen heiligen Schild auf den Gegner, der ihm 2747 bis 3306 Heiligschaden zufügt, seinen gewirkten Zauber unterbricht, ihn 3 Sek. lang verstummen lässt und dann auf weitere nahe Gegner überspringt. Wirkt auf insgesamt 3 Ziele.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 53592,
+        "name" : "Vom Licht berührt",
+        "icon" : "ability_paladin_touchedbylight",
+        "reagents" : [ ],
+        "description" : "Erhöht Eure gesamte Ausdauer um 15% und Eure Zaubertrefferchance um 8%. Zudem wird Eure Zaubermacht um einen Wert erhöht, der 60% Eurer Stärke entspricht.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 84839,
+        "name" : "Rache",
+        "icon" : "ability_paladin_shieldofvengeance",
+        "reagents" : [ ],
+        "description" : "Jedes Mal, wenn Ihr Schaden erleidet, gewinnt Ihr Angriffskraft in Höhe von 5% des erlittenen Schadens, bis zu einem Maximum von 10% Eurer Gesundheit.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 31878,
+        "name" : "Richturteil des Weisen",
+        "icon" : "ability_paladin_judgementofthewise",
+        "reagents" : [ ],
+        "description" : "Euer Zauber 'Richturteil' gewährt Euch im Verlauf von 10 Sek. 30% Eures Grundmanas.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76671,
+        "name" : "Göttliches Bollwerk",
+        "icon" : "spell_holy_holyprotection",
+        "reagents" : [ ],
+        "description" : "Erhöht Eure Chance, Nahkampfangriffe zu blocken, um 18%. Jeder Punkt Meisterschaft erhöht Eure Blockchance um zusätzlich 2.25%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 12198,
+        "name" : "Göttlichkeit",
+        "icon" : "spell_holy_blindingheal",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht jegliche von Euch verursachte und Eure erhaltene Heilung um 2%."
+        }, {
+          "description" : "Erhöht jegliche von Euch verursachte und Eure erhaltene Heilung um 4%."
+        }, {
+          "description" : "Erhöht jegliche von Euch verursachte und Eure erhaltene Heilung um 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10324,
+        "name" : "Siegel der Reinen",
+        "icon" : "inv_mace_46",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht den verursachten Schaden Eurer Zauber 'Siegel der Rechtschaffenheit', 'Siegel der Wahrheit' und 'Siegel der Gerechtigkeit' um 6%."
+        }, {
+          "description" : "Erhöht den verursachten Schaden Eurer Zauber 'Siegel der Rechtschaffenheit', 'Siegel der Wahrheit' und 'Siegel der Gerechtigkeit' um 12%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12152,
+        "name" : "Ewiger Ruhm",
+        "icon" : "inv_torch_thrown",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Gewährt Eurem Zauber 'Wort der Herrlichkeit' eine Chance von 15%, keine Heilige Kraft zu verbrauchen."
+        }, {
+          "description" : "Gewährt Eurem Zauber 'Wort der Herrlichkeit' eine Chance von 30%, keine Heilige Kraft zu verbrauchen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10372,
+        "name" : "Richturteil des Gerechten",
+        "icon" : "ability_paladin_judgementsofthejust",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Euer Zauber 'Richturteil' verringert das Nahkampf- und Distanzangriffstempo des Ziels 20 Sek. lang um 10%. Zudem wird die Effektdauer Eures Zaubers 'Siegel der Gerechtigkeit' um 0.5 Sek. erhöht."
+        }, {
+          "description" : "Euer Zauber 'Richturteil' verringert das Nahkampf- und Distanzangriffstempo des Ziels 20 Sek. lang um 20%. Zudem wird die Effektdauer Eures Zaubers 'Siegel der Gerechtigkeit' um 1 Sek. erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10332,
+        "name" : "Zähigkeit",
+        "icon" : "spell_holy_devotion",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Erhöht Euren durch Gegenstände erzielten Rüstungswert um 3%."
+        }, {
+          "description" : "Erhöht Euren durch Gegenstände erzielten Rüstungswert um 6%."
+        }, {
+          "description" : "Erhöht Euren durch Gegenstände erzielten Rüstungswert um 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10336,
+        "name" : "Verbesserter Hammer der Gerechtigkeit",
+        "icon" : "spell_holy_sealofmight",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Verringert die Abklingzeit Eures Zaubers 'Hammer der Gerechtigkeit' um 10 Sek."
+        }, {
+          "description" : "Verringert die Abklingzeit Eures Zaubers 'Hammer der Gerechtigkeit' um 20 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10344,
+        "name" : "Geweihter Boden",
+        "icon" : "spell_holy_innerfire",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Erhöht den verursachten Schaden Eures Zaubers 'Weihe' um 20% und verringert seine Manakosten um 40%."
+        }, {
+          "description" : "Erhöht den verursachten Schaden Eures Zaubers 'Weihe' um 40% und verringert seine Manakosten um 80%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10346,
+        "name" : "Refugium",
+        "icon" : "spell_nature_lightningshield",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Verringert Eure Chance, kritische Nahkampftreffer zu erleiden, um 2% und verringert jeglichen erlittenen Schaden um 3%. Zudem gewinnt Ihr, wenn Ihr einen Angriff blockt oder ihm ausweicht, 1% Eures maximalen Manas."
+        }, {
+          "description" : "Verringert Eure Chance, kritische Nahkampftreffer zu erleiden, um 4% und verringert jeglichen erlittenen Schaden um 7%. Zudem gewinnt Ihr, wenn Ihr einen Angriff blockt oder ihm ausweicht, 2% Eures maximalen Manas."
+        }, {
+          "description" : "Verringert Eure Chance, kritische Nahkampftreffer zu erleiden, um 6% und verringert jeglichen erlittenen Schaden um 10%. Zudem gewinnt Ihr, wenn Ihr einen Angriff blockt oder ihm ausweicht, 3% Eures maximalen Manas."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10374,
+        "name" : "Hammer der Rechtschaffenen",
+        "icon" : "ability_paladin_hammeroftherighteous",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "12% des Grundmanas",
+          "range" : "Nahkampfreichweite",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "4,5 Sek. Abklingzeit",
+          "requires" : "Benötigt Einhandnahkampfwaffe",
+          "description" : "Trifft das aktuelle Ziel für 30% Waffenschaden und verursacht eine Welle des Lichts, die allen Zielen im Umkreis von 8 Metern 615 bis 876 Heiligschaden zufügt. Gewährt eine Aufladung Heiliger Kraft."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11159,
+        "name" : "Zorn des Lichtbringers",
+        "icon" : "inv_mace_82",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Erhöht den Schaden Eurer Zauber 'Kreuzfahrerstoß' und 'Richturteil' um 50% sowie die kritische Trefferchance Eurer Zauber 'Heiliger Zorn' und 'Hammer des Zorns' um 15%."
+        }, {
+          "description" : "Erhöht den Schaden Eurer Zauber 'Kreuzfahrerstoß' und 'Richturteil' um 100% sowie die kritische Trefferchance Eurer Zauber 'Heiliger Zorn' und 'Hammer des Zorns' um 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11161,
+        "name" : "Abrechnung",
+        "icon" : "spell_holy_blessingofstrength",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Nachdem Ihr einen Angriff geblockt habt, besteht eine Chance von 10%, dass Eure nächsten 4 Waffenschwünge innnerhalb von 8 Sek. einen zusätzlichen Angriff erzeugen."
+        }, {
+          "description" : "Nachdem Ihr einen Angriff geblockt habt, besteht eine Chance von 20%, dass Eure nächsten 4 Waffenschwünge innnerhalb von 8 Sek. einen zusätzlichen Angriff erzeugen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11607,
+        "name" : "Schild der Rechtschaffenen",
+        "icon" : "ability_paladin_shieldofvengeance",
+        "x" : 1,
+        "y" : 3,
+        "req" : 10346,
+        "ranks" : [ {
+          "cost" : "1 Heilige Macht",
+          "range" : "Nahkampfreichweite",
+          "castTime" : "Spontanzauber",
+          "requires" : "Benötigt Schilde",
+          "description" : "Verpasst dem Ziel einen heftigen Schlag mit Eurem Schild und verursacht Heiligschaden. Verbraucht alle Aufladungen Heilige Kraft, um die Schadenshöhe zu bestimmen:\n\n\n\n1 Heilige Kraft: 598 Schaden\n\n2 Heilige Kraft: 1794 Schaden\n\n3 Heilige Kraft: 3588 Schaden"
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11193,
+        "name" : "Oberster Kreuzfahrer",
+        "icon" : "inv_helmet_74",
+        "x" : 2,
+        "y" : 3,
+        "req" : 10374,
+        "ranks" : [ {
+          "description" : "Wenn Eure Fähigkeiten 'Kreuzfahrerstoß' oder 'Hammer der Rechtschaffenen' Eurem Hauptziel Schaden zufügen, besteht eine Chance von 10%, dass die Abklingzeit Eurer Fähigkeit 'Schild des Rächers' abgeschlossen wird."
+        }, {
+          "description" : "Wenn Eure Fähigkeiten 'Kreuzfahrerstoß' oder 'Hammer der Rechtschaffenen' Eurem Hauptziel Schaden zufügen, besteht eine Chance von 20%, dass die Abklingzeit Eurer Fähigkeit 'Schild des Rächers' abgeschlossen wird."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10680,
+        "name" : "Rechtschaffene Schwächung",
+        "icon" : "spell_holy_vindication",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Eure Fähigkeiten 'Kreuzfahrerstoß'  und 'Hammer der Rechtschaffenen' verringern den verursachten körperlichen Schaden ihres Primarziels 30 Sek. lang um 10%. Zudem wird Euer Zauber 'Hammer der Gerechtigkeit' das Zauberwirken von Zielen unterbrechen, die gegen Betäubungseffekte immun sind."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10356,
+        "name" : "Heiliger Schild",
+        "icon" : "spell_holy_blessingofprotection",
+        "x" : 1,
+        "y" : 4,
+        "req" : 11607,
+        "ranks" : [ {
+          "description" : "Durch die Nutzung Eurer Zauber 'Schild der Rechtschaffenen' oder 'Inquisition' wird der von Eurem Schild geblockte Schaden 20 Sek. lang um zusätzlich 10% erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11221,
+        "name" : "Vom Licht beschützt",
+        "icon" : "ability_paladin_gaurdedbythelight",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Erhöht die Wirksamkeit Eures Zaubers 'Wort der Herrlichkeit' um 5%, wenn Ihr ihn zur Selbstheilung nutzt und gestattet es Eurem Zauber 'Wort der Herrlichkeit', Euch den Effekt 'Heiliger Schild' zu gewähren."
+        }, {
+          "description" : "Erhöht die Wirksamkeit Eures Zaubers 'Wort der Herrlichkeit' um 10%, wenn Ihr ihn zur Selbstheilung nutzt und gestattet es Eurem Zauber 'Wort der Herrlichkeit', Euch den Effekt 'Heiliger Schild' zu gewähren. Zudem erzeugt jegliche Überheilung einen schützenden Schild, der Schaden in Höhe des überheilten Werts absorbiert und 6 Sek. lang anhält."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10334,
+        "name" : "Heiliger Wächter",
+        "icon" : "spell_holy_powerwordbarrier",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "range" : "100 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "2 Min. Abklingzeit",
+          "description" : "Verringert 6 Sek. lang den erlittenen Schaden aller Gruppen- und Schlachtzugsmitglieder um 20%. Dieser Effekt schließt den Paladin selbst aus."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10370,
+        "name" : "Heilige Pflicht",
+        "icon" : "spell_holy_divineintervention",
+        "x" : 1,
+        "y" : 5,
+        "req" : 10356,
+        "ranks" : [ {
+          "description" : "Euer Zauber 'Richturteil' gewährt eine Chance von 25%, Euer nächstes Wirken von 'Schild der Rechtschaffenen' zu einem kritischen Treffer werden zu lassen. Hält 15 Sek. lang an."
+        }, {
+          "description" : "Euer Zauber 'Richturteil' gewährt eine Chance von 50%, Euer nächstes Wirken von 'Schild der Rechtschaffenen' zu einem kritischen Treffer werden zu lassen. Hält 15 Sek. lang an."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10340,
+        "name" : "Schild des Templers",
+        "icon" : "ability_paladin_shieldofthetemplar",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Verringert die Abklingzeit Eurer Fähigkeit 'Zornige Vergeltung' um 20 Sek. und die Abklingzeit Eures Zaubers 'Wächter der Uralten Könige' um 45 Sek. Zudem erzeugt Euer Zauber 'Göttliche Bitte' 1 Heilige Kraft."
+        }, {
+          "description" : "Verringert die Abklingzeit Eurer Fähigkeit 'Zornige Vergeltung' um 40 Sek. und die Abklingzeit Eures Zaubers 'Wächter der Uralten Könige' um 80 Sek. Zudem erzeugt Euer Zauber 'Göttliche Bitte' 2 Heilige Kraft."
+        }, {
+          "description" : "Verringert die Abklingzeit Eurer Fähigkeit 'Zornige Vergeltung' um 60 Sek. und die Abklingzeit Eures Zaubers 'Wächter der Uralten Könige' um 120 Sek. Zudem erzeugt Euer Zauber 'Göttliche Bitte' 3 Heilige Kraft."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10350,
+        "name" : "Unermüdlicher Verteidiger",
+        "icon" : "spell_holy_ardentdefender",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "castTime" : "Sofort",
+          "cooldown" : "3 Min. Abklingzeit",
+          "description" : "Verringert den erlittenen Schaden 10 Sek. lang um 20%. Während 'Unermüdlicher Verteidiger' aktiv ist, wird der nächste Angriff, der Euch normalerweise töten würde, Euch stattdessen um bis zu 15% Eurer maximalen Gesundheit heilen."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Vergeltung",
+      "icon" : "spell_holy_auraoflight",
+      "backgroundFile" : "PALADINCOMBAT",
+      "overlayColor" : "#ff0000",
+      "description" : "Ein rechtschaffener Kreuzfahrer, der seine Gegner mit Waffen und heiliger Magie richtet und straft.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 85256,
+        "name" : "Urteil des Templers",
+        "icon" : "spell_paladin_templarsverdict",
+        "cost" : "1 Heilige Macht",
+        "range" : "Nahkampfreichweite",
+        "castTime" : "Spontanzauber",
+        "requires" : "Benötigt Nahkampfwaffe",
+        "reagents" : [ ],
+        "description" : "Ein sofortiger Waffenangriff, der einen Prozentsatz des Waffenschadens verursacht. Verbraucht alle Aufladungen von Heiliger Kraft, um den verursachten Schaden zu erhöhen.\n\n\n\n1 Heilige Kraft: 30% Waffenschaden\n\n2 Heilige Kraft: 90% Waffenschaden\n\n3 Heilige Kraft: 235% Waffenschaden",
+        "keyAbility" : true
+      }, {
+        "spellId" : 20113,
+        "name" : "Zweihandwaffenspezialisierung",
+        "icon" : "inv_hammer_04",
+        "reagents" : [ ],
+        "description" : "Erhöht den Schaden, den Ihr mit Zweihand-Nahkampfwaffen zufügt, um 20%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 53503,
+        "name" : "Ummantelung des Lichts",
+        "icon" : "ability_paladin_sheathoflight",
+        "reagents" : [ ],
+        "description" : "Erhöht Eure Zaubermacht um einen Wert, der 30% Eurer Angriffskraft entspricht, sowie Eure Zaubertrefferchance um 8%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 89901,
+        "name" : "Richturteil des Wagemutigen",
+        "icon" : "ability_paladin_judgementofthewise",
+        "reagents" : [ ],
+        "description" : "Euer Zauber 'Richturteil' gewährt Euch im Verlauf von 10 Sek. 25% Eures Grundmanas.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76672,
+        "name" : "Hand des Lichts",
+        "icon" : "ability_paladin_blessedhands",
+        "reagents" : [ ],
+        "description" : "Eure automatischen Angriffe gewähren eine Chance von 8%, den Effekt 'Hand des Lichts' hervorzurufen, durch den Eure nächste Anwendung einer Fähigkeit, die Heilige Kraft benötigt, keine Heilige Kraft verbrauchen und gewirkt werden wird, als wäre eine Aufladung von 3 Heilige Kraft vorhanden. Jeder Punkt Meisterschaft erhöht die Chance um zusätzlich 1%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10647,
+        "name" : "Auge um Auge",
+        "icon" : "spell_holy_eyeforaneye",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Alle magischen Angriffe gegen Euch haben eine Chance von 20%, 30% des erlittenen Schadens auch am Angreifer zu verursachen."
+        }, {
+          "description" : "Alle magischen Angriffe gegen Euch haben eine Chance von 40%, 30% des erlittenen Schadens auch am Angreifer zu verursachen."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10651,
+        "name" : "Kreuzzug",
+        "icon" : "spell_holy_crusade",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht den verursachten Schaden Eurer Fähigkeiten 'Kreuzfahrerstoß', 'Hammer der Rechtschaffenen' und 'Urteil des Templers' um 10% sowie den Schaden und die Heilung Eures Zaubers 'Heiliger Schock' um 10%. Zudem wird, wenn Ihr ein Ziel tötet, das Erfahrung oder Ehre gewährt, die Heilung Eures nächstens Wirkens von 'Heiliges Licht' innerhalb von 15 Sek. zusätzlich um 100% erhöht."
+        }, {
+          "description" : "Erhöht den verursachten Schaden Eurer Fähigkeiten 'Kreuzfahrerstoß', 'Hammer der Rechtschaffenen' und 'Urteil des Templers' um 20% sowie den Schaden und die Heilung Eures Zaubers 'Heiliger Schock' um 20%. Zudem wird, wenn Ihr ein Ziel tötet, das Erfahrung oder Ehre gewährt, die Heilung Eures nächstens Wirkens von 'Heiliges Licht' innerhalb von 15 Sek. zusätzlich um 200% erhöht."
+        }, {
+          "description" : "Erhöht den verursachten Schaden Eurer Fähigkeiten 'Kreuzfahrerstoß', 'Hammer der Rechtschaffenen' und 'Urteil des Templers' um 30% sowie den Schaden und die Heilung Eures Zaubers 'Heiliger Schock' um 30%. Zudem wird, wenn Ihr ein Ziel tötet, das Erfahrung oder Ehre gewährt, die Heilung Eures nächstens Wirkens von 'Heiliges Licht' innerhalb von 15 Sek. zusätzlich um 300% erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11612,
+        "name" : "Verbessertes Richturteil",
+        "icon" : "ability_paladin_judgementblue",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Erhöht die Reichweite Eures Zaubers 'Richturteil' um 10 Meter."
+        }, {
+          "description" : "Erhöht die Reichweite Eures Zaubers 'Richturteil' um 20 Meter."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12153,
+        "name" : "Gunst des Hüters",
+        "icon" : "spell_holy_sealofprotection",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Verringert die Abklingzeit Eures Zaubers 'Hand des Schutzes' um 60 Sek. und erhöht die Dauer Eures Zaubers 'Hand der Freiheit' um 2 Sek."
+        }, {
+          "description" : "Verringert die Abklingzeit Eures Zaubers 'Hand des Schutzes' um 2 Min. und erhöht die Dauer Eures Zaubers 'Hand der Freiheit' um 4 Sek."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11269,
+        "name" : "Gesetz und Ordnung",
+        "icon" : "inv_relics_libramofhope",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Erhöht die Chance auf einen kritischen Effekt Eurer Zauber 'Kreuzfahrerstoß', 'Hammer der Rechtschaffenen' und 'Wort der Herrlichkeit' um 5%."
+        }, {
+          "description" : "Erhöht die Chance auf einen kritischen Effekt Eurer Zauber 'Kreuzfahrerstoß', 'Hammer der Rechtschaffenen' und 'Wort der Herrlichkeit' um 10%."
+        }, {
+          "description" : "Erhöht die Chance auf einen kritischen Effekt Eurer Zauber 'Kreuzfahrerstoß', 'Hammer der Rechtschaffenen' und 'Wort der Herrlichkeit' um 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11611,
+        "name" : "Streben nach Gerechtigkeit",
+        "icon" : "spell_holy_persuitofjustice",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Es besteht eine Chance von 50%, dass Ihr eine Aufladung Heilige Kraft gewinnt, wenn Ihr von einem Betäubungs-, Furcht- oder Unbeweglichkeitseffekt getroffen werdet. Zusätzlich wird Euer Bewegungs- und Reittempo um 8% erhöht. Dieser Effekt ist mit anderen Effekten, die das Bewegungstempo erhöhen, nicht stapelbar."
+        }, {
+          "description" : "Es besteht eine Chance von 100%, dass Ihr eine Aufladung Heilige Kraft gewinnt, wenn Ihr von einem Betäubungs-, Furcht- oder Unbeweglichkeitseffekt getroffen werdet. Zusätzlich wird Euer Bewegungs- und Reittempo um 15% erhöht. Dieser Effekt ist mit anderen Effekten, die das Bewegungstempo erhöhen, nicht stapelbar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10665,
+        "name" : "Kommunion",
+        "icon" : "ability_paladin_judgementofthewise",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Eure Auren erhöhen den verursachten Schaden Eurer Gruppen- und Schlachtzugsmitglieder um 3% sowie Euren verursachten Schaden um zusätzlich 2%. Zudem ruft Euer Zauber 'Richturteil' den Effekt 'Erfrischung' hervor.\n\n\n\nErfrischung - Gewährt bis zu 10 Gruppen- oder Schlachtzugsmitgliedern alle 10 Sek. Manaregeneration in Höhe von 1% ihres maximalen Manas. Hält 15 Sek. lang an."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10661,
+        "name" : "Die Kunst des Krieges",
+        "icon" : "ability_paladin_artofwar",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Eure automatischen Angriffe gewähren eine Chance von 7%, Euer nächstes Wirken von 'Exorzismus' zu einem kostenlosen Spontanzauber werden zu lassen, der 100% zusätzlichen Schaden verursacht."
+        }, {
+          "description" : "Eure automatischen Angriffe gewähren eine Chance von 14%, Euer nächstes Wirken von 'Exorzismus' zu einem kostenlosen Spontanzauber werden zu lassen, der 100% zusätzlichen Schaden verursacht."
+        }, {
+          "description" : "Eure automatischen Angriffe gewähren eine Chance von 20%, Euer nächstes Wirken von 'Exorzismus' zu einem kostenlosen Spontanzauber werden zu lassen, der 100% zusätzlichen Schaden verursacht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11610,
+        "name" : "Der lange Arm des Gesetzes",
+        "icon" : "ability_paladin_judgementred",
+        "x" : 2,
+        "y" : 2,
+        "req" : 11612,
+        "ranks" : [ {
+          "description" : "Euer Zauber 'Richturteil' gewährt eine Chance von 50%, Euer Bewegungstempo 4 Sek. lang um 45% zu erhöhen, wenn das Ziel sich 15 Meter oder mehr von Euch entfernt befindet."
+        }, {
+          "description" : "Euer Zauber 'Richturteil' gewährt eine Chance von 100%, Euer Bewegungstempo 4 Sek. lang um 45% zu erhöhen, wenn das Ziel sich 15 Meter oder mehr von Euch entfernt befindet."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11204,
+        "name" : "Göttlicher Sturm",
+        "icon" : "ability_paladin_divinestorm",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "5% des Grundmanas",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "4,5 Sek. Abklingzeit",
+          "requires" : "Benötigt Nahkampfwaffe",
+          "description" : "Ein sofortiger Angriff, der allen Gegnern im Umkreis von 8 Metern 60% Waffenschaden zufügt. Zudem werden bis zu 3 Gruppen- oder Schlachtzugsmitglieder in Höhe von insgesamt 25% des verursachten Schadens geheilt."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11207,
+        "name" : "Zurechtweisung",
+        "icon" : "spell_holy_fistofjustice",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "10% des Grundmanas",
+          "range" : "Nahkampfreichweite",
+          "castTime" : "Sofort",
+          "cooldown" : "10 Sek. Abklingzeit",
+          "description" : "Unterbricht das Wirken von Zaubern und verhindert 4 Sek. lang, dass Zauber dieser Art gewirkt werden können."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11372,
+        "name" : "Geheiligter Kampf",
+        "icon" : "inv_sword_136",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Effekte, die Euer Tempo erhöhen, verringern die Abklingzeit Eurer Fähigkeiten 'Kreuzfahrerstoß' und 'Göttlicher Sturm'."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10643,
+        "name" : "Siegel des Befehls",
+        "icon" : "ability_warrior_innerrage",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Eure Zauber 'Siegel der Rechtschaffenheit', 'Siegel der Wahrheit' und 'Siegel der Gerechtigkeit' verursachen nun mit jedem Waffenschwung zusätzlich 7% Waffenschaden. Zudem trifft Euer Zauber 'Siegel der Rechtschaffenheit' nun bis zu 2 zusätzliche Ziele."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10669,
+        "name" : "Geweihte Wut",
+        "icon" : "ability_paladin_sanctifiedwrath",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Erhöht die kritische Trefferchance von 'Hammer des Zorns' um 20% und verringert die Abklingzeit von 'Zornige Vergeltung' um 20 Sek. Zudem kann 'Hammer des Zorns' immer, während 'Zornige Vergeltung' aktiv ist, eingesetzt werden."
+        }, {
+          "description" : "Erhöht die kritische Trefferchance von 'Hammer des Zorns' um 40% und verringert die Abklingzeit von 'Zornige Vergeltung' um 40 Sek. Zudem kann 'Hammer des Zorns' immer, während 'Zornige Vergeltung' aktiv ist, eingesetzt werden."
+        }, {
+          "description" : "Erhöht die kritische Trefferchance von 'Hammer des Zorns' um 60% und verringert die Abklingzeit von 'Zornige Vergeltung' um 60 Sek. Zudem kann 'Hammer des Zorns' immer, während 'Zornige Vergeltung' aktiv ist, eingesetzt werden."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11271,
+        "name" : "Selbstloser Heiler",
+        "icon" : "spell_holy_rune",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Erhöht die Heilung Eures Zaubers 'Wort der Herrlichkeit' um 25%, wenn Sie dazu eingesetzt wird, Andere zu heilen. Zudem wird 10 Sek. lang Euer verursachter Schaden pro Aufladung Heiliger Kraft um 2% erhöht."
+        }, {
+          "description" : "Erhöht die Heilung Eures Zaubers 'Wort der Herrlichkeit' um 50%, wenn Sie dazu eingesetzt wird, Andere zu heilen. Zudem wird 10 Sek. lang Euer verursachter Schaden pro Aufladung Heiliger Kraft um 4% erhöht."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10663,
+        "name" : "Buße",
+        "icon" : "spell_holy_prayerofhealing",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "9% des Grundmanas",
+          "range" : "20 yd range",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "1 Min. Abklingzeit",
+          "description" : "Versetzt das feindliche Ziel in einen meditativen Zustand und macht es so bis zu 1 Min. lang handlungsunfähig. Jeglicher erlittene Schaden wird das Ziel wecken. Wirkt auf Dämonen, Drachkin, Riesen, Humanoide und Untote."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10633,
+        "name" : "Göttliche Bestimmung",
+        "icon" : "spell_holy_divinepurpose",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Die folgenden Angriffe haben eine Chance von 20%, Heilige Kraft zu erzeugen:\n\n\n\n- Richturteil\n\n- Exorzismus\n\n- Urteil des Templers\n\n- Göttlicher Sturm\n\n- Inquisition\n\n- Heiliger Zorn\n\n- Hammer des Zorns"
+        }, {
+          "description" : "Die folgenden Angriffe haben eine Chance von 40%, Heilige Kraft zu erzeugen:\n\n\n\n- Richturteil\n\n- Exorzismus\n\n- Urteil des Templers\n\n- Göttlicher Sturm\n\n- Inquisition\n\n- Heiliger Zorn\n\n- Hammer des Zorns"
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10677,
+        "name" : "Glaubensprüfung",
+        "icon" : "ability_paladin_righteousvengeance",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Erhöht den regelmäßigen Schaden Eures Zaubers 'Siegel der Wahrheit' um 10% und die Effektdauer Eures Zaubers 'Inquisition' um 50%."
+        }, {
+          "description" : "Erhöht den regelmäßigen Schaden Eures Zaubers 'Siegel der Wahrheit' um 20% und die Effektdauer Eures Zaubers 'Inquisition' um 100%."
+        }, {
+          "description" : "Erhöht den regelmäßigen Schaden Eures Zaubers 'Siegel der Wahrheit' um 30% und die Effektdauer Eures Zaubers 'Inquisition' um 150%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11211,
+        "name" : "Akt der Aufopferung",
+        "icon" : "ability_paladin_blessedhands",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Verringert die Abklingzeit Eurer Zauber 'Hand der Freiheit', 'Hand der Erlösung' und 'Hand der Aufopferung' um 10% und ihre Manakosten um 10%. Zudem entfernt Euer Zauber 'Reinigung des Glaubens' einen bewegungseinschränkenden Effekt, wenn Ihr ihn auf Euch selbst wirkt."
+        }, {
+          "description" : "Verringert die Abklingzeit Eurer Zauber 'Hand der Freiheit', 'Hand der Erlösung' und 'Hand der Aufopferung' um 20% und ihre Manakosten um 20%. Zudem entfernt Euer Zauber 'Reinigung des Glaubens' einen bewegungseinschränkenden Effekt, wenn Ihr ihn auf Euch selbst wirkt."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11222,
+        "name" : "Unermüdlichkeit",
+        "icon" : "spell_holy_proclaimchampion_02",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "3 Heilige Macht",
+          "castTime" : "Spontanzauber",
+          "cooldown" : "2 Min. Abklingzeit",
+          "description" : "Eure Fähigkeit 'Kreuzfahrerstoß' erzeugt für die nächsten 20 Sek. pro Anwendung 3 Aufladungen Heiliger Kraft. Die Anwendung benötigt 3 Heilige Kraft, die jedoch davon nicht aufgezehrt werden."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

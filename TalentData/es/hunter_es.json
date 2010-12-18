@@ -1,0 +1,990 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 3,
+      "name" : "Cazador",
+      "powerType" : "FOCUS",
+      "powerTypeId" : 2
+    },
+    "talentTrees" : [ {
+      "name" : "Bestias",
+      "icon" : "ability_hunter_bestialdiscipline",
+      "backgroundFile" : "HunterBeastMastery",
+      "overlayColor" : "#ff004c",
+      "description" : "Un maestro de lo salvaje que puede domesticar una gran variedad de bestias para que lo ayuden en el combate.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 19577,
+        "name" : "Intimidación",
+        "icon" : "ability_devour",
+        "cost" : "35 enfoque",
+        "range" : "100 yd range",
+        "castTime" : "Instantáneo",
+        "cooldown" : "Reutilización de 1 min.",
+        "reagents" : [ ],
+        "description" : "Ordena a tu mascota que intimide al objetivo, inflige una gran cantidad de amenaza y aturde al objetivo durante 3 s. Dura 15 s.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 87325,
+        "name" : "Cuidador de animales",
+        "icon" : "ability_hunter_animalhandler",
+        "reagents" : [ ],
+        "description" : "Poder de ataque aumentado un 15%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76657,
+        "name" : "Maestro de bestias",
+        "icon" : "ability_hunter_beasttaming",
+        "reagents" : [ ],
+        "description" : "Aumenta el daño infligido por tus mascotas un 14%. Cada punto de maestría aumenta el daño infligido por tus mascotas un 1.7% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9494,
+        "name" : "Matar mejorado",
+        "icon" : "ability_hunter_silenthunter",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta la probabilidad de golpe crítico de tu Matar un 5%."
+        }, {
+          "description" : "Aumenta la probabilidad de golpe crítico de tu Matar un 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9490,
+        "name" : "Uno con la Naturaleza",
+        "icon" : "ability_hunter_onewithnature",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta un 10% el bonus de poder de ataque de tu Aspecto del halcón y aumenta un 1 p. la cantidad de enfoque que restaura tu Aspecto del zorro."
+        }, {
+          "description" : "Aumenta un 20% el bonus de poder de ataque de tu Aspecto del halcón y aumenta un 2 p. la cantidad de enfoque que restaura tu Aspecto del zorro."
+        }, {
+          "description" : "Aumenta un 30% el bonus de poder de ataque de tu Aspecto del halcón y aumenta un 3 p. la cantidad de enfoque que restaura tu Aspecto del zorro."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9492,
+        "name" : "Disciplina de las bestias",
+        "icon" : "ability_hunter_bestialdiscipline",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta un 10% la regeneración de enfoque de tus mascotas."
+        }, {
+          "description" : "Aumenta un 20% la regeneración de enfoque de tus mascotas."
+        }, {
+          "description" : "Aumenta un 30% la regeneración de enfoque de tus mascotas."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9502,
+        "name" : "Encontrar camino",
+        "icon" : "ability_hunter_pathfinding2",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta un 4% el bonus de velocidad de tu Aspecto del guepardo y de tu Aspecto de la manada y aumenta tu velocidad sobre montura un 5%. El aumento de velocidad de movimiento sobre montura no se acumula con otros efectos."
+        }, {
+          "description" : "Aumenta un 8% el bonus de velocidad de tu Aspecto del guepardo y de tu Aspecto de la manada y aumenta tu velocidad sobre montura un 10%. El aumento de velocidad de movimiento sobre montura no se acumula con otros efectos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9514,
+        "name" : "Vínculo de espíritu",
+        "icon" : "ability_druid_demoralizingroar",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Cuando tu mascota esté activa, regenerarán el 1% de salud total cada 10 s y aumenta la sanación realizada a ti y a tu mascota un 5%."
+        }, {
+          "description" : "Cuando tu mascota esté activa, regenerarán el 2% de salud total cada 10 s y aumenta la sanación realizada a ti y a tu mascota un 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9512,
+        "name" : "Frenesí",
+        "icon" : "inv_misc_monsterclaw_03",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Después de atacar con un ataque básico tu mascota gana un 2% de velocidad de ataque que dura 10 s y se acumula hasta 5 veces."
+        }, {
+          "description" : "Después de atacar con un ataque básico tu mascota gana un 4% de velocidad de ataque que dura 10 s y se acumula hasta 5 veces."
+        }, {
+          "description" : "Después de atacar con un ataque básico tu mascota gana un 6% de velocidad de ataque que dura 10 s y se acumula hasta 5 veces."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9510,
+        "name" : "Aliviar mascota mejorado",
+        "icon" : "ability_hunter_mendpet",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Da a la facultad Aliviar mascota un 25% de probabilidad de limpiar 1 efecto de maldición, enfermedad, magia o veneno de la mascota con cada pulso."
+        }, {
+          "description" : "Da a la facultad Aliviar mascota un 50% de probabilidad de limpiar 1 efecto de maldición, enfermedad, magia o veneno de la mascota con cada pulso."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9530,
+        "name" : "Golpes de cobra",
+        "icon" : "ability_hunter_cobrastrikes",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Cuando golpeas con Disparo Arcano tienes un 5% de probabilidad de provocar que los 2 próximos ataques básicos de tu mascota asesten un golpe crítico."
+        }, {
+          "description" : "Cuando golpeas con Disparo Arcano tienes un 10% de probabilidad de provocar que los 2 próximos ataques básicos de tu mascota asesten un golpe crítico."
+        }, {
+          "description" : "Cuando golpeas con Disparo Arcano tienes un 15% de probabilidad de provocar que los 2 próximos ataques básicos de tu mascota asesten un golpe crítico."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9504,
+        "name" : "Fervor",
+        "icon" : "ability_hunter_aspectoftheviper",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 2 min.",
+          "description" : "Restaura instantáneamente 50 p. de enfoque para ti y para tu mascota."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9520,
+        "name" : "Enfocar Fuego",
+        "icon" : "ability_hunter_focusfire",
+        "x" : 2,
+        "y" : 2,
+        "req" : 9512,
+        "ranks" : [ {
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 15 seg.",
+          "description" : "Consume el efecto de Frenesí de tu mascota, lo que restaura 4 p. de enfoque a tu mascota y aumenta tu celeridad a distancia un 3% por cada acumulación de Frenesí que se consuma. Dura 15 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9534,
+        "name" : "Longevidad",
+        "icon" : "ability_hunter_longevity",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de tu Cólera de las bestias, Intimidación y facultades especiales de mascota un 10%."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tu Cólera de las bestias, Intimidación y facultades especiales de mascota un 20%."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tu Cólera de las bestias, Intimidación y facultades especiales de mascota un 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9528,
+        "name" : "Racha asesina",
+        "icon" : "achievement_bg_kill_carrier_opposing_flagroom",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Cuando asestas dos golpes críticos seguidos con Matar, el tercero infligirá un 10% más de daño y tendrá un coste reducido en 5 p. de enfoque."
+        }, {
+          "description" : "Cuando asestas dos golpes críticos seguidos con Matar, el tercero infligirá un 20% más de daño y tendrá un coste reducido en 10 p. de enfoque."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11714,
+        "name" : "Tigre y quimera",
+        "icon" : "ability_hunter_pet_chimera",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Cada vez que te golpee un ataque cuerpo a cuerpo, el tiempo de reutilización de tu Separación se reduce al instante 2 s.\n\n\n\nCada vez que te golpee un ataque o un hechizo a distancia, el tiempo de reutilización de tu Disuasión se reduce al instante 4 s.\n\n\n\nEstos efectos tienen un tiempo de reutilización de 2 s."
+        }, {
+          "description" : "Cada vez que te golpee un ataque cuerpo a cuerpo, el tiempo de reutilización de tu Separación se reduce al instante 4 s.\n\n\n\nCada vez que te golpee un ataque o un hechizo a distancia, el tiempo de reutilización de tu Disuasión se reduce al instante 8 s.\n\n\n\nEstos efectos tienen un tiempo de reutilización de 2 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9524,
+        "name" : "Cólera de las bestias",
+        "icon" : "ability_druid_ferociousbite",
+        "x" : 1,
+        "y" : 4,
+        "req" : 9504,
+        "ranks" : [ {
+          "cost" : "45 enfoque",
+          "range" : "100 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 2 min.",
+          "description" : "Pone iracunda a tu mascota para que inflija un 20% de daño extra durante 10 s. La bestia no siente piedad, remordimiento ni miedo y no se detendrá a no ser que la maten."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9518,
+        "name" : "Inspiración feroz",
+        "icon" : "ability_hunter_ferociousinspiration",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "El daño de todos los miembros del grupo y banda aumenta un 3% en un radio de 100 metros de tu mascota."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9538,
+        "name" : "Almas gemelas",
+        "icon" : "ability_hunter_separationanxiety",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Aumenta 5 p. tu enfoque máximo y el de tu mascota."
+        }, {
+          "description" : "Aumenta 10 p. tu enfoque máximo y el de tu mascota."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9536,
+        "name" : "Bestia interna",
+        "icon" : "ability_hunter_beastwithin",
+        "x" : 1,
+        "y" : 5,
+        "req" : 9524,
+        "ranks" : [ {
+          "description" : "Cuando tu mascota está bajo los efectos de Cólera de las bestias, tú también te enfureces, infliges un 10% de daño extra y reduces el coste de enfoque de todos los disparos y facultades un 50% durante 10 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9522,
+        "name" : "Vigorización",
+        "icon" : "ability_hunter_invigeration",
+        "x" : 2,
+        "y" : 5,
+        "req" : 9518,
+        "ranks" : [ {
+          "description" : "Cuando tu mascota aseste un golpe crítico con un ataque básico, tú regenerarás instantáneamente 3 p. de enfoque."
+        }, {
+          "description" : "Cuando tu mascota aseste un golpe crítico con un ataque básico, tú regenerarás instantáneamente 6 p. de enfoque."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9542,
+        "name" : "Maestría en bestias",
+        "icon" : "ability_hunter_beastmastery",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "description" : "Dominas el arte del Adiestramiento de bestias y aprendes la facultad de domesticar mascotas exóticas, sumando 4 p. a la cantidad total de p. de habilidad con mascotas."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Puntería",
+      "icon" : "ability_hunter_focusedaim",
+      "backgroundFile" : "HunterMarksmanship",
+      "overlayColor" : "#4c99ff",
+      "description" : "Un maestro arquero o tirador certero que destaca a la hora de derribar a los enemigos desde lejos.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 19434,
+        "name" : "Disparo de puntería",
+        "icon" : "inv_spear_07",
+        "cost" : "50 enfoque",
+        "range" : "5-40 yd range",
+        "castTime" : "Lanzamiento de 3 seg.",
+        "requires" : "Requiere Arma de ataque a distancia",
+        "reagents" : [ ],
+        "description" : "Un disparo de puntería potente que inflige un 65% del daño con arma a distancia más 698 p.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 87326,
+        "name" : "Carcaj artesanal",
+        "icon" : "inv_misc_quiver_06",
+        "reagents" : [ ],
+        "description" : "Daño de ataque automático a distancia aumentado un 15%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76659,
+        "name" : "Carcaj salvaje",
+        "icon" : "ability_hunter_wildquiver",
+        "reagents" : [ ],
+        "description" : "Otorga un 14% de probabilidad de que tus ataques a distancia también lancen un disparo a distancia adicional. Cada punto de maestría aumenta la probabilidad un 2% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9390,
+        "name" : "A la yugular",
+        "icon" : "ability_hunter_goforthethroat",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Tus golpes críticos a distancia con disparos automáticos provocan que tu mascota genere 5 p. de enfoque."
+        }, {
+          "description" : "Tus golpes críticos a distancia con disparos automáticos provocan que tu mascota genere 10 p. de enfoque."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9380,
+        "name" : "Eficacia",
+        "icon" : "ability_hunter_focusedaim",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Reduce el coste de enfoque de tu Disparo Arcano 1 p. y el de tu Disparo explosivo y Disparo de quimera 2 p."
+        }, {
+          "description" : "Reduce el coste de enfoque de tu Disparo Arcano 2 p. y el de tu Disparo explosivo y Disparo de quimera 4 p."
+        }, {
+          "description" : "Reduce el coste de enfoque de tu Disparo Arcano 3 p. y el de tu Disparo explosivo y Disparo de quimera 6 p."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9378,
+        "name" : "Matanza rápida",
+        "icon" : "ability_hunter_rapidkilling",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Tras matar a un oponente que aporte experiencia u honor, tu siguiente Disparo de puntería, Disparo firme o Disparo de cobra inflige un 10% de daño extra. Dura 20 s."
+        }, {
+          "description" : "Tras matar a un oponente que aporte experiencia u honor, tu siguiente Disparo de puntería, Disparo firme o Disparo de cobra inflige un 20% de daño extra. Dura 20 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9396,
+        "name" : "¡Ataca!",
+        "icon" : "ability_hunter_sickem",
+        "x" : 0,
+        "y" : 1,
+        "req" : 9390,
+        "ranks" : [ {
+          "description" : "Cuando asestas un golpe crítico con Disparo Arcano, Disparo de puntería o Disparo explosivo, el coste de enfoque del siguiente ataque básico de tu mascota se reduce un 50% durante 12 s."
+        }, {
+          "description" : "Cuando asestas un golpe crítico con Disparo Arcano, Disparo de puntería o Disparo explosivo, el coste de enfoque del siguiente ataque básico de tu mascota se reduce un 100% durante 12 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9402,
+        "name" : "Disparo firme mejorado",
+        "icon" : "ability_hunter_improvedsteadyshot",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Cuando lanzas Disparo firme dos veces seguidas, tu velocidad de ataque a distancia aumentará un 5% durante 8 s."
+        }, {
+          "description" : "Cuando lanzas Disparo firme dos veces seguidas, tu velocidad de ataque a distancia aumentará un 10% durante 8 s."
+        }, {
+          "description" : "Cuando lanzas Disparo firme dos veces seguidas, tu velocidad de ataque a distancia aumentará un 15% durante 8 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9398,
+        "name" : "Afinar la puntería",
+        "icon" : "ability_hunter_zenarchery",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta un 30% la probabilidad de golpe crítico de Disparo firme, Disparo de cobra y Disparo de puntería contra los objetivos con más de un 80% de salud."
+        }, {
+          "description" : "Aumenta un 60% la probabilidad de golpe crítico de Disparo firme, Disparo de cobra y Disparo de puntería contra los objetivos con más de un 80% de salud."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9424,
+        "name" : "Disparo silenciador",
+        "icon" : "ability_theblackarrow",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "35 enfoque",
+          "range" : "5-35 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 20 seg.",
+          "requires" : "Requiere Arma de ataque a distancia",
+          "description" : "Un disparo que silencia al objetivo e interrumpe el lanzamiento de hechizos durante 3 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9406,
+        "name" : "Tromba de conmoción",
+        "icon" : "ability_hunter_efficiency",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Los ataques de Disparo de quimera y Multidisparo que alcancen al objetivo tienen un 50% de probabilidad de atontar al objetivo durante 4 s."
+        }, {
+          "description" : "Los ataques de Disparo de quimera y Multidisparo que alcancen al objetivo tienen un 100% de probabilidad de atontar al objetivo durante 4 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11225,
+        "name" : "Disparos perforadores",
+        "icon" : "ability_hunter_piercingshots",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Tus golpes críticos con Disparo de puntería, Disparo firme y Disparo de quimera hacen sangrar al objetivo un 10% del daño infligido durante 8 s."
+        }, {
+          "description" : "Tus golpes críticos con Disparo de puntería, Disparo firme y Disparo de quimera hacen sangrar al objetivo un 20% del daño infligido durante 8 s."
+        }, {
+          "description" : "Tus golpes críticos con Disparo de puntería, Disparo firme y Disparo de quimera hacen sangrar al objetivo un 30% del daño infligido durante 8 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9408,
+        "name" : "Bombardeo",
+        "icon" : "ability_marksmanship",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Cuando asestas un golpe crítico con Multidisparo el coste de enfoque de tu siguiente Multidisparo se reduce un 25%."
+        }, {
+          "description" : "Cuando asestas un golpe crítico con Multidisparo el coste de enfoque de tu siguiente Multidisparo se reduce un 50%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9412,
+        "name" : "Aura de disparo certero",
+        "icon" : "ability_trueshot",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Aumenta el poder de ataque de los miembros del grupo y banda en un radio de 100 m un 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9416,
+        "name" : "Remate",
+        "icon" : "ability_warrior_focusedrage",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Tus facultades Disparo firme y Disparo de cobra otorgan 3 p. de enfoque extra al utilizarlas contra objetivos con un 25% de salud o menos."
+        }, {
+          "description" : "Tus facultades Disparo firme y Disparo de cobra otorgan 6 p. de enfoque extra al utilizarlas contra objetivos con un 25% de salud o menos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9420,
+        "name" : "La resistencia es fútil",
+        "icon" : "ability_hunter_resistanceisfutile",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Cuando tu objetivo marcado intenta correr, huir o moverse, tienes un 4% de probabilidad de hacer que tu próximo Matar sobre el objetivo marcado en un margen de 8 s recupere el coste de enfoque."
+        }, {
+          "description" : "Cuando tu objetivo marcado intenta correr, huir o moverse, tienes un 8% de probabilidad de hacer que tu próximo Matar sobre el objetivo marcado en un margen de 8 s recupere el coste de enfoque."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9422,
+        "name" : "Recuperación rápida",
+        "icon" : "ability_hunter_rapidregeneration",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Ganas 6 p. de enfoque cada 3 s mientras estás bajo el efecto de Fuego rápido, y ganas 25 p. de enfoque instantáneamente cuando ganas Matanza rápida."
+        }, {
+          "description" : "Ganas 12 p. de enfoque cada 3 s mientras estás bajo el efecto de Fuego rápido, y ganas 50 p. de enfoque instantáneamente cuando ganas Matanza rápida."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9418,
+        "name" : "Maestro Tirador",
+        "icon" : "ability_hunter_mastermarksman",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Cuando lanzas Disparo firme tienes un 20% de probabilidad de ganar el efecto de Maestro Tirador, que dura 30 s. Tras alcanzar 5 acumulaciones, el tiempo de lanzamiento y el coste de enfoque de tu siguiente Disparo de puntería se reducen un 100% durante 10 s."
+        }, {
+          "description" : "Cuando lanzas Disparo firme tienes un 40% de probabilidad de ganar el efecto de Maestro Tirador, que dura 30 s. Tras alcanzar 5 acumulaciones, el tiempo de lanzamiento y el coste de enfoque de tu siguiente Disparo de puntería se reducen un 100% durante 10 s."
+        }, {
+          "description" : "Cuando lanzas Disparo firme tienes un 60% de probabilidad de ganar el efecto de Maestro Tirador, que dura 30 s. Tras alcanzar 5 acumulaciones, el tiempo de lanzamiento y el coste de enfoque de tu siguiente Disparo de puntería se reducen un 100% durante 10 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9404,
+        "name" : "Disposición",
+        "icon" : "ability_hunter_readiness",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 3 min.",
+          "description" : "Cuando se activa, termina inmediatamente el tiempo de reutilización de todas tus facultades de cazador."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9426,
+        "name" : "Inmediatez",
+        "icon" : "ability_hunter_posthaste",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de tu Fuego rápido 1 min y tu velocidad de movimiento aumenta un 15% durante 4 s después de utilizar Separación."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de tu Fuego rápido 2 min y tu velocidad de movimiento aumenta un 30% durante 4 s después de utilizar Separación."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9428,
+        "name" : "Marcado para morir",
+        "icon" : "ability_hunter_assassinate",
+        "x" : 2,
+        "y" : 5,
+        "req" : 9418,
+        "ranks" : [ {
+          "description" : "Tu Disparo Arcano y Disparo de quimera tienen un 50% de probabilidad de aplicar automáticamente el efecto Marcado para morir.\n\n\n\nMarcado para morir es igual que Marca del cazador, pero no se puede disipar, no restringe el sigilo o la invisibilidad y dura 15 s."
+        }, {
+          "description" : "Tu Disparo Arcano y Disparo de quimera tienen un 100% de probabilidad de aplicar automáticamente el efecto Marcado para morir.\n\n\n\nMarcado para morir es igual que Marca del cazador, pero no se puede disipar, no restringe el sigilo o la invisibilidad y dura 15 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9430,
+        "name" : "Disparo de quimera",
+        "icon" : "ability_hunter_chimerashot2",
+        "x" : 1,
+        "y" : 6,
+        "req" : 9418,
+        "ranks" : [ {
+          "cost" : "50 enfoque",
+          "range" : "5-40 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 10 seg.",
+          "requires" : "Requiere Arma de ataque a distancia",
+          "description" : "Un disparo instantáneo que Inflige daño con arma a distancia más 874 p., lo que reinicia la duración de tu Picadura de serpiente y te sana un 5% de tu salud total."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Supervivencia",
+      "icon" : "ability_hunter_camouflage",
+      "backgroundFile" : "HunterSurvival",
+      "overlayColor" : "#ff9900",
+      "description" : "Un curtido rastreador que prefiere usar veneno animal, explosivos y trampas como armas letales.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 53301,
+        "name" : "Disparo explosivo",
+        "icon" : "ability_hunter_explosiveshot",
+        "cost" : "50 enfoque",
+        "range" : "5-40 yd range",
+        "castTime" : "Lanzamiento instantáneo",
+        "cooldown" : "Reutilización de 6 seg.",
+        "requires" : "Requiere Arma de ataque a distancia",
+        "reagents" : [ ],
+        "description" : "Lanzas una carga explosiva al objetivo, que inflige 407 p. de daño de Fuego. La carga golpeará al objetivo cada segundo durante 2 s adicionales.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 84729,
+        "name" : "Hacia lo salvaje",
+        "icon" : "achievement_zone_alteracmountains_01",
+        "reagents" : [ ],
+        "description" : "Agilidad aumentada un 15%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76658,
+        "name" : "Esencia de la víbora",
+        "icon" : "spell_frost_arcticwinds",
+        "reagents" : [ ],
+        "description" : "Aumenta todo el daño elemental infligido un 8%. Cada punto de maestría aumenta el daño elemental un 1.0% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9442,
+        "name" : "Cazador contra fauna",
+        "icon" : "ability_hunter_huntervswild",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta tu aguante total un 4%."
+        }, {
+          "description" : "Aumenta tu aguante total un 7%."
+        }, {
+          "description" : "Aumenta tu aguante total un 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9432,
+        "name" : "Rastreo",
+        "icon" : "ability_hunter_improvedtracking",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta la celeridad a distancia un 1%."
+        }, {
+          "description" : "Aumenta la celeridad a distancia un 2%."
+        }, {
+          "description" : "Aumenta la celeridad a distancia un 3%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9450,
+        "name" : "Picadura de serpiente mejorada",
+        "icon" : "ability_hunter_quickshot",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Tu Picadura de serpiente también inflige daño instantáneo igual a un 15% de su efecto periódico total.\n\n\n\nTambién aumenta un 5% la probabilidad de golpe crítico periódica de tu Picadura de serpiente."
+        }, {
+          "description" : "Tu Picadura de serpiente también inflige daño instantáneo igual a un 30% de su efecto periódico total.\n\n\n\nTambién aumenta un 10% la probabilidad de golpe crítico periódica de tu Picadura de serpiente."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9444,
+        "name" : "Tácticas de supervivencia",
+        "icon" : "ability_rogue_feigndeath",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduce la probabilidad de que se resistan tus hechizos de trampa un 2% y reduce el tiempo de reutilización de tu facultad Separación 2 s."
+        }, {
+          "description" : "Reduce la probabilidad de que se resistan tus hechizos de trampa un 4% y reduce el tiempo de reutilización de tu facultad Separación 4 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10753,
+        "name" : "Maestría en trampas",
+        "icon" : "ability_ensnare",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Trampa de hielo y Trampa congelante: Aumenta la duración un 10%.\n\n\n\nTrampa de Inmolación, Trampa explosiva y Flecha negra: Aumenta el daño periódico infligido un 10%.\n\n\n\nTrampa con culebras: Aumenta el número de culebras invocadas en 2."
+        }, {
+          "description" : "Trampa de hielo y Trampa congelante: Aumenta la duración un 20%.\n\n\n\nTrampa de Inmolación, Trampa explosiva y Flecha negra: Aumenta el daño periódico infligido un 20%.\n\n\n\nTrampa con culebras: Aumenta el número de culebras invocadas en 4."
+        }, {
+          "description" : "Trampa de hielo y Trampa congelante: Aumenta la duración un 30%.\n\n\n\nTrampa de Inmolación, Trampa explosiva y Flecha negra: Aumenta el daño periódico infligido un 30%.\n\n\n\nTrampa con culebras: Aumenta el número de culebras invocadas en 6."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9440,
+        "name" : "Atrapar",
+        "icon" : "spell_nature_stranglevines",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Cuando tu Trampa de hielo o tu Trampa de culebras están activadas atrapas a todos los objetivos afectados, impidiendo que se muevan durante 2 s."
+        }, {
+          "description" : "Cuando tu Trampa de hielo o tu Trampa de culebras están activadas atrapas a todos los objetivos afectados, impidiendo que se muevan durante 4 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9472,
+        "name" : "Sin escapatoria",
+        "icon" : "ability_hunter_pointofnoescape",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta un 3% la probabilidad de golpe crítico a distancia de todos tus ataques sobre objetivos afectados por tu Trampa de hielo y Trampa congelante."
+        }, {
+          "description" : "Aumenta un 6% la probabilidad de golpe crítico a distancia de todos tus ataques sobre objetivos afectados por tu Trampa de hielo y Trampa congelante."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9484,
+        "name" : "Emoción de la caza",
+        "icon" : "ability_hunter_thrillofthehunt",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Cuando lanzas Disparo Arcano, Disparo explosivo o Flecha negra, tienes un 5% de probabilidad de recuperar al instante un 40% del coste base de enfoque del disparo."
+        }, {
+          "description" : "Cuando lanzas Disparo Arcano, Disparo explosivo o Flecha negra, tienes un 10% de probabilidad de recuperar al instante un 40% del coste base de enfoque del disparo."
+        }, {
+          "description" : "Cuando lanzas Disparo Arcano, Disparo explosivo o Flecha negra, tienes un 15% de probabilidad de recuperar al instante un 40% del coste base de enfoque del disparo."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9448,
+        "name" : "Contraataque",
+        "icon" : "ability_warrior_challange",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "3% de maná base",
+          "range" : "Rango de ataques C. a C.",
+          "castTime" : "Instantáneo",
+          "cooldown" : "Reutilización de 5 seg.",
+          "description" : "Un golpe que se activa tras haber parado el ataque de un oponente. Este ataque inflige 391 p. de daño e inmoviliza al objetivo durante 5 s. No se puede bloquear, esquivar ni parar el contraataque."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9452,
+        "name" : "Bloquear y cargar",
+        "icon" : "ability_hunter_lockandload",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Cuando atrapas a un objetivo con Trampa congelante o Trampa de hielo tienes un 50% de probabilidad de que tus 2 siguientes facultades Disparo Arcano o Disparo explosivo no cuesten enfoque y no activen tiempo de reutilización."
+        }, {
+          "description" : "Cuando atrapas a un objetivo con Trampa congelante o Trampa de hielo tienes un 100% de probabilidad de que tus 2 siguientes facultades Disparo Arcano o Disparo explosivo no cuesten enfoque y no activen tiempo de reutilización."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9460,
+        "name" : "Inventiva",
+        "icon" : "ability_hunter_resourcefulness",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización de todas las trampas y Flecha negra 2 s."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de todas las trampas y Flecha negra 4 s."
+        }, {
+          "description" : "Reduce el tiempo de reutilización de todas las trampas y Flecha negra 6 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9482,
+        "name" : "Hojas reflectantes",
+        "icon" : "inv_weapon_shortblade_99",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Al ser atacado con hechizo mientras estás en Disuasión, tienes un 50% de probabilidad de reflejarlo contra el atacante."
+        }, {
+          "description" : "Al ser atacado con hechizo mientras estás en Disuasión, tienes un 100% de probabilidad de reflejarlo contra el atacante."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9462,
+        "name" : "T.N.T.",
+        "icon" : "inv_misc_bomb_05",
+        "x" : 2,
+        "y" : 3,
+        "req" : 9452,
+        "ranks" : [ {
+          "description" : "Cuando infliges daño periódico con Trampa de inmolación, Trampa explosiva o Flecha negra tienes un 6% de probabilidad de activar Bloquear y cargar."
+        }, {
+          "description" : "Cuando infliges daño periódico con Trampa de inmolación, Trampa explosiva o Flecha negra tienes un 12% de probabilidad de activar Bloquear y cargar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9464,
+        "name" : "Toxicología",
+        "icon" : "inv_alchemy_enchantedvial",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Aumenta el daño crítico periódico de Picadura de serpiente y Flecha negra un 50%."
+        }, {
+          "description" : "Aumenta el daño crítico periódico de Picadura de serpiente y Flecha negra un 100%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9468,
+        "name" : "Picadura de dracoleón",
+        "icon" : "inv_spear_02",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "10 enfoque",
+          "range" : "5-35 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 1 min.",
+          "requires" : "Requiere Arma de ataque a distancia",
+          "description" : "Un disparo punzante que duerme al objetivo durante 30 s. Cualquier daño infligido con posterioridad anulará su efecto. Cuando el objetivo se despierta, la picadura inflige 2460 p. de daño de Naturaleza durante 6 s. Un cazador solo puede tener una picadura activa a la vez sobre un mismo objetivo."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9474,
+        "name" : "Picaduras ponzoñosas",
+        "icon" : "ability_hunter_potentvenom",
+        "x" : 2,
+        "y" : 4,
+        "req" : 9468,
+        "ranks" : [ {
+          "description" : "Aumenta el daño que infliges a objetivos afectados por tu Picadura de serpiente un 5%.\n\n\n\nSi se disipa Picadura de dracoleón, quien lo disipa también se ve afectado por Picadura de dracoleón hasta un 25% de la duración restante."
+        }, {
+          "description" : "Aumenta el daño que infliges a objetivos afectados por tu Picadura de serpiente un 10%.\n\n\n\nSi se disipa Picadura de dracoleón, quien lo disipa también se ve afectado por Picadura de dracoleón hasta un 50% de la duración restante."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9476,
+        "name" : "Grupo de caza",
+        "icon" : "ability_hunter_huntingparty",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Aumenta tu agilidad total un 2% extra y aumenta la velocidad de ataque cuerpo a cuerpo y a distancia de todos los miembros del grupo o banda un 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9478,
+        "name" : "Instrucción de francotirador",
+        "icon" : "ability_hunter_longshots",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Aumenta un 5% la probabilidad de golpe crítico de tu facultad Disparo mortal y tras permanecer quieto durante 6 s, tu Disparo firme y Disparo de cobra infligen un 2% más de daño durante 15 s."
+        }, {
+          "description" : "Aumenta un 10% la probabilidad de golpe crítico de tu facultad Disparo mortal y tras permanecer quieto durante 6 s, tu Disparo firme y Disparo de cobra infligen un 4% más de daño durante 15 s."
+        }, {
+          "description" : "Aumenta un 15% la probabilidad de golpe crítico de tu facultad Disparo mortal y tras permanecer quieto durante 6 s, tu Disparo firme y Disparo de cobra infligen un 6% más de daño durante 15 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11698,
+        "name" : "Propagación serpentina",
+        "icon" : "ability_hunter_serpentswiftness",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Los objetivos golpeados por tu Multidisparo también están afectados por tu Picadura de serpiente por 6 s de su duración total."
+        }, {
+          "description" : "Los objetivos golpeados por tu Multidisparo también están afectados por tu Picadura de serpiente por 9 s de su duración total."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9480,
+        "name" : "Flecha negra",
+        "icon" : "spell_shadow_painspike",
+        "x" : 1,
+        "y" : 6,
+        "req" : 9468,
+        "ranks" : [ {
+          "cost" : "35 enfoque",
+          "range" : "5-40 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 30 seg.",
+          "requires" : "Requiere Arma de ataque a distancia",
+          "description" : "Dispara una Flecha negra al objetivo, lo que inflige 2440 p. de daño de las Sombras durante 15 s. Flecha negra comparte tiempo de reutilización con otros hechizos de Trampa de Fuego."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

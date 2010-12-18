@@ -1,0 +1,1046 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 2,
+      "name" : "성기사",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "신성",
+      "icon" : "spell_holy_holybolt",
+      "backgroundFile" : "PALADINHOLY",
+      "overlayColor" : "#ff7f00",
+      "description" : "빛의 힘을 사용하여 아군을 보호하고 치료합니다.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : true,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 20473,
+        "name" : "신성 충격",
+        "icon" : "spell_holy_searinglight",
+        "cost" : "기본 마나의 8% ",
+        "range" : "20 yd range",
+        "castTime" : "즉시 시전",
+        "cooldown" : "재사용 대기시간: 6초",
+        "reagents" : [ ],
+        "description" : "대상을 성스러운 기운으로 강타하여 54의 신성 피해를 입힙니다. 또는 아군 대상의 생명력을 143만큼 회복시킵니다. 신성한 힘 효과 1개가 주어집니다.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 85102,
+        "name" : "빛의 걸음",
+        "icon" : "spell_holy_championsgrace",
+        "reagents" : [ ],
+        "description" : "주문의 치유 효과가 15%만큼 증가합니다.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 95859,
+        "name" : "명상",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "전투 중 정신력으로 인한 마나 회복 속도가 50%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76669,
+        "name" : "빛나는 치유",
+        "icon" : "spell_holy_absolution",
+        "reagents" : [ ],
+        "description" : "직접 치유 주문 시전 시 대상에게 피해 흡수 보호막을 걸어 8초 동안 치유한 생명력의 10%에 해당하는 피해를 흡수하게 합니다. 특화력 1당 흡수하는 피해가 추가로 1.25%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10099,
+        "name" : "빛의 중재자",
+        "icon" : "spell_holy_healingaura",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "심판과 기사단의 선고가 극대화 효과를 발휘할 확률이 6%만큼 증가합니다."
+        }, {
+          "description" : "심판과 기사단의 선고가 극대화 효과를 발휘할 확률이 12%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12189,
+        "name" : "시민의 수호자",
+        "icon" : "ability_paladin_protectoroftheinnocent",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "자신을 제외한 다른 대상을 지정하여 치유 주문을 시전하면 추가로 자신이 45의 생명력을 회복합니다."
+        }, {
+          "description" : "자신을 제외한 다른 대상을 지정하여 치유 주문을 시전하면 추가로 자신이 90의 생명력을 회복합니다."
+        }, {
+          "description" : "자신을 제외한 다른 대상을 지정하여 치유 주문을 시전하면 추가로 자신이 136의 생명력을 회복합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10127,
+        "name" : "순결의 심판",
+        "icon" : "ability_paladin_judgementofthepure",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "심판 주문 사용 시 1분 동안 시전 속도와 근접 가속이 3%만큼 증가합니다."
+        }, {
+          "description" : "심판 주문 사용 시 1분 동안 시전 속도와 근접 가속이 6%만큼 증가합니다."
+        }, {
+          "description" : "심판 주문 사용 시 1분 동안 시전 속도와 근접 가속이 9%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11213,
+        "name" : "명료한 목적",
+        "icon" : "spell_paladin_clarityofpurpose",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "성스러운 빛과 천상의 빛의 시전 시간이 0.15초만큼 감소합니다."
+        }, {
+          "description" : "성스러운 빛과 천상의 빛의 시전 시간이 0.3초만큼 감소합니다."
+        }, {
+          "description" : "성스러운 빛과 천상의 빛의 시전 시간이 0.5초만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10097,
+        "name" : "최후의 서약",
+        "icon" : "spell_holy_holyguidance",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "생명력이 35% 이하인 대상에게 영광의 서약 주문이 극대화 효과를 발휘할 확률이 30%만큼 증가합니다."
+        }, {
+          "description" : "생명력이 35% 이하인 대상에게 영광의 서약 주문이 극대화 효과를 발휘할 확률이 60%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11780,
+        "name" : "타오르는 빛",
+        "icon" : "spell_holy_holybolt",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "신성 충격과 퇴마술의 공격력이 10%만큼 증가합니다."
+        }, {
+          "description" : "신성 충격과 퇴마술의 공격력이 20%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10109,
+        "name" : "선고",
+        "icon" : "spell_holy_excorcism_02",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "퇴마술에 소모되는 마나가 38%만큼 감소합니다. 추가로 신성 충격 시전 시 25%의 확률로 다음 시전하는 퇴마술은 즉시 시전되며 마나를 소모하지 않습니다."
+        }, {
+          "description" : "퇴마술에 소모되는 마나가 75%만큼 감소합니다. 추가로 신성 충격 시전 시 50%의 확률로 다음 시전하는 퇴마술은 즉시 시전되며 마나를 소모하지 않습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11202,
+        "name" : "신의 은총",
+        "icon" : "spell_holy_divineillumination",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 3분",
+          "description" : "20초 동안 주문 가속이 20%만큼, 주문 극대화 확률이 20%만큼 증가합니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10129,
+        "name" : "빛 주입",
+        "icon" : "ability_paladin_infusionoflight",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "신성 충격이 극대화 효과를 발휘할 확률이 5%만큼 증가합니다. 추가로, 신성 충격이 극대화 효과를 발휘하면 다음 성스러운 빛 또는 천상의 빛 주문의 시전 시간이 0.75초만큼 감소합니다."
+        }, {
+          "description" : "신성 충격이 극대화 효과를 발휘할 확률이 10%만큼 증가합니다. 추가로, 신성 충격이 극대화 효과를 발휘하면 다음 성스러운 빛 또는 천상의 빛 주문의 시전 시간이 1.50초만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11771,
+        "name" : "서광",
+        "icon" : "inv_qirajidol_sun",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "빛의 섬광, 성스러운 빛, 천상의 빛 주문 시전 시 10%의 확률로 12초 내에 시전하는 다음 신성 충격 주문은 재사용 대기시간이 발동하지 않습니다."
+        }, {
+          "description" : "빛의 섬광, 성스러운 빛, 천상의 빛 주문 시전 시 20%의 확률로 12초 내에 시전하는 다음 신성 충격 주문은 재사용 대기시간이 발동하지 않습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10113,
+        "name" : "깨달음의 심판",
+        "icon" : "ability_paladin_enlightenedjudgements",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "아이템과 효과로 얻는 정신력의 50%만큼 적중도가 증가하고, 심판 주문의 사정거리가 5미터만큼 증가합니다. 심판 주문 사용 시 즉시 46의 생명력을 회복합니다."
+        }, {
+          "description" : "아이템과 효과로 얻는 정신력의 100%만큼 적중도가 증가하고, 심판 주문의 사정거리가 10미터만큼 증가합니다. 심판 주문 사용 시 즉시 92의 생명력을 회복합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10133,
+        "name" : "빛의 봉화",
+        "icon" : "ability_paladin_beaconoflight",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "기본 마나의 6% ",
+          "range" : "60 yd range",
+          "castTime" : "즉시 시전",
+          "description" : "대상은 60미터 반경 내에 있는 모든 파티원과 공격대원에게 빛의 봉화가 됩니다. 해당 범위 내에 있는 파티원 또는 공격대원에게 시전하는 자신의 치유 주문은 회복시킨 생명력의 50%만큼 봉화가 된 대상의 생명력을 회복시킵니다. 동시에 오직 하나의 대상만 빛의 봉화가 될 수 있습니다. 5분 동안 지속됩니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11215,
+        "name" : "빛의 속도",
+        "icon" : "paladin_icon_speedoflight",
+        "x" : 2,
+        "y" : 3,
+        "req" : 10129,
+        "ranks" : [ {
+          "description" : "주문 가속이 1%만큼 증가하고 신성한 광휘의 재사용 대기시간이 10초만큼 감소합니다. 신성한 광휘 시전 시 4초 동안 이동 속도가 20%만큼 증가합니다."
+        }, {
+          "description" : "주문 가속이 2%만큼 증가하고 신성한 광휘의 재사용 대기시간이 20초만큼 감소합니다. 신성한 광휘 시전 시 4초 동안 이동 속도가 40%만큼 증가합니다."
+        }, {
+          "description" : "주문 가속이 3%만큼 증가하고 신성한 광휘의 재사용 대기시간이 30초만큼 감소합니다. 신성한 광휘 시전 시 4초 동안 이동 속도가 60%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10121,
+        "name" : "신성한 정화",
+        "icon" : "ability_paladin_sacredcleansing",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "정화 주문 시전 시 1개의 마법 효과를 제거합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11779,
+        "name" : "자각",
+        "icon" : "ability_paladin_conviction",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "무기나 주문, 기술로 치명타를 적중시키면 다음 15초 동안 공격력과 치유량이 1%만큼 증가합니다. 최대 3번까지 중복됩니다."
+        }, {
+          "description" : "무기나 주문, 기술로 치명타를 적중시키면 다음 15초 동안 공격력과 치유량이 2%만큼 증가합니다. 최대 3번까지 중복됩니다."
+        }, {
+          "description" : "무기나 주문, 기술로 치명타를 적중시키면 다음 15초 동안 공격력과 치유량이 3%만큼 증가합니다. 최대 3번까지 중복됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10115,
+        "name" : "오라 숙련",
+        "icon" : "spell_holy_auramastery",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 2분",
+          "description" : "집중의 오라를 받는 모든 대상이 침묵과 주문 방해 효과에 면역이 되고 다른 모든 오라의 효과가 100%만큼 증가합니다. 6초 동안 지속됩니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12151,
+        "name" : "영적인 집중력",
+        "icon" : "spell_holy_avenginewrath",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "신의 가호의 재사용 대기시간이 10초만큼, 희생의 손길의 재사용 대기시간이 15 초만큼, 응징의 격노의 재사용 대기시간이 30초만큼 감소합니다."
+        }, {
+          "description" : "신의 가호의 재사용 대기시간이 20초만큼, 희생의 손길의 재사용 대기시간이 30 초만큼, 응징의 격노의 재사용 대기시간이 60초만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11168,
+        "name" : "광휘의 탑",
+        "icon" : "achievement_bg_winsoa",
+        "x" : 1,
+        "y" : 5,
+        "req" : 10133,
+        "ranks" : [ {
+          "description" : "빛의 섬광, 성스러운 빛, 천상의 빛으로 빛의 봉화의 대상을 치유하면 33%의 확률로 신성한 힘 효과 하나가 주어집니다."
+        }, {
+          "description" : "빛의 섬광, 성스러운 빛, 천상의 빛으로 빛의 봉화의 대상을 치유하면 66%의 확률로 신성한 힘 효과 하나가 주어집니다."
+        }, {
+          "description" : "빛의 섬광, 성스러운 빛, 천상의 빛으로 빛의 봉화의 대상을 치유하면 100%의 확률로 신성한 힘 효과 하나가 주어집니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10117,
+        "name" : "축복받은 생명",
+        "icon" : "spell_holy_blessedlife",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "직접 피해를 받으면 50%의 확률로 신성한 힘을 받습니다. 이 효과는 매 8초마다 최대 1번씩만 발동됩니다."
+        }, {
+          "description" : "직접 피해를 받으면 100%의 확률로 신성한 힘을 받습니다. 이 효과는 매 8초마다 최대 1번씩만 발동됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11203,
+        "name" : "여명의 빛",
+        "icon" : "spell_paladin_lightofdawn",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "신성한 힘 1",
+          "castTime" : "즉시 시전",
+          "description" : "신성한 힘 효과를 모두 소모하여 시전자 전방으로 치유력의 에너지를 내보냅니다. 부상이 가장 심한 전방 30미터 내의 공격대원과 파티원을 최대 5명까지 치유하여 신성한 힘 효과 하나당 38의 생명력을 회복시킵니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "보호",
+      "icon" : "ability_paladin_shieldofthetemplar",
+      "backgroundFile" : "PALADINPROTECTION",
+      "overlayColor" : "#4c7fff",
+      "description" : "신성 마법을 이용하여 자신과 아군을 공격으로부터 보호합니다.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : true,
+        "healer" : false,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 31935,
+        "name" : "응징의 방패",
+        "icon" : "spell_holy_avengersshield",
+        "cost" : "기본 마나의 6% ",
+        "range" : "30 yd range",
+        "castTime" : "즉시 시전",
+        "cooldown" : "재사용 대기시간: 15초",
+        "requires" : "방패 필요",
+        "reagents" : [ ],
+        "description" : "적에게 신성한 방패를 날려 116의 신성 피해를 입히고 침묵시킨 후 3초 동안 주문 시전을 방해합니다. 주위 적을 연쇄적으로 가격하며 최대 3명의 대상을 공격합니다.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 53592,
+        "name" : "빛의 감화",
+        "icon" : "ability_paladin_touchedbylight",
+        "reagents" : [ ],
+        "description" : "총 체력이 15%만큼 증가하고 주문 적중이 8%만큼 증가합니다. 또한 힘의 60%만큼 주문력이 증가합니다.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 84839,
+        "name" : "복수심",
+        "icon" : "ability_paladin_shieldofvengeance",
+        "reagents" : [ ],
+        "description" : "피해를 받을 때마다 받은 피해의 5%만큼을, 생명력의 10%까지 전투력으로 전환합니다.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 31878,
+        "name" : "현자의 심판",
+        "icon" : "ability_paladin_judgementofthewise",
+        "reagents" : [ ],
+        "description" : "심판 주문으로 공격 시 10초에 걸쳐 기본 마나의 30%에 해당하는 마나를 회복합니다.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76671,
+        "name" : "천상의 보루 방패",
+        "icon" : "spell_holy_holyprotection",
+        "reagents" : [ ],
+        "description" : "근접 공격을 방패로 방어할 확률이 18%만큼 증가합니다. 특화력 1당 방어 확률이 추가로 2.25%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 12198,
+        "name" : "신앙",
+        "icon" : "spell_holy_blindingheal",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "자신이 시전하는 모든 주문의 치유량과 자신이 받는 모든 치유 효과가 2%만큼 증가합니다."
+        }, {
+          "description" : "자신이 시전하는 모든 주문의 치유량과 자신이 받는 모든 치유 효과가 4%만큼 증가합니다."
+        }, {
+          "description" : "자신이 시전하는 모든 주문의 치유량과 자신이 받는 모든 치유 효과가 6%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10324,
+        "name" : "순결의 문장",
+        "icon" : "inv_mace_46",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "정의의 문장, 진실의 문장, 응징의 문장의 공격력이 6%만큼 증가합니다."
+        }, {
+          "description" : "정의의 문장, 진실의 문장, 응징의 문장의 공격력이 12%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12152,
+        "name" : "영원한 영광",
+        "icon" : "inv_torch_thrown",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "영광의 서약 시전 시 15%의 확률로 신성한 힘을 소모하지 않습니다."
+        }, {
+          "description" : "영광의 서약 시전 시 30%의 확률로 신성한 힘을 소모하지 않습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10372,
+        "name" : "정당한 심판",
+        "icon" : "ability_paladin_judgementsofthejust",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "심판 공격 시 20초 동안 대상의 근접 및 원거리 공격 속도를 10%만큼 감소시킵니다. 응징의 문장 효과의 지속시간이 0.5초만큼 증가합니다."
+        }, {
+          "description" : "심판 공격 시 20초 동안 대상의 근접 및 원거리 공격 속도를 20%만큼 감소시킵니다. 응징의 문장 효과의 지속시간이 1초만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10332,
+        "name" : "강인함",
+        "icon" : "spell_holy_devotion",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "장비 착용으로 인한 방어도가 3%만큼 증가합니다."
+        }, {
+          "description" : "장비 착용으로 인한 방어도가 6%만큼 증가합니다."
+        }, {
+          "description" : "장비 착용으로 인한 방어도가 10%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10336,
+        "name" : "심판의 망치 연마",
+        "icon" : "spell_holy_sealofmight",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "심판의 망치의 재사용 대기시간이 10초만큼 감소합니다."
+        }, {
+          "description" : "심판의 망치의 재사용 대기시간이 20초만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10344,
+        "name" : "신성화된 땅",
+        "icon" : "spell_holy_innerfire",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "신성화 주문의 공격력이 20%만큼 증가하고 소모되는 마나가 40%만큼 감소합니다."
+        }, {
+          "description" : "신성화 주문의 공격력이 40%만큼 증가하고 소모되는 마나가 80%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10346,
+        "name" : "성역",
+        "icon" : "spell_nature_lightningshield",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "근접 치명타 공격에 적중 당할 확률이 2%만큼 감소하고 받는 모든 피해가 3%만큼 감소합니다. 추가로 근접 공격을 방패로 방어하거나 회피할 때 최대 마나의 1%에 해당하는 마나가 회복됩니다."
+        }, {
+          "description" : "근접 치명타 공격에 적중 당할 확률이 4%만큼 감소하고 받는 모든 피해가 7%만큼 감소합니다. 추가로 근접 공격을 방패로 방어하거나 회피할 때 최대 마나의 2%에 해당하는 마나가 회복됩니다."
+        }, {
+          "description" : "근접 치명타 공격에 적중 당할 확률이 6%만큼 감소하고 받는 모든 피해가 10%만큼 감소합니다. 추가로 근접 공격을 방패로 방어하거나 회피할 때 최대 마나의 3%에 해당하는 마나가 회복됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10374,
+        "name" : "정의의 망치",
+        "icon" : "ability_paladin_hammeroftherighteous",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "기본 마나의 12% ",
+          "range" : "근접 거리",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 4.5초",
+          "requires" : "한손 근접 무기 필요",
+          "description" : "현재 대상을 망치로 강타하여 무기 공격력의 30%에 해당하는 피해를 입히고, 사방으로 빛을 내뿜어 8미터 반경 내 모든 적에게 28의 신성 피해를 입힙니다. 신성한 힘 효과 하나가 주어집니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11159,
+        "name" : "빛의 인도자의 분노",
+        "icon" : "inv_mace_82",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "성전사의 일격과 심판의 공격력이 50%만큼 증가하고, 신의 격노와 천벌의 망치로 치명타 공격을 성공시킬 확률이 15%만큼 증가합니다."
+        }, {
+          "description" : "성전사의 일격과 심판의 공격력이 100%만큼 증가하고, 신의 격노와 천벌의 망치로 치명타 공격을 성공시킬 확률이 30%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11161,
+        "name" : "징벌",
+        "icon" : "spell_holy_blessingofstrength",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "방패로 공격을 방어하면 10%의 확률로 8초 내에 가하는 4회의 무기 공격마다 추가 공격 기회를 얻게 됩니다."
+        }, {
+          "description" : "방패로 공격을 방어하면 20%의 확률로 8초 내에 가하는 4회의 무기 공격마다 추가 공격 기회를 얻게 됩니다.다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11607,
+        "name" : "정의의 방패",
+        "icon" : "ability_paladin_shieldofvengeance",
+        "x" : 1,
+        "y" : 3,
+        "req" : 10346,
+        "ranks" : [ {
+          "cost" : "신성한 힘 1",
+          "range" : "근접 거리",
+          "castTime" : "즉시 시전",
+          "requires" : "방패 필요",
+          "description" : "적을 방패로 가격하여 신성 피해를 입힙니다. 신성한 힘 효과를 모두 소모하며 소모한 효과의 수에 따라 더 큰 피해를 입힙니다.\n\n\n\n신성한 힘 1중첩: 피해량 23 증가\n\n신성한 힘 2중첩: 피해량 69 증가\n\n신성한 힘 3중첩: 피해량 138 증가"
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11193,
+        "name" : "위대한 성전사",
+        "icon" : "inv_helmet_74",
+        "x" : 2,
+        "y" : 3,
+        "req" : 10374,
+        "ranks" : [ {
+          "description" : "성전사의 일격 또는 정의의 망치로 주 대상에게 피해를 입히면 10%의 확률로 다음 응징의 방패 재사용 대기시간이 초기화됩니다."
+        }, {
+          "description" : "성전사의 일격 또는 정의의 망치로 주 대상에게 피해를 입히면 20%의 확률로 다음 응징의 방패 재사용 대기시간이 초기화됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10680,
+        "name" : "비호",
+        "icon" : "spell_holy_vindication",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "성전사의 일격과 정의의 망치 사용 시 30초 동안 주 대상의 물리 공격력을 10%만큼 감소시킵니다. 추가로, 심판의 망치로 기절에 면역인 적의 시전을 방해할 수 있습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10356,
+        "name" : "신성한 방패",
+        "icon" : "spell_holy_blessingofprotection",
+        "x" : 1,
+        "y" : 4,
+        "req" : 11607,
+        "ranks" : [ {
+          "description" : "정의의 방패 또는 심문 사용 시 20초 동안 방패의 피해 방어량이 10%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11221,
+        "name" : "빛의 인도",
+        "icon" : "ability_paladin_gaurdedbythelight",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "자신을 대상으로 하는 영광의 서약 주문의 효과가 5%만큼 증가하고, 영광의 서약 주문 시전 시 신성한 방패가 발동합니다."
+        }, {
+          "description" : "자신을 대상으로 하는 영광의 서약 주문의 효과가 10%만큼 증가하고, 영광의 서약 주문 시전 시 신성한 방패가 발동합니다. 추가로 초과 치유되는 생명력은 초과 치유된 양만큼 보호막으로 전환되어 6초 동안 지속됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10334,
+        "name" : "천상의 수호자",
+        "icon" : "spell_holy_powerwordbarrier",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "range" : "100 yd range",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 2분",
+          "description" : "6초 동안 성기사를 제외한 모든 파티원 또는 공격대원이 받는 피해가 20%만큼 감소합니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10370,
+        "name" : "성스러운 임무",
+        "icon" : "spell_holy_divineintervention",
+        "x" : 1,
+        "y" : 5,
+        "req" : 10356,
+        "ranks" : [ {
+          "description" : "심판 주문 시전 시 25%의 확률로 다음 정의의 방패가 치명타로 적중합니다. 15초 동안 지속됩니다."
+        }, {
+          "description" : "심판 주문 시전 시 50%의 확률로 다음 정의의 방패가 치명타로 적중합니다. 15초 동안 지속됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10340,
+        "name" : "기사단의 방패",
+        "icon" : "ability_paladin_shieldofthetemplar",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "응징의 격노 재사용 대기시간이 20초만큼, 고대 왕의 수호자 재사용 대기시간이 45초만큼 감소합니다. 신성한 기도 사용 시 신성한 힘 효과 1개가 주어집니다."
+        }, {
+          "description" : "응징의 격노 재사용 대기시간이 40초만큼, 고대 왕의 수호자 재사용 대기시간이 80초만큼 감소합니다. 신성한 기도 사용 시 신성한 힘 효과 2개가 주어집니다."
+        }, {
+          "description" : "응징의 격노 재사용 대기시간이 60초만큼, 고대 왕의 수호자 재사용 대기시간이 120초만큼 감소합니다. 신성한 기도 사용 시 신성한 힘 효과 3개가 주어집니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10350,
+        "name" : "헌신적인 수호자",
+        "icon" : "spell_holy_ardentdefender",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 3분",
+          "description" : "10초 동안 받는 피해를 20%만큼 감소시킵니다. 효과가 활성화되어 있는 동안 자신을 죽음에 이르도록 만들 수 있는 공격을 받으면 최대 생명력의 15%에 해당하는 생명력을 회복합니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "징벌",
+      "icon" : "spell_holy_auraoflight",
+      "backgroundFile" : "PALADINCOMBAT",
+      "overlayColor" : "#ff0000",
+      "description" : "정의감에 불타는 성전사입니다. 무기와 신성 마법을 이용하여 적을 처벌합니다.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 85256,
+        "name" : "기사단의 선고",
+        "icon" : "spell_paladin_templarsverdict",
+        "cost" : "신성한 힘 1",
+        "range" : "근접 거리",
+        "castTime" : "즉시 시전",
+        "requires" : "근접 무기 필요",
+        "reagents" : [ ],
+        "description" : "즉시 무기로 공격하여 무기 공격력의 일정 비율만큼 피해를 입힙니다. 신성한 힘 효과를 모두 소모하여 더 큰 피해를 입힙니다.\n\n\n\n신성한 힘 1중첩: 무기 공격력의 30%만큼의 피해\n\n신성한 힘 2중첩: 무기 공격력의 90%만큼의 피해\n\n신성한 힘 3중첩: 무기 공격력의 235%만큼의 피해",
+        "keyAbility" : true
+      }, {
+        "spellId" : 20113,
+        "name" : "양손 무기류 전문화",
+        "icon" : "inv_hammer_04",
+        "reagents" : [ ],
+        "description" : "양손 무기의 공격력이 20%만큼 증가합니다.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 53503,
+        "name" : "수호의 빛",
+        "icon" : "ability_paladin_sheathoflight",
+        "reagents" : [ ],
+        "description" : "전투력의 30%만큼 주문력이 증가하고 주문의 적중률이 8%만큼 증가합니다.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 89901,
+        "name" : "대담한 자의 심판",
+        "icon" : "ability_paladin_judgementofthewise",
+        "reagents" : [ ],
+        "description" : "심판 공격 시 10초에 걸쳐 기본 마나의 25%에 해당하는 마나를 회복합니다.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76672,
+        "name" : "빛의 손",
+        "icon" : "ability_paladin_blessedhands",
+        "reagents" : [ ],
+        "description" : "자동 공격 시 8%의 확률로 빛의 손 효과를 발동시켜 다음 시전하는 신성한 힘 능력은 신성한 힘 효과를 소모하지 않고 3중첩 신성한 힘을 소모한 효과를 냅니다. 특화력 1당 발동 확률이 추가로 1%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10647,
+        "name" : "눈에는 눈",
+        "icon" : "spell_holy_eyeforaneye",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "자신을 대상으로 하는 마법 공격으로 피해를 받으면 20%의 확률로 받은 피해의 30%만큼을 공격자에게 되돌려줍니다."
+        }, {
+          "description" : "자신을 대상으로 하는 마법 공격으로 피해를 받으면 40%의 확률로 받은 피해의 30%만큼을 공격자에게 되돌려줍니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10651,
+        "name" : "성전",
+        "icon" : "spell_holy_crusade",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "성전사의 일격, 정의의 망치, 기사단의 선고 주문의 공격력이 10%만큼 증가하고, 신성 충격 주문의 공격력과 치유량이 10%만큼 증가합니다. 또한 적을 처치하고 경험치나 명예 점수를 받으면 이후 15초 동안 다음 성스러운 빛의 치유량이 100%만큼 증가합니다."
+        }, {
+          "description" : "성전사의 일격, 정의의 망치, 기사단의 선고 주문의 공격력이 20%만큼 증가하고, 신성 충격 주문의 공격력과 치유량이 20%만큼 증가합니다. 또한 적을 처치하고 경험치나 명예 점수를 받으면 이후 15초 동안 다음 성스러운 빛의 치유량이 200%만큼 증가합니다."
+        }, {
+          "description" : "성전사의 일격, 정의의 망치, 기사단의 선고 주문의 공격력이 30%만큼 증가하고, 신성 충격 주문의 공격력과 치유량이 30%만큼 증가합니다. 또한 적을 처치하고 경험치나 명예 점수를 받으면 이후 15초 동안 다음 성스러운 빛의 치유량이 300%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11612,
+        "name" : "심판 연마",
+        "icon" : "ability_paladin_judgementblue",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "심판 주문의 사거리가 10미터만큼 증가합니다."
+        }, {
+          "description" : "심판 주문의 사거리가 20미터만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12153,
+        "name" : "수호신의 은총",
+        "icon" : "spell_holy_sealofprotection",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "보호의 손길의 재사용 대기시간이 60초만큼 단축되고 자유의 손길의 지속시간이 2초만큼 증가합니다."
+        }, {
+          "description" : "보호의 손길의 재사용 대기시간이 2분만큼 단축되고 자유의 손길의 지속시간이 4초만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11269,
+        "name" : "법규",
+        "icon" : "inv_relics_libramofhope",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "성전사의 일격, 정의의 망치, 영광의 서약 주문의 극대화 적중도가 5%만큼 증가합니다."
+        }, {
+          "description" : "성전사의 일격, 정의의 망치, 영광의 서약 주문의 극대화 적중도가 10%만큼 증가합니다."
+        }, {
+          "description" : "성전사의 일격, 정의의 망치, 영광의 서약 주문의 극대화 적중도가 15%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11611,
+        "name" : "심판의 추격",
+        "icon" : "spell_holy_persuitofjustice",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "기절, 공포, 이동 불가 효과에 걸리면 50%의 확률로 신성한 힘 효과 하나를 받습니다. 추가로, 자신과 탈것의 이동 속도가 8%만큼 증가합니다. 다른 이동 속도 증가 효과와 중복 적용되지 않습니다."
+        }, {
+          "description" : "기절, 공포, 이동 불가 효과에 걸리면 100%의 확률로 신성한 힘 효과 하나를 받습니다. 추가로, 자신과 탈것의 이동 속도가 15%만큼 증가합니다. 다른 이동 속도 증가 효과와 중복 적용되지 않습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10665,
+        "name" : "교감",
+        "icon" : "ability_paladin_judgementofthewise",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "자신의 오라로 파티 또는 공격대의 공격력이 3%만큼 증가하고, 자신의 공격력이 추가로 2%만큼 증가합니다. 또한 심판 공격 시 재충전 효과를 발동시킵니다.\n\n\n\n재충전 - 최대 10명의 파티원 혹은 공격대원이 매 10초마다 최대 마나의 1%에 해당하는 마나를 회복합니다. 15초 동안 지속됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10661,
+        "name" : "전쟁의 기술",
+        "icon" : "ability_paladin_artofwar",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "자동 공격 시 7%의 확률로 다음 퇴마술 주문이 즉시 시전되고 마나를 소모하지 않으며 100%의 추가 피해를 입힙니다."
+        }, {
+          "description" : "자동 공격 시 14%의 확률로 다음 퇴마술 주문이 즉시 시전되고 마나를 소모하지 않으며 100%의 추가 피해를 입힙니다."
+        }, {
+          "description" : "자동 공격 시 20%의 확률로 다음 퇴마술 주문이 즉시 시전되고 마나를 소모하지 않으며 100%의 추가 피해를 입힙니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11610,
+        "name" : "법의 힘",
+        "icon" : "ability_paladin_judgementred",
+        "x" : 2,
+        "y" : 2,
+        "req" : 11612,
+        "ranks" : [ {
+          "description" : "15미터 이상 떨어진 적에게 심판을 내리면 50%의 확률로 4초 동안 이동 속도가 45%만큼 증가합니다."
+        }, {
+          "description" : "15미터 이상 떨어진 적에게 심판을 내리면 100%의 확률로 4초 동안 이동 속도가 45%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11204,
+        "name" : "천상의 폭풍",
+        "icon" : "ability_paladin_divinestorm",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "기본 마나의 5% ",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 4.5초",
+          "requires" : "근접 무기 필요",
+          "description" : "즉시 무기로 공격하여 8미터 반경 내에 있는 모든 적에게 무기 공격력의 60%에 해당하는 피해를 입힙니다. 또한 입힌 피해의 최대 25%만큼 최대 3명의 파티원 혹은 공격대원의 생명력을 회복시킵니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11207,
+        "name" : "비난",
+        "icon" : "spell_holy_fistofjustice",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "기본 마나의 10% ",
+          "range" : "근접 거리",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 10초",
+          "description" : "대상이 4초 동안 같은 계열의 주문을 시전하는 것을 방해합니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11372,
+        "name" : "신성한 전투",
+        "icon" : "inv_sword_136",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "가속 효과로 성전사의 일격과 천상의 폭풍의 재사용 대기시간이 단축됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10643,
+        "name" : "지휘의 문장",
+        "icon" : "ability_warrior_innerrage",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "정의의 문장, 진실의 문장, 응징의 문장으로 피해를 입힐 때 무기 공격력의 7%에 해당하는 피해를 추가로 입히고 정의의 문장 공격 시 최대 2명의 대상을 추가로 공격합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10669,
+        "name" : "축성의 분노",
+        "icon" : "ability_paladin_sanctifiedwrath",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "천벌의 망치로 치명타를 적중시킬 확률이 20%만큼 증가하고 응징의 격노 주문의 재사용 대기시간이 20초만큼 감소합니다. 응징의 격노가 활성화되어 있는 동안 항상 천벌의 망치를 사용할 수 있습니다."
+        }, {
+          "description" : "천벌의 망치로 치명타를 적중시킬 확률이 40%만큼 증가하고 응징의 격노 주문의 재사용 대기시간이 40초만큼 감소합니다. 응징의 격노가 활성화되어 있는 동안 항상 천벌의 망치를 사용할 수 있습니다."
+        }, {
+          "description" : "천벌의 망치로 치명타를 적중시킬 확률이 60%만큼 증가하고 응징의 격노 주문의 재사용 대기시간이 60초만큼 감소합니다. 응징의 격노가 활성화되어 있는 동안 항상 천벌의 망치를 사용할 수 있습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11271,
+        "name" : "관대한 치유사",
+        "icon" : "spell_holy_rune",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "영광의 서약으로 자신이 아닌 다른 대상을 치유할 때 신성한 힘 효과 하나당 영광의 서약의 치유 효과가 25%만큼 증가하고 공격력이 2%만큼 증가합니다. 10초 동안 지속됩니다."
+        }, {
+          "description" : "영광의 서약으로 자신이 아닌 다른 대상을 치유할 때 신성한 힘 효과 하나당 영광의 서약의 치유 효과가 50%만큼 증가하고 공격력이 4%만큼 증가합니다. 10초 동안 지속됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10663,
+        "name" : "참회",
+        "icon" : "spell_holy_prayerofhealing",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "기본 마나의 9% ",
+          "range" : "20 yd range",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 1분",
+          "description" : "적을 최대 1분 동안 회고의 시간을 가지게 하여 행동 불가 상태로 만듭니다. 대상이 피해를 입으면 깨어납니다. 악마, 용족, 거인, 인간형, 언데드에게 사용할 수 있습니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10633,
+        "name" : "신성한 목적",
+        "icon" : "spell_holy_divinepurpose",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "일부 공격 주문 시전 시 20%의 확률로 신성한 힘 효과를 얻습니다.\n\n\n\n- 심판\n\n- 퇴마술\n\n- 기사단의 선고\n\n- 천상의 폭풍\n\n- 심문\n\n- 신의 격노\n\n- 천벌의 망치"
+        }, {
+          "description" : "일부 공격 주문 시전 시 40%의 확률로 신성한 힘 효과를 얻습니다.\n\n\n\n- 심판\n\n- 퇴마술\n\n- 기사단의 선고\n\n- 천상의 폭풍\n\n- 심문\n\n- 신의 격노\n\n- 천벌의 망치"
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10677,
+        "name" : "취조",
+        "icon" : "ability_paladin_righteousvengeance",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "진실의 문장으로 입히는 주기적인 피해가 10%만큼 증가하고 심문의 지속시간이 50%만큼 증가합니다."
+        }, {
+          "description" : "진실의 문장으로 입히는 주기적인 피해가 20%만큼 증가하고 심문의 지속시간이 100%만큼 증가합니다."
+        }, {
+          "description" : "진실의 문장으로 입히는 주기적인 피해가 30%만큼 증가하고 심문의 지속시간이 150%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11211,
+        "name" : "희생의 실천",
+        "icon" : "ability_paladin_blessedhands",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "자유의 손길과 구원의 손길, 희생의 손길 주문의 재사용 대기시간이 10%만큼, 주문에 소비되는 마나가 10%만큼 감소합니다. 추가로 자신에게 정화 사용 시 이동 방해 효과 1개가 제거됩니다."
+        }, {
+          "description" : "자유의 손길과 구원의 손길, 희생의 손길 주문의 재사용 대기시간이 20%만큼, 주문에 소비되는 마나가 20%만큼 감소합니다. 추가로 자신에게 정화 사용 시 이동 방해 효과 1개가 제거됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11222,
+        "name" : "열광",
+        "icon" : "spell_holy_proclaimchampion_02",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "신성한 힘 3",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 2분",
+          "description" : "성전사의 일격 사용 시 다음 20초 동안 매 공격마다 신성한 힘 효과 3개가 주어집니다. 사용 시 신성한 힘 효과 3개가 필요하지만 효과가 소비되지는 않습니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

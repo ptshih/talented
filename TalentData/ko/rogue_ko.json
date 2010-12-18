@@ -1,0 +1,1000 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 4,
+      "name" : "도적",
+      "powerType" : "ENERGY",
+      "powerTypeId" : 3
+    },
+    "talentTrees" : [ {
+      "name" : "암살",
+      "icon" : "ability_rogue_eviscerate",
+      "backgroundFile" : "RogueAssassination",
+      "overlayColor" : "#7fcc7f",
+      "description" : "치명적인 독극물의 대가입니다. 단검으로 잔인한 일격을 날려 적을 처치합니다.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 1329,
+        "name" : "절단",
+        "icon" : "ability_rogue_shadowstrikes",
+        "cost" : "기력 60",
+        "range" : "근접 거리",
+        "castTime" : "즉시 시전",
+        "requires" : "단검류 필요",
+        "reagents" : [ ],
+        "description" : "양쪽 손에 장착한 무기로 적을 즉시 공격하여 각 무기마다 무기 공격력의 63%에 7의 피해를 입힙니다. 독에 걸린 대상에게는 공격력이 20%만큼 증가합니다. 연계 점수 2점이 주어집니다.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 84601,
+        "name" : "암살자의 결의",
+        "icon" : "ability_rogue_sinistercalling",
+        "reagents" : [ ],
+        "description" : "단검을 착용하는 동안 최대 기력이 20만큼 증가하고 근접 공격력이 15%만큼 증가합니다.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 14117,
+        "name" : "독 연구",
+        "icon" : "ability_poisons",
+        "reagents" : [ ],
+        "description" : "맹독을 대상에 감염시킬 확률이 20%만큼 증가하고 순간 효과 독을 대상에 감염시킬 확률이 50%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76803,
+        "name" : "강력한 독",
+        "icon" : "trade_brewpoison",
+        "reagents" : [ ],
+        "description" : "독으로 입히는 피해가 28%만큼 증가합니다. 특화력 1당 피해가 추가로 3.5%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 6514,
+        "name" : "죽음의 기운",
+        "icon" : "ability_rogue_deadlymomentum",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "자신이 결정타를 가하여 적을 처치한 후 경험치나 명예 점수를 받으면 50%의 확률로 10초 이내에 시도하는 다음 공격이 치명타로 적중할 확률이 40%만큼 증가하고, 난도질과 만회 능력이 초기화됩니다."
+        }, {
+          "description" : "자신이 결정타를 가하여 적을 처치한 후 경험치나 명예 점수를 받으면 10초 이내에 시도하는 다음 공격이 치명타로 적중할 확률이 40%만큼 증가하고, 난도질과 만회 능력이 초기화됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 276,
+        "name" : "최후의 일격",
+        "icon" : "ability_rogue_eviscerate",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "절개와 독살의 공격력이 7%만큼 증가합니다."
+        }, {
+          "description" : "절개와 독살의 공격력이 14%만큼 증가합니다."
+        }, {
+          "description" : "절개와 독살의 공격력이 20%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 269,
+        "name" : "치명상",
+        "icon" : "ability_criticalstrike",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "사악한 일격, 기습, 절단, 과다출혈의 치명타 피해 보너스가 10%만큼 증가합니다."
+        }, {
+          "description" : "사악한 일격, 기습, 절단, 과다출혈의 치명타 피해 보너스가 20%만큼 증가합니다."
+        }, {
+          "description" : "사악한 일격, 기습, 절단, 과다출혈의 치명타 피해 보너스가 30%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 273,
+        "name" : "무정함",
+        "icon" : "ability_druid_disembowel",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "20%의 확률로 근접 마무리 일격 사용 후 대상에 대한 연계 점수 1점이 추가됩니다."
+        }, {
+          "description" : "40%의 확률로 근접 마무리 일격 사용 후 대상에 대한 연계 점수 1점이 추가됩니다."
+        }, {
+          "description" : "60%의 확률로 근접 마무리 일격 사용 후 대상에 대한 연계 점수 1점이 추가됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1721,
+        "name" : "쾌속",
+        "icon" : "ability_rogue_quickrecovery",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "자신을 대상으로 하는 모든 치유 효과가 10%만큼, 이동 속도가 8%만큼 증가합니다. 다른 이동 속도 증가 효과와 중복 적용되지 않습니다."
+        }, {
+          "description" : "자신을 대상으로 하는 모든 치유 효과가 20%만큼, 이동 속도가 15%만큼 증가합니다. 다른 이동 속도 증가 효과와 중복 적용되지 않습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 277,
+        "name" : "상처 꿰뚫기",
+        "icon" : "ability_backstab",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "기습으로 치명타를 적중시킬 확률이 10%만큼 증가하고 절단으로 치명타를 적중시킬 확률이 5%만큼 증가합니다."
+        }, {
+          "description" : "기습으로 치명타를 적중시킬 확률이 20%만큼 증가하고 절단으로 치명타를 적중시킬 확률이 10%만큼 증가합니다."
+        }, {
+          "description" : "기습으로 치명타를 적중시킬 확률이 30%만큼 증가하고 절단으로 치명타를 적중시킬 확률이 15%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 6515,
+        "name" : "검은 패",
+        "icon" : "ability_rogue_blackjack",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "혼절 효과가 사라진 후, 8초 동안 대상의 공격력이 35%만큼 감소합니다."
+        }, {
+          "description" : "혼절 효과가 사라진 후, 8초 동안 대상의 공격력이 70%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2065,
+        "name" : "맹독 조합",
+        "icon" : "ability_rogue_deadlybrew",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "순간 효과 독, 상처 감염 독, 정신 마비 독으로 대상을 감염시킬 때 50%의 확률로 신경 마비 독을 추가로 감염시킵니다."
+        }, {
+          "description" : "순간 효과 독, 상처 감염 독, 정신 마비 독으로 대상을 감염시킬 때 100%의 확률로 신경 마비 독을 추가로 감염시킵니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 280,
+        "name" : "냉혈",
+        "icon" : "spell_ice_lament",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 2분",
+          "description" : "활성화되면 25의 기력을 회복하고 주기적인 효과가 아닌 다음 공격 기술의 치명타 적중률이 100%만큼 증가합니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 682,
+        "name" : "치명적인 독",
+        "icon" : "ability_rogue_feigndeath",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "독으로 인한 피해가 7%만큼 증가하고 칼날 부채를 사용할 때 33%의 확률로 착용 중인 근접 무기로 적에게 독을 입힙니다."
+        }, {
+          "description" : "독으로 인한 피해가 14%만큼 증가하고 칼날 부채를 사용할 때 67%의 확률로 착용 중인 근접 무기로 적에게 독을 입힙니다."
+        }, {
+          "description" : "독으로 인한 피해가 20%만큼 증가하고 칼날 부채를 사용할 때 100%의 확률로 착용 중인 근접 무기로 적에게 독을 입힙니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11209,
+        "name" : "무감각한 신경",
+        "icon" : "ability_rogue_deadenednerves",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "받는 모든 피해가 3%만큼 감소합니다."
+        }, {
+          "description" : "받는 모든 피해가 7%만큼 감소합니다."
+        }, {
+          "description" : "받는 모든 피해가 10%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 283,
+        "name" : "운명의 낙인",
+        "icon" : "ability_rogue_stayofexecution",
+        "x" : 1,
+        "y" : 3,
+        "req" : 280,
+        "ranks" : [ {
+          "description" : "연계 점수가 주어지는 기술로 적에게 치명타 공격을 적중시킬 경우 50%의 확률로 연계 점수가 추가됩니다."
+        }, {
+          "description" : "연계 점수가 주어지는 기술로 적에게 치명타 공격을 적중시킬 경우 100%의 확률로 연계 점수가 추가됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 6516,
+        "name" : "살의",
+        "icon" : "spell_shadow_deathscream",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "생명력이 35% 미만인 적에게 기습을 사용하면 즉시 15의 기력을 회복합니다."
+        }, {
+          "description" : "생명력이 35% 미만인 적에게 기습을 사용하면 즉시 30의 기력을 회복합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 281,
+        "name" : "과잉 살상",
+        "icon" : "ability_hunter_rapidkilling",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "은신 도중 혹은 은신이 풀리고 나서 20초 동안, 30%의 기력을 추가로 회복합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1715,
+        "name" : "독의 대가",
+        "icon" : "ability_creature_poison_06",
+        "x" : 2,
+        "y" : 4,
+        "req" : 682,
+        "ranks" : [ {
+          "description" : "자신의 독에 걸린 대상이 입는 주문 피해가 8%만큼 증가하고, 자신에게 걸린 모든 독 효과의 지속시간이 50%만큼 감소하며, 독살 시 맹독을 소비하지 않습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 278,
+        "name" : "약점 노출 연마",
+        "icon" : "ability_warrior_riposte",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "약점 노출 사용 시 50%의 확률로 소비된 연계 점수를 되돌려받습니다."
+        }, {
+          "description" : "약점 노출 사용 시 100%의 확률로 소비된 연계 점수를 되돌려받습니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2070,
+        "name" : "신속한 결말",
+        "icon" : "ability_rogue_cuttothechase",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "절개와 독살 공격 시 33%의 확률로 난도질의 지속시간이 연계 점수 5점의 지속시간으로 갱신됩니다."
+        }, {
+          "description" : "절개와 독살 공격 시 67%의 확률로 난도질의 지속시간이 연계 점수 5점의 지속시간으로 갱신됩니다."
+        }, {
+          "description" : "절개와 독살 공격 시 100%의 확률로 난도질의 지속시간이 연계 점수 5점의 지속시간으로 갱신됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 6517,
+        "name" : "맹독 상처",
+        "icon" : "ability_rogue_venomouswounds",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "자신의 독에 걸린 대상에게 파열, 목조르기로 피해를 입힐 때마다 30%의 확률로 26의 자연 피해를 추가로 입히고 10의 기력을 회복합니다. 만약 자신의 파열이 걸린 대상이 죽으면, 남은 파열 효과의 지속시간에 비례하여 기력을 회복합니다."
+        }, {
+          "description" : "자신의 독에 걸린 대상에게 파열, 목조르기로 피해를 입힐 때마다 60%의 확률로 26의 자연 피해를 추가로 입히고 10의 기력을 회복합니다. 만약 자신의 파열이 걸린 대상이 죽으면, 남은 파열 효과의 지속시간에 비례하여 기력을 회복합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2071,
+        "name" : "원한",
+        "icon" : "ability_rogue_deadliness",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "range" : "30 yd range",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 2분",
+          "description" : "대상에게 죽음의 징표를 남깁니다. 자신이 대상에 입히는 모든 피해가 20%만큼 증가하고, 대상이 은신이나 투명화 상태가 되어도 볼 수 있습니다. 30초 동안 지속됩니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "전투",
+      "icon" : "ability_backstab",
+      "backgroundFile" : "RogueCombat",
+      "overlayColor" : "#ff7f00",
+      "description" : "민첩하고 기민한 모험가입니다. 적과 정면으로 맞서 싸웁니다.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 13877,
+        "name" : "폭풍의 칼날",
+        "icon" : "ability_warrior_punishingblow",
+        "cost" : "기력 25",
+        "castTime" : "즉시 시전",
+        "cooldown" : "재사용 대기시간: 30초",
+        "reagents" : [ ],
+        "description" : "활성화되면, 공격 시 주위의 적 하나를 추가로 공격하지만 기력 회복 속도가 20%만큼 감소합니다.15초 동안 지속됩니다.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 13852,
+        "name" : "비범한 손재주",
+        "icon" : "ability_dualwield",
+        "reagents" : [ ],
+        "description" : "보조 무기와 투척 무기의 공격력이 75%만큼 증가합니다.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 61329,
+        "name" : "활력",
+        "icon" : "ability_warrior_revenge",
+        "reagents" : [ ],
+        "description" : "기력의 회복 속도가 25%만큼, 전투력이 20%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76806,
+        "name" : "양손잡이",
+        "icon" : "inv_weapon_shortblade_15",
+        "reagents" : [ ],
+        "description" : "주 무기 공격 시 16%의 확률로 보조 무기 공격 기회가 추가로 주어집니다. 특화력 1당 추가 공격 확률이 추가로 2.00%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 6395,
+        "name" : "만회 연마",
+        "icon" : "ability_rogue_improvedrecuperate",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "만회 사용 시 최대 생명력의 1%에 해당하는 생명력을 추가로 회복하고 만회 능력이 활성화되어 있는 동안 받는 모든 피해가 3%만큼 감소합니다."
+        }, {
+          "description" : "만회 사용 시 최대 생명력의 2%에 해당하는 생명력을 추가로 회복하고 만회 능력이 활성화되어 있는 동안 받는 모든 피해가 6%만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 201,
+        "name" : "사악한 일격 연마",
+        "icon" : "spell_shadow_ritualofsacrifice",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "사악한 일격의 공격력이 10%만큼 증가하고 사악한 일격 사용 시 소모되는 기력이 2만큼 감소합니다."
+        }, {
+          "description" : "사악한 일격의 공격력이 20%만큼 증가하고 사악한 일격 사용 시 소모되는 기력이 4만큼 감소합니다."
+        }, {
+          "description" : "사악한 일격의 공격력이 30%만큼 증가하고 사악한 일격 사용 시 소모되는 기력이 6만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 181,
+        "name" : "정밀함",
+        "icon" : "ability_marksmanship",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "독 공격과 무기의 적중률이 2%만큼 증가합니다."
+        }, {
+          "description" : "독 공격과 무기의 적중률이 4%만큼 증가합니다."
+        }, {
+          "description" : "독 공격과 무기의 적중률이 6%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1827,
+        "name" : "난도질 연마",
+        "icon" : "ability_rogue_slicedice",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "난도질의 지속시간이 25%만큼 증가합니다."
+        }, {
+          "description" : "난도질의 지속시간이 50%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 222,
+        "name" : "전력 질주 연마",
+        "icon" : "ability_rogue_sprint",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "전력 질주 사용 시 50%의 확률로 모든 이동 방해 효과에서 벗어납니다."
+        }, {
+          "description" : "전력 질주 사용 시 100%의 확률로 모든 이동 방해 효과에서 벗어납니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1122,
+        "name" : "공격성",
+        "icon" : "ability_racial_avatar",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "사악한 일격과 기습 및 절개의 공격력이 7%만큼 증가합니다."
+        }, {
+          "description" : "사악한 일격과 기습 및 절개의 공격력이 14%만큼 증가합니다."
+        }, {
+          "description" : "사악한 일격과 기습 및 절개의 공격력이 20%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 206,
+        "name" : "발차기 연마",
+        "icon" : "ability_kick",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "발차기에 적중한 적을 1.50초 동안 침묵하도록 만듭니다."
+        }, {
+          "description" : "발차기에 적중한 적을 3초 동안 침묵하도록 만듭니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 186,
+        "name" : "번개같은 반사 신경",
+        "icon" : "spell_nature_invisibilty",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "적의 공격을 회피할 확률이 3%만큼 증가하고 공격 속도가 2%만큼 증가합니다."
+        }, {
+          "description" : "적의 공격을 회피할 확률이 6%만큼 증가하고 공격 속도가 4%만큼 증가합니다."
+        }, {
+          "description" : "적의 공격을 회피할 확률이 9%만큼 증가하고 공격 속도가 6%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11171,
+        "name" : "약점 공격",
+        "icon" : "inv_sword_97",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "기력 40",
+          "range" : "근접 거리",
+          "castTime" : "즉시 시전",
+          "requires" : "근접 무기 필요",
+          "description" : "즉시 공격하여 일반 무기 공격력의 81%에 해당하는 피해를 입히고 같은 대상을 공격하는 다음 마무리 일격의 효과를 15초 동안 20%만큼 증가시킵니다. 1의 연계 점수가 주어집니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 6511,
+        "name" : "강화된 가죽",
+        "icon" : "ability_rogue_reinforcedleather",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "천과 가죽 아이템에 의한 방어도가 25%만큼 증가합니다."
+        }, {
+          "description" : "천과 가죽 아이템에 의한 방어도가 50%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 203,
+        "name" : "후려치기 연마",
+        "icon" : "ability_gouge",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "후려치기의 지속시간이 1초만큼 증가하고 후려치기에 소모되는 기력이 15만큼 감소합니다."
+        }, {
+          "description" : "후려치기의 지속시간이 2초만큼 증가하고 후려치기에 소모되는 기력이 30만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1825,
+        "name" : "전투 능력",
+        "icon" : "inv_weapon_shortblade_38",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "보조 무기로 공격을 적중시켰을 경우 20%의 확률로 5의 기력이 회복됩니다."
+        }, {
+          "description" : "보조 무기로 공격을 적중시켰을 경우 20%의 확률로 10의 기력이 회복됩니다."
+        }, {
+          "description" : "보조 무기로 공격을 적중시켰을 경우 20%의 확률로 15의 기력이 회복됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1706,
+        "name" : "칼날 비틀기",
+        "icon" : "ability_rogue_bladetwisting",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "근접 공격으로 피해를 입혔을 때 20%의 확률로 4초 동안 대상을 멍해지게 만들고 이동 속도를 70%만큼 감소시킵니다."
+        }, {
+          "description" : "근접 공격으로 피해를 입혔을 때 40%의 확률로 8초 동안 대상을 멍해지게 만들고 이동 속도를 70%만큼 감소시킵니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2072,
+        "name" : "투척술 전문화",
+        "icon" : "ability_rogue_throwingspecialization",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "투척과 죽음의 투척의 사정거리가 5미터만큼 증가하고 죽음의 투척 사용 시 50%의 확률로 3초 동안 대상의 주문 시전을 방해합니다."
+        }, {
+          "description" : "투척과 죽음의 투척의 사정거리가 10미터만큼 증가하고 죽음의 투척 사용 시 100%의 확률로 3초 동안 대상의 주문 시전을 방해합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 205,
+        "name" : "아드레날린 촉진",
+        "icon" : "spell_shadow_shadowworddominate",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 3분",
+          "description" : "15초 동안 기력의 회복 속도가 100%만큼, 근접 공격 속도가 20%만큼 증가합니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2074,
+        "name" : "야만적인 전투",
+        "icon" : "ability_creature_disease_03",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "전체 전투력이 2%만큼 증가하고 자신의 독이 걸린 대상은 받는 모든 물리 피해가 2%만큼 증가합니다."
+        }, {
+          "description" : "전체 전투력이 4%만큼 증가하고 자신의 독이 걸린 대상은 받는 모든 물리 피해가 4%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11174,
+        "name" : "도적의 간계",
+        "icon" : "ability_rogue_preyontheweak",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "사악한 일격과 약점 공격 능력 사용 시 33%의 확률로 적의 방어를 꿰뚫어볼 수 있는 통찰 효과를 얻어 해당 적에 대한 공격력이 최대 30%만큼 증가합니다. 시간이 지나면 적이 적응하여 효과를 무마할 수 있으며, 다른 적을 공격하면 효과가 처음부터 다시 시작됩니다."
+        }, {
+          "description" : "사악한 일격과 약점 공격 능력 사용 시 67%의 확률로 적의 방어를 꿰뚫어볼 수 있는 통찰 효과를 얻어 해당 적에 대한 공격력이 최대 30%만큼 증가합니다. 시간이 지나면 적이 적응하여 효과를 무마할 수 있으며, 다른 적을 공격하면 효과가 처음부터 다시 시작됩니다."
+        }, {
+          "description" : "사악한 일격과 약점 공격 능력 사용 시 100%의 확률로 적의 방어를 꿰뚫어볼 수 있는 통찰 효과를 얻어 해당 적에 대한 공격력이 최대 30%만큼 증가합니다. 시간이 지나면 적이 적응하여 효과를 무마할 수 있으며, 다른 적을 공격하면 효과가 처음부터 시작됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 6513,
+        "name" : "잠들지 않는 칼날",
+        "icon" : "ability_rogue_restlessblades",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "마무리 일격으로 피해를 입히면 아드레날린 촉진, 광기의 학살자, 전력 질주의 재사용 대기시간이 연계 점수당 1초만큼 감소합니다."
+        }, {
+          "description" : "마무리 일격으로 피해를 입히면 아드레날린 촉진, 광기의 학살자, 전력 질주의 재사용 대기시간이 연계 점수당 2초만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2076,
+        "name" : "광기의 학살자",
+        "icon" : "ability_rogue_murderspree",
+        "x" : 1,
+        "y" : 6,
+        "req" : 205,
+        "ranks" : [ {
+          "range" : "10 yd range",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 2분",
+          "requires" : "근접 무기 필요",
+          "description" : "적의 그림자 사이로 숨어 들어 10미터 이내의 다른 적에게 다가가 총 5번까지 매 0.5초마다 쌍수로 적을 공격합니다. 효과가 지속되는 동안 모든 공격력이 20%만큼 증가합니다. 같은 대상을 여러 번 공격할 수 있습니다. 투명 상태의 적이나 은신 상태의 적은 공격할 수 없습니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "잠행",
+      "icon" : "ability_stealth",
+      "backgroundFile" : "RogueSubtlety",
+      "overlayColor" : "#4c7fff",
+      "description" : "어둠의 추적자입니다. 그림자 속에 숨어 있다가 희생자가 눈치챌 틈도 없이 기습 공격합니다.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 36554,
+        "name" : "그림자 밟기",
+        "icon" : "ability_rogue_shadowstep",
+        "cost" : "기력 10",
+        "range" : "25 yd range",
+        "castTime" : "즉시 시전",
+        "cooldown" : "재사용 대기시간: 20초",
+        "reagents" : [ ],
+        "description" : "그림자 사이로 숨어 들어 적의 배후에서 나타납니다. 10초 내에 사용하는 다음 매복, 목조르기 기술은 공격력이 추가로 30%만큼 증가합니다. 3초 동안 이동 속도가 70%만큼 증가합니다.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 31223,
+        "name" : "잠행의 대가",
+        "icon" : "ability_rogue_masterofsubtlety",
+        "reagents" : [ ],
+        "description" : "은신 중에 가한 공격과 은신이 풀린 후 6초 동안에 가한 공격은 10%의 추가 피해를 입힙니다.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 31220,
+        "name" : "사악한 충동",
+        "icon" : "ability_rogue_sinistercalling",
+        "reagents" : [ ],
+        "description" : "총 민첩성이 25%만큼 증가합니다. 기습과 과다출혈로 증가하는 백분율 피해가 추가로 25%만큼 증가합니다.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76808,
+        "name" : "집행자",
+        "icon" : "inv_axe_06",
+        "reagents" : [ ],
+        "description" : "Increases the damage done by all your finishing moves, and the effectiveness of your Slice and Dice, by 16%.  Each point of Mastery increases damage by an additional 2.0%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 244,
+        "name" : "밤추적자",
+        "icon" : "ability_stealth",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "은신 상태의 이동 속도가 7%만큼 증가하고 은신의 재사용 대기시간이 3초만큼 단축됩니다."
+        }, {
+          "description" : "은신 상태의 이동 속도가 15%만큼 증가하고 은신의 재사용 대기시간이 6초만큼 단축됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 263,
+        "name" : "매복 연마",
+        "icon" : "ability_rogue_ambush",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "매복으로 치명타를 성공시킬 확률이 20%만큼, 매복의 공격력이 5%만큼 증가합니다."
+        }, {
+          "description" : "매복으로 치명타를 성공시킬 확률이 40%만큼, 매복의 공격력이 10%만큼 증가합니다."
+        }, {
+          "description" : "매복으로 치명타를 성공시킬 확률이 60%만큼, 매복의 공격력이 15%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2244,
+        "name" : "가혹한 일격",
+        "icon" : "ability_warrior_decisivestrike",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "연계 점수당 7%의 확률로 마무리 일격 사용 후 25의 기력을 회복합니다."
+        }, {
+          "description" : "연계 점수당 14%의 확률로 마무리 일격 사용 후 25의 기력을 회복합니다."
+        }, {
+          "description" : "연계 점수당 20%의 확률로 마무리 일격 사용 후 25의 기력을 회복합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 247,
+        "name" : "약삭빠름",
+        "icon" : "spell_magic_lesserinvisibilty",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "소멸과 실명의 재사용 대기시간이 30초만큼 감소하고 그림자 망토의 재사용 대기시간이 15초만큼 감소합니다."
+        }, {
+          "description" : "소멸과 실명의 재사용 대기시간이 60초만큼 감소하고 그림자 망토의 재사용 대기시간이 30초만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2077,
+        "name" : "습격",
+        "icon" : "ability_rogue_waylay",
+        "x" : 1,
+        "y" : 1,
+        "req" : 263,
+        "ranks" : [ {
+          "description" : "매복과 기습이 적중하면 50%의 확률로 적을 혼란스럽게 만들어 8초 동안 적의 근접 및 원거리 공격 간격을 20%만큼 늘이고 이동 속도를 50%만큼 감소시킵니다."
+        }, {
+          "description" : "매복과 기습이 적중하면 100%의 확률로 적을 혼란스럽게 만들어 8초 동안 적의 근접 및 원거리 공격 간격을 20%만큼 늘이고 이동 속도를 50%만큼 감소시킵니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 261,
+        "name" : "기회 포착",
+        "icon" : "ability_rogue_bloodsplatter",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "기습, 절단, 목조르기, 매복의 공격력이 10%만큼 증가합니다."
+        }, {
+          "description" : "기습, 절단, 목조르기, 매복의 공격력이 20%만큼 증가합니다."
+        }, {
+          "description" : "기습, 절단, 목조르기, 매복의 공격력이 30%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 245,
+        "name" : "선제 공격",
+        "icon" : "spell_shadow_fumble",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "매복, 목조르기, 비열한 습격 사용 시 50%의 확률로 대상에 대한 연계 점수 1점이 추가됩니다."
+        }, {
+          "description" : "매복, 목조르기, 비열한 습격 사용 시 100%의 확률로 대상에 대한 연계 점수 1점이 추가됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11665,
+        "name" : "왕성한 회복력",
+        "icon" : "ability_rogue_sturdyrecuperate",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "만회 효과를 강화하여 주기적인 회복 효과가 발생할 때마다 기력을 4만큼 회복합니다."
+        }, {
+          "description" : "만회 효과를 강화하여 주기적인 회복 효과가 발생할 때마다 기력을 8만큼 회복합니다."
+        }, {
+          "description" : "만회 효과를 강화하여 주기적인 회복 효과가 발생할 때마다 기력을 12만큼 회복합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 6519,
+        "name" : "약점 포착",
+        "icon" : "ability_rogue_findweakness",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "매복, 목조르기와 비열한 습격 사용 시 적의 약점을 노출시켜 10초 동안 가하는 공격은 적 방어도를 25%만큼 무시합니다."
+        }, {
+          "description" : "매복, 목조르기와 비열한 습격 사용 시 적의 약점을 노출시켜 10초 동안 가하는 공격은 적 방어도를 50%만큼 무시합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 681,
+        "name" : "과다출혈",
+        "icon" : "spell_shadow_lifedrain",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "기력 35",
+          "range" : "근접 거리",
+          "castTime" : "즉시 시전",
+          "requires" : "근접 무기 필요",
+          "description" : "적에게 즉시 일격을 가하여 무기 공격력의 69%(단검 착용 시 100%)만큼 피해를 입히고 1분 동안 출혈 효과로 인한 피해를 30%만큼 증가시킵니다. 1의 연계 점수가 주어집니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2078,
+        "name" : "도둑의 명예",
+        "icon" : "ability_rogue_honoramongstthieves",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "파티원과 공격대원의 치명타 및 주문 극대화 적중률을 5%만큼 증가시킵니다. 파티원이나 공격대원의 주문 또는 능력이 치명타 및 극대화 적중 시 33%의 확률로 현재 대상에 연계 점수가 추가됩니다. 이 효과는 4초에 1번씩만 발동됩니다."
+        }, {
+          "description" : "파티원과 공격대원의 치명타 및 주문 극대화 적중률을 5%만큼 증가시킵니다. 파티원이나 공격대원의 주문 또는 능력이 치명타 및 극대화 적중 시 66%의 확률로 현재 대상에 연계 점수가 추가됩니다. 이 효과는 3초에 1번씩만 발동됩니다."
+        }, {
+          "description" : "파티원과 공격대원의 치명타 및 주문 극대화 적중률을 5%만큼 증가시킵니다. 파티원이나 공격대원의 주문 또는 능력이 치명타 및 극대화 적중 시 100%의 확률로 현재 대상에 연계 점수가 추가됩니다. 이 효과는 2초에 1번씩만 발동됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 381,
+        "name" : "사전계획",
+        "icon" : "spell_shadow_possession",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "range" : "30 yd range",
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 20초",
+          "description" : "대상에 대한 연계 점수 2점이 추가됩니다. 20초 내에 연계 점수를 추가하거나 추가된 연계 점수를 사용하지 않으면 연계 점수가 사라집니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11664,
+        "name" : "장막의 그림자",
+        "icon" : "ability_rogue_envelopingshadows",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "광역 공격으로 입는 피해가 10%만큼 감소하고 교란의 지속시간이 1초만큼 증가합니다."
+        }, {
+          "description" : "광역 공격으로 입는 피해가 20%만큼 감소하고 교란의 지속시간이 2초만큼 증가합니다."
+        }, {
+          "description" : "광역 공격으로 입는 피해가 30%만큼 감소하고 교란의 지속시간이 3초만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1722,
+        "name" : "구사일생",
+        "icon" : "ability_rogue_cheatdeath",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "자신을 죽음에 이르도록 만들 수 있는 공격을 받았을 때 33%의 확률로 전체 생명력의 10%에 해당하는 생명력을 남기고 살아납니다. 또한 3초 동안 받는 모든 피해가 90%만큼 감소됩니다. 이 효과는 1분에 1번씩만 발동됩니다."
+        }, {
+          "description" : "자신을 죽음에 이르도록 만들 수 있는 공격을 받았을 때 66%의 확률로 전체 생명력의 10%에 해당하는 생명력을 남기고 살아납니다. 또한 3초 동안 받는 모든 피해가 90%만큼 감소됩니다. 이 효과는 1분에 1번씩만 발동됩니다."
+        }, {
+          "description" : "자신을 죽음에 이르도록 만들 수 있는 공격을 받았을 때 100%의 확률로 전체 생명력의 10%에 해당하는 생명력을 남기고 살아납니다. 또한 3초 동안 받는 모든 피해가 90%만큼 감소됩니다. 이 효과는 1분에 1번씩만 발동됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 284,
+        "name" : "마음가짐",
+        "icon" : "ability_rogue_preparation",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 5분",
+          "description" : "활성화되면 회피, 전력 질주, 소멸, 그림자 밟기의 재사용 대기시간이 초기화됩니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 6520,
+        "name" : "붉은 핏줄",
+        "icon" : "ability_rogue_sanguinaryvein",
+        "x" : 2,
+        "y" : 4,
+        "req" : 681,
+        "ranks" : [ {
+          "description" : "출혈 효과가 걸린 대상에게 입히는 피해가 5%만큼 증가합니다."
+        }, {
+          "description" : "출혈 효과가 걸린 대상에게 입히는 피해가 10%만큼 증가합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2080,
+        "name" : "어둠의 학살자",
+        "icon" : "ability_rogue_slaughterfromtheshadows",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "기습과 매복에 소모되는 기력이 7만큼, 과다출혈과 칼날 부채에 소모되는 기력이 2만큼 감소합니다."
+        }, {
+          "description" : "기습과 매복에 소모되는 기력이 14만큼, 과다출혈과 칼날 부채에 소모되는 기력이 4만큼 감소합니다."
+        }, {
+          "description" : "기습과 매복에 소모되는 기력이 20만큼, 과다출혈과 칼날 부채에 소모되는 기력이 6만큼 감소합니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1123,
+        "name" : "톱니 칼날",
+        "icon" : "inv_sword_17",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "절개 사용 시 연계 점수당 10%의 확률로 대상에 걸린 파열의 지속시간이 초기화됩니다."
+        }, {
+          "description" : "절개 사용 시 연계 점수당 20%의 확률로 대상에 걸린 파열의 지속시간이 초기화됩니다."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2081,
+        "name" : "어둠의 춤",
+        "icon" : "ability_rogue_shadowdance",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "castTime" : "즉시 시전",
+          "cooldown" : "재사용 대기시간: 1분",
+          "description" : "6초 동안 어둠 속으로 숨어들어 은신 여부와 관계없이 혼절시키기, 목조르기, 매복, 비열한 습격, 사전계획, 훔치기, 함정 해제 능력을 사용할 수 있습니다."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

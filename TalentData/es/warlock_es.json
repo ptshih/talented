@@ -1,0 +1,953 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 9,
+      "name" : "Brujo",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "Aflicción",
+      "icon" : "spell_shadow_deathcoil",
+      "backgroundFile" : "WarlockCurses",
+      "overlayColor" : "#00ff99",
+      "description" : "Un maestro de la magia de las Sombras que se especializa en los hechizos de miedo, drenado y de daño en el tiempo.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 30108,
+        "name" : "Aflicción inestable",
+        "icon" : "spell_shadow_unstableaffliction_3",
+        "cost" : "15% de maná base",
+        "range" : "40 yd range",
+        "castTime" : "Lanzamiento de 1,5 seg.",
+        "reagents" : [ ],
+        "description" : "La energía de las Sombras destruye poco a poco al objetivo e inflige 1095 p. de daño durante 15 s. Además, si se disipa tu hechizo Aflicción inestable, el que lo haya disipado recibirá 1971 p. de daño y quedará silenciado durante 5 s. Cada brujo solo pude tener una Aflicción inestable o Inmolar activo sobre un objetivo.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 87339,
+        "name" : "Maestría de las Sombras",
+        "icon" : "spell_shadow_spectralsight",
+        "reagents" : [ ],
+        "description" : "Aumenta un 25% el daño con hechizos de las Sombras.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77215,
+        "name" : "Aflicciones pujantes",
+        "icon" : "ability_warlock_everlastingaffliction",
+        "reagents" : [ ],
+        "description" : "Aumenta todo el daño de las Sombras periódico que infliges un 13%. Cada punto de maestría aumenta el daño de las Sombras periódico un 1.63% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 11100,
+        "name" : "Catastrofismo",
+        "icon" : "spell_shadow_curseofsargeras",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta la probabilidad de golpe crítico de tu Terror de agonía y Terror de fatalidad un 4%."
+        }, {
+          "description" : "Aumenta la probabilidad de golpe crítico de tu Terror de agonía y Terror de fatalidad un 8%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11110,
+        "name" : "Transfusión de vida mejorada",
+        "icon" : "spell_shadow_burningspirit",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta el maná generado por tu hechizo Transfusión de vida un 10%."
+        }, {
+          "description" : "Aumenta el maná generado por tu hechizo Transfusión de vida un 20%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11104,
+        "name" : "Corrupción mejorada",
+        "icon" : "spell_shadow_abominationexplosion",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta el daño infligido por tu hechizo Corrupción un 4%."
+        }, {
+          "description" : "Aumenta el daño infligido por tu hechizo Corrupción un 8%."
+        }, {
+          "description" : "Aumenta el daño infligido por tu hechizo Corrupción un 12%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11214,
+        "name" : "Mal fario",
+        "icon" : "ability_warlock_jinx",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Tu Maldición de los elementos también afecta a un máximo de 15 objetivos enemigos cercanos en un radio de 20 m del objetivo maldito. \n\n\n\nAdemás, tu Maldición de debilidad reduce un 5% la generación de energía, ira, enfoque o poder rúnico del objetivo mientras está activo."
+        }, {
+          "description" : "Tu Maldición de los elementos también afecta a un máximo de 15 objetivos enemigos cercanos en un radio de 40 m del objetivo maldito. \n\n\n\nAdemás, tu Maldición de debilidad reduce un 10% la generación de energía, ira, enfoque o poder rúnico del objetivo mientras está activo."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11112,
+        "name" : "Succión de alma",
+        "icon" : "ability_warlock_soulsiphon",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta la cantidad drenada por tus hechizos Drenar vida y Drenar alma un 3% extra por cada efecto de aflicción aplicado sobre el objetivo, hasta un máximo del 9% de efecto extra."
+        }, {
+          "description" : "Aumenta la cantidad drenada por tus hechizos Drenar vida y Drenar alma un 6% extra por cada efecto de aflicción aplicado sobre el objetivo, hasta un máximo del 18% de efecto extra."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11420,
+        "name" : "Succionar vida",
+        "icon" : "spell_shadow_requiem",
+        "x" : 2,
+        "y" : 1,
+        "req" : 11112,
+        "ranks" : [ {
+          "description" : "Cuando infliges daño con tu hechizo Corrupción, tienes un 25% de probabilidad de sanarte un 2% de tu salud total."
+        }, {
+          "description" : "Cuando infliges daño con tu hechizo Corrupción, tienes un 50% de probabilidad de sanarte un 2% de tu salud total."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11128,
+        "name" : "Maldición de agotamiento",
+        "icon" : "spell_shadow_grimward",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "6% de maná base",
+          "range" : "30 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "description" : "Reduce la velocidad de movimiento del objetivo un 50% durante 30 s. Cada brujo solo puede tener una maldición activa sobre cada objetivo."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11114,
+        "name" : "Miedo mejorado",
+        "icon" : "spell_shadow_possession",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Provoca que tu hechizo Miedo inflija una Pesadilla sobre el objetivo cuando el efecto de miedo acaba. El efecto de Pesadilla reduce la velocidad de movimiento del objetivo un 15% durante 5 s."
+        }, {
+          "description" : "Provoca que tu hechizo Miedo inflija una Pesadilla sobre el objetivo cuando el efecto de miedo acaba. El efecto de Pesadilla reduce la velocidad de movimiento del objetivo un 30% durante 5 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11134,
+        "name" : "Erradicación",
+        "icon" : "ability_warlock_eradication",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Cuando infliges daño con Corrupción, tienes un 6% de probabilidad de aumentar la velocidad de lanzamiento de hechizos un 6% durante 10 s."
+        }, {
+          "description" : "Cuando infliges daño con Corrupción, tienes un 6% de probabilidad de aumentar la velocidad de lanzamiento de hechizos un 12% durante 10 s."
+        }, {
+          "description" : "Cuando infliges daño con Corrupción, tienes un 6% de probabilidad de aumentar la velocidad de lanzamiento de hechizos un 20% durante 10 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11140,
+        "name" : "Aullido de terror mejorado",
+        "icon" : "spell_shadow_deathscream",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de lanzamiento de tu hechizo Aullido de terror 0.8 s."
+        }, {
+          "description" : "Reduce el tiempo de lanzamiento de tu hechizo Aullido de terror 1.5 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11366,
+        "name" : "Trueque de alma",
+        "icon" : "ability_warlock_soulswap",
+        "x" : 1,
+        "y" : 3,
+        "req" : 11112,
+        "ranks" : [ {
+          "cost" : "18% de maná base",
+          "range" : "40 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "description" : "Infliges al instante 169 p. de daño y eliminas tus efectos de daño en el tiempo de las Sombras del objetivo.\n\n\n\nLos siguientes 20 s después, el siguiente objetivo al que lances Trueque de alma: Exhalar quedará afectado por los efectos de daño en el tiempo de las Sombras y sufrirá 169 p. de daño.\n\n\n\nNo puedes utilizar Trueque de alma con un mismo objetivo."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11124,
+        "name" : "Abrazo de las Sombras",
+        "icon" : "spell_shadow_shadowembrace",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Tus hechizos Descarga de las Sombras y Poseer aplican el efecto Abrazo de las Sombras, que aumenta todo el daño periódico de las Sombras que infliges al objetivo un 3%. Dura 12 s. Se acumula hasta 3 veces."
+        }, {
+          "description" : "Tus hechizos Descarga de las Sombras y Poseer aplican el efecto Abrazo de las Sombras, que aumenta todo el daño periódico de las Sombras que infliges al objetivo un 4%. Dura 12 s. Se acumula hasta 3 veces."
+        }, {
+          "description" : "Tus hechizos Descarga de las Sombras y Poseer aplican el efecto Abrazo de las Sombras, que aumenta todo el daño periódico de las Sombras que infliges al objetivo un 5%. Se acumula hasta 3 veces."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11142,
+        "name" : "Abrazo de la Muerte",
+        "icon" : "spell_shadow_deathsembrace",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Cuando tienes un 25% de salud o menos, tu Drenar vida sana un 1% extra de tu salud total.\n\n\n\nAumenta el daño infligido por tus hechizos de las Sombras un 4% cuando tu objetivo está al 25% de salud o menos."
+        }, {
+          "description" : "Cuando tienes un 25% de salud o menos, tu Drenar vida sana un 2% extra de tu salud total.\n\n\n\nAumenta el daño infligido por tus hechizos de las Sombras un 8% cuando tu objetivo está al 25% de salud o menos."
+        }, {
+          "description" : "Cuando tienes un 25% de salud o menos, tu Drenar vida sana un 3% extra de tu salud total.\n\n\n\nAumenta el daño infligido por tus hechizos de las Sombras un 12% cuando tu objetivo está al 25% de salud o menos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11122,
+        "name" : "Ocaso",
+        "icon" : "spell_shadow_twilight",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Da al hechizo de Corrupción y al de Drenar vida un 2% de probabilidad de hacerte entrar en estado de trance de las Sombras después de causarle daño a un oponente. El estado de trance de las Sombras reduce el tiempo de lanzamiento de tu próximo hechizo de Descarga de las Sombras un 100%."
+        }, {
+          "description" : "Da al hechizo de Corrupción y al de Drenar vida un 4% de probabilidad de hacerte entrar en estado de trance de las Sombras después de causarle daño a un oponente. El estado de trance de las Sombras reduce el tiempo de lanzamiento de tu próximo hechizo de Descarga de las Sombras un 100%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11419,
+        "name" : "Quemar alma: Semilla de corrupción",
+        "icon" : "spell_shadow_seedofdestruction",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Otorga la potenciación Quemar alma a tu hechizo Semilla de corrupción.\n\n\n\nEl efecto de detonación de tu Semilla de corrupción infligirá Corrupción a todos los objetivos enemigos. Si la detonación tiene éxito, se restituirá el fragmento de alma."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11150,
+        "name" : "Aflicción eterna",
+        "icon" : "ability_warlock_everlastingaffliction",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Aumenta un 5% la probabilidad de efecto crítico de tu Corrupción, Semilla de corrupción y Aflicción inestable.\n\n\n\nAdemás, tus hechizos Drenar vida, Drenar alma y Poseer tienen un 33% de probabilidad de reiniciar la duración del hechizo Corrupción en el objetivo."
+        }, {
+          "description" : "Aumenta un 10% la probabilidad de efecto crítico de tu Corrupción, Semilla de corrupción y Aflicción inestable.\n\n\n\nAdemás, tus hechizos Drenar vida, Drenar alma y Poseer tienen un 66% de probabilidad de reiniciar la duración del hechizo Corrupción en el objetivo."
+        }, {
+          "description" : "Aumenta un 15% la probabilidad de efecto crítico de tu Corrupción, Semilla de corrupción y Aflicción inestable.\n\n\n\nAdemás, tus hechizos Drenar vida, Drenar alma y Poseer tienen un 100% de probabilidad de reiniciar la duración del hechizo Corrupción en el objetivo."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11200,
+        "name" : "Pandemia",
+        "icon" : "spell_shadow_lastingaffliction",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de reutilización global de tus hechizos Aterrar y Maldición 0,25 s.\n\n\n\nTu facultad Drenar alma tiene un 50% de probabilidad de reiniciar la duración de tu hechizo Aflicción inestable al infligir daño a objetivos con un 25% de salud o menos."
+        }, {
+          "description" : "Reduce el tiempo de reutilización global de tus hechizos Aterrar y Maldición 0,5 s.\n\n\n\nTu facultad Drenar alma tiene un 100% de probabilidad de reiniciar la duración de tu hechizo Aflicción inestable al infligir daño a objetivos con un 25% de salud o menos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11152,
+        "name" : "Poseer",
+        "icon" : "ability_warlock_haunt",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "12% de maná base",
+          "range" : "40 yd range",
+          "castTime" : "Lanzamiento de 1,5 seg.",
+          "cooldown" : "Reutilización de 8 seg.",
+          "description" : "Envías un alma fantasmagórica al objetivo, lo que inflige 684 p. de daño de las Sombras y aumenta un 20% todo el daño infligido por tus efectos de daño de las Sombras en el tiempo sobre el objetivo durante 12 s. Cuando el hechizo Poseer se acaba o se disipa, el alma vuelve a ti y te sana un 100% de todo el daño infligido al objetivo."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Demonología",
+      "icon" : "spell_shadow_metamorphosis",
+      "backgroundFile" : "WarlockSummoning",
+      "overlayColor" : "#ff0000",
+      "description" : "Un brujo que usa tanto la magia de Fuego como la magia de las Sombras, acompañado de poderosos demonios.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 30146,
+        "name" : "Invocar guardia vil",
+        "icon" : "spell_shadow_summonfelguard",
+        "cost" : "80% de maná base",
+        "castTime" : "Lanzamiento de 6 seg.",
+        "reagents" : [ ],
+        "description" : "Invoca a un guardia vil a las órdenes del brujo.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 84740,
+        "name" : "Conocimiento demoníaco",
+        "icon" : "spell_fire_twilightimmolation",
+        "reagents" : [ ],
+        "description" : "Aumenta un 15% el daño de tus hechizos de Fuego y de las Sombras.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77219,
+        "name" : "Maestro demonólogo",
+        "icon" : "spell_shadow_shadowpact",
+        "reagents" : [ ],
+        "description" : "Aumenta el daño infligido por tus sirvientes demoníacos y el daño que infliges cuando estás transformado en demonio un 12%. Cada punto de maestría aumenta el daño un 1.5% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10994,
+        "name" : "Abrazo demoníaco",
+        "icon" : "spell_shadow_metamorphosis",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta tu aguante total un 4%."
+        }, {
+          "description" : "Aumenta tu aguante total un 7%."
+        }, {
+          "description" : "Aumenta tu aguante total un 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10992,
+        "name" : "Artes oscuras",
+        "icon" : "ability_warlock_darkarts",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Reduce 0.25 s el tiempo de lanzamiento del hechizo Descarga de Fuego de tu diablillo, aumenta un 5% el daño infligido por el Golpe de legión de tu guardia vil y aumenta un 5% el daño infligido por la Mordedura de las Sombras de tu manáfago."
+        }, {
+          "description" : "Reduce 0.50 s el tiempo de lanzamiento del hechizo Descarga de Fuego de tu diablillo, aumenta un 10% el daño infligido por el Golpe de legión de tu guardia vil y aumenta un 10% el daño infligido por la Mordedura de las Sombras de tu manáfago."
+        }, {
+          "description" : "Reduce 0.75 s el tiempo de lanzamiento del hechizo Descarga de Fuego de tu diablillo, aumenta un 15% el daño infligido por el Golpe de legión de tu guardia vil y aumenta un 15% el daño infligido por la Mordedura de las Sombras de tu manáfago."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11206,
+        "name" : "Sinergia vil",
+        "icon" : "spell_shadow_felmending",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Tienes un 50% de probabilidad de sanar a tu mascota un 15% de la cantidad de daño con hechizos que infliges."
+        }, {
+          "description" : "Tienes un 100% de probabilidad de sanar a tu mascota un 15% de la cantidad de daño con hechizos que infliges."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11713,
+        "name" : "Renacimiento demoníaco",
+        "icon" : "spell_shadow_demonictactics",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Si tu demonio invocado muere, obtienes el efecto Renacimiento demoníaco, que reduce el tiempo de lanzamiento de tu siguiente hechizo de invocación un 50%. Dura 10 s. Este efecto tiene un tiempo de reutilización de 2 min."
+        }, {
+          "description" : "Si tu demonio invocado muere, obtienes el efecto Renacimiento demoníaco, que reduce el tiempo de lanzamiento de tu siguiente hechizo de invocación un 100%. Dura 10 s. Este efecto tiene un tiempo de reutilización de 2 min."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11020,
+        "name" : "Alimentar maná",
+        "icon" : "spell_shadow_manafeed",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Cuando tu demonio invocado asesta un golpe crítico con su ataque básico, obtienes al instante un 2% de tu maná total.\n\n\n\nCuando obtienes maná con tus hechizos Drenar maná y Transfusión de vida, tu demonio invocado gana un 30% del maná que tú hayas obtenido."
+        }, {
+          "description" : "Cuando tu demonio invocado asesta un golpe crítico con su ataque básico, obtienes al instante un 4% de tu maná total.\n\n\n\nCuando obtienes maná con tus hechizos Drenar maná y Transfusión de vida, tu demonio invocado gana un 60% del maná que tú hayas obtenido."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11190,
+        "name" : "Égida demoníaca",
+        "icon" : "spell_shadow_ragingscream",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta la cantidad de salud generada mediante hechizos y los efectos que aporta tu Armadura demoníaca un 5% extra y aumenta la cantidad de salud que regenera tu Armadura vil un 50%."
+        }, {
+          "description" : "Aumenta la cantidad de salud generada mediante hechizos y los efectos que aporta tu Armadura demoníaca un 10% extra y aumenta la cantidad de salud que regenera tu Armadura vil un 100%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11014,
+        "name" : "Maestro invocador",
+        "icon" : "spell_shadow_impphaseshift",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduce 0,5 s el tiempo de lanzamiento de tus hechizos de invocación de diablillo, abisario, súcubo, manáfago y guardia vil, y reduce su coste de maná un 50%."
+        }, {
+          "description" : "Reduce 1 s el tiempo de lanzamiento de tus hechizos de invocación de diablillo, abisario, súcubo, manáfago y guardia vil, y reduce su coste de maná un 100%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11198,
+        "name" : "Fatalidad inminente",
+        "icon" : "spell_nature_removecurse",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Aumenta un 10% la probabilidad de que tu Terror de fatalidad invoque un demonio cuando inflige daño.\n\n\n\nTambién otorga a tus hechizos Descarga de las Sombras, Mano de Gul'dan e Incinerar un 5% de probabilidad de reducir el tiempo de reutilización de tu Forma de demonio 15 s."
+        }, {
+          "description" : "Aumenta un 20% la probabilidad de que tu Terror de fatalidad invoque un demonio cuando inflige daño.\n\n\n\nTambién otorga a tus hechizos Descarga de las Sombras, Mano de Gul'dan e Incinerar un 10% de probabilidad de reducir el tiempo de reutilización de tu Forma de demonio 15 s."
+        }, {
+          "description" : "Aumenta un 30% la probabilidad de que tu Terror de fatalidad invoque un demonio cuando inflige daño.\n\n\n\nTambién otorga a tus hechizos Descarga de las Sombras, Mano de Gul'dan e Incinerar un 15% de probabilidad de reducir el tiempo de reutilización de tu Forma de demonio 15 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11160,
+        "name" : "Potenciación demoníaca",
+        "icon" : "ability_warlock_demonicempowerment",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "6% de maná base",
+          "range" : "100 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 1 min.",
+          "description" : "Le da al demonio invocado del brujo Potenciación.\n\n\n\nDiablillo: Sana al instante al diablillo un 30% de su salud total.\n\n\n\nAbisario: Aumenta la salud del abisario un 20% y la amenaza que genera con los ataques y hechizos un 20% durante 20 s.\n\n\n\nSúcubo: Se desvanece instantáneamente, lo que provoca que el súcubo entre en un estado de invisibilidad mejorado. El efecto de desvanecimiento elimina todos los aturdimientos, efectos de frenado y de reducción de movimiento del súcubo.\n\n\n\nManáfago: Disipa todos los efectos mágicos del manáfago.\n\n\n\nGuardia vil: Elimina al instante todos los efectos de reducción de movimiento, de frenado y aturdimientos y vuelve al guardia vil inmune a ellos durante 15 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10998,
+        "name" : "Cauce de salud mejorado",
+        "icon" : "spell_shadow_lifedrain",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Aumenta la cantidad de salud transferida por tu hechizo Cauce de salud un 10% y reduce el coste de salud un 10%. Además, tu demonio invocado recibe un 15% menos de daño mientras está bajo el efecto de tu Cauce de salud."
+        }, {
+          "description" : "Aumenta la cantidad de salud transferida por tu hechizo Cauce de salud un 20% y reduce el coste de salud un 20%. Además, tu demonio invocado recibe un 30% menos de daño mientras está bajo el efecto de tu Cauce de salud."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11024,
+        "name" : "Núcleo de magma",
+        "icon" : "ability_warlock_moltencore",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Tienes un 2% de probabilidad de ganar el efecto Núcleo de magma cuando tu Inmolar inflija daño. El efecto Núcleo de magma potencia tus 3 siguientes lanzamientos de Incinerar o Fuego de alma durante 15 s, lo que aumenta un 6% el daño infligido y reduce el tiempo de lanzamiento un 10%."
+        }, {
+          "description" : "Tienes un 4% de probabilidad de ganar el efecto Núcleo de magma cuando tu Inmolar inflija daño. El efecto Núcleo de magma potencia tus 3 siguientes lanzamientos de Incinerar o Fuego de alma durante 15 s, lo que aumenta un 12% el daño infligido y reduce el tiempo de lanzamiento un 20%."
+        }, {
+          "description" : "Tienes un 6% de probabilidad de ganar el efecto Núcleo de magma cuando tu Inmolar inflija daño. El efecto Núcleo de magma potencia tus 3 siguientes lanzamientos de Incinerar o Fuego de alma durante 15 s, lo que aumenta un 18% el daño infligido y reduce el tiempo de lanzamiento un 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11201,
+        "name" : "Mano de Gul'dan",
+        "icon" : "inv_summerfest_firespirit",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "7% de maná base",
+          "range" : "40 yd range",
+          "castTime" : "Lanzamiento de 2 seg.",
+          "cooldown" : "Reutilización de 12 seg.",
+          "description" : "Invoca un meteorito que cae sobre un enemigo, le inflige 1348-1575 p. de daño de las Sombras y crea un aura de magia en un radio de 4 m que provoca que todos los objetivos en su interior tengan un 10% más de probabilidad de que los demonios del brujo les asesten un golpe crítico. El aura dura 15 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11814,
+        "name" : "Aura de aprensión",
+        "icon" : "spell_shadow_sealofkings",
+        "x" : 2,
+        "y" : 3,
+        "req" : 11201,
+        "ranks" : [ {
+          "description" : "Cuando aterriza tu Mano de Gul'dan, todos los enemigos en un radio de 4 m quedarán enraizados durante 2 s y aturdidos la misma duración si siguen en el interior del aura de la Maldición de Gul'dan 6 segundos después."
+        }, {
+          "description" : "Cuando aterriza tu Mano de Gul'dan, todos los enemigos en un radio de 4 m quedarán enraizados durante 3 s y aturdidos la misma duración si siguen en el interior del aura de la Maldición de Gul'dan 6 segundos después."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11188,
+        "name" : "Grimorio antiguo",
+        "icon" : "ability_warlock_ancientgrimoire",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Aumenta 10 s la duración de tus invocaciones de infernal y guardia apocalíptico."
+        }, {
+          "description" : "Aumenta 20 s la duración de tus invocaciones de infernal y guardia apocalíptico."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11189,
+        "name" : "Inferno",
+        "icon" : "ability_warlock_inferno",
+        "x" : 1,
+        "y" : 4,
+        "req" : 11201,
+        "ranks" : [ {
+          "description" : "Aumenta el radio de tus Llamas infernales 10 m y ahora puedes canalizar Llamas infernales en movimiento."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11034,
+        "name" : "Exterminación",
+        "icon" : "spell_fire_fireball02",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Cuando lanzas tu Descarga de las Sombras, Incinerar o Fuego de alma sobre un objetivo que está al o por debajo del 25% de salud, el tiempo de lanzamiento de tu hechizo Fuego de alma se reduce un 20% durante 10 s."
+        }, {
+          "description" : "Cuando lanzas tu Descarga de las Sombras, Incinerar o Fuego de alma sobre un objetivo que está al o por debajo del 25% de salud, el tiempo de lanzamiento de tu Fuego de alma se reduce un 40% durante 10 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11199,
+        "name" : "Cremación",
+        "icon" : "ability_warlock_cremation",
+        "x" : 1,
+        "y" : 5,
+        "req" : 11189,
+        "ranks" : [ {
+          "description" : "Aumenta el daño infligido con tus Llamas infernales un 15%, y tu hechizo Mano de Gul'dan tiene un 50% de probabilidad de reiniciar la duración de tu hechizo Inmolar sobre el objetivo."
+        }, {
+          "description" : "Aumenta el daño infligido con tus Llamas infernales un 30%, y tu hechizo Mano de Gul'dan tiene un 100% de probabilidad de reiniciar la duración de tu hechizo Inmolar sobre el objetivo."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11042,
+        "name" : "Pacto demoníaco",
+        "icon" : "spell_shadow_demonicpact",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Aumenta tu daño con hechizos un 2%, y tu demonio invocado otorga el efecto de Pacto demoníaco a todos los miembros de tu banda o grupo cercanos.\n\n\n\nEl efecto de Pacto demoníaco aumenta el poder con hechizos un 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11044,
+        "name" : "Metamorfosis",
+        "icon" : "spell_shadow_demonform",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "description" : "Te transformas en un demonio durante 30 s. Esta forma aumenta tu armadura un 600%, el daño un 20%, reduce la probabilidad de que los ataques cuerpo a cuerpo te impacten un 6% y reduce la duración de los efectos de aturdimiento y de frenado un 50%. Ganas facultades de demonio únicas además de tus facultades normales. Tiempo de reutilización: 3 min."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Destrucción",
+      "icon" : "spell_shadow_rainoffire",
+      "backgroundFile" : "WarlockDestruction",
+      "overlayColor" : "#ff7f00",
+      "description" : "Invoca fuego demoníaco para quemar y arrasar a los enemigos.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 17962,
+        "name" : "Conflagrar",
+        "icon" : "spell_fire_fireball",
+        "cost" : "16% de maná base",
+        "range" : "40 yd range",
+        "castTime" : "Lanzamiento instantáneo",
+        "cooldown" : "Reutilización de 10 seg.",
+        "reagents" : [ ],
+        "description" : "Inflige instantáneamente daño de Fuego igual al 60% del daño periódico de tu Inmolar sobre el objetivo.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 84739,
+        "name" : "Cataclismo",
+        "icon" : "spell_fire_meteorstorm",
+        "reagents" : [ ],
+        "description" : "Aumenta un 25% el daño con hechizos de Fuego.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77220,
+        "name" : "Apocalipsis ígneo",
+        "icon" : "spell_fire_moltenblood",
+        "reagents" : [ ],
+        "description" : "Aumenta el daño de Fuego infligido un 10%. Cada punto de maestría aumenta el daño de Fuego un 1.25% extra.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10938,
+        "name" : "Aterrar",
+        "icon" : "spell_shadow_deathpact",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de lanzamiento de tus hechizos Descarga de las Sombras, Descarga de Caos e Inmolar 0.1 s."
+        }, {
+          "description" : "Reduce el tiempo de lanzamiento de tus hechizos Descarga de las Sombras, Descarga de Caos e Inmolar 0.3 s."
+        }, {
+          "description" : "Reduce el tiempo de lanzamiento de tus hechizos Descarga de las Sombras, Descarga de Caos e Inmolar 0.5 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10936,
+        "name" : "Sombras y llamas",
+        "icon" : "spell_shadow_shadowandflame",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta un 4% el daño infligido por tus hechizos Descarga de las Sombras e Incinerar, y tu Descarga de las Sombras tiene un 33% de probabilidad de provocar el efecto Descarga de las Sombras mejorada en el objetivo.\n\n\n\nEl efecto Descarga de las Sombras mejorada hace que el objetivo se vuelva vulnerable al daño con hechizos, lo que aumenta un 5% la probabilidad de golpe crítico con hechizos contra ese objetivo durante 30 s."
+        }, {
+          "description" : "Aumenta un 8% el daño infligido por tus hechizos Descarga de las Sombras e Incinerar, y tu Descarga de las Sombras tiene un 66% de probabilidad de provocar el efecto Descarga de las Sombras mejorada en el objetivo.\n\n\n\nEl efecto Descarga de las Sombras mejorada hace que el objetivo se vuelva vulnerable al daño con hechizos, lo que aumenta un 5% la probabilidad de golpe crítico con hechizos contra ese objetivo durante 30 s."
+        }, {
+          "description" : "Aumenta un 12% el daño infligido por tus hechizos Descarga de las Sombras e Incinerar, y tu Descarga de las Sombras tiene un 100% de probabilidad de provocar el efecto Descarga de las Sombras mejorada en el objetivo.\n\n\n\nEl efecto Descarga de las Sombras mejorada hace que el objetivo se vuelva vulnerable al daño con hechizos, lo que aumenta un 5% la probabilidad de golpe crítico con hechizos contra ese objetivo durante 30 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10960,
+        "name" : "Inmolar mejorado",
+        "icon" : "spell_fire_immolation",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Aumenta un 10% el daño infligido por tu hechizo Inmolar."
+        }, {
+          "description" : "Aumenta un 20% el daño infligido por tu hechizo Inmolar."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11197,
+        "name" : "Fuego de alma mejorado",
+        "icon" : "spell_fire_fireball02",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Tu celeridad con hechizos aumenta un 7% durante 15 s después de infligir daño con Fuego de alma. Este efecto tiene un tiempo de reutilización de 15 s."
+        }, {
+          "description" : "Tu celeridad con hechizos aumenta un 15% durante 15 s después de infligir daño con Fuego de alma. Este efecto tiene un tiempo de reutilización de 15 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11181,
+        "name" : "Tormenta de brasas",
+        "icon" : "spell_fire_selfdestruct",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduce el tiempo de lanzamiento de tu Fuego de alma 0.5 s y de tu Incinerar 0.13 s."
+        }, {
+          "description" : "Reduce el tiempo de lanzamiento de tu Fuego de alma 1 s y de tu Incinerar 0.25 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11196,
+        "name" : "Dolor abrasador mejorado",
+        "icon" : "spell_fire_soulburn",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Aumenta un 20% la probabilidad de golpe crítico de tu hechizo de Dolor abrasador con objetivos que tengan un 25% de salud o menos."
+        }, {
+          "description" : "Aumenta un 40% la probabilidad de golpe crítico de tu hechizo de Dolor abrasador con objetivos que tengan un 25% de salud o menos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10940,
+        "name" : "Secuelas",
+        "icon" : "spell_fire_fire",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Tu Lluvia de fuego tiene un 6% de probabilidad de aturdir objetivos durante 2 s y tu Conflagrar tiene un 50% de probabilidad de atontar al objetivo durante 5 s."
+        }, {
+          "description" : "Tu Lluvia de fuego tiene un 12% de probabilidad de aturdir objetivos durante 2 s y tu Conflagrar tiene un 100% de probabilidad de atontar al objetivo durante 5 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10978,
+        "name" : "Explosión de humo",
+        "icon" : "ability_warlock_backdraft",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Cuando lanzas Conflagrar, el tiempo de lanzamiento de tus siguientes 3 hechizos Descarga de las Sombras, Incinerar y Descarga de Caos se reduce un 10%. Dura 15 s."
+        }, {
+          "description" : "Cuando lanzas Conflagrar, el tiempo de lanzamiento de tus siguientes 3 hechizos Descarga de las Sombras, Incinerar y Descarga de Caos se reduce un 20%. Dura 15 s."
+        }, {
+          "description" : "Cuando lanzas Conflagrar, el tiempo de lanzamiento de tus siguientes 3 hechizos Descarga de las Sombras, Incinerar y Descarga de Caos se reduce un 30%. Dura 15 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10948,
+        "name" : "Quemadura de las Sombras",
+        "icon" : "spell_shadow_scourgebuild",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "15% de maná base",
+          "range" : "40 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 15 seg.",
+          "description" : "Inflige instantáneamente al objetivo 678-745 p. de daño de las Sombras. Si el objetivo muere hasta 5 s después de Quemadura de las Sombras y aporta honor o experiencia, el taumaturgo obtiene 3 fragmentos de alma. Solo se puede usar con enemigos que tienen menos del 20% de salud."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11182,
+        "name" : "Ascuas ardientes",
+        "icon" : "ability_warlock_burningembers",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Tu Fuego de alma y la Descarga de Fuego de tu diablillo provocan un efecto de daño en el tiempo de ascuas igual al 15% del daño infligido y dura 7 s.\n\n\n\nEl efecto Ascuas ardientes inflige hasta 28 p. de daño de Fuego cada 1 s durante 7 s."
+        }, {
+          "description" : "Tu Fuego de alma y la Descarga de Fuego de tu diablillo provocan un efecto de daño en el tiempo de ascuas igual al 30% del daño infligido y dura 7 s.\n\n\n\nEl efecto Ascuas ardientes inflige hasta 34 p. de daño de Fuego cada 1 s durante 7 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10970,
+        "name" : "Parasitar alma",
+        "icon" : "spell_shadow_soulleech_3",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Tus hechizos Quemadura de las Sombras, Fuego de alma y Descarga de Caos restauran instantáneamente un 2% de tu salud y maná totales al infligir daño y también otorgan Reposición.\n\n\n\nReposición: Otorga a hasta 10 miembros de la banda o grupo una regeneración de maná igual al 1% del maná máximo cada 10 s. Dura 15 s."
+        }, {
+          "description" : "Tus hechizos Quemadura de las Sombras, Fuego de alma y Descarga de Caos restauran instantáneamente un 4% de tu salud y maná totales al infligir daño y también otorgan Reposición.\n\n\n\nReposición: Otorga a hasta 10 miembros de la banda o grupo una regeneración de maná igual al 1% del maná máximo cada 10 s. Dura 15 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10958,
+        "name" : "Contragolpe",
+        "icon" : "spell_fire_playingwithfire",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Te da un 8% de probabilidad cuando recibes un golpe físico de reducir el tiempo de lanzamiento de tu próximo hechizo Descarga de las Sombras o Incineración un 100%. Este efecto dura 8 s y no podrá ocurrir más de una vez cada 8 segundos."
+        }, {
+          "description" : "Te da un 16% de probabilidad cuando recibes un golpe físico de reducir el tiempo de lanzamiento de tu próximo hechizo Descarga de las Sombras o Incineración un 100%. Este efecto dura 8 s y no podrá ocurrir más de una vez cada 8 segundos."
+        }, {
+          "description" : "Te da un 25% de probabilidad cuando recibes un golpe físico de reducir el tiempo de lanzamiento de tu próximo hechizo Descarga de las Sombras o Incineración un 100%. Este efecto dura 8 s y no podrá ocurrir más de una vez cada 8 segundos."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12120,
+        "name" : "Resguardo abisal",
+        "icon" : "spell_fire_felfireward",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Transforma tu Resguardo contra las sombras en Resguardo abisal. Debes estar bajo Armadura demoníaca o Armadura vil para que ocurra el efecto de la transformación.\n\n\n\nResguardo abisal\n\nAbsorbe 3253 p. de daño con hechizos. Dura 30 s. 30 s de tiempo de reutilización."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10984,
+        "name" : "Fuego y azufre",
+        "icon" : "ability_warlock_fireandbrimstone",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Aumenta el daño infligido por tus hechizos Incinerar y Descarga de Caos a objetivos afectados por tu Inmolar un 2%, y la probabilidad de asestar un golpe crítico de tu hechizo Conflagrar aumenta un 5%."
+        }, {
+          "description" : "Aumenta el daño infligido por tus hechizos Incinerar y Descarga de Caos a objetivos afectados por tu Inmolar un 4%, y la probabilidad de asestar un golpe crítico de tu hechizo Conflagrar aumenta un 10%."
+        }, {
+          "description" : "Aumenta el daño infligido por tus hechizos Incinerar y Descarga de Caos a objetivos afectados por tu Inmolar un 6%, y la probabilidad de asestar un golpe crítico de tu hechizo Conflagrar aumenta un 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10980,
+        "name" : "Furia de las Sombras",
+        "icon" : "spell_shadow_shadowfury",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "27% de maná base",
+          "range" : "30 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "cooldown" : "Reutilización de 20 seg.",
+          "description" : "La Furia de las Sombras se desata, lo que inflige 635-754 p. de daño de las Sombras y aturde a todos los enemigos situados en un radio de 8 m durante 3 s."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10964,
+        "name" : "Protección abisal",
+        "icon" : "spell_shadow_netherprotection",
+        "x" : 3,
+        "y" : 4,
+        "req" : 12120,
+        "ranks" : [ {
+          "description" : "Cuando absorbes daño a través de Resguardo contra las Sombras, Resguardo abisal u otros efectos, obtienes Protección abisal, lo que reduce todo el daño infligido con hechizos de esa escuela un 15% durante 12 s."
+        }, {
+          "description" : "Cuando absorbes daño a través de Resguardo contra las Sombras, Resguardo abisal u otros efectos, obtienes Protección abisal, lo que reduce todo el daño infligido con hechizos de esa escuela un 30% durante 12 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10982,
+        "name" : "Diablillo potenciado",
+        "icon" : "ability_warlock_empoweredimp",
+        "x" : 0,
+        "y" : 5,
+        "req" : 11182,
+        "ranks" : [ {
+          "description" : "La Descarga de Fuego de tu diablillo tiene un 2% de probabilidad de provocar que tu siguiente lanzamiento de Fuego de alma sea instantáneo en 8 s."
+        }, {
+          "description" : "La Descarga de Fuego de tu diablillo tiene un 4% de probabilidad de provocar que tu siguiente lanzamiento de Fuego de alma sea instantáneo en 8 s."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10962,
+        "name" : "Terror de caos",
+        "icon" : "ability_warlock_baneofhavoc",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "cost" : "10% de maná base",
+          "range" : "40 yd range",
+          "castTime" : "Lanzamiento instantáneo",
+          "description" : "Aterra al objetivo durante 5 min, lo que provoca que un 15% de todo el daño infligido por el brujo a otros objetivos también se inflija al objetivo aterrado. Un objetivo solo puede tener un Terror de caos a la vez y un brujo solo puede tener un terror activo a la vez sobre un mismo objetivo."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10986,
+        "name" : "Descarga de Caos",
+        "icon" : "ability_warlock_chaosbolt",
+        "x" : 1,
+        "y" : 6,
+        "req" : 10984,
+        "ranks" : [ {
+          "cost" : "7% de maná base",
+          "range" : "40 yd range",
+          "castTime" : "Lanzamiento de 2,5 seg.",
+          "cooldown" : "Reutilización de 12 seg.",
+          "description" : "Lanza una descarga de fuego caótico al enemigo y le inflige 1232-1549 p. de daño de Fuego. No se puede resistir Descarga de Caos y atraviesa todos los efectos de absorción."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}
