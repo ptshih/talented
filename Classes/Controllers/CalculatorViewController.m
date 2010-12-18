@@ -195,6 +195,10 @@ static UIImage *_redButtonBackground = nil;
     return;
   }
   
+  if ([[self.treeViewArray objectAtIndex:index] state] == TreeStateDisabled) {
+    return;
+  }
+  
   TreeViewController *tvc = [self.treeViewArray objectAtIndex:index];
   self.totalPoints -= tvc.pointsInTree;
   self.state = CalculatorStateEnabled;
