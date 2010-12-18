@@ -1,0 +1,1046 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 2,
+      "name" : "Paladin",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "Sacré",
+      "icon" : "spell_holy_holybolt",
+      "backgroundFile" : "PALADINHOLY",
+      "overlayColor" : "#ff7f00",
+      "description" : "Invoque la puissance de la Lumière pour protéger et soigner.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : true,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 20473,
+        "name" : "Horion sacré",
+        "icon" : "spell_holy_searinglight",
+        "cost" : "8% du mana de base",
+        "range" : "20 yd range",
+        "castTime" : "Incantation instantanée",
+        "cooldown" : "6 s. de recharge",
+        "reagents" : [ ],
+        "description" : "L'énergie sacrée frappe la cible et inflige 54 points de dégâts du Sacré à un ennemi, ou bien rend 143 points de vie à un allié, et donne une charge de Puissance sacrée.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 85102,
+        "name" : "Allez dans la Lumière",
+        "icon" : "spell_holy_championsgrace",
+        "reagents" : [ ],
+        "description" : "Augmente de 15% l'efficacité de vos sorts de soins.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 95859,
+        "name" : "Méditation",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "Permet à 50% de votre régénération de mana due à l'Esprit de se poursuivre pendant le combat.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76669,
+        "name" : "Soins illuminés",
+        "icon" : "spell_holy_absolution",
+        "reagents" : [ ],
+        "description" : "Vos sorts de soins directs placent également sur votre cible un bouclier qui absorbe un montant de dégâts égal à 10% du montant de points de vie rendus et dure 8 sec. Chaque point de Maîtrise augmente le montant absorbé de 1.25% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10099,
+        "name" : "Arbitre de la Lumière",
+        "icon" : "spell_holy_healingaura",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente de 6% vos chances de réaliser un effet critique avec Jugement et Verdict du templier."
+        }, {
+          "description" : "Augmente de 12% vos chances de réaliser un effet critique avec Jugement et Verdict du templier."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12189,
+        "name" : "Protecteur des innocents",
+        "icon" : "ability_paladin_protectoroftheinnocent",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Quand vous lancez des soins sur n'importe quelle cible, sauf vous-même, vous recevez également 45 points de vie."
+        }, {
+          "description" : "Quand vous lancez des soins sur n'importe quelle cible, sauf vous-même, vous recevez également 90 points de vie."
+        }, {
+          "description" : "Quand vous lancez des soins sur n'importe quelle cible, sauf vous-même, vous recevez également 136 points de vie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10127,
+        "name" : "Jugements des purs",
+        "icon" : "ability_paladin_judgementofthepure",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Votre Jugement augmente votre vitesse d'incantation et votre hâte en mêlée de 3% pendant 1 min."
+        }, {
+          "description" : "Votre Jugement augmente votre vitesse d'incantation et votre hâte en mêlée de 6% pendant 1 min."
+        }, {
+          "description" : "Votre Jugement augmente votre vitesse d'incantation et votre hâte en mêlée de 9% pendant 1 min."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11213,
+        "name" : "Clarté de l'intention",
+        "icon" : "spell_paladin_clarityofpurpose",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit le temps d'incantation de vos sorts Lumière sacrée et Lumière divine de 0.15 sec."
+        }, {
+          "description" : "Réduit le temps d'incantation de vos sorts Lumière sacrée et Lumière divine de 0.3 sec."
+        }, {
+          "description" : "Réduit le temps d'incantation de vos sorts Lumière sacrée et Lumière divine de 0.5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10097,
+        "name" : "Dernier mot",
+        "icon" : "spell_holy_holyguidance",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Confère à votre Mot de gloire 30% de chances supplémentaires d'être critique lorsqu'il est utilisé sur des cibles disposant de 35% ou moins de leurs points de vie."
+        }, {
+          "description" : "Confère à votre Mot de gloire 60% de chances supplémentaires d'être critique lorsqu'il est utilisé sur des cibles disposant de 35% ou moins de leurs points de vie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11780,
+        "name" : "Lumière flamboyante",
+        "icon" : "spell_holy_holybolt",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts de Horion sacré et Exorcisme de 10%."
+        }, {
+          "description" : "Augmente les dégâts de Horion sacré et Exorcisme de 20%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10109,
+        "name" : "Dénoncer",
+        "icon" : "spell_holy_excorcism_02",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Réduit le coût en mana d'Exorcisme de 38%. De plus, vous avez 25% de chances lorsque vous lancez Horion sacré de permettre à votre prochain sort Exorcisme d'être instantané et de ne pas coûter de mana."
+        }, {
+          "description" : "Réduit le coût en mana d'Exorcisme de 75%. De plus, vous avez 50% de chances lorsque vous lancez Horion sacré de permettre à votre prochain sort Exorcisme d'être instantané et de ne pas coûter de mana."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11202,
+        "name" : "Faveur divine",
+        "icon" : "spell_holy_divineillumination",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "3 min de recharge",
+          "description" : "Augmente votre hâte d'incantation des sorts de 20% et vos chances de coup critique avec les sorts de 20% pendant 20 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10129,
+        "name" : "Imprégnation de lumière",
+        "icon" : "ability_paladin_infusionoflight",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Augmente les chances de coup critique avec Horion sacré de 5%. De plus, vos coups critiques avec Horion sacré réduisent le temps d'incantation de votre prochain sort Lumière sacrée ou Lumière divine de 0.75 sec."
+        }, {
+          "description" : "Augmente les chances de coup critique avec Horion sacré de 10%. De plus, vos coups critiques avec Horion sacré réduisent le temps d'incantation de votre prochain sort Lumière sacrée ou Lumière divine de 1.50 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11771,
+        "name" : "Aube",
+        "icon" : "inv_qirajidol_sun",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Vos sorts Eclair lumineux, Lumière sacrée et Lumière divine ont 10% de chances de permettre à votre prochain Horion sacré de ne pas déclencher de temps de recharge s'il est utilisé dans les 12 sec."
+        }, {
+          "description" : "Vos sorts Eclair lumineux, Lumière sacrée et Lumière divine ont 20% de chances de permettre à votre prochain Horion sacré de ne pas déclencher de temps de recharge s'il est utilisé dans les 12 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10113,
+        "name" : "Jugements éclairés",
+        "icon" : "ability_paladin_enlightenedjudgements",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Octroie un bonus au score de toucher équivalent à 50% de l'Esprit obtenu par les objets et effets, et augmente la portée de votre Jugement de 5 mètres. De plus, il vous rend instantanément 46 points de vie."
+        }, {
+          "description" : "Octroie un bonus au score de toucher équivalent à 100% de l'Esprit obtenu par les objets et effets, et augmente la portée de votre Jugement de 10 mètres. De plus, il vous rend instantanément 92 points de vie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10133,
+        "name" : "Guide de lumière",
+        "icon" : "ability_paladin_beaconoflight",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "6% du mana de base",
+          "range" : "60 yd range",
+          "castTime" : "Incantation instantanée",
+          "description" : "La cible devient un guide de lumière pour tous les membres de votre groupe ou raid se trouvant dans un rayon de 60 mètres. Tous les soins que vous lancez sur ces cibles soignent également le Guide pour un montant de points de vie égal à 50% des soins prodigués. Une seule cible à la fois peut être le Guide de lumière. Dure 5 min."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11215,
+        "name" : "Vitesse de la Lumière",
+        "icon" : "paladin_icon_speedoflight",
+        "x" : 2,
+        "y" : 3,
+        "req" : 10129,
+        "ranks" : [ {
+          "description" : "Confère un bonus de 1% à la hâte des sorts et réduit le temps de recharge de Radiance sacrée de 10 sec. L'incantation de Radiance sacrée augmente votre vitesse de déplacement de 20% pendant 4 sec."
+        }, {
+          "description" : "Confère un bonus de 2% à la hâte des sorts et réduit le temps de recharge de Radiance sacrée de 20 sec. L'incantation de Radiance sacrée augmente votre vitesse de déplacement de 40% pendant 4 sec."
+        }, {
+          "description" : "Confère un bonus de 3% à la hâte des sorts et réduit le temps de recharge de Radiance sacrée de 30 sec. L'incantation de Radiance sacrée augmente votre vitesse de déplacement de 60% pendant 4 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10121,
+        "name" : "Purification sacrée",
+        "icon" : "ability_paladin_sacredcleansing",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Votre sort Epuration dissipe également 1 effet magique."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11779,
+        "name" : "Conviction",
+        "icon" : "ability_paladin_conviction",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Après un coup critique obtenu en frappant avec une arme, ou avec un sort ou une technique, vous bénéficiez d'un bonus de 1% aux dégâts et aux soins pendant 15 sec. Cet effet est cumulable jusqu'à 3 fois."
+        }, {
+          "description" : "Après un coup critique obtenu en frappant avec une arme, ou avec un sort ou une technique, vous bénéficiez d'un bonus de 2% aux dégâts et aux soins pendant 15 sec. Cet effet est cumulable jusqu'à 3 fois."
+        }, {
+          "description" : "Après un coup critique obtenu en frappant avec une arme, ou avec un sort ou une technique, vous bénéficiez d'un bonus de 3% aux dégâts et aux soins pendant 15 sec. Cet effet est cumulable jusqu'à 3 fois."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10115,
+        "name" : "Maîtrise des auras",
+        "icon" : "spell_holy_auramastery",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Instantanée",
+          "cooldown" : "2 min de recharge",
+          "description" : "Permet à votre Aura de concentration de rendre toutes les cibles affectées insensibles aux effets de silence et d'interruption ainsi que d'améliorer les effets de toutes les autres auras de 100%. Dure 6 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12151,
+        "name" : "Parangon de vertu",
+        "icon" : "spell_holy_avenginewrath",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge de Protection divine de 10 sec., de Main de sacrifice de 15 sec. et de Courroux vengeur de 30 sec."
+        }, {
+          "description" : "Réduit le temps de recharge de Protection divine de 20 sec., de Main de sacrifice de 30 sec. et de Courroux vengeur de 60 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11168,
+        "name" : "Tour de radiance",
+        "icon" : "achievement_bg_winsoa",
+        "x" : 1,
+        "y" : 5,
+        "req" : 10133,
+        "ranks" : [ {
+          "description" : "En soignant la cible de votre Guide de lumière avec Eclair lumineux, Lumière sacrée ou Lumière divine, vous avez 33% de chances de générer une charge de Puissance sacrée."
+        }, {
+          "description" : "En soignant la cible de votre Guide de lumière avec Eclair lumineux, Lumière sacrée ou Lumière divine, vous avez 66% de chances de générer une charge de Puissance sacrée."
+        }, {
+          "description" : "En soignant la cible de votre Guide de lumière avec Eclair lumineux, Lumière sacrée ou Lumière divine, vous avez 100% de chances de générer une charge de Puissance sacrée."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10117,
+        "name" : "Vie bénie",
+        "icon" : "spell_holy_blessedlife",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Vous avez 50% de chances de recevoir une charge de Puissance sacrée chaque fois que vous subissez des dégâts directs. Cet effet ne peut se produire plus d'une fois toutes les 8 secondes."
+        }, {
+          "description" : "Vous avez 100% de chances de recevoir une charge de Puissance sacrée chaque fois que vous subissez des dégâts directs. Cet effet ne peut se produire plus d'une fois toutes les 8 secondes."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11203,
+        "name" : "Lumière de l'aube",
+        "icon" : "spell_paladin_lightofdawn",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "1 pts. de puissance sacrée",
+          "castTime" : "Incantation instantanée",
+          "description" : "Consomme toute la puissance sacrée pour projeter une vague d'énergie guérisseuse qui rend à un maximum de 5 des cibles de votre groupe ou raid les plus gravement blessées dans un cône de 30 mètres devant vous 38 points de vie par charge de puissance sacrée."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Protection",
+      "icon" : "ability_paladin_shieldofthetemplar",
+      "backgroundFile" : "PALADINPROTECTION",
+      "overlayColor" : "#4c7fff",
+      "description" : "Utilise la magie du Sacré pour se protéger et défendre ses alliés.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : true,
+        "healer" : false,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 31935,
+        "name" : "Bouclier du vengeur",
+        "icon" : "spell_holy_avengersshield",
+        "cost" : "6% du mana de base",
+        "range" : "30 yd range",
+        "castTime" : "Incantation instantanée",
+        "cooldown" : "15 s. de recharge",
+        "requires" : "Requiert Boucliers",
+        "reagents" : [ ],
+        "description" : "Lance sur un ennemi un bouclier sacré qui lui inflige 116 points de dégâts du Sacré, le réduit au silence et interrompt les incantations pendant 3 sec avant de rebondir sur des ennemis proches. Le sort frappe 3 cibles au total.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 53592,
+        "name" : "Touché par la Lumière",
+        "icon" : "ability_paladin_touchedbylight",
+        "reagents" : [ ],
+        "description" : "Augmente votre total d'Endurance de 15%, votre score de toucher avec les sorts de 8% et votre puissance des sorts d'un montant égal à 60% de votre Force.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 84839,
+        "name" : "Vengeance",
+        "icon" : "ability_paladin_shieldofvengeance",
+        "reagents" : [ ],
+        "description" : "Chaque fois que vous subissez des dégâts, vous recevez un bonus à la puissance d'attaque égal à 5% des dégâts subis, jusqu'à un maximum de 10% de vos points de vie.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 31878,
+        "name" : "Jugements des sages",
+        "icon" : "ability_paladin_judgementofthewise",
+        "reagents" : [ ],
+        "description" : "Votre Jugement vous rend 30% de votre mana de base en 10 sec.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76671,
+        "name" : "Rempart divin",
+        "icon" : "spell_holy_holyprotection",
+        "reagents" : [ ],
+        "description" : "Augmente vos chances de bloquer les attaques de mêlée de 18%. Chaque point de Maîtrise augmente les chances de bloquer de 2.25% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 12198,
+        "name" : "Divinité",
+        "icon" : "spell_holy_blindingheal",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente tous les soins que vous prodiguez et tous les effets de soins sur vous de 2%."
+        }, {
+          "description" : "Augmente tous les soins que vous prodiguez et tous les effets de soins sur vous de 4%."
+        }, {
+          "description" : "Augmente tous les soins que vous prodiguez et tous les effets de soins sur vous de 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10324,
+        "name" : "Sceaux des purs",
+        "icon" : "inv_mace_46",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente de 6% les dégâts infligés par vos Sceaux de piété, de vérité et de justice."
+        }, {
+          "description" : "Augmente de 12% les dégâts infligés par vos Sceaux de piété, de vérité et de justice."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12152,
+        "name" : "Gloire éternelle",
+        "icon" : "inv_torch_thrown",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Votre Mot de gloire a 15% de chances de ne pas consommer de puissance sacrée."
+        }, {
+          "description" : "Votre Mot de gloire a 30% de chances de ne pas consommer de puissance sacrée."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10372,
+        "name" : "Jugements des justes",
+        "icon" : "ability_paladin_judgementsofthejust",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Votre Jugement réduit la vitesse d'attaque en mêlée et à distance de la cible de 10% pendant 20 sec. Augmente également la durée de l'effet de votre Sceau de justice de 0.5 sec."
+        }, {
+          "description" : "Votre Jugement réduit la vitesse d'attaque en mêlée et à distance de la cible de 20% pendant 20 sec. Augmente également la durée de l'effet de votre Sceau de justice de 1 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10332,
+        "name" : "Résistance",
+        "icon" : "spell_holy_devotion",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente la valeur d'armure des objets de 3%."
+        }, {
+          "description" : "Augmente la valeur d'armure des objets de 6%."
+        }, {
+          "description" : "Augmente la valeur d'armure des objets de 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10336,
+        "name" : "Marteau de la justice amélioré",
+        "icon" : "spell_holy_sealofmight",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge de votre sort Marteau de la justice de 10 sec."
+        }, {
+          "description" : "Réduit le temps de recharge de votre sort Marteau de la justice de 20 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10344,
+        "name" : "Terre bénie",
+        "icon" : "spell_holy_innerfire",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts de Consécration de 20% et réduit son coût en mana de 40%."
+        }, {
+          "description" : "Augmente les dégâts de Consécration de 40% et réduit son coût en mana de 80%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10346,
+        "name" : "Sanctuaire",
+        "icon" : "spell_nature_lightningshield",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Réduit la probabilité que vous soyez touché par un coup critique infligé par une attaque en mêlée de 2% et réduit tous les dégâts subis de 3%. De plus, quand vous bloquez ou parez une attaque de mêlée, vous recevez 1% de votre maximum de mana."
+        }, {
+          "description" : "Réduit la probabilité que vous soyez touché par un coup critique infligé par une attaque en mêlée de 4% et réduit tous les dégâts subis de 7%. De plus, quand vous bloquez ou esquivez une attaque de mêlée, vous recevez 2% de votre maximum de mana."
+        }, {
+          "description" : "Réduit la probabilité que vous soyez touché par un coup critique infligé par une attaque en mêlée de 6% et réduit tous les dégâts subis de 10%. De plus, quand vous bloquez ou parez une attaque de mêlée, vous recevez 3% de votre maximum de mana."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10374,
+        "name" : "Marteau du vertueux",
+        "icon" : "ability_paladin_hammeroftherighteous",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "12% du mana de base",
+          "range" : "Allonge",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "4,5 s. de recharge",
+          "requires" : "Requiert Arme de mêlée à une main",
+          "description" : "Frappe avec un marteau la cible actuelle, lui infligeant 30% des dégâts de l'arme, et émet une onde lumineuse qui frappe toutes les cibles à moins de 8 mètres, leur infligeant 28 points de dégâts du Sacré. Confère une charge de puissance sacrée."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11159,
+        "name" : "Colère du porteur de Lumière",
+        "icon" : "inv_mace_82",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Augmente de 50% les dégâts de Frappe du croisé et de Jugement, et de 15% les chances de coup critique de Colère divine et Marteau de courroux."
+        }, {
+          "description" : "Augmente de 100% les dégâts de Frappe du croisé et de Jugement, et de 30% les chances de coup critique de Colère divine et Marteau de courroux."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11161,
+        "name" : "Rétribution",
+        "icon" : "spell_holy_blessingofstrength",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Confère 10% de chances lorsque vous bloquez une attaque de bénéficier d'une attaque supplémentaire avec les 4 frappes suivantes dans les 8 sec."
+        }, {
+          "description" : "Confère 20% de chances lorsque vous bloquez une attaque de bénéficier d'une attaque supplémentaire avec les 4 frappes suivantes dans les 8 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11607,
+        "name" : "Bouclier du vertueux",
+        "icon" : "ability_paladin_shieldofvengeance",
+        "x" : 1,
+        "y" : 3,
+        "req" : 10346,
+        "ranks" : [ {
+          "cost" : "1 pts. de puissance sacrée",
+          "range" : "Allonge",
+          "castTime" : "Incantation instantanée",
+          "requires" : "Requiert Boucliers",
+          "description" : "Donne un coup de bouclier à la cible et lui inflige des dégâts du Sacré. Consomme toutes les charges de Puissance sacrée, qui déterminent le montant de dégâts infligé :\n\n\n\n1 charge de Puissance sacrée : 23 points de dégâts\n\n2 charges de Puissance sacrée : 69 points de dégâts\n\n3 charges de Puissance sacrée : 138 points de dégâts"
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11193,
+        "name" : "Grand croisé",
+        "icon" : "inv_helmet_74",
+        "x" : 2,
+        "y" : 3,
+        "req" : 10374,
+        "ranks" : [ {
+          "description" : "Quand votre Frappe du croisé ou Marteau du vertueux infligent des dégâts à votre cible principale, ils ont 10% de chances de mettre fin au temps de recharge de Bouclier du vengeur."
+        }, {
+          "description" : "Quand votre Frappe du croisé ou Marteau du vertueux inflige des dégâts à votre cible principale, ils ont 20% de chances de mettre fin au temps de recharge de Bouclier du vengeur."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10680,
+        "name" : "Justification",
+        "icon" : "spell_holy_vindication",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Vos techniques Frappe du croisé et Marteau du vertueux réduisent les dégâts physiques infligés par leur cible principale de 10% pendant 30 sec. De plus, votre Marteau de la justice interrompt les créatures insensibles aux étourdissements."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10356,
+        "name" : "Bouclier sacré",
+        "icon" : "spell_holy_blessingofprotection",
+        "x" : 1,
+        "y" : 4,
+        "req" : 11607,
+        "ranks" : [ {
+          "description" : "L'utilisation de Bouclier du vertueux ou Inquisition augmente les dégâts bloqués par votre bouclier de 10% supplémentaires pendant 20 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11221,
+        "name" : "Gardé par la Lumière",
+        "icon" : "ability_paladin_gaurdedbythelight",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Augmente l'efficacité de votre Mot de gloire de 5% quand vous l'utilisez pour vous soigner vous-même, et votre Mot de gloire entraîne également Bouclier sacré."
+        }, {
+          "description" : "Augmente l'efficacité de votre Mot de gloire de 10% quand vous l'utilisez pour vous soigner vous-même, et votre Mot de gloire entraîne également Bouclier sacré. De plus, tout excès de soin crée un bouclier protecteur de la valeur de l'excès de soins qui dure 6 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10334,
+        "name" : "Gardien divin",
+        "icon" : "spell_holy_powerwordbarrier",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "range" : "100 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "2 min de recharge",
+          "description" : "Tous les autres membres de votre groupe ou raid, excepté les paladins, subissent des dégâts réduits de 20% pendant 6 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10370,
+        "name" : "Devoir sacré",
+        "icon" : "spell_holy_divineintervention",
+        "x" : 1,
+        "y" : 5,
+        "req" : 10356,
+        "ranks" : [ {
+          "description" : "Vos Jugements ont 25% de chances de faire de votre prochain Bouclier du vertueux un coup critique. Dure 15 sec."
+        }, {
+          "description" : "Vos Jugements ont 50% de chances de faire de votre prochain Bouclier du vertueux un coup critique. Dure 15 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10340,
+        "name" : "Bouclier du templier",
+        "icon" : "ability_paladin_shieldofthetemplar",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge de Courroux vengeur de 20 sec. et celui de Gardien des anciens rois de 45 sec. De plus, votre Supplique divine génère 1 points de puissance sacrée."
+        }, {
+          "description" : "Réduit le temps de recharge de Courroux vengeur de 40 sec. et celui de Gardien des anciens rois de 80 sec. De plus, votre Supplique divine génère 2 points de puissance sacrée."
+        }, {
+          "description" : "Réduit le temps de recharge de Courroux vengeur de 60 sec. et celui de Gardien des anciens rois de 120 sec. De plus, votre Supplique divine génère 3 points de puissance sacrée."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10350,
+        "name" : "Ardent défenseur",
+        "icon" : "spell_holy_ardentdefender",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "castTime" : "Instantanée",
+          "cooldown" : "3 min de recharge",
+          "description" : "Réduit les dégâts subis de 20% pendant 10 sec. Tant qu'Ardent défenseur est actif, la prochaine attaque qui normalement vous tuerait vous rend 15% de votre maximum de points de vie."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Vindicte",
+      "icon" : "spell_holy_auraoflight",
+      "backgroundFile" : "PALADINCOMBAT",
+      "overlayColor" : "#ff0000",
+      "description" : "Croisé vertueux qui juge et punit ses adversaires à l'aide de ses armes et de la magie du Sacré.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 85256,
+        "name" : "Verdict du templier",
+        "icon" : "spell_paladin_templarsverdict",
+        "cost" : "1 pts. de puissance sacrée",
+        "range" : "Allonge",
+        "castTime" : "Incantation instantanée",
+        "requires" : "Requiert Arme de mêlée",
+        "reagents" : [ ],
+        "description" : "Une attaque instantanée avec une arme qui inflige un pourcentage des dégâts de l'arme. Consomme toutes les charges de Puissance sacrée pour augmenter les dégâts infligés :\n\n\n\n1 charge de Puissance sacrée : 30% des dégâts de l'arme\n\n2 charges de Puissance sacrée : 90% des dégâts de l'arme\n\n3 charges de Puissance sacrée : 235% des dégâts de l'arme",
+        "keyAbility" : true
+      }, {
+        "spellId" : 20113,
+        "name" : "Spécialisation Arme 2M",
+        "icon" : "inv_hammer_04",
+        "reagents" : [ ],
+        "description" : "Augmente les points de dégâts que vous infligez avec les armes de mêlée à deux mains de 20%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 53503,
+        "name" : "Fourreau de lumière",
+        "icon" : "ability_paladin_sheathoflight",
+        "reagents" : [ ],
+        "description" : "Augmente votre puissance des sorts d'un montant égal à 30% de votre puissance d'attaque et augmente vos chances de toucher avec les sorts de 8%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 89901,
+        "name" : "Jugements de l'audacieux",
+        "icon" : "ability_paladin_judgementofthewise",
+        "reagents" : [ ],
+        "description" : "Votre Jugement vous donne 25% de votre mana de base en 10 sec.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76672,
+        "name" : "Main de lumière",
+        "icon" : "ability_paladin_blessedhands",
+        "reagents" : [ ],
+        "description" : "Vos attaques automatiques ont 8% de chances de vous faire bénéficier de Main de lumière, qui permet à votre prochaine technique de Puissance sacrée de ne pas consommer de Puissance sacrée et de fonctionner comme si 3 charges de Puissance sacrée étaient consommées. Chaque point de Maîtrise augmente les chances de 1% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10647,
+        "name" : "Oeil pour oeil",
+        "icon" : "spell_holy_eyeforaneye",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Toutes les attaques magiques contre vous ont 20% de chances d'également infliger à l'attaquant 30% des dégâts que vous subissez."
+        }, {
+          "description" : "Toutes les attaques magiques contre vous ont 40% de chances d'également infliger à l'attaquant 30% des dégâts que vous subissez."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10651,
+        "name" : "Croisade",
+        "icon" : "spell_holy_crusade",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts de Frappe du croisé, Marteau du vertueux et Verdict du templier de 10% et les dégâts et les soins de Horion sacré de 10%. De plus, pendant 15 sec après avoir tué un ennemi qui rapporte de l'expérience ou de l'honneur, vous permettez à votre prochaine Lumière sacrée de rendre 100% de points de vie supplémentaires."
+        }, {
+          "description" : "Augmente les dégâts de Frappe du croisé, Marteau du vertueux et Verdict du templier de 20% et les dégâts et les soins de Horion sacré de 20%. De plus, pendant 15 sec après avoir tué un ennemi qui rapporte de l'expérience ou de l'honneur, vous permettez à votre prochaine Lumière sacrée de rendre 200% de points de vie supplémentaires."
+        }, {
+          "description" : "Augmente les dégâts de Frappe du croisé, Marteau du vertueux et Verdict du templier de 30% et les dégâts et les soins de Horion sacré de 30%. De plus, pendant 15 sec après avoir tué un ennemi qui rapporte de l'expérience ou de l'honneur, vous permettez à votre prochaine Lumière sacrée de rendre 300% de points de vie supplémentaires."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11612,
+        "name" : "Jugement amélioré",
+        "icon" : "ability_paladin_judgementblue",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente la portée de votre Jugement de 10 mètres."
+        }, {
+          "description" : "Augmente la portée de votre Jugement de 20 mètres."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12153,
+        "name" : "Faveur du Gardien",
+        "icon" : "spell_holy_sealofprotection",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge de votre Main de protection de 60 sec. et augmente la durée de votre Main de liberté de 2 sec."
+        }, {
+          "description" : "Réduit le temps de recharge de votre Main de protection de 2 min. et augmente la durée de votre Main de liberté de 4 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11269,
+        "name" : "Règne de la loi",
+        "icon" : "inv_relics_libramofhope",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente les chances d'obtenir un effet critique avec Frappe du croisé, Marteau du vertueux et Mot de gloire de 5%."
+        }, {
+          "description" : "Augmente les chances d'obtenir un effet critique avec Frappe du croisé, Marteau du vertueux et Mot de gloire de 10%."
+        }, {
+          "description" : "Augmente les chances d'obtenir un effet critique avec Frappe du croisé, Marteau du vertueux et Mot de gloire de 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11611,
+        "name" : "Poursuite de la justice",
+        "icon" : "spell_holy_persuitofjustice",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Vous avez 50% de chances de recevoir une charge de Puissance sacrée quand un effet d'étourdissement, de peur ou d'immoblisation vous frappe. De plus, augmente votre vitesse de déplacement et la vitesse de déplacement de votre monture de 8%. Ne s'additionne pas avec les autres effets qui augmentent la vitesse de déplacement."
+        }, {
+          "description" : "Vous avez 100% de chances de recevoir une charge de Puissance sacrée quand un effet d'étourdissement, de peur ou d'immoblisation vous frappe. De plus, augmente votre vitesse de déplacement et la vitesse de déplacement de votre monture de 15%. Ne s'additionne pas avec les autres effets qui augmentent la vitesse de déplacement."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10665,
+        "name" : "Communion",
+        "icon" : "ability_paladin_judgementofthewise",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Vos Auras augmentent les dégâts infligés par votre groupe ou raid de 3% et les dégâts que vous infligez de 2% supplémentaires. De plus, votre Jugement confère l'effet Requinquage.\n\n\n\nRequinquage - Fait bénéficier un maximum de 10 membres du groupe ou raid d'une régénération de mana égale à 1% de leur maximum de mana toutes les 10 sec. Dure 15 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10661,
+        "name" : "L'art de la guerre",
+        "icon" : "ability_paladin_artofwar",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Vos attaques automatiques ont 7% de chances de permettre à votre prochain Exorcisme d'être instantané, de ne pas coûter de mana et d'infliger 100% de dégâts supplémentaires."
+        }, {
+          "description" : "Vos attaques automatiques ont 14% de chances de permettre à votre prochain Exorcisme d'être instantané, de ne pas coûter de mana et d'infliger 100% de dégâts supplémentaires."
+        }, {
+          "description" : "Vos attaques automatiques ont 20% de chances de permettre à votre prochain Exorcisme d'être instantané, de ne pas coûter de mana et d'infliger 100% de dégâts supplémentaires."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11610,
+        "name" : "Long bras de la loi",
+        "icon" : "ability_paladin_judgementred",
+        "x" : 2,
+        "y" : 2,
+        "req" : 11612,
+        "ranks" : [ {
+          "description" : "Votre Jugement a 50% de chances d'augmenter votre vitesse de déplacement de 45% pendant 4 sec quand il est utilisé sur des cibles qui se trouvent à 15 mètres ou plus de vous."
+        }, {
+          "description" : "Votre Jugement a 100% de chances d'augmenter votre vitesse de déplacement de 45% pendant 4 sec quand il est utilisé sur des cibles qui se trouvent à 15 mètres ou plus de vous."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11204,
+        "name" : "Tempête divine",
+        "icon" : "ability_paladin_divinestorm",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "5% du mana de base",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "4,5 s. de recharge",
+          "requires" : "Requiert Arme de mêlée",
+          "description" : "Une attaque instantanée qui inflige 60% des dégâts de l'arme à tous les ennemis se trouvant à moins de 8 mètres. La Tempête divine soigne jusqu'à 3 membres du groupe ou du raid pour un total de 25% des dégâts infligés."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11207,
+        "name" : "Réprimandes",
+        "icon" : "spell_holy_fistofjustice",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "10% du mana de base",
+          "range" : "Allonge",
+          "castTime" : "Instantanée",
+          "cooldown" : "10 s. de recharge",
+          "description" : "Interrompts les incantations de sorts et empêche tout sort de la même école d'être lancé pendant 4 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11372,
+        "name" : "Bataille sainte",
+        "icon" : "inv_sword_136",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Les effets de hâte réduisent le temps de recharge de vos techniques Frappe du croisé et Tempête divine."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10643,
+        "name" : "Sceaux d'autorité",
+        "icon" : "ability_warrior_innerrage",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Vos Sceau de piété, Sceau de vérité et Sceau de justice infligent également 7% des dégâts de l'arme chaque fois que vous frappez. De plus, votre Sceau de piété touche aussi jusqu'à 2 cibles supplémentaires."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10669,
+        "name" : "Courroux sanctifié",
+        "icon" : "ability_paladin_sanctifiedwrath",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Augmente les chances de coup critique de Marteau de courroux de 20%, réduit le temps de recharge de Courroux vengeur de 20 sec. et vous pouvez utiliser Marteau de courroux à tout moment tant que vous êtes affecté par Courroux vengeur."
+        }, {
+          "description" : "Augmente les chances de coup critique de Marteau de courroux de 40%, réduit le temps de recharge de Courroux vengeur de 40 sec. et vous pouvez utiliser Marteau de courroux à tout moment tant que vous êtes affecté par Courroux vengeur."
+        }, {
+          "description" : "Augmente les chances de coup critique de Marteau de courroux de 60%, réduit le temps de recharge de Courroux vengeur de 60 sec. et vous pouvez utiliser Marteau de courroux à tout moment tant que vous êtes affecté par Courroux vengeur."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11271,
+        "name" : "Soigneur altruiste",
+        "icon" : "spell_holy_rune",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Quand vous utilisez Mot de gloire pour soigner les autres, ses soins sont augmentés de 25% et les dégâts que vous infligez sont augmentés de 2% par charge de puissance sacrée pendant 10 sec."
+        }, {
+          "description" : "Quand vous utilisez Mot de gloire pour soigner les autres, ses soins sont augmentés de 50% et les dégâts que vous infligez sont augmentés de 4% par charge de puissance sacrée pendant 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10663,
+        "name" : "Repentir",
+        "icon" : "spell_holy_prayerofhealing",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "9% du mana de base",
+          "range" : "20 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "1 min de recharge",
+          "description" : "Plonge la cible ennemie dans une transe méditative qui la stupéfie pendant 1 min. au maximum. Si la cible subit des dégâts, elle se réveille. Ne fonctionne que sur les démons, les draconiens, les géants, les humanoïdes et les morts-vivants."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10633,
+        "name" : "Dessein divin",
+        "icon" : "spell_holy_divinepurpose",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Les attaques suivantes ont 20% de chances de générer de la Puissance sacrée :\n\n\n\n- Jugement\n\n- Exorcisme\n\n- Verdict du templier\n\n- Tempête divine\n\n- Inquisition\n\n- Colère divine\n\n- Marteau de courroux"
+        }, {
+          "description" : "Les attaques suivantes ont 40% de chances de générer de la Puissance sacrée :\n\n\n\n- Jugement\n\n- Exorcisme\n\n- Verdict du templier\n\n- Tempête divine\n\n- Inquisition\n\n- Colère divine\n\n- Marteau de courroux"
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10677,
+        "name" : "Test de la foi",
+        "icon" : "ability_paladin_righteousvengeance",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts périodiques infligés par votre Sceau de vérité de 10% et la durée de votre Inquisition de 50%."
+        }, {
+          "description" : "Augmente les dégâts périodiques infligés par votre Sceau de vérité de 20% et la durée de votre Inquisition de 100%."
+        }, {
+          "description" : "Augmente les dégâts périodiques infligés par votre Sceau de vérité de 30% et la durée de votre Inquisition de 150%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11211,
+        "name" : "Actes de sacrifice",
+        "icon" : "ability_paladin_blessedhands",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Réduit de 10% le temps de recharge et de 10% le coût en mana de votre Main de liberté, votre Main de salut et votre Main de sacrifice. De plus, votre Epuration annule un effet affectant le déplacement si vous la lancez sur vous-même."
+        }, {
+          "description" : "Réduit de 20% le temps de recharge et de 20% le coût en mana de votre Main de liberté, votre Main de salut et votre Main de sacrifice. De plus, votre Epuration annule un effet affectant le déplacement si vous la lancez sur vous-même."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11222,
+        "name" : "Fanatisme",
+        "icon" : "spell_holy_proclaimchampion_02",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "3 pts. de puissance sacrée",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "2 min de recharge",
+          "description" : "Votre Frappe du croisé génère 3 charges de Puissance sacrée par coup pendant les 20 sec qui suivent. Nécessite 3 charges de Puissance sacrée pour être utilisé, mais ne consomme pas de Puissance sacrée."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

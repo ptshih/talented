@@ -1,0 +1,1050 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 1,
+      "name" : "Guerrier",
+      "powerType" : "RAGE",
+      "powerTypeId" : 1
+    },
+    "talentTrees" : [ {
+      "name" : "Armes",
+      "icon" : "ability_warrior_savageblow",
+      "backgroundFile" : "WarriorArms",
+      "overlayColor" : "#ffb719",
+      "description" : "Un maître endurci dans l'art du combat avec des armes à deux mains, qui associe mobilité et frappes surpuissantes pour mettre ses adversaires au tapis.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 12294,
+        "name" : "Frappe mortelle",
+        "icon" : "ability_warrior_savageblow",
+        "cost" : "25 pts. de rage",
+        "range" : "Allonge",
+        "castTime" : "Instantanée",
+        "cooldown" : "4,5 s. de recharge",
+        "requires" : "Requiert Arme de mêlée",
+        "reagents" : [ ],
+        "description" : "Une attaque vicieuse qui inflige 80% dégâts de l'arme plus 9 et blesse la cible. L'efficacité de tous les soins qu'elle reçoit est réduite de 10% pendant 10 sec.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 12712,
+        "name" : "Spécialisation Arme 2M",
+        "icon" : "inv_axe_09",
+        "reagents" : [ ],
+        "description" : "Augmente les points de dégâts que vous infligez avec les armes de mêlée à deux mains de 10%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 12296,
+        "name" : "Maîtrise de la Rage",
+        "icon" : "ability_warrior_endlessrage",
+        "reagents" : [ ],
+        "description" : "Vous générez 1 point de rage toutes les 3 secondes et 25% de rage supplémentaires avec les dégâts infligés.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76838,
+        "name" : "Frappes opportunistes",
+        "icon" : "ability_backstab",
+        "reagents" : [ ],
+        "description" : "Confère 16% de chances à vos attaques de mêlée de déclencher instantanément une attaque de mêlée supplémentaire infligeant 100% des dégâts normaux. Chaque point de Maîtrise augmente ces chances de 2%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10134,
+        "name" : "Académie martiale",
+        "icon" : "ability_warrior_unrelentingassault",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts infligés par Frappe héroïque, Enchaînement, Ivresse de la victoire et Heurtoir de 5%."
+        }, {
+          "description" : "Augmente les dégâts infligés par Frappe héroïque, Enchaînement, Ivresse de la victoire et Heurtoir de 10%."
+        }, {
+          "description" : "Augmente les dégâts infligés par Frappe héroïque, Enchaînement, Ivresse de la victoire et Heurtoir de 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11163,
+        "name" : "Soins sur le terrain",
+        "icon" : "inv_misc_bandage_05",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente tous les soins reçus de 3% et l'efficacité des techniques qui vous permettent de vous soigner vous-même de 10% supplémentaires."
+        }, {
+          "description" : "Augmente tous les soins reçus de 6% et l'efficacité des techniques qui vous permettent de vous soigner vous-même de 20% supplémentaires."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9664,
+        "name" : "Attaque éclair",
+        "icon" : "warrior_talent_icon_blitz",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Votre Charge génère 5 points de rage supplémentaires et étourdit une cible proche de plus."
+        }, {
+          "description" : "Votre Charge génère 10 points de rage supplémentaires et étourdit 2 cibles proches de plus."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11416,
+        "name" : "Maîtrise tactique",
+        "icon" : "spell_nature_enchantarmor",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Vous conservez jusqu'à 25 points de rage supplémentaires lorsque vous changez de posture."
+        }, {
+          "description" : "Vous conservez jusqu'à 50 points de rage supplémentaires lorsque vous changez de posture."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8190,
+        "name" : "Second souffle",
+        "icon" : "ability_hunter_harass",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Chaque fois que vous êtes atteint par un effet d'étourdissement ou d'immobilisation, vous gagnez 10 points de rage et 2% de votre total de points de vie en 10 sec."
+        }, {
+          "description" : "Chaque fois que vous êtes atteint par un effet d'étourdissement ou d'immobilisation, vous gagnez 20 points de rage et 5% de votre total de points de vie en 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8176,
+        "name" : "Blessures profondes",
+        "icon" : "ability_backstab",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Vos coups critiques font saigner l'adversaire et lui infligent 16% des points de dégâts moyens de votre arme de mêlée en 6 sec."
+        }, {
+          "description" : "Vos coups critiques font saigner l'adversaire et lui infligent 32% des points de dégâts moyens de votre arme de mêlée en 6 sec."
+        }, {
+          "description" : "Vos coups critiques font saigner l'adversaire et lui infligent 48% des points de dégâts moyens de votre arme de mêlée en 6 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8184,
+        "name" : "Tambours de guerre",
+        "icon" : "achievement_bg_winwsg_3-0",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit le coût en rage de Coup de bouclier, Volée de coups et de tous les cris qui coûtent de la rage de 50%."
+        }, {
+          "description" : "Réduit le coût en rage de Coup de bouclier, Volée de coups et de tous les cris qui coûtent de la rage de 100%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10138,
+        "name" : "Goût du sang",
+        "icon" : "ability_rogue_hungerforblood",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Augmente vos chances de coup critique avec Fulgurance de 20%. De plus, chaque fois que votre technique Pourfendre inflige des dégâts, vous avez 33% de chances de bénéficier de votre technique Fulgurance pendant 9 sec. Cet effet ne peut se produire plus d'une fois toutes les 5 sec."
+        }, {
+          "description" : "Augmente vos chances de coup critique avec Fulgurance de 40%. De plus, chaque fois que votre technique Pourfendre inflige des dégâts, vous avez 66% de chances de bénéficier de votre technique Fulgurance pendant 9 sec. Cet effet ne peut se produire plus d'une fois toutes les 5 sec."
+        }, {
+          "description" : "Augmente vos chances de coup critique avec Fulgurance de 60%. De plus, chaque fois que votre technique Pourfendre inflige des dégâts, vous avez 100% de chances de bénéficier de votre technique Fulgurance pendant 9 sec. Cet effet ne peut se produire plus d'une fois toutes les 5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8192,
+        "name" : "Attaques circulaires",
+        "icon" : "ability_rogue_slicedice",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "30 pts. de rage",
+          "castTime" : "Instantanée",
+          "cooldown" : "1 min de recharge",
+          "description" : "Vos attaques de mêlée frappent un adversaire proche supplémentaire. Dure 10 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10741,
+        "name" : "Empaler",
+        "icon" : "ability_searingarrow",
+        "x" : 2,
+        "y" : 2,
+        "req" : 8176,
+        "ranks" : [ {
+          "description" : "Augmente de 10% le bonus aux dégâts des coups critiques réussis avec Frappe mortelle, Heurtoir et Fulgurance."
+        }, {
+          "description" : "Augmente de 20% le bonus aux dégâts des coups critiques réussis avec Frappe mortelle, Heurtoir et Fulgurance."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11417,
+        "name" : "Brise-genou amélioré",
+        "icon" : "ability_shockwave",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Lorsque vous réappliquez Brise-genou, vous immobilisez la cible pendant 5 sec. Cet effet ne peut se produire plus d'une fois toutes les 60 sec."
+        }, {
+          "description" : "Lorsque vous réappliquez Brise-genou, vous immobilisez la cible pendant 5 sec. Cet effet ne peut se produire plus d'une fois toutes les 30 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11418,
+        "name" : "Heurtoir amélioré",
+        "icon" : "ability_warrior_decisivestrike",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Réduit le temps de frappe de Heurtoir de 0.5 sec. et augmente ses dégâts de 10%."
+        }, {
+          "description" : "Réduit le temps de frappe de Heurtoir de 1 sec. et augmente ses dégâts de 20%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11223,
+        "name" : "Calme mortel",
+        "icon" : "achievement_boss_kingymiron",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "castTime" : "Instantanée",
+          "cooldown" : "2 min de recharge",
+          "description" : "Pendant les 10 sec qui suivent, aucune de vos techniques ne coûte de rage, mais vous continuez à en générer. Ne peut être utilisé pendant Rage intérieure."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9662,
+        "name" : "Frénésie sanglante",
+        "icon" : "ability_warrior_bloodfrenzy",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Les saignements que vous infligez à vos cibles leur font subir des dégâts physiques augmentés de 2% et des dégâts de saignement augmentés de 15%. De plus, vos attaques automatiques ont 5% de chances de générer 20 points de rage supplémentaires."
+        }, {
+          "description" : "Les saignements que vous infligez à vos cibles leur font subir des dégâts physiques augmentés de 4% et des dégâts de saignement augmentés de 30%. De plus, vos attaques automatiques ont 10% de chances de générer 20 points de rage supplémentaires."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10520,
+        "name" : "Agneaux à l'abattoir",
+        "icon" : "warrior_talent_icon_lambstotheslaughter",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Après une Frappe mortelle, votre prochaine Exécution, Fulgurance ou Frappe mortelle inflige 10% de dégâts supplémentaires."
+        }, {
+          "description" : "Après une Frappe mortelle, votre prochaine Exécution, Fulgurance ou Frappe mortelle inflige 20% de dégâts supplémentaires."
+        }, {
+          "description" : "Après une Frappe mortelle, votre prochaine Exécution, Fulgurance ou Frappe mortelle inflige 30% de dégâts supplémentaires."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8208,
+        "name" : "Mastodonte",
+        "icon" : "ability_warrior_bullrush",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Votre technique Charge est à présent utilisable en combat, mais son temps de recharge est augmenté de 5 sec. Après une Charge, votre prochaine technique Heurtoir ou Frappe mortelle bénéficie de 25% de chances supplémentaires d'être critique si elle est utilisée dans les 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8214,
+        "name" : "Mort soudaine",
+        "icon" : "ability_warrior_improveddisciplines",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Vos coups en mêlée ont 3% de chances de réinitialiser le temps de recharge de votre Frappe du colosse. De plus, vous conservez 5 points de rage après avoir utilisé Exécution."
+        }, {
+          "description" : "Vos coups en mêlée ont 6% de chances de réinitialiser le temps de recharge de votre Frappe du colosse. De plus, vous conservez 10 points de rage après avoir utilisé Exécution."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8194,
+        "name" : "Démolisseurs",
+        "icon" : "ability_warrior_trauma",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Vos coups critiques avec Frappe mortelle ont 50% de chances de vous faire Enrager, ce qui augmente tous les dégâts infligés de 5% pendant 12 sec."
+        }, {
+          "description" : "Vos coups critiques avec Frappe mortelle ont 100% de chances de vous faire Enrager, ce qui augmente tous les dégâts infligés de 10% pendant 12 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11167,
+        "name" : "Mise au tapis",
+        "icon" : "inv_mace_62",
+        "x" : 2,
+        "y" : 5,
+        "req" : 8208,
+        "ranks" : [ {
+          "cost" : "15 pts. de rage",
+          "range" : "Allonge",
+          "castTime" : "Instantanée",
+          "cooldown" : "45 s. de recharge",
+          "requires" : "Requiert Arme de mêlée",
+          "description" : "Fait tomber la cible à terre et l'étourdit pendant 5 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8222,
+        "name" : "Tempête de lames",
+        "icon" : "ability_warrior_bladestorm",
+        "x" : 1,
+        "y" : 6,
+        "req" : 8208,
+        "ranks" : [ {
+          "cost" : "25 pts. de rage",
+          "castTime" : "Instantanée",
+          "cooldown" : "1,5 min de recharge",
+          "requires" : "Requiert Arme de mêlée",
+          "description" : "Vous devenez une tempête tourbillonnante à la force destructrice. Vous frappez instantanément toutes les cibles proches, leur infligeant 150% des dégâts de l'arme, et continuez d'exécuter une attaque tourbillonnante toutes les 1 sec. pendant 6 sec. Tant que vous êtes sous l'effet de Tempête de lames, vous n'éprouvez ni pitié, ni remords, ni peur et ne pouvez être arrêté à moins d'être tué ou désarmé, mais vous ne pouvez utiliser aucune autre technique."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Fureur",
+      "icon" : "ability_warrior_innerrage",
+      "backgroundFile" : "WarriorFury",
+      "overlayColor" : "#ff0000",
+      "description" : "Un furieux « berserker » maniant une arme dans chaque main, qui utilise une multitude d'attaques pour tailler ses adversaires en pièces.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 23881,
+        "name" : "Sanguinaire",
+        "icon" : "spell_nature_bloodlust",
+        "cost" : "20 pts. de rage",
+        "range" : "Allonge",
+        "castTime" : "Instantanée",
+        "cooldown" : "3 s. de recharge",
+        "requires" : "Requiert Arme de mêlée",
+        "reagents" : [ ],
+        "description" : "Attaque instantanément la cible et lui inflige 7 points de dégâts. De plus, les 3 prochaines attaques de mêlée réussies rendent 0.5% du maximum de points de vie. Cet effet dure 8 sec. Les dégâts sont proportionnels à votre puissance d'attaque.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 29592,
+        "name" : "Précision",
+        "icon" : "ability_marksmanship",
+        "reagents" : [ ],
+        "description" : "Augmente les chances de toucher avec vos attaques de 3%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 23588,
+        "name" : "Spécialisation Ambidextrie",
+        "icon" : "ability_dualwield",
+        "reagents" : [ ],
+        "description" : "Vous permet d'équiper des armes à une main dans votre main gauche. Augmente tous vos dégâts physiques de 10% et augmente les dégâts infligés par votre arme en main gauche de 25% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76856,
+        "name" : "Fureur déchaînée",
+        "icon" : "ability_warrior_endlessrage",
+        "reagents" : [ ],
+        "description" : "Augmente l'avantage octroyé par les techniques qui vous font enrager ou nécessitent d'être enragé de 38%. Chaque point de Maîtrise augmente les effets d'Enrager de 4.70% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9610,
+        "name" : "Folie sanguinaire",
+        "icon" : "spell_shadow_summonimp",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Après avoir subi des dégâts, vous avez 10% de chances de régénérer 1.0% de votre total de points de vie en 5 sec."
+        }, {
+          "description" : "Après avoir subi des dégâts, vous avez 10% de chances de régénérer 2% de votre total de points de vie en 5 sec."
+        }, {
+          "description" : "Après avoir subi des dégâts, vous avez 10% de chances de régénérer 3.0% de votre total de points de vie en 5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9606,
+        "name" : "Transe de bataille",
+        "icon" : "inv_helmet_06",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Vos coups réussis avec Sanguinaire, Frappe mortelle et Heurt de bouclier ont 5% de chances de permettre à votre prochaine attaque spéciale coûtant plus de 5 points de rage de ne pas consommer de rage."
+        }, {
+          "description" : "Vos coups réussis avec Sanguinaire, Frappe mortelle et Heurt de bouclier ont 10% de chances de permettre à votre prochaine attaque spéciale coûtant plus de 5 points de rage de ne pas consommer de rage."
+        }, {
+          "description" : "Vos coups réussis avec Sanguinaire, Frappe mortelle et Heurt de bouclier ont 15% de chances de permettre à votre prochaine attaque spéciale coûtant plus de 5 points de rage de ne pas consommer de rage."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9608,
+        "name" : "Cruauté",
+        "icon" : "ability_rogue_eviscerate",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente vos chances d'infliger un coup critique avec Sanguinaire, Frappe mortelle et Heurt de bouclier de 5%."
+        }, {
+          "description" : "Augmente vos chances d'infliger un coup critique avec Sanguinaire, Frappe mortelle et Heurt de bouclier de 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9644,
+        "name" : "Bourreau",
+        "icon" : "inv_sword_48",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Vos coups réussis avec Exécution ont 50% de chances d'augmenter votre vitesse d'attaque en mêlée de 5% pendant 9 sec. Cet effet est cumulable jusqu'à 5 fois."
+        }, {
+          "description" : "Vos coups réussis avec Exécution ont 100% de chances d'augmenter votre vitesse d'attaque en mêlée de 5% pendant 9 sec. Cet effet est cumulable jusqu'à 5 fois."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9624,
+        "name" : "Voix tonitruante",
+        "icon" : "spell_nature_purge",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge de votre Cri de guerre et de votre Cri de commandement de 15 sec. en plus de permettre à ces techniques de générer 5 points de rage supplémentaires."
+        }, {
+          "description" : "Réduit le temps de recharge de votre Cri de guerre et de votre Cri de commandement de 30 sec. en plus de permettre à ces techniques de générer 10 points de rage supplémentaires."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11415,
+        "name" : "Interruption brutale",
+        "icon" : "ability_warrior_commandingshout",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "L'interruption réussie d'un sort avec Coup de bouclier ou Volée de coups augmente vos dégâts de 5% pendant 15 sec."
+        }, {
+          "description" : "L'interruption réussie d'un sort avec Coup de bouclier ou Volée de coups augmente vos dégâts de 5% pendant 30 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9618,
+        "name" : "Hurlement perçant",
+        "icon" : "spell_shadow_deathscream",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "cost" : "10 pts. de rage",
+          "castTime" : "Instantanée",
+          "description" : "Tous les ennemis se trouvant à moins de 10 mètres du guerrier sont hébétés, et leur vitesse de déplacement est réduite de 50% pendant 6 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9636,
+        "name" : "Rafale",
+        "icon" : "ability_ghoulfrenzy",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Lorsque vous infligez un coup critique en mêlée, augmente votre vitesse d'attaque de 8% pour les 3 prochains coups."
+        }, {
+          "description" : "Lorsque vous infligez un coup critique en mêlée, augmente votre vitesse d'attaque de 16% pour les 3 prochains coups."
+        }, {
+          "description" : "Lorsque vous infligez un coup critique en mêlée, augmente votre vitesse d'attaque de 25% pour les 3 prochains coups."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9630,
+        "name" : "Souhait mortel",
+        "icon" : "spell_shadow_deathpact",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "10 pts. de rage",
+          "castTime" : "Instantanée",
+          "cooldown" : "3 min de recharge",
+          "description" : "Lorsque cette technique est activée, vous enragez et vos dégâts physiques sont augmentés de 20%, mais tous les dégâts subis sont augmentés de 5%. Dure 30 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9612,
+        "name" : "Enrager",
+        "icon" : "spell_shadow_unholyfrenzy",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Vos coups en mêlée ont 3% de chances de vous faire Enrager, ce qui vous confère un bonus de 3% aux dégâts pendant 9 sec."
+        }, {
+          "description" : "Vos coups en mêlée ont 6% de chances de vous faire Enrager, ce qui vous confère un bonus de 7% aux dégâts pendant 9 sec."
+        }, {
+          "description" : "Vos coups en mêlée ont 9% de chances de vous faire Enrager, ce qui vous confère un bonus de 10% aux dégâts pendant 9 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11414,
+        "name" : "Par le fil de l'épée",
+        "icon" : "inv_sword_86",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Augmente vos chances de parer de 100% pendant 4 sec chaque fois que vous passez à 20% ou moins de vos points de vie. Cet effet ne peut se produire plus d'une fois toutes les 2 minutes."
+        }, {
+          "description" : "Augmente vos chances de parer de 100% pendant 8 sec chaque fois que vous passez à 20% ou moins de vos points de vie. Cet effet ne peut se produire plus d'une fois toutes les 2 minutes."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11208,
+        "name" : "Coup déchaîné",
+        "icon" : "ability_hunter_swiftstrike",
+        "x" : 1,
+        "y" : 3,
+        "req" : 9630,
+        "ranks" : [ {
+          "cost" : "20 pts. de rage",
+          "range" : "Allonge",
+          "castTime" : "Instantanée",
+          "cooldown" : "6 s. de recharge",
+          "requires" : "Requiert Arme de mêlée",
+          "description" : "Un coup puissant qui inflige 80% des dégâts de l'arme avec les deux armes de mêlée. Ne peut être utilisé que lorsque vous êtes Enragé."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9650,
+        "name" : "Saccager",
+        "icon" : "ability_warrior_rampage",
+        "x" : 2,
+        "y" : 3,
+        "req" : 11208,
+        "ranks" : [ {
+          "description" : "Augmente de 5% les chances de coup critique de tous les membres du groupe ou raid se trouvant à moins de 100 mètres. De plus, augmente vos chances de coup critique de 2% supplémentaires."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9648,
+        "name" : "Fureur héroïque",
+        "icon" : "warrior_talent_icon_deadlycalm",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "castTime" : "Instantanée",
+          "cooldown" : "30 s. de recharge",
+          "description" : "Dissipe tous les effets d'immobilisation et met fin au temps de recharge de votre technique Interception."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9634,
+        "name" : "Attaques furieuses",
+        "icon" : "ability_warrior_furiousresolve",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Vos attaques automatiques ont une chance de réduire tous les soins prodigués à la cible de 10% pendant 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9642,
+        "name" : "Fendoir à viande",
+        "icon" : "warrior_talent_icon_mastercleaver",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts infligés par vos techniques Enchaînement et Tourbillon de 5% pendant 10 sec. Cet effet est cumulable jusqu'à 3 fois."
+        }, {
+          "description" : "Augmente les dégâts infligés par vos techniques Enchaînement et Tourbillon de 10% pendant 10 sec. Cet effet est cumulable jusqu'à3 fois."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10743,
+        "name" : "Intensifier la rage",
+        "icon" : "warrior_talent_icon_furyintheblood",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge de vos techniques Rage berserker, Témérité et Souhait mortel de 10%."
+        }, {
+          "description" : "Réduit le temps de recharge de vos techniques Rage berserker, Témérité et Souhait mortel de 20%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9654,
+        "name" : "Afflux sanguin",
+        "icon" : "ability_warrior_bloodsurge",
+        "x" : 1,
+        "y" : 5,
+        "req" : 11208,
+        "ranks" : [ {
+          "description" : "Vos coups réussis avec Sanguinaire ont 10% de chances de rendre votre prochain Heurtoir instantané et gratuit pendant 10 sec."
+        }, {
+          "description" : "Vos coups réussis avec Sanguinaire ont 20% de chances de rendre votre prochain Heurtoir instantané pendant 10 sec."
+        }, {
+          "description" : "Vos coups réussis avec Sanguinaire ont 30% de chances de rendre votre prochain Heurtoir instantané pendant 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10744,
+        "name" : "Tirailleur",
+        "icon" : "warrior_talent_icon_skirmisher",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge de votre Interception de 5 sec. et de votre Bond héroïque de 10 sec."
+        }, {
+          "description" : "Réduit le temps de recharge de votre Interception de 10 sec. et de votre Bond héroïque de 20 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9658,
+        "name" : "Poigne du titan",
+        "icon" : "ability_warrior_titansgrip",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "description" : "Vous permet de manier les haches, les masses et les épées à deux mains d’une seule main."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9660,
+        "name" : "Fureur obsessionnelle",
+        "icon" : "warrior_talent_icon_singlemindedfury",
+        "x" : 2,
+        "y" : 6,
+        "ranks" : [ {
+          "description" : "Quand vous utilisez simultanément deux armes à une main, vous infligez 15% de dégâts supplémentaires et la technique Heurtoir utilise vos deux armes."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Protection",
+      "icon" : "ability_warrior_defensivestance",
+      "backgroundFile" : "WarriorProtection",
+      "overlayColor" : "#4c7fff",
+      "description" : "Un protecteur fidèle, qui utilise un bouclier pour sa propre sauvegarde et celle de ses alliés.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : true,
+        "healer" : false,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 23922,
+        "name" : "Heurt de bouclier",
+        "icon" : "inv_shield_05",
+        "cost" : "20 pts. de rage",
+        "range" : "Allonge",
+        "castTime" : "Instantanée",
+        "cooldown" : "6 s. de recharge",
+        "requires" : "Requiert Boucliers",
+        "reagents" : [ ],
+        "description" : "Donne un coup de bouclier à la cible, lui infligeant 52 points de dégâts (en fonction de la puissance d'attaque), et dissipe 1 effet de magie sur elle. Génère aussi un niveau élevé de menace.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 29144,
+        "name" : "Sentinelle",
+        "icon" : "inv_helmet_21",
+        "reagents" : [ ],
+        "description" : "Augmente votre total d'Endurance de 15% et vos chances de bloquer de 15%. Vous générez aussi 50% de rage supplémentaire en attaquant des cibles qui ne vous ciblent pas.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 93098,
+        "name" : "Vengeance",
+        "icon" : "ability_paladin_shieldofvengeance",
+        "reagents" : [ ],
+        "description" : "Chaque fois que vous subissez des dégâts, vous recevez un bonus à la puissance d'attaque égal à 5% des dégâts subis, jusqu'à un maximum de 10% de vos points de vie.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76857,
+        "name" : "Blocage critique",
+        "icon" : "ability_warrior_criticalblock",
+        "reagents" : [ ],
+        "description" : "Augmente vos chances de bloquer de 12% et vos chances de réussir un blocage critique de 12%. Chaque point de Maîtrise augmente vos chances de blocage de 1.5% supplémentaires et de blocage critique de 1.5% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10464,
+        "name" : "Emulation",
+        "icon" : "ability_warrior_incite",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente de 5% vos chances de coup critique avec votre Frappe héroïque, et les coups critiques réussis avec Frappe héroïque ont 33% de chances de faire également un coup critique de votre Frappe héroïque suivante. Ces coups critiques garantis ne peuvent déclencher à nouveau l'effet Emulation."
+        }, {
+          "description" : "Augmente de 10% vos chances de coup critique avec votre Frappe héroïque, et les coups critiques réussis avec Frappe héroïque ont 66% de chances de faire également un coup critique de votre Frappe héroïque suivante. Ces coups critiques garantis ne peuvent déclencher à nouveau l'effet Emulation."
+        }, {
+          "description" : "Augmente de 15% vos chances de coup critique avec votre Frappe héroïque, et les coups critiques réussis avec Frappe héroïque ont 100% de chances de faire également un coup critique de votre Frappe héroïque suivante. Ces coups critiques garantis ne peuvent déclencher à nouveau l'effet Emulation."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10474,
+        "name" : "Résistance",
+        "icon" : "spell_holy_devotion",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente la valeur d'armure des objets de 3%."
+        }, {
+          "description" : "Augmente la valeur d'armure des objets de 6%."
+        }, {
+          "description" : "Augmente la valeur d'armure des objets de 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10480,
+        "name" : "Sang et tonnerre",
+        "icon" : "warrior_talent_icon_bloodandthunder",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Quand vous utilisez Coup de tonnerre sur une cible affectée par votre technique Pourfendre, vous avez 50% de chances d'affecter chaque cible avec Pourfendre."
+        }, {
+          "description" : "Quand vous utilisez Coup de tonnerre sur une cible affectée par votre technique Pourfendre, vous avez 100% de chances d'affecter chaque cible avec Pourfendre."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10466,
+        "name" : "Spécialisation Bouclier",
+        "icon" : "inv_shield_06",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Vous générez 5 points de rage supplémentaires quand vous bloquez une attaque. Vous générez 20 points de rage supplémentaires quand vous renvoyez une attaque magique avec Renvoi de sort."
+        }, {
+          "description" : "Vous générez 10 points de rage supplémentaires quand vous bloquez une attaque. Vous générez 40 points de rage supplémentaires quand vous renvoyez une attaque magique avec Renvoi de sort."
+        }, {
+          "description" : "Vous générez 15 points de rage supplémentaires quand vous bloquez une attaque. Vous générez 60 points de rage supplémentaires quand vous renvoyez une attaque magique avec Renvoi de sort."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10472,
+        "name" : "Maîtrise du bouclier",
+        "icon" : "ability_warrior_shieldguard",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge de votre Maîtrise du blocage de 10 secondes, de votre Mur protecteur de 60 secondes et de votre Renvoi de sort de 1 secondes."
+        }, {
+          "description" : "Réduit le temps de recharge de votre Maîtrise du blocage de 20 secondes, de votre Mur protecteur de 120 secondes et de votre Renvoi de sort de 2 secondes."
+        }, {
+          "description" : "Réduit le temps de recharge de votre Maîtrise du blocage de 30 secondes, de votre Mur protecteur de 180 secondes et de votre Renvoi de sort de 3 secondes."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11170,
+        "name" : "Tenir le front",
+        "icon" : "achievement_bg_defendxtowers_av",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente vos chances de coup critique et de blocage critique de 10% pendant 5 sec après une parade réussie."
+        }, {
+          "description" : "Augmente vos chances de coup critique et de blocage critique de 10% pendant 10 sec après une parade réussie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10468,
+        "name" : "Imposition du silence",
+        "icon" : "ability_warrior_shieldbash",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Confère à vos techniques Coup de bouclier et Lancer héroïque 50% de chances de réduire la cible au silence pendant 3 sec. Réduit également le temps de recharge de votre Lancer héroïque de 15 sec."
+        }, {
+          "description" : "Confère à vos techniques Coup de bouclier et Lancer héroïque 100% de chances de réduire la cible au silence pendant 3 sec. Réduit également le temps de recharge de votre Lancer héroïque de 30 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10482,
+        "name" : "Dernier rempart",
+        "icon" : "spell_holy_ashestoashes",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Instantanée",
+          "cooldown" : "3 min de recharge",
+          "description" : "Vous confère temporairement 30% de votre maximum de points de vie en plus pendant 20 sec. Lorsque l'effet expire, les points de vie sont perdus."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10478,
+        "name" : "Coup traumatisant",
+        "icon" : "ability_thunderbolt",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "15 pts. de rage",
+          "range" : "Allonge",
+          "castTime" : "Instantanée",
+          "cooldown" : "30 s. de recharge",
+          "requires" : "Requiert Arme de mêlée",
+          "description" : "Etourdit l'adversaire pendant 5 sec et lui inflige 16 points de dégâts (en fonction de la puissance d'attaque)."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10934,
+        "name" : "Bastion de défense",
+        "icon" : "ability_defend",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Réduit la probabilité que les attaques de mêlée vous infligent un coup critique de 3% lorsque vous êtes en posture défensive. De plus, lorsque vous bloquez, esquivez ou parez une attaque, vous avez 10% de chances d'enrager, ce qui augmente les dégâts physiques infligés de 5% pendant 12 sec."
+        }, {
+          "description" : "Réduit la probabilité que les attaques de mêlée vous infligent un coup critique de 6% lorsque vous êtes en posture défensive. De plus, lorsque vous bloquez, esquivez ou parez une attaque, vous avez 20% de chances d'enrager, ce qui augmente les dégâts physiques infligés de 10% pendant 12 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10494,
+        "name" : "Porteguerre",
+        "icon" : "ability_warrior_warbringer",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Vos techniques Charge, Interception et Intervention sont à présent utilisables en combat et avec n'importe quelle posture. De plus, Intervention dissipe tous les effets affectant le déplacement."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10470,
+        "name" : "Revanche améliorée",
+        "icon" : "ability_warrior_revenge",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts de votre technique Revanche de 30% et lui permet de frapper une cible supplémentaire, lui infligeant 50% de ses dégâts."
+        }, {
+          "description" : "Augmente les dégâts de votre technique Revanche de 60% et lui permet de frapper une cible supplémentaire."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10486,
+        "name" : "Dévaster",
+        "icon" : "inv_sword_11",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "15 pts. de rage",
+          "range" : "Allonge",
+          "castTime" : "Instantanée",
+          "requires" : "Requiert Boucliers",
+          "description" : "Fracasse l'armure de la cible, provoquant l'effet Fracasser armure. De plus, inflige 109% des dégâts de l'arme plus 7 pour chaque Fracasser armure sur la cible. L'effet de fracassement d'armure peut être cumulé jusqu'à 3 fois."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11217,
+        "name" : "Victoire imminente",
+        "icon" : "ability_warrior_devastate",
+        "x" : 3,
+        "y" : 3,
+        "req" : 10486,
+        "ranks" : [ {
+          "description" : "Quand vous utilisez Dévaster sur une cible qui dispose de 20% ou moins de ses points de vie, vous avez 25% de chances de permettre l'utilisation d'Ivresse de la victoire, qui ne vous rendra toutefois que 5% de vos points de vie."
+        }, {
+          "description" : "Quand vous utilisez Dévaster sur une cible qui dispose de 20% ou moins de ses points de vie, vous avez 50% de chances de permettre l'utilisation d'Ivresse de la victoire, qui ne vous rendra toutefois que 5% de vos points de vie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10488,
+        "name" : "Foudroyé",
+        "icon" : "warrior_talent_icon_thunderstruck",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts de Pourfendre, Enchaînement et Coup de tonnerre de 3%. De plus, votre Coup de tonnerre augmente les dégâts de votre prochaine Onde de choc de 5%. Cumulable jusqu'à 3 fois."
+        }, {
+          "description" : "Augmente les dégâts de Pourfendre, Enchaînement et Coup de tonnerre de 6%. De plus, votre Coup de tonnerre augmente les dégâts de votre prochaine Onde de choc de 10%. Cumulable jusqu'à 3 fois."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10492,
+        "name" : "Vigilance",
+        "icon" : "ability_warrior_vigilance",
+        "x" : 1,
+        "y" : 4,
+        "req" : 10478,
+        "ranks" : [ {
+          "range" : "30 yd range",
+          "castTime" : "Instantanée",
+          "description" : "Focalise votre regard protecteur sur une cible appartenant au groupe ou raid. Chaque fois qu'elle est touchée par une attaque, le temps de recharge de votre Provocation prend fin et vous bénéficiez de Vengeance comme si 20% des dégâts vous avaient été infligés. Dure 30 min. Une seule cible à la fois peut bénéficier de cet effet."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10484,
+        "name" : "Lourdes répercussions",
+        "icon" : "inv_shield_01",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Quand votre Maîtrise du blocage est active, votre Heurt de bouclier inflige 50% de dégâts supplémentaires."
+        }, {
+          "description" : "Quand votre Maîtrise du blocage est active, votre Heurt de bouclier inflige 100% de dégâts supplémentaires."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10490,
+        "name" : "Protéger",
+        "icon" : "ability_warrior_safeguard",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Réduit les dégâts subis par la cible de votre technique Intervention de 15% pendant 6 sec."
+        }, {
+          "description" : "Réduit les dégâts subis par la cible de votre technique Intervention de 30% pendant 6 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10496,
+        "name" : "Epée et bouclier",
+        "icon" : "ability_warrior_swordandboard",
+        "x" : 2,
+        "y" : 5,
+        "req" : 10486,
+        "ranks" : [ {
+          "description" : "Augmente les chances de coup critique de Dévaster de 5%. De plus, quand votre technique Dévaster ou Revanche inflige des dégâts, elle a 10% de chances de mettre fin au temps de recharge de votre Heurt de bouclier et de réduire son coût de 100% pendant 5 sec."
+        }, {
+          "description" : "Augmente les chances de coup critique de Dévaster de 10%. De plus, quand votre technique Dévaster ou Revanche inflige des dégâts, elle a 20% de chances de mettre fin au temps de recharge de votre Heurt de bouclier et de réduire son coût de 100% pendant 5 sec."
+        }, {
+          "description" : "Augmente les chances de coup critique de Dévaster de 15%. De plus, quand votre technique Dévaster ou Revanche inflige des dégâts, elle a 30% de chances de mettre fin au temps de recharge de votre Heurt de bouclier et de réduire son coût de 100% pendant 5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10498,
+        "name" : "Onde de choc",
+        "icon" : "ability_warrior_shockwave",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "15 pts. de rage",
+          "castTime" : "Instantanée",
+          "cooldown" : "20 s. de recharge",
+          "description" : "Projette devant vous une onde de force qui inflige 16 points de dégâts (en fonction de la puissance d'attaque) à toutes les cibles ennemies se trouvant à moins de 10 mètres dans un cône devant lui et les étourdit pendant 4 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

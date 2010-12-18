@@ -1,0 +1,1000 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 4,
+      "name" : "Voleur",
+      "powerType" : "ENERGY",
+      "powerTypeId" : 3
+    },
+    "talentTrees" : [ {
+      "name" : "Assassinat",
+      "icon" : "ability_rogue_eviscerate",
+      "backgroundFile" : "RogueAssassination",
+      "overlayColor" : "#7fcc7f",
+      "description" : "Un impitoyable maître des poisons qui achève ses ennemis par de vicieux coups de dague.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 1329,
+        "name" : "Estropier",
+        "icon" : "ability_rogue_shadowstrikes",
+        "cost" : "60 pts. d’énergy",
+        "range" : "Allonge",
+        "castTime" : "Instantanée",
+        "requires" : "Requiert Dagues",
+        "reagents" : [ ],
+        "description" : "Attaque instantanément avec les deux armes et inflige 63% des dégâts des armes plus 7 points de dégâts avec chacune d'elles. Les dégâts sont augmentés de 20% contre les cibles empoisonnées. Vous gagnez 2 points de combo.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 84601,
+        "name" : "Résolution de l'assassin",
+        "icon" : "ability_rogue_sinistercalling",
+        "reagents" : [ ],
+        "description" : "Lorsque vous utilisez des dagues, votre maximum d'énergie est augmenté de 20 et vos dégâts de mêlée sont augmentés de 15%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 14117,
+        "name" : "Poisons améliorés",
+        "icon" : "ability_poisons",
+        "reagents" : [ ],
+        "description" : "Augmente vos chances d'appliquer Poison mortel sur votre cible de 20% et la fréquence à laquelle vous appliquez Poison instantané sur votre cible de 50%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76803,
+        "name" : "Poisons violents",
+        "icon" : "trade_brewpoison",
+        "reagents" : [ ],
+        "description" : "Augmente les dégâts infligés par vos poisons de 28%. Chaque point de Maîtrise augmente les dégâts de 3.5% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 6514,
+        "name" : "Elan mortel",
+        "icon" : "ability_rogue_deadlymomentum",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Lorsque vous tuez un adversaire qui vous fait gagner de l'expérience ou de l'honneur, vous avez 50% de chances d'augmenter votre probabilité de coup critique lors de votre prochaine attaque dans les 10 sec de 40% et de réinitialiser la durée de vos techniques Débiter ou Conversion."
+        }, {
+          "description" : "Lorsque vous tuez un adversaire qui vous fait gagner de l'expérience ou de l'honneur, vos chances d'infliger un coup critique lors de votre prochaine attaque dans les 10 sec sont augmentées de 40% et la durée de vos techniques Débiter et Conversion est réinitialisée."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 276,
+        "name" : "Achever",
+        "icon" : "ability_rogue_eviscerate",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts infligés par vos techniques Eviscération et Envenimer de 7%."
+        }, {
+          "description" : "Augmente les dégâts infligés par vos techniques Eviscération et Envenimer de 14%."
+        }, {
+          "description" : "Augmente les dégâts infligés par vos techniques Eviscération et Envenimer de 20%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 269,
+        "name" : "Mortalité",
+        "icon" : "ability_criticalstrike",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente de 10% le bonus aux dégâts des coups critiques réussis avec vos techniques Attaque pernicieuse, Attaque sournoise, Estropier et Hémorragie."
+        }, {
+          "description" : "Augmente de 20% le bonus aux dégâts des coups critiques réussis avec vos techniques Attaque pernicieuse, Attaque sournoise, Estropier et Hémorragie."
+        }, {
+          "description" : "Augmente de 30% le bonus aux dégâts des coups critiques réussis avec vos techniques Attaque pernicieuse, Attaque sournoise, Estropier et Hémorragie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 273,
+        "name" : "Némésis",
+        "icon" : "ability_druid_disembowel",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Confère à vos coups de grâce en mêlée 20% de chances d'ajouter un point de combo à votre cible."
+        }, {
+          "description" : "Confère à vos coups de grâce en mêlée 40% de chances d'ajouter un point de combo à votre cible."
+        }, {
+          "description" : "Confère à vos coups de grâce en mêlée 60% de chances d'ajouter un point de combo à votre cible."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1721,
+        "name" : "Vivacité",
+        "icon" : "ability_rogue_quickrecovery",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Tous les effets de soins utilisés sur vous sont augmentés de 10% et votre vitesse de déplacement est augmentée de 8%. Ne s'additionne pas avec les autres effets qui augmentent la vitesse de déplacement."
+        }, {
+          "description" : "Tous les effets de soins utilisés sur vous sont augmentés de 20% et votre vitesse de déplacement est augmentée de 15%. Ne s'additionne pas avec les autres effets qui augmentent la vitesse de déplacement."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 277,
+        "name" : "Blessures transperçantes",
+        "icon" : "ability_backstab",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente vos chances d'infliger un coup critique avec la technique Attaque sournoise de 10% et vos chances d'infliger un coup critique avec la technique Estropier de 5%."
+        }, {
+          "description" : "Augmente vos chances d'infliger un coup critique avec la technique Attaque sournoise de 20% et vos chances d'infliger un coup critique avec la technique Estropier de 10%."
+        }, {
+          "description" : "Augmente vos chances d'infliger un coup critique avec la technique Attaque sournoise de 30% et vos chances d'infliger un coup critique avec la technique Estropier de 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 6515,
+        "name" : "Matraque",
+        "icon" : "ability_rogue_blackjack",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "L'effet de votre attaque avec Assommer se prolonge sur vos ennemis après s'être dissipé, réduisant les dégâts qu'ils infligent de 35% pendant 8 sec."
+        }, {
+          "description" : "L'effet de votre attaque avec Assommer se prolonge sur vos ennemis après s'être dissipé, réduisant les dégâts qu'ils infligent de 70% pendant 8 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2065,
+        "name" : "Breuvage mortel",
+        "icon" : "ability_rogue_deadlybrew",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Quand vous appliquez Poison instantané, douloureux ou de distraction mentale à une cible, vous avez 50% de chances d'appliquer Poison affaiblissant."
+        }, {
+          "description" : "Quand vous appliquez Poison instantané, douloureux ou de distraction mentale à une cible, vous avez 100% de chances d'appliquer Poison affaiblissant."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 280,
+        "name" : "Sang froid",
+        "icon" : "spell_ice_lament",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Instantanée",
+          "cooldown" : "2 min de recharge",
+          "description" : "Lorsque vous déclenchez ce talent, vous générez 25 points d'énergie et vos chances d'infliger un coup critique avec votre prochaine technique offensive non périodique augmentent de 100%."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 682,
+        "name" : "Poisons abominables",
+        "icon" : "ability_rogue_feigndeath",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Augmente de 7% les points de dégâts infligés par vos poisons. Vous bénéficiez de 33% des chances normales d'appliquer les poisons dont sont enduites vos armes de mêlée équipées quand vous utilisez votre technique Éventail de couteaux."
+        }, {
+          "description" : "Augmente de 14% les points de dégâts infligés par vos poisons. Vous bénéficiez de 67% des chances normales d'appliquer les poisons dont sont enduites vos armes de mêlée équipées quand vous utilisez votre technique Éventail de couteaux."
+        }, {
+          "description" : "Augmente de 20% les points de dégâts infligés par vos poisons. Vous bénéficiez de 100% des chances normales d'appliquer les poisons dont sont enduites vos armes de mêlée équipées quand vous utilisez votre technique Éventail de couteaux."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11209,
+        "name" : "Anesthésie nerveuse",
+        "icon" : "ability_rogue_deadenednerves",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Réduit tous les dégâts subis de 3%."
+        }, {
+          "description" : "Réduit tous les dégâts subis de 7%."
+        }, {
+          "description" : "Réduit tous les dégâts subis de 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 283,
+        "name" : "Scelle le destin",
+        "icon" : "ability_rogue_stayofexecution",
+        "x" : 1,
+        "y" : 3,
+        "req" : 280,
+        "ranks" : [ {
+          "description" : "Les coups critiques infligés par les techniques qui ajoutent un point de combo ont 50% de chances de vous faire gagner un point de combo supplémentaire."
+        }, {
+          "description" : "Les coups critiques infligés par les techniques qui ajoutent un point de combo ont 100% de chances de vous faire gagner un point de combo supplémentaire."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 6516,
+        "name" : "Intention meurtrière",
+        "icon" : "spell_shadow_deathscream",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Quand vous utilisez Attaque sournoise contre un ennemi qui dispose de moins de 35% de ses points de vie, vous récupérez instantanément 15 points d'énergie."
+        }, {
+          "description" : "Quand vous utilisez Attaque sournoise contre un ennemi qui dispose de moins de 35% de ses points de vie, vous récupérez instantanément 30 points d'énergie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 281,
+        "name" : "Outrance meurtrière",
+        "icon" : "ability_hunter_rapidkilling",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Lorsque vous êtes camouflé et pendant 20 secondes après la fin du camouflage, vous régénérez 30% d'énergie supplémentaire."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1715,
+        "name" : "Maître empoisonneur",
+        "icon" : "ability_creature_poison_06",
+        "x" : 2,
+        "y" : 4,
+        "req" : 682,
+        "ranks" : [ {
+          "description" : "Augmente de 8% les dégâts des sorts que subit toute cible que vous avez empoisonnée. Permet à Envenimer de ne plus consommer de charge de Poison mortel. La durée de tous les effets de poison appliqués sur vous est réduite de 50%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 278,
+        "name" : "Exposer l'armure amélioré",
+        "icon" : "ability_warrior_riposte",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Confère 50% de chances d'être remboursé de tous les points de combo utilisés lorsque vous utilisez votre technique Exposer l'armure."
+        }, {
+          "description" : "Confère 100% de chances d'être remboursé de tous les points de combo utilisés lorsque vous utilisez votre technique Exposer l'armure."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2070,
+        "name" : "Tailler dans le vif",
+        "icon" : "ability_rogue_cuttothechase",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Vos techniques Eviscération et Envenimer ont 33% de chances de réinitialiser la durée de Débiter à son maximum de 5 points de combo."
+        }, {
+          "description" : "Vos techniques Eviscération et Envenimer ont 67% de chances de réinitialiser la durée de Débiter à son maximum de 5 points de combo."
+        }, {
+          "description" : "Vos techniques Eviscération et Envenimer ont 100% de chances de réinitialiser la durée de Débiter à son maximum de 5 points de combo."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 6517,
+        "name" : "Blessures venimeuses",
+        "icon" : "ability_rogue_venomouswounds",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Chaque fois que votre Rupture ou Garrot inflige des dégâts à un ennemi que vous avez empoisonné, vous avez 30% de chances d'infliger 26 points de dégâts de Nature supplémentaires et de regagner 10 points d'énergie. Si un ennemi meurt affecté par Rupture, vous regagnez un montant d'énergie proportionnel au temps d'application qu'il restait."
+        }, {
+          "description" : "Chaque fois que votre Rupture ou Garrot inflige des dégâts à un ennemi que vous avez empoisonné, vous avez 60% de chances d'infliger 26 points de dégâts de Nature supplémentaires et de regagner 10 points d'énergie. Si un ennemi meurt affecté par Rupture, vous regagnez un montant d'énergie proportionnel au temps d'application qu'il restait."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2071,
+        "name" : "Vendetta",
+        "icon" : "ability_rogue_deadliness",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "range" : "30 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "2 min de recharge",
+          "description" : "Désigne un ennemi pour mourir, ce qui augmente tous les dégâts que vous infligez à la cible de 20% et vous permet de la voir immanquablement, même si elle cherche à se dissimuler en se camouflant ou en devenant invisible. Dure 30 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Combat",
+      "icon" : "ability_backstab",
+      "backgroundFile" : "RogueCombat",
+      "overlayColor" : "#ff7f00",
+      "description" : "Un bretteur utilisant agilité et ruse pour affronter ses ennemis.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 13877,
+        "name" : "Déluge de lames",
+        "icon" : "ability_warrior_punishingblow",
+        "cost" : "25 pts. d’énergy",
+        "castTime" : "Instantanée",
+        "cooldown" : "30 s. de recharge",
+        "reagents" : [ ],
+        "description" : "Quand ce talent est actif, les attaques du voleur frappent un adversaire proche supplémentaire, mais la régénération d'énergie est réduite de 20%. Dure 15 sec.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 13852,
+        "name" : "Ambidextrie",
+        "icon" : "ability_dualwield",
+        "reagents" : [ ],
+        "description" : "Augmente de 75% les dégâts infligés par l'arme que vous utilisez en main gauche et vos armes de jet.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 61329,
+        "name" : "Vitalité",
+        "icon" : "ability_warrior_revenge",
+        "reagents" : [ ],
+        "description" : "Augmente votre taux de régénération d'énergie de 25% et votre Puissance d'attaque de 20%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76806,
+        "name" : "Main gauche",
+        "icon" : "inv_weapon_shortblade_15",
+        "reagents" : [ ],
+        "description" : "Vos attaques de la main droite ont 16% de chances de vous octroyer une attaque de la main gauche supplémentaire. Chaque point de Maîtrise augmente ces chances de 2.00% supplémentaires..",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 6395,
+        "name" : "Conversion améliorée",
+        "icon" : "ability_rogue_improvedrecuperate",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Permet à votre technique Conversion de vous soigner pour un montant supplémentaire égal à 1% de votre maximum de points de vie et réduit tous les dégâts subis de 3% tant que votre technique Conversion est active."
+        }, {
+          "description" : "Permet à votre technique Conversion de vous soigner pour un montant supplémentaire égal à 2% de votre maximum de points de vie et réduit tous les dégâts subis de 6% tant que votre technique Conversion est active."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 201,
+        "name" : "Attaque pernicieuse améliorée",
+        "icon" : "spell_shadow_ritualofsacrifice",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente de 10% les dégâts infligés par Attaque pernicieuse et réduit de 2 son coût en énergie."
+        }, {
+          "description" : "Augmente de 20% les dégâts infligés par Attaque pernicieuse et réduit de 4 son coût en énergie."
+        }, {
+          "description" : "Augmente de 30% les dégâts infligés par Attaque pernicieuse et réduit de 6 son coût en énergie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 181,
+        "name" : "Précision",
+        "icon" : "ability_marksmanship",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente vos chances de toucher avec les armes et les attaques empoisonnées de 2%."
+        }, {
+          "description" : "Augmente vos chances de toucher avec les armes et les attaques empoisonnées de 4%."
+        }, {
+          "description" : "Augmente vos chances de toucher avec les armes et les attaques empoisonnées de 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1827,
+        "name" : "Débiter amélioré",
+        "icon" : "ability_rogue_slicedice",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente la durée de votre technique Débiter de 25%."
+        }, {
+          "description" : "Augmente la durée de votre technique Débiter de 50%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 222,
+        "name" : "Sprint amélioré",
+        "icon" : "ability_rogue_sprint",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Confère 50% de chances d'annuler tous les effets affectant le déplacement lorsque vous activez votre technique Sprint."
+        }, {
+          "description" : "Confère 100% de chances d'annuler tous les effets affectant le déplacement lorsque vous activez votre technique Sprint."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1122,
+        "name" : "Agressivité",
+        "icon" : "ability_racial_avatar",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente de 7% les points de dégâts infligés par vos techniques Attaque pernicieuse, Attaque sournoise et Eviscération."
+        }, {
+          "description" : "Augmente de 14% les points de dégâts infligés par vos techniques Attaque pernicieuse, Attaque sournoise et Eviscération."
+        }, {
+          "description" : "Augmente de 20% les points de dégâts infligés par vos techniques Attaque pernicieuse, Attaque sournoise et Eviscération."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 206,
+        "name" : "Coup de pied amélioré",
+        "icon" : "ability_kick",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Permet à votre technique Coup de pied d'également réduire la cible au silence pendant 1.50 sec.."
+        }, {
+          "description" : "Permet à votre technique Coup de pied de réduire la cible au silence pendant 3 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 186,
+        "name" : "Réflexes éclairs",
+        "icon" : "spell_nature_invisibilty",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Augmente vos chances d'esquiver de 3% et vous octroie un bonus de 2% à la hâte en mêlée."
+        }, {
+          "description" : "Augmente vos chances d'esquiver de 6% et vous octroie un bonus de 4% à la hâte en mêlée."
+        }, {
+          "description" : "Augmente vos chances d'esquiver de 9% et vous octroie un bonus de 6% à la hâte en mêlée."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11171,
+        "name" : "Frappe révélatrice",
+        "icon" : "inv_sword_97",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "40 pts. d’énergy",
+          "range" : "Allonge",
+          "castTime" : "Instantanée",
+          "requires" : "Requiert Arme de mêlée",
+          "description" : "Une attaque instantanée qui inflige 81% des dégâts normaux de l'arme et augmente l'efficacité de votre prochain coup de grâce offensif sur cette cible de 20% pendant 15 sec. Vous gagnez 1 point de combo."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 6511,
+        "name" : "Cuir renforcé",
+        "icon" : "ability_rogue_reinforcedleather",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Augmente de 25% la valeur d'armure apportée par les objets en tissu et en cuir."
+        }, {
+          "description" : "Augmente de 50% la valeur d'armure apportée par les objets en tissu et en cuir."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 203,
+        "name" : "Suriner amélioré",
+        "icon" : "ability_gouge",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Augmente la durée de l'effet de votre technique Suriner de 1 sec. et réduit son coût en énergie de 15."
+        }, {
+          "description" : "Augmente la durée de l'effet de votre technique Suriner de 2 sec. et réduit son coût en énergie de 30."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1825,
+        "name" : "Toute-puissance de combat",
+        "icon" : "inv_weapon_shortblade_38",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Confère à vos attaques de mêlée avec la main gauche réussies 20% de chances de générer 5 points d'énergie."
+        }, {
+          "description" : "Confère à vos attaques de mêlée avec la main gauche réussies 20% de chances de générer 10 points d'énergie."
+        }, {
+          "description" : "Confère à vos attaques de mêlée avec la main gauche réussies 20% de chances de générer 15 points d'énergie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1706,
+        "name" : "Tournoiement de lames",
+        "icon" : "ability_rogue_bladetwisting",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Confère à vos attaques en mêlée qui infligent des dégâts 20% de chances d'hébéter la cible et de réduire sa vitesse de déplacement de 70% pendant 4 sec."
+        }, {
+          "description" : "Confère à vos attaques en mêlée qui infligent des dégâts 40% de chances d'hébéter la cible et de réduire sa vitesse de déplacement de 70% pendant 8 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2072,
+        "name" : "Spécialisation Armes de jet",
+        "icon" : "ability_rogue_throwingspecialization",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Augmente la portée de Lancer et Lancer mortel de 5 mètres et confère à votre Lancer mortel 50% de chances d'interrompre la cible pendant 3 sec."
+        }, {
+          "description" : "Augmente la portée de Lancer et Lancer mortel de 10 mètres et confère à votre Lancer mortel 100% de chances d'interrompre la cible pendant 3 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 205,
+        "name" : "Poussée d'adrénaline",
+        "icon" : "spell_shadow_shadowworddominate",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Instantanée",
+          "cooldown" : "3 min de recharge",
+          "description" : "Augmente le taux de régénération de votre Energie de 100% et votre vitesse d'attaque en mêlée de 20% pendant 15 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2074,
+        "name" : "Combat sauvage",
+        "icon" : "ability_creature_disease_03",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Augmente votre total de puissance d'attaque de 2% et tous les dégâts physiques infligés aux ennemis que vous avez empoisonnés sont augmentés de 2%."
+        }, {
+          "description" : "Augmente votre total de puissance d'attaque de 4% et tous les dégâts physiques infligés aux ennemis que vous avez empoisonnés sont augmentés de 4%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11174,
+        "name" : "Ruse du bandit",
+        "icon" : "ability_rogue_preyontheweak",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Vos techniques Attaque pernicieuse et Frappe révélatrice ont 33% de chances de vous permettre de comprendre la défense d'un adversaire et son évolution, ce qui peut faire augmenter les dégâts contre lui d'un maximum de 30%. Les adversaires s'adaptent avec le temps, ce qui supprime cet avantage. Si vous frappez un adversaire différent, le cycle recommence."
+        }, {
+          "description" : "Vos techniques Attaque pernicieuse et Frappe révélatrice ont 67% de chances de vous permettre de comprendre la défense d'un adversaire et son évolution, ce qui peut faire augmenter les dégâts contre lui d'un maximum de 30%. Les adversaires s'adaptent avec le temps, ce qui supprime cet avantage. Si vous frappez un adversaire différent, le cycle recommence."
+        }, {
+          "description" : "Vos techniques Attaque pernicieuse et Frappe révélatrice ont 100% de chances de vous permettre de comprendre la défense d'un adversaire et son évolution, ce qui peut faire augmenter les dégâts contre lui d'un maximum de 30%. Les adversaires s'adaptent avec le temps, ce qui supprime cet avantage. Si vous frappez un adversaire différent, le cycle recommence."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 6513,
+        "name" : "Lames sans repos",
+        "icon" : "ability_rogue_restlessblades",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Vos coups de grâce qui infligent des dégâts réduisent le temps de recharge de vos techniques Poussée d'adrénaline, Série meurtrière et Sprint de 1 sec. par point de combo."
+        }, {
+          "description" : "Vos coups de grâce qui infligent des dégâts réduisent le temps de recharge de vos techniques Poussée d'adrénaline, Série meurtrière et Sprint de 2 sec. par point de combo."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2076,
+        "name" : "Série meurtrière",
+        "icon" : "ability_rogue_murderspree",
+        "x" : 1,
+        "y" : 6,
+        "req" : 205,
+        "ranks" : [ {
+          "range" : "10 yd range",
+          "castTime" : "Instantanée",
+          "cooldown" : "2 min de recharge",
+          "requires" : "Requiert Arme de mêlée",
+          "description" : "Marche à travers les ombres d'ennemi en ennemi se trouvant à moins de 10 mètres et attaque un ennemi toutes les 0,5 sec. avec les deux armes jusqu'à ce que 5 assauts aient été effectués. Augmente tous les dégâts de 20% pendant ce temps. Peut toucher la même cible plusieurs fois. Ne peut pas toucher les cibles invisibles ou camouflées."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Finesse",
+      "icon" : "ability_stealth",
+      "backgroundFile" : "RogueSubtlety",
+      "overlayColor" : "#4c7fff",
+      "description" : "Un sombre traqueur qui surgit de l'ombre pour tendre une embuscade à sa proie sans méfiance.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 36554,
+        "name" : "Pas de l'ombre",
+        "icon" : "ability_rogue_shadowstep",
+        "cost" : "10 pts. d’énergy",
+        "range" : "25 yd range",
+        "castTime" : "Instantanée",
+        "cooldown" : "20 s. de recharge",
+        "reagents" : [ ],
+        "description" : "Les dégâts de votre prochaine technique Embuscade ou Garrot infligée dans les 10 sec sont augmentés de 30%. De plus, votre vitesse de déplacement est augmentée de 70% pendant 3 sec.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 31223,
+        "name" : "Maître de la discrétion",
+        "icon" : "ability_rogue_masterofsubtlety",
+        "reagents" : [ ],
+        "description" : "Les attaques effectuées alors que vous êtes camouflé et pendant les 6 secondes suivant l'annulation du camouflage infligent 10% de dégâts supplémentaires.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 31220,
+        "name" : "Vocation pernicieuse",
+        "icon" : "ability_rogue_sinistercalling",
+        "reagents" : [ ],
+        "description" : "Augmente votre total d'Agilité de 25% et augmente de 25% supplémentaires le bonus aux dégâts d'Attaque sournoise et Hémorragie.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76808,
+        "name" : "Bourreau",
+        "icon" : "inv_axe_06",
+        "reagents" : [ ],
+        "description" : "Augmente les dégâts infligés par tous vos coups de grâce et l'efficacité de votre technique Débiter de 16%. Chaque point de Maîtrise augmente les dégâts de 2.0% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 244,
+        "name" : "Traqueur nocturne",
+        "icon" : "ability_stealth",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente de 7% votre vitesse de déplacement lorsque vous êtes camouflé et réduit de 3 sec. le temps de recharge de votre technique Camouflage."
+        }, {
+          "description" : "Augmente de 15% votre vitesse de déplacement lorsque vous êtes camouflé et réduit de 6 sec. le temps de recharge de votre technique Camouflage."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 263,
+        "name" : "Embuscade améliorée",
+        "icon" : "ability_rogue_ambush",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente les chances d'infliger un coup critique avec votre technique Embuscade de 20% et ses dégâts de 5%."
+        }, {
+          "description" : "Augmente les chances d'infliger un coup critique avec votre technique Embuscade de 40% et ses dégâts de 10%."
+        }, {
+          "description" : "Augmente les chances d'infliger un coup critique avec votre technique Embuscade de 60% et ses dégâts de 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2244,
+        "name" : "Frappes implacables",
+        "icon" : "ability_warrior_decisivestrike",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Vos coups de grâce ont 7% de chances par point de combo de vous rendre 25 points d'énergie."
+        }, {
+          "description" : "Vos coups de grâce ont 14% de chances par point de combo de vous rendre 25 points d'énergie."
+        }, {
+          "description" : "Vos coups de grâce ont 20% de chances par point de combo de vous rendre 25 points d'énergie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 247,
+        "name" : "Insaisissable",
+        "icon" : "spell_magic_lesserinvisibilty",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge de vos techniques Disparition et Cécité de 30 sec. et de votre technique Cape d'ombre de 15 sec."
+        }, {
+          "description" : "Réduit le temps de recharge de vos techniques Disparition et Cécité de 60 sec. et de votre technique Cape d'ombre de 30 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2077,
+        "name" : "Assaillir",
+        "icon" : "ability_rogue_waylay",
+        "x" : 1,
+        "y" : 1,
+        "req" : 263,
+        "ranks" : [ {
+          "description" : "Vos coups avec Embuscade et Attaque sournoise ont 50% de chances de déséquilibrer la cible, ce qui augmente le temps entre ses attaques en mêlée et à distance de 20% et réduit sa vitesse de déplacement de 50% pendant 8 sec."
+        }, {
+          "description" : "Vos coups avec Embuscade et Attaque sournoise ont 100% de chances de déséquilibrer la cible, ce qui augmente le temps entre ses attaques en mêlée et à distance de 20% et réduit sa vitesse de déplacement de 50% pendant 8 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 261,
+        "name" : "Opportunité",
+        "icon" : "ability_rogue_bloodsplatter",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente de 10% les dégâts infligés avec vos techniques Attaque sournoise, Estropier, Garrot et Embuscade."
+        }, {
+          "description" : "Augmente de 20% les dégâts infligés avec vos techniques Attaque sournoise, Estropier, Garrot et Embuscade."
+        }, {
+          "description" : "Augmente de 30% les dégâts infligés avec vos techniques Attaque sournoise, Estropier, Garrot et Embuscade."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 245,
+        "name" : "Initiative",
+        "icon" : "spell_shadow_fumble",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Vous confère 50% de chances de gagner un point de combo supplémentaire lorsque vous utilisez les techniques Embuscade, Garrot et Coup bas."
+        }, {
+          "description" : "Vous confère 100% de chances de gagner un point de combo supplémentaire lorsque vous utilisez les techniques Embuscade, Garrot et Coup bas."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11665,
+        "name" : "Récupération énergétique",
+        "icon" : "ability_rogue_sturdyrecuperate",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Renforce votre capacité Conversion. Son effet périodique rend aussi 4 points d’énergie."
+        }, {
+          "description" : "Renforce votre capacité Conversion. Son effet périodique rend aussi 8 points d’énergie."
+        }, {
+          "description" : "Renforce votre capacité Conversion. Son effet périodique rend aussi 12 points d’énergie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 6519,
+        "name" : "Découverte des faiblesses",
+        "icon" : "ability_rogue_findweakness",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Vos techniques Garrot, Rupture et Coup bas révèlent une faille dans les défenses de votre cible, ce qui permet à toutes vos attaques d'ignorer 25% de l'armure de cet ennemi pendant 10 sec."
+        }, {
+          "description" : "Vos techniques Garrot, Rupture et Coup bas révèlent une faille dans les défenses de votre cible, ce qui permet à toutes vos attaques d'ignorer 50% de l'armure de cet ennemi pendant 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 681,
+        "name" : "Hémorragie",
+        "icon" : "spell_shadow_lifedrain",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "35 pts. d’énergy",
+          "range" : "Allonge",
+          "castTime" : "Instantanée",
+          "requires" : "Requiert Arme de mêlée",
+          "description" : "Une attaque instantanée qui inflige 69% des dégâts de l'arme (100% si une dague est équipée) à l'adversaire et provoque une hémorragie qui augmente de 30% les dégâts infligés par les effets de saignement pendant 1 min. Vous gagnez 1 point de combo."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2078,
+        "name" : "Honneur des voleurs",
+        "icon" : "ability_rogue_honoramongstthieves",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Augmente les chances de coup critique de tous les membres du groupe ou raid de 5%. Chaque fois qu'un membre de votre groupe ou raid réussit un coup critique avec un sort ou une technique, vous avez 33% de chances de gagner un point de combo sur votre cible actuelle. Cet effet ne peut se produire plus d'une fois toutes les 4 secondes."
+        }, {
+          "description" : "Augmente les chances de coup critique de tous les membres du groupe ou raid de 5%. Chaque fois qu'un membre de votre groupe ou raid réussit un coup critique avec un sort ou une technique, vous avez 66% de chances de gagner un point de combo sur votre cible actuelle. Cet effet ne peut se produire plus d'une fois toutes les 3 secondes."
+        }, {
+          "description" : "Augmente les chances de coup critique de tous les membres du groupe ou raid de 5%. Chaque fois qu'un membre de votre groupe ou raid réussit un coup critique avec un sort ou une technique, vous avez 100% de chances de gagner un point de combo sur votre cible actuelle. Cet effet ne peut se produire plus d'une fois toutes les 2 secondes."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 381,
+        "name" : "Préméditation",
+        "icon" : "spell_shadow_possession",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "range" : "30 yd range",
+          "castTime" : "Instantanée",
+          "cooldown" : "20 s. de recharge",
+          "description" : "Lorsqu'elle est utilisée, cette technique ajoute 2 points de combo à la cible. Vous devez ajouter à ces points de combo ou les utiliser avant 20 sec sinon les points de combo sont perdus."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11664,
+        "name" : "Linceul d'ombres",
+        "icon" : "ability_rogue_envelopingshadows",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Réduit les dégâts que vous infligent les attaques à zone d'effet de 10% et augmente la durée de votre technique Feinte de 1 sec."
+        }, {
+          "description" : "Réduit les dégâts que vous infligent les attaques à zone d'effet de 20% et augmente la durée de votre technique Feinte de 2 sec."
+        }, {
+          "description" : "Réduit les dégâts que vous infligent les attaques à zone d'effet de 30% et augmente la durée de votre technique Feinte de 3 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1722,
+        "name" : "Trompe-la-mort",
+        "icon" : "ability_rogue_cheatdeath",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Vous avez 33% de chances qu'une attaque qui devrait normalement vous tuer réduise seulement vos points de vie à 10% de leur maximum. De plus, réduit tous les dégâts subis de 90% pendant 3 sec. Cet effet ne peut se produire plus d'une fois par minute."
+        }, {
+          "description" : "Vous avez 66% de chances qu'une attaque qui devrait normalement vous tuer réduise seulement vos points de vie à 10% de leur maximum. De plus, réduit tous les dégâts subis de 90% pendant 3 sec. Cet effet ne peut se produire plus d'une fois par minute."
+        }, {
+          "description" : "Vous avez 100% de chances qu'une attaque qui devrait normalement vous tuer réduise seulement vos points de vie à 10% de leur maximum. De plus, réduit tous les dégâts subis de 90% pendant 3 sec. Cet effet ne peut se produire plus d'une fois par minute."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 284,
+        "name" : "Préparation",
+        "icon" : "ability_rogue_preparation",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Instantanée",
+          "cooldown" : "5 min de recharge",
+          "description" : "Lorsque vous la déclenchez, cette technique met immédiatement fin au temps de recharge de vos techniques Evasion, Sprint, Disparition et Pas de l'ombre."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 6520,
+        "name" : "Veines sanguinaires",
+        "icon" : "ability_rogue_sanguinaryvein",
+        "x" : 2,
+        "y" : 4,
+        "req" : 681,
+        "ranks" : [ {
+          "description" : "Augmente de 5% vos dégâts infigés à des cibles affectées par un effet de saignement."
+        }, {
+          "description" : "Augmente de 10% vos dégâts infigés à des cibles affectées par un effet de saignement."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2080,
+        "name" : "Ombres meurtrières",
+        "icon" : "ability_rogue_slaughterfromtheshadows",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Réduit de 7 le coût en énergie de vos techniques Attaque sournoise et Embuscade et de 2 le coût en énergie d'Hémorragie et Eventail de couteaux."
+        }, {
+          "description" : "Réduit de 14 le coût en énergie de vos techniques Attaque sournoise et Embuscade et de 4 le coût en énergie d'Hémorragie et Eventail de couteaux."
+        }, {
+          "description" : "Réduit de 20 le coût en énergie de vos techniques Attaque sournoise et Embuscade et de 6 le coût en énergie d'Hémorragie et Eventail de couteaux."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1123,
+        "name" : "Lames dentelées",
+        "icon" : "inv_sword_17",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Votre technique Eviscération a 10% de chances par point de combo de réinitialiser la durée de votre Rupture sur la cible."
+        }, {
+          "description" : "Votre technique Eviscération a 20% de chances par point de combo de réinitialiser la durée de votre Rupture sur la cible."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2081,
+        "name" : "Danse de l'ombre",
+        "icon" : "ability_rogue_shadowdance",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "castTime" : "Instantanée",
+          "cooldown" : "1 min de recharge",
+          "description" : "Entame la Danse de l'ombre, qui dure 6 sec. et permet l'utilisation d'Assommer, Garrot, Embuscade, Coup bas, Préméditation, Vol à la tire et Désarmement de piège même sans être camouflé."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

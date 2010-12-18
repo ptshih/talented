@@ -69,7 +69,7 @@
 							<object class="IBUIImageView" id="390807444">
 								<reference key="NSNextResponder" ref="130334878"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{18, 13}, {318, 37}}</string>
+								<string key="NSFrame">{{19, 13}, {318, 37}}</string>
 								<reference key="NSSuperview" ref="130334878"/>
 								<reference key="IBUIBackgroundColor" ref="284121261"/>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
@@ -82,7 +82,7 @@
 							<object class="IBUIImageView" id="550746765">
 								<reference key="NSNextResponder" ref="130334878"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{353, 13}, {318, 37}}</string>
+								<string key="NSFrame">{{354, 13}, {318, 37}}</string>
 								<reference key="NSSuperview" ref="130334878"/>
 								<reference key="IBUIBackgroundColor" ref="284121261"/>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
@@ -178,7 +178,7 @@
 							<object class="IBUIButton" id="719751793">
 								<reference key="NSNextResponder" ref="130334878"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{298, 9}, {44, 44}}</string>
+								<string key="NSFrame">{{299, 9}, {44, 44}}</string>
 								<reference key="NSSuperview" ref="130334878"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -263,7 +263,7 @@
 							<object class="IBUIButton" id="452540061">
 								<reference key="NSNextResponder" ref="130334878"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{633, 9}, {44, 44}}</string>
+								<string key="NSFrame">{{634, 9}, {44, 44}}</string>
 								<reference key="NSSuperview" ref="130334878"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1175,7 +1175,7 @@
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">AUR0AABBUAAAA</bytes>
 					</object>
-					<string>{{141, 137}, {1024, 768}}</string>
+					<string>{{41, 137}, {1024, 768}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">

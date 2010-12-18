@@ -1,0 +1,1003 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 7,
+      "name" : "Chaman",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "Élémentaire",
+      "icon" : "spell_nature_lightning",
+      "backgroundFile" : "ShamanElementalCombat",
+      "overlayColor" : "#cc33cc",
+      "description" : "Un lanceur de sorts qui contrôle les forces destructrices de la Nature et des éléments.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 51490,
+        "name" : "Orage",
+        "icon" : "spell_shaman_thunderstorm",
+        "castTime" : "Incantation instantanée",
+        "cooldown" : "45 s. de recharge",
+        "reagents" : [ ],
+        "description" : "Vous appelez la foudre, qui vous charge d'énergie et inflige des dégâts aux ennemis se trouvant à moins de 10 mètres. Vous rend 8% de mana et inflige 56 points de dégâts de Nature à tous les ennemis proches, les faisant tomber à la renverse 20 mètres plus loin. Ce sort est utilisable quand vous êtes étourdi.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 62099,
+        "name" : "Chamanisme",
+        "icon" : "spell_unused2",
+        "reagents" : [ ],
+        "description" : "Vos sorts Éclair, Chaîne d'éclairs et Explosion de lave bénéficient de 20% supplémentaires de votre puissance des sorts et leur temps d'incantation est réduit de 0.5 sec.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 60188,
+        "name" : "Fureur élémentaire",
+        "icon" : "spell_fire_volcano",
+        "reagents" : [ ],
+        "description" : "Augmente de 100% le bonus aux dégâts des coups critiques obtenus avec vos Totems incendiaires et de magma ainsi qu'avec les sorts de Feu, de Givre et de Nature.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77222,
+        "name" : "Surcharge élémentaire",
+        "icon" : "spell_nature_lightningoverload",
+        "reagents" : [ ],
+        "description" : "Donne 16% de chances de déclencher Surcharge élémentaire. Lors du lancement d'un sort Eclair, Chaîne d'éclairs ou Explosion de lave, la Surcharge élémentaire déclenche sans coût supplémentaire le lancement d'un second sort similaire qui inflige 75% des dégâts normaux et ne génère pas de menace. Chaque point de Maîtrise augmente les chances de déclencher Surcharge élémentaire de 2% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 11218,
+        "name" : "Acuité",
+        "icon" : "spell_nature_astralrecalgroup",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente vos chances de coup critique avec tous les sorts et attaques de 1%."
+        }, {
+          "description" : "Augmente vos chances de coup critique avec tous les sorts et attaques de 2%."
+        }, {
+          "description" : "Augmente vos chances de coup critique avec tous les sorts et attaques de 3%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 564,
+        "name" : "Convection",
+        "icon" : "spell_shaman_convection",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Réduit le coût en mana de vos sorts offensifs infligeant des dégâts de 5%."
+        }, {
+          "description" : "Réduit le coût en mana de vos sorts offensifs infligeant des dégâts de 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 563,
+        "name" : "Commotion",
+        "icon" : "spell_fire_fireball",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts infligés par vos sorts Eclair, Chaîne d'éclairs, Orage et Explosion de lave ainsi que vos Horions de 2%."
+        }, {
+          "description" : "Augmente les dégâts infligés par vos sorts Eclair, Chaîne d'éclairs, Orage et Explosion de lave ainsi que vos Horions de 4%."
+        }, {
+          "description" : "Augmente les dégâts infligés par vos sorts Eclair, Chaîne d'éclairs, Orage et Explosion de lave ainsi que vos Horions de 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 561,
+        "name" : "Appel des flammes",
+        "icon" : "spell_fire_immolation",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente de 10% les dégâts infligés par vos Totems de feu et votre Nova de feu, et de 5% les dégâts infligés par votre sort Explosion de lave."
+        }, {
+          "description" : "Augmente de 20% les dégâts infligés par vos Totems de feu et votre Nova de feu, et de 10% les dégâts infligés par votre sort Explosion de lave."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1640,
+        "name" : "Protection contre les éléments",
+        "icon" : "spell_nature_spiritarmor",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit les dégâts magiques subis de 4%."
+        }, {
+          "description" : "Réduit les dégâts magiques subis de 8%."
+        }, {
+          "description" : "Réduit les dégâts magiques subis de 12%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 575,
+        "name" : "Réverbération",
+        "icon" : "spell_frost_frostward",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge de vos Horions et de Cisaille de vent de 0.5 secondes."
+        }, {
+          "description" : "Réduit le temps de recharge de vos Horions et de Cisaille de vent de 1 secondes."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1685,
+        "name" : "Précision élémentaire",
+        "icon" : "spell_nature_elementalprecision_1",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente de 1% vos dégâts de Feu, de Givre et de Nature, et vous fait bénéficier d'un bonus au score de toucher des sorts égal à 33% de l'Esprit conféré par les objets ou effets."
+        }, {
+          "description" : "Augmente de 2% vos dégâts de Feu, de Givre et de Nature, et vous fait bénéficier d'un bonus au score de toucher des sorts égal à 66% de l'Esprit conféré par les objets ou effets."
+        }, {
+          "description" : "Augmente de 3% vos dégâts de Feu, de Givre et de Nature, et vous fait bénéficier d'un bonus au score de toucher des sorts égal à 100% de l'Esprit conféré par les objets ou effets."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11767,
+        "name" : "Tonnerre grondant",
+        "icon" : "spell_nature_callstorm",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Quand vous infligez des dégâts avec Eclair ou Chaîne d'éclairs alors que votre technique Bouclier de foudre est active, vous avez 30% de chances de récupérer 2% de votre mana et de générer une charge de Bouclier de foudre supplémentaire, jusqu'à un maximum de 9 charges."
+        }, {
+          "description" : "Quand vous infligez des dégâts avec Eclair ou Chaîne d'éclairs alors que votre technique Bouclier de foudre est active, vous avez 60% de chances de récupérer 2% de votre mana et de générer une charge de Bouclier de foudre supplémentaire, jusqu'à un maximum de 9 charges."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 574,
+        "name" : "Focalisation élémentaire",
+        "icon" : "spell_shadow_manaburn",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Après avoir réussi un coup critique non périodique avec un sort de dégâts de Feu, de Givre ou de Nature, vous entrez dans un état d'Idées claires. Idées claires réduit le coût en mana de vos 2 prochains sorts de dégâts ou de soins de 40%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1641,
+        "name" : "Allonge élémentaire",
+        "icon" : "spell_nature_stormreach",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Augmente la portée de vos sorts Eclair, Chaîne d'éclairs, Nova de feu et Explosion de lave de 5 mètres et augmente la portée de vos Horions et de Totem incendiaire de 7 mètres."
+        }, {
+          "description" : "Augmente la portée de vos sorts Eclair, Chaîne d'éclairs, Nova de feu et Explosion de lave de 10 mètres et augmente la portée de vos Horions et de Totem incendiaire de 15 mètres."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2049,
+        "name" : "Serment des éléments",
+        "icon" : "spell_shaman_elementaloath",
+        "x" : 1,
+        "y" : 3,
+        "req" : 574,
+        "ranks" : [ {
+          "description" : "Quand vous êtes sous l'effet d'Idées claires alors que Focalisation élémentaire est active, vous infligez 5% de dégâts supplémentaires avec les sorts. De plus, les membres du groupe ou raid se trouvant à moins de 100 mètres bénéficient d'un bonus de 3% à leurs chances de coup critique."
+        }, {
+          "description" : "Quand vous êtes sous l'effet d'Idées claires alors que Focalisation élémentaire est active, vous infligez 10% de dégâts supplémentaires avec les sorts. De plus, les membres du groupe ou raid se trouvant à moins de 100 mètres bénéficient d'un bonus de 5% à leurs chances de coup critique."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2051,
+        "name" : "Flots de lave",
+        "icon" : "spell_shaman_lavaflow",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Augmente le bonus aux dégâts des coups critiques de votre sort Explosion de lave de 6% supplémentaires et les dégâts périodiques de votre Horion de flammes de 20%. De plus, quand votre Horion de flammes est dissipé, vous bénéficiez d'un bonus de 10% à la hâte des sorts pendant 6 sec."
+        }, {
+          "description" : "Augmente le bonus aux dégâts des coups critiques de votre sort Explosion de lave de 12% supplémentaires et les dégâts périodiques de votre Horion de flammes de 40%. De plus, quand votre Horion de flammes est dissipé, vous bénéficiez d'un bonus de 20% à la hâte des sorts pendant 6 sec."
+        }, {
+          "description" : "Augmente le bonus aux dégâts des coups critiques de votre sort Explosion de lave de 24% supplémentaires et les dégâts périodiques de votre Horion de flammes de 60%. De plus, quand votre Horion de flammes est dissipé, vous bénéficiez d'un bonus de 30% à la hâte des sorts pendant 6 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11769,
+        "name" : "Invectives",
+        "icon" : "spell_nature_unrelentingstorm",
+        "x" : 0,
+        "y" : 4,
+        "req" : 11767,
+        "ranks" : [ {
+          "description" : "Quand vous avez plus de 3 charges de Bouclier de foudre actives, votre sort Horion de terre consomme toutes les charges en trop et inflige instantanément leur total de dégât à l'ennemi ciblé."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 573,
+        "name" : "Maîtrise élémentaire",
+        "icon" : "spell_nature_wispheal",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "3 min de recharge",
+          "description" : "Lorsqu'elle est activée, votre prochain sort Eclair, Chaîne d'éclairs ou Explosion de lave bénéficie d'une incantation instantanée. De plus, vos dégâts de Feu, de Givre et de Nature sont augmentés de 15% et vous bénéficiez d'un bonus de 20% à la hâte des sorts pendant 15 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11768,
+        "name" : "Emprise de la terre",
+        "icon" : "spell_nature_stranglevines",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Confère à votre Totem de lien terrestre 50% de chances d'enraciner les cibles proches pendant 5 sec à son incantation."
+        }, {
+          "description" : "Confère à votre Totem de lien terrestre 100% de chances d'enraciner les cibles proches pendant 5 sec à son incantation."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 5565,
+        "name" : "Colère totémique",
+        "icon" : "spell_fire_totemofwrath",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Vos totems de feu augmentent la puissance des sorts des membres du groupe ou raid se trouvant à moins de 100 mètres de 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11368,
+        "name" : "Réaction",
+        "icon" : "ability_vehicle_electrocharge",
+        "x" : 1,
+        "y" : 5,
+        "req" : 573,
+        "ranks" : [ {
+          "description" : "Vos sorts Éclair et Chaîne d'éclairs réduisent le temps de recharge restant de votre talent Maîtrise élémentaire de 1 sec."
+        }, {
+          "description" : "Vos sorts Éclair et Chaîne d'éclairs réduisent le temps de recharge restant de votre talent Maîtrise élémentaire de 2 sec."
+        }, {
+          "description" : "Vos sorts Éclair et Chaîne d'éclairs réduisent le temps de recharge restant de votre talent Maîtrise élémentaire de 3 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 5566,
+        "name" : "Vague de lave",
+        "icon" : "spell_shaman_lavasurge",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Les dégâts périodiques de votre horion de flammes ont 10% de chances de réinitialiser le temps de recharge de votre sort Explosion de lave."
+        }, {
+          "description" : "Les dégâts périodiques de votre horion de flammes ont 20% de chances de réinitialiser le temps de recharge de votre sort Explosion de lave."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1687,
+        "name" : "Séisme",
+        "icon" : "spell_shaman_earthquake",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "60% du mana de base",
+          "range" : "35 yd range",
+          "castTime" : "Canalisé",
+          "description" : "Vous faites trembler et se fissurer le sol à l'emplacement ciblé, ce qui inflige 15 points de dégâts de Nature toutes les 1 sec. à toutes les cibles dans un rayon de 8 mètres, avec 10% de chances d'envoyer à terre les cibles affectées. Dure 8 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Amélioration",
+      "icon" : "spell_nature_lightningshield",
+      "backgroundFile" : "ShamanEnhancement",
+      "overlayColor" : "#4c7fff",
+      "description" : "Un guerrier totémique qui frappe ses ennemis avec des armes imprégnées de puissance élémentaire.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 60103,
+        "name" : "Fouet de lave",
+        "icon" : "ability_shaman_lavalash",
+        "cost" : "4% du mana de base",
+        "range" : "Allonge",
+        "castTime" : "Instantanée",
+        "cooldown" : "10 s. de recharge",
+        "requires" : "Requiert Arme de mêlée",
+        "reagents" : [ ],
+        "description" : "Vous chargez votre arme en main gauche de lave, infligeant instantanément 200% des dégâts de cette arme à une cible ennemie. Les dégâts sont augmentés de 40% si votre arme en main gauche est enchantée avec Langue de feu.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 86629,
+        "name" : "Ambidextrie",
+        "icon" : "ability_dualwield",
+        "reagents" : [ ],
+        "description" : "Permet d'équiper les armes à une main dans la main gauche, vous permettant de parer les attaques en mêlée frontales et augmente vos chances de toucher de 6% supplémentaires.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 30814,
+        "name" : "Rapidité mentale",
+        "icon" : "spell_nature_mentalquickness",
+        "reagents" : [ ],
+        "description" : "Augmente votre puissance des sorts d'un montant égal à 50% de votre puissance d'attaque et réduit le coût en mana de vos sorts instantanés de 75%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 51522,
+        "name" : "Sagesse primordiale",
+        "icon" : "spell_shaman_spectraltransformation",
+        "reagents" : [ ],
+        "description" : "Vos attaques de mêlée ont 40% de chances de vous rendre immédiatement 5% de votre mana de base.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77223,
+        "name" : "Eléments amplifiés",
+        "icon" : "spell_nature_elementalprecision_2",
+        "reagents" : [ ],
+        "description" : "Augmente tous les dégâts de Feu, de Givre et de Nature que vous infligez de 20%. Chaque point de Maîtrise augmente les dégâts de 2.5% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 611,
+        "name" : "Armes élémentaires",
+        "icon" : "spell_fire_flametounge",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente les bonus passifs conférés par vos techniques Arme Langue de feu et Arme Viveterre de 20%, les dégâts de vos attaques supplémentaires avec Arme Furie-des-vents de 20% et l'efficacité des avantages en cours octroyés par la technique Déchaînement des éléments de 25%."
+        }, {
+          "description" : "Augmente les bonus passifs conférés par vos techniques Arme Langue de feu et Arme Viveterre de 40%, les dégâts de vos attaques supplémentaires avec Arme Furie-des-vents de 40% et l'efficacité des avantages en cours octroyés par la technique Déchaînement des éléments de 50%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 5560,
+        "name" : "Frappes focalisées",
+        "icon" : "spell_shaman_focusedstrikes",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts infligés par vos techniques Frappe primordiale et Frappe-tempête de 15%."
+        }, {
+          "description" : "Augmente les dégâts infligés par vos techniques Frappe primordiale et Frappe-tempête de 30%."
+        }, {
+          "description" : "Augmente les dégâts infligés par vos techniques Frappe primordiale et Frappe-tempête de 45%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 607,
+        "name" : "Boucliers améliorés",
+        "icon" : "spell_nature_lightningshield",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente de 5% les dégâts infligés par les orbes de votre Bouclier de foudre, de 5% la quantité de mana obtenue grâce aux orbes de votre Bouclier d'eau et de 5% la quantité de soins obtenus avec vos orbes de Bouclier de terre."
+        }, {
+          "description" : "Augmente de 10% les dégâts infligés par les orbes de votre Bouclier de foudre, de 10% la quantité de mana obtenue grâce aux orbes de votre Bouclier d'eau et de 10% la quantité de soins obtenus avec vos orbes de Bouclier de terre."
+        }, {
+          "description" : "Augmente de 15% les dégâts infligés par les orbes de votre Bouclier de foudre, de 15% la quantité de mana obtenue grâce aux orbes de votre Bouclier d'eau et de 15% la quantité de soins obtenus avec vos orbes de Bouclier de terre."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11216,
+        "name" : "Dévastation élémentaire",
+        "icon" : "spell_fire_elementaldevastation",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Quand vous infligez des dégâts critiques avec un sort non périodique, augmente vos chances d'obtenir un coup critique avec les attaques de mêlée de 3% pendant 10 sec."
+        }, {
+          "description" : "Quand vous infligez des dégâts critiques avec un sort non périodique, augmente vos chances d'obtenir un coup critique avec les attaques de mêlée de 6% pendant 10 sec."
+        }, {
+          "description" : "Quand vous infligez des dégâts critiques avec un sort non périodique, augmente vos chances d'obtenir un coup critique avec les attaques de mêlée de 9% pendant 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 602,
+        "name" : "Rafale",
+        "icon" : "ability_ghoulfrenzy",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Lorsque vous infligez un coup critique, augmente votre vitesse d'attaque de 10% pour les 3 prochains coups."
+        }, {
+          "description" : "Lorsque vous infligez un coup critique, augmente votre vitesse d'attaque de 20% pour les 3 prochains coups."
+        }, {
+          "description" : "Lorsque vous infligez un coup critique, augmente votre vitesse d'attaque de 30% pour les 3 prochains coups."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 605,
+        "name" : "Rapidité ancestrale",
+        "icon" : "spell_lifegivingspeed",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit le temps d'incantation de votre sort Loup fantôme de 1 sec. et augmente votre vitesse de déplacement de 7%. Ne se cumule pas avec les autres effets qui augmentent la vitesse de déplacement."
+        }, {
+          "description" : "Réduit le temps d'incantation de votre sort Loup fantôme de 2 sec. et augmente votre vitesse de déplacement de 15%. Ne se cumule pas avec les autres effets qui augmentent la vitesse de déplacement."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11432,
+        "name" : "Allonge totémique",
+        "icon" : "spell_nature_agitatingtotem",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente la portée des effets de vos totems de 15%."
+        }, {
+          "description" : "Augmente la portée des effets de vos totems de 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 615,
+        "name" : "Résistance",
+        "icon" : "spell_holy_devotion",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Augmente votre Endurance de 3% et réduit sur vous la durée des effets ralentissant le mouvement de 10%."
+        }, {
+          "description" : "Augmente votre Endurance de 7% et réduit sur vous la durée des effets ralentissant le mouvement de 20%."
+        }, {
+          "description" : "Augmente votre Endurance de 10% et réduit sur vous la durée des effets ralentissant le mouvement de 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 901,
+        "name" : "Frappe-tempête",
+        "icon" : "ability_shaman_stormstrike",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "8% du mana de base",
+          "range" : "Allonge",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "8 s. de recharge",
+          "requires" : "Requiert Arme de mêlée",
+          "description" : "Attaque instantanément un ennemi avec les deux armes, infligeant 125% des dégâts de l'arme et vous faisant bénéficier de 25% de chances supplémentaires d'infliger un coup critique à cet ennemi avec vos sorts Eclair, Chaîne d'éclairs, Bouclier de foudre et Horion de terre pendant 15 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2055,
+        "name" : "Horion statique",
+        "icon" : "spell_shaman_staticshock",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Quand vous utilisez les techniques Frappe primordiale, Frappe-tempête ou Fouet de lave alors que Bouclier de foudre est actif, vous avez 15% de chances d'infliger des dégâts d'un montant égal à ceux d'un orbe de Bouclier de foudre sans consommer de charge."
+        }, {
+          "description" : "Quand vous utilisez les techniques Frappe primordiale, Frappe-tempête ou Fouet de lave alors que Bouclier de foudre est actif, vous avez 30% de chances d'infliger des dégâts d'un montant égal à ceux d'un orbe de Bouclier de foudre sans consommer de charge."
+        }, {
+          "description" : "Quand vous utilisez les techniques Frappe primordiale, Frappe-tempête ou Fouet de lave alors que Bouclier de foudre est actif, vous avez 45% de chances d'infliger des dégâts d'un montant égal à ceux d'un orbe de Bouclier de foudre sans consommer de charge."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11220,
+        "name" : "Puissance gelée",
+        "icon" : "spell_fire_bluecano",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Augmente de 5% les dégâts infligés par vos sorts Eclair, Chaîne d'éclairs, Fouet de lave et Horion sur les cibles affectées par l'effet de votre Attaque Arme de givre, et votre Horion de givre a 50% de chances d'immobiliser la cible dans la glace pendant 5 sec. lorsqu'il est utilisé sur des cibles se trouvant à 15 mètres ou plus de vous."
+        }, {
+          "description" : "Augmente de 10% les dégâts infligés par vos sorts Eclair, Chaîne d'éclairs, Fouet de lave et Horion sur les cibles affectées par l'effet de votre Attaque Arme de givre, et votre Horion de givre a 100% de chances d'immobiliser la cible dans la glace pendant 5 sec. lorsqu'il est utilisé sur des cibles se trouvant à 15 mètres ou plus de vous."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11770,
+        "name" : "Nova de feu améliorée",
+        "icon" : "spell_shaman_improvedfirenova",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts infligés par votre Nova de feu de 10% et réduit le temps de recharge de 2 sec."
+        }, {
+          "description" : "Augmente les dégâts infligés par votre Nova de feu de 20% et réduit le temps de recharge de 4 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2083,
+        "name" : "Flammes incendiaires",
+        "icon" : "spell_fire_searingtotem",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Les Eclairs incendiaires de votre Totem incendiaire ont 33% de chances de mettre le feu à leurs cibles, leur infligeant un montant de dégâts égal aux dégâts infligés à l'impact de l'Eclair incendiaire en 15 sec. Cumulable jusqu'à 5 fois."
+        }, {
+          "description" : "Les Eclairs incendiaires de votre Totem incendiaire ont 67% de chances de mettre le feu à leurs cibles, leur infligeant un montant de dégâts égal aux dégâts infligés à l'impact de l'Eclair incendiaire en 15 sec. Cumulable jusqu'à 5 fois."
+        }, {
+          "description" : "Les Eclairs incendiaires de votre Totem incendiaire ont 100% de chances de mettre le feu à leurs cibles, leur infligeant un montant de dégâts égal aux dégâts infligés à l'impact de l'Eclair incendiaire en 15 sec. Cumulable jusqu'à 5 fois."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2056,
+        "name" : "Puissance terrestre",
+        "icon" : "spell_nature_earthelemental_totem",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Votre Totem de lien terrestre a 50% de chances à chacune de ses pulsations d'enlever tous les effets de ralentissement sur vous ainsi que sur les cibles alliées proches."
+        }, {
+          "description" : "Votre Totem de lien terrestre a 100% de chances à chacune de ses pulsations d'enlever tous les effets de ralentissement sur vous ainsi que sur les cibles alliées proches."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1693,
+        "name" : "Rage du chaman",
+        "icon" : "spell_nature_shamanrage",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Instantanée",
+          "cooldown" : "1 min de recharge",
+          "description" : "Réduit tous les dégâts subis de 30% et permet à vos compétences, totems et sorts offensifs de ne pas consommer de mana pendant 15 sec. On peut utiliser ce sort pendant qu'on est étourdi."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1689,
+        "name" : "Rage libérée",
+        "icon" : "spell_nature_unleashedrage",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Augmente votre expertise de 4, et augmente de 5% la puissance d'attaque de tous les membres du groupe ou du raid s'ils se trouvent à moins de 100 mètres du chaman."
+        }, {
+          "description" : "Augmente votre expertise de 8, et augmente de 10% la puissance d'attaque de tous les membres du groupe ou du raid s'ils se trouvent à moins de 100 mètres du chaman."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2057,
+        "name" : "Arme du Maelström",
+        "icon" : "spell_shaman_maelstromweapon",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Quand vous infligez des dégâts avec une arme de mêlée, vous avez une chance de réduire le temps d'incantation et le coût en mana de votre prochain sort Eclair, Chaîne d'éclairs, Maléfice ou tout sort de soins de 20%. Cumulable jusqu'à 5 fois. Dure 30 sec."
+        }, {
+          "description" : "Quand vous infligez des dégâts avec une arme de mêlée, vous avez une chance (plus élevée qu'au rang 1) de réduire le temps d'incantation et le coût en mana de votre prochain sort Eclair, Chaîne d'éclairs, Maléfice ou tout sort de soins de 20%. Cumulable jusqu'à 5 fois. Dure 30 sec."
+        }, {
+          "description" : "Quand vous infligez des dégâts avec une arme de mêlée, vous avez une chance (plus élevée qu'au rang 2) de réduire le temps d'incantation et le coût en mana de votre prochain sort Eclair, Chaîne d'éclairs, Maléfice ou tout sort de soins de 20%. Cumulable jusqu'à 5 fois. Dure 30 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 5563,
+        "name" : "Fouet de lave amélioré",
+        "icon" : "spell_shaman_improvelavalash",
+        "x" : 2,
+        "y" : 5,
+        "req" : 2083,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts de votre technique Fouet de lave de 15% et de 10% supplémentaires par application de Flammes incendiaires sur la cible. Ces applications sont alors consommées."
+        }, {
+          "description" : "Augmente les dégâts de votre technique Fouet de lave de 30% et de 20% supplémentaires par application de Flammes incendiaires sur la cible. Ces applications sont alors consommées."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2058,
+        "name" : "Esprit farouche",
+        "icon" : "spell_shaman_feralspirit",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "12% du mana de base",
+          "range" : "30 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "2 min de recharge",
+          "description" : "Invoque deux Esprits du loup qui obéissent au chaman. Dure 30 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Restauration",
+      "icon" : "spell_nature_magicimmunity",
+      "backgroundFile" : "ShamanRestoration",
+      "overlayColor" : "#33cc66",
+      "description" : "Un soigneur qui fait appel aux esprits ancestraux et au pouvoir de purification de l'eau pour soigner les blessures de ses alliés.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : true,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 974,
+        "name" : "Bouclier de terre",
+        "icon" : "spell_nature_skinofearth",
+        "cost" : "19% du mana de base",
+        "range" : "40 yd range",
+        "castTime" : "Incantation instantanée",
+        "reagents" : [ ],
+        "description" : "Protège la cible avec un bouclier de terre, qui réduit de 30% le temps d'incantation ou de canalisation de sort perdu quand elle subit des dégâts. Les attaques rendent 53 points de vie à la cible protégée. Cet effet ne peut se produire qu’une fois toutes les quelques secondes. 9 charges. Dure 10 min. Bouclier de terre ne peut être placé que sur une cible à la fois et un seul Bouclier élémentaire peut être actif sur une cible à la fois.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 16213,
+        "name" : "Purification",
+        "icon" : "spell_frost_wizardmark",
+        "reagents" : [ ],
+        "description" : "Augmente de 10% l'efficacité de vos sorts de soins et réduit de 0.5 sec. le temps d'incantation de vos sorts Vague de soins et Vague de soins supérieurs.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 95862,
+        "name" : "Méditation",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "Permet à 50% de votre régénération de mana due à l'Esprit de se poursuivre pendant le combat.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77226,
+        "name" : "Soins profonds",
+        "icon" : "spell_nature_healingtouch",
+        "reagents" : [ ],
+        "description" : "Augmente l'efficacité de vos sorts de soins directs de jusqu'à 20%, en fonction du niveau de points de vie actuel de votre cible (les cibles aux points de vie plus bas sont davantage soignées). Chaque point de Maîtrise augmente les soins directs d'un maximum de 2.5%.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 5568,
+        "name" : "Résolution ancestrale",
+        "icon" : "spell_nature_rune",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Réduit les dégâts subis pendant les incantations de sorts de 5%."
+        }, {
+          "description" : "Réduit les dégâts subis pendant les incantations de sorts de 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 593,
+        "name" : "Focalisation des flots",
+        "icon" : "spell_frost_manarecharge",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Réduit de 2% le coût en mana de vos sorts de soins."
+        }, {
+          "description" : "Réduit de 4% le coût en mana de vos sorts de soins."
+        }, {
+          "description" : "Réduit de 6% le coût en mana de vos sorts de soins."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11177,
+        "name" : "Etincelle de vie",
+        "icon" : "spell_nature_wispsplodegreen",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente les soins que vous prodiguez de 2% et les soins que vous recevez de 5%."
+        }, {
+          "description" : "Augmente les soins que vous prodiguez de 4% et les soins que vous recevez de 10%."
+        }, {
+          "description" : "Augmente les soins que vous prodiguez de 6% et les soins que vous recevez de 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 583,
+        "name" : "Bouclier d'eau amélioré",
+        "icon" : "ability_shaman_watershield",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Vous avez 50% de chances de recevoir instantanément du mana comme si vous consommiez un orbe de Bouclier d'eau quand vous obtenez un effet critique avec vos sorts Vague de soins, Vague de soins supérieurs ou Remous, 30% de chances quand vous obtenez un effet critique avec votre sort Afflux de soins, et 15% de chances quand vous obtenez un effet critique avec votre sort Salve de guérison."
+        }, {
+          "description" : "Vous avez 100% de chances de recevoir instantanément du mana comme si vous consommiez un orbe de Bouclier d'eau quand vous obtenez un effet critique avec vos sorts Vague de soins, Vague de soins supérieurs ou Remous, 60% de chances quand vous obtenez un effet critique avec votre sort Afflux de soins, et 30% de chances quand vous obtenez un effet critique avec votre sort Salve de guérison."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 595,
+        "name" : "Focalisation totémique",
+        "icon" : "spell_nature_moonglow",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit le coût en mana de vos totems de 15% et augmente leur durée de 20%."
+        }, {
+          "description" : "Réduit le coût en mana de vos totems de 30% et augmente leur durée de 40%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 5567,
+        "name" : "Clairvoyance focalisée",
+        "icon" : "spell_shaman_measuredinsight",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Après un Horion, le coût en mana de votre prochain soin est réduit de 25% du coût du Horion et l'efficacité du soin est augmentée de 10%."
+        }, {
+          "description" : "Après un Horion, le coût en mana de votre prochain soin est réduit de 50% du coût du Horion et l'efficacité du soin est augmentée de 20%."
+        }, {
+          "description" : "Après un Horion, le coût en mana de votre prochain soin est réduit de 75% du coût du Horion et l'efficacité du soin est augmentée de 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1699,
+        "name" : "Gardien de la nature",
+        "icon" : "spell_nature_natureguardian",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Chaque fois qu'une attaque vous inflige des dégâts qui vous font passer sous les 30% de points de vie, votre maximum de points de vie augmente de 5% pendant 10 sec. et votre niveau de menace envers cette cible est réduit. Temps de recharge de 30 secondes."
+        }, {
+          "description" : "Chaque fois qu'une attaque vous inflige des dégâts qui vous font passer sous les 30% de points de vie, votre maximum de points de vie augmente de 10% pendant 10 sec. et votre niveau de menace envers cette cible est réduit. Temps de recharge de 30 secondes."
+        }, {
+          "description" : "Chaque fois qu'une attaque vous inflige des dégâts qui vous font passer sous les 30% de points de vie, votre maximum de points de vie augmente de 15% pendant 10 sec. et votre niveau de menace envers cette cible est réduit. Temps de recharge de 30 secondes."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 581,
+        "name" : "Guérison ancestrale",
+        "icon" : "spell_nature_undyingstrength",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Réduit de 5% les dégâts physiques subis par votre cible pendant 15 sec. après avoir reçu un effet critique de l'un de vos sorts de soins."
+        }, {
+          "description" : "Réduit de 10% les dégâts physiques subis par votre cible pendant 15 sec. après avoir reçu un effet critique de l'un de vos sorts de soins."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 591,
+        "name" : "Rapidité de la nature",
+        "icon" : "spell_nature_ravenform",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "2 min de recharge",
+          "description" : "Lorsque cette technique est activée, votre prochain sort de Nature dont le temps d'incantation de base est inférieur à 10 sec. devient un sort instantané."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1696,
+        "name" : "Bénédiction de la nature",
+        "icon" : "spell_nature_natureblessing",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Augmente l'efficacité de vos soins directs sur les cibles protégées par un Bouclier de terre de 5% ."
+        }, {
+          "description" : "Augmente l'efficacité de vos soins directs sur les cibles protégées par un Bouclier de terre de 10% ."
+        }, {
+          "description" : "Augmente l'efficacité de vos soins directs sur les cibles protégées par un Bouclier de terre de 15% ."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 588,
+        "name" : "Pluie apaisante",
+        "icon" : "spell_nature_giftofthewaterspirit",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Augmente de 25% le montant de points de vie rendu par votre Totem guérisseur et de 15% celui rendu par Pluie guérisseuse."
+        }, {
+          "description" : "Augmente de 50% le montant de points de vie rendu par votre Totem guérisseur et de 30% celui rendu par Pluie guérisseuse."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2084,
+        "name" : "Purifier l'esprit amélioré",
+        "icon" : "ability_shaman_cleansespirit",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Renforce votre sort Purifier l’esprit, qui dissipe aussi un effet magique d’une cible alliée."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11435,
+        "name" : "Eaux purificatrices",
+        "icon" : "spell_nature_regeneration_02",
+        "x" : 3,
+        "y" : 3,
+        "req" : 2084,
+        "ranks" : [ {
+          "description" : "Réduit le coût de Purifier l'esprit de 20%, et quand votre Purifier l'esprit annule un effet néfaste, vous rendez également 43 points de vie à la cible."
+        }, {
+          "description" : "Réduit le coût de Purifier l'esprit de 40%, et quand votre Purifier l'esprit annule un effet néfaste, vous rendez également 87. points de vie à la cible."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2061,
+        "name" : "Eveil ancestral",
+        "icon" : "spell_shaman_ancestralawakening",
+        "x" : 0,
+        "y" : 4,
+        "req" : 581,
+        "ranks" : [ {
+          "description" : "Quand vous réussissez des soins critiques avec des soins directs sur une cible unique, vous invoquez un Esprit ancestral, qui vous vient en aide. Il soigne instantanément, dans un rayon de 40 mètres, la cible alliée membre du groupe ou du raid dont le pourcentage de points de vie est le plus bas, pour un montant de 10% des soins procurés."
+        }, {
+          "description" : "Quand vous réussissez des soins critiques avec des soins directs sur une cible unique, vous invoquez un Esprit ancestral, qui vous vient en aide. Il soigne instantanément, dans un rayon de 40 mètres, la cible alliée membre du groupe ou du raid dont le pourcentage de points de vie est le plus bas, pour un montant de 20% des soins procurés."
+        }, {
+          "description" : "Quand vous réussissez des soins critiques avec des soins directs sur une cible unique, vous invoquez un Esprit ancestral, qui vous vient en aide. Il soigne instantanément, dans un rayon de 40 mètres, la cible alliée membre du groupe ou du raid dont le pourcentage de points de vie est le plus bas, pour un montant de 30% des soins procurés."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 590,
+        "name" : "Totem de vague de mana",
+        "icon" : "spell_frost_summonwaterelemental",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "3 min de recharge",
+          "description" : "Invoque aux pieds du lanceur de sorts un Totem de vague de mana pendant 12 sec. Il dispose de 10% des points de vie du lanceur et augmente de 350% l'Esprit de tous les membres du groupe qui se trouvent à moins de 40 mètres."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7705,
+        "name" : "Courants telluriques",
+        "icon" : "spell_lightning_lightningbolt01",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Vous êtes en harmonie avec les énergies de la nature, ce qui permet à votre sort Eclair de vous rendre un montant de mana égal à 20% des dégâts infligés."
+        }, {
+          "description" : "Vous êtes en harmonie avec les énergies de la nature, ce qui permet à votre sort Eclair de vous rendre un montant de mana égal à 40% des dégâts infligés."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2063,
+        "name" : "Raz-de-marée",
+        "icon" : "spell_shaman_tidalwaves",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Après avoir lancé Salve de guérison ou Remous, vous bénéficiez de l'effet Raz-de-marée, qui réduit le temps d'incantation de votre prochain sort Vague de soins et Vague de soins supérieurs de 10% en plus d'augmenter les chances d'effet critique de votre sort Afflux de soins de 10%. 2 charges."
+        }, {
+          "description" : "Après avoir lancé Salve de guérison ou Remous, vous bénéficiez de l'effet Raz-de-marée, qui réduit le temps d'incantation de votre prochain sort Vague de soins et Vague de soins supérieurs de 20% en plus d'augmenter les chances d'effet critique de votre sort Afflux de soins de 20%. 2 charges."
+        }, {
+          "description" : "Après avoir lancé Salve de guérison ou Remous, vous bénéficiez de l'effet Raz-de-marée, qui réduit le temps d'incantation de votre prochain sort Vague de soins et Vague de soins supérieurs de 30% en plus d'augmenter les chances d'effet critique de votre sort Afflux de soins de 30%. 2 charges."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2060,
+        "name" : "Bénédiction des Eternels",
+        "icon" : "spell_shaman_blessingofeternals",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Augmente les chances d'appliquer l'effet de soins sur la durée de Viveterre de 40% quand vous soignez un allié qui dispose de moins de 35% de ses points de vie."
+        }, {
+          "description" : "Augmente les chances d'appliquer l'effet de soins sur la durée de Viveterre de 80% quand vous soignez un allié qui dispose de moins de 35% de ses points de vie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2064,
+        "name" : "Remous",
+        "icon" : "spell_nature_riptide",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "10% du mana de base",
+          "range" : "40 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "6 s. de recharge",
+          "description" : "Rend à une cible alliée 75 points de vie plus 115 points de vie en 15 sec. Votre prochaine Salve de guérison lancée sur cette cible primaire dans les 15 sec consommera l'effet de soins sur la durée et augmentera le montant de soins de votre Salve de guérison de 25%."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

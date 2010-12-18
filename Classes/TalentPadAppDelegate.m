@@ -8,6 +8,7 @@
 
 #import "TalentPadAppDelegate.h"
 #import "LauncherViewController.h"
+#import "Constants.h"
 
 // Test stuff
 #import "SMADataCenter.h"
@@ -24,33 +25,34 @@
 @synthesize window;
 @synthesize launcherViewController = _launcherViewController;
 
-- (void)doCoreDataTests {
-  if (![[NSUserDefaults standardUserDefaults] objectForKey:@"hasLoadedData"]) {
-    [self talentDataTestForClass:@"warrior"];
-    [self talentDataTestForClass:@"paladin"];
-    [self talentDataTestForClass:@"hunter"];
-    [self talentDataTestForClass:@"rogue"];
-    [self talentDataTestForClass:@"priest"];
-    [self talentDataTestForClass:@"deathknight"];
-    [self talentDataTestForClass:@"shaman"];
-    [self talentDataTestForClass:@"mage"];
-    [self talentDataTestForClass:@"warlock"];
-    [self talentDataTestForClass:@"druid"];
-    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasLoadedData"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-  }
-  
-  
-//  [self talentAbilityTest];
-//  [self primarySpellsTest];
-//  [self masteriesTest];
-//  [self talentTreesTest];
-//  [self characterClassTest];
+- (void)loadTalentData {
+//  if (![[NSUserDefaults standardUserDefaults] objectForKey:@"hasLoadedData"]) {
+  [self talentDataTestForClass:@"warrior"];
+  [self talentDataTestForClass:@"paladin"];
+  [self talentDataTestForClass:@"hunter"];
+  [self talentDataTestForClass:@"rogue"];
+  [self talentDataTestForClass:@"priest"];
+  [self talentDataTestForClass:@"deathknight"];
+  [self talentDataTestForClass:@"shaman"];
+  [self talentDataTestForClass:@"mage"];
+  [self talentDataTestForClass:@"warlock"];
+  [self talentDataTestForClass:@"druid"];
+//    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasLoadedData"];
+//    [[NSUserDefaults standardUserDefaults] synchronize];
+//  }
 }
 
 
 - (void)talentDataTestForClass:(NSString *)classString {
-  NSString *filePath = [[NSBundle mainBundle] pathForResource:classString ofType:@"json"];
+  // Localize datastore filename
+  NSString *localizedFileName = [NSString stringWithFormat:@"%@_%@", classString, USER_LANGUAGE];
+  
+  // Check if json file exists, if not default to english
+  NSString *filePath = [[NSBundle mainBundle] pathForResource:localizedFileName ofType:@"json"];  
+  if (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+    filePath = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@_en", classString] ofType:@"json"];
+  }
+    
   NSData *myData = [NSData dataWithContentsOfFile:filePath];
   if (myData) {
     NSLog(@"testing core data insert");
@@ -82,7 +84,9 @@
       NSLog(@"saving to core data");
     }
   }
-
+  
+  [[NSUserDefaults standardUserDefaults] setObject:USER_LANGUAGE forKey:@"lastSelectedLanguage"];
+  [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 #pragma mark -
@@ -96,7 +100,9 @@
   [window addSubview:self.launcherViewController.view];
   [self.window makeKeyAndVisible];
   
-  [self doCoreDataTests];
+  if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"lastSelectedLanguage"] isEqual:USER_LANGUAGE]) {
+    [self loadTalentData];
+  }
 
   return YES;
 }

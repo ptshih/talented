@@ -1,0 +1,1048 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 6,
+      "name" : "Chevalier de la mort",
+      "powerType" : "RUNIC_POWER",
+      "powerTypeId" : 6
+    },
+    "talentTrees" : [ {
+      "name" : "Sang",
+      "icon" : "spell_deathknight_bloodpresence",
+      "backgroundFile" : "DeathKnightBlood",
+      "overlayColor" : "#ff0000",
+      "description" : "Un sombre gardien qui manipule et corrompt l'énergie vitale pour se renforcer lors des assauts ennemis.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : true,
+        "healer" : false,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 55050,
+        "name" : "Frappe au coeur",
+        "icon" : "inv_weapon_shortblade_40",
+        "cost" : "1 runes de sang",
+        "range" : "Allonge",
+        "castTime" : "Instantanée",
+        "requires" : "Requiert Arme de mêlée",
+        "reagents" : [ ],
+        "description" : "Frappe instantanément la cible et un maximum de deux ennemis proches supplémentaires, infligeant 100% des dégâts de l'arme plus 17 à la cible principale et des dégâts réduits de 25% à chaque cible suivante. Chaque cible subit 10% de dégâts supplémentaires pour chacune de vos maladies actives sur elle.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 50029,
+        "name" : "Vétéran de la Troisième guerre",
+        "icon" : "spell_misc_warsongfocus",
+        "reagents" : [ ],
+        "description" : "Augmente votre total d'Endurance de 9% et votre expertise de 6.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 50034,
+        "name" : "Rites sanglants",
+        "icon" : "spell_deathknight_bloodtap",
+        "reagents" : [ ],
+        "description" : "Chaque fois que vous touchez avec Frappe de mort ou Anéantissement, les runes de givre et impie deviennent des runes de la mort lors de leur activation. Les runes de la mort comptent comme une rune de sang, de givre ou impie.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 93099,
+        "name" : "Vengeance",
+        "icon" : "ability_paladin_shieldofvengeance",
+        "reagents" : [ ],
+        "description" : "Chaque fois que vous subissez des dégâts, vous recevez un bonus à la puissance d'attaque égal à 5% des dégâts subis, jusqu'à un maximum de 10% de vos points de vie.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77513,
+        "name" : "Bouclier de sang",
+        "icon" : "spell_deathknight_deathstrike",
+        "reagents" : [ ],
+        "description" : "Chaque fois que vous vous soignez avec Frappe de mort, vous bénéficiez d'un bouclier qui absorbe un montant de dégâts physiques égal à 50% des points de vie rendus. Chaque point de Maîtrise augmente la capacité d'absorption de dégâts du bouclier de 6.25% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 1939,
+        "name" : "Boucherie",
+        "icon" : "inv_axe_68",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Chaque fois que vous tuez un ennemi qui rapporte de l'expérience ou de l'honneur, vous générez jusqu'à 10 points de puissance runique. De plus, vous générez 1 point de puissance runique toutes les 5 sec. pendant que vous êtes en combat."
+        }, {
+          "description" : "Chaque fois que vous tuez un ennemi qui rapporte de l'expérience ou de l'honneur, vous générez jusqu'à 20 points de puissance runique. De plus, vous générez 2 points de puissance runique toutes les 5 sec. pendant que vous êtes en combat."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2017,
+        "name" : "Barrière de lames",
+        "icon" : "ability_upgrademoonglaive",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Chaque fois que vos runes de sang sont en cours de recharge, vous bénéficiez de l'effet Barrière de lames, qui réduit les dégâts subis de 2% pendant 10 sec."
+        }, {
+          "description" : "Chaque fois que vos runes de sang sont en cours de recharge, vous bénéficiez de l'effet Barrière de lames, qui réduit les dégâts subis de 4% pendant 10 sec."
+        }, {
+          "description" : "Chaque fois que vos runes de sang sont en cours de recharge, vous bénéficiez de l'effet Barrière de lames, qui réduit les dégâts subis de 6% pendant 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1938,
+        "name" : "Armure tranchante",
+        "icon" : "inv_shoulder_36",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente votre puissance d'attaque de 2 pour chaque tranche de 180 points de votre valeur d'armure."
+        }, {
+          "description" : "Augmente votre puissance d'attaque de 4 pour chaque tranche de 180 points de votre valeur d'armure."
+        }, {
+          "description" : "Augmente votre puissance d'attaque de 6 pour chaque tranche de 180 points de votre valeur d'armure."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12223,
+        "name" : "Drain sanglant amélioré",
+        "icon" : "spell_deathknight_bloodtap",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge de votre technique Drain sanglant de 15 sec."
+        }, {
+          "description" : "Réduit le temps de recharge de votre technique Drain sanglant de 30 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1948,
+        "name" : "Odeur du sang",
+        "icon" : "ability_rogue_bloodyeye",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Vous avez 15% de chances après avoir esquivé, paré ou subi des dégâts directs de bénéficier de l'effet Odeur du sang, qui fait générer à votre prochain coup en mêlée 10 points de puissance runique."
+        }, {
+          "description" : "Vous avez 15% de chances après avoir esquivé, paré ou subi des dégâts directs de bénéficier de l'effet Odeur du sang, qui fait générer à vos 2 prochains coups en mêlée 10 points de puissance runique."
+        }, {
+          "description" : "Vous avez 15% de chances après avoir esquivé, paré ou subi des dégâts directs de bénéficier de l'effet Odeur du sang, qui fait générer à vos 3 prochains coups en mêlée 10 points de puissance runique."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7462,
+        "name" : "Fièvre écarlate",
+        "icon" : "ability_rogue_vendetta",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Furoncle sanglant a 50% de chances de faire contracter la Fièvre écarlate aux ennemis, réduisant les dégâts physiques qu'ils infligent de 10% pendant 30 sec."
+        }, {
+          "description" : "Furoncle sanglant a 100% de chances de faire contracter la Fièvre écarlate aux ennemis, réduisant les dégâts physiques qu'ils infligent de 10% pendant 30 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11270,
+        "name" : "Main funeste",
+        "icon" : "ability_deathknight_desolation",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge de votre technique Strangulation de 30 sec."
+        }, {
+          "description" : "Réduit le temps de recharge de votre technique Strangulation de 60 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7460,
+        "name" : "Lame incrustée de sang",
+        "icon" : "ability_criticalstrike",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Vos attaques automatiques ont 10% de chances de causer une Frappe incrustée de sang, qui inflige 25% des dégâts de l'arme plus 12.5% pour chacune de vos maladies sur la cible."
+        }, {
+          "description" : "Vos attaques automatiques ont 20% de chances de causer une Frappe incrustée de sang, qui inflige 25% des dégâts de l'arme plus 12.5% pour chacune de vos maladies sur la cible."
+        }, {
+          "description" : "Vos attaques automatiques ont 30% de chances de causer une Frappe incrustée de sang, qui inflige 25% des dégâts de l'arme plus 12.5% pour chacune de vos maladies sur la cible."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7459,
+        "name" : "Bouclier d'os",
+        "icon" : "ability_deathknight_boneshield",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "1 runes impies",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "1 min de recharge",
+          "description" : "Vous entoure d'une barrière d'os tourbillonnants. Le bouclier commence avec 3 charges, et chaque attaque qui inflige des dégâts en consomme une. Tant qu'il reste au moins un os, toutes les attaques vous infligent 20% de dégâts en moins et vos attaques, techniques et sorts infligent 2% de dégâts en plus. Dure 5 min."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7458,
+        "name" : "Résistance",
+        "icon" : "spell_holy_devotion",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Augmente la valeur d'armure des objets de 3%."
+        }, {
+          "description" : "Augmente la valeur d'armure des objets de 7%."
+        }, {
+          "description" : "Augmente la valeur d'armure des objets de 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2105,
+        "name" : "Puissance de l'abomination",
+        "icon" : "ability_warrior_intensifyrage",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Augmente de 5% la puissance d'attaque des membres du groupe ou du raid se trouvant à moins de 100 mètres. Augmente également votre total de Force de 1%."
+        }, {
+          "description" : "Augmente de 10% la puissance d'attaque des membres du groupe ou du raid se trouvant à moins de 100 mètres. Augmente également votre total de Force de 2%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7461,
+        "name" : "Robustesse sanguine",
+        "icon" : "ability_deathknight_sanguinfortitude",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Quand elle est active, votre Robustesse glaciale réduit les dégâts subis de 15% supplémentaires et son activation coûte 50% de puissance runique en moins."
+        }, {
+          "description" : "Quand elle est active, votre Robustesse glaciale réduit les dégâts subis de 30% supplémentaires et son activation ne coûte pas de puissance runique."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1960,
+        "name" : "Parasite de sang",
+        "icon" : "spell_shadow_soulleech",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Vos coups portés avec des armes ont 5% de chances de générer un ver de sang. Le ver de sang attaque vos ennemis et se gave de sang jusqu'à ce qu'il éclate en rendant des points de vie aux alliés proches. Dure jusqu'à 20 sec."
+        }, {
+          "description" : "Vos coups portés avec des armes ont 10% de chances de générer un ver de sang. Le ver de sang attaque vos ennemis et se gave de sang jusqu'à ce qu'il éclate en rendant des points de vie aux alliés proches. Dure jusqu'à 20 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1936,
+        "name" : "Présence de sang améliorée",
+        "icon" : "spell_deathknight_bloodpresence",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Augmente votre régénération de runes de 10% et réduit la probabilité que les attaques de mêlée vous infligent un coup critique de 3% lorsque vous êtes en Présence de sang. De plus, quand vous êtes en Présence de givre ou impie, vous conservez 2% de la réduction des dégâts de Présence de sang."
+        }, {
+          "description" : "Augmente votre régénération de runes de 20% et réduit la probabilité que les attaques de mêlée vous infligent un coup critique de 6% lorsque vous êtes en Présence de sang. De plus, quand vous êtes en Présence de givre ou impie, vous conservez 4% de la réduction des dégâts de Présence de sang."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1959,
+        "name" : "Volonté de la nécropole",
+        "icon" : "ability_creature_cursed_02",
+        "x" : 0,
+        "y" : 4,
+        "req" : 1941,
+        "ranks" : [ {
+          "description" : "Quand une attaque qui vous inflige des dégâts vous fait passer sous les 30% de votre maximum de points de vie, vous générez une Rune de sang, le temps de recharge de votre technique Connexion runique prend fin et tous les dégâts subis sont réduits de 8% pendant 8 sec. Cet effet ne peut se produire plus d'une fois toutes les 45 secondes."
+        }, {
+          "description" : "Quand une attaque qui vous inflige des dégâts vous fait passer sous les 30% de votre maximum de points de vie, vous générez une Rune de sang, le temps de recharge de votre technique Connexion runique prend fin et tous les dégâts subis sont réduits de 16% pendant 8 sec. Cet effet ne peut se produire plus d'une fois toutes les 45 secondes."
+        }, {
+          "description" : "Quand une attaque qui vous inflige des dégâts vous fait passer sous les 30% de votre maximum de points de vie, vous générez une Rune de sang, le temps de recharge de votre technique Connexion runique prend fin et tous les dégâts subis sont réduits de 25% pendant 8 sec. Cet effet ne peut se produire plus d'une fois toutes les 45 secondes."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1941,
+        "name" : "Connexion runique",
+        "icon" : "spell_deathknight_runetap",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "1 runes de sang",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "30 s. de recharge",
+          "description" : "Convertit 1 Rune de sang en 15% de vos points de vie maximum."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2019,
+        "name" : "Sang vampirique",
+        "icon" : "spell_shadow_lifedrain",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Instantanée",
+          "cooldown" : "1 min de recharge",
+          "description" : "Confère temporairement au chevalier de la mort 15% de son maximum de points de vie et augmente le montant de points de vie généré par les sorts et effets de 25% pendant 10 sec. Quand l'effet se termine, ces points de vie sont perdus."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2259,
+        "name" : "Frappe de mort améliorée",
+        "icon" : "spell_deathknight_butcher2",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Augmente de 15% les dégâts et les soins produits par votre Frappe de mort et de 3% ses chances de coup critique."
+        }, {
+          "description" : "Augmente de 30% les dégâts et les soins produits par votre Frappe de mort et de 6% ses chances de coup critique."
+        }, {
+          "description" : "Augmente de 45% les dégâts et les soins produits par votre Frappe de mort et de 9% ses chances de coup critique."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7463,
+        "name" : "Fléau cramoisi",
+        "icon" : "spell_deathknight_bloodboil",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts infligés par votre Furoncle sanglant de 20%, et quand vous lancez Frappe de peste sur une cible déjà infectée par votre Peste de sang, votre prochain Furoncle sanglant a 50% de chances de ne pas consommer de runes."
+        }, {
+          "description" : "Augmente les dégâts infligés par votre Furoncle sanglant de 40%, et quand vous lancez Frappe de peste sur une cible déjà infectée par votre Peste de sang, votre prochain Furoncle sanglant a 100% de chances de ne pas consommer de runes."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1961,
+        "name" : "Arme runique dansante",
+        "icon" : "inv_sword_07",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "60 pts. de puissance runique",
+          "range" : "30 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "1,5 min de recharge",
+          "requires" : "Requiert Arme de mêlée",
+          "description" : "Invoque une seconde arme runique qui combat toute seule pendant 12 sec., en effectuant les mêmes attaques que le chevalier de la mort mais en infligeant 50% de dégâts de moins que lui. L'arme runique défend également son maître, lui conférant 20% de chances de parer supplémentaires tant qu'elle est active."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Givre",
+      "icon" : "spell_deathknight_frostpresence",
+      "backgroundFile" : "DeathKnightFrost",
+      "overlayColor" : "#4c7fff",
+      "description" : "Un funeste messager de glace, qui canalise sa puissance runique et frappe rapidement avec son arme.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 49143,
+        "name" : "Frappe de givre",
+        "icon" : "spell_deathknight_empowerruneblade2",
+        "cost" : "40 pts. de puissance runique",
+        "range" : "Allonge",
+        "castTime" : "Instantanée",
+        "requires" : "Requiert Arme de mêlée",
+        "reagents" : [ ],
+        "description" : "Frappe instantanément l'ennemi et lui inflige 110% des dégâts de l'arme plus 7 sous forme de dégâts de Givre.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 50887,
+        "name" : "Serres de glace",
+        "icon" : "spell_deathknight_icytalons",
+        "reagents" : [ ],
+        "description" : "Votre vitesse d'attaque en mêlée est augmentée de 20%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 54637,
+        "name" : "Sang du Nord",
+        "icon" : "inv_weapon_shortblade_79",
+        "reagents" : [ ],
+        "description" : "Chaque fois que vous touchez avec Frappe de sang ou Pestilence, la rune de sang devient une rune de la mort à son activation. Les runes de la mort comptent comme une rune de sang, de givre ou impie.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77514,
+        "name" : "Cœur gelé",
+        "icon" : "inv_misc_gem_sapphire_01",
+        "reagents" : [ ],
+        "description" : "Augmente tous les dégâts de Givre que vous infligez de 16%. Chaque point de Maîtrise augmente les dégâts de Givre de 2.0% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 2031,
+        "name" : "Maîtrise de la puissance runique",
+        "icon" : "spell_arcane_arcane01",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente votre puissance runique maximale de 10."
+        }, {
+          "description" : "Augmente votre puissance runique maximale de 20."
+        }, {
+          "description" : "Augmente votre puissance runique maximum de 30."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2035,
+        "name" : "Allonge glaciale",
+        "icon" : "spell_frost_manarecharge",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente la portée de vos sorts Toucher de glace, Chaînes de glace et Rafale hurlante de 5 mètres."
+        }, {
+          "description" : "Augmente la portée de vos sorts Toucher de glace, Chaînes de glace et Rafale hurlante de 10 mètres."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2022,
+        "name" : "Nerfs d'acier glacé",
+        "icon" : "ability_dualwield",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente de 1% vos chances de toucher avec les armes de mêlée à une main, et augmente de 8% les dégâts infligés par l'arme que vous utilisez en main gauche."
+        }, {
+          "description" : "Augmente de 2% vos chances de toucher avec les armes de mêlée à une main, et augmente de 16% les dégâts infligés par l'arme que vous utilisez en main gauche."
+        }, {
+          "description" : "Augmente de 3% vos chances de toucher avec les armes de mêlée à une main, et augmente de 25% les dégâts infligés par l'arme que vous utilisez en main gauche."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2048,
+        "name" : "Annihilation",
+        "icon" : "inv_weapon_hand_18",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts infligés par votre technique Anéantissement de 15%."
+        }, {
+          "description" : "Augmente les dégâts infligés par votre technique Anéantissement de 30%."
+        }, {
+          "description" : "Augmente les dégâts infligés par votre technique Anéantissement de 45%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2215,
+        "name" : "Changeliche",
+        "icon" : "spell_shadow_raisedead",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "2 min de recharge",
+          "description" : "Utilise de l'énergie impie pour devenir mort-vivant pendant 10 sec. Tant que vous êtes mort-vivant, vous êtes insensible aux effets de charme, de peur et de sommeil."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11275,
+        "name" : "Sur un cheval pâle",
+        "icon" : "ability_mount_undeadhorse",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Vous devenez aussi difficile à arrêter que la mort elle-même. La durée de tous les effets qui ralentissent le déplacement utilisés contre vous est réduite de 15%, et la vitesse de votre monture est augmentée de 10%. Ne s'additionne pas avec les autres effets qui augmentent la vitesse de déplacement."
+        }, {
+          "description" : "Vous devenez aussi difficile à arrêter que la mort elle-même. La durée de tous les effets qui ralentissent le déplacement utilisés contre vous est réduite de 30%, et la vitesse de votre monture est augmentée de 20%. Ne s'additionne pas avec les autres effets qui augmentent la vitesse de déplacement."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1971,
+        "name" : "Hiver sans fin",
+        "icon" : "spell_shadow_twilight",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Le coût de votre Gel de l'esprit est réduit à 10 points de puissance runique."
+        }, {
+          "description" : "Votre Gel de l'esprit ne coûte plus de puissance runique."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1993,
+        "name" : "Combat impitoyable",
+        "icon" : "inv_sword_112",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Toucher de glace, Rafale hurlante, Anéantissement et Frappe de givre infligent 6% de dégâts supplémentaires aux cibles qui disposent de moins de 35% de leurs points de vie."
+        }, {
+          "description" : "Toucher de glace, Rafale hurlante, Anéantissement et Frappe de givre infligent 12% de dégâts supplémentaires aux cibles qui disposent de moins de 35% de leurs points de vie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1981,
+        "name" : "Froid de la tombe",
+        "icon" : "spell_frost_frostshock",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Vos sorts Chaînes de glace, Rafale hurlante, Toucher de glace et Anéantissement génèrent 5 points de puissance runique supplémentaires."
+        }, {
+          "description" : "Vos sorts Chaînes de glace, Rafale hurlante, Toucher de glace et Anéantissement génèrent 10 points de puissance runique supplémentaires."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2044,
+        "name" : "Machine à tuer",
+        "icon" : "inv_sword_122",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Vos attaques en mêlée ont une chance de conférer un coup critique à votre prochain sort Toucher de glace, Anéantissement ou Frappe de givre."
+        }, {
+          "description" : "Vos attaques en mêlée ont une chance de conférer un coup critique à votre prochain sort Toucher de glace, Anéantissement ou Frappe de givre. L'effet se produit plus souvent qu'avec Machine à tuer (rang 1)."
+        }, {
+          "description" : "Vos attaques en mêlée ont une chance de conférer un coup critique à votre prochain sort Toucher de glace, Anéantissement ou Frappe de givre. L'effet se produit plus souvent qu'avec Machine à tuer (rang 2)."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1992,
+        "name" : "Frimas",
+        "icon" : "spell_frost_freezingbreath",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Votre Anéantissement a 15% de chances de permettre à votre prochaine utilisation de Rafale hurlante ou de Toucher de glace de ne pas consommer de runes."
+        }, {
+          "description" : "Votre Anéantissement a 30% de chances de permettre à votre prochaine utilisation de Rafale hurlante ou de Toucher de glace de ne pas consommer de runes."
+        }, {
+          "description" : "Votre Anéantissement a 45% de chances de permettre à votre prochaine utilisation de Rafale hurlante ou de Toucher de glace de ne pas consommer de runes."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1979,
+        "name" : "Pilier de givre",
+        "icon" : "ability_deathknight_pillaroffrost",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "1 runes de givre",
+          "castTime" : "Instantanée",
+          "cooldown" : "1 min de recharge",
+          "description" : "Fait appel à la puissance du Givre pour augmenter la Force du chevalier de la mort de 20%. De lourds cristaux de glace sont suspendus à son corps, ce qui le rend insensible aux déplacements à cause externe tels que le fait d'être repoussé. Dure 20 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2223,
+        "name" : "Serres de glace améliorées",
+        "icon" : "spell_deathknight_icytalons",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Augmente la vitesse d'attaque en mêlée et à distance de tous les membres de votre groupe ou raid à moins de 100 mètres de 10% et votre propre vitesse d'attaque de 5% supplémentaires."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1980,
+        "name" : "Os fragiles",
+        "icon" : "ability_deathknight_brittlebones",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Votre Force est augmentée de 2% et votre Fièvre de givre transit jusqu'aux os vos victimes, ce qui augmente les dégâts physiques qu'elles subissent de 2%."
+        }, {
+          "description" : "Votre Force est augmentée de 4% et votre Fièvre de givre transit jusqu'aux os vos victimes, ce qui augmente les dégâts physiques qu'elles subissent de 4%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2260,
+        "name" : "Engelures",
+        "icon" : "spell_frost_wisp",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Les victimes de votre Fièvre de givre sont transies, ce qui réduit leur vitesse de déplacement de 25% pendant 10 sec."
+        }, {
+          "description" : "Les victimes de votre Fièvre de givre sont transies, ce qui réduit leur vitesse de déplacement de 50% pendant 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1999,
+        "name" : "Froid dévorant",
+        "icon" : "inv_staff_15",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "40 pts. de puissance runique",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "1 min de recharge",
+          "description" : "Eradique toute chaleur de la terre autour du chevalier de la mort. Les ennemis se trouvant à moins de 10 mètres sont pris dans la glace, ce qui les empêche de réaliser toute action pendant 10 sec et leur fait contracter la Fièvre de givre. Les ennemis sont considérés comme gelés, mais tous les dégâts autres que les maladies brisent la glace."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2029,
+        "name" : "Présence de givre améliorée",
+        "icon" : "spell_deathknight_frostpresence",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Augmente votre bonus aux dégâts quand vous êtes en Présence de givre de 2% supplémentaires. De plus, quand vous êtes en Présence de sang ou impie, vous conservez 2% de la génération de puissance runique augmentée de Présence de givre."
+        }, {
+          "description" : "Augmente votre bonus aux dégâts quand vous êtes en Présence de givre de 5% supplémentaires. De plus, quand vous êtes en Présence de sang ou impie, vous conservez 4% de la génération de puissance runique augmentée de Présence de givre."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2284,
+        "name" : "Menace de Thassarian",
+        "icon" : "ability_dualwieldspecialization",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Lorsque vous utilisez deux armes en même temps, vos Frappes de mort, Anéantissements, Frappes de peste, Frappes runiques, Frappes de sang et Frappes de givre ont 30% de chances d'également infliger des dégâts avec votre arme tenue en main gauche."
+        }, {
+          "description" : "Lorsque vous utilisez deux armes en même temps, vos Frappes de mort, Anéantissements, Frappes de peste, Frappes runiques, Frappes de sang et Frappes de givre ont 60% de chances d'également infliger des dégâts avec votre arme tenue en main gauche."
+        }, {
+          "description" : "Lorsque vous utilisez deux armes en même temps, vos Frappes de mort, Anéantissements, Frappes de peste, Frappes runiques, Frappes de sang et Frappes de givre ont 100% de chances d'également infliger des dégâts avec votre arme tenue en main gauche."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7571,
+        "name" : "Puissance des terres gelées",
+        "icon" : "inv_sword_120",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Lorsque vous maniez une arme à deux mains, vos attaques automatiques ont 15% de chances de générer 10 points de puissance runique."
+        }, {
+          "description" : "Lorsque vous maniez une arme à deux mains, vos attaques automatiques ont 30% de chances de générer 10 points de puissance runique."
+        }, {
+          "description" : "Lorsque vous maniez une arme à deux mains, vos attaques automatiques ont 45% de chances de générer 10 points de puissance runique."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1989,
+        "name" : "Rafale hurlante",
+        "icon" : "spell_frost_arcticwinds",
+        "x" : 1,
+        "y" : 6,
+        "req" : 1999,
+        "ranks" : [ {
+          "cost" : "1 runes de givre",
+          "range" : "20 yd range",
+          "castTime" : "Incantation instantanée",
+          "description" : "Un vent glacial frappe la cible et inflige 33 points de dégâts de Givre à tous les ennemis se trouvant à moins de 10 mètres."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Impie",
+      "icon" : "spell_deathknight_unholypresence",
+      "backgroundFile" : "DeathKnightUnholy",
+      "overlayColor" : "#33cc33",
+      "description" : "Un maître de la mort et de la décomposition qui répand les maladies et soumet des serviteurs morts-vivants à sa volonté.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 55090,
+        "name" : "Frappe du Fléau",
+        "icon" : "spell_deathknight_scourgestrike",
+        "cost" : "1 runes impies",
+        "range" : "Allonge",
+        "castTime" : "Instantanée",
+        "requires" : "Requiert Arme de mêlée",
+        "reagents" : [ ],
+        "description" : "Une frappe impie qui inflige 100% des dégâts de l'arme sous forme de dégâts physiques plus 13. De plus, pour chacune de vos maladies sur la cible, vous infligez un montant supplémentaire de dégâts d'Ombre égal à 12% des dégâts physiques infligés.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 52143,
+        "name" : "Maître des goules",
+        "icon" : "spell_shadow_animatedead",
+        "reagents" : [ ],
+        "description" : "Réduit le temps de recharge de Réanimation morbide de 60 sec. et la goule invoquée par votre sort Réanimation morbide est considérée comme un familier sous votre contrôle. Contrairement aux goules normales de chevalier de la mort, votre familier n'a pas de durée limitée.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 91107,
+        "name" : "Pouvoir impie",
+        "icon" : "spell_shadow_unholystrength",
+        "reagents" : [ ],
+        "description" : "Le pouvoir des ténèbres parcourt vos membres et augmente votre Force de 10%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 56835,
+        "name" : "Moisson",
+        "icon" : "spell_shadow_shadetruesight",
+        "reagents" : [ ],
+        "description" : "Chaque fois que vous touchez avec Frappe de sang, Pestilence ou Frappe purulente, les runes dépensées deviennent des runes de la mort à leur activation. Les runes de la mort comptent comme une rune de sang, de givre ou impie.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77515,
+        "name" : "Flétrisseur",
+        "icon" : "achievement_zone_westernplaguelands_01",
+        "reagents" : [ ],
+        "description" : "Augmente les dégâts infligés par vos maladies de 40%. Chaque point de Maîtrise augmente les dégâts des maladies de 5.0% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 2025,
+        "name" : "Autorité impie",
+        "icon" : "spell_deathknight_strangulate",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge de votre technique Poigne de la mort de 5 sec, et vous donne 50% chances de réinitialiser ce temps de recharge quand vous assénez un coup fatal à une cible qui rapporte de l'expérience ou de l'honneur."
+        }, {
+          "description" : "Réduit le temps de recharge de votre technique Poigne de la mort de 10 sec, et vous donne 100% chances de réinitialiser ce temps de recharge quand vous assénez un coup fatal à une cible qui rapporte de l'expérience ou de l'honneur."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1932,
+        "name" : "Virulence",
+        "icon" : "spell_shadow_burningspirit",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente vos chances de toucher avec les sorts de 3%. Les sorts sont toutes les techniques de chevalier de la mort qui ne sont pas des frappes directes portées avec une arme."
+        }, {
+          "description" : "Augmente vos chances de toucher avec les sorts de 6%. Les sorts sont toutes les techniques de chevalier de la mort qui ne sont pas des frappes directes portées avec une arme."
+        }, {
+          "description" : "Augmente vos chances de toucher avec les sorts de 9%. Les sorts sont toutes les techniques de chevalier de la mort qui ne sont pas des frappes directes portées avec une arme."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1963,
+        "name" : "Epidémie",
+        "icon" : "spell_shadow_shadowwordpain",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente la durée de Peste de sang et Fièvre de givre de 4 sec."
+        }, {
+          "description" : "Augmente la durée de Peste de sang et Fièvre de givre de 8 sec."
+        }, {
+          "description" : "Augmente la durée de Peste de sang et Fièvre de givre de 12 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2226,
+        "name" : "Violation",
+        "icon" : "spell_shadow_shadowfiend",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Vos Frappes de peste et Frappes du Fléau profanent le sol sur 7 mètres autour de la cible. Les ennemis sont ralentis de 25% tant qu'ils se trouvent sur la terre impie. Dure 20 sec."
+        }, {
+          "description" : "Vos Frappes de peste et Frappes du Fléau profanent le sol sur 7 mètres autour de la cible. Les ennemis sont ralentis de 50% tant qu'ils se trouvent sur la terre impie. Dure 20 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7572,
+        "name" : "Infection résistante",
+        "icon" : "ability_creature_disease_05",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Quand vos maladies sont dissipées par un ennemi, vous avez 50% de chances d'activer une rune de givre si Fièvre de givre a été dissipée, ou une rune impie si Peste de sang a été dissipée."
+        }, {
+          "description" : "Quand vos maladies sont dissipées par un ennemi, vous avez 100% de chances d'activer une rune de givre si Fièvre de givre a été dissipée, ou une rune impie si Peste de sang a été dissipée."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11178,
+        "name" : "Morbidité",
+        "icon" : "spell_shadow_deathanddecay",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente de 5% les dégâts et les soins de Voile mortel et de 10% ceux de Mort et décomposition."
+        }, {
+          "description" : "Augmente de 10% les dégâts et les soins de Voile mortel et de 20% ceux de Mort et décomposition."
+        }, {
+          "description" : "Augmente de 15% les dégâts et les soins de Voile mortel et de 30% ceux de Mort et décomposition."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2047,
+        "name" : "Corruption runique",
+        "icon" : "spell_shadow_rune",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Réduit le coût de votre Voile mortel de 3, et fait que votre technique Renforcement runique ne réinitialise plus une rune déchargée, mais qu'elle augmente votre taux de régénération des runes de 50% pendant 3 sec."
+        }, {
+          "description" : "Réduit le coût de votre Voile mortel de 6, et fait que votre technique Renforcement runique ne réinitialise plus une rune déchargée, mais qu'elle augmente votre taux de régénération des runes de 100% pendant 3 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7574,
+        "name" : "Frénésie impie",
+        "icon" : "spell_shadow_unholyfrenzy",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "range" : "30 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "3 min de recharge",
+          "description" : "Plonge une unité alliée dans une frénésie meurtrière pendant 30 sec. La cible est enragée, ce qui augmente sa hâte en mêlée et à distance de 20%, mais elle subit aussi toutes les 3 secondes un montant de dégâts égal à 2% de ses points de vie maximum."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12119,
+        "name" : "Contagion",
+        "icon" : "spell_shadow_plaguecloud",
+        "x" : 2,
+        "y" : 2,
+        "req" : 1963,
+        "ranks" : [ {
+          "description" : "Augmente de 50% les dégâts de vos maladies propagées par Pestilence."
+        }, {
+          "description" : "Augmente de 100% les dégâts de vos maladies propagées par Pestilence."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11179,
+        "name" : "Infusion d'ombre",
+        "icon" : "spell_shadow_requiem",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Quand vous lancez Voile mortel, vous avez 33% de chances de rendre plus forte votre goule active en augmentant les dégâts qu'elle inflige de 10% pendant 30 sec. Cumulable jusqu'à 5 fois."
+        }, {
+          "description" : "Quand vous lancez Voile mortel, vous avez 66% de chances de rendre plus forte votre goule active en augmentant les dégâts qu'elle inflige de 10% pendant 30 sec. Cumulable jusqu'à 5 fois."
+        }, {
+          "description" : "Quand vous lancez Voile mortel, vous avez 100% de chances de rendre plus forte votre goule active en augmentant les dégâts qu'elle inflige de 10% pendant 30 sec. Cumulable jusqu'à 5 fois."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2009,
+        "name" : "Suppression de la magie",
+        "icon" : "spell_shadow_antimagicshell",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Votre Carapace anti-magie absorbe 8% de dégâts des sorts supplémentaires, et les dégâts absorbés chargent le chevalier de la mort de puissance runique."
+        }, {
+          "description" : "Votre Carapace anti-magie absorbe 16% de dégâts des sorts supplémentaires. Augmente la puissance runique générée quand des dégâts sont absorbés."
+        }, {
+          "description" : "Votre Carapace anti-magie absorbe 25% de dégâts des sorts supplémentaires. Augmente la puissance runique générée quand des dégâts sont absorbés."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2082,
+        "name" : "Rage de Vaillefendre",
+        "icon" : "inv_weapon_halberd14",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Augmente de 15% les dégâts de vos techniques Frappe de peste, Frappe du Fléau et Frappe purulente."
+        }, {
+          "description" : "Augmente de 30% les dégâts de vos techniques Frappe de peste, Frappe du Fléau et Frappe purulente."
+        }, {
+          "description" : "Augmente de 45% les dégâts de vos techniques Frappe de peste, Frappe du Fléau et Frappe purulente."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1996,
+        "name" : "Chancre impie",
+        "icon" : "spell_shadow_contagion",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Un essaim infect d'insectes impies s'abat sur les victimes de votre Voile mortel et leur inflige un montant de dégâts égal à 10% des dégâts infligés par Voile mortel en 10 sec, en plus d'empêcher toutes les maladies présentes sur ces victimes d'être dissipées."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2221,
+        "name" : "Zone anti-magie",
+        "icon" : "spell_deathknight_antimagiczone",
+        "x" : 1,
+        "y" : 4,
+        "req" : 2009,
+        "ranks" : [ {
+          "cost" : "1 runes impies",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "2 min de recharge",
+          "description" : "Place une grande Zone anti-magie stationnaire qui réduit de 75% les dégâts des sorts infligés aux membres du groupe ou du raid se trouvant à l'intérieur. La Zone anti-magie dure 10 sec. ou jusqu'à ce que 10042 points de dégâts des sorts aient été absorbés."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2013,
+        "name" : "Présence impie améliorée",
+        "icon" : "spell_deathknight_unholypresence",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Vous confère un bonus de 2% à la hâte en Présence impie. De plus, quand vous êtes en Présence de sang ou de givre, vous conservez l'augmentation de la vitesse de déplacement de 8% de Présence impie."
+        }, {
+          "description" : "Vous confère un bonus de 5% à la hâte en Présence impie. De plus, quand vous êtes en Présence de sang ou de givre, vous conservez l'augmentation de la vitesse de déplacement de 15% de Présence impie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2085,
+        "name" : "Sombre transformation",
+        "icon" : "achievement_boss_festergutrotface",
+        "x" : 3,
+        "y" : 4,
+        "req" : 11179,
+        "ranks" : [ {
+          "cost" : "1 runes impies",
+          "range" : "60 yd range",
+          "castTime" : "Incantation instantanée",
+          "description" : "Consomme 5 charges d'Infusion d'ombre sur votre goule pour la transformer en puissante monstruosité morte-vivante pendant 30 sec. Les techniques de la goule sont plus puissantes et elle bénéficie de nouvelles fonctions tant que la transformation est active."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2043,
+        "name" : "Porte-peste d'ébène",
+        "icon" : "ability_creature_cursed_03",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Vos techniques Frappe de peste, Toucher de glace, Chaînes de glace et Poussée de fièvre font également contracter à leur cible Peste d'ébène, qui augmente les dégâts infligés par vos maladies de 15% en plus d'augmenter tous les dégâts magiques subis de 8%."
+        }, {
+          "description" : "Vos techniques Frappe de peste, Toucher de glace, Chaînes de glace et Poussée de fièvre font également contracter à leur cible Peste d'ébène, qui augmente les dégâts infligés par vos maladies de 30% en plus d'augmenter tous les dégâts magiques subis de 8%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7575,
+        "name" : "Malédiction soudaine",
+        "icon" : "spell_shadow_painspike",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Vos attaques automatiques ont 5% de chances de permettre à votre prochain Voile mortel de ne pas coûter de puissance runique."
+        }, {
+          "description" : "Vos attaques automatiques ont 10% de chances de permettre à votre prochain Voile mortel de ne pas coûter de puissance runique."
+        }, {
+          "description" : "Vos attaques automatiques ont 15% de chances de permettre à votre prochain Voile mortel de ne pas coûter de puissance runique."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2000,
+        "name" : "Invocation d'une gargouille",
+        "icon" : "ability_deathknight_summongargoyle",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "70 pts. de puissance runique",
+          "range" : "30 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "3 min de recharge",
+          "description" : "Une gargouille bombarde la cible et lui inflige des dégâts de Nature modifiés par la puissance d'attaque du chevalier de la mort. Persiste pendant 30 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

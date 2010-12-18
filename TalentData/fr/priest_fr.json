@@ -1,0 +1,1078 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 5,
+      "name" : "Prêtre",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "Discipline",
+      "icon" : "spell_holy_powerwordshield",
+      "backgroundFile" : "PriestDiscipline",
+      "overlayColor" : "#ff7f00",
+      "description" : "Utilise la magie pour empêcher que ses alliés subissent des dégâts, ou pour les soigner.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : true,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 47540,
+        "name" : "Pénitence",
+        "icon" : "spell_holy_penance",
+        "cost" : "14% du mana de base",
+        "range" : "30 yd range",
+        "castTime" : "Canalisé",
+        "cooldown" : "12 s. de recharge",
+        "reagents" : [ ],
+        "description" : "Lance une salve de lumière sacrée sur la cible et inflige 23 points de dégâts du Sacré à un ennemi ou rend 63 points de vie à un allié instantanément et toutes les 1 sec. pendant 2 sec.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 95860,
+        "name" : "Méditation",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "Permet à 50% de votre régénération de mana due à l'Esprit de se poursuivre pendant le combat.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 84732,
+        "name" : "Illumination",
+        "icon" : "spell_arcane_mindmastery",
+        "reagents" : [ ],
+        "description" : "Intelligence augmentée de 15%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77484,
+        "name" : "Discipline du bouclier",
+        "icon" : "spell_holy_powerwordshield",
+        "reagents" : [ ],
+        "description" : "Augmente l'efficacité de tous vos sorts qui absorbent les dégâts de 20%. Chaque point de Maîtrise augmente l'absorption de dégâts de 2.5% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10736,
+        "name" : "Mot de pouvoir : Bouclier amélioré",
+        "icon" : "spell_holy_powerwordshield",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts absorbés par votre Mot de pouvoir : Bouclier de 5%."
+        }, {
+          "description" : "Augmente les dégâts absorbés par votre Mot de pouvoir : Bouclier de 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8577,
+        "name" : "Disciplines jumelles",
+        "icon" : "spell_holy_sealofvengeance",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente de 2% les soins et dégâts de vos sorts d'Ombre et du Sacré."
+        }, {
+          "description" : "Augmente de 4% les soins et dégâts de vos sorts d'Ombre et du Sacré."
+        }, {
+          "description" : "Augmente de 6% les soins et dégâts de vos sorts d'Ombre et du Sacré."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8595,
+        "name" : "Sagacité",
+        "icon" : "ability_hibernation",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Réduit le coût en mana de vos sorts instantanés de 4%."
+        }, {
+          "description" : "Réduit le coût en mana de vos sorts instantanés de 7%."
+        }, {
+          "description" : "Réduit le coût en mana de vos sorts instantanés de 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8593,
+        "name" : "Evangélisme",
+        "icon" : "spell_holy_divineillumination",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Vous avez 100% de chances quand vous lancez Châtiment et 100% de chances quand vous lancez Fouet mental de bénéficier d'Evangélisme. Cumulable jusqu'à 5 fois. Dure 20 sec.\n\n\n\nEvangélisme (Châtiment)\n\nAugmente les dégâts infligés par vos sorts Châtiment, Flammes sacrées et Pénitence de 2% et réduit le coût en mana de ces sorts de 3%.\n\n\n\nSombre évangélisme (Fouet mental)\n\nAugmente les dégâts infligés par vos sorts d'Ombre périodiques de 1%."
+        }, {
+          "description" : "Vous avez 100% de chances quand vous lancez Châtiment et 100% de chances quand vous lancez Fouet mental de bénéficier d'Evangélisme. Cumulable jusqu'à 5 fois. Dure 20 sec.\n\n\n\nEvangélisme (Châtiment)\n\nAugmente les dégâts infligés par vos sorts Châtiment, Flammes sacrées et Pénitence de 4% et réduit le coût en mana de ces sorts de 6%.\n\n\n\nSombre évangélisme (Fouet mental)\n\nAugmente les dégâts infligés par vos sorts d'Ombre périodiques de 2%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11608,
+        "name" : "Archange",
+        "icon" : "ability_priest_archangel",
+        "x" : 1,
+        "y" : 1,
+        "req" : 8593,
+        "ranks" : [ {
+          "castTime" : "Incantation instantanée",
+          "description" : "Consomme les effets de votre Evangélisme et déclenche un effet qui dépend du type de l'effet consommé :\n\n\n\nArchange (Evangélisme)\n\nVous rend instantanément 1% de votre total de mana et augmente les soins que vous prodiguez de 3% par charge. Dure 18 sec. Temps de recharge de 30 sec.\n\n\n\nSombre archange (Sombre évangélisme)\n\nVous rend instantanément 5% de votre total de mana et augmente les dégâts infligés par vos sorts Fouet mental, Pointe mentale, Attaque mentale et Mot de l'ombre : Mort de 4% par charge. Dure 18 sec. Temps de recharge de 90 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8581,
+        "name" : "Sanctum intérieur",
+        "icon" : "spell_holy_innerfire",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Votre Feu intérieur réduit également tous les dégâts des sorts subis de 2% quand il est actif, et le bonus à la vitesse de déplacement de votre Volonté intérieure est augmenté de 2%."
+        }, {
+          "description" : "Votre Feu intérieur réduit également tous les dégâts des sorts subis de 4% quand il est actif, et le bonus à la vitesse de déplacement de votre Volonté intérieure est augmenté de 4%."
+        }, {
+          "description" : "Les dégâts des sorts subis sont réduits de 6% quand vous bénéficiez de Feu intérieur, et le bonus à la vitesse de déplacement de votre Volonté intérieure est augmenté de 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8607,
+        "name" : "Protection de l'âme",
+        "icon" : "ability_priest_soulwarding",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge de votre technique Mot de pouvoir : Bouclier de 1 sec."
+        }, {
+          "description" : "Réduit le temps de recharge de votre technique Mot de pouvoir : Bouclier de 2 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11224,
+        "name" : "Regain d'espoir",
+        "icon" : "spell_holy_holyprotection",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Augmente les chances d'effet critique de vos sorts Soins rapides, Soins supérieurs, Soins et Pénitence (soins) de 5% sur les cibles affectées par l'effet Ame affaiblie ou bénéficiant de votre Grâce."
+        }, {
+          "description" : "Augmente les chances d'effet critique de vos sorts Soins rapides, Soins supérieurs, Soins et Pénitence (soins) de 10% sur les cibles affectées par l'effet Ame affaiblie ou bénéficiant de votre Grâce."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8611,
+        "name" : "Infusion de puissance",
+        "icon" : "spell_holy_powerinfusion",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "16% du mana de base",
+          "range" : "30 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "2 min de recharge",
+          "description" : "Imprègne la cible de puissance, ce qui augmente la vitesse d'incantation des sorts de 20% et réduit le coût en mana de tous les sorts de 20%. Dure 15 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11812,
+        "name" : "Expiation",
+        "icon" : "ability_priest_atonement",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Quand vous infligez des dégâts avec Châtiment, vous rendez instantanément à un membre du groupe ou raid aux points de vie bas et qui se trouve à moins de 8 mètres de la cible ennemie un montant de points de vie égal à 50% des dégâts infligés.\n\n\n\nSi le prêtre est soigné par Expiation, l'effet est réduit de moitié."
+        }, {
+          "description" : "Quand vous infligez des dégâts avec Châtiment, vous rendez instantanément à un membre du groupe ou raid aux points de vie bas et qui se trouve à moins de 8 mètres de la cible ennemie un montant de points de vie égal à 100% des dégâts infligés.\n\n\n\nSi le prêtre est soigné par Expiation, l'effet est réduit de moitié."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8591,
+        "name" : "Focalisation intérieure",
+        "icon" : "spell_frost_windwalkon",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "45 s. de recharge",
+          "description" : "Réduit le coût en mana de votre prochain sort Soins rapides, Soins, Soins de lien, Soins supérieurs ou Prière de soins de 100% et augmente ses chances d'effet critique de 25%."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8617,
+        "name" : "Extase",
+        "icon" : "spell_holy_rapture",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Quand votre Mot de pouvoir : Bouclier est complètement absorbé ou dissipé, vous recevez instantanément 1,5% de votre total de mana. Cet effet ne peut se produire plus d'une fois toutes les 12 sec."
+        }, {
+          "description" : "Quand votre Mot de pouvoir : Bouclier est complètement absorbé ou dissipé, vous recevez instantanément 2% de votre total de mana. Cet effet ne peut se produire plus d'une fois toutes les 12 sec."
+        }, {
+          "description" : "Quand votre Mot de pouvoir : Bouclier est complètement absorbé ou dissipé, vous recevez instantanément 2,5% de votre total de mana. Cet effet ne peut se produire plus d'une fois toutes les 12 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11523,
+        "name" : "Sursis",
+        "icon" : "spell_holy_borrowedtime",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Votre prochain sort bénéficie d'un bonus de 7% à la hâte des sorts quand vous lancez Mot de pouvoir : Bouclier."
+        }, {
+          "description" : "Votre prochain sort bénéficie d'un bonus de 14% à la hâte des sorts quand vous lancez Mot de pouvoir : Bouclier."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8605,
+        "name" : "Bouclier réflecteur",
+        "icon" : "ability_priest_reflectiveshield",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Renvoie 22% des dégâts que vous absorbez avec votre Mot de pouvoir : Bouclier à l'attaquant. Ces dégâts ne génèrent pas de menace."
+        }, {
+          "description" : "Renvoie 45% des dégâts que vous absorbez avec votre Mot de pouvoir : Bouclier à l'attaquant. Ces dégâts ne génèrent pas de menace."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11813,
+        "name" : "Force d'âme",
+        "icon" : "spell_holy_ashestoashes",
+        "x" : 0,
+        "y" : 4,
+        "req" : 11224,
+        "ranks" : [ {
+          "description" : "Quand vous soignez une cible à l'aide du sort Soins, la durée de l'affaiblissement Ame affaiblie est réduite de 2 sec. sur cette cible."
+        }, {
+          "description" : "Quand vous soignez une cible à l'aide du sort Soins, la durée de l'affaiblissement Ame affaiblie est réduite de 4 sec. sur cette cible."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8609,
+        "name" : "Egide divine",
+        "icon" : "spell_holy_devineaegis",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Les soins critiques et tous les soins de Prière de soins créent un bouclier de protection autour de la cible, qui absorbe un montant de dégâts égal à 10% des soins reçus. Dure 12 sec."
+        }, {
+          "description" : "Les soins critiques et tous les soins de Prière de soins créent un bouclier de protection autour de la cible, qui absorbe un montant de dégâts égal à 20% des soins reçus. Dure 12 sec."
+        }, {
+          "description" : "Les soins critiques et tous les soins de Prière de soins créent un bouclier de protection autour de la cible, qui absorbe un montant de dégâts égal à 30% des soins reçus. Dure 12 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8623,
+        "name" : "Suppression de la douleur",
+        "icon" : "spell_holy_painsupression",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "8% du mana de base",
+          "range" : "40 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "3 min de recharge",
+          "description" : "Réduit instantanément la menace d'une cible alliée de 5%, réduit tous les dégâts subis de 40% et augmente la résistance aux mécanismes de Dissipation de 65% pendant 8 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12183,
+        "name" : "Fil de la pensée",
+        "icon" : "ability_mage_studentofthemind",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Vous avez 50% de chances quand vous soignez avec Soins supérieurs de réduire le temps de recharge de votre Focalisation intérieure de 5 sec.\n\n\n\nVous avez 50% de chances quand vous utilisez Châtiment de réduire le temps de recharge de votre Pénitence de 0.5 sec."
+        }, {
+          "description" : "Vous avez 100% de chances quand vous soignez avec Soins supérieurs de réduire le temps de recharge de votre Focalisation intérieure de 5 sec.\n\n\n\nVous avez 100% de chances quand vous utilisez Châtiment de réduire le temps de recharge de votre Pénitence de 0.5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8621,
+        "name" : "Volonté focalisée",
+        "icon" : "ability_priest_focusedwill",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Chaque fois que vous êtes victime d'une attaque vous infligeant des dégâts d'un montant supérieur à 10% de votre total de points de vie, vous bénéficiez de Volonté focalisée, qui réduit tous les dégâts subis de 4% et dure 8 sec. Cumulable jusqu'à 2 fois."
+        }, {
+          "description" : "Chaque fois que vous êtes victime d'une attaque vous infligeant des dégâts d'un montant supérieur à 10% de votre total de points de vie, vous bénéficiez de Volonté focalisée, qui réduit tous les dégâts subis de 6% et dure 8 sec. Cumulable jusqu'à 2 fois."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8625,
+        "name" : "Grâce",
+        "icon" : "spell_holy_hopeandgrace",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Vos sorts Soins rapides, Soins supérieurs, Soins et Pénitence donnent la Grâce à la cible, ce qui augmente tous les soins que lui prodigue le prêtre de 4%. Cet effet est cumulable jusqu'à 3 fois et dure 15 sec. Grâce ne peut être active que sur une cible à la fois."
+        }, {
+          "description" : "Vos sorts Soins rapides, Soins supérieurs, Soins et Pénitence donnent la Grâce à la cible, ce qui augmente tous les soins que lui prodigue le prêtre de 8%. Cet effet est cumulable jusqu'à 3 fois et dure 15 sec. Grâce ne peut être active que sur une cible à la fois."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8603,
+        "name" : "Mot de pouvoir : Barrière",
+        "icon" : "spell_holy_powerwordbarrier",
+        "x" : 1,
+        "y" : 6,
+        "req" : 8609,
+        "ranks" : [ {
+          "cost" : "30% du mana de base",
+          "range" : "40 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "2 min de recharge",
+          "description" : "Invoque à l'emplacement de la cible une barrière sacrée qui réduit tous les dégâts infligés aux cibles alliées de 30%. Tant qu'elles se trouvent derrière la barrière, leurs incantations de sorts ne sont pas interrompues par les dégâts. La barrière dure 10 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Sacré",
+      "icon" : "spell_holy_guardianspirit",
+      "backgroundFile" : "PriestHoly",
+      "overlayColor" : "#9999ff",
+      "description" : "Un soigneur polyvalent qui peut panser les blessures d'individus ou de groupes entiers, même après sa mort.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : true,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 88625,
+        "name" : "Mot sacré : Châtier",
+        "icon" : "spell_holy_chastise",
+        "cost" : "15% du mana de base",
+        "range" : "30 yd range",
+        "castTime" : "Incantation instantanée",
+        "cooldown" : "25 s. de recharge",
+        "reagents" : [ ],
+        "description" : "Châtie la cible en lui infligeant 21 points de dégâts du Sacré et la désoriente pendant 3 sec.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 95861,
+        "name" : "Méditation",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "Permet à 50% de votre régénération de mana due à l'Esprit de se poursuivre pendant le combat.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 87336,
+        "name" : "Soins spirituels",
+        "icon" : "spell_holy_impholyconcentration",
+        "reagents" : [ ],
+        "description" : "Soins augmentés de 15%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77485,
+        "name" : "Echo de la Lumière",
+        "icon" : "spell_holy_aspiration",
+        "reagents" : [ ],
+        "description" : "Vos sorts de soins directs rendent 10% de points de vie supplémentaires en 6 sec. Chaque point de Maîtrise octroie 1.25% de points de vie supplémentaires en 6 sec.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10746,
+        "name" : "Rénovation améliorée",
+        "icon" : "spell_holy_renew",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente de 5% le montant de points de vie rendus par votre sort Rénovation."
+        }, {
+          "description" : "Augmente de 10% le montant de points de vie rendus par votre sort Rénovation."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9553,
+        "name" : "Soins surpuissants",
+        "icon" : "spell_holy_greaterheal",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente les soins prodigués par vos Soins rapides, Soins, Soins de lien et Soins supérieurs de 5%."
+        }, {
+          "description" : "Augmente les soins prodigués par vos Soins rapides, Soins, Soins de lien et Soins supérieurs de 10%."
+        }, {
+          "description" : "Augmente les soins prodigués par vos Soins rapides, Soins, Soins de lien et Soins supérieurs de 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9549,
+        "name" : "Fureur divine",
+        "icon" : "spell_holy_sealofwrath",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Réduit le temps d'incantation de vos sorts Châtiment, Flammes sacrées, Soins et Soins supérieurs de 0,15 sec."
+        }, {
+          "description" : "Réduit le temps d'incantation de vos sorts Châtiment, Flammes sacrées, Soins et Soins supérieurs de 0,35 sec."
+        }, {
+          "description" : "Réduit le temps d'incantation de vos sorts Châtiment, Flammes sacrées, Soins et Soins supérieurs de 0.5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11669,
+        "name" : "Prière du désespoir",
+        "icon" : "spell_holy_restoration",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "cost" : "18% du mana de base",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "2 min de recharge",
+          "description" : "Rend instantanément 134 points de vie au lanceur de sorts."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11765,
+        "name" : "Vague de Lumière",
+        "icon" : "spell_holy_surgeoflight",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Vous avez 3% de chances lorsque vous utilisez Châtiment ou Soins de permettre à votre prochain sort Soins rapides d'être instantané et de ne pas coûter de mana. Il ne pourra cependant pas être critique."
+        }, {
+          "description" : "Vous avez 6% de chances lorsque vous utilisez Châtiment ou Soins de permettre à votre prochain sort Soins rapides d'être instantané et de ne pas coûter de mana. Il ne pourra cependant pas être critique."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9561,
+        "name" : "Inspiration",
+        "icon" : "spell_holy_layonhands",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit de 5% les dégâts physiques subis par votre cible pendant 15 sec. après avoir reçu un effet critique de l'un des sorts suivants : Soins rapides, Soins, Soins supérieurs, Soins de lien, Pénitence, Prière de guérison, Prière de soins ou Cercle de soins."
+        }, {
+          "description" : "Réduit de 10% les dégâts physiques subis par votre cible pendant 15 sec. après avoir reçu un effet critique de l'un des sorts suivants : Soins rapides, Soins, Soins supérieurs, Soins de lien, Pénitence, Prière de guérison, Prière de soins ou Cercle de soins."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9593,
+        "name" : "Toucher divin",
+        "icon" : "ability_paladin_infusionoflight",
+        "x" : 0,
+        "y" : 2,
+        "req" : 10746,
+        "ranks" : [ {
+          "description" : "Votre Rénovation rend instantanément à la cible 5% de l'effet périodique total."
+        }, {
+          "description" : "Votre Rénovation rend instantanément à la cible 10% de l'effet périodique total."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9577,
+        "name" : "Concentration sacrée",
+        "icon" : "spell_holy_fanaticism",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Votre régénération de mana due à l'Esprit en combat est augmentée de 10%."
+        }, {
+          "description" : "Votre régénération de mana due à l'Esprit en combat est augmentée de 20%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11666,
+        "name" : "Puits de lumière",
+        "icon" : "spell_holy_summonlightwell",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "30% du mana de base",
+          "range" : "40 yd range",
+          "castTime" : "Incantation de 0,5 s.",
+          "cooldown" : "3 min de recharge",
+          "description" : "Crée un Puits de lumière sacré. Les joueurs alliés peuvent cliquer sur le Puits de lumière pour recevoir 274 points de vie en 6 sec. L'effet est annulé si vous subissez des dégâts égaux à 30% de votre total de points de vie. La durée du Puits de lumière est de 3 min ou bien 10 utilisations."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12184,
+        "name" : "Tome de la Lumière",
+        "icon" : "inv_misc_book_07",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge de vos sorts de Mot sacré de 15%."
+        }, {
+          "description" : "Réduit le temps de recharge de vos sorts de Mot sacré de 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 14738,
+        "name" : "Renouveau rapide",
+        "icon" : "ability_paladin_blessedmending",
+        "x" : 0,
+        "y" : 3,
+        "req" : 9593,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge global de votre Rénovation de 0.5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11670,
+        "name" : "Esprit de rédemption",
+        "icon" : "inv_enchant_essenceeternallarge",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Au moment de sa mort, le prêtre devient l'Esprit de rédemption pendant 15 sec. L'Esprit de rédemption ne peut pas se déplacer ou attaquer, ni être attaqué ou ciblé par aucun sort ou effet. Tant qu'il est sous cette forme, le prêtre peut lancer tout sort de soins sans le moindre coût. À la fin de l'effet, le prêtre meurt."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9573,
+        "name" : "Heureux hasard",
+        "icon" : "spell_holy_serendipity",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Quand vous soignez avec Soins de lien ou Soins rapides, le temps d'incantation de votre prochain sort Soins supérieurs ou Prière de soins est réduit de 10% et son coût en mana de 5%. Cumulable jusqu'à 2 fois. Dure 20 sec."
+        }, {
+          "description" : "Quand vous soignez avec Soins de lien ou Soins rapides, le temps d'incantation de votre prochain sort Soins supérieurs ou Prière de soins est réduit de 20% et son coût en mana de 10%. Cumulable jusqu'à 2 fois. Dure 20 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9587,
+        "name" : "Corps et âme",
+        "icon" : "spell_holy_symbolofhope",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Quand vous lancez Mot de pouvoir : Bouclier ou Saut de foi, vous augmentez la vitesse de déplacement de la cible de 30% pendant 4 sec., et vous avez 50% de chances lorsque vous lancez Abolir maladie sur vous-même d'également dissiper 1 effet de poison en plus des maladies."
+        }, {
+          "description" : "Quand vous lancez Mot de pouvoir : Bouclier ou Saut de foi, vous augmentez la vitesse de déplacement de la cible de 60% pendant 4 sec., et vous avez 100% de chances lorsque vous lancez Abolir maladie sur vous-même d'également dissiper 1 effet de poison en plus des maladies."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11667,
+        "name" : "Chakra",
+        "icon" : "priest_icon_chakra",
+        "x" : 1,
+        "y" : 4,
+        "req" : 9577,
+        "ranks" : [ {
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "30 s. de recharge",
+          "description" : "Quand ce talent est activé, votre prochain sort Soins, Prière de soins, Prière de guérison ou Châtiment vous fait entrer dans un état de Chakra. Dure 30 sec.\n\n\n\nSérénité (Soins)\n\nAugmente les chances d'effet critique de vos sort de soins directs de 10%, et vos soins directs réinitialisent la durée de votre Rénovation sur la cible.\n\n\n\nSanctuaire (Prière de soins, Prière de guérison)\n\nAugmente les soins prodigués par vos sorts à effet de zone et Rénovation de 15% et réduit le temps de recharge de votre sort Cercle de soins de 2 sec.\n\n\n\nChâtier (Châtiment)\n\nAugmente le total de dégâts infligés par vos sorts d'Ombre et du Sacré de 15%."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11755,
+        "name" : "Révélations",
+        "icon" : "ability_priest_bindingprayers",
+        "x" : 2,
+        "y" : 4,
+        "req" : 11667,
+        "ranks" : [ {
+          "description" : "Lorsque vous êtes sous l'effet de Chakra : Sérénité ou Chakra : Sanctuaire, votre technique Mot sacré : Châtier se transforme en une technique différente en fonction de cet état.\n\n\n\nMot sacré : Sérénité\n\nRend instantanément à la cible 141 points de vie et augmente les chances d'effet critique de vos sorts de soins sur la cible de 25% pendant 6 sec. Temps de recharge de 15 sec.\n\n\n\nMot sacré : Sanctuaire\n\nBénit le sol avec la Lumière divine et rend à tous ceux qui se trouvent là 8 points de vie toutes les 2 sec. pendant 18 sec. Un seul Sanctuaire peut être actif à la fois. Temps de recharge de 40 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11672,
+        "name" : "Résilience bénie",
+        "icon" : "spell_holy_blessedresillience",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Chaque fois que vous êtes victime d'une attaque vous infligeant des dégâts d'un montant supérieur à 10% de votre total de points de vie, vous bénéficiez de Résilience bénie, qui augmente tous les soins reçus de 5% et dure 10 sec."
+        }, {
+          "description" : "Chaque fois que vous êtes victime d'une attaque vous infligeant des dégâts d'un montant supérieur à 10% de votre total de points de vie, vous bénéficiez de Résilience bénie, qui augmente tous les soins reçus de 10% et dure 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9597,
+        "name" : "Epreuve de la Foi",
+        "icon" : "spell_holy_testoffaith",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Augmente les soins de 4% sur les cibles alliées qui ne disposent plus que de 50% ou moins de leurs points de vie."
+        }, {
+          "description" : "Augmente les soins de 8% sur les cibles alliées qui ne disposent plus que de 50% ou moins de leurs points de vie."
+        }, {
+          "description" : "Augmente les soins de 12% sur les cibles alliées qui ne disposent plus que de 50% ou moins de leurs points de vie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11668,
+        "name" : "Etat d'esprit",
+        "icon" : "spell_arcane_mindmastery",
+        "x" : 1,
+        "y" : 5,
+        "req" : 11667,
+        "ranks" : [ {
+          "description" : "Vos incantations de Soins, Prière de soins, Prière de guérison ou Châtiment réussies augmentent la durée de votre Chakra correspondant de 2 sec."
+        }, {
+          "description" : "Vos incantations de Soins, Prière de soins, Prière de guérison ou Châtiment réussies augmentent la durée de votre Chakra correspondant de 4 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9595,
+        "name" : "Cercle de soins",
+        "icon" : "spell_holy_circleofrenewal",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "cost" : "21% du mana de base",
+          "range" : "40 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "10 s. de recharge",
+          "description" : "Rend à 5 membres au maximum du groupe ou du raid se trouvant à moins de 15 mètres de la cible 47 points de vie. La priorité est donnée aux membres du groupe aux points de vie les plus bas."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9601,
+        "name" : "Esprit gardien",
+        "icon" : "spell_holy_guardianspirit",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "6% du mana de base",
+          "range" : "40 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "3 min de recharge",
+          "description" : "Fait appel à un esprit gardien pour veiller sur la cible alliée. L'esprit augmente les soins prodigués à la cible de 40% et l'empêche également de mourir en se sacrifiant pour elle. Ce sacrifice met fin à l'effet mais rend à la cible 50% de ses points de vie maximum. Dure 10 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Ombre",
+      "icon" : "spell_shadow_shadowwordpain",
+      "backgroundFile" : "PriestShadow",
+      "overlayColor" : "#b266cc",
+      "description" : "Utilise la magie de l'Ombre, particulièrement des sorts de dégâts sur la durée, pour éliminer ses ennemis.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 15407,
+        "name" : "Fouet mental",
+        "icon" : "spell_shadow_siphonmana",
+        "cost" : "8% du mana de base",
+        "range" : "40 yd range",
+        "castTime" : "Canalisé",
+        "reagents" : [ ],
+        "description" : "Attaque l'esprit de la cible avec l'énergie de l'Ombre. Inflige 24 points de dégâts d'Ombre en 3 sec. et réduit la vitesse de déplacement de la cible de 50%.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 87327,
+        "name" : "Puissance de l'ombre",
+        "icon" : "spell_shadow_shadowpower",
+        "reagents" : [ ],
+        "description" : "Dégâts des sorts augmentés de 25%.\n\n\n\nAugmente les dégâts critiques de vos sorts d'Ombre de 100%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 95740,
+        "name" : "Orbes d'ombre",
+        "icon" : "spell_priest_shadoworbs",
+        "reagents" : [ ],
+        "description" : "Vous avez 10% de chances que vos sorts Mot de l'ombre : Douleur et Fouet mental vous octroient un Orbe d'ombre chaque fois qu'ils infligent des dégâts. L'incantation de votre Attaque mentale ou Pointe mentale consomme tous les Orbes d'ombre et augmente les dégâts de ce sort de 0% par Orbe d'ombre, en plus d'augmenter de 0% les dégâts de vos sorts périodiques d'Ombre pendant 15 sec. Vous pouvez avoir un maximum de 3 orbes.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77486,
+        "name" : "Puissance des orbes d'ombre",
+        "icon" : "inv_chaos_orb",
+        "reagents" : [ ],
+        "description" : "Augmente les dégâts infligés par vos Orbes d'ombre. Chaque point de Maîtrise augmente les dégâts de 1.3% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9032,
+        "name" : "Ténèbres",
+        "icon" : "ability_priest_darkness",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Hâte des sorts augmentée de 1%."
+        }, {
+          "description" : "Hâte des sorts augmentée de 2%."
+        }, {
+          "description" : "Hâte des sorts augmentée de 3%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9036,
+        "name" : "Mot de l'ombre : Douleur amélioré",
+        "icon" : "spell_shadow_shadowwordpain",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts infligés par votre sort Mot de l'ombre : Douleur de 3%."
+        }, {
+          "description" : "Augmente les dégâts infligés par votre sort Mot de l'ombre : Douleur de 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9046,
+        "name" : "Ombres voilées",
+        "icon" : "spell_magic_lesserinvisibilty",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge de votre technique Oubli de 3 sec. et celui de votre technique Ombrefiel de 30 sec."
+        }, {
+          "description" : "Réduit le temps de recharge de votre technique Oubli de 6 sec. et celui de votre technique Ombrefiel de 60 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9040,
+        "name" : "Cri psychique amélioré",
+        "icon" : "spell_shadow_psychicscream",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge de votre sort Cri psychique de 2 sec."
+        }, {
+          "description" : "Réduit le temps de recharge de votre sort Cri psychique de 4 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9042,
+        "name" : "Attaque mentale améliorée",
+        "icon" : "spell_shadow_unholyfrenzy",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge de votre sort Attaque mentale de 0.5 sec., et tant que vous êtes en forme d'Ombre il a également 33% de chances de réduire tous les soins prodigués à la cible de 10% pendant 10 sec."
+        }, {
+          "description" : "Réduit le temps de recharge de votre sort Attaque mentale de 1 sec., et tant que vous êtes en forme d'Ombre il a également 66% de chances de réduire tous les soins prodigués à la cible de 10% pendant 10 sec."
+        }, {
+          "description" : "Réduit le temps de recharge de votre sort Attaque mentale de 1.5 sec., et tant que vous êtes en forme d'Ombre il a également 100% de chances de réduire tous les soins prodigués à la cible de 10% pendant 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9062,
+        "name" : "Peste dévorante améliorée",
+        "icon" : "spell_shadow_devouringplague.",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Votre Peste dévorante inflige instantanément un montant de dégâts égal à 15% du total de son effet périodique."
+        }, {
+          "description" : "Votre Peste dévorante inflige instantanément un montant de dégâts égal à 30% du total de son effet périodique."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11673,
+        "name" : "Foi distordue",
+        "icon" : "spell_shadow_mindtwisting",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente de 1% les dégâts de vos sorts d'Ombre, et vous fait bénéficier d'un bonus au score de toucher des sorts égal à 50% de l'Esprit conféré par les objets ou effets."
+        }, {
+          "description" : "Augmente de 2% les dégâts de vos sorts d'Ombre, et vous fait bénéficier d'un bonus au score de toucher des sorts égal à 100% de l'Esprit conféré par les objets ou effets."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9064,
+        "name" : "Forme d'Ombre",
+        "icon" : "spell_shadow_shadowform",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "13% du mana de base",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "1,5 s. de recharge",
+          "description" : "Adopte une Forme d'Ombre qui augmente de 15% les dégâts d'Ombre que vous infligez en plus de réduire de 15% tous les dégâts que vous subissez et d'augmenter la hâte des sorts de tous les membres du groupe ou raid de 5%. Cependant, vous ne pouvez pas lancer de sorts du Sacré lorsque vous êtes sous cette forme."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9068,
+        "name" : "Fantasme",
+        "icon" : "spell_shadow_twistedfaith",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Votre technique Oubli a maintenant 50% de chances d'annuler tous les effets affectant le déplacement."
+        }, {
+          "description" : "Votre technique Oubli a maintenant 100% de chances d'annuler tous les effets affectant le déplacement."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11606,
+        "name" : "Ombres contrôlées",
+        "icon" : "inv_misc_orb_04",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Augmente vos chances d'obtenir un Orbe d'ombre quand vous infligez des dégâts avec Fouet mental et Mot de l'ombre : Douleur de 4%, et vous avez 50% de chances d'obtenir un Orbe d'ombre quand une attaque vous inflige un coup critique."
+        }, {
+          "description" : "Augmente vos chances d'obtenir un Orbe d'ombre quand vous infligez des dégâts avec Fouet mental et Mot de l'ombre : Douleur de 8%, et vous avez 100% de chances d'obtenir un Orbe d'ombre quand une attaque vous inflige un coup critique."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9052,
+        "name" : "Silence",
+        "icon" : "ability_priest_silence",
+        "x" : 0,
+        "y" : 3,
+        "req" : 9040,
+        "ranks" : [ {
+          "cost" : "225 pts. de mana",
+          "range" : "30 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "45 s. de recharge",
+          "description" : "Rend la cible silencieuse, l'empêchant de lancer des sorts pendant 5 sec. Les incantations de sorts des victimes personnages non joueurs sont également interrompues pendant 3 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9054,
+        "name" : "Etreinte vampirique",
+        "icon" : "spell_shadow_unsummonbuilding",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "castTime" : "Incantation instantanée",
+          "description" : "Vous emplit de l'énergie de l'étreinte de l'Ombre, qui vous soigne pour 6% et les autres membres du groupe pour 3% de tous les dégâts d'Ombre que vous infligez avec des sorts monocibles pendant 30 min."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11778,
+        "name" : "Masochisme",
+        "icon" : "spell_shadow_misery",
+        "x" : 2,
+        "y" : 3,
+        "req" : 9054,
+        "ranks" : [ {
+          "description" : "Quand vous subissez une attaque qui vous inflige des dégâts d'un montant supérieur ou égal à 10% de votre total de points de vie, ou que vous vous infligez vous-même des dégâts avec Mot de l'ombre : Mort, vous récupérez instantanément 5% de votre total de mana."
+        }, {
+          "description" : "Quand vous subissez une attaque qui vous inflige des dégâts d'un montant supérieur ou égal à 10% de votre total de points de vie, ou que vous vous infligez vous-même des dégâts avec Mot de l'ombre : Mort, vous récupérez instantanément 10% de votre total de mana."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9060,
+        "name" : "Fonte de l'esprit",
+        "icon" : "spell_shadow_skull",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts infligés par votre Mot de l'ombre : Mort de 15% aux cibles disposant de 25% ou moins de leurs points de vie, et quand vous infligez des dégâts avec Pointe mentale, le temps d'incantation de votre prochaine Attaque mentale est réduit de 25% pendant 6 sec. Fonte de l'esprit est cumulable jusqu'à 2 fois."
+        }, {
+          "description" : "Augmente les dégâts infligés par votre Mot de l'ombre : Mort de 30% aux cibles disposant de 25% ou moins de leurs points de vie, et quand vous infligez des dégâts avec Pointe mentale, le temps d'incantation de votre prochaine Attaque mentale est réduit de 50% pendant 6 sec. Fonte de l'esprit est cumulable jusqu'à 2 fois."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9076,
+        "name" : "Douleur et souffrance",
+        "icon" : "spell_shadow_painandsuffering",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Votre Fouet mental a 30% de chances de réinitialiser la durée de Mot de l'ombre : Douleur sur la cible et il réduit les dégâts que vous inflige votre propre Mot de l'ombre : Mort de 20%."
+        }, {
+          "description" : "Votre Fouet mental a 60% de chances de réinitialiser la durée de Mot de l'ombre : Douleur sur la cible et il réduit les dégâts que vous inflige votre propre Mot de l'ombre : Mort de 40%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9074,
+        "name" : "Toucher vampirique",
+        "icon" : "spell_holy_stoicism",
+        "x" : 1,
+        "y" : 4,
+        "req" : 9054,
+        "ranks" : [ {
+          "cost" : "16% du mana de base",
+          "range" : "40 yd range",
+          "castTime" : "Incantation de 1,5 s.",
+          "description" : "Inflige 45 points de dégâts d'Ombre en 15 sec. à votre cible et fait recevoir à un maximum de 10 membres du groupe ou du raid un montant de mana égal à 1% de leur maximum de mana toutes les 10 sec. quand vous infligez des dégâts avec Attaque mentale."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11663,
+        "name" : "Paralysie",
+        "icon" : "ability_rogue_masterofsubtlety",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Quand vous réussissez un coup critique avec votre Attaque mentale, la cible est incapable de se déplacer pendant 2 sec."
+        }, {
+          "description" : "Quand vous réussissez un coup critique avec votre Attaque mentale, la cible est incapable de se déplacer pendant 4 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9072,
+        "name" : "Horreur psychique",
+        "icon" : "spell_shadow_psychichorrors",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "cost" : "16% du mana de base",
+          "range" : "30 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "2 min de recharge",
+          "description" : "Vous terrifiez la cible, qui tremble, horrifiée, pendant 3 sec et laisse tomber son arme tenue en main droite et ses armes à distance pendant 10 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11605,
+        "name" : "Péché et punition",
+        "icon" : "spell_holy_prayerofshadowprotection",
+        "x" : 1,
+        "y" : 5,
+        "req" : 9074,
+        "ranks" : [ {
+          "description" : "Quand votre Toucher vampirique est dissipé, il y a 50% de chances que celui qui le dissipe et toutes les cibles ennemies à moins de 10 mètres fuient sous l'effet de la peur, horrifiées, pendant 3 sec.\n\n\n\nQuand vous réussissez un coup critique avec Fouet mental, le temps de recharge de votre Ombrefiel est réduit de 5 sec."
+        }, {
+          "description" : "Quand votre Toucher vampirique est dissipé, il y a 100% de chances que celui qui le dissipe et toutes les cibles ennemies à moins de 10 mètres fuient sous l'effet de la peur, horrifiées, pendant 3 sec.\n\n\n\nQuand vous réussissez un coup critique avec Fouet mental, le temps de recharge de votre Ombrefiel est réduit de 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9070,
+        "name" : "Apparition ténébreuse",
+        "icon" : "ability_priest_shadowyapparition",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Quand vous infligez des dégâts périodiques avec Mot de l'ombre : Douleur, vous avez 4% de chances d'invoquer une version d'ombre de vous-même qui se déplace lentement vers une cible affectée par votre Mot de l'ombre : Douleur. Quand elle atteint la cible, elle lui inflige instantanément 19 points de dégâts d'Ombre.\n\n    \n\nQuand vous vous déplacez, les chances d'invoquer l'apparation ténébreuse sont augmentées de 20%. Vous pouvez avoir un maximum de 4 Apparitions ténébreuses actives à la fois."
+        }, {
+          "description" : "Quand vous infligez des dégâts périodiques avec Mot de l'ombre : Douleur, vous avez 8% de chances d'invoquer une version d'ombre de vous-même qui se déplace lentement vers une cible affectée par votre Mot de l'ombre : Douleur. Quand elle atteint la cible, elle lui inflige instantanément 19 points de dégâts d'Ombre.\n\n    \n\nQuand vous vous déplacez, les chances d'invoquer l'apparation ténébreuse sont augmentées de 40%. Vous pouvez avoir un maximum de 4 Apparitions ténébreuses actives à la fois."
+        }, {
+          "description" : "Quand vous infligez des dégâts périodiques avec Mot de l'ombre : Douleur, vous avez 12% de chances d'invoquer une version d'ombre de vous-même qui se déplace lentement vers une cible affectée par votre Mot de l'ombre : Douleur. Quand elle atteint la cible, elle lui inflige instantanément 19 points de dégâts d'Ombre.\n\n    \n\nQuand vous vous déplacez, les chances d'invoquer l'apparation ténébreuse sont augmentées de 60%. Vous pouvez avoir un maximum de 4 Apparitions ténébreuses actives à la fois."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9080,
+        "name" : "Dispersion",
+        "icon" : "spell_shadow_dispersion",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "castTime" : "Instantanée",
+          "cooldown" : "2 min de recharge",
+          "description" : "Votre corps devient de l'énergie d'ombre pure, ce qui réduit tous les dégâts subis de 90%. Vous ne pouvez pas attaquer ni lancer de sorts, mais vous régénérez 6% de votre mana toutes les 1 sec. pendant 6 sec.\n\n\n\nDispersion peut être lancé lorsque vous êtes étourdi, apeuré ou réduit au silence, dissipe tous les effets affectant le déplacement à son lancement et vous rend insensible à eux tant que vous êtes de l'énergie pure."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

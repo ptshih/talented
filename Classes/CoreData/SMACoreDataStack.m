@@ -7,6 +7,7 @@
 //
 
 #import "SMACoreDataStack.h"
+#import "Constants.h"
 
 static NSPersistentStoreCoordinator *_persistentStoreCoordinator = nil;
 static NSManagedObjectModel *_managedObjectModel = nil;
@@ -37,7 +38,9 @@ static NSManagedObjectContext *_managedObjectContext = nil;
   
   [SMACoreDataStack prepareDocumentsDirectory];
   
-  NSURL *storeUrl = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent:@"talentpad.sqlite"]];
+  // Localize datastore filename
+  NSString *datastoreName = [NSString stringWithFormat:@"talentpad_%@.sqlite", USER_LANGUAGE];
+  NSURL *storeUrl = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent:datastoreName]];
   NSError *error = nil;
   
   _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];

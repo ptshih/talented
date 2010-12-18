@@ -109,6 +109,26 @@
 		255133B212BA3F220030931A /* 11-0-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2551339412BA3F220030931A /* 11-0-bg.jpg */; };
 		255133B312BA3F220030931A /* 11-1-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2551339512BA3F220030931A /* 11-1-bg.jpg */; };
 		255133B412BA3F220030931A /* 11-2-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2551339612BA3F220030931A /* 11-2-bg.jpg */; };
+		2551361212BB474A0030931A /* deathknight_en.json in Resources */ = {isa = PBXBuildFile; fileRef = 255135FD12BB474A0030931A /* deathknight_en.json */; };
+		2551361312BB474A0030931A /* druid_en.json in Resources */ = {isa = PBXBuildFile; fileRef = 255135FE12BB474A0030931A /* druid_en.json */; };
+		2551361412BB474A0030931A /* hunter_en.json in Resources */ = {isa = PBXBuildFile; fileRef = 255135FF12BB474A0030931A /* hunter_en.json */; };
+		2551361512BB474A0030931A /* mage_en.json in Resources */ = {isa = PBXBuildFile; fileRef = 2551360012BB474A0030931A /* mage_en.json */; };
+		2551361612BB474A0030931A /* paladin_en.json in Resources */ = {isa = PBXBuildFile; fileRef = 2551360112BB474A0030931A /* paladin_en.json */; };
+		2551361712BB474A0030931A /* priest_en.json in Resources */ = {isa = PBXBuildFile; fileRef = 2551360212BB474A0030931A /* priest_en.json */; };
+		2551361812BB474A0030931A /* rogue_en.json in Resources */ = {isa = PBXBuildFile; fileRef = 2551360312BB474A0030931A /* rogue_en.json */; };
+		2551361912BB474A0030931A /* shaman_en.json in Resources */ = {isa = PBXBuildFile; fileRef = 2551360412BB474A0030931A /* shaman_en.json */; };
+		2551361A12BB474A0030931A /* warlock_en.json in Resources */ = {isa = PBXBuildFile; fileRef = 2551360512BB474A0030931A /* warlock_en.json */; };
+		2551361B12BB474A0030931A /* warrior_en.json in Resources */ = {isa = PBXBuildFile; fileRef = 2551360612BB474A0030931A /* warrior_en.json */; };
+		2551361C12BB474A0030931A /* deathknight_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 2551360812BB474A0030931A /* deathknight_fr.json */; };
+		2551361D12BB474A0030931A /* druid_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 2551360912BB474A0030931A /* druid_fr.json */; };
+		2551361E12BB474A0030931A /* hunter_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 2551360A12BB474A0030931A /* hunter_fr.json */; };
+		2551361F12BB474A0030931A /* mage_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 2551360B12BB474A0030931A /* mage_fr.json */; };
+		2551362012BB474A0030931A /* paladin_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 2551360C12BB474A0030931A /* paladin_fr.json */; };
+		2551362112BB474A0030931A /* priest_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 2551360D12BB474A0030931A /* priest_fr.json */; };
+		2551362212BB474A0030931A /* rogue_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 2551360E12BB474A0030931A /* rogue_fr.json */; };
+		2551362312BB474A0030931A /* shaman_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 2551360F12BB474A0030931A /* shaman_fr.json */; };
+		2551362412BB474A0030931A /* warlock_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 2551361012BB474A0030931A /* warlock_fr.json */; };
+		2551362512BB474A0030931A /* warrior_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 2551361112BB474A0030931A /* warrior_fr.json */; };
 		2570267C12B9EF72000A4D7B /* launcher_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2570267B12B9EF72000A4D7B /* launcher_bg.png */; };
 		257026D712B9F857000A4D7B /* loader_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 257026D612B9F857000A4D7B /* loader_bg.png */; };
 		2570288212BA1770000A4D7B /* deathwing_wings.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2570287D12BA1770000A4D7B /* deathwing_wings.jpg */; };
@@ -944,6 +964,26 @@
 		2551339412BA3F220030931A /* 11-0-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "11-0-bg.jpg"; sourceTree = "<group>"; };
 		2551339512BA3F220030931A /* 11-1-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "11-1-bg.jpg"; sourceTree = "<group>"; };
 		2551339612BA3F220030931A /* 11-2-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "11-2-bg.jpg"; sourceTree = "<group>"; };
+		255135FD12BB474A0030931A /* deathknight_en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deathknight_en.json; sourceTree = "<group>"; };
+		255135FE12BB474A0030931A /* druid_en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = druid_en.json; sourceTree = "<group>"; };
+		255135FF12BB474A0030931A /* hunter_en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hunter_en.json; sourceTree = "<group>"; };
+		2551360012BB474A0030931A /* mage_en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mage_en.json; sourceTree = "<group>"; };
+		2551360112BB474A0030931A /* paladin_en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = paladin_en.json; sourceTree = "<group>"; };
+		2551360212BB474A0030931A /* priest_en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = priest_en.json; sourceTree = "<group>"; };
+		2551360312BB474A0030931A /* rogue_en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rogue_en.json; sourceTree = "<group>"; };
+		2551360412BB474A0030931A /* shaman_en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shaman_en.json; sourceTree = "<group>"; };
+		2551360512BB474A0030931A /* warlock_en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warlock_en.json; sourceTree = "<group>"; };
+		2551360612BB474A0030931A /* warrior_en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warrior_en.json; sourceTree = "<group>"; };
+		2551360812BB474A0030931A /* deathknight_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deathknight_fr.json; sourceTree = "<group>"; };
+		2551360912BB474A0030931A /* druid_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = druid_fr.json; sourceTree = "<group>"; };
+		2551360A12BB474A0030931A /* hunter_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hunter_fr.json; sourceTree = "<group>"; };
+		2551360B12BB474A0030931A /* mage_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mage_fr.json; sourceTree = "<group>"; };
+		2551360C12BB474A0030931A /* paladin_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = paladin_fr.json; sourceTree = "<group>"; };
+		2551360D12BB474A0030931A /* priest_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = priest_fr.json; sourceTree = "<group>"; };
+		2551360E12BB474A0030931A /* rogue_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rogue_fr.json; sourceTree = "<group>"; };
+		2551360F12BB474A0030931A /* shaman_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shaman_fr.json; sourceTree = "<group>"; };
+		2551361012BB474A0030931A /* warlock_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warlock_fr.json; sourceTree = "<group>"; };
+		2551361112BB474A0030931A /* warrior_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warrior_fr.json; sourceTree = "<group>"; };
 		2570267B12B9EF72000A4D7B /* launcher_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launcher_bg.png; sourceTree = "<group>"; };
 		257026D612B9F857000A4D7B /* loader_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loader_bg.png; sourceTree = "<group>"; };
 		2570287D12BA1770000A4D7B /* deathwing_wings.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deathwing_wings.jpg; sourceTree = "<group>"; };
@@ -1680,6 +1720,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				255135FB12BB474A0030931A /* TalentData */,
 				25E083CD12B5A44300646BC7 /* Categories */,
 				257AEA2B129E900E00DE9D51 /* Controllers */,
 				257AEA2C129E900E00DE9D51 /* CoreData */,
@@ -1873,6 +1914,49 @@
 				25136CD012B646D000BEFD01 /* icon_warrior.png */,
 			);
 			path = launcher;
+			sourceTree = "<group>";
+		};
+		255135FB12BB474A0030931A /* TalentData */ = {
+			isa = PBXGroup;
+			children = (
+				255135FC12BB474A0030931A /* en */,
+				2551360712BB474A0030931A /* fr */,
+			);
+			path = TalentData;
+			sourceTree = SOURCE_ROOT;
+		};
+		255135FC12BB474A0030931A /* en */ = {
+			isa = PBXGroup;
+			children = (
+				255135FD12BB474A0030931A /* deathknight_en.json */,
+				255135FE12BB474A0030931A /* druid_en.json */,
+				255135FF12BB474A0030931A /* hunter_en.json */,
+				2551360012BB474A0030931A /* mage_en.json */,
+				2551360112BB474A0030931A /* paladin_en.json */,
+				2551360212BB474A0030931A /* priest_en.json */,
+				2551360312BB474A0030931A /* rogue_en.json */,
+				2551360412BB474A0030931A /* shaman_en.json */,
+				2551360512BB474A0030931A /* warlock_en.json */,
+				2551360612BB474A0030931A /* warrior_en.json */,
+			);
+			path = en;
+			sourceTree = "<group>";
+		};
+		2551360712BB474A0030931A /* fr */ = {
+			isa = PBXGroup;
+			children = (
+				2551360812BB474A0030931A /* deathknight_fr.json */,
+				2551360912BB474A0030931A /* druid_fr.json */,
+				2551360A12BB474A0030931A /* hunter_fr.json */,
+				2551360B12BB474A0030931A /* mage_fr.json */,
+				2551360C12BB474A0030931A /* paladin_fr.json */,
+				2551360D12BB474A0030931A /* priest_fr.json */,
+				2551360E12BB474A0030931A /* rogue_fr.json */,
+				2551360F12BB474A0030931A /* shaman_fr.json */,
+				2551361012BB474A0030931A /* warlock_fr.json */,
+				2551361112BB474A0030931A /* warrior_fr.json */,
+			);
+			path = fr;
 			sourceTree = "<group>";
 		};
 		257AEA2B129E900E00DE9D51 /* Controllers */ = {
@@ -3532,6 +3616,26 @@
 				255133B212BA3F220030931A /* 11-0-bg.jpg in Resources */,
 				255133B312BA3F220030931A /* 11-1-bg.jpg in Resources */,
 				255133B412BA3F220030931A /* 11-2-bg.jpg in Resources */,
+				2551361212BB474A0030931A /* deathknight_en.json in Resources */,
+				2551361312BB474A0030931A /* druid_en.json in Resources */,
+				2551361412BB474A0030931A /* hunter_en.json in Resources */,
+				2551361512BB474A0030931A /* mage_en.json in Resources */,
+				2551361612BB474A0030931A /* paladin_en.json in Resources */,
+				2551361712BB474A0030931A /* priest_en.json in Resources */,
+				2551361812BB474A0030931A /* rogue_en.json in Resources */,
+				2551361912BB474A0030931A /* shaman_en.json in Resources */,
+				2551361A12BB474A0030931A /* warlock_en.json in Resources */,
+				2551361B12BB474A0030931A /* warrior_en.json in Resources */,
+				2551361C12BB474A0030931A /* deathknight_fr.json in Resources */,
+				2551361D12BB474A0030931A /* druid_fr.json in Resources */,
+				2551361E12BB474A0030931A /* hunter_fr.json in Resources */,
+				2551361F12BB474A0030931A /* mage_fr.json in Resources */,
+				2551362012BB474A0030931A /* paladin_fr.json in Resources */,
+				2551362112BB474A0030931A /* priest_fr.json in Resources */,
+				2551362212BB474A0030931A /* rogue_fr.json in Resources */,
+				2551362312BB474A0030931A /* shaman_fr.json in Resources */,
+				2551362412BB474A0030931A /* warlock_fr.json in Resources */,
+				2551362512BB474A0030931A /* warrior_fr.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

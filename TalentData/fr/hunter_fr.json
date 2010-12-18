@@ -1,0 +1,990 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 3,
+      "name" : "Chasseur",
+      "powerType" : "FOCUS",
+      "powerTypeId" : 2
+    },
+    "talentTrees" : [ {
+      "name" : "Maîtrise des bêtes",
+      "icon" : "ability_hunter_bestialdiscipline",
+      "backgroundFile" : "HunterBeastMastery",
+      "overlayColor" : "#ff004c",
+      "description" : "Un maître de la faune, capable de dompter une grande variété de bêtes qui l'assisteront au combat.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 19577,
+        "name" : "Intimidation",
+        "icon" : "ability_devour",
+        "cost" : "35 pts. de focalisation",
+        "range" : "100 yd range",
+        "castTime" : "Instantanée",
+        "cooldown" : "1 min de recharge",
+        "reagents" : [ ],
+        "description" : "Ordonne à votre familier d'intimider la cible, générant un niveau élevé de menace et étourdissant la cible pendant 3 sec. Dure 15 sec.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 87325,
+        "name" : "Dresseur",
+        "icon" : "ability_hunter_animalhandler",
+        "reagents" : [ ],
+        "description" : "Puissance d'attaque augmentée de 15%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76657,
+        "name" : "Maître des bêtes",
+        "icon" : "ability_hunter_beasttaming",
+        "reagents" : [ ],
+        "description" : "Augmente les dégâts infligés par vos familiers de 14%. Chaque point de Maîtrise augmente les dégâts du familier de 1.7% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9494,
+        "name" : "Ordre de tuer amélioré",
+        "icon" : "ability_hunter_silenthunter",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente les chances de coup critique de votre Ordre de tuer de 5%."
+        }, {
+          "description" : "Augmente les chances de coup critique de votre Ordre de tuer de 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9490,
+        "name" : "Union avec la Nature",
+        "icon" : "ability_hunter_onewithnature",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente le bonus à la puissance d'attaque de votre Aspect du faucon de 10%, et augmente le montant de focalisation rendu par votre Aspect du renard de 1."
+        }, {
+          "description" : "Augmente le bonus à la puissance d'attaque de votre Aspect du faucon de 20%, et augmente le montant de focalisation rendu par votre Aspect du renard de 2."
+        }, {
+          "description" : "Augmente le bonus à la puissance d'attaque de votre Aspect du faucon de 30%, et augmente le montant de focalisation rendu par votre Aspect du renard de 3."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9492,
+        "name" : "Discipline bestiale",
+        "icon" : "ability_hunter_bestialdiscipline",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente de 10% la régénération de focalisation de vos familiers."
+        }, {
+          "description" : "Augmente de 20% la régénération de focalisation de vos familiers."
+        }, {
+          "description" : "Augmente de 30% la régénération de focalisation de vos familiers."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9502,
+        "name" : "Science des chemins",
+        "icon" : "ability_hunter_pathfinding2",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente le bonus de vitesse de vos Aspects de la meute et du guépard de 4% et augmente la vitesse de votre monture de 5%. Ne se cumule pas avec les autres effets d'augmentation de vitesse de la monture."
+        }, {
+          "description" : "Augmente le bonus de vitesse de vos Aspects de la meute et du guépard de 8% et augmente la vitesse de votre monture de 10%. Ne se cumule pas avec les autres effets d'augmentation de vitesse de la monture."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9514,
+        "name" : "Engagement spirituel",
+        "icon" : "ability_druid_demoralizingroar",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Tant que votre familier est actif, vous et votre familier retrouvez 1% du total de vos points de vie toutes les 10 sec., et les soins prodigués à vous-même et à votre familier sont augmentés de 5%."
+        }, {
+          "description" : "Tant que votre familier est actif, vous et votre familier retrouvez 2% du total de vos points de vie toutes les 10 sec., et les soins prodigués à vous-même et à votre familier sont augmentés de 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9512,
+        "name" : "Frénésie",
+        "icon" : "inv_misc_monsterclaw_03",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Votre familier bénéficie d'un bonus de 2% à la vitesse d'attaque après avoir effectué une attaque de base. Dure 10 sec. Cumulable jusqu'à 5 fois."
+        }, {
+          "description" : "Votre familier bénéficie d'un bonus de 4% à la vitesse d'attaque après avoir effectué une attaque de base. Dure 10 sec. Cumulable jusqu'à 5 fois."
+        }, {
+          "description" : "Votre familier bénéficie d'un bonus de 6% à la vitesse d'attaque après avoir effectué une attaque de base. Dure 10 sec. Cumulable jusqu'à 5 fois."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9510,
+        "name" : "Guérison du familier améliorée",
+        "icon" : "ability_hunter_mendpet",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Donne à la technique Guérison du familier 25% de chances de faire disparaître 1 effet de malédiction, maladie, magie ou poison du familier à chaque itération."
+        }, {
+          "description" : "Donne à la technique Guérison du familier 50% de chances de faire disparaître 1 effet de malédiction, maladie, magie ou poison du familier à chaque itération."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9530,
+        "name" : "Frappes de cobra",
+        "icon" : "ability_hunter_cobrastrikes",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Lorsque vous réussissez un coup critique avec Tir des arcanes, vous avez 5% de chances de permettre aux 2 prochaines attaques de base de votre familier d'être des coups critiques."
+        }, {
+          "description" : "Lorsque vous réussissez un coup critique avec Tir des arcanes, vous avez 10% de chances de permettre aux 2 prochaines attaques de base de votre familier d'être des coups critiques."
+        }, {
+          "description" : "Lorsque vous réussissez un coup critique avec Tir des arcanes, vous avez 15% de chances de permettre aux 2 prochaines attaques de base de votre familier d'être des coups critiques."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9504,
+        "name" : "Ferveur",
+        "icon" : "ability_hunter_aspectoftheviper",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Instantanée",
+          "cooldown" : "2 min de recharge",
+          "description" : "Vous rend instantanément 50 points de focalisation ainsi qu'à votre familier."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9520,
+        "name" : "Focalisation du feu",
+        "icon" : "ability_hunter_focusfire",
+        "x" : 2,
+        "y" : 2,
+        "req" : 9512,
+        "ranks" : [ {
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "15 s. de recharge",
+          "description" : "Consomme l'effet de frénésie sur votre familier et lui rend 4 points de focalisation en plus d'augmenter votre hâte à distance de 3% par charge de Frénésie consommée. Dure 15 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9534,
+        "name" : "Longévité",
+        "icon" : "ability_hunter_longevity",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge de Courroux bestial, Intimidation et des techniques spéciales de familier de 10%."
+        }, {
+          "description" : "Réduit le temps de recharge de Courroux bestial, Intimidation et des techniques spéciales de familier de 20%."
+        }, {
+          "description" : "Réduit le temps de recharge de Courroux bestial, Intimidation et des techniques spéciales de familier de 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9528,
+        "name" : "Séquence meurtrière",
+        "icon" : "achievement_bg_kill_carrier_opposing_flagroom",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Quand vous réussissez deux coups critiques de suite avec Ordre de tuer, le troisième inflige 10% de dégâts supplémentaires et son coût en focalisation est réduit de 5."
+        }, {
+          "description" : "Quand vous réussissez deux coups critiques de suite avec Ordre de tuer, le troisième inflige 20% de dégâts supplémentaires et son coût en focalisation est réduit de 10."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11714,
+        "name" : "Tigre et chimère",
+        "icon" : "ability_hunter_pet_chimera",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Chaque fois qu'une attaque de mêlée vous touche, le temps de recharge de votre Désengagement est instantanément réduit de 2 sec.\n\n\n\nChaque fois qu'un sort ou une attaque à distance vous touche, le temps de recharge de votre Dissuasion est instantanément réduit de 4 sec.\n\n\n\nCes effets ont un temps de recharge de 2 sec."
+        }, {
+          "description" : "Chaque fois qu'une attaque de mêlée vous touche, le temps de recharge de votre Désengagement est instantanément réduit de 4 sec.\n\n\n\nChaque fois qu'un sort ou une attaque à distance vous touche, le temps de recharge de votre Dissuasion est instantanément réduit de 8 sec.\n\n\n\nCes effets ont un temps de recharge de 2 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9524,
+        "name" : "Courroux bestial",
+        "icon" : "ability_druid_ferociousbite",
+        "x" : 1,
+        "y" : 4,
+        "req" : 9504,
+        "ranks" : [ {
+          "cost" : "45 pts. de focalisation",
+          "range" : "100 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "2 min de recharge",
+          "description" : "Votre familier, fou de rage, inflige 20% de points de dégâts supplémentaires pendant 10 sec. Il n'éprouve ni pitié, ni remords, ni peur et ne peut plus être arrêté à moins d'être tué."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9518,
+        "name" : "Inspiration féroce",
+        "icon" : "ability_hunter_ferociousinspiration",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Tous les membres du groupe ou du raid voient tous leurs dégâts augmenter de 3% quand ils sont à moins de 100 mètres de votre familier."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9538,
+        "name" : "Ames soeurs",
+        "icon" : "ability_hunter_separationanxiety",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Augmente votre maximum de focalisation et celui de votre familier de 5."
+        }, {
+          "description" : "Augmente votre maximum de focalisation et celui de votre familier de 10."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9536,
+        "name" : "La bête intérieure",
+        "icon" : "ability_hunter_beastwithin",
+        "x" : 1,
+        "y" : 5,
+        "req" : 9524,
+        "ranks" : [ {
+          "description" : "Lorsque votre familier est sous l'effet de Courroux bestial, vous aussi devenez fou de rage. Vous infligez 10% de points de dégâts supplémentaires et le coût en focalisation de tous vos tirs et techniques est réduit de 50% pendant 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9522,
+        "name" : "Revigoration",
+        "icon" : "ability_hunter_invigeration",
+        "x" : 2,
+        "y" : 5,
+        "req" : 9518,
+        "ranks" : [ {
+          "description" : "Quand votre familier réussit un coup critique avec une attaque de base, vous régénérez instantanément 3 points de focalisation."
+        }, {
+          "description" : "Quand votre familier réussit un coup critique avec une attaque de base, vous régénérez instantanément 6 points de focalisation."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9542,
+        "name" : "Maîtrise des bêtes",
+        "icon" : "ability_hunter_beastmastery",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "description" : "Vous maîtrisez l'art de la maîtrise des bêtes, ce qui vous permet de dompter les familiers exotiques et augmente votre montant total de points en compétence de familiers de 4."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Précision",
+      "icon" : "ability_hunter_focusedaim",
+      "backgroundFile" : "HunterMarksmanship",
+      "overlayColor" : "#4c99ff",
+      "description" : "Un maître-archer ou tireur d'élite, qui excelle dans l'exécution de cibles éloignées.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 19434,
+        "name" : "Visée",
+        "icon" : "inv_spear_07",
+        "cost" : "50 pts. de focalisation",
+        "range" : "5-40 yd range",
+        "castTime" : "Incantation de 3 s.",
+        "requires" : "Requiert Arme à distance",
+        "reagents" : [ ],
+        "description" : "Un tir précis et puissant qui inflige 65% des dégâts de l'arme à distance plus 4.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 87326,
+        "name" : "Carquois artisanal",
+        "icon" : "inv_misc_quiver_06",
+        "reagents" : [ ],
+        "description" : "Les dégâts des attaques automatiques à distance sont augmentés de 15%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76659,
+        "name" : "Carquois sauvage",
+        "icon" : "ability_hunter_wildquiver",
+        "reagents" : [ ],
+        "description" : "Confère 14% de chances à vos attaques à distance d'également tirer instantanément un tir à distance supplémentaire. Chaque point de Maîtrise augmente les chances de 2% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9390,
+        "name" : "A la gorge",
+        "icon" : "ability_hunter_goforthethroat",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Vos coups critiques à distance avec tir automatique font générer à votre familier 5 points de focalisation."
+        }, {
+          "description" : "Vos coups critiques à distance avec tir automatique font générer à votre familier 10 points de focalisation."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9380,
+        "name" : "Efficacité",
+        "icon" : "ability_hunter_focusedaim",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Réduit le coût en focalisation de votre Tir des arcanes de 1 et de votre Tir explosif et de votre Tir de la chimère de 2."
+        }, {
+          "description" : "Réduit le coût en focalisation de votre Tir des arcanes de 2 et de votre Tir explosif et de votre Tir de la chimère de 4."
+        }, {
+          "description" : "Réduit le coût en focalisation de votre Tir des arcanes de 3 et de votre Tir explosif et de votre Tir de la chimère de 6."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9378,
+        "name" : "Tueur rapide",
+        "icon" : "ability_hunter_rapidkilling",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Lorsque vous tuez un adversaire qui vous fait gagner de l'expérience ou de l'honneur, votre prochain Tir assuré, Tir du cobra ou Visée inflige 10% de dégâts supplémentaires. Dure 20 sec."
+        }, {
+          "description" : "Lorsque vous tuez un adversaire qui vous fait gagner de l'expérience ou de l'honneur, votre prochain Tir assuré, Tir du cobra ou Visée inflige 20% de dégâts supplémentaires. Dure 20 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9396,
+        "name" : "Attaque !",
+        "icon" : "ability_hunter_sickem",
+        "x" : 0,
+        "y" : 1,
+        "req" : 9390,
+        "ranks" : [ {
+          "description" : "Quand vous réussissez un coup critique avec Tir des arcanes,Visée ou Tir explosif, le coût en focalisation de la prochaine attaque de base de votre familier est réduit de 50% pendant 12 sec."
+        }, {
+          "description" : "Quand vous réussissez un coup critique avec Tir des arcanes,Visée ou Tir explosif, le coût en focalisation de la prochaine attaque de base de votre familier est réduit de 100% pendant 12 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9402,
+        "name" : "Tir assuré amélioré",
+        "icon" : "ability_hunter_improvedsteadyshot",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Quand vous faites deux Tirs assurés de suite, votre vitesse d'attaque à distance augmente de 5% pendant 8 sec."
+        }, {
+          "description" : "Quand vous faites deux Tirs assurés de suite, votre vitesse d'attaque à distance augmente de 10% pendant 8 sec."
+        }, {
+          "description" : "Quand vous faites deux Tirs assurés de suite, votre vitesse d'attaque à distance augmente de 15% pendant 8 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9398,
+        "name" : "Visée minutieuse",
+        "icon" : "ability_hunter_zenarchery",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente vos chances de coup critique avec Tir assuré, Tir du cobra et Visée de 30% sur les cibles disposant de 80% ou plus de leurs points de vie."
+        }, {
+          "description" : "Augmente vos chances de coup critique avec Tir assuré, Tir du cobra et Visée de 60% sur les cibles disposant de 80% ou plus de leurs points de vie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9424,
+        "name" : "Flèche-bâillon",
+        "icon" : "ability_theblackarrow",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "35 pts. de focalisation",
+          "range" : "5-35 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "20 s. de recharge",
+          "requires" : "Requiert Arme à distance",
+          "description" : "Un tir qui réduit la cible au silence et interrompt les incantations pendant 3 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9406,
+        "name" : "Barrage commotionnant",
+        "icon" : "ability_hunter_efficiency",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Vos attaques réussies avec Tir de la chimère et Flèches multiples vous confèrent 50% de chances d'hébéter la cible pendant 4 sec."
+        }, {
+          "description" : "Vos attaques réussies avec Tir de la chimère et Flèches multiples vous confèrent 100% de chances d'hébéter la cible pendant 4 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11225,
+        "name" : "Tirs perforants",
+        "icon" : "ability_hunter_piercingshots",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Vos critiques réussis avec Visée, Tir assuré et Tir de la chimère font saigner la cible, qui perd un montant de points de vie égal à 10% des dégâts infligés en 8 sec."
+        }, {
+          "description" : "Vos critiques réussis avec Visée, Tir assuré et Tir de la chimère font saigner la cible, qui perd un montant de points de vie égal à 20% des dégâts infligés en 8 sec."
+        }, {
+          "description" : "Vos critiques réussis avec Visée, Tir assuré et Tir de la chimère font saigner la cible, qui perd un montant de points de vie égal à 30% des dégâts infligés en 8 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9408,
+        "name" : "Bombardement",
+        "icon" : "ability_marksmanship",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Quand vous réussissez un coup critique avec Flèches multiples, le coût en focalisation de votre prochaine utilisation de Flèches multiples est réduit de 25%."
+        }, {
+          "description" : "Quand vous réussissez un coup critique avec Flèches multiples, le coût en focalisation de votre prochaine utilisation de Flèches multiples est réduit de 50%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9412,
+        "name" : "Aura de précision",
+        "icon" : "ability_trueshot",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Augmente de 10% la puissance d'attaque des membres du groupe ou du raid qui se trouvent dans un rayon de 100 mètres."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9416,
+        "name" : "Extermination",
+        "icon" : "ability_warrior_focusedrage",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Vos techniques Tir assuré et Tir du cobra vous font gagner 3 points de focalisation supplémentaires quand elles sont utilisées sur des cibles qui disposent de 25% ou moins de leurs points de vie."
+        }, {
+          "description" : "Vos techniques Tir assuré et Tir du cobra vous font gagner 6 points de focalisation supplémentaires quand elles sont utilisées sur des cibles qui disposent de 25% ou moins de leurs points de vie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9420,
+        "name" : "La résistance est futile",
+        "icon" : "ability_hunter_resistanceisfutile",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Quand votre cible marquée tente de courir, fuir ou de se déplacer, vous avez 4% de chances de permettre à votre prochain Ordre de tuer sur cette cible dans les 8 sec de vous rembourser du coût en focalisation."
+        }, {
+          "description" : "Quand votre cible marquée tente de courir, fuir ou de se déplacer, vous avez 8% de chances de permettre à votre prochain Ordre de tuer sur cette cible dans les 8 sec de vous rembourser du coût en focalisation."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9422,
+        "name" : "Recouvrement rapide",
+        "icon" : "ability_hunter_rapidregeneration",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Vous recevez 6 points de focalisation toutes les 3 sec. quand vous êtes sous l'effet de Tir rapide, et vous recevez instantanément 25 points de focalisation quand vous bénéficiez de Tueur rapide."
+        }, {
+          "description" : "Vous recevez 12 points de focalisation toutes les 3 sec. quand vous êtes sous l'effet de Tir rapide, et vous recevez instantanément 50 points de focalisation quand vous bénéficiez de Tueur rapide."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9418,
+        "name" : "Maître tireur",
+        "icon" : "ability_hunter_mastermarksman",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Vous avez 20% de chances quand vous utilisez Tir assuré de gagner l'effet Maître tireur, qui dure 30 sec. Quand il a été cumulé 5 fois, le temps d'incantation et le coût en focalisation de votre prochaine Visée sont réduits de 100% pendant 10 sec."
+        }, {
+          "description" : "Vous avez 40% de chances quand vous utilisez Tir assuré de gagner l'effet Maître tireur, qui dure 30 sec. Quand il a été cumulé 5 fois, le temps d'incantation et le coût en focalisation de votre prochaine Visée sont réduits de 100% pendant 10 sec."
+        }, {
+          "description" : "Vous avez 60% de chances quand vous utilisez Tir assuré de gagner l'effet Maître tireur, qui dure 30 sec. Quand il a été cumulé 5 fois, le temps d'incantation et le coût en focalisation de votre prochaine Visée sont réduits de 100% pendant 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9404,
+        "name" : "Promptitude",
+        "icon" : "ability_hunter_readiness",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Instantanée",
+          "cooldown" : "3 min de recharge",
+          "description" : "Quand elle est activée, cette technique met immédiatement fin au temps de recharge de toutes les techniques de chasseur."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9426,
+        "name" : "A toute allure",
+        "icon" : "ability_hunter_posthaste",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge de votre Tir rapide de 1 minutes et votre vitesse de déplacement est augmentée de 15% pendant 4 sec après utilisation de Désengagement."
+        }, {
+          "description" : "Réduit le temps de recharge de votre Tir rapide de 2 minutes et votre vitesse de déplacement est augmentée de 30% pendant 4 sec après utilisation de Désengagement."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9428,
+        "name" : "Désigné pour mourir",
+        "icon" : "ability_hunter_assassinate",
+        "x" : 2,
+        "y" : 5,
+        "req" : 9418,
+        "ranks" : [ {
+          "description" : "Vos Tirs des Arcanes et Tirs de la chimère ont 50% de chances d'appliquer automatiquement l'effet Désigné pour mourir.\n\n\n\nDésigné pour mourir est semblable à Marque du chasseur , mais ne peut être dissipé, n'affecte pas le camouflage et l'invisibilité et dure 15 sec."
+        }, {
+          "description" : "Vos Tirs des Arcanes et Tirs de la chimère ont 100% de chances d'appliquer automatiquement l'effet Désigné pour mourir.\n\n\n\nDésigné pour mourir est semblable à Marque du chasseur , mais ne peut être dissipé, n'affecte pas le camouflage et l'invisibilité et dure 15 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9430,
+        "name" : "Tir de la chimère",
+        "icon" : "ability_hunter_chimerashot2",
+        "x" : 1,
+        "y" : 6,
+        "req" : 9418,
+        "ranks" : [ {
+          "cost" : "50 pts. de focalisation",
+          "range" : "5-40 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "10 s. de recharge",
+          "requires" : "Requiert Arme à distance",
+          "description" : "Un tir instantané qui inflige les dégâts de l'arme à distance plus 5, réinitialise la durée de votre Morsure de serpent et vous rend 5% de votre total de points de vie."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Survie",
+      "icon" : "ability_hunter_camouflage",
+      "backgroundFile" : "HunterSurvival",
+      "overlayColor" : "#ff9900",
+      "description" : "Un traqueur résistant qui utilise tout un attirail de venins d'animaux, d'explosifs et de pièges comme armes mortelles.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 53301,
+        "name" : "Tir explosif",
+        "icon" : "ability_hunter_explosiveshot",
+        "cost" : "50 pts. de focalisation",
+        "range" : "5-40 yd range",
+        "castTime" : "Incantation instantanée",
+        "cooldown" : "6 s. de recharge",
+        "requires" : "Requiert Arme à distance",
+        "reagents" : [ ],
+        "description" : "Vous lancez une charge explosive sur la cible et lui infligez 2 points de dégâts de Feu. La charge explose ensuite sur la cible toutes les secondes pendant 2 sec. supplémentaires.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 84729,
+        "name" : "Etat sauvage",
+        "icon" : "achievement_zone_alteracmountains_01",
+        "reagents" : [ ],
+        "description" : "Agilité augmentée de 15%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 76658,
+        "name" : "Essence de la vipère",
+        "icon" : "spell_frost_arcticwinds",
+        "reagents" : [ ],
+        "description" : "Augmente tous les dégâts élémentaires que vous infligez de 8%. Chaque point de Maîtrise augmente les dégâts élémentaires de 1.0% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 9442,
+        "name" : "Face à la nature",
+        "icon" : "ability_hunter_huntervswild",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente votre total d'Endurance de 4%."
+        }, {
+          "description" : "Augmente votre total d'Endurance de 7%."
+        }, {
+          "description" : "Augmente votre total d'Endurance de 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9432,
+        "name" : "Trajectoire",
+        "icon" : "ability_hunter_improvedtracking",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente la hâte à distance de 1%."
+        }, {
+          "description" : "Augmente la hâte à distance de 2%."
+        }, {
+          "description" : "Augmente la hâte à distance de 3%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9450,
+        "name" : "Morsure de serpent améliorée",
+        "icon" : "ability_hunter_quickshot",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Votre Morsure de serpent inflige également des dégâts instantanés d'un montant égal à 15% du total de son effet périodique.\n\n\n\nAugmente également les chances de coup critique périodique de votre Morsure de serpent de 5%."
+        }, {
+          "description" : "Votre Morsure de serpent inflige également des dégâts instantanés d'un montant égal à 30% du total de son effet périodique.\n\n\n\nAugmente également les chances de coup critique périodique de votre Morsure de serpent de 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9444,
+        "name" : "Tactique de survie",
+        "icon" : "ability_rogue_feigndeath",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit la probabilité que l'on résiste à vos sorts de pièges de 2% et réduit le temps de recharge de votre technique Désengagement de 2 sec."
+        }, {
+          "description" : "Réduit la probabilité que l'on résiste à vos sorts de pièges de 4% et réduit le temps de recharge de votre technique Désengagement de 4 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10753,
+        "name" : "Maîtrise des pièges",
+        "icon" : "ability_ensnare",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Piège de glace et Piège givrant - Augmente la durée de 10%.\n\n\n\nPiège d'immolation, Piège explosif et Flèche noire - Augmente les dégâts périodiques infligés de 10%.\n\n\n\nPiège à serpent - Augmente le nombre de serpents invoqués de 2."
+        }, {
+          "description" : "Piège de glace et Piège givrant - Augmente la durée de 20%.\n\n\n\nPiège d'immolation, Piège explosif et Flèche noire - Augmente les dégâts périodiques infligés de 20%.\n\n\n\nPiège à serpent - Augmente le nombre de serpents invoqués de 4."
+        }, {
+          "description" : "Piège de glace et Piège givrant - Augmente la durée de 30%.\n\n\n\nPiège d'immolation, Piège explosif et Flèche noire - Augmente les dégâts périodiques infligés de 30%.\n\n\n\nPiège à serpent - Augmente le nombre de serpents invoqués de 6."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9440,
+        "name" : "Piège",
+        "icon" : "spell_nature_stranglevines",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Lorsque votre Piège de glace ou Piège à serpent est déclenché, vous emprisonnez toutes les cibles affectées, les empêchant de se déplacer pendant 2 sec."
+        }, {
+          "description" : "Lorsque votre Piège de glace ou Piège à serpent est déclenché, vous emprisonnez toutes les cibles affectées, les empêchant de se déplacer pendant 4 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9472,
+        "name" : "Plus d'échappatoire",
+        "icon" : "ability_hunter_pointofnoescape",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente de 3% les chances de réussir un coup critique à distance avec toutes vos attaques sur les cibles affectées par vos Pièges de glace et Pièges givrants."
+        }, {
+          "description" : "Augmente de 6% les chances de réussir un coup critique à distance avec toutes vos attaques sur les cibles affectées par vos Pièges de glace et Pièges givrants."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9484,
+        "name" : "Frisson de la chasse",
+        "icon" : "ability_hunter_thrillofthehunt",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Lorsque vous utilisez Tir des arcanes, Tir explosif ou Flèche noire, vous avez 5% de chance de récupérer instantanément 40% du coût en focalisation de base de ce tir."
+        }, {
+          "description" : "Lorsque vous utilisez Tir des arcanes, Tir explosif ou Flèche noire, vous avez 10% de chance de récupérer instantanément 40% du coût en focalisation de base de ce tir."
+        }, {
+          "description" : "Lorsque vous utilisez Tir des arcanes, Tir explosif ou Flèche noire, vous avez 15% de chance de récupérer instantanément 40% du coût en focalisation de base de ce tir."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9448,
+        "name" : "Contre-attaque",
+        "icon" : "ability_warrior_challange",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "3% du mana de base",
+          "range" : "Allonge",
+          "castTime" : "Instantanée",
+          "cooldown" : "5 s. de recharge",
+          "description" : "Une attaque disponible après avoir paré une attaque de l'adversaire. Elle inflige 5 points de dégâts et immobilise la cible pendant 5 sec. Contre-attaque ne peut pas être bloquée, esquivée ou parée."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9452,
+        "name" : "Prêt à tirer",
+        "icon" : "ability_hunter_lockandload",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Vous avez 50% de chances lorsque vous piégez une cible avec Piège givrant ou Piège de glace que vos 2 prochaines techniques Tir des arcanes ou Tir explosif ne coûtent pas de focalisation et ne déclenchent pas de temps de recharge."
+        }, {
+          "description" : "Vous avez 100% de chances lorsque vous piégez une cible avec Piège givrant ou Piège de glace que vos 2 prochaines techniques Tir des arcanes ou Tir explosif ne coûtent pas de focalisation et ne déclenchent pas de temps de recharge."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9460,
+        "name" : "Ressource",
+        "icon" : "ability_hunter_resourcefulness",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge de tous les pièges et de Flèche noire de 2 sec."
+        }, {
+          "description" : "Réduit le temps de recharge de tous les pièges et de Flèche noire de 4 sec."
+        }, {
+          "description" : "Réduit le temps de recharge de tous les pièges et de Flèche noire de 6 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9482,
+        "name" : "Lames réfléchies",
+        "icon" : "inv_weapon_shortblade_99",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Lorsque vous êtes attaqué avec un sort alors que Dissuasion est activée, vous avez 50% de chances de le renvoyer à l'attaquant."
+        }, {
+          "description" : "Lorsque vous êtes attaqué avec un sort alors que Dissuasion est activée, vous avez 100% de chances de le renvoyer à l'attaquant."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9462,
+        "name" : "T.N.T.",
+        "icon" : "inv_misc_bomb_05",
+        "x" : 2,
+        "y" : 3,
+        "req" : 9452,
+        "ranks" : [ {
+          "description" : "Quand vous infligez des dégâts périodiques avec votre Piège d'immolation, Piège explosif ou Flèche noire, vous avez 6% de chances de déclencher Prêt à tirer."
+        }, {
+          "description" : "Quand vous infligez des dégâts périodiques avec votre Piège d'immolation, Piège explosif ou Flèche noire, vous avez 12% de chances de déclencher Prêt à tirer."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9464,
+        "name" : "Toxicologie",
+        "icon" : "inv_alchemy_enchantedvial",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts critiques périodiques de Morsure de serpent et Flèche noire de 50%."
+        }, {
+          "description" : "Augmente les dégâts critiques périodiques de Morsure de serpent et Flèche noire de 100%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9468,
+        "name" : "Piqûre de wyverne",
+        "icon" : "inv_spear_02",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "10 pts. de focalisation",
+          "range" : "5-35 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "1 min de recharge",
+          "requires" : "Requiert Arme à distance",
+          "description" : "Une piqûre qui endort la cible pendant 30 sec. Tout point de dégâts subi par la cible annule l'effet. Quand la cible se réveille, la Piqûre inflige 12 points de dégâts de Nature en 6 sec. Une seule technique de Morsure ou de Piqûre par chasseur peut être active sur la cible à la fois."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9474,
+        "name" : "Piqûres nocives",
+        "icon" : "ability_hunter_potentvenom",
+        "x" : 2,
+        "y" : 4,
+        "req" : 9468,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts que vous infligez aux cibles affectées par votre Morsure de serpent de 5%.\n\nSi Piqûre de wyverne est dissipée, celui qui la dissipe est également affecté par Piqûre de wyverne pour une durée de 25% du temps restant."
+        }, {
+          "description" : "Augmente les dégâts que vous infligez aux cibles affectées par votre Morsure de serpent de 10%.\n\nSi Piqûre de wyverne est dissipée, celui qui la dissipe est également affecté par Piqûre de wyverne pour une durée de 50% du temps restant."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9476,
+        "name" : "Partie de chasse",
+        "icon" : "ability_hunter_huntingparty",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Augmente votre total d'Agilité de 2% supplémentaires, et augmente la vitesse d'attaque à distance et en mêlée de tous les membres du groupe ou raid de 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9478,
+        "name" : "Entraînement de sniper",
+        "icon" : "ability_hunter_longshots",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Augmente les chances de coup critique de votre technique Tir mortel de 5%, et si vous restez immobile pendant 6 sec., vos Tirs assurés et Tirs du cobra infligent 2% de dégâts supplémentaires pendant 15 sec."
+        }, {
+          "description" : "Augmente les chances de coup critique de votre technique Tir mortel de 10%, et si vous restez immobile pendant 6 sec., vos Tirs assurés et Tirs du cobra infligent 4% de dégâts supplémentaires pendant 15 sec."
+        }, {
+          "description" : "Augmente les chances de coup critique de votre technique Tir mortel de 15%, et si vous restez immobile pendant 6 sec., vos Tirs assurés et Tirs du cobra infligent 6% de dégâts supplémentaires pendant 15 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11698,
+        "name" : "Propagation du serpent",
+        "icon" : "ability_hunter_serpentswiftness",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Les cibles que vous touchez avec Flèches multiples sont également affectées par votre Morsure de serpent pour un montant de dégâts correspondant à 6 sec de sa durée totale."
+        }, {
+          "description" : "Les cibles que vous touchez avec Flèches multiples sont également affectées par votre Morsure de serpent pour un montant de dégâts correspondant à 9 sec de sa durée totale."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9480,
+        "name" : "Flèche noire",
+        "icon" : "spell_shadow_painspike",
+        "x" : 1,
+        "y" : 6,
+        "req" : 9468,
+        "ranks" : [ {
+          "cost" : "35 pts. de focalisation",
+          "range" : "5-40 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "30 s. de recharge",
+          "requires" : "Requiert Arme à distance",
+          "description" : "Tire une Flèche noire sur la cible, ce qui lui inflige 25 points de dégâts d'Ombre en 15 sec. Flèche noire partage le temps de recharge d'autres sorts de piège de feu."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

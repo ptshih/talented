@@ -1,0 +1,1081 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 11,
+      "name" : "Druide",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "Équilibre",
+      "icon" : "spell_nature_starfall",
+      "backgroundFile" : "DruidBalance",
+      "overlayColor" : "#cc4ccc",
+      "description" : "Peut prendre la forme d'un puissant sélénien, qui recherche l'équilibre entre la puissance des magies des Arcanes et de la Nature pour détruire ses ennemis à distance.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 78674,
+        "name" : "Eruption stellaire",
+        "icon" : "spell_arcane_arcane03",
+        "cost" : "11% du mana de base",
+        "range" : "40 yd range",
+        "castTime" : "Incantation de 2 s.",
+        "cooldown" : "15 s. de recharge",
+        "reagents" : [ ],
+        "description" : "Vous faites fusionner la puissance de la lune et du soleil, ce qui provoque une explosion d'énergie dévastatrice sur la cible. Inflige 59 points de dégâts de Tempête-de-sort à la cible et génère 15 points d'énergie lunaire ou solaire, selon ce qui vous est le plus bénéfique.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 16913,
+        "name" : "Fureur lunaire",
+        "icon" : "spell_nature_moonglow",
+        "reagents" : [ ],
+        "description" : "Dégâts des sorts des Arcanes et de Nature augmentés de 15%.\n\n\n\nAugmente le bonus aux dégâts des coups critiques de vos sorts Colère, Eclat lunaire, Feu stellaire, Eruption stellaire, Essaim d'insectes et Météores de 100%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77492,
+        "name" : "Eclipse totale",
+        "icon" : "ability_druid_eclipse",
+        "reagents" : [ ],
+        "description" : "Augmente le bonus aux dégâts d'Eclipse de 12%. Chaque point de Maîtrise augmente le bonus de 1.5% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 8359,
+        "name" : "Grâce de la nature",
+        "icon" : "spell_nature_naturesblessing",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Vous bénéficiez d'un bonus de 5% à la hâte de sorts après avoir lancé Eclat lunaire, Rétablissement ou Essaim d'insectes, pendant 15 sec. Cet effet a un temps de recharge d'1 minute. Quand vous bénéficiez d'Eclipse lunaire ou solaire, le temps de recharge de Grâce de la nature prend instantanément fin."
+        }, {
+          "description" : "Vous bénéficiez d'un bonus de 10% à la hâte de sorts après avoir lancé Eclat lunaire, Rétablissement ou Essaim d'insectes, pendant 15 sec. Cet effet a un temps de recharge d'1 minute. Quand vous bénéficiez d'Eclipse lunaire ou solaire, le temps de recharge de Grâce de la nature prend instantanément fin."
+        }, {
+          "description" : "Vous bénéficiez d'un bonus de 15% à la hâte de sorts après avoir lancé Eclat lunaire, Rétablissement ou Essaim d'insectes, pendant 15 sec. Cet effet a un temps de recharge d'1 minute. Quand vous bénéficiez d'Eclipse lunaire ou solaire, le temps de recharge de Grâce de la nature prend instantanément fin."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8349,
+        "name" : "Colère stellaire",
+        "icon" : "spell_nature_abolishmagic",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Réduit le temps d'incantation de vos sorts Colère et Feu Stellaire de 0,15 sec."
+        }, {
+          "description" : "Réduit le temps d'incantation de vos sorts Colère et Feu Stellaire de 0,25 sec."
+        }, {
+          "description" : "Réduit le temps d'incantation de vos sorts Colère et Feu Stellaire de 0.5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11281,
+        "name" : "Majesté de la nature",
+        "icon" : "inv_staff_01",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente de 2% les chances d'infliger un coup critique avec les sorts."
+        }, {
+          "description" : "Augmente de 4% les chances d'infliger un coup critique avec les sorts."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11284,
+        "name" : "Genèse",
+        "icon" : "spell_arcane_arcane03",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente les soins produits par vos sorts périodiques et par Prompte guérison de 2%. Augmente la durée de votre Éclat lunaire et de votre Essaim d'insectes de 2 sec."
+        }, {
+          "description" : "Augmente les soins produits par vos sorts périodiques et par Prompte guérison de 4%. Augmente la durée de votre Éclat lunaire et de votre Essaim d'insectes de 4 sec."
+        }, {
+          "description" : "Augmente les soins produits par vos sorts périodiques et par Prompte guérison de 6%. Augmente la durée de votre Éclat lunaire et de votre Essaim d'insectes de 6 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8353,
+        "name" : "Lueur de la lune",
+        "icon" : "spell_nature_sentinal",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit de 3% le coût en mana de vos sorts de dégâts et de soins."
+        }, {
+          "description" : "Réduit de 6% le coût en mana de vos sorts de dégâts et de soins."
+        }, {
+          "description" : "Réduit de 9% le coût en mana de vos sorts de dégâts et de soins."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8383,
+        "name" : "Equilibre de la puissance",
+        "icon" : "ability_druid_balanceofpower",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts infligés par vos sorts de Nature et des Arcanes de 1% et augmente votre score de toucher avec les sorts d'un montant égal à 50% de votre Esprit."
+        }, {
+          "description" : "Augmente les dégâts infligés par vos sorts de Nature et des Arcanes de 2% et augmente votre score de toucher avec les sorts d'un montant égal à 100% de votre Esprit."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8389,
+        "name" : "Euphorie",
+        "icon" : "achievement_boss_valithradreamwalker",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Lorsque vous n'êtes pas dans un état d'Eclipse, vous avez 12% de chances de doubler l'énergie solaire ou lunaire générée par Colère ou Feu stellaire quand ils infligent des dégâts.\n\n\n\nQuand vous atteignez l'éclipse solaire ou lunaire, vous récupérez instantanément 8% de votre total de mana."
+        }, {
+          "description" : "Lorsque vous n'êtes pas dans un état d'Eclipse, vous avez 24% de chances de doubler l'énergie solaire ou lunaire générée par Colère ou Feu stellaire quand ils infligent des dégâts.\n\n\n\nQuand vous atteignez l'éclipse solaire ou lunaire, vous récupérez instantanément 16% de votre total de mana."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11278,
+        "name" : "Forme de sélénien",
+        "icon" : "spell_nature_forceofnature",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "13% du mana de base",
+          "castTime" : "Instantanée",
+          "description" : "Le druide adopte sa forme de sélénien. Tant qu'il est sous cette forme, ses dégâts des Arcanes et de Nature sont augmentés de 10%, la valeur d'armure apportée par les objets est augmentée de 120% et tous les membres du groupe et du raid se trouvant à moins de 100 mètres voient leur hâte des sorts augmenter de 5%. Le sélénien ne peut pas lancer de sorts de soins ou de résurrection tant qu'il est transformé.\n\n\n\nLa transformation libère le lanceur de sorts des effets qui affectent le déplacement."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11282,
+        "name" : "Typhon",
+        "icon" : "ability_druid_typhoon",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "32% du mana de base",
+          "range" : "30 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "20 s. de recharge",
+          "description" : "Vous invoquez un violent Typhon qui inflige 36 points de dégâts de Nature aux cibles à moins de 30 mètres quand il entre en contact avec des cibles hostiles. Il les fait tomber à la renverse et les hébète pendant 6 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8381,
+        "name" : "Etoiles filantes",
+        "icon" : "ability_mage_arcanebarrage",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Vous avez 2% de chances quand vous infligez des dégâts avec Eclat lunaire ou Essaim d'insectes de mettre instantanément fin au temps de recharge d'Eruption stellaire et de réduire son temps d'incantation de 100%. Dure 8 sec."
+        }, {
+          "description" : "Vous avez 4% de chances quand vous infligez des dégâts avec Eclat lunaire ou Essaim d'insectes de mettre instantanément fin au temps de recharge d'Eruption stellaire et de réduire son temps d'incantation de 100%. Dure 8 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8391,
+        "name" : "Frénésie du chouettide",
+        "icon" : "ability_druid_owlkinfrenzy",
+        "x" : 1,
+        "y" : 3,
+        "req" : 11278,
+        "ranks" : [ {
+          "description" : "Les attaques que vous subissez lorsque vous êtes en forme de sélénien ont 5% de chances de vous faire entrer dans un état de frénésie, qui augmente vos dégâts de 10% et vous rend insensible aux interruptions pendant l'incantation de sorts d'Equilibre. Dure 10 sec."
+        }, {
+          "description" : "Les attaques que vous subissez lorsque vous êtes en forme de sélénien ont 10% de chances de vous faire entrer dans un état de frénésie, qui augmente vos dégâts de 10%, vous rend insensible aux interruptions pendant l'incantation de sorts d'Equilibre. Dure 10 sec."
+        }, {
+          "description" : "Les attaques que vous subissez lorsque vous êtes en forme de sélénien ont 15% de chances de vous faire entrer dans un état de frénésie, qui augmente vos dégâts de 10%, vous rend insensible aux interruptions pendant l'incantation de sorts d'Equilibre. Dure 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8379,
+        "name" : "Grands vents",
+        "icon" : "ability_druid_galewinds",
+        "x" : 2,
+        "y" : 3,
+        "req" : 11282,
+        "ranks" : [ {
+          "description" : "Augmente de 15% les dégâts infligés par vos sorts Ouragan et Typhon, et augmente la portée de votre sort Cyclone de 2 mètres."
+        }, {
+          "description" : "Augmente de 30% les dégâts infligés par vos sorts Ouragan et Typhon, et augmente la portée de votre sort Cyclone de 4 mètres."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8361,
+        "name" : "Rayon solaire",
+        "icon" : "ability_vehicle_sonicshockwave",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "18% du mana de base",
+          "range" : "40 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "1 min de recharge",
+          "description" : "Vous invoquez un rayon de lumière du soleil à l'emplacement de la cible ennemie, ce qui interompt celle-ci et réduit au silence toutes les cibles ennemies se trouvant sous le rayon à moins de 5 mètres pendant qu'il est actif. Rayon solaire dure 10 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12149,
+        "name" : "Etat de rêve",
+        "icon" : "ability_druid_dreamstate",
+        "x" : 0,
+        "y" : 4,
+        "req" : 8389,
+        "ranks" : [ {
+          "description" : "Quand vous lancez Innervation sur vous-même, vous récupérez 15% supplémentaires de votre total de mana pendant sa durée."
+        }, {
+          "description" : "Quand vous lancez Innervation sur vous-même, vous récupérez 30% supplémentaires de votre total de mana pendant sa durée."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8399,
+        "name" : "Force de la nature",
+        "icon" : "ability_druid_forceofnature",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "12% du mana de base",
+          "range" : "40 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "3 min de recharge",
+          "description" : "Invoque 3 tréants qui attaquent les cibles ennemies pendant 30 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12150,
+        "name" : "Eclat solaire",
+        "icon" : "ability_mage_firestarter",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Pendant Eclipse solaire, votre sort Eclat lunaire devient Eclat solaire."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11277,
+        "name" : "Terre et lune",
+        "icon" : "ability_druid_earthandsky",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Vos sorts Colère et Feu stellaire appliquent l'effet Terre et lune sur la cible, ce qui augmente les dégâts des sorts qu'elle subit de 8% pendant 12 sec. Augmente également vos dégâts des sorts de 2%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8403,
+        "name" : "Croissance fongique",
+        "icon" : "creature_sporemushroom",
+        "x" : 1,
+        "y" : 5,
+        "req" : 8399,
+        "ranks" : [ {
+          "description" : "Quand vos Tréants meurent ou que vos Champignons sauvages sont déclenchés, vous faites pousser sur leurs traces une Croissance fongique qui couvre une surface de 8 mètres de rayon et ralentit toutes les cibles ennemies de 25%. Dure 10 sec."
+        }, {
+          "description" : "Quand vos Tréants meurent ou que vos Champignons sauvages sont déclenchés, vous faites pousser sur leurs traces une Croissance fongique qui couvre une surface de 8 mètres de rayon et ralentit toutes les cibles ennemies de 50%. Dure 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8393,
+        "name" : "Déluge lunaire",
+        "icon" : "achievement_worldevent_lunar",
+        "x" : 2,
+        "y" : 5,
+        "req" : 12150,
+        "ranks" : [ {
+          "description" : "Quand vous lancez Eclat lunaire, vous bénéficiez de Déluge lunaire, qui augmente les dégâts directs infligés par Eclat lunaire de 15% et réduit son coût en mana de 10%. Cet effet est réinitialisé et amplifié lorsque vous vous déplacez et se cumule jusqu'à 3 fois. L'effet dure 3 sec."
+        }, {
+          "description" : "Quand vous lancez Eclat lunaire, vous bénéficiez de Déluge lunaire, qui augmente les dégâts directs infligés par Eclat lunaire de 30% et réduit son coût en mana de 20%. Cet effet est réinitialisé et amplifié lorsque vous vous déplacez et se cumule jusqu'à 3 fois. L'effet dure 3 sec."
+        }, {
+          "description" : "Quand vous lancez Eclat lunaire, vous bénéficiez de Déluge lunaire, qui augmente les dégâts directs infligés par Eclat lunaire de 45% et réduit son coût en mana de 30%. Cet effet est réinitialisé et amplifié lorsque vous vous déplacez et se cumule jusqu'à 3 fois. L'effet dure 3 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8405,
+        "name" : "Météores",
+        "icon" : "ability_druid_starfall",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "35% du mana de base",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "1,5 min de recharge",
+          "description" : "Un déluge de météores tombe du ciel sur toutes les cibles se trouvant à moins de 40 mètres du lanceur de sorts et chacun inflige 13 points de dégâts des Arcanes. 20 météores au maximum. Dure 10 sec. \n\n\n\nSi vous changez de forme ou utilisez une monture, l'effet est annulé. Tout effet qui vous fait perdre le contrôle de votre personnage l'annule également."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Combat farouche",
+      "icon" : "ability_racial_bearform",
+      "backgroundFile" : "DruidFeralCombat",
+      "overlayColor" : "#ff00ff",
+      "description" : "Prend la forme d'un grand félin pour infliger des dégâts de saignement et des morsures, ou la forme d'un ours puissant, capable d'absorber les dégâts et de protéger ses alliés.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : true,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 33917,
+        "name" : "Mutilation",
+        "icon" : "ability_druid_mangle2",
+        "reagents" : [ ],
+        "description" : "Mutile la cible, lui inflige des dégâts et fait augmenter les dégâts infligés par les effets de saignement pendant 1 min. Cette technique peut être utilisée en forme de félin ou d'ours.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 87335,
+        "name" : "Instinct farouche",
+        "icon" : "ability_ambush",
+        "reagents" : [ ],
+        "description" : "Réduit les chances des ennemis de vous détecter lorsque vous rôdez.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 84735,
+        "name" : "Agressivité",
+        "icon" : "ability_druid_predatoryinstincts",
+        "reagents" : [ ],
+        "description" : "Augmente votre puissance d'attaque de 25%.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 84840,
+        "name" : "Vengeance",
+        "icon" : "ability_paladin_shieldofvengeance",
+        "reagents" : [ ],
+        "description" : "Chaque fois que vous subissez des dégâts en forme d'ours, vous recevez un bonus à la puissance d'attaque égal à 5% des dégâts subis, jusqu'à un maximum de 10% de vos points de vie. Si vous adoptez votre forme de félin, l'effet est annulé.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77494,
+        "name" : "Défenseur sauvage",
+        "icon" : "ability_racial_cannibalize",
+        "reagents" : [ ],
+        "description" : "Augmente les dégâts absorbés par votre technique Défense sauvage de 32%. Chaque point de Maîtrise augmente le montant absorbé de 4% supplémentaires.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 77493,
+        "name" : "Griffes rasoir",
+        "icon" : "inv_misc_monsterclaw_05",
+        "reagents" : [ ],
+        "description" : "Augmente les dégâts infligés par vos techniques qui provoquent des saignements de 25%. Chaque point de Maîtrise augmente les dégâts dus aux saignements de 3.1% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 8295,
+        "name" : "Célérité farouche",
+        "icon" : "spell_nature_spiritwolf",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente votre vitesse de déplacement de 15% avec votre forme de félin et augmente vos chances d'esquiver lorsque vous êtes en forme de félin ou d'ours de 2%."
+        }, {
+          "description" : "Augmente votre vitesse de déplacement de 30% avec votre forme de félin et augmente vos chances d'esquiver lorsque vous êtes en forme de félin ou d'ours de 4%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11716,
+        "name" : "Fureur",
+        "icon" : "spell_holy_blessingofstamina",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Vous confère 33% de chances de gagner 10 points de rage lorsque vous vous transformez en ours. Vous permet de conserver jusqu'à 33 de vos points d'énergie lorsque vous vous transformez en félin. Augmente de 5% votre maximum de mana."
+        }, {
+          "description" : "Vous confère 66% de chances de gagner 10 points de rage lorsque vous vous transformez en ours. Vous permet de conserver jusqu'à 66 de vos points d'énergie lorsque vous vous transformez en félin. Augmente de 10% votre maximum de mana."
+        }, {
+          "description" : "Vous confère 100% de chances de gagner 10 points de rage lorsque vous vous transformez en ours. Vous permet de conserver jusqu'à 100 de vos points d'énergie lorsque vous vous transformez en félin. Augmente de 15% votre maximum de mana."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 9026,
+        "name" : "Frappes de prédateur",
+        "icon" : "ability_hunter_pet_cat",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente les chances de coup critique de votre Ravage de 25% sur les cibles disposant de 80% ou plus de leurs points de vie.\n\n\n\nVos coups de grâce ont 10% de chances par point de combo de faire de votre prochain sort de Nature au temps d'incantation de base inférieur à 10 sec. un sort instantané et de ne pas coûter de mana."
+        }, {
+          "description" : "Augmente les chances de coup critique de votre Ravage de 50% sur les cibles disposant de 80% ou plus de leurs points de vie.\n\n\n\nVos coups de grâce ont 20% de chances par point de combo de faire de votre prochain sort de Nature au temps d'incantation de base inférieur à 10 sec. un sort instantané et de ne pas coûter de mana."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8760,
+        "name" : "Blessures infectées",
+        "icon" : "ability_druid_infectedwound",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Vos attaques Lambeau, Mutiler, Ravage et Mutilation infligent une blessure infectée à la cible. La Blessure infectée réduit la vitesse de déplacement de la cible de 25% et sa vitesse d'attaque de 10%. Dure 12 sec."
+        }, {
+          "description" : "Vos attaques Lambeau, Ravage, Mutiler et Mutilation infligent une blessure infectée à la cible. La Blessure infectée réduit la vitesse de déplacement de la cible de 50% et sa vitesse d'attaque de 20%. Dure 12 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8305,
+        "name" : "Balayages de fureur",
+        "icon" : "ability_druid_mangle.tga",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Vos attaques automatiques en forme d'ours et de félin vous confèrent 5% de chances de bénéficier d'un Balayage de fureur qui inflige 310% des dégâts de l'arme. Cet effet ne peut se produire plus d'une fois toutes les 3 sec."
+        }, {
+          "description" : "Vos attaques automatiques en forme d'ours et de félin vous confèrent 10% de chances de bénéficier d'un Balayage de fureur qui inflige 310% des dégâts de l'arme. Cet effet ne peut se produire plus d'une fois toutes les 3 sec."
+        }, {
+          "description" : "Vos attaques automatiques en forme d'ours et de félin vous confèrent 15% de chances de bénéficier d'un Balayage de fureur qui inflige 310% des dégâts de l'arme. Cet effet ne peut se produire plus d'une fois toutes les 3 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8761,
+        "name" : "Fureur primitive",
+        "icon" : "ability_racial_cannibalize",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Vous confère 50% de chances de générer 5 points de rage supplémentaires chaque fois que vous réussissez un coup critique en forme d'ours et vos coups critiques obtenus avec les techniques de la forme de félin qui ajoutent des points de combo ont 50% de chances d'ajouter un point de combo supplémentaire."
+        }, {
+          "description" : "Vous confère 100% de chances de générer 5 points de rage supplémentaires chaque fois que vous réussissez un coup critique en forme d'ours et vos coups critiques obtenus avec les techniques de la forme de félin qui ajoutent des points de combo ont 100% de chances d'ajouter un point de combo supplémentaire."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11285,
+        "name" : "Agressivité farouche",
+        "icon" : "ability_druid_demoralizingroar",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts infligés par votre Morsure féroce de 5% et si vous lancez Lucioles (farouche) l'effet est appliqué 2 fois."
+        }, {
+          "description" : "Augmente les dégâts infligés par votre Morsure féroce de 10% et si vous lancez Lucioles (farouche) l'effet est appliqué 3 fois."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8323,
+        "name" : "Roi de la jungle",
+        "icon" : "ability_druid_kingofthejungle",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Lorsque vous utilisez votre technique Enragé en forme d'ours, vos dégâts sont augmentés de 5%, et votre technique Fureur du tigre vous rend aussi instantanément 20 points d'énergie."
+        }, {
+          "description" : "Lorsque vous utilisez votre technique Enragé en forme d'ours, vos dégâts sont augmentés de 10%, et votre technique Fureur du tigre vous rend aussi instantanément 40 points d'énergie."
+        }, {
+          "description" : "Lorsque vous utilisez votre technique Enragé en forme d'ours, vos dégâts sont augmentés de 15%, et votre technique Fureur du tigre vous rend aussi instantanément 60 points d'énergie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8299,
+        "name" : "Charge farouche",
+        "icon" : "ability_hunter_pet_bear",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Apprend Charge farouche (ours) et Charge farouche (félin).\n\n\n\nCharge farouche (ours) - Vous chargez un ennemi et l'immobilisez pendant 4 sec. Temps de recharge de 15 secondes.\n\n\n\nCharge farouche (félin) - Vous bondissez derrière un ennemi et l'hébétez pendant 3 sec. Temps de recharge de 30 secondes."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8301,
+        "name" : "Ruée",
+        "icon" : "spell_druid_feralchargecat",
+        "x" : 2,
+        "y" : 2,
+        "req" : 8299,
+        "ranks" : [ {
+          "description" : "Augmente votre hâte en mêlée de 15% après avoir utilisé Charge farouche (ours) pendant 8 sec, et votre prochain Ravage ne nécessite pas d'être camouflé pendant 10 sec après avoir utilisé Charge farouche (félin), et coûte 50% d'énergie en moins."
+        }, {
+          "description" : "Augmente votre hâte en mêlée de 30% après avoir utilisé Charge farouche (ours) pendant 8 sec, et votre prochain Ravage ne nécessite temporairement pas d'être camouflé pendant 10 sec après avoir utilisé Charge farouche (félin), et coûte 100% d'énergie en moins."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8293,
+        "name" : "Peau épaisse",
+        "icon" : "inv_misc_pelt_bear_03",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Augmente de 4% la valeur d'armure apportée par les objets en tissu et en cuir. Augmente l'armure en forme d'ours de 11% supplémentaires. Réduit la probabilité que les attaques de mêlée vous infligent des dégâts critiques de 2%."
+        }, {
+          "description" : "Augmente de 7% la valeur d'armure apportée par les objets en tissu et en cuir. Augmente l'armure en forme d'ours de 22% supplémentaires. Réduit la probabilité que les attaques de mêlée vous infligent des dégâts critiques de 4%."
+        }, {
+          "description" : "Augmente de 10% la valeur d'armure apportée par les objets en tissu et en cuir. Augmente l'armure en forme d'ours de 33% supplémentaires. Réduit la probabilité que les attaques de mêlée vous infligent des dégâts critiques de 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8325,
+        "name" : "Chef de la meute",
+        "icon" : "spell_nature_unyeildingstamina",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Pendant qu'il est en forme de félin ou d'ours, le Chef de la meute augmente de 5% les chances de coup critique de tous les membres du groupe se trouvant à moins de 100 mètres. De plus, vos coups critiques en mêlée en forme de félin ou d'ours vous rendent 4% de votre total de points de vie et 4% de votre maximum de mana. Cet effet ne peut se produire plus d'une fois toutes les 6 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8307,
+        "name" : "Impact brutal",
+        "icon" : "ability_druid_bash",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Augmente la durée d'étourdissement de vos techniques Sonner et Traquenard de 0.5 sec., réduit le temps de recharge de Sonner de 5 sec., celui de Coup de crâne de 25 sec. De plus, les victimes de votre technique Coup de crâne voient le coût en mana de leurs sorts augmenter de 5% pendant 10 sec."
+        }, {
+          "description" : "Augmente la durée d'étourdissement de vos techniques Sonner et Traquenard de 1 sec., réduit le temps de recharge de Sonner de 10 sec., celui de Coup de crâne de 50 sec. De plus, les victimes de votre technique Coup de crâne voient le coût en mana de leurs sorts augmenter de 10% pendant 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8303,
+        "name" : "Instinct nourricier",
+        "icon" : "ability_druid_healinginstincts",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Augmente vos sorts de soins d'un montant égal à 50% au maximum de votre Agilité, et augmente les soins qui vous sont prodigués de 10% quand vous êtes en forme de félin."
+        }, {
+          "description" : "Augmente vos sorts de soins d'un montant égal à 100% au maximum de votre Agilité, et augmente les soins qui vous sont prodigués de 20% quand vous êtes en forme de félin."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8335,
+        "name" : "Folie primordiale",
+        "icon" : "ability_mount_jungletiger",
+        "x" : 0,
+        "y" : 4,
+        "req" : 8323,
+        "ranks" : [ {
+          "description" : "Fureur du tigre et Berserk augmentent également votre énergie actuelle et maximum de 10 pendant leur durée, et vos techniques Enrager et Berserk génèrent instantanément 6 points de rage."
+        }, {
+          "description" : "Fureur du tigre et Berserk augmentent également votre énergie actuelle et maximum de 20 pendant leur durée, et vos techniques Enrager et Berserk génèrent instantanément 12 points de rage."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8313,
+        "name" : "Instincts de survie",
+        "icon" : "ability_druid_tigersroar",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Instantanée",
+          "cooldown" : "3 min de recharge",
+          "description" : "Réduit tous les dégâts subis de 50% pendant 12 sec. Utilisable uniquement en forme d'ours ou de félin."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8759,
+        "name" : "Carnage infini",
+        "icon" : "spell_deathknight_bloodboil",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Augmente la durée de Griffure de 3 sec. et de Rugissement sauvage et Pulvérisation de 4 sec."
+        }, {
+          "description" : "Augmente la durée de Griffure de 6 sec. et de Rugissement sauvage et Pulvérisation de 8 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8758,
+        "name" : "Réaction naturelle",
+        "icon" : "ability_bullrush",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Réduit les dégâts que vous subissez en forme d'ours de 6%, augmente votre score d'esquive en forme d'ours de 3%, et vous régénérez 1 points de rage chaque fois que vous esquivez en forme d'ours."
+        }, {
+          "description" : "Réduit les dégâts que vous subissez en forme d'ours de 12%, augmente votre score d'esquive en forme d'ours de 6%, et vous régénérez 3 points de rage chaque fois que vous esquivez en forme d'ours."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8341,
+        "name" : "Du sang dans l'eau",
+        "icon" : "inv_misc_food_134_meat",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Quand vous utilisez Morsure féroce contre une cible qui dispose de 25% ou moins de ses points de vie, vous avez 50% de chances de réinitialiser la durée de votre Déchirure sur la cible."
+        }, {
+          "description" : "Quand vous utilisez Morsure féroce contre une cible qui dispose de 25% ou moins de ses points de vie, vous avez 100% de chances de réinitialiser la durée de votre Déchirure sur la cible."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8343,
+        "name" : "Pourfendre et déchirer",
+        "icon" : "ability_druid_primalagression",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts infligés par les attaques Mutiler et Lambeau sur les cibles qui saignent de 7%, et augmente les chances de coup critique de votre technique Morsure féroce sur les cibles qui saignent de 8%."
+        }, {
+          "description" : "Augmente les dégâts infligés par les attaques Mutiler et Lambeau sur les cibles qui saignent de 13%, et augmente les chances de coup critique de votre technique Morsure féroce sur les cibles qui saignent de 17%."
+        }, {
+          "description" : "Augmente les dégâts infligés par les attaques Mutiler et Lambeau sur les cibles qui saignent de 20%, et augmente les chances de coup critique de votre technique Morsure féroce sur les cibles qui saignent de 25%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8319,
+        "name" : "Pulvérisation",
+        "icon" : "ability_smash",
+        "x" : 2,
+        "y" : 5,
+        "req" : 8343,
+        "ranks" : [ {
+          "cost" : "15 pts. de rage",
+          "range" : "Allonge",
+          "castTime" : "Instantanée",
+          "description" : "Inflige 120% des dégâts de l'arme plus 14 points de dégâts supplémentaires pour chacune de vos applications de Lacérer sur la cible, et augmente vos chances de coup critique en mêlée de 3% pour chacune de vos applications de Lacérer consommée pendant 10 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8347,
+        "name" : "Berserk",
+        "icon" : "ability_druid_berserk",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "castTime" : "Instantanée",
+          "cooldown" : "3 min de recharge",
+          "description" : "Vos dégâts périodiques avec Lacérer ont 30% de chances de mettre fin au temps de recharge de votre technique Mutilation (ours) et de lui permettre de ne pas coûter de rage. De plus, quand elle est activée, cette technique permet à votre technique Mutilation (ours) d'atteindre un maximum de 3 cibles et de ne pas avoir de temps de recharge, elle réduit également le coût en énergie de toutes vos techniques en forme de félin de 50%. Dure 15 sec. Vous ne pouvez pas utiliser Fureur du tigre quand Berserk est actif. \n\n\n\nAnnule l'effet de Peur et vous rend insensible à Peur pendant toute sa durée."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Restauration",
+      "icon" : "spell_nature_healingtouch",
+      "backgroundFile" : "DruidRestoration",
+      "overlayColor" : "#66cc33",
+      "description" : "Utilise des sorts de soins sur la durée de Nature pour maintenir ses alliés en vie, prenant parfois la forme d'un arbre lorsque le besoin s'en fait sentir.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : true,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 18562,
+        "name" : "Prompte guérison",
+        "icon" : "inv_relics_idolofrejuvenation",
+        "cost" : "10% du mana de base",
+        "range" : "40 yd range",
+        "castTime" : "Incantation instantanée",
+        "cooldown" : "15 s. de recharge",
+        "reagents" : [ ],
+        "description" : "Consume un effet de Récupération ou de Rétablissement sur une cible alliée pour lui rendre instantanément 144 points de vie.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 85101,
+        "name" : "Méditation",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "Permet à 50% de votre régénération de mana due à l'Esprit de se poursuivre pendant le combat.",
+        "keyAbility" : false
+      }, {
+        "spellId" : 87305,
+        "name" : "Don de la Nature",
+        "icon" : "spell_nature_spiritarmor",
+        "reagents" : [ ],
+        "description" : "Soins augmentés de 25%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77495,
+        "name" : "Symbiose",
+        "icon" : "spell_nature_healingway",
+        "reagents" : [ ],
+        "description" : "Augmente l'efficacité de vos sorts de soins de 10% sur les cibles déjà affectées par l'un de vos sorts de soins sur la durée. Chaque point de Maîtrise augmente l'efficacité des soins de 1.25% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 8227,
+        "name" : "Bénédiction du bosquet",
+        "icon" : "spell_shaman_spiritlink",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente les soins prodigués par votre Récupération de 2% et les dégâts directs de votre Eclat lunaire de 3%."
+        }, {
+          "description" : "Augmente les soins prodigués par votre Récupération de 4% et les dégâts directs de votre Eclat lunaire de 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8237,
+        "name" : "Changeforme naturel",
+        "icon" : "spell_nature_wispsplode",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Réduit le coût en mana de tous les changements de forme de 10% et augmente la durée de la forme d'Arbre de vie de 5 sec."
+        }, {
+          "description" : "Réduit le coût en mana de tous les changements de forme de 20% et augmente la durée de la forme d'Arbre de vie de 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11699,
+        "name" : "Naturaliste",
+        "icon" : "spell_nature_healingtouch",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Réduit le temps d'incantation de vos sorts Toucher guérisseur et Nourrir de 0.3 sec."
+        }, {
+          "description" : "Réduit le temps d'incantation de vos sorts Toucher guérisseur et Nourrir de 0.5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11715,
+        "name" : "Cœur de fauve",
+        "icon" : "spell_holy_blessingofagility",
+        "x" : 3,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente votre Intelligence de 2%. De plus, votre Endurance est augmentée de 2% lorsque vous êtes en forme d'ours et votre puissance d'attaque est augmentée de 3% lorsque vous êtes en forme de félin."
+        }, {
+          "description" : "Augmente votre Intelligence de 4%. De plus, votre Endurance est augmentée de 4% lorsque vous êtes en forme d'ours et votre puissance d'attaque est augmentée de 7% lorsque vous êtes en forme de félin."
+        }, {
+          "description" : "Augmente votre Intelligence de 6%. De plus, votre Endurance est augmentée de 6% lorsque vous êtes en forme d'ours et votre puissance d'attaque est augmentée de 10% lorsque vous êtes en forme de félin."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11279,
+        "name" : "Persévérance",
+        "icon" : "achievement_zone_darnassus",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit tous les dégâts des sorts subis de 2%."
+        }, {
+          "description" : "Réduit tous les dégâts des sorts subis de 4%."
+        }, {
+          "description" : "Réduit tous les dégâts des sorts subis de 6%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8277,
+        "name" : "Maître changeforme",
+        "icon" : "ability_druid_mastershapeshifter",
+        "x" : 1,
+        "y" : 1,
+        "req" : 8237,
+        "ranks" : [ {
+          "description" : "Le druide bénéficie d'un effet tant qu'il conserve la forme concernée.\n\n\n\nForme d'ours - Augmente les dégâts physiques de 4%.\n\n\n\nForme de félin - Augmente les chances de coup critique de 4%.\n\n\n\nForme de sélénien - Augmente les dégâts des sorts de 4%.\n\n\n\nForme d'arbre de vie/de lanceur de sorts - Augmente les soins de 4%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8245,
+        "name" : "Récupération améliorée",
+        "icon" : "spell_nature_rejuvenation",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente les effets de vos sorts Récupération et Prompte guérison de 5%."
+        }, {
+          "description" : "Augmente les effets de vos sorts Récupération et Prompte guérison de 10%."
+        }, {
+          "description" : "Augmente les effets de vos sorts Récupération et Prompte guérison de 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8253,
+        "name" : "Graine de vie",
+        "icon" : "ability_druid_giftoftheearthmother",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Quand vous réussissez des soins critiques avec Prompte guérison, Rétablissement, Nourrir ou Toucher guérisseur, vous plantez une Graine de vie sur la cible pour un montant égal à 10% des points de vie rendus. La Graine de vie fleurira lors de la prochaine attaque sur la cible. Dure 15 sec."
+        }, {
+          "description" : "Quand vous réussissez des soins critiques avec Prompte guérison, Rétablissement, Nourrir ou Toucher guérisseur, vous plantez une Graine de vie sur la cible pour un montant égal à 20% des points de vie rendus. La Graine de vie fleurira lors de la prochaine attaque sur la cible. Dure 15 sec."
+        }, {
+          "description" : "Quand vous réussissez des soins critiques avec Prompte guérison, Rétablissement, Nourrir ou Toucher guérisseur, vous plantez une Graine de vie sur la cible pour un montant égal à 30% des points de vie rendus. La Graine de vie fleurira lors de la prochaine attaque sur la cible. Dure 15 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8269,
+        "name" : "Revitaliser",
+        "icon" : "ability_druid_replenish",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Quand vous prodiguez des soins périodiques avec vos sorts Récupération ou Fleur de vie, vous avez 20% de chances de régénérer instantanément 1% de votre total de mana. Cet effet ne peut se produire plus d'une fois toutes les 12 sec.\n\n\n\nDe plus, vous donnez également Requinquage quand vous lancez ou réinitialisez fleur de vie.\n\n\n\nRequinquage - Fait bénéficier un maximum de 10 membres du groupe ou raid d'une régénération de mana égale à 1% de leur maximum de mana toutes les 10 sec. Dure 15 sec."
+        }, {
+          "description" : "Quand vous prodiguez des soins périodiques avec vos sorts Récupération ou Fleur de vie, vous avez 20% de chances de régénérer instantanément 2% de votre total de mana. Cet effet ne peut se produire plus d'une fois toutes les 12 sec.\n\n\n\nDe plus, vous donnez également Requinquage quand vous lancez ou réinitialisez fleur de vie.\n\n\n\nRequinquage - Fait bénéficier un maximum de 10 membres du groupe ou raid d'une régénération de mana égale à 1% de leur maximum de mana toutes les 10 sec. Dure 15 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8249,
+        "name" : "Rapidité de la nature",
+        "icon" : "spell_nature_ravenform",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "3 min de recharge",
+          "description" : "Lorsque cette technique est activée, votre prochain sort de Nature dont le temps d'incantation de base est inférieur à 10 sec. devient un sort instantané."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11712,
+        "name" : "Fureur de Hurlorage",
+        "icon" : "inv_staff_90",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Réduit le coût en mana de votre sort Colère de 50%, et quand vous infligez des dégâts avec votre sort Colère votre prochain Feu stellaire lancé dans les 8 sec a 6% de chances d'être instantané."
+        }, {
+          "description" : "Réduit le coût en mana de votre sort Colère de 100%, et quand vous infligez des dégâts avec Colère vous avez 12% de chances de permettre à votre prochain Feu stellaire lancé dans les 8 sec d'être instantané."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8255,
+        "name" : "Bonté de la nature",
+        "icon" : "spell_nature_resistnature",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Augmente les chances d'effet critique de votre sort Rétablissement de 20%, et vous avez 33% de chances après avoir obtenu un effet de soin critique avec Toucher guérisseur ou Nourrir de réduire le temps de recharge restant de votre sort Prompte guérison de 0,5 sec."
+        }, {
+          "description" : "Augmente les chances d'effet critique de votre sort Rétablissement de 40%, et vous avez 66% de chances après avoir obtenu un effet de soin critique avec Toucher guérisseur ou Nourrir de réduire le temps de recharge restant de votre sort Prompte guérison de 0,5 sec."
+        }, {
+          "description" : "Augmente les chances d'effet critique de votre sort Rétablissement de 60%, et vous avez 100% de chances après avoir obtenu un effet de soin critique avec Toucher guérisseur ou Nourrir de réduire le temps de recharge restant de votre sort Prompte guérison de 0,5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8762,
+        "name" : "Toucher surpuissant",
+        "icon" : "ability_druid_empoweredtouch",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Augmente les soins prodigués par vos sorts Toucher guérisseur et Nourrir de 5%, et ces sorts ont 50% de chances de réinitialiser la durée de votre Fleur de vie sur les cibles."
+        }, {
+          "description" : "Augmente les soins prodigués par vos sorts Toucher guérisseur et Nourrir de 10%, et permet à ces sorts de réinitialiser la durée de votre Fleur de vie sur les cibles."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12146,
+        "name" : "Don de Malfurion",
+        "icon" : "spell_shaman_giftearthmother",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Chaque fois que vous soignez avec votre sort Fleur de vie, vous avez 2% de chances d'entraîner Augure de clarté."
+        }, {
+          "description" : "Chaque fois que vous soignez avec votre sort Fleur de vie, vous avez 4% de chances d'entraîner Augure de clarté."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8263,
+        "name" : "Efflorescence",
+        "icon" : "inv_misc_herb_talandrasrose",
+        "x" : 0,
+        "y" : 4,
+        "req" : 8253,
+        "ranks" : [ {
+          "description" : "Quand vous prodiguez des soins avec votre sort Prompte guérison, vous faites également pousser des plantes guérisseuses sous la cible. Celles-ci rendent à toutes les cibles alliées se trouvant à moins de 8 mètres un montant de points de vie égal à 10% du montant rendu par votre Prompte guérison en 7 sec. L'efficacité des soins diminue pour chaque joueur dans la zone au-delà de 6."
+        }, {
+          "description" : "Quand vous prodiguez des soins avec votre sort Prompte guérison, vous faites également pousser des plantes guérisseuses sous la cible. Celles-ci rendent à toutes les cibles alliées se trouvant à moins de 8 mètres un montant de points de vie égal à 20% du montant rendu par votre Prompte guérison en 7 sec. L'efficacité des soins diminue pour chaque joueur dans la zone au-delà de 6."
+        }, {
+          "description" : "Quand vous prodiguez des soins avec votre sort Prompte guérison, vous faites également pousser des plantes guérisseuses sous la cible. Celles-ci rendent à toutes les cibles alliées se trouvant à moins de 8 mètres un montant de points de vie égal à 30% du montant rendu par votre Prompte guérison en 7 sec. L'efficacité des soins diminue pour chaque joueur dans la zone au-delà de 6."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8279,
+        "name" : "Croissance sauvage",
+        "icon" : "ability_druid_flourish",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "27% du mana de base",
+          "range" : "40 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "10 s. de recharge",
+          "description" : "Rend à 5 membres au maximum du groupe ou du raid se trouvant à moins de 30 mètres de la cible 84 points de vie en 7 sec. Les membres du groupe aux points de vie les plus bas sont prioritaires. Les soins sont prodigués rapidement au début, et ralentissent au fur et à mesure que Croissance sauvage atteint la fin de sa durée."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8763,
+        "name" : "Soins naturels",
+        "icon" : "ability_shaman_cleansespirit",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Renforce votre sort Délivrance de la corruption, lui permettant d'également annuler un effet magique sur une cible alliée."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8267,
+        "name" : "Protection naturelle",
+        "icon" : "ability_druid_naturalperfection",
+        "x" : 3,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Chaque fois que vous subissez une attaque alors que vous disposez de 50% ou moins de vos points de vie, vous avez 50% de chances de lancer automatiquement Récupération sur vous sans dépenser de mana."
+        }, {
+          "description" : "Chaque fois que vous subissez une attaque alors que vous disposez de 50% ou moins de vos points de vie, vous avez 100% de chances de lancer automatiquement Récupération sur vous sans dépenser de mana."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11280,
+        "name" : "Don de la Terre-mère",
+        "icon" : "ability_druid_manatree",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Augmente les soins prodigués quand votre sort Fleur de vie expire de 5% et permet à votre sort Récupération d'également rendre instantanément un montant de points de vie égal à 5% du total de l'effet périodique."
+        }, {
+          "description" : "Augmente les soins prodigués quand votre sort Fleur de vie expire de 10% et permet à votre sort Récupération d'également rendre instantanément un montant de points de vie égal à 10% du total de l'effet périodique."
+        }, {
+          "description" : "Augmente les soins prodigués quand votre sort Fleur de vie expire de 15% et permet à votre sort Récupération d'également rendre instantanément un montant de points de vie égal à 15% du total de l'effet périodique."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8265,
+        "name" : "Récupération rapide",
+        "icon" : "ability_druid_empoweredrejuvination",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge global de votre Récupération de 0.5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 8271,
+        "name" : "Arbre de vie",
+        "icon" : "ability_druid_treeoflife",
+        "x" : 1,
+        "y" : 6,
+        "req" : 8279,
+        "ranks" : [ {
+          "cost" : "6% du mana de base",
+          "castTime" : "Instantanée",
+          "cooldown" : "3 min de recharge",
+          "description" : "Le druide adopte sa forme d 'Arbre de vie, ce qui augmente les soins prodigués de 15% et son armure de 120%. De plus, certains sorts sont améliorés tant qu'il est sous cette forme. Dure 30 sec.\n\n\n\nSorts améliorés : Fleur de vie, Croissance sauvage, Rétablissement, Sarments, Colère"
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

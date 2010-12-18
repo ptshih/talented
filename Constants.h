@@ -7,6 +7,8 @@
  *
  */
 
+#define USER_LANGUAGE [[NSLocale preferredLanguages] objectAtIndex:0]
+
 //#define REMOTE_TALENT_IMAGES // this downloads and uses icons from wowarmory
 //#define DOWNLOAD_TALENT_IMAGES // if this is defined, we will save the icons to disk
 

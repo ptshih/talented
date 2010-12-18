@@ -1,0 +1,1062 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 6,
+      "name" : "Death Knight",
+      "powerType" : "RUNIC_POWER",
+      "powerTypeId" : 6
+    },
+    "talentTrees" : [ {
+      "name" : "Blood",
+      "icon" : "spell_deathknight_bloodpresence",
+      "backgroundFile" : "DeathKnightBlood",
+      "overlayColor" : "#ff0000",
+      "description" : "A dark guardian who manipulates and corrupts life energy to sustain himself in the face of an enemy onslaught.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : true,
+        "healer" : false,
+        "dps" : false
+      },
+      "primarySpells" : [ {
+        "spellId" : 55050,
+        "name" : "Heart Strike",
+        "icon" : "inv_weapon_shortblade_40",
+        "cost" : "1 Blood",
+        "range" : "Melee Range",
+        "castTime" : "Instant",
+        "requires" : "Requires Melee Weapon",
+        "reagents" : [ ],
+        "description" : "Instantly strike the target and up to two additional nearby enemies, causing 100% weapon damage plus 17 on the primary target, with each additional enemy struck taking 25% less damage than the previous target.  Damage dealt to each target is increased by an additional 10% for each of your diseases present.",
+        "internal" : false,
+        "keyAbility" : true
+      }, {
+        "spellId" : 50034,
+        "name" : "Blood Rites",
+        "icon" : "spell_deathknight_bloodtap",
+        "reagents" : [ ],
+        "description" : "Whenever you hit with Death Strike or Obliterate, the Frost and Unholy Runes will become Death Runes when they activate.  Death Runes count as a Blood, Frost or Unholy Rune.",
+        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 93099,
+        "name" : "Vengeance",
+        "icon" : "ability_paladin_shieldofvengeance",
+        "reagents" : [ ],
+        "description" : "Each time you take damage, you gain 5% of the damage taken as attack power, up to a maximum of 10% of your health.",
+        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 50029,
+        "name" : "Veteran of the Third War",
+        "icon" : "spell_misc_warsongfocus",
+        "reagents" : [ ],
+        "description" : "Increases your total Stamina by 9% and your expertise by 6.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77513,
+        "name" : "Blood Shield",
+        "icon" : "spell_deathknight_deathstrike",
+        "reagents" : [ ],
+        "description" : "Each time you heal yourself via Death Strike, you gain 50% of the amount healed as a damage absorption shield.  Each point of Mastery increases the shield by an additional 6.25%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 1939,
+        "name" : "Butchery",
+        "icon" : "inv_axe_68",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Whenever you kill an enemy that grants experience or honor, you generate up to 10 runic power.  In addition, you generate 1 runic power per 5 sec while in combat."
+        }, {
+          "description" : "Whenever you kill an enemy that grants experience or honor, you generate up to 20 runic power.  In addition, you generate 2 runic power per 5 sec while in combat."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2017,
+        "name" : "Blade Barrier",
+        "icon" : "ability_upgrademoonglaive",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Whenever your Blood Runes are on cooldown, you gain the Blade Barrier effect, which decreases damage taken by 2% for the next 10 sec."
+        }, {
+          "description" : "Whenever your Blood Runes are on cooldown, you gain the Blade Barrier effect, which decreases damage taken by 4% for the next 10 sec."
+        }, {
+          "description" : "Whenever your Blood Runes are on cooldown, you gain the Blade Barrier effect, which decreases damage taken by 6% for the next 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1938,
+        "name" : "Bladed Armor",
+        "icon" : "inv_shoulder_36",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases your attack power by 2 for every 180 armor value you have."
+        }, {
+          "description" : "Increases your attack power by 4 for every 180 armor value you have."
+        }, {
+          "description" : "Increases your attack power by 6 for every 180 armor value you have."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12223,
+        "name" : "Improved Blood Tap",
+        "icon" : "spell_deathknight_bloodtap",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduces the cooldown of your Blood Tap ability by 15 sec."
+        }, {
+          "description" : "Reduces the cooldown of your Blood Tap ability by 30 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1948,
+        "name" : "Scent of Blood",
+        "icon" : "ability_rogue_bloodyeye",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "You have a 15% chance after dodging, parrying or taking direct damage to gain the Scent of Blood effect, causing your next melee hit to generate 10 runic power."
+        }, {
+          "description" : "You have a 15% chance after dodging, parrying or taking direct damage to gain the Scent of Blood effect, causing your next 2 melee hits to generate 10 runic power."
+        }, {
+          "description" : "You have a 15% chance after dodging, parrying or taking  direct damage to gain the Scent of Blood effect, causing your next 3 melee hits to generate 10 runic power."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7462,
+        "name" : "Scarlet Fever",
+        "icon" : "ability_rogue_vendetta",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Gives your Blood Boil a 50% chance to afflict enemies with Scarlet Fever, reducing their physical damage dealt by 10% for 30 sec."
+        }, {
+          "description" : "Gives your Blood Boil a 100% chance to afflict enemies with Scarlet Fever, reducing their physical damage dealt by 10% for 30 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11270,
+        "name" : "Hand of Doom",
+        "icon" : "ability_deathknight_desolation",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Reduces the cooldown of your Strangulate ability by 30 sec."
+        }, {
+          "description" : "Reduces the cooldown of your Strangulate ability by 60 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7460,
+        "name" : "Blood-Caked Blade",
+        "icon" : "ability_criticalstrike",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Your auto attacks have a 10% chance to cause a Blood-Caked Strike, which hits for 25% weapon damage plus 12.5% for each of your diseases on the target."
+        }, {
+          "description" : "Your auto attacks have a 20% chance to cause a Blood-Caked Strike, which hits for 25% weapon damage plus 12.5% for each of your diseases on the target."
+        }, {
+          "description" : "Your auto attacks have a 30% chance to cause a Blood-Caked Strike, which hits for 25% weapon damage plus 12.5% for each of your diseases on the target."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7459,
+        "name" : "Bone Shield",
+        "icon" : "ability_deathknight_boneshield",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "1 Unholy",
+          "castTime" : "Instant cast",
+          "cooldown" : "1 min cooldown",
+          "description" : "Surrounds you with a barrier of whirling bones.  The shield begins with 3 charges, and each damaging attack consumes a charge.  While at least 1 charge remains, you take 20% less damage from all sources and deal 2% more damage with all attacks, spells and abilities.  Lasts 5 min."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7458,
+        "name" : "Toughness",
+        "icon" : "spell_holy_devotion",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Increases your armor value from items by 3%."
+        }, {
+          "description" : "Increases your armor value from items by 7%."
+        }, {
+          "description" : "Increases your armor value from items by 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2105,
+        "name" : "Abomination's Might",
+        "icon" : "ability_warrior_intensifyrage",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Increases the attack power by 5% of party and raid members within 100 yards.  Also increases your total Strength by 1%."
+        }, {
+          "description" : "Increases the attack power by 10% of party and raid members within 100 yards.  Also increases your total Strength by 2%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7461,
+        "name" : "Sanguine Fortitude",
+        "icon" : "ability_deathknight_sanguinfortitude",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "While active, your Icebound Fortitude reduces damage taken by an additional 15% and costs 50% less runic power to activate."
+        }, {
+          "description" : "While active, your Icebound Fortitude reduces damage taken by an additional 30% and costs no runic power to activate."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1960,
+        "name" : "Blood Parasite",
+        "icon" : "spell_shadow_soulleech",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Your melee attacks have a 5% chance to spawn a Bloodworm. The Bloodworm attacks your enemies, gorging itself with blood until it bursts to heal nearby allies.  Lasts up to 20 sec."
+        }, {
+          "description" : "Your melee attacks have a 10% chance to spawn a Bloodworm.  The Bloodworm attacks your enemies, gorging itself with blood until it bursts to heal nearby allies.  Lasts up to 20 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1936,
+        "name" : "Improved Blood Presence",
+        "icon" : "spell_deathknight_bloodpresence",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Increases your rune regeneration by 10% and reduces the chance that you will be critically hit by melee attacks while in Blood Presence by 3%.  In addition, while in Frost Presence or Unholy Presence, you retain 2% damage reduction from Blood Presence."
+        }, {
+          "description" : "Increases your rune regeneration by 20% and reduces the chance that you will be critically hit by melee attacks while in Blood Presence by 6%.  In addition, while in Frost Presence or Unholy Presence, you retain 4% damage reduction from Blood Presence."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1959,
+        "name" : "Will of the Necropolis",
+        "icon" : "ability_creature_cursed_02",
+        "x" : 0,
+        "y" : 4,
+        "req" : 1941,
+        "ranks" : [ {
+          "description" : "When a damaging attack brings you below 30% of your maximum health, you generate a Blood Rune and the cooldown on your Rune Tap ability is refreshed, and all damage taken is reduced by 8% for 8 sec.  This effect cannot occur more than once every 45 seconds."
+        }, {
+          "description" : "When a damaging attack brings you below 30% of your maximum health, you generate a Blood Rune and the cooldown on your Rune Tap ability is refreshed, and all damage taken is reduced by 16% for 8 sec.  This effect cannot occur more than once every 45 seconds."
+        }, {
+          "description" : "When a damaging attack brings you below 30% of your maximum health, you generate a Blood Rune and the cooldown on your Rune Tap ability is refreshed, and all damage taken is reduced by 25% for 8 sec.  This effect cannot occur more than once every 45 seconds."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1941,
+        "name" : "Rune Tap",
+        "icon" : "spell_deathknight_runetap",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "1 Blood",
+          "castTime" : "Instant cast",
+          "cooldown" : "30 sec cooldown",
+          "description" : "Converts 1 Blood Rune into 15% of your maximum health."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2019,
+        "name" : "Vampiric Blood",
+        "icon" : "spell_shadow_lifedrain",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "castTime" : "Instant",
+          "cooldown" : "1 min cooldown",
+          "description" : "Temporarily grants the Death Knight 15% of maximum health and increases the amount of health generated through spells and effects by 25% for 10 sec.  After the effect expires, the health is lost."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2259,
+        "name" : "Improved Death Strike",
+        "icon" : "spell_deathknight_butcher2",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Increases the damage and healing done by your Death Strike by 15%, increases its critical strike chance by 3%."
+        }, {
+          "description" : "Increases the damage and healing done by your Death Strike by 30%, increases its critical strike chance by 6%."
+        }, {
+          "description" : "Increases the damage and healing done by your Death Strike by 45%, increases its critical strike chance by 9%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7463,
+        "name" : "Crimson Scourge",
+        "icon" : "spell_deathknight_bloodboil",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Increases the damage dealt by your Blood Boil by 20%, and when you Plague Strike a target that is already infected with your Blood Plague, there is a 50% chance that your next Blood Boil will consume no runes."
+        }, {
+          "description" : "Increases the damage dealt by your Blood Boil by 40%, and when you Plague Strike a target that is already infected with your Blood Plague, there is a 100% chance that your next Blood Boil will consume no runes."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1961,
+        "name" : "Dancing Rune Weapon",
+        "icon" : "inv_sword_07",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "60 Runic Power",
+          "range" : "30 yd range",
+          "castTime" : "Instant cast",
+          "cooldown" : "1.5 min cooldown",
+          "requires" : "Requires Melee Weapon",
+          "description" : "Summons a second rune weapon that fights on its own for 12 sec, doing the same attacks as the Death Knight but for 50% reduced damage.  The rune weapon also assists in defense of its master, granting an additional 20% parry chance while active."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Frost",
+      "icon" : "spell_deathknight_frostpresence",
+      "backgroundFile" : "DeathKnightFrost",
+      "overlayColor" : "#4c7fff",
+      "description" : "An icy harbinger of doom, channeling runic power and delivering rapid weapon strikes.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 49143,
+        "name" : "Frost Strike",
+        "icon" : "spell_deathknight_empowerruneblade2",
+        "cost" : "40 Runic Power",
+        "range" : "Melee Range",
+        "castTime" : "Instant",
+        "requires" : "Requires Melee Weapon",
+        "reagents" : [ ],
+        "description" : "Instantly strike the enemy, causing 110% weapon damage plus 7 as Frost damage.",
+        "internal" : false,
+        "keyAbility" : true
+      }, {
+        "spellId" : 54637,
+        "name" : "Blood of the North",
+        "icon" : "inv_weapon_shortblade_79",
+        "reagents" : [ ],
+        "description" : "Whenever you hit with Blood Strike or Pestilence, the Blood Rune will become a Death Rune when it activates.  Death Runes count as a Blood, Frost or Unholy Rune.",
+        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 50887,
+        "name" : "Icy Talons",
+        "icon" : "spell_deathknight_icytalons",
+        "reagents" : [ ],
+        "description" : "Your melee attack speed is increased by 20%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77514,
+        "name" : "Frozen Heart",
+        "icon" : "inv_misc_gem_sapphire_01",
+        "reagents" : [ ],
+        "description" : "Increases all frost damage done by 16%.  Each point of Mastery increases frost damage by an additional 2.0%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 2031,
+        "name" : "Runic Power Mastery",
+        "icon" : "spell_arcane_arcane01",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases your maximum Runic Power by 10."
+        }, {
+          "description" : "Increases your maximum Runic Power by 20."
+        }, {
+          "description" : "Increases your maximum Runic Power by 30."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2035,
+        "name" : "Icy Reach",
+        "icon" : "spell_frost_manarecharge",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases the range of your Icy Touch,  Chains of Ice and Howling Blast by 5 yards."
+        }, {
+          "description" : "Increases the range of your Icy Touch, Chains of Ice and Howling Blast by 10 yards."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2022,
+        "name" : "Nerves of Cold Steel",
+        "icon" : "ability_dualwield",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases your chance to hit with one-handed melee weapons by 1% and increases the damage done by your off-hand weapon by 8%."
+        }, {
+          "description" : "Increases your chance to hit with one-handed melee weapons by 2% and increases the damage done by your off-hand weapon by 16%."
+        }, {
+          "description" : "Increases your chance to hit with one-handed melee weapons by 3% and increases the damage done by your off-hand weapon by 25%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2048,
+        "name" : "Annihilation",
+        "icon" : "inv_weapon_hand_18",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Increases the damage dealt by your Obliterate ability by 15%."
+        }, {
+          "description" : "Increases the damage dealt by your Obliterate ability by 30%."
+        }, {
+          "description" : "Increases the damage dealt by your Obliterate ability by 45%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2215,
+        "name" : "Lichborne",
+        "icon" : "spell_shadow_raisedead",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "castTime" : "Instant cast",
+          "cooldown" : "2 min cooldown",
+          "description" : "Draw upon unholy energy to become undead for 10 sec.  While undead, you are immune to Charm, Fear and Sleep effects."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11275,
+        "name" : "On a Pale Horse",
+        "icon" : "ability_mount_undeadhorse",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "You become as hard to stop as death itself.  The duration of movement-slowing effects used against you is reduced by 15%, and your mounted speed is increased by 10%.  This does not stack with other movement speed increasing effects."
+        }, {
+          "description" : "You become as hard to stop as death itself.  The duration of movement-slowing effects used against you is reduced by 30%, and your mounted speed is increased by 20%.  This does not stack with other movement speed increasing effects."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1971,
+        "name" : "Endless Winter",
+        "icon" : "spell_shadow_twilight",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "The cost of your Mind Freeze is reduced to 10 runic power."
+        }, {
+          "description" : "Your Mind Freeze no longer costs runic power."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1993,
+        "name" : "Merciless Combat",
+        "icon" : "inv_sword_112",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Your Icy Touch, Howling Blast, Obliterate and Frost Strike do an additional 6% damage when striking targets with less than 35% health."
+        }, {
+          "description" : "Your Icy Touch, Howling Blast, Obliterate and Frost Strike do an additional 12% damage when striking targets with less than 35% health."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1981,
+        "name" : "Chill of the Grave",
+        "icon" : "spell_frost_frostshock",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Your Chains of Ice, Howling Blast, Icy Touch and Obliterate generate 5 additional runic power."
+        }, {
+          "description" : "Your Chains of Ice, Howling Blast, Icy Touch and Obliterate generate 10 additional runic power."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2044,
+        "name" : "Killing Machine",
+        "icon" : "inv_sword_122",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Your melee attacks have a chance to make your next Icy Touch, Obliterate, or Frost Strike a guaranteed critical strike."
+        }, {
+          "description" : "Your melee attacks have a chance to make your next Icy Touch, Obliterate, or Frost Strike a guaranteed critical strike.  Effect occurs more often than Killing Machine (Rank 1)."
+        }, {
+          "description" : "Your melee attacks have a chance to make your next Icy Touch, Obliterate, or Frost Strike a guaranteed critical strike.  Effect occurs more often than Killing Machine (Rank 2)."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1992,
+        "name" : "Rime",
+        "icon" : "spell_frost_freezingbreath",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Your Obliterate has a 15% chance to cause your next Howling Blast or Icy Touch to consume no runes."
+        }, {
+          "description" : "Your Obliterate has a 30% chance to cause your next Howling Blast or Icy Touch to consume no runes."
+        }, {
+          "description" : "Your Obliterate has a 45% chance to cause your next Howling Blast or Icy Touch to consume no runes."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1979,
+        "name" : "Pillar of Frost",
+        "icon" : "ability_deathknight_pillaroffrost",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "1 Frost",
+          "castTime" : "Instant",
+          "cooldown" : "1 min cooldown",
+          "description" : "Calls upon the power of Frost to increase the Death Knight's Strength by 20%.  Icy crystals hang heavy upon the Death Knight's body, providing immunity against external movement such as knockbacks.  Lasts 20 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2223,
+        "name" : "Improved Icy Talons",
+        "icon" : "spell_deathknight_icytalons",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Increases the melee and ranged attack speed of all party and raid members within 100 yards by 10%, and your own attack speed by an additional 5%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1980,
+        "name" : "Brittle Bones",
+        "icon" : "ability_deathknight_brittlebones",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Your Strength is increased by 2% and your Frost Fever chills the bones of its victims, increasing their physical damage taken by 2%."
+        }, {
+          "description" : "Your Strength is increased by 4% and your Frost Fever chills the bones of its victims, increasing their physical damage taken by 4%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2260,
+        "name" : "Chilblains",
+        "icon" : "spell_frost_wisp",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Victims of your Frost Fever disease are Chilled, reducing movement speed by 25% for 10 sec."
+        }, {
+          "description" : "Victims of your Frost Fever disease are Chilled, reducing movement speed by 50% for 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1999,
+        "name" : "Hungering Cold",
+        "icon" : "inv_staff_15",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "40 Runic Power",
+          "castTime" : "Instant cast",
+          "cooldown" : "1 min cooldown",
+          "description" : "Purges the earth around the Death Knight of all heat.  Enemies within 10 yards are trapped in ice, preventing them from performing any action for 10 sec and infecting them with Frost Fever.  Enemies are considered Frozen, but any damage other than diseases will break the ice."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2029,
+        "name" : "Improved Frost Presence",
+        "icon" : "spell_deathknight_frostpresence",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Increases your bonus damage while in Frost Presence by an additional 2%.  In addition, while in Blood Presence or Unholy Presence, you retain 2% increased runic power generation from Frost Presence."
+        }, {
+          "description" : "Increases your bonus damage while in Frost Presence by an additional 5%.  In addition, while in Blood Presence or Unholy Presence, you retain 4% increased runic power generation from Frost Presence."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2284,
+        "name" : "Threat of Thassarian",
+        "icon" : "ability_dualwieldspecialization",
+        "x" : 0,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "When dual-wielding, your Death Strikes, Obliterates, Plague Strikes, Rune Strikes, Blood Strikes and Frost Strikes have a 30% chance to also deal damage with your offhand weapon."
+        }, {
+          "description" : "When dual-wielding, your Death Strikes, Obliterates, Plague Strikes, Rune Strikes, Blood Strikes and Frost Strikes have a 60% chance to also deal damage with your offhand weapon."
+        }, {
+          "description" : "When dual-wielding, your Death Strikes, Obliterates, Plague Strikes, Rune Strikes, Blood Strikes and Frost Strikes have a 100% chance to also deal damage with your offhand weapon."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7571,
+        "name" : "Might of the Frozen Wastes",
+        "icon" : "inv_sword_120",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "When wielding a two-handed weapon, your autoattacks have a 15% chance to generate 10 Runic Power."
+        }, {
+          "description" : "When wielding a two-handed weapon, your autoattacks have a 30% chance to generate 10 Runic Power."
+        }, {
+          "description" : "When wielding a two-handed weapon, your autoattacks have a 45% chance to generate 10 Runic Power."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1989,
+        "name" : "Howling Blast",
+        "icon" : "spell_frost_arcticwinds",
+        "x" : 1,
+        "y" : 6,
+        "req" : 1999,
+        "ranks" : [ {
+          "cost" : "1 Frost",
+          "range" : "20 yd range",
+          "castTime" : "Instant cast",
+          "description" : "Blast the target with a frigid wind dealing 33 Frost damage to all enemies within 10 yards."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Unholy",
+      "icon" : "spell_deathknight_unholypresence",
+      "backgroundFile" : "DeathKnightUnholy",
+      "overlayColor" : "#33cc33",
+      "description" : "A master of death and decay, spreading infection and controlling undead minions to do his bidding.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 55090,
+        "name" : "Scourge Strike",
+        "icon" : "spell_deathknight_scourgestrike",
+        "cost" : "1 Unholy",
+        "range" : "Melee Range",
+        "castTime" : "Instant",
+        "requires" : "Requires Melee Weapon",
+        "reagents" : [ ],
+        "description" : "An unholy strike that deals 100% of weapon damage as Physical damage plus 13.  In addition, for each of your diseases on your target, you deal an additional 12% of the Physical damage done as Shadow damage.",
+        "internal" : false,
+        "keyAbility" : true
+      }, {
+        "spellId" : 52143,
+        "name" : "Master of Ghouls",
+        "icon" : "spell_shadow_animatedead",
+        "reagents" : [ ],
+        "description" : "Reduces the cooldown on Raise Dead by 60 sec, and the Ghoul summoned by your Raise Dead spell is considered a pet under your control.  Unlike normal Death Knight Ghouls, your pet does not have a limited duration.",
+        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 56835,
+        "name" : "Reaping",
+        "icon" : "spell_shadow_shadetruesight",
+        "reagents" : [ ],
+        "description" : "Whenever you hit with Blood Strike, Pestilence, or Festering Strike, the Runes spent will become Death Runes when they activate.  Death Runes count as a Blood, Frost or Unholy Rune.",
+        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 91107,
+        "name" : "Unholy Might",
+        "icon" : "spell_shadow_unholystrength",
+        "reagents" : [ ],
+        "description" : "Dark power courses through your limbs, increasing your Strength by 10%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77515,
+        "name" : "Blightcaller",
+        "icon" : "achievement_zone_westernplaguelands_01",
+        "reagents" : [ ],
+        "description" : "Increases the damage done by your diseases by 40%.  Each point of Mastery increases disease damage by an additional 5.0%.",
+        "internal" : false,
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 2025,
+        "name" : "Unholy Command",
+        "icon" : "spell_deathknight_strangulate",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Reduces the cooldown of your Death Grip ability by 5 sec, and gives you a 50% chance to refresh its cooldown when dealing a killing blow to a target that grants experience or honor."
+        }, {
+          "description" : "Reduces the cooldown of your Death Grip ability by 10 sec, and gives you a 100% chance to refresh its cooldown when dealing a killing blow to a target that grants experience or honor."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1932,
+        "name" : "Virulence",
+        "icon" : "spell_shadow_burningspirit",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases your chance to hit with your spells by 3%.  Spells are all Death Knight abilities that are not direct weapon strikes."
+        }, {
+          "description" : "Increases your chance to hit with your spells by 6%.   Spells are all Death Knight abilities that are not direct weapon strikes."
+        }, {
+          "description" : "Increases your chance to hit with your spells by 9%.   Spells are all Death Knight abilities that are not direct weapon strikes."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1963,
+        "name" : "Epidemic",
+        "icon" : "spell_shadow_shadowwordpain",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Increases the duration of Blood Plague and Frost Fever by 4 sec."
+        }, {
+          "description" : "Increases the duration of Blood Plague and Frost Fever by 8 sec."
+        }, {
+          "description" : "Increases the duration of Blood Plague and Frost Fever by 12 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2226,
+        "name" : "Desecration",
+        "icon" : "spell_shadow_shadowfiend",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Your Plague Strikes and Scourge Strikes defile the ground within 7 yards of your target.  Enemies in the area are slowed by 25% while standing on the unholy ground.  Lasts 20 sec."
+        }, {
+          "description" : "Your Plague Strikes and Scourge Strikes defile the ground within 7 yards of your target.  Enemies in the area are slowed by 50% while standing on the unholy ground.  Lasts 20 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7572,
+        "name" : "Resilient Infection",
+        "icon" : "ability_creature_disease_05",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "When your diseases are dispelled by an enemy, you have a 50% chance to activate a Frost rune if Frost Fever was removed, or an Unholy rune if Blood Plague was removed."
+        }, {
+          "description" : "When your diseases are dispelled by an enemy, you have a 100% chance to activate a Frost rune if Frost Fever was removed, or an Unholy rune if Blood Plague was removed."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11178,
+        "name" : "Morbidity",
+        "icon" : "spell_shadow_deathanddecay",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Increases the damage and healing of Death Coil by 5% and Death and Decay by 10%."
+        }, {
+          "description" : "Increases the damage and healing of Death Coil by 10% and Death and Decay by 20%."
+        }, {
+          "description" : "Increases the damage and healing of Death Coil by 15% and Death and Decay by 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2047,
+        "name" : "Runic Corruption",
+        "icon" : "spell_shadow_rune",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Reduces the cost of your Death Coil by 3, and causes your Runic Empowerment ability to no longer refresh a depleted rune, but instead to increase your rune regeneration rate by 50% for 3 sec."
+        }, {
+          "description" : "Reduces the cost of your Death Coil by 6, and causes your Runic Empowerment ability to no longer refresh a depleted rune, but instead to increase your rune regeneration rate by 100% for 3 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7574,
+        "name" : "Unholy Frenzy",
+        "icon" : "spell_shadow_unholyfrenzy",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "range" : "30 yd range",
+          "castTime" : "Instant cast",
+          "cooldown" : "3 min cooldown",
+          "description" : "Induces a friendly unit into a killing frenzy for 30 sec.  The target is Enraged, which increases their melee and ranged haste by 20%, but causes them to lose health equal to 2% of their maximum health every 3 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12119,
+        "name" : "Contagion",
+        "icon" : "spell_shadow_plaguecloud",
+        "x" : 2,
+        "y" : 2,
+        "req" : 1963,
+        "ranks" : [ {
+          "description" : "Increases the damage of your diseases spread via Pestilence by 50%."
+        }, {
+          "description" : "Increases the damage of your diseases spread via Pestilence by 100%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11179,
+        "name" : "Shadow Infusion",
+        "icon" : "spell_shadow_requiem",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "When you cast Death Coil, you have a 33% chance to empower your active Ghoul, increasing its damage dealt by 10% for 30 sec.  Stacks up to 5 times."
+        }, {
+          "description" : "When you cast Death Coil, you have a 66% chance to empower your active Ghoul, increasing its damage dealt by 10% for 30 sec.  Stacks up to 5 times."
+        }, {
+          "description" : "When you cast Death Coil, you have a 100% chance to empower your active Ghoul, increasing its damage dealt by 10% for 30 sec.  Stacks up to 5 times."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2009,
+        "name" : "Magic Suppression",
+        "icon" : "spell_shadow_antimagicshell",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Increases the spell damage absorption of your Anti-Magic Shell by an additional 8%, and causes damage absorbed by Anti-Magic Shell to energize the Death Knight with runic power."
+        }, {
+          "description" : "Increases the spell damage absorption of your Anti-Magic Shell by an additional 16%, and increases the runic power generated when damage is absorbed by Anti-Magic Shell."
+        }, {
+          "description" : "Increases the spell damage absorption of your Anti-Magic Shell by an additional 25%, and increases the runic power generated when damage is absorbed by Anti-Magic Shell."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2082,
+        "name" : "Rage of Rivendare",
+        "icon" : "inv_weapon_halberd14",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Increases the damage of your Plague Strike, Scourge Strike, and Festering Strike abilities by 15%."
+        }, {
+          "description" : "Increases the damage of your Plague Strike, Scourge Strike, and Festering Strike abilities by 30%."
+        }, {
+          "description" : "Increases the damage of your Plague Strike, Scourge Strike, and Festering Strike abilities by 45%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 1996,
+        "name" : "Unholy Blight",
+        "icon" : "spell_shadow_contagion",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Causes the victims of your Death Coil to be surrounded by a vile swarm of unholy insects, taking 10% of the damage done by the Death Coil over 10 sec, and preventing any diseases on the victim from being dispelled."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2221,
+        "name" : "Anti-Magic Zone",
+        "icon" : "spell_deathknight_antimagiczone",
+        "x" : 1,
+        "y" : 4,
+        "req" : 2009,
+        "ranks" : [ {
+          "cost" : "1 Unholy",
+          "castTime" : "Instant cast",
+          "cooldown" : "2 min cooldown",
+          "description" : "Places a large, stationary Anti-Magic Zone that reduces spell damage done to party or raid members inside it by 75%.  The Anti-Magic Zone lasts for 10 sec or until it absorbs 10042 spell damage."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2013,
+        "name" : "Improved Unholy Presence",
+        "icon" : "spell_deathknight_unholypresence",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Grants you an additional 2% haste while in Unholy Presence.  In addition, while in Blood Presence or Frost Presence, you retain 8% increased movement speed from Unholy Presence."
+        }, {
+          "description" : "Grants you an additional 5% haste while in Unholy Presence.  In addition, while in Blood Presence or Frost Presence, you retain 15% increased movement speed from Unholy Presence."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2085,
+        "name" : "Dark Transformation",
+        "icon" : "achievement_boss_festergutrotface",
+        "x" : 3,
+        "y" : 4,
+        "req" : 11179,
+        "ranks" : [ {
+          "cost" : "1 Unholy",
+          "range" : "60 yd range",
+          "castTime" : "Instant cast",
+          "description" : "Consume 5 charges of Shadow Infusion on your Ghoul to transform it into a powerful undead monstrosity for 30 sec.  The Ghoul's abilities are empowered and take on new functions while the transformation is active."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2043,
+        "name" : "Ebon Plaguebringer",
+        "icon" : "ability_creature_cursed_03",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Your Plague Strike, Icy Touch, Chains of Ice, and Outbreak abilities also infect their target with Ebon Plague, which increases damage taken from your diseases by 15% and all magic damage taken by an additional 8%."
+        }, {
+          "description" : "Your Plague Strike, Icy Touch, Chains of Ice, and Outbreak abilities also infect their target with Ebon Plague, which increases damage taken from your diseases by 30% and all magic damage taken by an additional 8%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 7575,
+        "name" : "Sudden Doom",
+        "icon" : "spell_shadow_painspike",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Your auto attacks have a 5% chance to make your next Death Coil cost no runic power."
+        }, {
+          "description" : "Your auto attacks have a 10% chance to make your next Death Coil cost no runic power."
+        }, {
+          "description" : "Your auto attacks have a 15% chance to make your next Death Coil cost no runic power."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 2000,
+        "name" : "Summon Gargoyle",
+        "icon" : "ability_deathknight_summongargoyle",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "70 Runic Power",
+          "range" : "30 yd range",
+          "castTime" : "Instant cast",
+          "cooldown" : "3 min cooldown",
+          "description" : "A Gargoyle flies into the area and bombards the target with Nature damage modified by the Death Knight's attack power.  Persists for 30 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}

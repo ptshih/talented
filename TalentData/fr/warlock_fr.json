@@ -1,0 +1,953 @@
+{
+  "talentData" : {
+    "characterClass" : {
+      "classId" : 9,
+      "name" : "Démoniste",
+      "powerType" : "MANA",
+      "powerTypeId" : 0
+    },
+    "talentTrees" : [ {
+      "name" : "Affliction",
+      "icon" : "spell_shadow_deathcoil",
+      "backgroundFile" : "WarlockCurses",
+      "overlayColor" : "#00ff99",
+      "description" : "Un maître de la magie de l'Ombre qui se spécialise dans la peur, les drains et les sorts de dégâts sur la durée.",
+      "treeNo" : 0,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 30108,
+        "name" : "Affliction instable",
+        "icon" : "spell_shadow_unstableaffliction_3",
+        "cost" : "15% du mana de base",
+        "range" : "40 yd range",
+        "castTime" : "Incantation de 1,5 s.",
+        "reagents" : [ ],
+        "description" : "L’énergie de l’Ombre détruit lentement la cible, infligeant 50 points de dégâts en 15 sec. De plus, si l'Affliction instable est dissipée, celui qui la dissipe subit 90 points de dégâts et est réduit au silence pendant 5 sec. Une seule Affliction instable ou Immolation par démoniste à la fois peut être active sur une cible.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 87339,
+        "name" : "Maîtrise de l'ombre",
+        "icon" : "spell_shadow_spectralsight",
+        "reagents" : [ ],
+        "description" : "Augmente les dégâts des sorts d'Ombre de 25%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77215,
+        "name" : "Afflictions puissantes",
+        "icon" : "ability_warlock_everlastingaffliction",
+        "reagents" : [ ],
+        "description" : "Augmente tous les dégâts d'Ombre périodiques que vous infligez de 13%. Chaque point de Maîtrise augmente les dégâts d'Ombre périodiques de 1.63% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 11100,
+        "name" : "Malédiction et mélancolie",
+        "icon" : "spell_shadow_curseofsargeras",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente les chances de coup critique de vos Plaies d'agonie et Plaies funestes de 4%."
+        }, {
+          "description" : "Augmente les chances de coup critique de vos Plaies d'agonie et Plaies funestes de 8%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11110,
+        "name" : "Connexion améliorée",
+        "icon" : "spell_shadow_burningspirit",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente de 10% le montant de mana octroyé par votre sort Connexion."
+        }, {
+          "description" : "Augmente de 20% le montant de mana octroyé par votre sort Connexion."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11104,
+        "name" : "Corruption améliorée",
+        "icon" : "spell_shadow_abominationexplosion",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts infligés par votre Corruption de 4%."
+        }, {
+          "description" : "Augmente les dégâts infligés par votre Corruption de 8%."
+        }, {
+          "description" : "Augmente les dégâts infligés par votre Corruption de 12%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11214,
+        "name" : "Porte-malheur",
+        "icon" : "ability_warlock_jinx",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Votre Malédiction des éléments affecte également un maximum de 15 cibles ennemies à moins de 20 mètres de la cible maudite. \n\n\n\nDe plus, votre Malédiction de faiblesse réduit la génération d'énergie, de rage, de focalisation ou de puissance runique de la cible de 5% tant qu'elle est active."
+        }, {
+          "description" : "Votre Malédiction des éléments affecte également un maximum de 15 cibles ennemies à moins de 40 mètres de la cible maudite. \n\n\n\nDe plus, votre Malédiction de faiblesse réduit la génération d'énergie, de rage, de focalisation ou de puissance runique de la cible de 10% tant qu'elle est active."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11112,
+        "name" : "Siphon d'âme",
+        "icon" : "ability_warlock_soulsiphon",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente le montant de points drainé par vos sorts Drain de vie et Drain d'âme de 3% supplémentaires pour chaque effet d'Affliction sur la cible, jusqu'à un maximum de 9% d'effet supplémentaire."
+        }, {
+          "description" : "Augmente le montant de points drainé par vos sorts Drain de vie et Drain d'âme de 6% supplémentaires pour chaque effet d'Affliction sur la cible, jusqu'à un maximum de 18% d'effet supplémentaire."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11420,
+        "name" : "Siphon de vie",
+        "icon" : "spell_shadow_requiem",
+        "x" : 2,
+        "y" : 1,
+        "req" : 11112,
+        "ranks" : [ {
+          "description" : "Quand vous infligez des dégâts avec votre sort Corruption, vous avez 25% de chances de recevoir un montant de points de vie égal à 2% de votre total de points de vie."
+        }, {
+          "description" : "Quand vous infligez des dégâts avec votre sort Corruption, vous avez 50% de chances de recevoir un montant de points de vie égal à 2% de votre total de points de vie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11128,
+        "name" : "Malédiction d'épuisement",
+        "icon" : "spell_shadow_grimward",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "6% du mana de base",
+          "range" : "30 yd range",
+          "castTime" : "Incantation instantanée",
+          "description" : "Réduit la vitesse de la cible de 50% pendant 30 sec. Une seule malédiction par démoniste peut être active sur une cible."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11114,
+        "name" : "Peur améliorée",
+        "icon" : "spell_shadow_possession",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Votre sort Peur inflige un Cauchemar à la cible lorsque l'effet de peur prend fin. Cauchemar réduit la vitesse de déplacement de la cible de 15% pendant 5 sec."
+        }, {
+          "description" : "Votre sort Peur inflige un Cauchemar à la cible lorsque l'effet de peur prend fin. Cauchemar réduit la vitesse de déplacement de la cible de 30% pendant 5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11134,
+        "name" : "Eradication",
+        "icon" : "ability_warlock_eradication",
+        "x" : 3,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Quand vous infligez des dégâts avec Corruption, vous avez 6% de chances d'augmenter votre vitesse d'incantation des sorts de 6% pendant 10 sec."
+        }, {
+          "description" : "Quand vous infligez des dégâts avec Corruption, vous avez 6% de chances d'augmenter votre vitesse d'incantation des sorts de 12% pendant 10 sec."
+        }, {
+          "description" : "Quand vous infligez des dégâts avec Corruption, vous avez 6% de chances d'augmenter votre vitesse d'incantation des sorts de 20% pendant 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11140,
+        "name" : "Hurlement de terreur amélioré",
+        "icon" : "spell_shadow_deathscream",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Réduit le temps d'incantation de votre sort Hurlement de terreur de 0.8 sec."
+        }, {
+          "description" : "Réduit le temps d'incantation de votre sort Hurlement de terreur de 1.5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11366,
+        "name" : "Echange d'âme",
+        "icon" : "ability_warlock_soulswap",
+        "x" : 1,
+        "y" : 3,
+        "req" : 11112,
+        "ranks" : [ {
+          "cost" : "18% du mana de base",
+          "range" : "40 yd range",
+          "castTime" : "Incantation instantanée",
+          "description" : "Vous infligez instantanément 9 points de dégâts et retirez vos effets de dégâts d'Ombre sur la durée de la cible.\n\n\n\nPendant 20 sec, la prochaine cible sur laquelle vous lancez Expiration de l'échange d'âme sera affectée par les effets de dégâts d'Ombre sur la durée et subira 9 points de dégâts.\n\n\n\nVous ne pouvez pas le relancer sur la même cible."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11124,
+        "name" : "Etreinte de l'ombre",
+        "icon" : "spell_shadow_shadowembrace",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Vos sorts Trait de l'ombre et Hanter provoquent aussi l'effet Etreinte de l'ombre, qui augmente tous les dégâts d'Ombre périodiques que vous infligez à la cible de 3%. Dure 12 sec. Cumulable jusqu'à 3 fois."
+        }, {
+          "description" : "Vos sorts Trait de l'ombre et Hanter provoquent aussi l'effet Etreinte de l'ombre, qui augmente tous les dégâts d'Ombre périodiques que vous infligez à la cible de 4%. Dure 12 sec. Cumulable jusqu'à 3 fois."
+        }, {
+          "description" : "Vos sorts Trait de l'ombre et Hanter provoquent aussi l'effet Etreinte de l'ombre, qui augmente tous les dégâts d'Ombre périodiques que vous infligez à la cible de 5%. Cumulable jusqu'à 3 fois."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11142,
+        "name" : "Caresse de la mort",
+        "icon" : "spell_shadow_deathsembrace",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Quand vous disposez de 25% ou moins de vos points de vie, votre drain de vie vous rend un montant de points de vie supplémentaire égal à 1% de votre total de points de vie.\n\n\n\nAugmente les dégâts infligés par vos sorts d'Ombre de 4% quand votre cible dispose de 25% ou moins de ses points de vie."
+        }, {
+          "description" : "Quand vous disposez de 25% ou moins de vos points de vie, votre drain de vie vous rend un montant de points de vie supplémentaire égal à 2% de votre total de points de vie.\n\n\n\nAugmente les dégâts infligés par vos sorts d'Ombre de 8% quand votre cible dispose de 25% ou moins de ses points de vie."
+        }, {
+          "description" : "Quand vous disposez de 25% ou moins de vos points de vie, votre drain de vie vous rend un montant de points de vie supplémentaire égal à 3% de votre total de points de vie.\n\n\n\nAugmente les dégâts infligés par vos sorts d'Ombre de 12% quand votre cible dispose de 25% ou moins de ses points de vie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11122,
+        "name" : "Crépuscule",
+        "icon" : "spell_shadow_twilight",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Confère à vos sorts Corruption et Drain de vie, 2% de chances de vous plonger dans un état de Transe de l'ombre après avoir infligé des dégâts à un adversaire. Cet état réduit le temps d'incantation de votre prochain sort Trait de l'ombre de 100%."
+        }, {
+          "description" : "Confère à vos sorts Corruption et Drain de vie 4% de chances de vous plonger dans un état de Transe de l'ombre après avoir infligé des dégâts à un adversaire. Cet état réduit le temps d'incantation de votre prochain sort Trait de l'ombre de 100%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11419,
+        "name" : "Brûlure d'âme : Graine de corruption",
+        "icon" : "spell_shadow_seedofdestruction",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Rend votre sort Graine de Corruption plus puissant grâce à Brûlure d'âme.\n\n\n\nL'effet de la détonation de votre Graine de Corruption fait subir Corruption à toutes les cibles ennemies. Le Fragment d'âme vous sera remboursé si la détonation réussit."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11150,
+        "name" : "Affliction éternelle",
+        "icon" : "ability_warlock_everlastingaffliction",
+        "x" : 1,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Augmente les chances d'obtenir un effet critique avec Corruption, Graine de Corruption et Affliction instable de 5%.\n\nVos sorts Drain de vie, Drain d'âme, Trait de l'ombre et Hanter ont 33% de chances de réinitialiser la durée de votre sort Corruption sur la cible."
+        }, {
+          "description" : "Augmente les chances d'obtenir un effet critique avec Corruption, Graine de Corruption et Affliction instable de 10%.\n\nVos sorts Drain de vie, Drain d'âme, Trait de l'ombre et Hanter ont 66% de chances de réinitialiser la durée de votre sort Corruption sur la cible."
+        }, {
+          "description" : "Augmente les chances d'obtenir un effet critique avec Corruption, Graine de Corruption et Affliction instable de 15%.\n\nVos sorts Drain de vie, Drain d'âme, Trait de l'ombre et Hanter ont 100% de chances de réinitialiser la durée de votre sort Corruption sur la cible."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11200,
+        "name" : "Pandémie",
+        "icon" : "spell_shadow_lastingaffliction",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Réduit le temps de recharge global de vos Plaies et Malédictions de 0,25 sec.\n\n\n\nVotre Drain d'âme a 50% de chances de réinitialiser la durée d'Affliction instable equand vous infligez des dégâts à des cibles disposant de moins de 25% de leurs points de vie."
+        }, {
+          "description" : "Réduit le temps de recharge global de vos Plaies et Malédictions de 0,5 sec.\n\n\n\nVotre Drain d'âme a 100% de chances de réinitialiser la durée d'Affliction instable quand vous infligez des dégâts à des cibles disposant de moins de 25% de leurs points de vie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11152,
+        "name" : "Hanter",
+        "icon" : "ability_warlock_haunt",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "cost" : "12% du mana de base",
+          "range" : "40 yd range",
+          "castTime" : "Incantation de 1,5 s.",
+          "cooldown" : "8 s. de recharge",
+          "description" : "Vous envoyez une âme fantomatique à l'intérieur de la cible, ce qui lui inflige 31 points de dégâts d'Ombre et augmente tous les dégâts infligés par vos effets de dégâts d'Ombre sur la durée de 20% pendant 12 sec. Quand le sort Hanter prend fin ou est dissipé, l'âme vous revient et vous soigne pour un montant de points de vie égal à 100% des dégâts qu'elle a infligés à la cible."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Démonologie",
+      "icon" : "spell_shadow_metamorphosis",
+      "backgroundFile" : "WarlockSummoning",
+      "overlayColor" : "#ff0000",
+      "description" : "Un démoniste qui utilise indifféremment les magies de l'Ombre et du Feu, ainsi que des démons puissants.",
+      "treeNo" : 1,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 30146,
+        "name" : "Invocation : gangregarde",
+        "icon" : "spell_shadow_summonfelguard",
+        "cost" : "80% du mana de base",
+        "castTime" : "Incantation de 6 s.",
+        "reagents" : [ ],
+        "description" : "Invoque un gangregarde qui exécute les ordres du démoniste.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 84740,
+        "name" : "Connaissance démoniaque",
+        "icon" : "spell_fire_twilightimmolation",
+        "reagents" : [ ],
+        "description" : "Augmente les dégâts de Feu et d'Ombre de vos sorts de 15%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77219,
+        "name" : "Maître démonologue",
+        "icon" : "spell_shadow_shadowpact",
+        "reagents" : [ ],
+        "description" : "Augmente les dégâts infligés par vos serviteurs démons et les dégâts que vous infligez lorsque vous êtes transformé en démon de 12%. Chaque point de Maîtrise augmente les dégâts de 1.5% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10994,
+        "name" : "Baiser démoniaque",
+        "icon" : "spell_shadow_metamorphosis",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente votre total d'Endurance de 4%."
+        }, {
+          "description" : "Augmente votre total d'Endurance de 7%."
+        }, {
+          "description" : "Augmente votre total d'Endurance de 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10992,
+        "name" : "Sombres arts",
+        "icon" : "ability_warlock_darkarts",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Réduit le temps d'incantation du sort Eclair de feu de votre diablotin de 0.25 sec., augmente les dégâts infligés par la Frappe de la Légion de votre gangregarde de 5% et augmente les dégâts infligés par la Morsure de l'ombre de votre chasseur corrompu de 5%."
+        }, {
+          "description" : "Réduit le temps d'incantation du sort Eclair de feu de votre diablotin de 0.50 sec., augmente les dégâts infligés par la Frappe de la Légion de votre gangregarde de 10% et augmente les dégâts infligés par la Morsure de l'ombre de votre chasseur corrompu de 10%."
+        }, {
+          "description" : "Réduit le temps d'incantation du sort Eclair de feu de votre diablotin de 0.75 sec., augmente les dégâts infligés par la Frappe de la Légion de votre gangregarde de 15% et augmente les dégâts infligés par la Morsure de l'ombre de votre chasseur corrompu de 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11206,
+        "name" : "Synergie gangrenée",
+        "icon" : "spell_shadow_felmending",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Vous avez 50% de chances de rendre à votre familier un montant de points de vie égal à 15% du montant de dégâts que vous infligez avec des sorts."
+        }, {
+          "description" : "Vous avez 100% de chances de rendre à votre familier un montant de points de vie égal à 15% du montant de dégâts que vous infligez avec des sorts."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11713,
+        "name" : "Renaissance démoniaque",
+        "icon" : "spell_shadow_demonictactics",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Si votre démon invoqué meurt, vous bénéficiez de l'effet Renaissance démoniaque qui réduit le temps d'incantation de votre prochain sort d'invocation de démon de 50%. Dure 10 sec. Cet effet a un temps de recharge de 2 min."
+        }, {
+          "description" : "Si votre démon invoqué meurt, vous bénéficiez de l'effet Renaissance démoniaque qui réduit le temps d'incantation de votre prochain sort d'invocation de démon de 100%. Dure 10 sec. Cet effet a un temps de recharge de 2 min."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11020,
+        "name" : "Festin de mana",
+        "icon" : "spell_shadow_manafeed",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Lorsque votre démon invoqué réussit un coup critique avec son attaque de base, vous recevez instantanément 2% de votre total de mana.\n\n\n\nQuand vous recevez du mana grâce à vos sorts Drain de mana ou Connexion, votre démon invoqué obtient un montant de mana égal à 30% du mana que vous recevez."
+        }, {
+          "description" : "Lorsque votre démon invoqué réussit un coup critique avec son attaque de base, vous recevez instantanément 4% de votre total de mana.\n\n\n\nQuand vous recevez du mana grâce à vos sorts Drain de mana ou Connexion, votre démon invoqué obtient un montant de mana égal à 60% du mana que vous recevez."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11190,
+        "name" : "Egide démoniaque",
+        "icon" : "spell_shadow_ragingscream",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente de 5% supplémentaires le montant de points de vie généré par les sorts et effets conféré par votre Armure démoniaque et de 50% le montant de points de vie régénéré par votre Gangrarmure."
+        }, {
+          "description" : "Augmente de 10% supplémentaires le montant de points de vie généré par les sorts et effets conféré par votre Armure démoniaque et de 100% le montant de points de vie régénéré par votre Gangrarmure."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11014,
+        "name" : "Maître invocateur",
+        "icon" : "spell_shadow_impphaseshift",
+        "x" : 3,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit le temps d'incantation de vos sorts d'invocations de diablotin, de marcheur du Vide, de succube, de chasseur corrompu et de gangregarde de 0,5 sec. et leur coût en mana de 50%."
+        }, {
+          "description" : "Réduit le temps d'incantation de vos sorts d'invocations de diablotin, de marcheur du Vide, de succube, de chasseur corrompu et de gangregarde de 1 sec. et leur coût en mana de 100%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11198,
+        "name" : "Malédiction imminente",
+        "icon" : "spell_nature_removecurse",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Augmente de 10% les chances de votre Plaie funeste d'invoquer un démon quand elle inflige des dégâts.\n\n\n\nConfère également à vos sorts Trait de l'ombre, Main de Gul'dan et Incinérer 5% de chances de réduire le temps de recharge de votre Forme de démon de 15 sec."
+        }, {
+          "description" : "Augmente de 20% les chances de votre Plaie funeste d'invoquer un démon quand elle inflige des dégâts.\n\n\n\nConfère également à vos sorts Trait de l'ombre, Main de Gul'dan et Incinérer 10% de chances de réduire le temps de recharge de votre Forme de démon de 15 sec."
+        }, {
+          "description" : "Augmente de 30% les chances de votre Plaie funeste d'invoquer un démon quand elle inflige des dégâts.\n\n\n\nConfère également à vos sorts Trait de l'ombre, Main de Gul'dan et Incinérer 15% de chances de réduire le temps de recharge de votre Forme de démon de 15 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11160,
+        "name" : "Renforcement démoniaque",
+        "icon" : "ability_warlock_demonicempowerment",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "6% du mana de base",
+          "range" : "100 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "1 min de recharge",
+          "description" : "Confère un renforcement au démon invoqué du démoniste.\n\n\n\nDiablotin - Rend instantanément au diablotin 30% de son total de points de vie.\n\n\n\nMarcheur du Vide - Augmente ses points de vie de 20% et augmente la menace générée par ses sorts et attaques de 20% pendant 20 sec.\n\n\n\nSuccube - Disparition immédiate qui la fait entrer dans un état d'invisibilité améliorée. L'effet de disparition annule tous les étourdissements, ralentissements et effets affectant le déplacement sur la succube.\n\n\n\nChasseur corrompu - Dissipe tous les effets magiques sur le chasseur corrompu.\n\n\n\nGangregarde - Annule tous les étourdissements, ralentissements et effets affectant le déplacement et rend le gangregarde insensible à ces effets pendant 15 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10998,
+        "name" : "Captation de vie améliorée",
+        "icon" : "spell_shadow_lifedrain",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Augmente le montant de points de vie transférés par votre sort Captation de vie de 10% et réduit le coût initial en points de vie de 10%. De plus, votre démon invoqué subit 15% de dégâts en moins pendant qu'il est sous l'effet de votre Captation de vie."
+        }, {
+          "description" : "Augmente le montant de points de vie transférés par votre sort Captation de vie de 20% et réduit le coût initial en points de vie de 20%. De plus, votre démon invoqué subit 30% de dégâts en moins pendant qu'il est sous l'effet de votre Captation de vie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11024,
+        "name" : "Coeur de la fournaise",
+        "icon" : "ability_warlock_moltencore",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Vous avez 2% de chances de bénéficier de l'effet Cœur de la fournaise quand votre Immolation inflige des dégâts. L'effet Coeur de la fournaise rend plus puissants vos 3 prochains sorts Incinérer lancés dans les 15 sec, augmentant les dégâts infligés de 6% et réduisant le temps d'incantation de 10%."
+        }, {
+          "description" : "Vous avez 4% de chances de bénéficier de l'effet Cœur de la fournaise quand votre Immolation inflige des dégâts. L'effet Coeur de la fournaise rend plus puissants vos 3 prochains sorts Incinérer lancés dans les 15 sec, augmentant les dégâts infligés de 12% et réduisant le temps d'incantation de 20%."
+        }, {
+          "description" : "Vous avez 6% de chances de bénéficier de l'effet Cœur de la fournaise quand votre Immolation inflige des dégâts. L'effet Coeur de la fournaise rend plus puissants vos 3 prochains sorts Incinérer lancés dans les 15 sec, augmentant les dégâts infligés de 18% et réduisant le temps d'incantation de 30%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11201,
+        "name" : "Main de Gul'dan",
+        "icon" : "inv_summerfest_firespirit",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "cost" : "7% du mana de base",
+          "range" : "40 yd range",
+          "castTime" : "Incantation de 2 s.",
+          "cooldown" : "12 s. de recharge",
+          "description" : "Fait tomber sur la cible ennemie un météore qui lui inflige 63 points de dégâts d'Ombre et fait surgir une aura magique dans un rayon de 4 mètres. Les démons de démonistes ont 10% de chances supplémentaires d'infliger un coup critique à toutes les cibles se trouvant dans cette aura. L'aura persiste pendant 15 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11814,
+        "name" : "Aura de pressentiment",
+        "icon" : "spell_shadow_sealofkings",
+        "x" : 2,
+        "y" : 3,
+        "req" : 11201,
+        "ranks" : [ {
+          "description" : "Quand votre Main de Gul'dan atterrit, tous les ennemis à moins de 4 mètres sont enracinés pendant 2 sec. et étourdis pendant la même durée s'ils sont toujours dans l'aura de la Malédiction de Gul'dan 6 sec. plus tard."
+        }, {
+          "description" : "Quand votre Main de Gul'dan atterrit, tous les ennemis à moins de 4 mètres sont enracinés pendant 3 sec. et étourdis pendant la même durée s'ils sont toujours dans l'aura de la Malédiction de Gul'dan 6 sec. plus tard."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11188,
+        "name" : "Grimoire antique",
+        "icon" : "ability_warlock_ancientgrimoire",
+        "x" : 0,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Augmente la durée de l'invocation de votre Infernal et de votre Garde funeste de 10 sec."
+        }, {
+          "description" : "Augmente la durée de l'invocation de votre Infernal et de votre Garde funeste de 20 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11189,
+        "name" : "Inferno",
+        "icon" : "ability_warlock_inferno",
+        "x" : 1,
+        "y" : 4,
+        "req" : 11201,
+        "ranks" : [ {
+          "description" : "Augmente le rayon de vos Flammes infernales de 10 mètres, et vous pouvez maintenant les canaliser pendant que vous vous déplacez."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11034,
+        "name" : "Décimation",
+        "icon" : "spell_fire_fireball02",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Lorsque vous touchez avec Trait de l'ombre, Incinérer ou Feu de l'âme une cible qui dispose de 25% ou moins de ses points de vie, le temps d'incantation de votre sort Feu de l'âme est réduit de 20% pendant 10 sec."
+        }, {
+          "description" : "Lorsque vous touchez avec Trait de l'ombre, Incinérer ou Feu de l'âme une cible qui dispose de 25% ou moins de ses points de vie, le temps d'incantation de votre sort Feu de l'âme est réduit de 40% pendant 10 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11199,
+        "name" : "Crémation",
+        "icon" : "ability_warlock_cremation",
+        "x" : 1,
+        "y" : 5,
+        "req" : 11189,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts infligés par vos Flammes infernales de 15%, et votre Main de Gul'dan a 50% de chances de réinitialiser la durée de votre sort Immolation sur la cible."
+        }, {
+          "description" : "Augmente les dégâts infligés par vos Flammes infernales de 30%, et votre Main de Gul'dan a 100% de chances de réinitialiser la durée de votre sort Immolation sur la cible."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11042,
+        "name" : "Pacte démoniaque",
+        "icon" : "spell_shadow_demonicpact",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "description" : "Augmente vos dégâts des sorts de 2%, et votre démon invoqué confère l'effet Pacte démoniaque à tous les membres de votre groupe ou raid.\n\n\n\nLe Pacte démoniaque augmente la puissance des sorts de 10%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11044,
+        "name" : "Métamorphe",
+        "icon" : "spell_shadow_demonform",
+        "x" : 1,
+        "y" : 6,
+        "ranks" : [ {
+          "description" : "Vous vous transformez en démon pendant 30 sec. Cette forme augmente votre armure de 600% et vos dégâts de 20%, réduit la probabilité que vous soyez touché par des coups critiques en mêlée de 6% et réduit la durée des effets d'étourdissement et de ralentissement qui vous affectent de 50%. Vous bénéficiez de techniques démoniaques spécifiques en plus de vos techniques normales. Temps de recharge de 3 minutes."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    }, {
+      "name" : "Destruction",
+      "icon" : "spell_shadow_rainoffire",
+      "backgroundFile" : "WarlockDestruction",
+      "overlayColor" : "#ff7f00",
+      "description" : "Invoque le feu démoniaque pour brûler et anéantir ses ennemis.",
+      "treeNo" : 2,
+      "roles" : {
+        "tank" : false,
+        "healer" : false,
+        "dps" : true
+      },
+      "primarySpells" : [ {
+        "spellId" : 17962,
+        "name" : "Conflagration",
+        "icon" : "spell_fire_fireball",
+        "cost" : "16% du mana de base",
+        "range" : "40 yd range",
+        "castTime" : "Incantation instantanée",
+        "cooldown" : "10 s. de recharge",
+        "reagents" : [ ],
+        "description" : "Inflige instantanément des dégâts de Feu un montant égal à 60% des dégâts périodiques de votre Immolation sur la cible.",
+        "keyAbility" : true
+      }, {
+        "spellId" : 84739,
+        "name" : "Cataclysme",
+        "icon" : "spell_fire_meteorstorm",
+        "reagents" : [ ],
+        "description" : "Augmente les dégâts des sorts de Feu de 25%.",
+        "keyAbility" : false
+      } ],
+      "masteries" : [ {
+        "spellId" : 77220,
+        "name" : "Apocalypse ardente",
+        "icon" : "spell_fire_moltenblood",
+        "reagents" : [ ],
+        "description" : "Augmente tous les dégâts de Feu que vous infligez de 10%. Chaque point de Maîtrise augmente les dégâts de Feu de 1.25% supplémentaires.",
+        "keyAbility" : false
+      } ],
+      "talents" : [ {
+        "id" : 10938,
+        "name" : "Plaie",
+        "icon" : "spell_shadow_deathpact",
+        "x" : 0,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Réduit le temps d'incantation de vos sorts Trait de l'ombre, Trait du chaos et Immolation de 0.1 sec."
+        }, {
+          "description" : "Réduit le temps d'incantation de vos sorts Trait de l'ombre, Trait du chaos et Immolation de 0.3 sec."
+        }, {
+          "description" : "Réduit le temps d'incantation de vos sorts Trait de l'ombre, Trait du chaos et Immolation de 0.5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10936,
+        "name" : "Ombre et flammes",
+        "icon" : "spell_shadow_shadowandflame",
+        "x" : 1,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts infligés par vos sorts Trait de l'ombre et Incinérer de 4%, et votre Trait de l'ombre a 33% de chances d'appliquer l'effet Trait de l'ombre amélioré sur la cible.\n\n\n\nCet effet la rend vulnérable aux dégâts des sorts, ce qui augmente les chances de coup critique des sorts contre cette cible de 5% pendant 30 sec."
+        }, {
+          "description" : "Augmente les dégâts infligés par vos sorts Trait de l'ombre et Incinérer de 8%, et votre Trait de l'ombre a 66% de chances d'appliquer l'effet Trait de l'ombre amélioré sur la cible.\n\n\n\nCet effet la rend vulnérable aux dégâts des sorts, ce qui augmente les chances de coup critique des sorts contre cette cible de 5% pendant 30 sec."
+        }, {
+          "description" : "Augmente les dégâts infligés par vos sorts Trait de l'ombre et Incinérer de 12%, et votre Trait de l'ombre a 100% de chances d'appliquer l'effet Trait de l'ombre amélioré sur la cible.\n\n\n\nCet effet la rend vulnérable aux dégâts des sorts, ce qui augmente les chances de coup critique des sorts contre cette cible de 5%. Il dure 30 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10960,
+        "name" : "Immolation améliorée",
+        "icon" : "spell_fire_immolation",
+        "x" : 2,
+        "y" : 0,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts infligés par votre sort Immolation de 10%."
+        }, {
+          "description" : "Augmente les dégâts infligés par votre sort Immolation de 20%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11197,
+        "name" : "Feu de l'âme amélioré",
+        "icon" : "spell_fire_fireball02",
+        "x" : 0,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Votre hâte des sorts augmente de 7% pendant 15 sec quand vous infligez des dégâts avec Feu de l'âme. Cet effet a un temps de recharge de 15 sec."
+        }, {
+          "description" : "Votre hâte des sorts augmente de 15% pendant 15 sec quand vous infligez des dégâts avec Feu de l'âme. Cet effet a un temps de recharge de 15 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11181,
+        "name" : "Tempête ardente",
+        "icon" : "spell_fire_selfdestruct",
+        "x" : 1,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Réduit le temps d'incantation de votre sort Feu de l'âme de 0.5 sec. et de votre sort Incinérer de 0.13 sec."
+        }, {
+          "description" : "Réduit le temps d'incantation de votre sort Feu de l'âme de 1 sec. et de votre sort Incinérer de 0.25 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11196,
+        "name" : "Douleur brûlante améliorée",
+        "icon" : "spell_fire_soulburn",
+        "x" : 2,
+        "y" : 1,
+        "ranks" : [ {
+          "description" : "Augmente de 20% vos chances d'infliger un coup critique avec le sort Douleur brûlante aux cibles disposant de 25% ou moins de leurs points de vie."
+        }, {
+          "description" : "Augmente de 40% vos chances d'infliger un coup critique avec le sort Douleur brûlante aux cibles disposant de 25% ou moins de leurs points de vie."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10940,
+        "name" : "Conséquences",
+        "icon" : "spell_fire_fire",
+        "x" : 0,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Votre Pluie de feu a 6% de chances d'étourdir les cibles pendant 2 secondes, et votre Conflagration a 50% de chances d'hébéter la cible pendant 5 sec."
+        }, {
+          "description" : "Votre Pluie de feu a 12% de chances d'étourdir les cibles pendant 2 secondes, et votre Conflagration a 100% de chances d'hébéter la cible pendant 5 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10978,
+        "name" : "Explosion de fumées",
+        "icon" : "ability_warlock_backdraft",
+        "x" : 1,
+        "y" : 2,
+        "ranks" : [ {
+          "description" : "Quand vous lancez Conflagration, le temps d'incantation de vos trois prochains sorts Trait de l'ombre, Incinérer et Trait du chaos est réduit de 10%. Dure 15 sec."
+        }, {
+          "description" : "Quand vous lancez Conflagration, le temps d'incantation de vos trois prochains sorts Trait de l'ombre, Incinérer et Trait du chaos est réduit de 20%. Dure 15 sec."
+        }, {
+          "description" : "Quand vous lancez Conflagration, le temps d'incantation de Trait de l'ombre, Incinérer et Trait du chaos est réduit de 30%. Dure 15 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10948,
+        "name" : "Brûlure de l'ombre",
+        "icon" : "spell_shadow_scourgebuild",
+        "x" : 2,
+        "y" : 2,
+        "ranks" : [ {
+          "cost" : "15% du mana de base",
+          "range" : "40 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "15 s. de recharge",
+          "description" : "Attaque instantanément la cible et lui inflige 36 points de dégâts d'Ombre. Si la cible meurt dans les 5 sec sous l'effet du sort Brûlure de l'ombre et rapporte de l'expérience ou de l'honneur, le lanceur gagne 3 Fragments d'âme. Ne peut être utilisée que sur les ennemis qui disposent de moins de 20% de leurs points de vie."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 11182,
+        "name" : "Braises enflammées",
+        "icon" : "ability_warlock_burningembers",
+        "x" : 0,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Votre Feu de l'âme et le Trait de feu de votre diablotin déclenchent Braise enflammée, un effet de dégâts sur la durée qui inflige un montant égal à 15% des dégâts infligés pendant 7 sec.\n\n\n\nL'effet Braise enflammée inflige jusqu'à 1 points de dégâts de Feu toutes les 1 sec. pendant 7 sec."
+        }, {
+          "description" : "Votre Feu de l'âme et le Trait de feu de votre diablotin déclenchent Braise enflammée, un effet de dégâts sur la durée qui inflige un montant égal à 30% des dégâts infligés pendant 7 sec.\n\n\n\nL'effet Braise enflammée inflige jusqu'à 2 points de dégâts de Feu toutes les 1 sec. pendant 7 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10970,
+        "name" : "Suceur d'âme",
+        "icon" : "spell_shadow_soulleech_3",
+        "x" : 1,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Vos sorts Brûlure de l'ombre, Feu de l'âme et Trait du chaos vous rendent instantanément 2% de votre total de points de vie et de mana quand ils infligent des dégâts et vous confèrent également Requinquage.\n\n\n\nRequinquage - Fait bénéficier un maximum de 10 membres du groupe ou raid d'une régénération de mana égale à 1% de leur maximum de mana toutes les 10 sec. Dure 15 sec."
+        }, {
+          "description" : "Vos sorts Brûlure de l'ombre, Feu de l'âme et Trait du chaos vous rendent instantanément 4% de votre total de points de vie et de mana quand ils infligent des dégâts et vous confèrent également Requinquage.\n\n\n\nRequinquage - Fait bénéficier un maximum de 10 membres du groupe ou raid d'une régénération de mana égale à 1% de leur maximum de mana toutes les 10 sec. Dure 15 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10958,
+        "name" : "Contrecoup",
+        "icon" : "spell_fire_playingwithfire",
+        "x" : 2,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Vous confère 8% de chances lorsque vous êtes touché par une attaque physique de réduire le temps d'incantation de votre prochain sort Trait de l'ombre ou Incinérer de 100%. Cet effet dure 8 sec et ne peut se produire plus d'une fois toutes les 8 secondes."
+        }, {
+          "description" : "Vous confère 16% de chances lorsque vous êtes touché par une attaque physique de réduire le temps d'incantation de votre prochain sort Trait de l'ombre ou Incinérer de 100%. Cet effet dure 8 sec et ne peut se produire plus d'une fois toutes les 8 secondes."
+        }, {
+          "description" : "Vous confère 25% de chances lorsque vous êtes touché par une attaque physique de réduire le temps d'incantation de votre prochain sort Trait de l'ombre ou Incinérer de 100%. Cet effet dure 8 sec et ne peut se produire plus d'une fois toutes les 8 secondes."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 12120,
+        "name" : "Gardien du Néant",
+        "icon" : "spell_fire_felfireward",
+        "x" : 3,
+        "y" : 3,
+        "ranks" : [ {
+          "description" : "Transforme votre Gardien de l'ombre en Gardien du Néant. Armure démoniaque ou Gangrarmure sont nécessaires pour que la transformation puisse prendre effet.\n\n\n\nGardien du Néant\n\nAbsorbe 129 points de dégâts des sorts. Dure 30 sec. Temps de recharge de 30 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10984,
+        "name" : "Feu et soufre",
+        "icon" : "ability_warlock_fireandbrimstone",
+        "x" : 1,
+        "y" : 4,
+        "ranks" : [ {
+          "description" : "Augmente les dégâts infligés par vos sorts Incinérer et Trait du chaos aux cibles affectées par votre Immolation de 2%, et les chances de coup critique de votre sort Conflagration sont augmentées de 5%."
+        }, {
+          "description" : "Augmente les dégâts infligés par vos sorts Incinérer et Trait du chaos aux cibles affectées par votre Immolation de 4%, et les chances de coup critique de votre sort Conflagration sont augmentées de 10%."
+        }, {
+          "description" : "Augmente les dégâts infligés par vos sorts Incinérer et Trait du chaos aux cibles affectées par votre Immolation de 6%, et les chances de coup critique de votre sort Conflagration sont augmentées de 15%."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10980,
+        "name" : "Furie de l'ombre",
+        "icon" : "spell_shadow_shadowfury",
+        "x" : 2,
+        "y" : 4,
+        "ranks" : [ {
+          "cost" : "27% du mana de base",
+          "range" : "30 yd range",
+          "castTime" : "Incantation instantanée",
+          "cooldown" : "20 s. de recharge",
+          "description" : "La furie de l'ombre est libérée. Elle inflige 27 points de dégâts d'Ombre et étourdit tous les ennemis dans un rayon de 8 mètres pendant 3 sec."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10964,
+        "name" : "Protection du Néant",
+        "icon" : "spell_shadow_netherprotection",
+        "x" : 3,
+        "y" : 4,
+        "req" : 12120,
+        "ranks" : [ {
+          "description" : "Lorsque votre Gardien de l'ombre, Gardien du Néant ou d'autres effets absorbent des dégâts, vous bénéficiez de la Protection du Néant, qui réduit tous les dégâts de la même école de 15% pendant 12 sec."
+        }, {
+          "description" : "Lorsque votre Gardien de l'ombre, Gardien du Néant ou d'autres effets absorbent des dégâts, vous bénéficiez de la Protection du Néant, qui réduit tous les dégâts de la même école de 30% pendant 12 sec."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10982,
+        "name" : "Diablotin surpuissant",
+        "icon" : "ability_warlock_empoweredimp",
+        "x" : 0,
+        "y" : 5,
+        "req" : 11182,
+        "ranks" : [ {
+          "description" : "L'Eclair de feu de votre diablotin a 2% de chances de permettre à votre prochain sort Feu de l'âme lancé dans les 8 sec d'être instantané."
+        }, {
+          "description" : "L'Eclair de feu de votre diablotin a 4% de chances de permettre à votre prochain sort Feu de l'âme lancé dans les 8 sec d'être instantané."
+        } ],
+        "keyAbility" : false,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10962,
+        "name" : "Plaie de tumulte",
+        "icon" : "ability_warlock_baneofhavoc",
+        "x" : 2,
+        "y" : 5,
+        "ranks" : [ {
+          "cost" : "10% du mana de base",
+          "range" : "40 yd range",
+          "castTime" : "Incantation instantanée",
+          "description" : "Afflige la cible d'une plaie pendant 5 min, qui permet à 15% de tous les dégâts infligés par le démoniste aux autres cibles d'être également infligés à la cible maudite. \n\n\n\nUne seule cible à la fois peut être affectée par Plaie de tumulte, et une seule plaie par démoniste peut être active sur une cible."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      }, {
+        "id" : 10986,
+        "name" : "Trait du chaos",
+        "icon" : "ability_warlock_chaosbolt",
+        "x" : 1,
+        "y" : 6,
+        "req" : 10984,
+        "ranks" : [ {
+          "cost" : "7% du mana de base",
+          "range" : "40 yd range",
+          "castTime" : "Incantation de 2,5 s.",
+          "cooldown" : "12 s. de recharge",
+          "description" : "Lance un éclair de feu chaotique sur l'ennemi et lui inflige 0 points de dégâts de Feu. On ne peut pas résister à Trait du chaos, et il traverse tous les effets d'absorption."
+        } ],
+        "keyAbility" : true,
+        "categoryMask0" : 0,
+        "categoryMask1" : 0
+      } ]
+    } ]
+  }
+}
