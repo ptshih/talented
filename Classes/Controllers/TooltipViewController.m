@@ -272,7 +272,9 @@ static UIImage *_closeButtonImage = nil;
         self.depReqLabel.hidden = YES;
       } else {
         self.depReqLabel.hidden = NO;
-        self.depReqLabel.text = [NSString stringWithFormat:@"Requires %d point(s) in %@", [req.talent.ranks count], req.talent.talentName];
+        // Singular vs. Plural
+        NSString *depReqFormat = ([req.talent.ranks count] > 1) ? NSLocalizedString(@"Requires %d points in %@", @"Requires %d point(s) in %@") : NSLocalizedString(@"Requires %d point in %@", @"Requires %d point in %@");
+        self.depReqLabel.text = [NSString stringWithFormat:depReqFormat, [req.talent.ranks count], req.talent.talentName];
         
         labelSize = [self.depReqLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
         self.depReqLabel.top = _desiredHeight;
@@ -289,7 +291,9 @@ static UIImage *_closeButtonImage = nil;
     // Only show if tier dependency isn't met
     if (self.treeView.pointsInTree < 5 * [self.talentView.talent.tier integerValue]) {
       self.tierReqLabel.hidden = NO;
-      self.tierReqLabel.text = [NSString stringWithFormat:@"Requires %d points in %@ Talents", [self.talentView.talent.tier integerValue] * 5, self.treeView.talentTree.talentTreeName];
+      
+      NSString *tierReqFormat = NSLocalizedString(@"Requires %d points in %@", @"Requires %d points in %@");
+      self.tierReqLabel.text = [NSString stringWithFormat:tierReqFormat, [self.talentView.talent.tier integerValue] * 5, self.treeView.talentTree.talentTreeName];
 
       labelSize = [self.tierReqLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
       self.tierReqLabel.top = _desiredHeight;

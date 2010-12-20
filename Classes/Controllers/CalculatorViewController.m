@@ -189,7 +189,7 @@ static UIImage *_redButtonBackground = nil;
   // If the side two trees are enabled, we have to reset the side trees also
   if (self.specTreeNo == index && (self.state == CalculatorStateAllEnabled || self.state == CalculatorStateFinished)) {
     // LOGIC NEEDED
-    UIAlertView *resetAlertView = [[UIAlertView alloc] initWithTitle:@"Can't Reset Tree" message:@"Can't reset specialization tree until other two talent trees have 0 points allocated!" delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+    UIAlertView *resetAlertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Can't Reset Tree", @"Can't Reset Tree") message:NSLocalizedString(@"Can't reset specialization tree until other two talent trees have 0 points allocated!", @"Can't Reset Tree Message") delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", @"OK") otherButtonTitles:nil];
     [resetAlertView show];
     [resetAlertView autorelease];
     return;
@@ -255,6 +255,11 @@ static UIImage *_redButtonBackground = nil;
   [_saveButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
   [_swapButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
   [_resetButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
+  
+  [_backButton setTitle:NSLocalizedString(@"Choose a Class", @"Choose a Class") forState:UIControlStateNormal];
+  [_loadButton setTitle:NSLocalizedString(@"Load", @"Load") forState:UIControlStateNormal];
+  [_saveButton setTitle:NSLocalizedString(@"Save", @"Save") forState:UIControlStateNormal];
+  [_resetButton setTitle:NSLocalizedString(@"Reset All", @"Reset All") forState:UIControlStateNormal];
 }
 
 - (void)setupHeader {  
@@ -564,9 +569,9 @@ static UIImage *_redButtonBackground = nil;
 
 #pragma mark Footer Updates
 - (void)updateFooterLabels {
-  _requiredLevel.text = [NSString stringWithFormat:@"Required Level: %d", [self getRequiredLevel]];
-  _pointsLeft.text = [NSString stringWithFormat:@"Points Left: %d", MAX_POINTS - self.totalPoints];
-  _pointsSpent.text = [NSString stringWithFormat:@"Points Spent: %d / %d / %d", [[self.treeViewArray objectAtIndex:0] pointsInTree], [[self.treeViewArray objectAtIndex:1] pointsInTree], [[self.treeViewArray objectAtIndex:2] pointsInTree]];
+  _requiredLevel.text = [NSString stringWithFormat:@"%@: %d", NSLocalizedString(@"Required Level", @"Required Level"), [self getRequiredLevel]];
+  _pointsLeft.text = [NSString stringWithFormat:@"%@: %d", NSLocalizedString(@"Points Left", @"Points Left"), MAX_POINTS - self.totalPoints];
+  _pointsSpent.text = [NSString stringWithFormat:@"%@: %d / %d / %d", NSLocalizedString(@"Points Spent", @"Points Spent"), [[self.treeViewArray objectAtIndex:0] pointsInTree], [[self.treeViewArray objectAtIndex:1] pointsInTree], [[self.treeViewArray objectAtIndex:2] pointsInTree]];
 }
 
 - (NSInteger)getRequiredLevel {
