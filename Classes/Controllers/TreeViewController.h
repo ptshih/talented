@@ -21,6 +21,7 @@
 - (void)dismissPopoverFromTree:(TreeViewController *)treeView;
 - (void)treeAdd:(TreeViewController *)treeView forTalentView:(TalentViewController *)talentView;
 - (void)treeSubtract:(TreeViewController *)treeView forTalentView:(TalentViewController *)talentView;
+- (BOOL)canSubtract:(TreeViewController *)treeView;
 @end
 
 typedef enum {

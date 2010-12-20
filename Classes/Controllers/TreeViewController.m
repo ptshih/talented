@@ -212,6 +212,15 @@
 }
 
 - (BOOL)canSubtractPoint:(TalentViewController *)talentView {
+  // Ask Calculator if we can subtract points based on points spent in other trees
+  if (self.isSpecTree) {
+    if (![self.delegate canSubtract:self]) {
+      if (self.pointsInTree <= 31) {
+        return NO;
+      }
+    }
+  }
+  
   // Check to see if talent is at zero
   if (talentView.currentRank == 0) {
     return NO;
@@ -230,11 +239,13 @@
       maxTier = i;
     }
   }
+  
+//  if (sumOfNextTiers > 0 && _pointsInTier[tier] <= 5) return NO;
 
   // If there are points after our tier, check again
   // Otherwise proceed
   NSInteger pointsToTier = 0;
-  NSInteger pointsRequiredAtTier = tier * 5;
+  NSInteger pointsRequiredAtTier = tier * 5 + 5;
   NSInteger pointsRequiredAtMaxTier = maxTier * 5;
   NSInteger sumOfAllTiersToMaxTier = 0;
   if (sumOfNextTiers > 0) {
@@ -243,6 +254,9 @@
       pointsToTier += _pointsInTier[k];
     }
     if (pointsToTier <= pointsRequiredAtTier) return NO;
+    
+    // If we are tier 0
+    if (_pointsInTier[tier] <= 5 && pointsToTier <= pointsRequiredAtTier) return NO;
     
     // Sum all points until the farthest tier with points
     for (int j = 0; j < maxTier; j++) {
@@ -280,14 +294,14 @@
 - (void)updateTalentState {
   // Update state for all talents in this tree
   for (TalentViewController *talentView in [self.talentViewDict allValues]) {
-    if (self.state == TreeStateFinished) {
-      // do nothing
-    } else if (self.state == TreeStateDisabled) {
+    if (self.state == TreeStateDisabled) {
       talentView.state = TalentStateDisabled;
     } else if (talentView.currentRank == [talentView.talent.ranks count]) {    // Check for max
       talentView.state = TalentStateMaxed;
     } else if ([self canAddPoint:talentView]) {
       talentView.state = TalentStateEnabled;
+    } else if (self.state == TreeStateFinished) {
+      // do nothing
     } else {
       talentView.state = TalentStateDisabled;
     }

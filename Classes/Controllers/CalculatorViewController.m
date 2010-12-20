@@ -471,6 +471,20 @@ static UIImage *_redButtonBackground = nil;
   [self updateStateFromTreeNo:treeView.treeNo];
 }
 
+- (BOOL)canSubtract:(TreeViewController *)treeView {
+  if (self.state == CalculatorStateAllEnabled || self.state == CalculatorStateFinished) {
+    for (TreeViewController *tree in self.treeViewArray) {
+      if (tree.treeNo == self.specTreeNo) continue;
+      if (tree.pointsInTree > 0) {
+        return NO;
+      }
+    }
+  } else {
+    return YES;
+  }
+  return YES;
+}
+
 #pragma mark SummaryDelegate
 - (void)specTreeSelected:(NSInteger)treeNo {
   // Update the primary spec tree

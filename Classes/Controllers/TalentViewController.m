@@ -115,7 +115,6 @@ static UIImage *_abilityYellow = nil;
 
 - (void)updateStateFinished {
   DLog(@"Talent: %@ Update State Finished", self.talent.talentName);
-  [self updateState];
   
   // If we are finished, hide all labels for enabled talents with 0 points
   if (self.state != TalentStateDisabled && self.currentRank == 0) {
