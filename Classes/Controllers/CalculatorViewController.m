@@ -187,9 +187,9 @@ static UIImage *_redButtonBackground = nil;
 - (void)resetTreeAtIndex:(NSInteger)index {
   // If we are resetting the spec tree, make sure we aren't in EnabledAll state
   // If the side two trees are enabled, we have to reset the side trees also
-  if (self.specTreeNo == index && self.state == CalculatorStateAllEnabled) {
+  if (self.specTreeNo == index && (self.state == CalculatorStateAllEnabled || self.state == CalculatorStateFinished)) {
     // LOGIC NEEDED
-    UIAlertView *resetAlertView = [[UIAlertView alloc] initWithTitle:@"Can't Rest Tree" message:@"Can't reset specialization tree until other two talent trees have 0 points allocated!" delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+    UIAlertView *resetAlertView = [[UIAlertView alloc] initWithTitle:@"Can't Reset Tree" message:@"Can't reset specialization tree until other two talent trees have 0 points allocated!" delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
     [resetAlertView show];
     [resetAlertView autorelease];
     return;
