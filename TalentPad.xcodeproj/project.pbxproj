@@ -129,6 +129,7 @@
 		2551362312BB474A0030931A /* shaman_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 2551360F12BB474A0030931A /* shaman_fr.json */; };
 		2551362412BB474A0030931A /* warlock_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 2551361012BB474A0030931A /* warlock_fr.json */; };
 		2551362512BB474A0030931A /* warrior_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 2551361112BB474A0030931A /* warrior_fr.json */; };
+		255CAC8F12C01B7300F99462 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 255CAC8E12C01B7300F99462 /* Localizable.strings */; };
 		2570267C12B9EF72000A4D7B /* launcher_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2570267B12B9EF72000A4D7B /* launcher_bg.png */; };
 		257026D712B9F857000A4D7B /* loader_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 257026D612B9F857000A4D7B /* loader_bg.png */; };
 		2570288212BA1770000A4D7B /* deathwing_wings.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2570287D12BA1770000A4D7B /* deathwing_wings.jpg */; };
@@ -1024,6 +1025,12 @@
 		2551360F12BB474A0030931A /* shaman_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shaman_fr.json; sourceTree = "<group>"; };
 		2551361012BB474A0030931A /* warlock_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warlock_fr.json; sourceTree = "<group>"; };
 		2551361112BB474A0030931A /* warrior_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warrior_fr.json; sourceTree = "<group>"; };
+		255CAC9012C01B8A00F99462 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
+		255CAC9112C01BAB00F99462 /* German */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/Localizable.strings; sourceTree = "<group>"; };
+		255CAC9212C01BB000F99462 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Spanish; path = Spanish.lproj/Localizable.strings; sourceTree = "<group>"; };
+		255CAC9312C01BB900F99462 /* Russian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Russian; path = Russian.lproj/Localizable.strings; sourceTree = "<group>"; };
+		255CAC9412C01BBC00F99462 /* Korean */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Korean; path = Korean.lproj/Localizable.strings; sourceTree = "<group>"; };
+		255CACA312C01CFC00F99462 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2570267B12B9EF72000A4D7B /* launcher_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launcher_bg.png; sourceTree = "<group>"; };
 		257026D612B9F857000A4D7B /* loader_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loader_bg.png; sourceTree = "<group>"; };
 		2570287D12BA1770000A4D7B /* deathwing_wings.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deathwing_wings.jpg; sourceTree = "<group>"; };
@@ -2959,6 +2966,7 @@
 				257AEA6D129E910900DE9D51 /* TalentPad.xcdatamodel */,
 				25FBA6C412B8308D00F306BC /* CoreDataTests-Info.plist */,
 				25FBA8F812B8367C00F306BC /* TalentPad-Info copy.plist */,
+				255CAC8E12C01B7300F99462 /* Localizable.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -3030,6 +3038,9 @@
 				Japanese,
 				French,
 				German,
+				Spanish,
+				Russian,
+				Korean,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -3828,6 +3839,7 @@
 				25E13BC712BD05CE0071FE6E /* shaman_de.json in Resources */,
 				25E13BC812BD05CE0071FE6E /* warlock_de.json in Resources */,
 				25E13BC912BD05CE0071FE6E /* warrior_de.json in Resources */,
+				255CAC8F12C01B7300F99462 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3948,6 +3960,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		255CAC8E12C01B7300F99462 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				255CACA312C01CFC00F99462 /* English */,
+				255CAC9012C01B8A00F99462 /* French */,
+				255CAC9112C01BAB00F99462 /* German */,
+				255CAC9212C01BB000F99462 /* Spanish */,
+				255CAC9312C01BB900F99462 /* Russian */,
+				255CAC9412C01BBC00F99462 /* Korean */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {

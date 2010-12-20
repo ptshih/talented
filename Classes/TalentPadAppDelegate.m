@@ -25,21 +25,21 @@
 @synthesize window;
 @synthesize launcherViewController = _launcherViewController;
 
-- (void)loadTalentData {
-//  if (![[NSUserDefaults standardUserDefaults] objectForKey:@"hasLoadedData"]) {
-  [self talentDataTestForClass:@"warrior"];
-  [self talentDataTestForClass:@"paladin"];
-  [self talentDataTestForClass:@"hunter"];
-  [self talentDataTestForClass:@"rogue"];
-  [self talentDataTestForClass:@"priest"];
-  [self talentDataTestForClass:@"deathknight"];
-  [self talentDataTestForClass:@"shaman"];
-  [self talentDataTestForClass:@"mage"];
-  [self talentDataTestForClass:@"warlock"];
-  [self talentDataTestForClass:@"druid"];
-//    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasLoadedData"];
-//    [[NSUserDefaults standardUserDefaults] synchronize];
-//  }
+- (void)loadTalentDataForLanguage {
+  if (![[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"hasLoadedData_%@", USER_LANGUAGE]]) {
+    [self talentDataTestForClass:@"warrior"];
+    [self talentDataTestForClass:@"paladin"];
+    [self talentDataTestForClass:@"hunter"];
+    [self talentDataTestForClass:@"rogue"];
+    [self talentDataTestForClass:@"priest"];
+    [self talentDataTestForClass:@"deathknight"];
+    [self talentDataTestForClass:@"shaman"];
+    [self talentDataTestForClass:@"mage"];
+    [self talentDataTestForClass:@"warlock"];
+    [self talentDataTestForClass:@"druid"];
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:[NSString stringWithFormat:@"hasLoadedData_%@", USER_LANGUAGE]];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+  }
 }
 
 
@@ -101,7 +101,7 @@
   [self.window makeKeyAndVisible];
   
   if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"lastSelectedLanguage"] isEqual:USER_LANGUAGE]) {
-    [self loadTalentData];
+    [self loadTalentDataForLanguage];
   }
 
   return YES;
