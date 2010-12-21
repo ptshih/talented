@@ -50,8 +50,9 @@
   _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:context sectionNameKeyPath:@"characterClassId" cacheName:nil];
   
   NSError *error;
-  BOOL success = [self.fetchedResultsController performFetch:&error];
-  DLog(@"fetch request for all saves status: %d", success);
+  if ([self.fetchedResultsController performFetch:&error]) {
+    DLog(@"fetch request for all saves succeeded");
+  }
 }
 
 - (void)viewDidLoad {
@@ -121,6 +122,46 @@
   } 
 }
 
+- (UIImage *)iconForCharacterClassId:(NSInteger)characterClassId {
+  NSString *className;
+  switch (characterClassId) {
+    case 1:
+      className = @"warrior";
+      break;
+    case 2:
+      className = @"paladin";
+      break;
+    case 3:
+      className = @"hunter";
+      break;
+    case 4:
+      className = @"rogue";
+      break;
+    case 5:
+      className = @"priest";
+      break;
+    case 6:
+      className = @"deathknight";
+      break;
+    case 7:
+      className = @"shaman";
+      break;
+    case 8:
+      className = @"mage";
+      break;
+    case 9:
+      className = @"warlock";
+      break;
+    case 11:
+      className = @"druid";
+      break;
+    default:
+      className = @"ghostcrawler";
+      break;
+  }
+  return [UIImage imageNamed:[NSString stringWithFormat:@"icon_%@.png", className]];
+}
+
 #pragma mark UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
   return [[self.fetchedResultsController sections] count];
@@ -156,6 +197,7 @@
   
   Save *save = [self.fetchedResultsController objectAtIndexPath:indexPath];
   cell.textLabel.text = [self treeNameForCharacterClassId:[[[[self.fetchedResultsController sections] objectAtIndex:indexPath.section] name] integerValue] andTreeNo:[save.saveSpecTree integerValue]];
+  cell.imageView.image = [self iconForCharacterClassId:[save.characterClassId integerValue]];
   
   return cell;
 }
