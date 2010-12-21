@@ -387,7 +387,7 @@ static UIImage *_closeButtonImage = nil;
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"rank" ascending:YES];
     NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor, nil];
     [sortDescriptor release];
-    NSArray *ranks = [self.talentView.talent.ranks sortedArrayUsingDescriptors:sortDescriptors];
+    NSArray *ranks = [[self.talentView.talent.ranks allObjects] sortedArrayUsingDescriptors:sortDescriptors];
     
     // If currently at rank 0, we show rank 1 text
     // Else we show the current rank's text

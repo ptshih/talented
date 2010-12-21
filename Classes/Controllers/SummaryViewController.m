@@ -85,7 +85,7 @@ static UIImage *_redButtonBackground = nil;
   }
 #endif
   
-  [_primarySpellButton setImage:[ImageManipulator roundCornerImageWithImage:myImage withCornerWidth:20 withCornerHeight:20] forState:UIControlStateNormal];
+  [_primarySpellButton setBackgroundImage:[ImageManipulator roundCornerImageWithImage:myImage withCornerWidth:20 withCornerHeight:20] forState:UIControlStateNormal];
   
   [self setupPrimarySpells];
   
@@ -102,7 +102,7 @@ static UIImage *_redButtonBackground = nil;
   NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"index" ascending:YES];
   NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor, nil];
   [sortDescriptor release];
-  _primarySpells = [[self.talentTree.primarySpells sortedArrayUsingDescriptors:sortDescriptors] retain];
+  _primarySpells = [[[self.talentTree.primarySpells allObjects] sortedArrayUsingDescriptors:sortDescriptors] retain];
   DLog(@"found primary spells: %@ in tree:%@", self.primarySpells, self.talentTree.talentTreeName);
   
   NSInteger i = 0;
@@ -125,7 +125,7 @@ static UIImage *_redButtonBackground = nil;
     
     PrimarySpellView *primarySpellView = (PrimarySpellView *)[[[NSBundle mainBundle] loadNibNamed:@"PrimarySpellView" owner:self options:nil] objectAtIndex:0];
     
-    [primarySpellView.primarySpellIcon setImage:myImage forState:UIControlStateNormal];
+    [primarySpellView.primarySpellIcon setBackgroundImage:myImage forState:UIControlStateNormal];
     primarySpellView.primarySpellIcon.primarySpellIndex = i;
     primarySpellView.primarySpellIcon.parentView = primarySpellView;
     

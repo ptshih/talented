@@ -371,7 +371,7 @@ static UIImage *_redButtonBackground = nil;
     TreeViewController *tvc = [[TreeViewController alloc] initWithNibName:@"TreeViewController" bundle:nil];
     tvc.talentTree = talentTree;
     tvc.delegate = self;
-    tvc.talentArray = [talentTree.talents sortedArrayUsingDescriptors:sortDescriptors];
+    tvc.talentArray = [[talentTree.talents allObjects] sortedArrayUsingDescriptors:sortDescriptors];
     tvc.characterClassId = self.characterClassId;
     tvc.treeNo = [[talentTree treeNo] integerValue];
     tvc.isSpecTree = (tvc.treeNo == self.specTreeNo) ? YES : NO;
