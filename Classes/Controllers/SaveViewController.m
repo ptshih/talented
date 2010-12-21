@@ -17,20 +17,31 @@
 @interface SaveViewController (Private)
 
 - (void)fetchAllSaves;
+- (void)fetchSavesForCharacterClass;
 
 @end
 
 @implementation SaveViewController
 
-@synthesize fetchedResultsController = _fetchedResultsController;\
+@synthesize fetchedResultsController = _fetchedResultsController;
+@synthesize characterClassId = _characterClassId;
 @synthesize delegate = _delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
-    [self fetchAllSaves];
+    _characterClassId = 0;
   }
   return self;
+}
+
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  if (self.characterClassId > 0) {
+    [self fetchSavesForCharacterClass];
+  } else {
+    [self fetchAllSaves];
+  }
 }
 
 - (void)fetchAllSaves {
@@ -56,7 +67,25 @@
   }
 }
 
-- (void)viewDidLoad {
+- (void)fetchSavesForCharacterClass {
+  NSSortDescriptor *timestampSortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"timestamp" ascending:NO];
+  NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:timestampSortDescriptor, nil];
+  [timestampSortDescriptor release];
+  
+  NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
+  NSEntityDescription *entity = [NSEntityDescription entityForName:@"Save" inManagedObjectContext:context];
+  
+  NSFetchRequest *request = [Save fetchRequestForSavesWithCharacterClassId:self.characterClassId];
+  [request setEntity:entity];
+  [request setSortDescriptors:sortDescriptors];
+  [sortDescriptors release];
+  
+  _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:context sectionNameKeyPath:nil cacheName:nil];
+  
+  NSError *error;
+  if ([self.fetchedResultsController performFetch:&error]) {
+    DLog(@"fetch request for class saves succeeded");
+  }
 }
 
 #pragma mark IBAction
@@ -85,8 +114,8 @@
   }
 }
 
-- (NSString *)nameForSectionInfo:(id)sectionInfo {
-  switch ([[sectionInfo name] integerValue]) {
+- (NSString *)nameForCharacterClassId:(NSInteger)characterClassId {
+  switch (characterClassId) {
     case 1:
       return NSLocalizedString(@"Warrior", @"Warrior");
       break;
@@ -175,8 +204,11 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
   id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
-
-  return [self nameForSectionInfo:sectionInfo];
+  if (self.characterClassId > 0) {
+    return [self nameForCharacterClassId:self.characterClassId];
+  } else {
+    return [self nameForCharacterClassId:[[sectionInfo name] integerValue]];
+  }
 }
 
 //- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
@@ -197,7 +229,7 @@
 	}
   
   Save *save = [self.fetchedResultsController objectAtIndexPath:indexPath];
-  cell.textLabel.text = [self treeNameForCharacterClassId:[[[[self.fetchedResultsController sections] objectAtIndex:indexPath.section] name] integerValue] andTreeNo:[save.saveSpecTree integerValue]];
+  cell.textLabel.text = [self treeNameForCharacterClassId:[save.characterClassId integerValue] andTreeNo:[save.saveSpecTree integerValue]];
   cell.imageView.image = [self iconForCharacterClassId:[save.characterClassId integerValue]];
   
   return cell;

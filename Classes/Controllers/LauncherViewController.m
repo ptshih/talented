@@ -94,13 +94,15 @@ static UIImage *_arthas = nil;
 }
 
 - (void)classViewAnimation {
+  _loadButton.alpha = 0.0;
   _classView.alpha = 0.0;
   [UIView beginAnimations:@"ClassViewAnimation" context:nil];
 	[UIView setAnimationDelegate:nil];
 	[UIView setAnimationBeginsFromCurrentState:NO];
 	[UIView setAnimationCurve:UIViewAnimationCurveLinear];  
-	[UIView setAnimationDuration:1]; // Fade out is configurable in seconds (FLOAT)
-  _classView.alpha = 0.6;
+	[UIView setAnimationDuration:1.2]; // Fade out is configurable in seconds (FLOAT)
+  _loadButton.alpha = 1.0;
+  _classView.alpha = 1.0;
 	[UIView commitAnimations];
 }
 
@@ -192,7 +194,6 @@ static UIImage *_arthas = nil;
   svc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
   svc.delegate = self;
   [self presentModalViewController:svc animated:YES];
-  
 }
 
 #pragma mark SaveDelegate

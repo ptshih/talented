@@ -114,8 +114,15 @@ static UIImage *_redButtonBackground = nil;
 }
 
 - (IBAction)load {
-  NSString *tmpString = @"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,3,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0";
-  [self loadWithSaveString:tmpString andSpecTree:1];
+  SaveViewController *svc = [[SaveViewController alloc] initWithNibName:@"SaveViewController" bundle:nil];
+  svc.modalPresentationStyle = UIModalPresentationFormSheet;
+  svc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+  svc.delegate = self;
+  svc.characterClassId = self.characterClassId;
+  [self presentModalViewController:svc animated:YES];
+  
+//  NSString *tmpString = @"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,3,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0";
+//  [self loadWithSaveString:tmpString andSpecTree:1];
 }
 
 - (void)loadWithSaveString:(NSString *)saveString andSpecTree:(NSInteger)specTree {
@@ -134,6 +141,7 @@ static UIImage *_redButtonBackground = nil;
     }
     if (treeVC.treeNo == self.specTreeNo) treeVC.isSpecTree = YES;
     treeVC.pointsInTree = j;
+    self.totalPoints += j;
   }
   [self updateStateFromTreeNo:self.specTreeNo];
   
@@ -168,6 +176,16 @@ static UIImage *_redButtonBackground = nil;
     }
   }
   return [saveArray componentsJoinedByString:@","];
+}
+
+#pragma mark SaveDelegate
+- (void)loadSave:(Save *)save fromSender:(id)sender {
+  [sender dismissModalViewControllerAnimated:NO];
+  DLog(@"loading save: %@", save);
+  [self resetAll];
+  self.characterClassId = [save.characterClassId integerValue];
+  self.specTreeNo = [save.saveSpecTree integerValue];
+  [self loadWithSaveString:save.saveString andSpecTree:[save.saveSpecTree integerValue]];
 }
 
 #pragma mark Reset

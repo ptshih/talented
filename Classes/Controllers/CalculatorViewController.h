@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "TreeViewController.h"
 #import "SummaryViewController.h"
+#import "SaveViewController.h"
 
 typedef enum {
   CalculatorStateEnabled = 0,
@@ -18,7 +19,7 @@ typedef enum {
 
 @class TooltipViewController;
 
-@interface CalculatorViewController : UIViewController <TreeDelegate, SummaryDelegate> {
+@interface CalculatorViewController : UIViewController <TreeDelegate, SummaryDelegate, SaveDelegate> {
   IBOutlet UIView *_talentTreeView;
   IBOutlet UIView *_summaryView;
   IBOutlet UIButton *_swapButton;

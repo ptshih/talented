@@ -20,10 +20,13 @@
   IBOutlet UITableView *_tableView;
   NSFetchedResultsController * _fetchedResultsController;
   
+  NSInteger _characterClassId;
+  
   id <SaveDelegate> _delegate;
 }
 
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, assign) NSInteger characterClassId;
 @property (nonatomic, assign) id <SaveDelegate> delegate;
 
 - (IBAction)add;
