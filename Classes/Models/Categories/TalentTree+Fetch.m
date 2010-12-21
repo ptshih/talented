@@ -12,7 +12,12 @@
 @implementation TalentTree (Fetch)
 
 + (NSFetchRequest *)fetchRequestForTalentTreesWithCharacterClassId:(NSInteger)characterClassId {
-  NSFetchRequest *request = [NSManagedObject fetchRequestWithName:@"getTalentTreesWithCharacterClassId" andSubstitutionVariables:[NSDictionary dictionaryWithObject:[NSNumber numberWithInt:characterClassId] forKey:@"characterClassId"]];
+  NSFetchRequest *request = [NSManagedObject fetchRequestWithName:@"getTalentTreesWithCharacterClassId" andSubstitutionVariables:[NSDictionary dictionaryWithObject:[NSNumber numberWithInteger:characterClassId] forKey:@"characterClassId"]];
+  return request;
+}
+
++ (NSFetchRequest *)fetchRequestForTalentTreeWithCharacterClassId:(NSInteger)characterClassId andTreeNo:(NSInteger)treeNo {
+  NSFetchRequest *request = [NSManagedObject fetchRequestWithName:@"getTalentTreeWithCharacterClassIdAndTreeNo" andSubstitutionVariables:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:treeNo], @"treeNo", [NSNumber numberWithInteger:characterClassId], @"characterClassId", nil]];
   return request;
 }
 

@@ -8,6 +8,7 @@
 
 #import "LauncherViewController.h"
 #import "CalculatorViewController.h"
+#import "SaveViewController.h"
 #import "UIView+Additions.h"
 #import <QuartzCore/QuartzCore.h>
 
@@ -84,6 +85,7 @@ static UIImage *_arthas = nil;
 - (void)viewDidLoad {
   [super viewDidLoad];
   [_loadButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
+  [_loadButton setTitle:NSLocalizedString(@"Load", @"Load") forState:UIControlStateNormal];
   _launcherBackground.transform = CGAffineTransformMakeScale(1.3, 1.3);
   [self classViewAnimation];
 //  [self launcherAnimation];
@@ -180,6 +182,14 @@ static UIImage *_arthas = nil;
 }
 - (IBAction)druid {
   [self selectClassWithId:11];
+}
+
+- (IBAction)load {
+  SaveViewController *svc = [[SaveViewController alloc] initWithNibName:@"SaveViewController" bundle:nil];
+  svc.modalPresentationStyle = UIModalPresentationFormSheet;
+  svc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+  [self presentModalViewController:svc animated:YES];
+  
 }
 
 

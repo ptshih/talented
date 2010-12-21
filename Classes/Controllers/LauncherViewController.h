@@ -33,4 +33,6 @@
 - (IBAction)warlock;
 - (IBAction)druid;
 
+- (IBAction)load;
+
 @end
