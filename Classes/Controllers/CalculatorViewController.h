@@ -78,4 +78,6 @@ typedef enum {
 - (IBAction)swapViews;
 - (void)hideTooltip;
 
+- (void)loadWithSaveString:(NSString *)saveString andSpecTree:(NSInteger)specTree;
+
 @end

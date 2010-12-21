@@ -9,12 +9,22 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
+@class Save;
+
+@protocol SaveDelegate <NSObject>
+@required
+- (void)loadSave:(Save *)save fromSender:(id)sender;
+@end
+
 @interface SaveViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchDisplayDelegate> {
   IBOutlet UITableView *_tableView;
   NSFetchedResultsController * _fetchedResultsController;
+  
+  id <SaveDelegate> _delegate;
 }
 
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, assign) id <SaveDelegate> delegate;
 
 - (IBAction)add;
 - (IBAction)done;

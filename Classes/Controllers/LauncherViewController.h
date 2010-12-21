@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SaveViewController.h"
 
-
-@interface LauncherViewController : UIViewController {
+@interface LauncherViewController : UIViewController <SaveDelegate> {
   IBOutlet UIButton *_loadButton;
   IBOutlet UIImageView *_launcherBackground;
   IBOutlet UIImageView *_launcherBackgroundTwo;

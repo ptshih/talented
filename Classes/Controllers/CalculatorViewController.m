@@ -30,7 +30,6 @@ static UIImage *_redButtonBackground = nil;
 @interface CalculatorViewController (Private)
 
 - (void)saveWithName:(NSString *)saveName;
-- (void)loadWithSaveString:(NSString *)saveString andSpecTree:(NSNumber *)specTree;
 - (NSString *)generateSaveString;
 - (void)resetTreeAtIndex:(NSInteger)index;
 - (NSInteger)getRequiredLevel;
@@ -116,12 +115,12 @@ static UIImage *_redButtonBackground = nil;
 
 - (IBAction)load {
   NSString *tmpString = @"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,3,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0";
-  [self loadWithSaveString:tmpString andSpecTree:[NSNumber numberWithInteger:1]];
+  [self loadWithSaveString:tmpString andSpecTree:1];
 }
 
-- (void)loadWithSaveString:(NSString *)saveString andSpecTree:(NSNumber *)specTree {
+- (void)loadWithSaveString:(NSString *)saveString andSpecTree:(NSInteger)specTree {
   [self resetAll];
-  self.specTreeNo = [specTree integerValue];
+  self.specTreeNo = specTree;
   NSArray *saveArray = [saveString componentsSeparatedByString:@","];
   NSInteger i = 0;
   NSInteger j = 0;

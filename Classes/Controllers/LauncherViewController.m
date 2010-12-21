@@ -11,6 +11,8 @@
 #import "SaveViewController.h"
 #import "UIView+Additions.h"
 #import <QuartzCore/QuartzCore.h>
+#import "Constants.h"
+#import "Save.h"
 
 static UIImage *_redButtonBackground = nil;
 static UIImage *_deathwing = nil;
@@ -188,10 +190,23 @@ static UIImage *_arthas = nil;
   SaveViewController *svc = [[SaveViewController alloc] initWithNibName:@"SaveViewController" bundle:nil];
   svc.modalPresentationStyle = UIModalPresentationFormSheet;
   svc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+  svc.delegate = self;
   [self presentModalViewController:svc animated:YES];
   
 }
 
+#pragma mark SaveDelegate
+- (void)loadSave:(Save *)save fromSender:(id)sender {
+  [sender dismissModalViewControllerAnimated:NO];
+  DLog(@"loading save: %@", save);
+  
+  CalculatorViewController *cvc = [[CalculatorViewController alloc] initWithNibName:@"CalculatorViewController" bundle:nil];
+  cvc.characterClassId = [save.characterClassId integerValue];
+  cvc.specTreeNo = [save.saveSpecTree integerValue];
+  [self presentModalViewController:cvc animated:YES];
+  [cvc loadWithSaveString:save.saveString andSpecTree:[save.saveSpecTree integerValue]];
+  [cvc release];
+}
 
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

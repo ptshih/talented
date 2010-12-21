@@ -22,7 +22,8 @@
 
 @implementation SaveViewController
 
-@synthesize fetchedResultsController = _fetchedResultsController;
+@synthesize fetchedResultsController = _fetchedResultsController;\
+@synthesize delegate = _delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -205,6 +206,14 @@
 #pragma mark UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
   return 60.0;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+  Save *save = [self.fetchedResultsController objectAtIndexPath:indexPath];
+  
+  if (self.delegate) {
+    [self.delegate loadSave:save fromSender:self];
+  }
 }
 
 // Override to allow orientations other than the default portrait orientation.
