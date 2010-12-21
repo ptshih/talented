@@ -206,10 +206,17 @@ static UIImage *_redButtonBackground = nil;
   // If the side two trees are enabled, we have to reset the side trees also
   if (self.specTreeNo == index && (self.state == CalculatorStateAllEnabled || self.state == CalculatorStateFinished)) {
     // LOGIC NEEDED
-    UIAlertView *resetAlertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Can't Reset Tree", @"Can't Reset Tree") message:NSLocalizedString(@"Can't reset specialization tree until other two talent trees have 0 points allocated!", @"Can't Reset Tree Message") delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", @"OK") otherButtonTitles:nil];
-    [resetAlertView show];
-    [resetAlertView autorelease];
-    return;
+    NSInteger pointsInOtherTrees = 0;
+    for (TreeViewController *tree in self.treeViewArray) {
+      if (tree.treeNo == self.specTreeNo) continue;
+      pointsInOtherTrees += tree.pointsInTree;
+    }
+    if (pointsInOtherTrees > 0) {
+      UIAlertView *resetAlertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Can't Reset Tree", @"Can't Reset Tree") message:NSLocalizedString(@"Can't reset specialization tree until other two talent trees have 0 points allocated!", @"Can't Reset Tree Message") delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", @"OK") otherButtonTitles:nil];
+      [resetAlertView show];
+      [resetAlertView autorelease];
+      return;
+    }
   }
   
   if ([[self.treeViewArray objectAtIndex:index] state] == TreeStateDisabled) {
