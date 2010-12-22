@@ -9,10 +9,9 @@
 #import "SaveViewController.h"
 #import "Save.h"
 #import "Save+Fetch.h"
-#import "TalentTree.h"
-#import "TalentTree+Fetch.h"
 #import "SMACoreDataStack.h"
 #import "Constants.h"
+#import "SaveCell.h"
 
 @interface SaveViewController (Private)
 
@@ -97,22 +96,6 @@
 }
 
 #pragma mark Helpers
-- (NSString *)treeNameForCharacterClassId:(NSInteger)characterClassId andTreeNo:(NSInteger)treeNo {
-  NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
-  NSEntityDescription *entity = [NSEntityDescription entityForName:@"TalentTree" inManagedObjectContext:context];
-  
-  NSFetchRequest *request = [TalentTree fetchRequestForTalentTreeWithCharacterClassId:characterClassId andTreeNo:treeNo];
-  [request setEntity:entity];
-  
-  NSError *error;
-  NSArray *array = [context executeFetchRequest:request error:&error];
-  if(array) {
-    TalentTree *specTree = [array objectAtIndex:0];
-    return specTree.talentTreeName;
-  } else {
-    return @"Not Found";
-  }
-}
 
 - (NSString *)nameForCharacterClassId:(NSInteger)characterClassId {
   switch (characterClassId) {
@@ -152,45 +135,6 @@
   } 
 }
 
-- (UIImage *)iconForCharacterClassId:(NSInteger)characterClassId {
-  NSString *className;
-  switch (characterClassId) {
-    case 1:
-      className = @"warrior";
-      break;
-    case 2:
-      className = @"paladin";
-      break;
-    case 3:
-      className = @"hunter";
-      break;
-    case 4:
-      className = @"rogue";
-      break;
-    case 5:
-      className = @"priest";
-      break;
-    case 6:
-      className = @"deathknight";
-      break;
-    case 7:
-      className = @"shaman";
-      break;
-    case 8:
-      className = @"mage";
-      break;
-    case 9:
-      className = @"warlock";
-      break;
-    case 11:
-      className = @"druid";
-      break;
-    default:
-      className = @"ghostcrawler";
-      break;
-  }
-  return [UIImage imageNamed:[NSString stringWithFormat:@"icon_%@.png", className]];
-}
 
 #pragma mark UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -220,17 +164,16 @@
 //}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SaveCell"];
+  SaveCell *cell = (SaveCell *)[tableView dequeueReusableCellWithIdentifier:@"SaveCell"];
 	if(cell == nil) { 
-		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SaveCell"] autorelease];
+		cell = [[[SaveCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SaveCell"] autorelease];
 		cell.backgroundColor = [UIColor clearColor];
 		cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"table_cell_bg_landscape.png"]];
     cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"table_cell_bg_selected.png"] stretchableImageWithLeftCapWidth:1 topCapHeight:20]];
 	}
   
   Save *save = [self.fetchedResultsController objectAtIndexPath:indexPath];
-  cell.textLabel.text = [self treeNameForCharacterClassId:[save.characterClassId integerValue] andTreeNo:[save.saveSpecTree integerValue]];
-  cell.imageView.image = [self iconForCharacterClassId:[save.characterClassId integerValue]];
+  [SaveCell fillCell:cell withSave:save];
   
   return cell;
 }
