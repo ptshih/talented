@@ -108,9 +108,27 @@ static UIImage *_redButtonBackground = nil;
   [self dismissModalViewControllerAnimated:YES];
 }
 
+#pragma mark AlertDelegate
+- (void)alertCancelled {
+  [_alertPopoverController dismissPopoverAnimated:YES];
+}
+
+- (void)alertSavedWithName:(NSString *)saveName {
+  [_alertPopoverController dismissPopoverAnimated:YES];
+  [self saveWithName:saveName];
+}
+
 #pragma mark Save/Load
 - (IBAction)save {
-  [self saveWithName:@"Saved Build"]; 
+  AlertViewController *avc = [[AlertViewController alloc] initWithNibName:@"AlertViewController" bundle:nil];
+  avc.delegate = self;
+  _alertPopoverController = [[UIPopoverController alloc] initWithContentViewController:avc];
+  
+  _alertPopoverController.popoverContentSize = avc.view.frame.size;
+  CGRect popoverRect = CGRectMake((self.view.width / 2), 142.0, avc.view.width, avc.view.height);
+  [_alertPopoverController presentPopoverFromRect:popoverRect inView:self.view permittedArrowDirections:NO animated:YES];
+  
+  [avc release];
 }
 
 - (IBAction)load {
@@ -749,6 +767,8 @@ static UIImage *_redButtonBackground = nil;
   if (_summaryViewArray) [_summaryViewArray release];
   if (_treeViewArray) [_treeViewArray release];
   if (_treeArray) [_treeArray release];
+  
+  if (_alertPopoverController) [_alertPopoverController release];
   [super dealloc];
 }
 
