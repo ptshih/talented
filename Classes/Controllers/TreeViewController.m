@@ -175,6 +175,10 @@
 }
 
 #pragma mark Tree Logic
+- (void)addPoints:(NSInteger)points toTier:(NSInteger)tier {
+  _pointsInTier[tier] += points;
+}
+
 - (BOOL)canAddPoint:(TalentViewController *)talentView {
   // Check to see if tree is enabled
   if (self.state != TreeStateEnabled) {
@@ -212,6 +216,11 @@
 }
 
 - (BOOL)canSubtractPoint:(TalentViewController *)talentView {
+  // Check to see if talent is at zero
+  if (talentView.currentRank == 0) {
+    return NO;
+  }
+  
   // Ask Calculator if we can subtract points based on points spent in other trees
   if (self.isSpecTree) {
     if (![self.delegate canSubtract:self]) {
@@ -220,12 +229,6 @@
       }
     }
   }
-  
-  // Check to see if talent is at zero
-  if (talentView.currentRank == 0) {
-    return NO;
-  }
-  
   
   // Tier point requirement check
   // If pointsInTier of all the next tiers summed is not 0

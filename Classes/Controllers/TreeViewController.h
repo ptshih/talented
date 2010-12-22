@@ -75,4 +75,6 @@ typedef enum {
 - (BOOL)canAddPoint:(TalentViewController *)talentView;
 - (BOOL)canSubtractPoint:(TalentViewController *)talentView;
 
+- (void)addPoints:(NSInteger)points toTier:(NSInteger)tier;
+
 @end

@@ -138,6 +138,7 @@ static UIImage *_redButtonBackground = nil;
       talentVC.currentRank = [[saveArray objectAtIndex:i] integerValue];
       i++;
       j+= talentVC.currentRank;
+      [treeVC addPoints:talentVC.currentRank toTier:[talentVC.talent.tier integerValue]];
     }
     if (treeVC.treeNo == self.specTreeNo) treeVC.isSpecTree = YES;
     treeVC.pointsInTree = j;
