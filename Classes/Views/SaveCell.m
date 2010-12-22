@@ -15,6 +15,9 @@
 #import "SMACoreDataStack.h"
 #import "TalentTree.h"
 #import "TalentTree+Fetch.h"
+#import "NSDate+HumanInterval.h"
+
+#define SPACING_X 7.0
 
 @interface SaveCell (Private)
 
@@ -71,21 +74,23 @@
 - (void)layoutSubviews {
   [super layoutSubviews];
   
-  CGFloat left = 5.0;
+  CGFloat editingPadding = self.editing ? 32.0 : 0.0;
+  
+  CGFloat left = SPACING_X;
   
   self.iconImageView.left = left;
   self.iconImageView.top = 5.0;
   self.iconImageView.width = 50.0;
   self.iconImageView.height = 50.0;
   
-  left = self.iconImageView.right + 5.0;
+  left = self.iconImageView.right + SPACING_X;
   
   self.nameLabel.top = 8.0;
   self.specTreeLabel.top = 8.0;
   self.pointsLabel.top = 30.0;
   self.timestampLabel.top = 30.0;
   
-  CGFloat textWidth = self.contentView.width - 10.0;
+  CGFloat textWidth = self.contentView.width - self.iconImageView.width - 3 * SPACING_X - editingPadding;
   CGSize textSize = CGSizeMake(textWidth, INT_MAX);
   
   // Save Name
@@ -104,13 +109,13 @@
   CGSize specTreeSize = [self.specTreeLabel.text sizeWithFont:self.specTreeLabel.font constrainedToSize:textSize lineBreakMode:UILineBreakModeWordWrap];
   self.specTreeLabel.width = specTreeSize.width;
   self.specTreeLabel.height = specTreeSize.height;
-  self.specTreeLabel.left = self.contentView.right - self.specTreeLabel.width - 5.0;
+  self.specTreeLabel.left = self.contentView.right - self.specTreeLabel.width - SPACING_X - editingPadding;
   
   // Timestamp
   CGSize timestampSize = [self.timestampLabel.text sizeWithFont:self.timestampLabel.font constrainedToSize:textSize lineBreakMode:UILineBreakModeWordWrap];
   self.timestampLabel.width = timestampSize.width;
   self.timestampLabel.height = timestampSize.height;
-  self.timestampLabel.left = self.contentView.right - self.timestampLabel.width - 5.0;
+  self.timestampLabel.left = self.contentView.right - self.timestampLabel.width - SPACING_X - editingPadding;
 }
 
 + (void)fillCell:(SaveCell *)cell withSave:(Save *)save {
@@ -119,7 +124,7 @@
   cell.nameLabel.text = save.saveName;
   cell.pointsLabel.text = [NSString stringWithFormat:@"%@ / %@ / %@", save.leftPoints, save.middlePoints, save.rightPoints];
   cell.specTreeLabel.text = [self treeNameForCharacterClassId:[save.characterClassId integerValue] andTreeNo:[save.saveSpecTree integerValue]];
-  cell.timestampLabel.text = [save.timestamp description];
+  cell.timestampLabel.text = [save.timestamp humanIntervalSinceNow];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

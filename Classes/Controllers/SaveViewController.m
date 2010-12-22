@@ -13,6 +13,8 @@
 #import "Constants.h"
 #import "SaveCell.h"
 
+static UIImage *_backgroundGradientImage = nil;
+
 @interface SaveViewController (Private)
 
 - (void)fetchAllSaves;
@@ -28,6 +30,10 @@
 @synthesize characterClassId = _characterClassId;
 @synthesize delegate = _delegate;
 
++ (void)initialize {
+  _backgroundGradientImage = [[UIImage imageNamed:@"table_background_gradient.png"] retain];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
@@ -41,6 +47,9 @@
   [super viewDidLoad];
   [self resetFetchResultsController];
   _navItem.leftBarButtonItem = self.editButtonItem;
+  _tableView.backgroundColor = [UIColor colorWithPatternImage:_backgroundGradientImage];
+  self.searchDisplayController.searchResultsTableView.backgroundColor = [UIColor colorWithPatternImage:_backgroundGradientImage];
+  self.searchDisplayController.searchResultsTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 - (void)resetFetchResultsController {
@@ -292,9 +301,11 @@
 }
 
 - (void)dealloc {
+  if (_tableView) [_tableView release];
+  if (_navItem) [_navItem release];
   if (_fetchedResultsController) [_fetchedResultsController release];
   if (_searchResultsArray) [_searchResultsArray release];
-  if (_navItem) [_navItem release];
+
   [super dealloc];
 }
 

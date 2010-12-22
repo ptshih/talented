@@ -188,12 +188,14 @@ static UIImage *_arthas = nil;
   [self selectClassWithId:11];
 }
 
+#pragma mark Load Talents
 - (IBAction)load {
   SaveViewController *svc = [[SaveViewController alloc] initWithNibName:@"SaveViewController" bundle:nil];
   svc.modalPresentationStyle = UIModalPresentationFormSheet;
-  svc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+//  svc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
   svc.delegate = self;
   [self presentModalViewController:svc animated:YES];
+  [svc release];
 }
 
 #pragma mark SaveDelegate

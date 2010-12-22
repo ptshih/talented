@@ -76,6 +76,8 @@
 		251ACF9212C16B1B0055B097 /* SaveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 251ACF9112C16B1B0055B097 /* SaveCell.m */; };
 		251AD07412C19D290055B097 /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 251AD07212C19D290055B097 /* AlertViewController.m */; };
 		251AD07512C19D290055B097 /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 251AD07312C19D290055B097 /* AlertViewController.xib */; };
+		251AD2F712C1C2440055B097 /* NSDate+HumanInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 251AD2F612C1C2440055B097 /* NSDate+HumanInterval.m */; };
+		251AD3C412C1CAF10055B097 /* table_background_gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 251AD3C312C1CAF10055B097 /* table_background_gradient.png */; };
 		255132FC12BA301B0030931A /* worgen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 255132FB12BA301B0030931A /* worgen.jpg */; };
 		2551330A12BA359B0030931A /* angel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2551330512BA359B0030931A /* angel.jpg */; };
 		2551330B12BA359B0030931A /* arthas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2551330612BA359B0030931A /* arthas.jpg */; };
@@ -982,6 +984,9 @@
 		251AD07112C19D290055B097 /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
 		251AD07212C19D290055B097 /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
 		251AD07312C19D290055B097 /* AlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
+		251AD2F512C1C2440055B097 /* NSDate+HumanInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HumanInterval.h"; sourceTree = "<group>"; };
+		251AD2F612C1C2440055B097 /* NSDate+HumanInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HumanInterval.m"; sourceTree = "<group>"; };
+		251AD3C312C1CAF10055B097 /* table_background_gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table_background_gradient.png; sourceTree = "<group>"; };
 		255132FB12BA301B0030931A /* worgen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = worgen.jpg; sourceTree = "<group>"; };
 		2551330512BA359B0030931A /* angel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angel.jpg; sourceTree = "<group>"; };
 		2551330612BA359B0030931A /* arthas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arthas.jpg; sourceTree = "<group>"; };
@@ -2217,6 +2222,7 @@
 				257026D612B9F857000A4D7B /* loader_bg.png */,
 				255CAD1312C02B2800F99462 /* table_cell_bg_landscape.png */,
 				255CAD3312C02B3600F99462 /* table_cell_bg_selected.png */,
+				251AD3C312C1CAF10055B097 /* table_background_gradient.png */,
 				2570291312BA2739000A4D7B /* Default.jpg */,
 			);
 			name = Assets;
@@ -2280,6 +2286,8 @@
 				25DC75DD12B5B523000F70F6 /* NSObject+ConvenienceMethods.m */,
 				25DC75DE12B5B523000F70F6 /* NSString+ConvenienceMethods.h */,
 				25DC75DF12B5B523000F70F6 /* NSString+ConvenienceMethods.m */,
+				251AD2F512C1C2440055B097 /* NSDate+HumanInterval.h */,
+				251AD2F612C1C2440055B097 /* NSDate+HumanInterval.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -3874,6 +3882,7 @@
 				255CAD1412C02B2800F99462 /* table_cell_bg_landscape.png in Resources */,
 				255CAD3412C02B3600F99462 /* table_cell_bg_selected.png in Resources */,
 				251AD07512C19D290055B097 /* AlertViewController.xib in Resources */,
+				251AD3C412C1CAF10055B097 /* table_background_gradient.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3971,6 +3980,7 @@
 				25E4BAAB12C0311F0058E472 /* Save+Fetch.m in Sources */,
 				251ACF9212C16B1B0055B097 /* SaveCell.m in Sources */,
 				251AD07412C19D290055B097 /* AlertViewController.m in Sources */,
+				251AD2F712C1C2440055B097 /* NSDate+HumanInterval.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

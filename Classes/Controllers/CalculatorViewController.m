@@ -145,6 +145,7 @@ static UIImage *_redButtonBackground = nil;
   svc.delegate = self;
   svc.characterClassId = self.characterClassId;
   [self presentModalViewController:svc animated:YES];
+  [svc release];
   
 //  NSString *tmpString = @"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,3,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0";
 //  [self loadWithSaveString:tmpString andSpecTree:1];
