@@ -139,13 +139,14 @@ static UIImage *_redButtonBackground = nil;
 }
 
 - (IBAction)load {
-  SaveViewController *svc = [[SaveViewController alloc] initWithNibName:@"SaveViewController" bundle:nil];
-  svc.modalPresentationStyle = UIModalPresentationFormSheet;
-  svc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-  svc.delegate = self;
-  svc.characterClassId = self.characterClassId;
-  [self presentModalViewController:svc animated:YES];
-  [svc release];
+  if (!_saveViewController) {
+    _saveViewController = [[SaveViewController alloc] initWithNibName:@"SaveViewController" bundle:nil];
+    _saveViewController.modalPresentationStyle = UIModalPresentationFormSheet;
+    _saveViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    _saveViewController.delegate = self;
+  }
+  _saveViewController.characterClassId = self.characterClassId;
+  [self presentModalViewController:_saveViewController animated:YES];
   
 //  NSString *tmpString = @"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,3,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0";
 //  [self loadWithSaveString:tmpString andSpecTree:1];
@@ -209,7 +210,6 @@ static UIImage *_redButtonBackground = nil;
 - (void)loadSave:(Save *)save fromSender:(id)sender {
   [sender dismissModalViewControllerAnimated:NO];
   DLog(@"loading save: %@", save);
-  [self resetAll];
   self.characterClassId = [save.characterClassId integerValue];
   self.specTreeNo = [save.saveSpecTree integerValue];
   [self loadWithSaveString:save.saveString andSpecTree:[save.saveSpecTree integerValue]];
@@ -777,6 +777,7 @@ static UIImage *_redButtonBackground = nil;
   if (_treeArray) [_treeArray release];
   
   if (_alertPopoverController) [_alertPopoverController release];
+  if (_saveViewController) [_saveViewController release];
   [super dealloc];
 }
 

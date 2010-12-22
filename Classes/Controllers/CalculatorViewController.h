@@ -59,6 +59,7 @@ typedef enum {
   NSInteger _state;
   
   UIPopoverController *_alertPopoverController;
+  SaveViewController *_saveViewController;
 }
 
 @property (nonatomic, retain) TooltipViewController *tooltipViewController;

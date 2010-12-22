@@ -190,12 +190,13 @@ static UIImage *_arthas = nil;
 
 #pragma mark Load Talents
 - (IBAction)load {
-  SaveViewController *svc = [[SaveViewController alloc] initWithNibName:@"SaveViewController" bundle:nil];
-  svc.modalPresentationStyle = UIModalPresentationFormSheet;
-//  svc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-  svc.delegate = self;
-  [self presentModalViewController:svc animated:YES];
-  [svc release];
+  if (!_saveViewController) {
+    _saveViewController = [[SaveViewController alloc] initWithNibName:@"SaveViewController" bundle:nil];
+    _saveViewController.modalPresentationStyle = UIModalPresentationFormSheet;
+    _saveViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    _saveViewController.delegate = self;
+  }
+  [self presentModalViewController:_saveViewController animated:YES];
 }
 
 #pragma mark SaveDelegate
@@ -235,6 +236,7 @@ static UIImage *_arthas = nil;
   if (_launcherBackgroundTwo) [_launcherBackgroundTwo release];
   if (_classView) [_classView release];
   if (_backgroundArray) [_backgroundArray release];
+  if (_saveViewController) [_saveViewController release];
   [super dealloc];
 }
 

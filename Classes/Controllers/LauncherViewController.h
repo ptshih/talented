@@ -18,6 +18,8 @@
   BOOL _isAnimating;
   NSArray *_backgroundArray;
   NSInteger _backgroundIndex;
+  
+  SaveViewController *_saveViewController;
 }
 
 @property (nonatomic, retain) NSArray *backgroundArray;

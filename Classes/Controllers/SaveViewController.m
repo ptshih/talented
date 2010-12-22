@@ -250,6 +250,8 @@ static UIImage *_backgroundGradientImage = nil;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+  [tableView deselectRowAtIndexPath:indexPath animated:YES];
+  
   Save *save = nil;
   if (tableView == self.searchDisplayController.searchResultsTableView) {
     save = [self.searchResultsArray objectAtIndex:indexPath.row];
