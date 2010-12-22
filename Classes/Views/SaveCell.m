@@ -53,6 +53,9 @@
     self.pointsLabel.textAlignment = UITextAlignmentLeft;
     self.specTreeLabel.textAlignment = UITextAlignmentRight;
     
+    self.specTreeLabel.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleWidth;
+    self.timestampLabel.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleWidth;
+    
     [self.contentView addSubview:self.iconImageView];
     [self.contentView addSubview:self.nameLabel];
     [self.contentView addSubview:self.timestampLabel];
@@ -74,8 +77,6 @@
 - (void)layoutSubviews {
   [super layoutSubviews];
   
-  CGFloat editingPadding = self.editing ? 32.0 : 0.0;
-  
   CGFloat left = SPACING_X;
   
   self.iconImageView.left = left;
@@ -90,7 +91,7 @@
   self.pointsLabel.top = 30.0;
   self.timestampLabel.top = 30.0;
   
-  CGFloat textWidth = self.contentView.width - self.iconImageView.width - 3 * SPACING_X - editingPadding;
+  CGFloat textWidth = self.contentView.width - self.iconImageView.width - 3 * SPACING_X;
   CGSize textSize = CGSizeMake(textWidth, INT_MAX);
   
   // Save Name
@@ -109,13 +110,13 @@
   CGSize specTreeSize = [self.specTreeLabel.text sizeWithFont:self.specTreeLabel.font constrainedToSize:textSize lineBreakMode:UILineBreakModeWordWrap];
   self.specTreeLabel.width = specTreeSize.width;
   self.specTreeLabel.height = specTreeSize.height;
-  self.specTreeLabel.left = self.contentView.right - self.specTreeLabel.width - SPACING_X - editingPadding;
+  self.specTreeLabel.left = self.contentView.bounds.size.width - self.specTreeLabel.width - SPACING_X;
   
   // Timestamp
   CGSize timestampSize = [self.timestampLabel.text sizeWithFont:self.timestampLabel.font constrainedToSize:textSize lineBreakMode:UILineBreakModeWordWrap];
   self.timestampLabel.width = timestampSize.width;
   self.timestampLabel.height = timestampSize.height;
-  self.timestampLabel.left = self.contentView.right - self.timestampLabel.width - SPACING_X - editingPadding;
+  self.timestampLabel.left = self.contentView.bounds.size.width - self.timestampLabel.width - SPACING_X;
 }
 
 + (void)fillCell:(SaveCell *)cell withSave:(Save *)save {
