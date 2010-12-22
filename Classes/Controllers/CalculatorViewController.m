@@ -120,15 +120,22 @@ static UIImage *_redButtonBackground = nil;
 
 #pragma mark Save/Load
 - (IBAction)save {
-  AlertViewController *avc = [[AlertViewController alloc] initWithNibName:@"AlertViewController" bundle:nil];
-  avc.delegate = self;
-  _alertPopoverController = [[UIPopoverController alloc] initWithContentViewController:avc];
-  
-  _alertPopoverController.popoverContentSize = avc.view.frame.size;
-  CGRect popoverRect = CGRectMake((self.view.width / 2), 142.0, avc.view.width, avc.view.height);
-  [_alertPopoverController presentPopoverFromRect:popoverRect inView:self.view permittedArrowDirections:NO animated:YES];
-  
-  [avc release];
+  // Make sure a specTree has been selected, else alert error
+  if (self.specTreeNo > 0) {
+    AlertViewController *avc = [[AlertViewController alloc] initWithNibName:@"AlertViewController" bundle:nil];
+    avc.delegate = self;
+    _alertPopoverController = [[UIPopoverController alloc] initWithContentViewController:avc];
+    
+    _alertPopoverController.popoverContentSize = avc.view.frame.size;
+    CGRect popoverRect = CGRectMake((self.view.width / 2), 142.0, avc.view.width, avc.view.height);
+    [_alertPopoverController presentPopoverFromRect:popoverRect inView:self.view permittedArrowDirections:NO animated:YES];
+    
+    [avc release];
+  } else {
+    UIAlertView *saveAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error Saving", @"Error Saving") message:NSLocalizedString(@"Please select a specialization tree", @"Please select a specialization") delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", @"OK") otherButtonTitles:nil];
+    [saveAlert show];
+    [saveAlert autorelease];
+  }
 }
 
 - (IBAction)load {

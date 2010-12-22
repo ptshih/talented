@@ -18,18 +18,19 @@
 
 @interface SaveViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchDisplayDelegate> {
   IBOutlet UITableView *_tableView;
+  IBOutlet UINavigationItem *_navItem;
   NSFetchedResultsController * _fetchedResultsController;
-  
+  NSArray *_searchResultsArray;
   NSInteger _characterClassId;
   
   id <SaveDelegate> _delegate;
 }
 
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, retain) NSArray *searchResultsArray;
 @property (nonatomic, assign) NSInteger characterClassId;
 @property (nonatomic, assign) id <SaveDelegate> delegate;
 
-- (IBAction)add;
 - (IBAction)done;
 
 @end

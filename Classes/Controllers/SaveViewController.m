@@ -17,12 +17,14 @@
 
 - (void)fetchAllSaves;
 - (void)fetchSavesForCharacterClass;
+- (void)resetFetchResultsController;
 
 @end
 
 @implementation SaveViewController
 
 @synthesize fetchedResultsController = _fetchedResultsController;
+@synthesize searchResultsArray = _searchResultsArray;
 @synthesize characterClassId = _characterClassId;
 @synthesize delegate = _delegate;
 
@@ -30,12 +32,19 @@
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
     _characterClassId = 0;
+    _searchResultsArray = [[NSArray alloc] init];
   }
   return self;
 }
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  [self resetFetchResultsController];
+  _navItem.leftBarButtonItem = self.editButtonItem;
+}
+
+- (void)resetFetchResultsController {
+  if (_fetchedResultsController) _fetchedResultsController = nil;
   if (self.characterClassId > 0) {
     [self fetchSavesForCharacterClass];
   } else {
@@ -88,7 +97,9 @@
 }
 
 #pragma mark IBAction
-- (IBAction)add {
+- (void)setEditing:(BOOL)editing animated:(BOOL)animated {
+  [super setEditing:editing animated:animated];
+  [_tableView setEditing:editing animated:YES];
 }
 
 - (IBAction)done {
@@ -138,20 +149,32 @@
 
 #pragma mark UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-  return [[self.fetchedResultsController sections] count];
+  if (tableView == self.searchDisplayController.searchResultsTableView) {
+    return 1;
+  } else {
+    return [[self.fetchedResultsController sections] count];
+  }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-  id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
-  return [sectionInfo numberOfObjects];
+  if (tableView == self.searchDisplayController.searchResultsTableView) {
+    return [self.searchResultsArray count];
+  } else {
+    id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
+    return [sectionInfo numberOfObjects];
+  }
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-  id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
-  if (self.characterClassId > 0) {
-    return [self nameForCharacterClassId:self.characterClassId];
+  if (tableView == self.searchDisplayController.searchResultsTableView) {
+    return NSLocalizedString(@"Search Results", @"Search Results");
   } else {
-    return [self nameForCharacterClassId:[[sectionInfo name] integerValue]];
+    id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
+    if (self.characterClassId > 0) {
+      return [self nameForCharacterClassId:self.characterClassId];
+    } else {
+      return [self nameForCharacterClassId:[[sectionInfo name] integerValue]];
+    }
   }
 }
 
@@ -172,10 +195,44 @@
     cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"table_cell_bg_selected.png"] stretchableImageWithLeftCapWidth:1 topCapHeight:20]];
 	}
   
-  Save *save = [self.fetchedResultsController objectAtIndexPath:indexPath];
+  Save *save = nil;
+  if (tableView == self.searchDisplayController.searchResultsTableView) {
+    save = [self.searchResultsArray objectAtIndex:indexPath.row];
+  } else {
+    save = [self.fetchedResultsController objectAtIndexPath:indexPath];
+  }
   [SaveCell fillCell:cell withSave:save];
   
   return cell;
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+  if (tableView == self.searchDisplayController.searchResultsTableView) {
+    return UITableViewCellEditingStyleNone;
+  } else {
+    return UITableViewCellEditingStyleDelete;
+  }
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+  if (editingStyle == UITableViewCellEditingStyleDelete) {
+    // Remove this save from Core Data
+    Save *save = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
+    [context deleteObject:save];
+    NSError *error;
+    [context save:&error];
+    
+    [self resetFetchResultsController];
+    
+    [tableView beginUpdates];
+    if ([tableView numberOfRowsInSection:indexPath.section] <= 1) {
+      [tableView deleteSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:UITableViewRowAnimationFade];
+    }
+    [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    [tableView endUpdates];
+  }
 }
 
 #pragma mark UITableViewDelegate
@@ -184,11 +241,36 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-  Save *save = [self.fetchedResultsController objectAtIndexPath:indexPath];
+  Save *save = nil;
+  if (tableView == self.searchDisplayController.searchResultsTableView) {
+    save = [self.searchResultsArray objectAtIndex:indexPath.row];
+  } else {
+    save = [self.fetchedResultsController objectAtIndexPath:indexPath];
+  }
   
   if (self.delegate) {
     [self.delegate loadSave:save fromSender:self];
   }
+}
+
+
+
+#pragma mark Content Filtering
+- (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope {
+  
+  NSPredicate *predicate = [NSPredicate predicateWithFormat:@"saveName BEGINSWITH[cd] %@", searchText];
+  self.searchResultsArray = [[[self fetchedResultsController] fetchedObjects] filteredArrayUsingPredicate:predicate];
+}
+
+#pragma mark -
+#pragma mark UISearchDisplayController Delegate Methods
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+  [self filterContentForSearchText:searchString scope:nil];
+  
+  // Return YES to cause the search result table view to be reloaded.
+  return YES;
 }
 
 // Override to allow orientations other than the default portrait orientation.
@@ -211,6 +293,8 @@
 
 - (void)dealloc {
   if (_fetchedResultsController) [_fetchedResultsController release];
+  if (_searchResultsArray) [_searchResultsArray release];
+  if (_navItem) [_navItem release];
   [super dealloc];
 }
 
