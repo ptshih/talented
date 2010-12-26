@@ -38,6 +38,7 @@
 		2500E6CE12B4D37300EB1987 /* talentAbility.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6CA12B4D37300EB1987 /* talentAbility.json */; };
 		2500E6CF12B4D37300EB1987 /* warrior.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6CB12B4D37300EB1987 /* warrior.json */; };
 		2500E89112B4E03E00EB1987 /* masteries.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E89012B4E03E00EB1987 /* masteries.json */; };
+		250EBE5C12C71A5A0097A3EE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250EBE5B12C71A5A0097A3EE /* MessageUI.framework */; };
 		25136A7012B623DA00BEFD01 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25136A6E12B623DA00BEFD01 /* SummaryViewController.m */; };
 		25136A7112B623DA00BEFD01 /* SummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25136A6F12B623DA00BEFD01 /* SummaryViewController.xib */; };
 		25136A8512B6260100BEFD01 /* summary_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25136A8412B6260100BEFD01 /* summary_bg.jpg */; };
@@ -943,6 +944,7 @@
 		2500E6D012B4D39000EB1987 /* CoreDataTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTests.h; sourceTree = "<group>"; };
 		2500E6D112B4D39000EB1987 /* CoreDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTests.m; sourceTree = "<group>"; };
 		2500E89012B4E03E00EB1987 /* masteries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = masteries.json; sourceTree = "<group>"; };
+		250EBE5B12C71A5A0097A3EE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		25136A6D12B623DA00BEFD01 /* SummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = "<group>"; };
 		25136A6E12B623DA00BEFD01 /* SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
 		25136A6F12B623DA00BEFD01 /* SummaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummaryViewController.xib; sourceTree = "<group>"; };
@@ -1811,6 +1813,7 @@
 				257AEA28129E8FB900DE9D51 /* CoreData.framework in Frameworks */,
 				257AEA4F129E902A00DE9D51 /* libFlurry.a in Frameworks */,
 				257AEA53129E903B00DE9D51 /* SystemConfiguration.framework in Frameworks */,
+				250EBE5C12C71A5A0097A3EE /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3017,6 +3020,7 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				257AEA27129E8FB900DE9D51 /* CoreData.framework */,
 				257AEA52129E903B00DE9D51 /* SystemConfiguration.framework */,
+				250EBE5B12C71A5A0097A3EE /* MessageUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

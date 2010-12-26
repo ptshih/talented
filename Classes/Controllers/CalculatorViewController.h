@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MFMailComposeViewController.h>
 #import "TreeViewController.h"
 #import "SummaryViewController.h"
 #import "SaveViewController.h"
@@ -20,7 +21,7 @@ typedef enum {
 
 @class TooltipViewController;
 
-@interface CalculatorViewController : UIViewController <TreeDelegate, SummaryDelegate, SaveDelegate, AlertDelegate> {
+@interface CalculatorViewController : UIViewController <TreeDelegate, SummaryDelegate, SaveDelegate, AlertDelegate, MFMailComposeViewControllerDelegate> {
   IBOutlet UIView *_talentTreeView;
   IBOutlet UIView *_summaryView;
   IBOutlet UIButton *_swapButton;
@@ -30,6 +31,7 @@ typedef enum {
   IBOutlet UIButton *_backButton;
   IBOutlet UIButton *_loadButton;
   IBOutlet UIButton *_saveButton;
+  IBOutlet UIButton *_exportButton;
   
   // Header Stuff
   IBOutlet UIImageView *_leftIcon;
@@ -76,6 +78,7 @@ typedef enum {
 - (IBAction)back;
 - (IBAction)save;
 - (IBAction)load;
+- (IBAction)export;
 
 - (IBAction)resetLeft;
 - (IBAction)resetMiddle;

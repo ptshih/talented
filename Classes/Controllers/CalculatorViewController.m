@@ -29,9 +29,11 @@ static UIImage *_redButtonBackground = nil;
 
 @interface CalculatorViewController (Private)
 
+- (void)emailExport;
 - (void)specTreeChanged;
 - (void)saveWithName:(NSString *)saveName;
 - (NSString *)generateSaveString;
+- (NSString *)generateExportString;
 - (void)resetTreeAtIndex:(NSInteger)index;
 - (NSInteger)getRequiredLevel;
 - (void)updateFooterLabels;
@@ -134,6 +136,87 @@ static UIImage *_redButtonBackground = nil;
   [self saveWithName:saveName];
 }
 
+#pragma mark Export to WoWHead
+- (NSString *)classNameForCharacterClassId:(NSInteger)characterClassId {
+  NSString *className;
+  switch (characterClassId) {
+    case 1:
+      className = @"warrior";
+      break;
+    case 2:
+      className = @"paladin";
+      break;
+    case 3:
+      className = @"hunter";
+      break;
+    case 4:
+      className = @"rogue";
+      break;
+    case 5:
+      className = @"priest";
+      break;
+    case 6:
+      className = @"deathknight";
+      break;
+    case 7:
+      className = @"shaman";
+      break;
+    case 8:
+      className = @"mage";
+      break;
+    case 9:
+      className = @"warlock";
+      break;
+    case 11:
+      className = @"druid";
+      break;
+    default:
+      className = @"ghostcrawler";
+      break;
+  }
+  return className;
+}
+
+- (IBAction)export {
+  if (self.totalPoints > 0) {
+    [self emailExport];
+  } else {
+    UIAlertView *exportAlert = [[UIAlertView alloc] initWithTitle:@"Error Exporting" message:@"Cannot export an empty talent build." delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", @"OK") otherButtonTitles:nil];
+    [exportAlert show];
+    [exportAlert autorelease];
+  }
+
+}
+
+- (void)emailExport {
+	if([MFMailComposeViewController canSendMail]) {
+		MFMailComposeViewController *mailVC = [[MFMailComposeViewController alloc] init];
+		mailVC.navigationBar.barStyle = UIBarStyleBlackOpaque;
+		mailVC.modalPresentationStyle = UIModalPresentationFormSheet;
+    
+		NSString *emailBody = [NSString stringWithFormat:@"Paste the following link in your browser to view your talent build on WoWHead.\n\n%@", [self generateExportString]];
+		[mailVC setMailComposeDelegate:self];
+		NSString *subject = [NSString stringWithFormat:@"TalentPad: %@ - Exported for WoWHead", [[self classNameForCharacterClassId:self.characterClassId] capitalizedString]];
+		[mailVC setSubject:subject];
+		[mailVC setMessageBody:emailBody isHTML:NO];
+		[self presentModalViewController:mailVC animated:YES];
+    
+		[mailVC release];
+	}
+	else {
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Mail Accounts Found" message:@"You must setup a Mail account before using this feature." delegate:self cancelButtonTitle:NSLocalizedString(@"OK", @"OK") otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+	}
+  
+}
+
+#pragma mark MFMailCompose
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
+  [self dismissModalViewControllerAnimated:YES];
+}
+
 #pragma mark Save/Load
 - (IBAction)save {
   // Make sure a specTree has been selected, else alert error
@@ -220,6 +303,19 @@ static UIImage *_redButtonBackground = nil;
     }
   }
   return [saveArray componentsJoinedByString:@","];
+}
+
+- (NSString *)generateExportString {
+  NSString *wowheadBaseUrl = @"http://www.wowhead.com/talent#";
+  NSMutableArray *exportArray = [NSMutableArray array];
+  // Dump talent's current ranks
+  for (TreeViewController *treeVC in self.treeViewArray) {
+    for (TalentViewController *talentVC in treeVC.talentViewArray) {
+      [exportArray addObject:[NSString stringWithFormat:@"%d", talentVC.currentRank]];
+    }
+  }
+  NSString *exportString = [NSString stringWithFormat:@"%@%@-%@", wowheadBaseUrl, [self classNameForCharacterClassId:self.characterClassId], [exportArray componentsJoinedByString:@""]];
+  return exportString;
 }
 
 #pragma mark SaveDelegate
@@ -317,12 +413,14 @@ static UIImage *_redButtonBackground = nil;
 }
 
 - (void)setupButtons {
+  [_exportButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
   [_backButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
   [_loadButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
   [_saveButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
   [_swapButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
   [_resetButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
-  
+
+  [_exportButton setTitle:NSLocalizedString(@"Export", @"Export") forState:UIControlStateNormal];
   [_backButton setTitle:NSLocalizedString(@"Choose a Class", @"Choose a Class") forState:UIControlStateNormal];
   [_loadButton setTitle:NSLocalizedString(@"Load", @"Load") forState:UIControlStateNormal];
   [_saveButton setTitle:NSLocalizedString(@"Save", @"Save") forState:UIControlStateNormal];
@@ -792,6 +890,7 @@ static UIImage *_redButtonBackground = nil;
 
 - (void)dealloc {
   // IBOutlets
+  if (_exportButton) [_exportButton release];
   if (_swapButton) [_swapButton release];
   if (_resetButton) [_resetButton release];
   if (_backButton) [_backButton release];
