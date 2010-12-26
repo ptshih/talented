@@ -29,6 +29,7 @@ static UIImage *_redButtonBackground = nil;
 
 @interface CalculatorViewController (Private)
 
+- (void)specTreeChanged;
 - (void)saveWithName:(NSString *)saveName;
 - (NSString *)generateSaveString;
 - (void)resetTreeAtIndex:(NSInteger)index;
@@ -70,6 +71,7 @@ static UIImage *_redButtonBackground = nil;
     _treeViewArray = [[NSMutableArray alloc] init];
     _characterClassId = 0;
     _specTreeNo = -1;
+    _newSpecTreeNo = -1;
     _totalPoints = 0;
     _state = CalculatorStateEnabled;
   }
@@ -543,10 +545,38 @@ static UIImage *_redButtonBackground = nil;
 
 #pragma mark SummaryDelegate
 - (void)specTreeSelected:(NSInteger)treeNo {
+  // If selected spec tree is the same as the current spec tree, do nothing
+  if (self.specTreeNo == treeNo) {
+    [self swapViews];
+    return;
+  }
+  
+  // Set the new spec tree num temp variable in case we end up changing the spec tree
+  _newSpecTreeNo = treeNo;
+
+  // If there are currently points allocated in any of the trees, ask the user if we should reset
+  if (self.totalPoints > 0) {
+    UIAlertView *specTreeChangeAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Reset Specialization", @"Reset Specialization") message:NSLocalizedString(@"Changing your specialization will reset all allocated talent points. Would you like to continue?", @"Changing your specialization will reset all allocated talent points. Would you like to continue?") delegate:self cancelButtonTitle:NSLocalizedString(@"No", @"No") otherButtonTitles:NSLocalizedString(@"Yes", @"Yes"), nil];
+    [specTreeChangeAlert show];
+    [specTreeChangeAlert autorelease];
+  } else {
+    [self specTreeChanged];
+  }
+}
+
+#pragma mark UIAlertViewDelegate
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+  if (buttonIndex != alertView.cancelButtonIndex) {
+    [self resetAll];
+    [self specTreeChanged];
+  }
+}
+
+- (void)specTreeChanged {
   // Update the primary spec tree
-  self.specTreeNo = treeNo;
+  self.specTreeNo = _newSpecTreeNo;
   for (TreeViewController *tree in self.treeViewArray) {
-    if (tree.treeNo == treeNo) {
+    if (tree.treeNo == self.specTreeNo) {
       tree.isSpecTree = YES;
     } else {
       tree.isSpecTree = NO;

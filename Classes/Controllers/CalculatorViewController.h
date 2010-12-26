@@ -57,6 +57,7 @@ typedef enum {
   NSInteger _specTreeNo;
   NSInteger _totalPoints;
   NSInteger _state;
+  NSInteger _newSpecTreeNo;
   
   UIPopoverController *_alertPopoverController;
   SaveViewController *_saveViewController;
