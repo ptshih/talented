@@ -121,7 +121,7 @@ static UIImage *_redButtonBackground = nil;
 #pragma mark Save/Load
 - (IBAction)save {
   // Make sure a specTree has been selected, else alert error
-  if (self.specTreeNo > 0) {
+  if (self.specTreeNo >= 0) {
     AlertViewController *avc = [[AlertViewController alloc] initWithNibName:@"AlertViewController" bundle:nil];
     avc.delegate = self;
     _alertPopoverController = [[UIPopoverController alloc] initWithContentViewController:avc];
