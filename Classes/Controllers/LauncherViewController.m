@@ -29,6 +29,9 @@ static UIImage *_arthas = nil;
 
 @interface LauncherViewController (Private)
 
+- (void)setupButtons;
+- (void)loadClass;
+- (void)loadClassRecentlyUsed;
 - (void)classViewAnimation;
 - (void)launcherAnimation;
 - (void)selectClassWithId:(NSInteger)characterClassId;
@@ -62,6 +65,7 @@ static UIImage *_arthas = nil;
     _isVisible = NO;
     _isAnimating = NO;
     _backgroundIndex = 0;
+    _selectedCharacterClassId = -1;
     _backgroundArray = [[NSArray arrayWithObjects:_deathwing, _deathwing_wings, _grimbatol, _icecrown, _goblin, _worgen, _angel, _sapphiron, _illidan, _darkportal, _arthas, nil] retain];
   }
   return self;
@@ -86,11 +90,15 @@ static UIImage *_arthas = nil;
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  [_loadButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
-  [_loadButton setTitle:NSLocalizedString(@"Load", @"Load") forState:UIControlStateNormal];
+  [self setupButtons];
   _launcherBackground.transform = CGAffineTransformMakeScale(1.3, 1.3);
   [self classViewAnimation];
 //  [self launcherAnimation];
+}
+
+- (void)setupButtons {
+  [_loadButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
+  [_loadButton setTitle:NSLocalizedString(@"Load", @"Load") forState:UIControlStateNormal];
 }
 
 - (void)classViewAnimation {
@@ -149,10 +157,53 @@ static UIImage *_arthas = nil;
   }
 }
 
+#pragma mark UIAlertViewDelegate
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+  if (buttonIndex != alertView.cancelButtonIndex) {
+    [self loadClassRecentlyUsed];
+  } else {
+    [self loadClass];
+  }
+}
+
+- (void)loadClassRecentlyUsed {
+  NSString *recentSavePath = [NSString stringWithFormat:@"recent_save_%d", _selectedCharacterClassId];
+  NSDictionary *recentSaveDict = [[NSUserDefaults standardUserDefaults] objectForKey:recentSavePath];
+  
+  CalculatorViewController *cvc = [[CalculatorViewController alloc] initWithNibName:@"CalculatorViewController" bundle:nil];
+  cvc.characterClassId = _selectedCharacterClassId;
+  cvc.specTreeNo = [[recentSaveDict objectForKey:@"specTreeNo"] integerValue];
+  [self presentModalViewController:cvc animated:YES];
+  [cvc loadWithSaveString:[recentSaveDict objectForKey:@"saveString"] andSpecTree:cvc.specTreeNo];
+  [cvc release]; 
+}
+
 #pragma mark Class Selection
 - (void)selectClassWithId:(NSInteger)characterClassId {
+  _selectedCharacterClassId = characterClassId;
+  
+  // Check to see if there was a recents save, if so ask the user if they want to load
+  NSString *recentSavePath = [NSString stringWithFormat:@"recent_save_%d", _selectedCharacterClassId];
+  
+  if ([[NSUserDefaults standardUserDefaults] objectForKey:recentSavePath]) {
+    UIAlertView *loadClassAlert = [[UIAlertView alloc] initWithTitle:@"Previous Build Found" message:@"Would you like to load your recently unsaved talent build?" delegate:self cancelButtonTitle:NSLocalizedString(@"No", @"No") otherButtonTitles:NSLocalizedString(@"Yes", @"Yes"), nil];
+    [loadClassAlert show];
+    [loadClassAlert autorelease];
+  } else {
+    [self loadClass];
+  }
+}
+
+- (void)loadClass {
+  // Delete the recent save if it exists
+  NSString *recentSavePath = [NSString stringWithFormat:@"recent_save_%d", _selectedCharacterClassId];
+  if ([[NSUserDefaults standardUserDefaults] objectForKey:recentSavePath]) {
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:recentSavePath];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+  }
+  
   CalculatorViewController *cvc = [[CalculatorViewController alloc] initWithNibName:@"CalculatorViewController" bundle:nil];
-  cvc.characterClassId = characterClassId;
+  cvc.characterClassId = _selectedCharacterClassId;
   [self presentModalViewController:cvc animated:YES];
   [cvc release];
 }

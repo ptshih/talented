@@ -19,6 +19,8 @@
   NSArray *_backgroundArray;
   NSInteger _backgroundIndex;
   
+  NSInteger _selectedCharacterClassId;
+  
   SaveViewController *_saveViewController;
 }
 

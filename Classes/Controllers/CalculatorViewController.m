@@ -107,6 +107,20 @@ static UIImage *_redButtonBackground = nil;
 
 #pragma mark Navigation
 - (IBAction)back {
+  // If the current calculator has more than 0 points, create a temporary save
+  // Next time the user enters a class, if we have a temporary save, ask the user if they want to load from it
+  if (self.totalPoints > 0) {
+    // Generate the save string
+    NSString *recentSaveString = [self generateSaveString];
+    // Save the specTreeNo
+    NSNumber *recentSaveSpecTreeNo = [NSNumber numberWithInteger:self.specTreeNo];
+//    // Save the characterClassId
+//    NSNumber *recentSaveCharacterClassId = [NSNumber numberWithInteger:self.characterClassId];
+    NSDictionary *recentSaveDict = [NSDictionary dictionaryWithObjectsAndKeys:recentSaveSpecTreeNo, @"specTreeNo", recentSaveString, @"saveString", nil];
+    NSString *recentSavePath = [NSString stringWithFormat:@"recent_save_%d", self.characterClassId];
+    [[NSUserDefaults standardUserDefaults] setObject:recentSaveDict forKey:recentSavePath];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+  }
   [self dismissModalViewControllerAnimated:YES];
 }
 
