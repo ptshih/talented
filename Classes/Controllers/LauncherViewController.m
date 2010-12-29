@@ -186,7 +186,7 @@ static UIImage *_arthas = nil;
   NSString *recentSavePath = [NSString stringWithFormat:@"recent_save_%d", _selectedCharacterClassId];
   
   if ([[NSUserDefaults standardUserDefaults] objectForKey:recentSavePath]) {
-    UIAlertView *loadClassAlert = [[UIAlertView alloc] initWithTitle:@"Previous Build Found" message:@"Would you like to load your recently unsaved talent build?" delegate:self cancelButtonTitle:NSLocalizedString(@"No", @"No") otherButtonTitles:NSLocalizedString(@"Yes", @"Yes"), nil];
+    UIAlertView *loadClassAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Restore Recent Talent Build", @"Restore Recent Talent Build") message:NSLocalizedString(@"Would you like to restore from your recently unsaved talent build?", @"Would you like to restore from your recently unsaved talent build?") delegate:self cancelButtonTitle:NSLocalizedString(@"No", @"No") otherButtonTitles:NSLocalizedString(@"Yes", @"Yes"), nil];
     [loadClassAlert show];
     [loadClassAlert autorelease];
   } else {

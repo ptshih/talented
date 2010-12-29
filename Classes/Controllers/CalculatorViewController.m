@@ -181,7 +181,7 @@ static UIImage *_redButtonBackground = nil;
   if (self.totalPoints > 0) {
     [self emailExport];
   } else {
-    UIAlertView *exportAlert = [[UIAlertView alloc] initWithTitle:@"Error Exporting" message:@"Cannot export an empty talent build." delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", @"OK") otherButtonTitles:nil];
+    UIAlertView *exportAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Oh Noes!", @"Oh Noes!") message:NSLocalizedString(@"Cannot export an empty talent build", @"Cannot export an empty talent build") delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", @"OK") otherButtonTitles:nil];
     [exportAlert show];
     [exportAlert autorelease];
   }
@@ -194,7 +194,7 @@ static UIImage *_redButtonBackground = nil;
 		mailVC.navigationBar.barStyle = UIBarStyleBlackOpaque;
 		mailVC.modalPresentationStyle = UIModalPresentationFormSheet;
     
-		NSString *emailBody = [NSString stringWithFormat:@"Paste the following link in your browser to view your talent build on WoWHead.\n\n%@", [self generateExportString]];
+		NSString *emailBody = [NSString stringWithFormat:@"Paste/Click the following link in your browser to view your talent build on WoWHead.\n\n%@", [self generateExportString]];
 		[mailVC setMailComposeDelegate:self];
 		NSString *subject = [NSString stringWithFormat:@"TalentPad: %@ - Exported for WoWHead", [[self classNameForCharacterClassId:self.characterClassId] capitalizedString]];
 		[mailVC setSubject:subject];
@@ -204,7 +204,7 @@ static UIImage *_redButtonBackground = nil;
 		[mailVC release];
 	}
 	else {
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Mail Accounts Found" message:@"You must setup a Mail account before using this feature." delegate:self cancelButtonTitle:NSLocalizedString(@"OK", @"OK") otherButtonTitles:nil];
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"No Mail Accounts Found", @"No Mail Accounts Found") message:NSLocalizedString(@"You must setup a Mail account before using this feature", @"You must setup a Mail account before using this feature") delegate:self cancelButtonTitle:NSLocalizedString(@"OK", @"OK") otherButtonTitles:nil];
 		[alert show];
 		[alert release];
 	}
@@ -231,7 +231,7 @@ static UIImage *_redButtonBackground = nil;
     
     [avc release];
   } else {
-    UIAlertView *saveAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error Saving", @"Error Saving") message:NSLocalizedString(@"Please select a specialization tree", @"Please select a specialization") delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", @"OK") otherButtonTitles:nil];
+    UIAlertView *saveAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Cannot Save Talents", @"Cannot Save Talents") message:NSLocalizedString(@"Please select a specialization tree", @"Please select a specialization tree") delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", @"OK") otherButtonTitles:nil];
     [saveAlert show];
     [saveAlert autorelease];
   }
@@ -351,7 +351,7 @@ static UIImage *_redButtonBackground = nil;
       pointsInOtherTrees += tree.pointsInTree;
     }
     if (pointsInOtherTrees > 0) {
-      UIAlertView *resetAlertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Can't Reset Tree", @"Can't Reset Tree") message:NSLocalizedString(@"Can't reset specialization tree until other two talent trees have 0 points allocated!", @"Can't Reset Tree Message") delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", @"OK") otherButtonTitles:nil];
+      UIAlertView *resetAlertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Can't Reset Tree", @"Can't Reset Tree") message:NSLocalizedString(@"Can't reset specialization tree until other two talent trees have 0 points allocated", @"Can't Reset Tree Message") delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", @"OK") otherButtonTitles:nil];
       [resetAlertView show];
       [resetAlertView autorelease];
       return;
