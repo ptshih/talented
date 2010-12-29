@@ -55,7 +55,7 @@
     
   NSData *myData = [NSData dataWithContentsOfFile:filePath];
   if (myData) {
-    NSLog(@"testing core data insert");
+    DLog(@"testing core data insert");
     
     NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
     
@@ -81,7 +81,7 @@
     if (context.hasChanges) {
       if (![context save:nil]) {
       }
-      NSLog(@"saving to core data");
+      DLog(@"saving to core data");
     }
   }
   
