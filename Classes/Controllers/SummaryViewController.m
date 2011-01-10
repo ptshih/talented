@@ -1,6 +1,6 @@
     //
 //  SummaryViewController.m
-//  TalentPad
+//  Talented
 //
 //  Created by Peter Shih on 12/13/10.
 //  Copyright 2010 Seven Minute Apps. All rights reserved.

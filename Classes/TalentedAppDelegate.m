@@ -1,14 +1,15 @@
 //
-//  TalentPadAppDelegate.m
-//  TalentPad
+//  TalentedAppDelegate.m
+//  Talented
 //
 //  Created by Peter Shih on 11/25/10.
 //  Copyright 2010 Seven Minute Apps. All rights reserved.
 //
 
-#import "TalentPadAppDelegate.h"
+#import "TalentedAppDelegate.h"
 #import "LauncherViewController.h"
 #import "Constants.h"
+#import "Appirater.h"
 
 // Test stuff
 #import "SMADataCenter.h"
@@ -20,7 +21,7 @@
 #import "TalentTree.h"
 #import "CharacterClass.h"
 
-@implementation TalentPadAppDelegate
+@implementation TalentedAppDelegate
 
 @synthesize window;
 @synthesize launcherViewController = _launcherViewController;
@@ -97,12 +98,14 @@
   
   _launcherViewController = [[LauncherViewController alloc] initWithNibName:@"LauncherViewController" bundle:nil];
   
-  [window addSubview:self.launcherViewController.view];
-  [self.window makeKeyAndVisible];
-  
   if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"lastSelectedLanguage"] isEqual:USER_LANGUAGE]) {
     [self loadTalentDataForLanguage];
   }
+  
+  [Appirater appLaunched:YES];
+  
+  [window addSubview:self.launcherViewController.view];
+  [self.window makeKeyAndVisible];
 
   return YES;
 }
@@ -128,6 +131,7 @@
   /*
    Called as part of  transition from the background to the inactive state: here you can undo many of the changes made on entering the background.
    */
+  [Appirater appEnteredForeground:YES];
 }
 
 

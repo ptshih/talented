@@ -1,6 +1,6 @@
 //
-//  TalentPadAppDelegate.h
-//  TalentPad
+//  TalentedAppDelegate.h
+//  Talented
 //
 //  Created by Peter Shih on 11/25/10.
 //  Copyright 2010 Seven Minute Apps. All rights reserved.
@@ -10,7 +10,7 @@
 
 @class LauncherViewController;
 
-@interface TalentPadAppDelegate : NSObject <UIApplicationDelegate> {
+@interface TalentedAppDelegate : NSObject <UIApplicationDelegate> {
   UIWindow *window;
   LauncherViewController *_launcherViewController;
 }

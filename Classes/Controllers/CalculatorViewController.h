@@ -1,6 +1,6 @@
 //
 //  CalculatorViewController.h
-//  TalentPad
+//  Talented
 //
 //  Created by Peter Shih on 12/11/10.
 //  Copyright 2010 Seven Minute Apps. All rights reserved.
@@ -63,6 +63,10 @@ typedef enum {
   
   UIPopoverController *_alertPopoverController;
   SaveViewController *_saveViewController;
+  
+  BOOL _isLoad;
+  BOOL _hasSaved;
+  BOOL _hasChanged;
 }
 
 @property (nonatomic, retain) TooltipViewController *tooltipViewController;
@@ -87,6 +91,6 @@ typedef enum {
 - (IBAction)swapViews;
 - (void)hideTooltip;
 
-- (void)loadWithSaveString:(NSString *)saveString andSpecTree:(NSInteger)specTree;
+- (void)loadWithSaveString:(NSString *)saveString andSpecTree:(NSInteger)specTree isRecent:(BOOL)isRecent;
 
 @end

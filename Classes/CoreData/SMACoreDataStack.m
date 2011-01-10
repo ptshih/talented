@@ -1,6 +1,6 @@
 //
 //  SMACoreDataStack.m
-//  TalentPad
+//  Talented
 //
 //  Created by Peter Shih on 11/24/10.
 //  Copyright 2010 Seven Minute Apps. All rights reserved.
@@ -39,7 +39,7 @@ static NSManagedObjectContext *_managedObjectContext = nil;
   [SMACoreDataStack prepareDocumentsDirectory];
   
   // Localize datastore filename
-  NSString *datastoreName = [NSString stringWithFormat:@"talentpad_%@.sqlite", USER_LANGUAGE];
+  NSString *datastoreName = [NSString stringWithFormat:@"talented_%@.sqlite", USER_LANGUAGE];
   NSURL *storeUrl = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent:datastoreName]];
   NSError *error = nil;
   

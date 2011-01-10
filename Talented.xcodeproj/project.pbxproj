@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3623260D0F684500981E51 /* TalentPadAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* TalentPadAppDelegate.m */; };
+		1D3623260D0F684500981E51 /* TalentedAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* TalentedAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -147,19 +147,20 @@
 		2570288412BA1770000A4D7B /* goblin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2570287F12BA1770000A4D7B /* goblin.jpg */; };
 		2570288512BA1770000A4D7B /* grimbatol.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2570288012BA1770000A4D7B /* grimbatol.jpg */; };
 		2570288612BA1770000A4D7B /* icecrown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2570288112BA1770000A4D7B /* icecrown.jpg */; };
-		2570291412BA2739000A4D7B /* Default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2570291312BA2739000A4D7B /* Default.jpg */; };
+		257058B712DB0EF300E4E5DB /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = 257058B612DB0EF300E4E5DB /* Appirater.m */; };
 		257AEA28129E8FB900DE9D51 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA27129E8FB900DE9D51 /* CoreData.framework */; };
 		257AEA34129E901900DE9D51 /* SMADataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA31129E901900DE9D51 /* SMADataCenter.m */; };
 		257AEA35129E901900DE9D51 /* SMACoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA33129E901900DE9D51 /* SMACoreDataStack.m */; };
 		257AEA4A129E902700DE9D51 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA49129E902700DE9D51 /* Reachability.m */; };
 		257AEA4F129E902A00DE9D51 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA4E129E902A00DE9D51 /* libFlurry.a */; };
 		257AEA53129E903B00DE9D51 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA52129E903B00DE9D51 /* SystemConfiguration.framework */; };
-		257AEA6E129E910900DE9D51 /* TalentPad.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA6D129E910900DE9D51 /* TalentPad.xcdatamodel */; };
+		257AEA6E129E910900DE9D51 /* Talented.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA6D129E910900DE9D51 /* Talented.xcdatamodel */; };
 		257AEAB3129E92AB00DE9D51 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEAAE129E92AB00DE9D51 /* Icon-72.png */; };
 		257AEAEE129E945400DE9D51 /* LauncherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEAEC129E945400DE9D51 /* LauncherViewController.m */; };
 		257AEAEF129E945400DE9D51 /* LauncherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257AEAED129E945400DE9D51 /* LauncherViewController.xib */; };
 		257AEB2E129E968A00DE9D51 /* TalentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEB2C129E968A00DE9D51 /* TalentViewController.m */; };
 		257AEBF0129E9FE500DE9D51 /* TalentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257AEBEF129E9FE500DE9D51 /* TalentViewController.xib */; };
+		25ABC50212D2825D00F620F6 /* Default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ABC50112D2825D00F620F6 /* Default.jpg */; };
 		25DC757812B5A682000F70F6 /* TooltipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DC757612B5A682000F70F6 /* TooltipViewController.m */; };
 		25DC758A12B5A78C000F70F6 /* points_minus_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DC758412B5A78C000F70F6 /* points_minus_on.png */; };
 		25DC758B12B5A78C000F70F6 /* points_plus_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DC758512B5A78C000F70F6 /* points_plus_off.png */; };
@@ -875,7 +876,7 @@
 		25FBA79412B8329300F306BC /* talent.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6C912B4D37300EB1987 /* talent.json */; };
 		25FBA79512B8329300F306BC /* druid.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB112B637A500BEFD01 /* druid.json */; };
 		25FBA79612B8329400F306BC /* masteries.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E89012B4E03E00EB1987 /* masteries.json */; };
-		25FBA79912B832AE00F306BC /* TalentPad.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA6D129E910900DE9D51 /* TalentPad.xcdatamodel */; };
+		25FBA79912B832AE00F306BC /* Talented.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA6D129E910900DE9D51 /* Talented.xcdatamodel */; };
 		25FBAA7C12B8DB8E00F306BC /* MasteryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FBAA7912B8DB8E00F306BC /* MasteryView.m */; };
 		25FBAA7D12B8DB8E00F306BC /* MasteryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25FBAA7B12B8DB8E00F306BC /* MasteryView.xib */; };
 		25FBAAA312B8DE8700F306BC /* icon-border-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBAAA112B8DE8700F306BC /* icon-border-highlight.png */; };
@@ -891,9 +892,9 @@
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D3623240D0F684500981E51 /* TalentPadAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentPadAppDelegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* TalentPadAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalentPadAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* TalentPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalentPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D3623240D0F684500981E51 /* TalentedAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentedAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* TalentedAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalentedAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Talented.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talented.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2500E41F12B46A2F00EB1987 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		2500E47012B492DA00EB1987 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
@@ -1063,7 +1064,8 @@
 		2570287F12BA1770000A4D7B /* goblin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = goblin.jpg; sourceTree = "<group>"; };
 		2570288012BA1770000A4D7B /* grimbatol.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grimbatol.jpg; sourceTree = "<group>"; };
 		2570288112BA1770000A4D7B /* icecrown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icecrown.jpg; sourceTree = "<group>"; };
-		2570291312BA2739000A4D7B /* Default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Default.jpg; sourceTree = "<group>"; };
+		257058B512DB0EF300E4E5DB /* Appirater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
+		257058B612DB0EF300E4E5DB /* Appirater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
 		257AEA22129E8F8900DE9D51 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		257AEA27129E8FB900DE9D51 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		257AEA30129E901900DE9D51 /* SMADataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMADataCenter.h; sourceTree = "<group>"; };
@@ -1076,7 +1078,7 @@
 		257AEA4D129E902A00DE9D51 /* FlurryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAPI.h; sourceTree = "<group>"; };
 		257AEA4E129E902A00DE9D51 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
 		257AEA52129E903B00DE9D51 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		257AEA6D129E910900DE9D51 /* TalentPad.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; name = TalentPad.xcdatamodel; path = Resources/TalentPad.xcdatamodel; sourceTree = "<group>"; };
+		257AEA6D129E910900DE9D51 /* Talented.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; name = Talented.xcdatamodel; path = Resources/Talented.xcdatamodel; sourceTree = "<group>"; };
 		257AEAAE129E92AB00DE9D51 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		257AEAEB129E945400DE9D51 /* LauncherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LauncherViewController.h; sourceTree = "<group>"; };
 		257AEAEC129E945400DE9D51 /* LauncherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LauncherViewController.m; sourceTree = "<group>"; };
@@ -1084,6 +1086,7 @@
 		257AEB2B129E968A00DE9D51 /* TalentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentViewController.h; sourceTree = "<group>"; };
 		257AEB2C129E968A00DE9D51 /* TalentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalentViewController.m; sourceTree = "<group>"; };
 		257AEBEF129E9FE500DE9D51 /* TalentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalentViewController.xib; sourceTree = "<group>"; };
+		25ABC50112D2825D00F620F6 /* Default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Default.jpg; sourceTree = "<group>"; };
 		25DC757512B5A682000F70F6 /* TooltipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TooltipViewController.h; sourceTree = "<group>"; };
 		25DC757612B5A682000F70F6 /* TooltipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TooltipViewController.m; sourceTree = "<group>"; };
 		25DC758412B5A78C000F70F6 /* points_minus_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = points_minus_on.png; sourceTree = "<group>"; };
@@ -1798,8 +1801,8 @@
 		25FBACB912B9AD8D00F306BC /* Save.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Save.m; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* TalentPad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentPad_Prefix.pch; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* TalentPad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TalentPad-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Talented_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Talented_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Talented-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Talented-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1841,8 +1844,8 @@
 				257AEA2D129E900E00DE9D51 /* Models */,
 				257AEA2E129E900E00DE9D51 /* Vendor */,
 				257AEA2F129E900E00DE9D51 /* Views */,
-				1D3623240D0F684500981E51 /* TalentPadAppDelegate.h */,
-				1D3623250D0F684500981E51 /* TalentPadAppDelegate.m */,
+				1D3623240D0F684500981E51 /* TalentedAppDelegate.h */,
+				1D3623250D0F684500981E51 /* TalentedAppDelegate.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1850,7 +1853,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* TalentPad.app */,
+				1D6058910D05DD3D006BFB54 /* Talented.app */,
 				25FBA6C312B8308D00F306BC /* CoreDataTests.octest */,
 			);
 			name = Products;
@@ -2077,6 +2080,15 @@
 			path = fr;
 			sourceTree = "<group>";
 		};
+		257058B412DB0EF300E4E5DB /* Appirater */ = {
+			isa = PBXGroup;
+			children = (
+				257058B512DB0EF300E4E5DB /* Appirater.h */,
+				257058B612DB0EF300E4E5DB /* Appirater.m */,
+			);
+			path = Appirater;
+			sourceTree = "<group>";
+		};
 		257AEA2B129E900E00DE9D51 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -2143,6 +2155,7 @@
 		257AEA2E129E900E00DE9D51 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				257058B412DB0EF300E4E5DB /* Appirater */,
 				25FBABCE12B8F6D100F306BC /* ImageManipulator.h */,
 				25FBABCF12B8F6D100F306BC /* ImageManipulator.m */,
 				2500E46F12B492DA00EB1987 /* TouchJSON */,
@@ -2226,7 +2239,7 @@
 				255CAD1312C02B2800F99462 /* table_cell_bg_landscape.png */,
 				255CAD3312C02B3600F99462 /* table_cell_bg_selected.png */,
 				251AD3C312C1CAF10055B097 /* table_background_gradient.png */,
-				2570291312BA2739000A4D7B /* Default.jpg */,
+				25ABC50112D2825D00F620F6 /* Default.jpg */,
 			);
 			name = Assets;
 			path = Resources/Assets;
@@ -2992,7 +3005,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				32CA4F630368D1EE00C91783 /* TalentPad_Prefix.pch */,
+				32CA4F630368D1EE00C91783 /* Talented_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				257AEA22129E8F8900DE9D51 /* Constants.h */,
 			);
@@ -3004,8 +3017,8 @@
 			children = (
 				257AEAAC129E92AB00DE9D51 /* Assets */,
 				257AEAB1129E92AB00DE9D51 /* Nibs */,
-				8D1107310486CEB800E47090 /* TalentPad-Info.plist */,
-				257AEA6D129E910900DE9D51 /* TalentPad.xcdatamodel */,
+				8D1107310486CEB800E47090 /* Talented-Info.plist */,
+				257AEA6D129E910900DE9D51 /* Talented.xcdatamodel */,
 				25FBA6C412B8308D00F306BC /* CoreDataTests-Info.plist */,
 				255CAC8E12C01B7300F99462 /* Localizable.strings */,
 			);
@@ -3028,9 +3041,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* TalentPad */ = {
+		1D6058900D05DD3D006BFB54 /* Talented */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TalentPad" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Talented" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -3040,9 +3053,9 @@
 			);
 			dependencies = (
 			);
-			name = TalentPad;
+			name = Talented;
 			productName = WoWTalentPro;
-			productReference = 1D6058910D05DD3D006BFB54 /* TalentPad.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* Talented.app */;
 			productType = "com.apple.product-type.application";
 		};
 		25FBA6C212B8308D00F306BC /* CoreDataTests */ = {
@@ -3071,7 +3084,7 @@
 			attributes = {
 				ORGANIZATIONNAME = "Seven Minute Apps";
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TalentPad" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Talented" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -3088,7 +3101,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* TalentPad */,
+				1D6058900D05DD3D006BFB54 /* Talented */,
 				25FBA6C212B8308D00F306BC /* CoreDataTests */,
 			);
 		};
@@ -3784,7 +3797,6 @@
 				2570288412BA1770000A4D7B /* goblin.jpg in Resources */,
 				2570288512BA1770000A4D7B /* grimbatol.jpg in Resources */,
 				2570288612BA1770000A4D7B /* icecrown.jpg in Resources */,
-				2570291412BA2739000A4D7B /* Default.jpg in Resources */,
 				255132FC12BA301B0030931A /* worgen.jpg in Resources */,
 				2551330A12BA359B0030931A /* angel.jpg in Resources */,
 				2551330B12BA359B0030931A /* arthas.jpg in Resources */,
@@ -3887,6 +3899,7 @@
 				255CAD3412C02B3600F99462 /* table_cell_bg_selected.png in Resources */,
 				251AD07512C19D290055B097 /* AlertViewController.xib in Resources */,
 				251AD3C412C1CAF10055B097 /* table_background_gradient.png in Resources */,
+				25ABC50212D2825D00F620F6 /* Default.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3937,11 +3950,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				1D3623260D0F684500981E51 /* TalentPadAppDelegate.m in Sources */,
+				1D3623260D0F684500981E51 /* TalentedAppDelegate.m in Sources */,
 				257AEA34129E901900DE9D51 /* SMADataCenter.m in Sources */,
 				257AEA35129E901900DE9D51 /* SMACoreDataStack.m in Sources */,
 				257AEA4A129E902700DE9D51 /* Reachability.m in Sources */,
-				257AEA6E129E910900DE9D51 /* TalentPad.xcdatamodel in Sources */,
+				257AEA6E129E910900DE9D51 /* Talented.xcdatamodel in Sources */,
 				257AEAEE129E945400DE9D51 /* LauncherViewController.m in Sources */,
 				257AEB2E129E968A00DE9D51 /* TalentViewController.m in Sources */,
 				2500E48A12B492DA00EB1987 /* CDataScanner.m in Sources */,
@@ -3985,6 +3998,7 @@
 				251ACF9212C16B1B0055B097 /* SaveCell.m in Sources */,
 				251AD07412C19D290055B097 /* AlertViewController.m in Sources */,
 				251AD2F712C1C2440055B097 /* NSDate+HumanInterval.m in Sources */,
+				257058B712DB0EF300E4E5DB /* Appirater.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4007,7 +4021,7 @@
 				25FBA77312B831D900F306BC /* CJSONScanner.m in Sources */,
 				25FBA77412B831DA00F306BC /* CJSONSerializer.m in Sources */,
 				25FBA77712B831F100F306BC /* CDataScanner.m in Sources */,
-				25FBA79912B832AE00F306BC /* TalentPad.xcdatamodel in Sources */,
+				25FBA79912B832AE00F306BC /* Talented.xcdatamodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4038,13 +4052,13 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = TalentPad_Prefix.pch;
-				INFOPLIST_FILE = "TalentPad-Info.plist";
+				GCC_PREFIX_HEADER = Talented_Prefix.pch;
+				INFOPLIST_FILE = "Talented-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Classes/Vendor/FlurryLib\"",
 				);
-				PRODUCT_NAME = TalentPad;
+				PRODUCT_NAME = Talented;
 			};
 			name = Debug;
 		};
@@ -4054,13 +4068,13 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = TalentPad_Prefix.pch;
-				INFOPLIST_FILE = "TalentPad-Info.plist";
+				GCC_PREFIX_HEADER = Talented_Prefix.pch;
+				INFOPLIST_FILE = "Talented-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Classes/Vendor/FlurryLib\"",
 				);
-				PRODUCT_NAME = TalentPad;
+				PRODUCT_NAME = Talented;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -4090,13 +4104,13 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = TalentPad_Prefix.pch;
-				INFOPLIST_FILE = "TalentPad-Info.plist";
+				GCC_PREFIX_HEADER = Talented_Prefix.pch;
+				INFOPLIST_FILE = "Talented-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Classes/Vendor/FlurryLib\"",
 				);
-				PRODUCT_NAME = TalentPad;
+				PRODUCT_NAME = Talented;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Distribution;
@@ -4227,7 +4241,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TalentPad" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Talented" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -4247,7 +4261,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TalentPad" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Talented" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,

@@ -1,6 +1,6 @@
 //
 //  CalculatorViewController.m
-//  TalentPad
+//  Talented
 //
 //  Created by Peter Shih on 12/11/10.
 //  Copyright 2010 Seven Minute Apps. All rights reserved.
@@ -76,6 +76,9 @@ static UIImage *_redButtonBackground = nil;
     _newSpecTreeNo = -1;
     _totalPoints = 0;
     _state = CalculatorStateEnabled;
+    _isLoad = NO;
+    _hasSaved = NO;
+    _hasChanged = NO;
   }
   return self;
 }
@@ -111,7 +114,7 @@ static UIImage *_redButtonBackground = nil;
 - (IBAction)back {
   // If the current calculator has more than 0 points, create a temporary save
   // Next time the user enters a class, if we have a temporary save, ask the user if they want to load from it
-  if (self.totalPoints > 0) {
+  if ((self.totalPoints > 0 && !_hasSaved) || (_isLoad && _hasChanged)) {
     // Generate the save string
     NSString *recentSaveString = [self generateSaveString];
     // Save the specTreeNo
@@ -196,7 +199,7 @@ static UIImage *_redButtonBackground = nil;
     
 		NSString *emailBody = [NSString stringWithFormat:@"Paste/Click the following link in your browser to view your talent build on WoWHead.\n\n%@", [self generateExportString]];
 		[mailVC setMailComposeDelegate:self];
-		NSString *subject = [NSString stringWithFormat:@"TalentPad: %@ - Exported for WoWHead", [[self classNameForCharacterClassId:self.characterClassId] capitalizedString]];
+		NSString *subject = [NSString stringWithFormat:@"Talented: %@ - Exported for WoWHead", [[self classNameForCharacterClassId:self.characterClassId] capitalizedString]];
 		[mailVC setSubject:subject];
 		[mailVC setMessageBody:emailBody isHTML:NO];
 		[self presentModalViewController:mailVC animated:YES];
@@ -251,7 +254,12 @@ static UIImage *_redButtonBackground = nil;
 //  [self loadWithSaveString:tmpString andSpecTree:1];
 }
 
-- (void)loadWithSaveString:(NSString *)saveString andSpecTree:(NSInteger)specTree {
+- (void)loadWithSaveString:(NSString *)saveString andSpecTree:(NSInteger)specTree isRecent:(BOOL)isRecent {
+  if (!isRecent) {
+    _isLoad = YES;
+    _hasSaved = YES;
+  }
+  _hasChanged = NO;
   [self resetAll];
   self.specTreeNo = specTree;
   NSArray *saveArray = [saveString componentsSeparatedByString:@","];
@@ -280,6 +288,7 @@ static UIImage *_redButtonBackground = nil;
 }
 
 - (void)saveWithName:(NSString *)saveName {
+  _hasSaved = YES;
   NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
   
   NSDictionary *saveDict = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:self.characterClassId], @"characterClassId", [NSNumber numberWithInteger:self.specTreeNo], @"saveSpecTree", saveName, @"saveName", [self generateSaveString], @"saveString", [NSNumber numberWithInteger:[[self.treeViewArray objectAtIndex:0] pointsInTree]], @"leftPoints", [NSNumber numberWithInteger:[[self.treeViewArray objectAtIndex:1] pointsInTree]], @"middlePoints", [NSNumber numberWithInteger:[[self.treeViewArray objectAtIndex:2] pointsInTree]], @"rightPoints", [NSDate date], @"timestamp", nil];
@@ -324,7 +333,7 @@ static UIImage *_redButtonBackground = nil;
   DLog(@"loading save: %@", save);
   self.characterClassId = [save.characterClassId integerValue];
   self.specTreeNo = [save.saveSpecTree integerValue];
-  [self loadWithSaveString:save.saveString andSpecTree:[save.saveSpecTree integerValue]];
+  [self loadWithSaveString:save.saveString andSpecTree:[save.saveSpecTree integerValue] isRecent:NO];
 }
 
 #pragma mark Reset
@@ -632,6 +641,7 @@ static UIImage *_redButtonBackground = nil;
   self.totalPoints++;
   
   [self updateStateFromTreeNo:treeView.treeNo];
+  _hasChanged = YES;
 }
 
 - (void)treeSubtract:(TreeViewController *)treeView forTalentView:(TalentViewController *)talentView {
@@ -639,6 +649,7 @@ static UIImage *_redButtonBackground = nil;
   self.totalPoints--;
 
   [self updateStateFromTreeNo:treeView.treeNo];
+  _hasChanged = YES;
 }
 
 - (BOOL)canSubtract:(TreeViewController *)treeView {

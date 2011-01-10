@@ -1,6 +1,6 @@
 //
 //  Save.h
-//  TalentPad
+//  Talented
 //
 //  Created by Peter Shih on 12/15/10.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.

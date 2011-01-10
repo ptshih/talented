@@ -1,6 +1,6 @@
 //
 //  SMADataCenter.h
-//  TalentPad
+//  Talented
 //
 //  Created by Peter Shih on 11/24/10.
 //  Copyright 2010 Seven Minute Apps. All rights reserved.

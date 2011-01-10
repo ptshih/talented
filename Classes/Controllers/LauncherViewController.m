@@ -13,6 +13,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "Constants.h"
 #import "Save.h"
+#import "Appirater.h"
 
 static UIImage *_redButtonBackground = nil;
 static UIImage *_deathwing = nil;
@@ -169,13 +170,16 @@ static UIImage *_arthas = nil;
 - (void)loadClassRecentlyUsed {
   NSString *recentSavePath = [NSString stringWithFormat:@"recent_save_%d", _selectedCharacterClassId];
   NSDictionary *recentSaveDict = [[NSUserDefaults standardUserDefaults] objectForKey:recentSavePath];
+  [[NSUserDefaults standardUserDefaults] removeObjectForKey:recentSavePath];
   
   CalculatorViewController *cvc = [[CalculatorViewController alloc] initWithNibName:@"CalculatorViewController" bundle:nil];
   cvc.characterClassId = _selectedCharacterClassId;
   cvc.specTreeNo = [[recentSaveDict objectForKey:@"specTreeNo"] integerValue];
   [self presentModalViewController:cvc animated:YES];
-  [cvc loadWithSaveString:[recentSaveDict objectForKey:@"saveString"] andSpecTree:cvc.specTreeNo];
+  [cvc loadWithSaveString:[recentSaveDict objectForKey:@"saveString"] andSpecTree:cvc.specTreeNo isRecent:YES];
   [cvc release]; 
+  
+  [Appirater userDidSignificantEvent:YES];
 }
 
 #pragma mark Class Selection
@@ -206,6 +210,8 @@ static UIImage *_arthas = nil;
   cvc.characterClassId = _selectedCharacterClassId;
   [self presentModalViewController:cvc animated:YES];
   [cvc release];
+  
+  [Appirater userDidSignificantEvent:YES];
 }
 
 - (IBAction)warrior {
@@ -259,8 +265,10 @@ static UIImage *_arthas = nil;
   cvc.characterClassId = [save.characterClassId integerValue];
   cvc.specTreeNo = [save.saveSpecTree integerValue];
   [self presentModalViewController:cvc animated:YES];
-  [cvc loadWithSaveString:save.saveString andSpecTree:[save.saveSpecTree integerValue]];
+  [cvc loadWithSaveString:save.saveString andSpecTree:[save.saveSpecTree integerValue] isRecent:NO];
   [cvc release];
+  
+  [Appirater userDidSignificantEvent:YES];
 }
 
 // Override to allow orientations other than the default portrait orientation.
