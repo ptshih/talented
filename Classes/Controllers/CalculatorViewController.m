@@ -217,6 +217,7 @@ static UIImage *_redButtonBackground = nil;
 
 - (IBAction)glyph {
   GlyphViewController *gvc = [[GlyphViewController alloc] initWithNibName:@"GlyphViewController" bundle:nil];
+  gvc.characterClassId = self.characterClassId;
   [self presentModalViewController:gvc animated:YES];
   [gvc release];
 }

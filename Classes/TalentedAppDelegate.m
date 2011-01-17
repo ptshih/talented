@@ -27,6 +27,12 @@
 @synthesize window;
 @synthesize launcherViewController = _launcherViewController;
 
+- (void)upgradeTalentData {
+  // When version number is changed...
+  // Migrate Save entities when allowed during an upgrade
+  // Delete old persistent stores
+}
+
 - (void)loadTalentDataForLanguage {
   if (![[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"hasLoadedData_%@", USER_LANGUAGE]]) {
     [self talentDataTestForClass:@"warrior"];
@@ -43,7 +49,6 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
   }
 }
-
 
 - (void)talentDataTestForClass:(NSString *)classString {
   // Localize datastore filename
@@ -103,7 +108,7 @@
     NSError *error;
     NSDictionary *testDict = [[CJSONDeserializer deserializer] deserializeAsDictionary:myData error:&error];
     NSString *glyphKeyPath = [self glyphKeyPathForCharacterClass:characterClass];
-    NSLog(@"Glyph Dict: %@", [testDict objectForKey:glyphKeyPath]);
+//    NSLog(@"Glyph Dict: %@", [testDict objectForKey:glyphKeyPath]);
     
     NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
 
