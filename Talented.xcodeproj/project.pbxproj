@@ -1113,6 +1113,8 @@
 		25ECC9C412E3F9B100E34E02 /* spell_shaman_unleashweapon_life.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8B612E3F9B100E34E02 /* spell_shaman_unleashweapon_life.jpg */; };
 		25ECC9C512E3F9B100E34E02 /* spell_shaman_unleashweapon_wind.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8B712E3F9B100E34E02 /* spell_shaman_unleashweapon_wind.jpg */; };
 		25ECC9C612E3F9B100E34E02 /* trade_brewpoison.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8B812E3F9B100E34E02 /* trade_brewpoison.jpg */; };
+		25ECC9F812E3FD9F00E34E02 /* glyph_cell_bg_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC9F712E3FD9F00E34E02 /* glyph_cell_bg_selected.png */; };
+		25ECC9F912E3FD9F00E34E02 /* glyph_cell_bg_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC9F712E3FD9F00E34E02 /* glyph_cell_bg_selected.png */; };
 		25FBA28512B73E6A00F306BC /* icon-border-header-circle-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28212B73E6A00F306BC /* icon-border-header-circle-gray.png */; };
 		25FBA28612B73E6A00F306BC /* icon-border-header-circle-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28312B73E6A00F306BC /* icon-border-header-circle-yellow.png */; };
 		25FBA28712B73E6A00F306BC /* icon-border-header-lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28412B73E6A00F306BC /* icon-border-header-lock.png */; };
@@ -2196,6 +2198,7 @@
 		25ECC8B612E3F9B100E34E02 /* spell_shaman_unleashweapon_life.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shaman_unleashweapon_life.jpg; sourceTree = "<group>"; };
 		25ECC8B712E3F9B100E34E02 /* spell_shaman_unleashweapon_wind.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shaman_unleashweapon_wind.jpg; sourceTree = "<group>"; };
 		25ECC8B812E3F9B100E34E02 /* trade_brewpoison.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trade_brewpoison.jpg; sourceTree = "<group>"; };
+		25ECC9F712E3FD9F00E34E02 /* glyph_cell_bg_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyph_cell_bg_selected.png; sourceTree = "<group>"; };
 		25FBA28212B73E6A00F306BC /* icon-border-header-circle-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-border-header-circle-gray.png"; sourceTree = "<group>"; };
 		25FBA28312B73E6A00F306BC /* icon-border-header-circle-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-border-header-circle-yellow.png"; sourceTree = "<group>"; };
 		25FBA28412B73E6A00F306BC /* icon-border-header-lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-border-header-lock.png"; sourceTree = "<group>"; };
@@ -2675,6 +2678,7 @@
 				255CAD3312C02B3600F99462 /* table_cell_bg_selected.png */,
 				251AD3C312C1CAF10055B097 /* table_background_gradient.png */,
 				25ECC80012E3F3A300E34E02 /* glyph_cell_bg.png */,
+				25ECC9F712E3FD9F00E34E02 /* glyph_cell_bg_selected.png */,
 				25ABC50112D2825D00F620F6 /* Default.jpg */,
 			);
 			name = Assets;
@@ -4612,6 +4616,7 @@
 				25ECC93D12E3F9B100E34E02 /* spell_shaman_unleashweapon_life.jpg in Resources */,
 				25ECC93E12E3F9B100E34E02 /* spell_shaman_unleashweapon_wind.jpg in Resources */,
 				25ECC93F12E3F9B100E34E02 /* trade_brewpoison.jpg in Resources */,
+				25ECC9F812E3FD9F00E34E02 /* glyph_cell_bg_selected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4772,6 +4777,7 @@
 				25ECC9C412E3F9B100E34E02 /* spell_shaman_unleashweapon_life.jpg in Resources */,
 				25ECC9C512E3F9B100E34E02 /* spell_shaman_unleashweapon_wind.jpg in Resources */,
 				25ECC9C612E3F9B100E34E02 /* trade_brewpoison.jpg in Resources */,
+				25ECC9F912E3FD9F00E34E02 /* glyph_cell_bg_selected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

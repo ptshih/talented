@@ -50,7 +50,7 @@
 }
 
 - (void)fetchAllGlyphs {
-  NSSortDescriptor *characterClassIdSortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"characterClass.haracterClassId" ascending:YES];
+  NSSortDescriptor *characterClassIdSortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"characterClass.characterClassId" ascending:YES];
   NSSortDescriptor *glyphSortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"glyphSpellName" ascending:YES];
   NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:characterClassIdSortDescriptor, glyphSortDescriptor, nil];
   [characterClassIdSortDescriptor release];
@@ -131,9 +131,13 @@
 		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"GlyphCell"] autorelease];
 		cell.backgroundColor = [UIColor clearColor];
 		cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"glyph_cell_bg.png"]];
-    cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"glyph_cell_bg.png"] stretchableImageWithLeftCapWidth:1 topCapHeight:20]];
+    cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"glyph_cell_bg_selected.png"] stretchableImageWithLeftCapWidth:1 topCapHeight:20]];
     
+    cell.textLabel.font = [UIFont boldSystemFontOfSize:14.0];
     cell.textLabel.textColor = [UIColor whiteColor];
+    cell.detailTextLabel.font = [UIFont systemFontOfSize:14.0];
+    cell.detailTextLabel.textColor = [UIColor lightGrayColor];
+    cell.detailTextLabel.highlightedTextColor = [UIColor lightGrayColor];
     
 	}
   
@@ -165,7 +169,7 @@
 
 #pragma mark UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-  return 60.0;
+  return 44.0;
 }
 
 #pragma mark Memory Management
