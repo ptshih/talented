@@ -39,7 +39,27 @@
     newGlyph.icon = [dictionary objectForKey:@"icon"];
     newGlyph.glyphName = [dictionary objectForKey:@"name"];
     newGlyph.glyphSpellName = [dictionary objectForKey:@"spell_name"];
-    newGlyph.glyphType = [dictionary objectForKey:@"type"];
+    
+    // Because MMOC lists glyphType in the wrong order, we're gonna translate it here
+    // MMOC - TALENTED
+    // 0 (major) - 1
+    // 1 (minor) - 2
+    // 2 (prime) - 0
+    switch ([[dictionary objectForKey:@"type"] integerValue]) {
+      case 0:
+        newGlyph.glyphType = [NSNumber numberWithInteger:1];
+        break;
+      case 1:
+        newGlyph.glyphType = [NSNumber numberWithInteger:2];
+        break;
+      case 2:
+        newGlyph.glyphType = [NSNumber numberWithInteger:0];
+        break;
+      default:
+        newGlyph.glyphType = [NSNumber numberWithInteger:0];
+        break;
+    }
+//    newGlyph.glyphType = [dictionary objectForKey:@"type"];
     
     // Hook up glyph relationship
     newGlyph.characterClass = characterClass;

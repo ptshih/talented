@@ -73,7 +73,7 @@
 }
 
 - (void)fetchGlyphsForCharacterClass {
-  NSSortDescriptor *glyphSortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"glyphSpellName" ascending:YES];
+  NSSortDescriptor *glyphSortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"glyphType" ascending:YES];
   NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:glyphSortDescriptor, nil];
   [glyphSortDescriptor release];
   
@@ -85,7 +85,7 @@
   [request setSortDescriptors:sortDescriptors];
   [sortDescriptors release];
   
-  _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:context sectionNameKeyPath:nil cacheName:nil];
+  _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:context sectionNameKeyPath:@"glyphType" cacheName:nil];
   
   NSError *error;
   if ([self.fetchedResultsController performFetch:&error]) {
@@ -101,13 +101,13 @@
 - (NSString *)glyphTypeStringForType:(NSInteger)type {
   switch (type) {
     case 0:
-      return NSLocalizedString(@"Major Glyph", @"Major Glyph");
+      return NSLocalizedString(@"Prime Glyph", @"Prime Glyph");
       break;
     case 1:
-      return NSLocalizedString(@"Minor Glyph", @"Minor Glyph");
+      return NSLocalizedString(@"Major Glyph", @"Major Glyph");
       break;
     case 2:
-      return NSLocalizedString(@"Prime Glyph", @"Prime Glyph");
+      return NSLocalizedString(@"Minor Glyph", @"Minor Glyph");
       break;
     default:
       return NSLocalizedString(@"Prime Glyph", @"Prime Glyph");
@@ -123,6 +123,11 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
   id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
   return [sectionInfo numberOfObjects];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+  id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
+  return [self glyphTypeStringForType:[[sectionInfo name] integerValue]];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
