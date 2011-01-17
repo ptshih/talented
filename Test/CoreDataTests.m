@@ -23,6 +23,29 @@
 
 }
 
+- (void)testGlyphs {
+  NSString *fileName = @"glyphs.json";
+  NSString *filePath = [[[NSBundle bundleForClass:[CoreDataTests class]] resourcePath] stringByAppendingFormat:@"/%@", fileName];
+  
+  NSData *myData = [NSData dataWithContentsOfFile:filePath];
+  if (myData) {
+    NSDictionary *testDict = [[CJSONDeserializer deserializer] deserializeAsDictionary:myData error:nil];
+
+    NSLog(@"Glyph Dict: %@", testDict);
+    
+//    // Test core data
+//    NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
+    
+//    [Talent addTalentWithDictionary:testDict forTalentTree:nil inContext:context];
+//    
+//    if (context.hasChanges) {
+//      if (![context save:nil]) {
+//        STAssertTrue(NO, @"Core Data Failed to Save in Context!");
+//      }
+//    }
+  }
+}
+
 - (void)testWarrior {
   [self runTestCharacterClass:@"warrior"];
 }
@@ -74,7 +97,7 @@
     // Test core data
     NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
     
-    [Talent addTalentWithDictionary:testDict forTalentTree:nil inContext:context];
+    [Talent addTalentWithDictionary:testDict forTalentTree:nil forIndex:0 inContext:context];
     
     if (context.hasChanges) {
       if (![context save:nil]) {
@@ -96,7 +119,7 @@
     // Test core data
     NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
     
-    [Talent addTalentWithDictionary:testDict forTalentTree:nil inContext:context];
+    [Talent addTalentWithDictionary:testDict forTalentTree:nil forIndex:0 inContext:context];
     
     if (context.hasChanges) {
       if (![context save:nil]) {

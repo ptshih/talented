@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class LauncherViewController;
+@class CharacterClass;
 
 @interface TalentedAppDelegate : NSObject <UIApplicationDelegate> {
   UIWindow *window;
@@ -19,6 +20,8 @@
 @property (nonatomic, retain) LauncherViewController *launcherViewController;
 
 - (void)talentDataTestForClass:(NSString *)classString;
+- (void)loadGlyphsForCharacterClass:(CharacterClass *)characterClass;
+- (NSString *)glyphKeyPathForCharacterClass:(CharacterClass *)characterClass;
 
 @end
 

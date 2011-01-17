@@ -20,6 +20,7 @@
 #import "Mastery.h"
 #import "TalentTree.h"
 #import "CharacterClass.h"
+#import "Glyph.h"
 
 @implementation TalentedAppDelegate
 
@@ -77,6 +78,9 @@
       
       // Set relationship for characterClass.talentTrees
       characterClass.talentTrees = talentTreesSet;
+      
+      // Parse glyphs
+      [self loadGlyphsForCharacterClass:characterClass];
     }
     
     if (context.hasChanges) {
@@ -88,6 +92,68 @@
   
   [[NSUserDefaults standardUserDefaults] setObject:USER_LANGUAGE forKey:@"lastSelectedLanguage"];
   [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (void)loadGlyphsForCharacterClass:(CharacterClass *)characterClass {
+  // Check if json file exists, if not default to english
+  NSString *filePath = [[NSBundle mainBundle] pathForResource:@"glyphs" ofType:@"json"];  
+  
+  NSData *myData = [NSData dataWithContentsOfFile:filePath];
+  if (myData) {
+    NSError *error;
+    NSDictionary *testDict = [[CJSONDeserializer deserializer] deserializeAsDictionary:myData error:&error];
+    NSString *glyphKeyPath = [self glyphKeyPathForCharacterClass:characterClass];
+    NSLog(@"Glyph Dict: %@", [testDict objectForKey:glyphKeyPath]);
+    
+    NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
+
+    for (NSDictionary *glyphDict in [[testDict objectForKey:glyphKeyPath] allValues]) {
+      [Glyph addGlyphWithDictionary:glyphDict forCharacterClass:characterClass inContext:context];
+    }
+    
+    if (context.hasChanges) {
+      if (![context save:nil]) {
+      }
+    }
+  }
+}
+
+- (NSString *)glyphKeyPathForCharacterClass:(CharacterClass *)characterClass {
+  switch ([characterClass.characterClassId integerValue]) {
+    case 1:
+      return @"WARRIOR";
+      break;
+    case 2:
+      return @"PALADIN";
+      break;
+    case 3:
+      return @"HUNTER";
+      break;
+    case 4:
+      return @"ROGUE";
+      break;
+    case 5:
+      return @"PRIEST";
+      break;
+    case 6:
+      return @"DEATHKNIGHT";
+      break;
+    case 7:
+      return @"SHAMAN";
+      break;
+    case 8:
+      return @"MAGE";
+      break;
+    case 9:
+      return @"WARLOCK";
+      break;
+    case 11:
+      return @"DRUID";
+      break;
+    default:
+      return @"WARRIOR";
+      break;
+  }
 }
 
 #pragma mark -

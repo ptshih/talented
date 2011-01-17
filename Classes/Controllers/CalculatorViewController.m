@@ -7,6 +7,7 @@
 //
 
 #import "CalculatorViewController.h"
+#import "GlyphViewController.h"
 #import "TooltipViewController.h"
 #import "SMACoreDataStack.h"
 #import "TalentTree.h"
@@ -212,6 +213,12 @@ static UIImage *_redButtonBackground = nil;
 		[alert release];
 	}
   
+}
+
+- (IBAction)glyph {
+  GlyphViewController *gvc = [[GlyphViewController alloc] initWithNibName:@"GlyphViewController" bundle:nil];
+  [self presentModalViewController:gvc animated:YES];
+  [gvc release];
 }
 
 #pragma mark MFMailCompose
@@ -422,6 +429,7 @@ static UIImage *_redButtonBackground = nil;
 }
 
 - (void)setupButtons {
+  [_glyphButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
   [_exportButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
   [_backButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
   [_loadButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
@@ -429,6 +437,7 @@ static UIImage *_redButtonBackground = nil;
   [_swapButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
   [_resetButton setBackgroundImage:_redButtonBackground forState:UIControlStateNormal];
 
+  [_glyphButton setTitle:NSLocalizedString(@"Glyphs", @"Glyphs") forState:UIControlStateNormal];
   [_exportButton setTitle:NSLocalizedString(@"Export", @"Export") forState:UIControlStateNormal];
   [_backButton setTitle:NSLocalizedString(@"Choose a Class", @"Choose a Class") forState:UIControlStateNormal];
   [_loadButton setTitle:NSLocalizedString(@"Load", @"Load") forState:UIControlStateNormal];
@@ -901,6 +910,7 @@ static UIImage *_redButtonBackground = nil;
 
 - (void)dealloc {
   // IBOutlets
+  if (_glyphButton) [_glyphButton release];
   if (_exportButton) [_exportButton release];
   if (_swapButton) [_swapButton release];
   if (_resetButton) [_resetButton release];

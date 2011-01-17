@@ -32,6 +32,7 @@ typedef enum {
   IBOutlet UIButton *_loadButton;
   IBOutlet UIButton *_saveButton;
   IBOutlet UIButton *_exportButton;
+  IBOutlet UIButton *_glyphButton;
   
   // Header Stuff
   IBOutlet UIImageView *_leftIcon;
@@ -83,6 +84,7 @@ typedef enum {
 - (IBAction)save;
 - (IBAction)load;
 - (IBAction)export;
+- (IBAction)glyph;
 
 - (IBAction)resetLeft;
 - (IBAction)resetMiddle;

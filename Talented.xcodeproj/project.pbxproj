@@ -227,6 +227,7 @@
 		25E13BC812BD05CE0071FE6E /* warlock_de.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13BA012BD05CE0071FE6E /* warlock_de.json */; };
 		25E13BC912BD05CE0071FE6E /* warrior_de.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E13BA112BD05CE0071FE6E /* warrior_de.json */; };
 		25E4BAAB12C0311F0058E472 /* Save+Fetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E4BAAA12C0311F0058E472 /* Save+Fetch.m */; };
+		25E5FB3112E3B19E0096E0E0 /* glyphs.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E5FB3012E3B19E0096E0E0 /* glyphs.json */; };
 		25EC4C5112B9E17600D173AB /* ability_ambush.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25EC49F412B9E17600D173AB /* ability_ambush.jpg */; };
 		25EC4C5212B9E17600D173AB /* ability_backstab.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25EC49F512B9E17600D173AB /* ability_backstab.jpg */; };
 		25EC4C5312B9E17600D173AB /* ability_bullrush.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25EC49F612B9E17600D173AB /* ability_bullrush.jpg */; };
@@ -832,6 +833,12 @@
 		25EC4EAB12B9E17600D173AB /* warrior_talent_icon_singlemindedfury.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25EC4C4E12B9E17600D173AB /* warrior_talent_icon_singlemindedfury.jpg */; };
 		25EC4EAC12B9E17600D173AB /* warrior_talent_icon_skirmisher.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25EC4C4F12B9E17600D173AB /* warrior_talent_icon_skirmisher.jpg */; };
 		25EC4EAD12B9E17600D173AB /* warrior_talent_icon_thunderstruck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25EC4C5012B9E17600D173AB /* warrior_talent_icon_thunderstruck.jpg */; };
+		25ECC6B412E3B38200E34E02 /* glyphs.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E5FB3012E3B19E0096E0E0 /* glyphs.json */; };
+		25ECC70312E3BE2200E34E02 /* GlyphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ECC70112E3BE2200E34E02 /* GlyphViewController.m */; };
+		25ECC70412E3BE2200E34E02 /* GlyphViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC70212E3BE2200E34E02 /* GlyphViewController.xib */; };
+		25ECC70712E3BEA500E34E02 /* glyph_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC70612E3BEA500E34E02 /* glyph_bg.png */; };
+		25ECC76212E3C73800E34E02 /* Glyph.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ECC76112E3C73800E34E02 /* Glyph.m */; };
+		25ECC76312E3C73800E34E02 /* Glyph.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ECC76112E3C73800E34E02 /* Glyph.m */; };
 		25FBA28512B73E6A00F306BC /* icon-border-header-circle-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28212B73E6A00F306BC /* icon-border-header-circle-gray.png */; };
 		25FBA28612B73E6A00F306BC /* icon-border-header-circle-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28312B73E6A00F306BC /* icon-border-header-circle-yellow.png */; };
 		25FBA28712B73E6A00F306BC /* icon-border-header-lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28412B73E6A00F306BC /* icon-border-header-lock.png */; };
@@ -1164,6 +1171,8 @@
 		25E13BA112BD05CE0071FE6E /* warrior_de.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warrior_de.json; sourceTree = "<group>"; };
 		25E4BAA912C0311F0058E472 /* Save+Fetch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Save+Fetch.h"; sourceTree = "<group>"; };
 		25E4BAAA12C0311F0058E472 /* Save+Fetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Save+Fetch.m"; sourceTree = "<group>"; };
+		25E5FB2312E3AB5A0096E0E0 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		25E5FB3012E3B19E0096E0E0 /* glyphs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glyphs.json; sourceTree = "<group>"; };
 		25EC49F412B9E17600D173AB /* ability_ambush.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_ambush.jpg; sourceTree = "<group>"; };
 		25EC49F512B9E17600D173AB /* ability_backstab.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_backstab.jpg; sourceTree = "<group>"; };
 		25EC49F612B9E17600D173AB /* ability_bullrush.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_bullrush.jpg; sourceTree = "<group>"; };
@@ -1769,6 +1778,12 @@
 		25EC4C4E12B9E17600D173AB /* warrior_talent_icon_singlemindedfury.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = warrior_talent_icon_singlemindedfury.jpg; sourceTree = "<group>"; };
 		25EC4C4F12B9E17600D173AB /* warrior_talent_icon_skirmisher.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = warrior_talent_icon_skirmisher.jpg; sourceTree = "<group>"; };
 		25EC4C5012B9E17600D173AB /* warrior_talent_icon_thunderstruck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = warrior_talent_icon_thunderstruck.jpg; sourceTree = "<group>"; };
+		25ECC70012E3BE2200E34E02 /* GlyphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlyphViewController.h; sourceTree = "<group>"; };
+		25ECC70112E3BE2200E34E02 /* GlyphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlyphViewController.m; sourceTree = "<group>"; };
+		25ECC70212E3BE2200E34E02 /* GlyphViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GlyphViewController.xib; sourceTree = "<group>"; };
+		25ECC70612E3BEA500E34E02 /* glyph_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyph_bg.png; sourceTree = "<group>"; };
+		25ECC76012E3C73800E34E02 /* Glyph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Glyph.h; sourceTree = "<group>"; };
+		25ECC76112E3C73800E34E02 /* Glyph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Glyph.m; sourceTree = "<group>"; };
 		25FBA28212B73E6A00F306BC /* icon-border-header-circle-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-border-header-circle-gray.png"; sourceTree = "<group>"; };
 		25FBA28312B73E6A00F306BC /* icon-border-header-circle-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-border-header-circle-yellow.png"; sourceTree = "<group>"; };
 		25FBA28412B73E6A00F306BC /* icon-border-header-lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-border-header-lock.png"; sourceTree = "<group>"; };
@@ -1921,6 +1936,7 @@
 				2500E6D112B4D39000EB1987 /* CoreDataTests.m */,
 				25FBA91D12B837A300F306BC /* TestAppDelegate.h */,
 				25FBA91E12B837A300F306BC /* TestAppDelegate.m */,
+				25E5FB2312E3AB5A0096E0E0 /* README */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -1928,6 +1944,7 @@
 		2500E6C712B4D37300EB1987 /* json */ = {
 			isa = PBXGroup;
 			children = (
+				25E5FB3012E3B19E0096E0E0 /* glyphs.json */,
 				2500E6CB12B4D37300EB1987 /* warrior.json */,
 				25E07EB012B4EAFF00646BC7 /* paladin.json */,
 				25136BB212B637A500BEFD01 /* hunter.json */,
@@ -2115,6 +2132,9 @@
 				251AD07112C19D290055B097 /* AlertViewController.h */,
 				251AD07212C19D290055B097 /* AlertViewController.m */,
 				251AD07312C19D290055B097 /* AlertViewController.xib */,
+				25ECC70012E3BE2200E34E02 /* GlyphViewController.h */,
+				25ECC70112E3BE2200E34E02 /* GlyphViewController.m */,
+				25ECC70212E3BE2200E34E02 /* GlyphViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -2148,6 +2168,8 @@
 				2500E63A12B4CA0D00EB1987 /* Rank.m */,
 				25FBACB812B9AD8D00F306BC /* Save.h */,
 				25FBACB912B9AD8D00F306BC /* Save.m */,
+				25ECC76012E3C73800E34E02 /* Glyph.h */,
+				25ECC76112E3C73800E34E02 /* Glyph.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -2229,6 +2251,7 @@
 				25FBA34812B7708C00F306BC /* mastery-tree-glow.png */,
 				25136A8412B6260100BEFD01 /* summary_bg.jpg */,
 				25FBA36C12B7731E00F306BC /* summary-glow.png */,
+				25ECC70612E3BEA500E34E02 /* glyph_bg.png */,
 				25136A8F12B6265000BEFD01 /* red_button.png */,
 				25136A9212B6270400BEFD01 /* tree-overview-icon-frame.png */,
 				25FBA38D12B779DD00F306BC /* reset.png */,
@@ -3900,6 +3923,9 @@
 				251AD07512C19D290055B097 /* AlertViewController.xib in Resources */,
 				251AD3C412C1CAF10055B097 /* table_background_gradient.png in Resources */,
 				25ABC50212D2825D00F620F6 /* Default.jpg in Resources */,
+				25ECC6B412E3B38200E34E02 /* glyphs.json in Resources */,
+				25ECC70412E3BE2200E34E02 /* GlyphViewController.xib in Resources */,
+				25ECC70712E3BEA500E34E02 /* glyph_bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3923,6 +3949,7 @@
 				25FBA79412B8329300F306BC /* talent.json in Resources */,
 				25FBA79512B8329300F306BC /* druid.json in Resources */,
 				25FBA79612B8329400F306BC /* masteries.json in Resources */,
+				25E5FB3112E3B19E0096E0E0 /* glyphs.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3999,6 +4026,8 @@
 				251AD07412C19D290055B097 /* AlertViewController.m in Sources */,
 				251AD2F712C1C2440055B097 /* NSDate+HumanInterval.m in Sources */,
 				257058B712DB0EF300E4E5DB /* Appirater.m in Sources */,
+				25ECC70312E3BE2200E34E02 /* GlyphViewController.m in Sources */,
+				25ECC76212E3C73800E34E02 /* Glyph.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4022,6 +4051,7 @@
 				25FBA77412B831DA00F306BC /* CJSONSerializer.m in Sources */,
 				25FBA77712B831F100F306BC /* CDataScanner.m in Sources */,
 				25FBA79912B832AE00F306BC /* Talented.xcdatamodel in Sources */,
+				25ECC76312E3C73800E34E02 /* Glyph.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

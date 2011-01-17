@@ -489,6 +489,27 @@
 								<float key="IBUIAlpha">0.60000002384185791</float>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 							</object>
+							<object class="IBUIButton" id="768434506">
+								<reference key="NSNextResponder" ref="501683379"/>
+								<int key="NSvFlags">292</int>
+								<string key="NSFrame">{{572, 14}, {100, 33}}</string>
+								<reference key="NSSuperview" ref="501683379"/>
+								<bool key="IBUIOpaque">NO</bool>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<int key="IBUIContentHorizontalAlignment">0</int>
+								<int key="IBUIContentVerticalAlignment">0</int>
+								<reference key="IBUIFont" ref="1018088545"/>
+								<string key="IBUINormalTitle">Glyphs</string>
+								<object class="NSColor" key="IBUIHighlightedTitleColor">
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MC42IDAuNiAwLjYgMC42AA</bytes>
+								</object>
+								<object class="NSColor" key="IBUINormalTitleColor">
+									<int key="NSColorSpace">2</int>
+									<bytes key="NSRGB">MC43MTc2NDcwNzU3IDAuNjAzOTIxNTkyMiAwLjQwMzkyMTYwNDIAA</bytes>
+								</object>
+								<reference key="IBUINormalTitleShadowColor" ref="808656939"/>
+							</object>
 							<object class="IBUIButton" id="173238561">
 								<reference key="NSNextResponder" ref="501683379"/>
 								<int key="NSvFlags">292</int>
@@ -854,6 +875,23 @@
 					</object>
 					<int key="connectionID">96</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">_glyphButton</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="768434506"/>
+					</object>
+					<int key="connectionID">99</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">glyph</string>
+						<reference key="source" ref="768434506"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">100</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -1081,8 +1119,9 @@
 							<reference ref="173238561"/>
 							<reference ref="949172453"/>
 							<reference ref="401804250"/>
-							<reference ref="159691315"/>
 							<reference ref="346817392"/>
+							<reference ref="768434506"/>
+							<reference ref="159691315"/>
 						</object>
 						<reference key="parent" ref="766721923"/>
 						<string key="objectName">navigationView</string>
@@ -1124,6 +1163,12 @@
 						<reference key="object" ref="346817392"/>
 						<reference key="parent" ref="501683379"/>
 						<string key="objectName">exportButton</string>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">97</int>
+						<reference key="object" ref="768434506"/>
+						<reference key="parent" ref="501683379"/>
+						<string key="objectName">glyphButton</string>
 					</object>
 				</object>
 			</object>
@@ -1198,8 +1243,11 @@
 					<string>9.IBPluginDependency</string>
 					<string>9.IBViewBoundsToFrameTransform</string>
 					<string>92.IBPluginDependency</string>
+					<string>92.IBViewBoundsToFrameTransform</string>
 					<string>93.IBPluginDependency</string>
 					<string>93.IBViewBoundsToFrameTransform</string>
+					<string>97.IBPluginDependency</string>
+					<string>97.IBViewBoundsToFrameTransform</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1225,7 +1273,7 @@
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">AUR0AABBUAAAA</bytes>
 					</object>
-					<string>{{41, 137}, {1024, 768}}</string>
+					<string>{{55, 230}, {1024, 768}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
@@ -1328,9 +1376,14 @@
 						<bytes key="NSTransformStruct">P4AAAL+AAABD7gAAwigAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform"/>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">AUQuwABBUAAAA</bytes>
+						<bytes key="NSTransformStruct">AUQrAABBYAAAA</bytes>
+					</object>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">AUQPAABBYAAAA</bytes>
 					</object>
 				</object>
 			</object>
@@ -1350,7 +1403,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">96</int>
+			<int key="maxID">100</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1364,6 +1417,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>back</string>
 							<string>export</string>
+							<string>glyph</string>
 							<string>load</string>
 							<string>resetAll</string>
 							<string>resetLeft</string>
@@ -1374,6 +1428,7 @@
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -1391,6 +1446,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>back</string>
 							<string>export</string>
+							<string>glyph</string>
 							<string>load</string>
 							<string>resetAll</string>
 							<string>resetLeft</string>
@@ -1407,6 +1463,10 @@
 							</object>
 							<object class="IBActionInfo">
 								<string key="name">export</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">glyph</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
@@ -1445,6 +1505,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>_backButton</string>
 							<string>_exportButton</string>
+							<string>_glyphButton</string>
 							<string>_leftBorder</string>
 							<string>_leftIcon</string>
 							<string>_leftLabel</string>
@@ -1469,6 +1530,7 @@
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>UIButton</string>
 							<string>UIButton</string>
 							<string>UIButton</string>
 							<string>UIImageView</string>
@@ -1500,6 +1562,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>_backButton</string>
 							<string>_exportButton</string>
+							<string>_glyphButton</string>
 							<string>_leftBorder</string>
 							<string>_leftIcon</string>
 							<string>_leftLabel</string>
@@ -1530,6 +1593,10 @@
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">_exportButton</string>
+								<string key="candidateClassName">UIButton</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">_glyphButton</string>
 								<string key="candidateClassName">UIButton</string>
 							</object>
 							<object class="IBToOneOutletInfo">
@@ -1855,7 +1922,7 @@
 			<integer value="3100" key="NS.object.0"/>
 		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
-		<string key="IBDocument.LastKnownRelativeProjectPath">../../TalentPad.xcodeproj</string>
+		<string key="IBDocument.LastKnownRelativeProjectPath">../../Talented.xcodeproj</string>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<bool key="EncodedWithXMLCoder">YES</bool>

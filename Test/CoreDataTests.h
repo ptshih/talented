@@ -22,7 +22,7 @@
 @interface CoreDataTests : SenTestCase {
 
 }
-
+- (void)testGlyphs;
 - (void)testWarrior;
 - (void)runTestCharacterClass:(NSString *)characterClass;
 
