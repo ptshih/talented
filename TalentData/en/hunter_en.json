@@ -28,7 +28,6 @@
         "cooldown" : "1 min cooldown",
         "reagents" : [ ],
         "description" : "Command your pet to intimidate the target, causing a high amount of threat and stunning the target for 3 sec. Lasts 15 sec.",
-        "internal" : false,
         "keyAbility" : true
       }, {
         "spellId" : 87325,
@@ -36,7 +35,6 @@
         "icon" : "ability_hunter_animalhandler",
         "reagents" : [ ],
         "description" : "Attack Power increased by 15%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -45,7 +43,6 @@
         "icon" : "ability_hunter_beasttaming",
         "reagents" : [ ],
         "description" : "Increases the damage done by your pets by 14%.  Each point of Mastery increases pet damage by an additional 1.7%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {
@@ -347,7 +344,6 @@
         "requires" : "Requires Ranged Weapon",
         "reagents" : [ ],
         "description" : "A powerful aimed shot that deals 65% ranged weapon damage plus 4.",
-        "internal" : false,
         "keyAbility" : true
       }, {
         "spellId" : 87326,
@@ -355,7 +351,6 @@
         "icon" : "inv_misc_quiver_06",
         "reagents" : [ ],
         "description" : "Ranged auto-attack damage increased by 15%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -364,7 +359,6 @@
         "icon" : "ability_hunter_wildquiver",
         "reagents" : [ ],
         "description" : "Grants a 14% chance for your ranged attacks to also instantly fire an additional ranged shot.  Each point of Mastery increases the chance by an additional 2%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {
@@ -672,7 +666,6 @@
         "requires" : "Requires Ranged Weapon",
         "reagents" : [ ],
         "description" : "You fire an explosive charge into the enemy target, dealing 2 Fire damage. The charge will blast the target every second for an additional 2 sec.",
-        "internal" : false,
         "keyAbility" : true
       }, {
         "spellId" : 84729,
@@ -680,7 +673,6 @@
         "icon" : "achievement_zone_alteracmountains_01",
         "reagents" : [ ],
         "description" : "Agility increased by 15%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -689,7 +681,6 @@
         "icon" : "spell_frost_arcticwinds",
         "reagents" : [ ],
         "description" : "Increases all elemental damage you deal by 8%.  Each point of Mastery increases elemental damage by an additional 1.0%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {

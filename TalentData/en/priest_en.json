@@ -28,23 +28,20 @@
         "cooldown" : "12 sec cooldown",
         "reagents" : [ ],
         "description" : "Launches a volley of holy light at the target, causing 23 Holy damage to an enemy, or 63 healing to an ally instantly and every 1 sec for 2 sec.",
-        "internal" : false,
         "keyAbility" : true
-      }, {
-        "spellId" : 84732,
-        "name" : "Enlightenment",
-        "icon" : "spell_arcane_mindmastery",
-        "reagents" : [ ],
-        "description" : "Intellect increased by 15%.",
-        "internal" : false,
-        "keyAbility" : false
       }, {
         "spellId" : 95860,
         "name" : "Meditation",
         "icon" : "spell_nature_sleep",
         "reagents" : [ ],
         "description" : "Allows 50% of your mana regeneration from Spirit to continue while in combat.",
-        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 84732,
+        "name" : "Enlightenment",
+        "icon" : "spell_arcane_mindmastery",
+        "reagents" : [ ],
+        "description" : "Intellect increased by 15%.",
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -53,7 +50,6 @@
         "icon" : "spell_holy_powerwordshield",
         "reagents" : [ ],
         "description" : "Increases  the potency of all your damage absorption spells by 20%.  Each point of Mastery increases the potency of absorbs by an additional 2.5%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {
@@ -391,7 +387,6 @@
         "cooldown" : "25 sec cooldown",
         "reagents" : [ ],
         "description" : "Chastise the target for 21 Holy damage, and disorients them for 3 sec.",
-        "internal" : false,
         "keyAbility" : true
       }, {
         "spellId" : 95861,
@@ -399,7 +394,6 @@
         "icon" : "spell_nature_sleep",
         "reagents" : [ ],
         "description" : "Allows 50% of your mana regeneration from Spirit to continue while in combat.",
-        "internal" : false,
         "keyAbility" : false
       }, {
         "spellId" : 87336,
@@ -407,7 +401,6 @@
         "icon" : "spell_holy_impholyconcentration",
         "reagents" : [ ],
         "description" : "Healing increased by 15%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -416,7 +409,6 @@
         "icon" : "spell_holy_aspiration",
         "reagents" : [ ],
         "description" : "Your direct healing spells heal for an additional 10% over 6 sec.  Each point of Mastery provides an additional 1.25% healing over 6 sec.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {
@@ -747,23 +739,20 @@
         "castTime" : "Channeled",
         "reagents" : [ ],
         "description" : "Assault the target's mind with Shadow energy, causing 24 Shadow damage over 3 sec and slowing their movement speed by 50%.",
-        "internal" : false,
         "keyAbility" : true
-      }, {
-        "spellId" : 95740,
-        "name" : "Shadow Orbs",
-        "icon" : "spell_priest_shadoworbs",
-        "reagents" : [ ],
-        "description" : "You have a 10% chance for your Shadow Word: Pain and Mind Flay spells to grant you a Shadow Orb each time they deal damage.  Casting your Mind Blast or Mind Spike spell consumes all Shadow Orbs, increasing damage of that spell by 0% per Shadow Orb, and granting 0% increased damage on your periodic Shadow spells for 15 sec.  You can have up to a maximum of 3 orbs.",
-        "internal" : false,
-        "keyAbility" : false
       }, {
         "spellId" : 87327,
         "name" : "Shadow Power",
         "icon" : "spell_shadow_shadowpower",
         "reagents" : [ ],
         "description" : "Spell damage increased by 25%.\n\n\n\nIncreases the critical damage of your Shadow spells by 100%.",
-        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 95740,
+        "name" : "Shadow Orbs",
+        "icon" : "spell_priest_shadoworbs",
+        "reagents" : [ ],
+        "description" : "You have a 10% chance for your Shadow Word: Pain and Mind Flay spells to grant you a Shadow Orb each time they deal damage.  Casting your Mind Blast or Mind Spike spell consumes all Shadow Orbs, increasing damage of that spell by 0% per Shadow Orb, and granting 0% increased damage on your periodic Shadow spells for 15 sec.  You can have up to a maximum of 3 orbs.",
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -772,7 +761,6 @@
         "icon" : "inv_chaos_orb",
         "reagents" : [ ],
         "description" : "Increases the damage done by your Shadow Orbs. Each point of Mastery increases damage by an additional 1.3%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {

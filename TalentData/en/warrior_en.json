@@ -29,23 +29,20 @@
         "requires" : "Requires Melee Weapon",
         "reagents" : [ ],
         "description" : "A vicious strike that deals 80% weapon damage plus 9 and wounds the target, reducing the effectiveness of any healing received by 10% for 10 sec.",
-        "internal" : false,
         "keyAbility" : true
-      }, {
-        "spellId" : 12296,
-        "name" : "Anger Management",
-        "icon" : "ability_warrior_endlessrage",
-        "reagents" : [ ],
-        "description" : "You generate 1 rage every 3 seconds and 25% extra rage from damage dealt.",
-        "internal" : false,
-        "keyAbility" : false
       }, {
         "spellId" : 12712,
         "name" : "Two-Handed Weapon Specialization",
         "icon" : "inv_axe_09",
         "reagents" : [ ],
         "description" : "Increases the damage you deal with two-handed melee weapons by 10%.",
-        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 12296,
+        "name" : "Anger Management",
+        "icon" : "ability_warrior_endlessrage",
+        "reagents" : [ ],
+        "description" : "You generate 1 rage every 3 seconds and 25% extra rage from damage dealt.",
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -54,7 +51,6 @@
         "icon" : "ability_backstab",
         "reagents" : [ ],
         "description" : "Grants a 16% chance for your melee attacks to instantly trigger an additional melee attack for 100% normal damage.  Each point of Mastery increases this chance by 2%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {
@@ -376,23 +372,20 @@
         "requires" : "Requires Melee Weapon",
         "reagents" : [ ],
         "description" : "Instantly attack the target causing 7 damage.  In addition, the next 3 successful melee attacks will restore 0.5% of max health.  This effect lasts 8 sec.  Damage is based on your attack power.",
-        "internal" : false,
         "keyAbility" : true
-      }, {
-        "spellId" : 23588,
-        "name" : "Dual Wield Specialization",
-        "icon" : "ability_dualwield",
-        "reagents" : [ ],
-        "description" : "Allows you to equip one-hand and off-hand weapons in your off-hand.  Increases all Physical damage by 10% and raises the damage of your off-hand attacks by an additional 25%.",
-        "internal" : false,
-        "keyAbility" : false
       }, {
         "spellId" : 29592,
         "name" : "Precision",
         "icon" : "ability_marksmanship",
         "reagents" : [ ],
         "description" : "Increases your chance to hit with your attacks by 3%.",
-        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 23588,
+        "name" : "Dual Wield Specialization",
+        "icon" : "ability_dualwield",
+        "reagents" : [ ],
+        "description" : "Allows you to equip one-hand and off-hand weapons in your off-hand.  Increases all Physical damage by 10% and raises the damage of your off-hand attacks by an additional 25%.",
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -401,7 +394,6 @@
         "icon" : "ability_warrior_endlessrage",
         "reagents" : [ ],
         "description" : "Increases the benefit of abilities that cause or require you to be enraged by 38%. Each point of Mastery increases enrage effects by an additional 4.70%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {
@@ -731,7 +723,6 @@
         "requires" : "Requires Shields",
         "reagents" : [ ],
         "description" : "Slam the target with your shield, causing 52 damage (based on attack power) and dispelling 1 magic effect on the target.  Also causes a high amount of threat.",
-        "internal" : false,
         "keyAbility" : true
       }, {
         "spellId" : 29144,
@@ -739,7 +730,6 @@
         "icon" : "inv_helmet_21",
         "reagents" : [ ],
         "description" : "Increases your total Stamina by 15% and your block chance by 15%.  You also generate 50% additional rage from attacking targets that are not targeting you.",
-        "internal" : false,
         "keyAbility" : false
       }, {
         "spellId" : 93098,
@@ -747,7 +737,6 @@
         "icon" : "ability_paladin_shieldofvengeance",
         "reagents" : [ ],
         "description" : "Each time you take damage, you gain 5% of the damage taken as attack power, up to a maximum of 10% of your health.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -756,7 +745,6 @@
         "icon" : "ability_warrior_criticalblock",
         "reagents" : [ ],
         "description" : "Increases your chance to block by 12% and your chance to critically block by 12%.  Each point of Mastery increases your block chance by an additional 1.5% and your critical block chance by an additional 1.5%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {

@@ -28,23 +28,20 @@
         "cooldown" : "6 sec cooldown",
         "reagents" : [ ],
         "description" : "Blasts the target with Holy energy, causing 54 Holy damage to an enemy, or 143 healing to an ally, and grants a charge of Holy Power.",
-        "internal" : false,
         "keyAbility" : true
-      }, {
-        "spellId" : 95859,
-        "name" : "Meditation",
-        "icon" : "spell_nature_sleep",
-        "reagents" : [ ],
-        "description" : "Allows 50% of your mana regeneration from Spirit to continue while in combat.",
-        "internal" : false,
-        "keyAbility" : false
       }, {
         "spellId" : 85102,
         "name" : "Walk in the Light",
         "icon" : "spell_holy_championsgrace",
         "reagents" : [ ],
         "description" : "Increases the effectiveness of your healing spells by 15%.",
-        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 95859,
+        "name" : "Meditation",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "Allows 50% of your mana regeneration from Spirit to continue while in combat.",
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -53,7 +50,6 @@
         "icon" : "spell_holy_absolution",
         "reagents" : [ ],
         "description" : "Your direct healing spells also place an absorb shield on your target for 10% of the amount healed lasting 8 sec.  Each point of Mastery increases the absorb amount by an addtional 1.25%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {
@@ -373,23 +369,13 @@
         "requires" : "Requires Shields",
         "reagents" : [ ],
         "description" : "Hurls a holy shield at the enemy, dealing 116 Holy damage, silencing and interrupting spellcasting for 3 sec, and then jumping to additional nearby enemies.  Affects 3 total targets.",
-        "internal" : false,
         "keyAbility" : true
-      }, {
-        "spellId" : 31878,
-        "name" : "Judgements of the Wise",
-        "icon" : "ability_paladin_judgementofthewise",
-        "reagents" : [ ],
-        "description" : "Your Judgement grants you 30% of your base mana over 10 sec.",
-        "internal" : false,
-        "keyAbility" : false
       }, {
         "spellId" : 53592,
         "name" : "Touched by the Light",
         "icon" : "ability_paladin_touchedbylight",
         "reagents" : [ ],
         "description" : "Increases your total Stamina by 15%, increases your spell hit by 8%, and increases your spell power by an amount equal to 60% of your Strength.",
-        "internal" : false,
         "keyAbility" : false
       }, {
         "spellId" : 84839,
@@ -397,7 +383,13 @@
         "icon" : "ability_paladin_shieldofvengeance",
         "reagents" : [ ],
         "description" : "Each time you take damage, you gain 5% of the damage taken as attack power, up to a maximum of 10% of your health.",
-        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 31878,
+        "name" : "Judgements of the Wise",
+        "icon" : "ability_paladin_judgementofthewise",
+        "reagents" : [ ],
+        "description" : "Your Judgement grants you 30% of your base mana over 10 sec.",
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -406,7 +398,6 @@
         "icon" : "spell_holy_holyprotection",
         "reagents" : [ ],
         "description" : "Increases your chance to block melee attacks by 18%.  Each point of Mastery increases block chance by an additional 2.25%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {
@@ -726,15 +717,13 @@
         "requires" : "Requires Melee Weapon",
         "reagents" : [ ],
         "description" : "An instant weapon attack that causes a percentage of weapon damage.  Consumes all charges of Holy Power to increase damage dealt:\n\n\n\n1 Holy Power: 30% Weapon Damage\n\n2 Holy Power: 90% Weapon Damage\n\n3 Holy Power: 235% Weapon Damage",
-        "internal" : false,
         "keyAbility" : true
       }, {
-        "spellId" : 89901,
-        "name" : "Judgements of the Bold",
-        "icon" : "ability_paladin_judgementofthewise",
+        "spellId" : 20113,
+        "name" : "Two-Handed Weapon Specialization",
+        "icon" : "inv_hammer_04",
         "reagents" : [ ],
-        "description" : "Your Judgement grants you 25% of your base mana over 10 sec.",
-        "internal" : false,
+        "description" : "Increases the damage you deal with two-handed melee weapons by 20%.",
         "keyAbility" : false
       }, {
         "spellId" : 53503,
@@ -742,15 +731,13 @@
         "icon" : "ability_paladin_sheathoflight",
         "reagents" : [ ],
         "description" : "Increases your spell power by an amount equal to 30% of your attack power and increases your chance to hit with spells by 8%.",
-        "internal" : false,
         "keyAbility" : false
       }, {
-        "spellId" : 20113,
-        "name" : "Two-Handed Weapon Specialization",
-        "icon" : "inv_hammer_04",
+        "spellId" : 89901,
+        "name" : "Judgements of the Bold",
+        "icon" : "ability_paladin_judgementofthewise",
         "reagents" : [ ],
-        "description" : "Increases the damage you deal with two-handed melee weapons by 20%.",
-        "internal" : false,
+        "description" : "Your Judgement grants you 25% of your base mana over 10 sec.",
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -759,7 +746,6 @@
         "icon" : "ability_paladin_blessedhands",
         "reagents" : [ ],
         "description" : "Your autoattacks have a 8% chance to grant Hand of Light, causing your next Holy Power ability to consume no Holy Power and to cast as if 3 Holy Power were consumed.  Each point of Mastery increases the chance by an additional 1%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {

@@ -26,23 +26,20 @@
         "cooldown" : "45 sec cooldown",
         "reagents" : [ ],
         "description" : "You call down a bolt of lightning, energizing you and damaging nearby enemies within 10 yards. Restores 8% mana to you and deals 56 Nature damage to all nearby enemies, knocking them back 20 yards. This spell is usable while stunned.",
-        "internal" : false,
         "keyAbility" : true
-      }, {
-        "spellId" : 60188,
-        "name" : "Elemental Fury",
-        "icon" : "spell_fire_volcano",
-        "reagents" : [ ],
-        "description" : "Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 100%.",
-        "internal" : false,
-        "keyAbility" : false
       }, {
         "spellId" : 62099,
         "name" : "Shamanism",
         "icon" : "spell_unused2",
         "reagents" : [ ],
         "description" : "Your Lightning Bolt, Chain Lightning, and Lava Burst spells gain an additional 20% benefit from your spell power, and their casting time is reduced by 0.5 sec.",
-        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 60188,
+        "name" : "Elemental Fury",
+        "icon" : "spell_fire_volcano",
+        "reagents" : [ ],
+        "description" : "Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 100%.",
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -51,7 +48,6 @@
         "icon" : "spell_nature_lightningoverload",
         "reagents" : [ ],
         "description" : "Grants a 16% chance for Elemental Overload to occur.  Elemental Overload causes a Lightning Bolt, Chain Lightning, or Lava Burst spell you cast to trigger a second, similar spell on the same target at no additional cost that causes 75% of normal damage and no threat.  Each point of Mastery increases the chance of Elemental Overload by an additional 2%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {
@@ -354,7 +350,6 @@
         "requires" : "Requires Melee Weapon",
         "reagents" : [ ],
         "description" : "You charge your off-hand weapon with lava, instantly dealing 200% of that weapon's damage to an enemy target. Damage is increased by 40% if your off-hand weapon is enchanted with Flametongue.",
-        "internal" : false,
         "keyAbility" : true
       }, {
         "spellId" : 86629,
@@ -362,7 +357,6 @@
         "icon" : "ability_dualwield",
         "reagents" : [ ],
         "description" : "Allows one-hand and off-hand weapons to be equipped in your off-hand, allows you to parry frontal melee attacks, and increases your chance to hit by an additional 6%.",
-        "internal" : false,
         "keyAbility" : false
       }, {
         "spellId" : 30814,
@@ -370,7 +364,6 @@
         "icon" : "spell_nature_mentalquickness",
         "reagents" : [ ],
         "description" : "Increases your spell power by an amount equal to 50% of your attack power, and reduces the mana cost of your instant spells by 75%.",
-        "internal" : false,
         "keyAbility" : false
       }, {
         "spellId" : 51522,
@@ -378,7 +371,6 @@
         "icon" : "spell_shaman_spectraltransformation",
         "reagents" : [ ],
         "description" : "Your melee attacks have a 40% chance to immediately restore 5% of your base mana.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -387,7 +379,6 @@
         "icon" : "spell_nature_elementalprecision_2",
         "reagents" : [ ],
         "description" : "Increases all Fire, Frost, and Nature damage done by 20%.  Each point of Mastery increases damage by an additional 2.5%",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {
@@ -700,23 +691,20 @@
         "castTime" : "Instant cast",
         "reagents" : [ ],
         "description" : "Protects the target with an earthen shield, reducing casting or channeling time lost when damaged by 30%  and causing attacks to heal the shielded target for 53.  This effect can only occur once every few seconds.  9 charges.  Lasts 10 min.  Earth Shield can only be placed on one target at a time and only one Elemental Shield can be active on a target at a time.",
-        "internal" : false,
         "keyAbility" : true
-      }, {
-        "spellId" : 95862,
-        "name" : "Meditation",
-        "icon" : "spell_nature_sleep",
-        "reagents" : [ ],
-        "description" : "Allows 50% of your mana regeneration from Spirit to continue while in combat.",
-        "internal" : false,
-        "keyAbility" : false
       }, {
         "spellId" : 16213,
         "name" : "Purification",
         "icon" : "spell_frost_wizardmark",
         "reagents" : [ ],
         "description" : "Increases the effectiveness of your healing spells by 10%, and reduces the casting time of your Healing Wave and Greater Healing Wave spells by 0.5 sec.",
-        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 95862,
+        "name" : "Meditation",
+        "icon" : "spell_nature_sleep",
+        "reagents" : [ ],
+        "description" : "Allows 50% of your mana regeneration from Spirit to continue while in combat.",
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -725,7 +713,6 @@
         "icon" : "spell_nature_healingtouch",
         "reagents" : [ ],
         "description" : "Increases the potency of your direct healing spells by up to 20%, based on the current health level of your target (lower health targets are healed for more).  Each point of Mastery increases direct heals by up to an additional 2.5%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {

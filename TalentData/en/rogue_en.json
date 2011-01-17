@@ -28,7 +28,6 @@
         "requires" : "Requires Daggers",
         "reagents" : [ ],
         "description" : "Instantly attacks with both weapons for 63% weapon damage plus an additional 7 with each weapon.  Damage is increased by 20% against Poisoned targets.  Awards 2 combo points.",
-        "internal" : false,
         "keyAbility" : true
       }, {
         "spellId" : 84601,
@@ -36,7 +35,6 @@
         "icon" : "ability_rogue_sinistercalling",
         "reagents" : [ ],
         "description" : "While wielding daggers, your maximum Energy is increased by 20 and your melee damage is increased by 15%.",
-        "internal" : false,
         "keyAbility" : false
       }, {
         "spellId" : 14117,
@@ -44,7 +42,6 @@
         "icon" : "ability_poisons",
         "reagents" : [ ],
         "description" : "Increases the chance to apply Deadly Poison to your target by 20% and the frequency of applying Instant Poison to your target by 50%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -53,7 +50,6 @@
         "icon" : "trade_brewpoison",
         "reagents" : [ ],
         "description" : "Increases the damage done by your poisons by 28%.  Each point of Mastery increases damage by an additional 3.5%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {
@@ -357,7 +353,6 @@
         "cooldown" : "30 sec cooldown",
         "reagents" : [ ],
         "description" : "While active, the rogue's attacks strike an additional nearby opponent, but energy regeneration is reduced by 20%.  Lasts 15 sec.",
-        "internal" : false,
         "keyAbility" : true
       }, {
         "spellId" : 13852,
@@ -365,7 +360,6 @@
         "icon" : "ability_dualwield",
         "reagents" : [ ],
         "description" : "Increases the damage done by your off hand and thrown weapons by 75%.",
-        "internal" : false,
         "keyAbility" : false
       }, {
         "spellId" : 61329,
@@ -373,7 +367,6 @@
         "icon" : "ability_warrior_revenge",
         "reagents" : [ ],
         "description" : "Increases your Energy regeneration rate by 25% and your Attack Power by 20%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -382,7 +375,6 @@
         "icon" : "inv_weapon_shortblade_15",
         "reagents" : [ ],
         "description" : "Your main hand attacks have a 16% chance to grant you an extra off hand attack.  Each point of Mastery increases the chance by an additional 2.00%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {
@@ -691,7 +683,6 @@
         "cooldown" : "20 sec cooldown",
         "reagents" : [ ],
         "description" : "Causes you to step through the shadows and appear behind an enemy target.  Your next Ambush or Garrote delivered within 10 sec will deal 30% additional damage, and your movement speed is increased by 70% for 3 sec.",
-        "internal" : false,
         "keyAbility" : true
       }, {
         "spellId" : 31223,
@@ -699,7 +690,6 @@
         "icon" : "ability_rogue_masterofsubtlety",
         "reagents" : [ ],
         "description" : "Attacks made while stealthed and for 6 seconds after breaking stealth cause an additional 10% damage.",
-        "internal" : false,
         "keyAbility" : false
       }, {
         "spellId" : 31220,
@@ -707,7 +697,6 @@
         "icon" : "ability_rogue_sinistercalling",
         "reagents" : [ ],
         "description" : "Increases your total Agility by 25% and increases the percentage damage bonus of Backstab and Hemorrhage by an additional 25%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -716,7 +705,6 @@
         "icon" : "inv_axe_06",
         "reagents" : [ ],
         "description" : "Increases the damage done by all your finishing moves, and the effectiveness of your Slice and Dice, by 16%.  Each point of Mastery increases damage by an additional 2.0%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {

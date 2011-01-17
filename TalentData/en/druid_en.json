@@ -28,7 +28,6 @@
         "cooldown" : "15 sec cooldown",
         "reagents" : [ ],
         "description" : "You fuse the power of the moon and sun, launching a devastating blast of energy at the target. Causes 59 Spellstorm damage to the target and generates 15 Lunar or Solar energy, whichever is more beneficial to you.",
-        "internal" : false,
         "keyAbility" : true
       }, {
         "spellId" : 16913,
@@ -36,7 +35,6 @@
         "icon" : "spell_nature_moonglow",
         "reagents" : [ ],
         "description" : "Arcane and Nature spell damage increased by 15%.\n\n\n\nIncreases the critical strike damage bonus of your Wrath, Moonfire, Starfire, Starsurge, Insect Swarm and Starfall spells by 100%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -45,7 +43,6 @@
         "icon" : "ability_druid_eclipse",
         "reagents" : [ ],
         "description" : "Increases the bonus damage from Eclipse by 12%.  Each point of Mastery increases the bonus by an additional 1.5%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {
@@ -367,23 +364,20 @@
         "icon" : "ability_druid_mangle2",
         "reagents" : [ ],
         "description" : "Mangle the target, inflicting damage and causing the target to take additional damage from bleed effects for 1 min.  This ability can be used in Cat Form or Bear Form.",
-        "internal" : false,
         "keyAbility" : true
-      }, {
-        "spellId" : 84735,
-        "name" : "Aggression",
-        "icon" : "ability_druid_predatoryinstincts",
-        "reagents" : [ ],
-        "description" : "Increases your attack power by 25%.",
-        "internal" : false,
-        "keyAbility" : false
       }, {
         "spellId" : 87335,
         "name" : "Feral Instinct",
         "icon" : "ability_ambush",
         "reagents" : [ ],
         "description" : "Reduces the chance enemies have to detect you while Prowling.",
-        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 84735,
+        "name" : "Aggression",
+        "icon" : "ability_druid_predatoryinstincts",
+        "reagents" : [ ],
+        "description" : "Increases your attack power by 25%.",
         "keyAbility" : false
       }, {
         "spellId" : 84840,
@@ -391,7 +385,6 @@
         "icon" : "ability_paladin_shieldofvengeance",
         "reagents" : [ ],
         "description" : "Each time you take damage while in Bear Form, you gain 5% of the damage taken as attack power, up to a maximum of 10% of your health.  Entering Cat Form will cancel this effect.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -400,7 +393,6 @@
         "icon" : "ability_racial_cannibalize",
         "reagents" : [ ],
         "description" : "Increases the damage absorbed by your Savage Defense ability by 32%.    Each point of Mastery increases the absorb by an additional 4%.",
-        "internal" : false,
         "keyAbility" : false
       }, {
         "spellId" : 77493,
@@ -408,7 +400,6 @@
         "icon" : "inv_misc_monsterclaw_05",
         "reagents" : [ ],
         "description" : "Increases the damage done by your bleed abilities by 25%.  Each point of Mastery increases bleed damage by an additional 3.1%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {
@@ -752,23 +743,20 @@
         "cooldown" : "15 sec cooldown",
         "reagents" : [ ],
         "description" : "Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal the target for 144.",
-        "internal" : false,
         "keyAbility" : true
-      }, {
-        "spellId" : 87305,
-        "name" : "Gift of Nature",
-        "icon" : "spell_nature_spiritarmor",
-        "reagents" : [ ],
-        "description" : "Healing increased by 25%.",
-        "internal" : false,
-        "keyAbility" : false
       }, {
         "spellId" : 85101,
         "name" : "Meditation",
         "icon" : "spell_nature_sleep",
         "reagents" : [ ],
         "description" : "Allows 50% of your mana regeneration from Spirit to continue while in combat.",
-        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 87305,
+        "name" : "Gift of Nature",
+        "icon" : "spell_nature_spiritarmor",
+        "reagents" : [ ],
+        "description" : "Healing increased by 25%.",
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -777,7 +765,6 @@
         "icon" : "spell_nature_healingway",
         "reagents" : [ ],
         "description" : "Increases the potency of your healing spells by 10% on targets already affected by one of your heal over time spells.  Each point of Mastery increases heal potency by an additional 1.25%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {

@@ -28,7 +28,6 @@
         "cooldown" : "4 sec cooldown",
         "reagents" : [ ],
         "description" : "Launches bolts of arcane energy at the enemy target, causing 40 Arcane damage.",
-        "internal" : false,
         "keyAbility" : true
       }, {
         "spellId" : 84671,
@@ -36,7 +35,6 @@
         "icon" : "spell_fire_twilightfire",
         "reagents" : [ ],
         "description" : "Increases the damage of your Arcane spells by 25%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -45,7 +43,6 @@
         "icon" : "spell_arcane_manatap",
         "reagents" : [ ],
         "description" : "Increases all spell damage done by up to 12%, based on the amount of mana the Mage has unspent.  Each point of Mastery increases damage done by up to an additional 1.5%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {
@@ -377,7 +374,6 @@
         "castTime" : "5 sec cast",
         "reagents" : [ ],
         "description" : "Hurls an immense fiery boulder that causes 34 Fire damage and an additional 20 Fire damage over 12 sec.",
-        "internal" : false,
         "keyAbility" : true
       }, {
         "spellId" : 84668,
@@ -385,7 +381,6 @@
         "icon" : "spell_fire_fire",
         "reagents" : [ ],
         "description" : "Increases the damage of your Fire spells by 25%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -394,7 +389,6 @@
         "icon" : "spell_fire_selfdestruct",
         "reagents" : [ ],
         "description" : "Increases the damage done by all your periodic fire damage effects by 20%.  Each point of Mastery increases periodic damage done by an additional 2.5%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {
@@ -724,7 +718,6 @@
         "cooldown" : "3 min cooldown",
         "reagents" : [ ],
         "description" : "Summon a Water Elemental to fight for the caster.",
-        "internal" : false,
         "keyAbility" : true
       }, {
         "spellId" : 84669,
@@ -732,7 +725,6 @@
         "icon" : "spell_fire_bluefire",
         "reagents" : [ ],
         "description" : "Increases the damage of your Frost spells by 25%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -741,7 +733,6 @@
         "icon" : "spell_frost_frostarmor",
         "reagents" : [ ],
         "description" : "All your spells deal 20% increased damage against Frozen targets.  Each point of Mastery increases damage by an additional 2.5%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {

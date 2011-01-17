@@ -27,7 +27,6 @@
         "castTime" : "1.5 sec cast",
         "reagents" : [ ],
         "description" : "Shadow energy slowly destroys the target, causing 50 damage over 15 sec.  In addition, if the Unstable Affliction is dispelled it will cause 90 damage to the dispeller and silence them for 5 sec.  Only one Unstable Affliction or Immolate per Warlock can be active on any one target.",
-        "internal" : false,
         "keyAbility" : true
       }, {
         "spellId" : 87339,
@@ -35,7 +34,6 @@
         "icon" : "spell_shadow_spectralsight",
         "reagents" : [ ],
         "description" : "Increases Shadow spell damage by 25%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -44,7 +42,6 @@
         "icon" : "ability_warlock_everlastingaffliction",
         "reagents" : [ ],
         "description" : "Increases all periodic shadow damage you deal by 13%.  Each point of Mastery increases periodic shadow damage by an additional 1.63%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {
@@ -334,7 +331,6 @@
         "castTime" : "6 sec cast",
         "reagents" : [ ],
         "description" : "Summons a Felguard under the command of the Warlock.",
-        "internal" : false,
         "keyAbility" : true
       }, {
         "spellId" : 84740,
@@ -342,7 +338,6 @@
         "icon" : "spell_fire_twilightimmolation",
         "reagents" : [ ],
         "description" : "Increases your Fire and Shadow spell damage by 15%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -351,7 +346,6 @@
         "icon" : "spell_shadow_shadowpact",
         "reagents" : [ ],
         "description" : "Increases the damage done by your demon servants and damage you deal while transformed into a demon by 12%.  Each point of Mastery increases damage by an additional 1.5%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {
@@ -652,7 +646,6 @@
         "cooldown" : "10 sec cooldown",
         "reagents" : [ ],
         "description" : "Instantly deals fire damage equal to 60% of your Immolate's periodic damage on the target.",
-        "internal" : false,
         "keyAbility" : true
       }, {
         "spellId" : 84739,
@@ -660,7 +653,6 @@
         "icon" : "spell_fire_meteorstorm",
         "reagents" : [ ],
         "description" : "Increases Fire spell damage by 25%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -669,7 +661,6 @@
         "icon" : "spell_fire_moltenblood",
         "reagents" : [ ],
         "description" : "Increases all fire damage you deal by 10%.  Each point of Mastery increases fire damage by an additional 1.25%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {

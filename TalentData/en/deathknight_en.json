@@ -28,15 +28,20 @@
         "requires" : "Requires Melee Weapon",
         "reagents" : [ ],
         "description" : "Instantly strike the target and up to two additional nearby enemies, causing 100% weapon damage plus 17 on the primary target, with each additional enemy struck taking 25% less damage than the previous target.  Damage dealt to each target is increased by an additional 10% for each of your diseases present.",
-        "internal" : false,
         "keyAbility" : true
+      }, {
+        "spellId" : 50029,
+        "name" : "Veteran of the Third War",
+        "icon" : "spell_misc_warsongfocus",
+        "reagents" : [ ],
+        "description" : "Increases your total Stamina by 9% and your expertise by 6.",
+        "keyAbility" : false
       }, {
         "spellId" : 50034,
         "name" : "Blood Rites",
         "icon" : "spell_deathknight_bloodtap",
         "reagents" : [ ],
         "description" : "Whenever you hit with Death Strike or Obliterate, the Frost and Unholy Runes will become Death Runes when they activate.  Death Runes count as a Blood, Frost or Unholy Rune.",
-        "internal" : false,
         "keyAbility" : false
       }, {
         "spellId" : 93099,
@@ -44,15 +49,6 @@
         "icon" : "ability_paladin_shieldofvengeance",
         "reagents" : [ ],
         "description" : "Each time you take damage, you gain 5% of the damage taken as attack power, up to a maximum of 10% of your health.",
-        "internal" : false,
-        "keyAbility" : false
-      }, {
-        "spellId" : 50029,
-        "name" : "Veteran of the Third War",
-        "icon" : "spell_misc_warsongfocus",
-        "reagents" : [ ],
-        "description" : "Increases your total Stamina by 9% and your expertise by 6.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -61,7 +57,6 @@
         "icon" : "spell_deathknight_deathstrike",
         "reagents" : [ ],
         "description" : "Each time you heal yourself via Death Strike, you gain 50% of the amount healed as a damage absorption shield.  Each point of Mastery increases the shield by an additional 6.25%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {
@@ -387,23 +382,20 @@
         "requires" : "Requires Melee Weapon",
         "reagents" : [ ],
         "description" : "Instantly strike the enemy, causing 110% weapon damage plus 7 as Frost damage.",
-        "internal" : false,
         "keyAbility" : true
-      }, {
-        "spellId" : 54637,
-        "name" : "Blood of the North",
-        "icon" : "inv_weapon_shortblade_79",
-        "reagents" : [ ],
-        "description" : "Whenever you hit with Blood Strike or Pestilence, the Blood Rune will become a Death Rune when it activates.  Death Runes count as a Blood, Frost or Unholy Rune.",
-        "internal" : false,
-        "keyAbility" : false
       }, {
         "spellId" : 50887,
         "name" : "Icy Talons",
         "icon" : "spell_deathknight_icytalons",
         "reagents" : [ ],
         "description" : "Your melee attack speed is increased by 20%.",
-        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 54637,
+        "name" : "Blood of the North",
+        "icon" : "inv_weapon_shortblade_79",
+        "reagents" : [ ],
+        "description" : "Whenever you hit with Blood Strike or Pestilence, the Blood Rune will become a Death Rune when it activates.  Death Runes count as a Blood, Frost or Unholy Rune.",
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -412,7 +404,6 @@
         "icon" : "inv_misc_gem_sapphire_01",
         "reagents" : [ ],
         "description" : "Increases all frost damage done by 16%.  Each point of Mastery increases frost damage by an additional 2.0%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {
@@ -734,7 +725,6 @@
         "requires" : "Requires Melee Weapon",
         "reagents" : [ ],
         "description" : "An unholy strike that deals 100% of weapon damage as Physical damage plus 13.  In addition, for each of your diseases on your target, you deal an additional 12% of the Physical damage done as Shadow damage.",
-        "internal" : false,
         "keyAbility" : true
       }, {
         "spellId" : 52143,
@@ -742,15 +732,6 @@
         "icon" : "spell_shadow_animatedead",
         "reagents" : [ ],
         "description" : "Reduces the cooldown on Raise Dead by 60 sec, and the Ghoul summoned by your Raise Dead spell is considered a pet under your control.  Unlike normal Death Knight Ghouls, your pet does not have a limited duration.",
-        "internal" : false,
-        "keyAbility" : false
-      }, {
-        "spellId" : 56835,
-        "name" : "Reaping",
-        "icon" : "spell_shadow_shadetruesight",
-        "reagents" : [ ],
-        "description" : "Whenever you hit with Blood Strike, Pestilence, or Festering Strike, the Runes spent will become Death Runes when they activate.  Death Runes count as a Blood, Frost or Unholy Rune.",
-        "internal" : false,
         "keyAbility" : false
       }, {
         "spellId" : 91107,
@@ -758,7 +739,13 @@
         "icon" : "spell_shadow_unholystrength",
         "reagents" : [ ],
         "description" : "Dark power courses through your limbs, increasing your Strength by 10%.",
-        "internal" : false,
+        "keyAbility" : false
+      }, {
+        "spellId" : 56835,
+        "name" : "Reaping",
+        "icon" : "spell_shadow_shadetruesight",
+        "reagents" : [ ],
+        "description" : "Whenever you hit with Blood Strike, Pestilence, or Festering Strike, the Runes spent will become Death Runes when they activate.  Death Runes count as a Blood, Frost or Unholy Rune.",
         "keyAbility" : false
       } ],
       "masteries" : [ {
@@ -767,7 +754,6 @@
         "icon" : "achievement_zone_westernplaguelands_01",
         "reagents" : [ ],
         "description" : "Increases the damage done by your diseases by 40%.  Each point of Mastery increases disease damage by an additional 5.0%.",
-        "internal" : false,
         "keyAbility" : false
       } ],
       "talents" : [ {
