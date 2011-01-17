@@ -839,6 +839,280 @@
 		25ECC70712E3BEA500E34E02 /* glyph_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC70612E3BEA500E34E02 /* glyph_bg.png */; };
 		25ECC76212E3C73800E34E02 /* Glyph.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ECC76112E3C73800E34E02 /* Glyph.m */; };
 		25ECC76312E3C73800E34E02 /* Glyph.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ECC76112E3C73800E34E02 /* Glyph.m */; };
+		25ECC7D112E3D0EF00E34E02 /* Glyph+Fetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ECC7D012E3D0EF00E34E02 /* Glyph+Fetch.m */; };
+		25ECC7D212E3D0EF00E34E02 /* Glyph+Fetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ECC7D012E3D0EF00E34E02 /* Glyph+Fetch.m */; };
+		25ECC80112E3F3A300E34E02 /* glyph_cell_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC80012E3F3A300E34E02 /* glyph_cell_bg.png */; };
+		25ECC80212E3F3A300E34E02 /* glyph_cell_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC80012E3F3A300E34E02 /* glyph_cell_bg.png */; };
+		25ECC8B912E3F9B100E34E02 /* ability_druid_aquaticform.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83212E3F9B100E34E02 /* ability_druid_aquaticform.jpg */; };
+		25ECC8BA12E3F9B100E34E02 /* ability_druid_challangingroar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83312E3F9B100E34E02 /* ability_druid_challangingroar.jpg */; };
+		25ECC8BB12E3F9B100E34E02 /* ability_druid_cower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83412E3F9B100E34E02 /* ability_druid_cower.jpg */; };
+		25ECC8BC12E3F9B100E34E02 /* ability_druid_dash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83512E3F9B100E34E02 /* ability_druid_dash.jpg */; };
+		25ECC8BD12E3F9B100E34E02 /* ability_druid_lacerate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83612E3F9B100E34E02 /* ability_druid_lacerate.jpg */; };
+		25ECC8BE12E3F9B100E34E02 /* ability_druid_maul.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83712E3F9B100E34E02 /* ability_druid_maul.jpg */; };
+		25ECC8BF12E3F9B100E34E02 /* ability_druid_skinteeth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83812E3F9B100E34E02 /* ability_druid_skinteeth.jpg */; };
+		25ECC8C012E3F9B100E34E02 /* ability_golemstormbolt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83912E3F9B100E34E02 /* ability_golemstormbolt.jpg */; };
+		25ECC8C112E3F9B100E34E02 /* ability_golemthunderclap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83A12E3F9B100E34E02 /* ability_golemthunderclap.jpg */; };
+		25ECC8C212E3F9B100E34E02 /* ability_hunter_aspectofthemonkey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83B12E3F9B100E34E02 /* ability_hunter_aspectofthemonkey.jpg */; };
+		25ECC8C312E3F9B100E34E02 /* ability_hunter_assassinate2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83C12E3F9B100E34E02 /* ability_hunter_assassinate2.jpg */; };
+		25ECC8C412E3F9B100E34E02 /* ability_hunter_beastsoothe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83D12E3F9B100E34E02 /* ability_hunter_beastsoothe.jpg */; };
+		25ECC8C512E3F9B100E34E02 /* ability_hunter_killcommand.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83E12E3F9B100E34E02 /* ability_hunter_killcommand.jpg */; };
+		25ECC8C612E3F9B100E34E02 /* ability_hunter_masterscall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83F12E3F9B100E34E02 /* ability_hunter_masterscall.jpg */; };
+		25ECC8C712E3F9B100E34E02 /* ability_hunter_misdirection.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84012E3F9B100E34E02 /* ability_hunter_misdirection.jpg */; };
+		25ECC8C812E3F9B100E34E02 /* ability_hunter_runningshot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84112E3F9B100E34E02 /* ability_hunter_runningshot.jpg */; };
+		25ECC8C912E3F9B100E34E02 /* ability_hunter_snaketrap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84212E3F9B100E34E02 /* ability_hunter_snaketrap.jpg */; };
+		25ECC8CA12E3F9B100E34E02 /* ability_hunter_steadyshot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84312E3F9B100E34E02 /* ability_hunter_steadyshot.jpg */; };
+		25ECC8CB12E3F9B100E34E02 /* ability_hunter_traplauncher.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84412E3F9B100E34E02 /* ability_hunter_traplauncher.jpg */; };
+		25ECC8CC12E3F9B100E34E02 /* ability_impalingbolt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84512E3F9B100E34E02 /* ability_impalingbolt.jpg */; };
+		25ECC8CD12E3F9B100E34E02 /* ability_mage_conjurefoodrank9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84612E3F9B100E34E02 /* ability_mage_conjurefoodrank9.jpg */; };
+		25ECC8CE12E3F9B100E34E02 /* ability_mage_frostfirebolt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84712E3F9B100E34E02 /* ability_mage_frostfirebolt.jpg */; };
+		25ECC8CF12E3F9B100E34E02 /* ability_mage_invisibility.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84812E3F9B100E34E02 /* ability_mage_invisibility.jpg */; };
+		25ECC8D012E3F9B100E34E02 /* ability_mage_moltenarmor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84912E3F9B100E34E02 /* ability_mage_moltenarmor.jpg */; };
+		25ECC8D112E3F9B100E34E02 /* ability_meleedamage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84A12E3F9B100E34E02 /* ability_meleedamage.jpg */; };
+		25ECC8D212E3F9B100E34E02 /* ability_mount_whitedirewolf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84B12E3F9B100E34E02 /* ability_mount_whitedirewolf.jpg */; };
+		25ECC8D312E3F9B100E34E02 /* ability_mount_whitetiger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84C12E3F9B100E34E02 /* ability_mount_whitetiger.jpg */; };
+		25ECC8D412E3F9B100E34E02 /* ability_poisonsting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84D12E3F9B100E34E02 /* ability_poisonsting.jpg */; };
+		25ECC8D512E3F9B100E34E02 /* ability_rogue_distract.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84E12E3F9B100E34E02 /* ability_rogue_distract.jpg */; };
+		25ECC8D612E3F9B100E34E02 /* ability_rogue_fanofknives.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84F12E3F9B100E34E02 /* ability_rogue_fanofknives.jpg */; };
+		25ECC8D712E3F9B100E34E02 /* ability_rogue_feint.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85012E3F9B100E34E02 /* ability_rogue_feint.jpg */; };
+		25ECC8D812E3F9B100E34E02 /* ability_rogue_garrote.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85112E3F9B100E34E02 /* ability_rogue_garrote.jpg */; };
+		25ECC8D912E3F9B100E34E02 /* ability_rogue_rupture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85212E3F9B100E34E02 /* ability_rogue_rupture.jpg */; };
+		25ECC8DA12E3F9B100E34E02 /* ability_rogue_tricksofthetrade.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85312E3F9B100E34E02 /* ability_rogue_tricksofthetrade.jpg */; };
+		25ECC8DB12E3F9B100E34E02 /* ability_sap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85412E3F9B100E34E02 /* ability_sap.jpg */; };
+		25ECC8DC12E3F9B100E34E02 /* ability_vanish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85512E3F9B100E34E02 /* ability_vanish.jpg */; };
+		25ECC8DD12E3F9B100E34E02 /* ability_warlock_shadowflame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85612E3F9B100E34E02 /* ability_warlock_shadowflame.jpg */; };
+		25ECC8DE12E3F9B100E34E02 /* ability_warrior_battleshout.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85712E3F9B100E34E02 /* ability_warrior_battleshout.jpg */; };
+		25ECC8DF12E3F9B100E34E02 /* ability_warrior_charge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85812E3F9B100E34E02 /* ability_warrior_charge.jpg */; };
+		25ECC8E012E3F9B100E34E02 /* ability_warrior_cleave.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85912E3F9B100E34E02 /* ability_warrior_cleave.jpg */; };
+		25ECC8E112E3F9B100E34E02 /* ability_warrior_colossussmash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85A12E3F9B100E34E02 /* ability_warrior_colossussmash.jpg */; };
+		25ECC8E212E3F9B100E34E02 /* ability_warrior_rallyingcry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85B12E3F9B100E34E02 /* ability_warrior_rallyingcry.jpg */; };
+		25ECC8E312E3F9B100E34E02 /* ability_warrior_shieldreflection.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85C12E3F9B100E34E02 /* ability_warrior_shieldreflection.jpg */; };
+		25ECC8E412E3F9B100E34E02 /* ability_warrior_shieldwall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85D12E3F9B100E34E02 /* ability_warrior_shieldwall.jpg */; };
+		25ECC8E512E3F9B100E34E02 /* ability_warrior_sunder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85E12E3F9B100E34E02 /* ability_warrior_sunder.jpg */; };
+		25ECC8E612E3F9B100E34E02 /* ability_warrior_victoryrush.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85F12E3F9B100E34E02 /* ability_warrior_victoryrush.jpg */; };
+		25ECC8E712E3F9B100E34E02 /* ability_warrior_warcry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86012E3F9B100E34E02 /* ability_warrior_warcry.jpg */; };
+		25ECC8E812E3F9B100E34E02 /* ability_whirlwind.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86112E3F9B100E34E02 /* ability_whirlwind.jpg */; };
+		25ECC8E912E3F9B100E34E02 /* inv_axe_66.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86212E3F9B100E34E02 /* inv_axe_66.jpg */; };
+		25ECC8EA12E3F9B100E34E02 /* inv_feather_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86312E3F9B100E34E02 /* inv_feather_01.jpg */; };
+		25ECC8EB12E3F9B100E34E02 /* inv_helmet_96.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86412E3F9B100E34E02 /* inv_helmet_96.jpg */; };
+		25ECC8EC12E3F9B100E34E02 /* inv_misc_bag_11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86512E3F9B100E34E02 /* inv_misc_bag_11.jpg */; };
+		25ECC8ED12E3F9B100E34E02 /* inv_misc_herb_felblossom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86612E3F9B100E34E02 /* inv_misc_herb_felblossom.jpg */; };
+		25ECC8EE12E3F9B100E34E02 /* inv_misc_horn_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86712E3F9B100E34E02 /* inv_misc_horn_02.jpg */; };
+		25ECC8EF12E3F9B100E34E02 /* inv_misc_penguinpet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86812E3F9B100E34E02 /* inv_misc_penguinpet.jpg */; };
+		25ECC8F012E3F9B100E34E02 /* inv_spear_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86912E3F9B100E34E02 /* inv_spear_04.jpg */; };
+		25ECC8F112E3F9B100E34E02 /* inv_stone_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86A12E3F9B100E34E02 /* inv_stone_04.jpg */; };
+		25ECC8F212E3F9B100E34E02 /* inv_throwingknife_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86B12E3F9B100E34E02 /* inv_throwingknife_06.jpg */; };
+		25ECC8F312E3F9B100E34E02 /* spell_arcane_massdispel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86C12E3F9B100E34E02 /* spell_arcane_massdispel.jpg */; };
+		25ECC8F412E3F9B100E34E02 /* spell_arcane_starfire.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86D12E3F9B100E34E02 /* spell_arcane_starfire.jpg */; };
+		25ECC8F512E3F9B100E34E02 /* spell_deathknight_classicon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86E12E3F9B100E34E02 /* spell_deathknight_classicon.jpg */; };
+		25ECC8F612E3F9B100E34E02 /* spell_deathknight_darkconviction.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86F12E3F9B100E34E02 /* spell_deathknight_darkconviction.jpg */; };
+		25ECC8F712E3F9B100E34E02 /* spell_deathknight_icetouch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87012E3F9B100E34E02 /* spell_deathknight_icetouch.jpg */; };
+		25ECC8F812E3F9B100E34E02 /* spell_deathknight_pathoffrost.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87112E3F9B100E34E02 /* spell_deathknight_pathoffrost.jpg */; };
+		25ECC8F912E3F9B100E34E02 /* spell_fire_elemental_totem.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87212E3F9B100E34E02 /* spell_fire_elemental_totem.jpg */; };
+		25ECC8FA12E3F9B100E34E02 /* spell_fire_flamebolt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87312E3F9B100E34E02 /* spell_fire_flamebolt.jpg */; };
+		25ECC8FB12E3F9B100E34E02 /* spell_fire_flameshock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87412E3F9B100E34E02 /* spell_fire_flameshock.jpg */; };
+		25ECC8FC12E3F9B100E34E02 /* spell_frost_chainsofice.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87512E3F9B100E34E02 /* spell_frost_chainsofice.jpg */; };
+		25ECC8FD12E3F9B100E34E02 /* spell_frost_chillingarmor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87612E3F9B100E34E02 /* spell_frost_chillingarmor.jpg */; };
+		25ECC8FE12E3F9B100E34E02 /* spell_frost_frost.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87712E3F9B100E34E02 /* spell_frost_frost.jpg */; };
+		25ECC8FF12E3F9B100E34E02 /* spell_frost_frostblast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87812E3F9B100E34E02 /* spell_frost_frostblast.jpg */; };
+		25ECC90012E3F9B100E34E02 /* spell_frost_frostnova.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87912E3F9B100E34E02 /* spell_frost_frostnova.jpg */; };
+		25ECC90112E3F9B100E34E02 /* spell_frost_stun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87A12E3F9B100E34E02 /* spell_frost_stun.jpg */; };
+		25ECC90212E3F9B100E34E02 /* spell_holy_aspiration.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87B12E3F9B100E34E02 /* spell_holy_aspiration.jpg */; };
+		25ECC90312E3F9B100E34E02 /* spell_holy_crusaderstrike.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87C12E3F9B100E34E02 /* spell_holy_crusaderstrike.jpg */; };
+		25ECC90412E3F9B100E34E02 /* spell_holy_dispelmagic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87D12E3F9B100E34E02 /* spell_holy_dispelmagic.jpg */; };
+		25ECC90512E3F9B100E34E02 /* spell_holy_excorcism.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87E12E3F9B100E34E02 /* spell_holy_excorcism.jpg */; };
+		25ECC90612E3F9B100E34E02 /* spell_holy_flashheal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87F12E3F9B100E34E02 /* spell_holy_flashheal.jpg */; };
+		25ECC90712E3F9B100E34E02 /* spell_holy_greaterblessingofkings.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88012E3F9B100E34E02 /* spell_holy_greaterblessingofkings.jpg */; };
+		25ECC90812E3F9B100E34E02 /* spell_holy_holynova.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88112E3F9B100E34E02 /* spell_holy_holynova.jpg */; };
+		25ECC90912E3F9B100E34E02 /* spell_holy_holysmite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88212E3F9B100E34E02 /* spell_holy_holysmite.jpg */; };
+		25ECC90A12E3F9B100E34E02 /* spell_holy_prayerofhealing02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88312E3F9B100E34E02 /* spell_holy_prayerofhealing02.jpg */; };
+		25ECC90B12E3F9B100E34E02 /* spell_holy_prayerofmendingtga.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88412E3F9B100E34E02 /* spell_holy_prayerofmendingtga.jpg */; };
+		25ECC90C12E3F9B100E34E02 /* spell_holy_purify.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88512E3F9B100E34E02 /* spell_holy_purify.jpg */; };
+		25ECC90D12E3F9B100E34E02 /* spell_holy_purifyingpower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88612E3F9B100E34E02 /* spell_holy_purifyingpower.jpg */; };
+		25ECC90E12E3F9B100E34E02 /* spell_holy_righteousfury.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88712E3F9B100E34E02 /* spell_holy_righteousfury.jpg */; };
+		25ECC90F12E3F9B100E34E02 /* spell_holy_righteousnessaura.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88812E3F9B100E34E02 /* spell_holy_righteousnessaura.jpg */; };
+		25ECC91012E3F9B100E34E02 /* spell_holy_sealofsalvation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88912E3F9B100E34E02 /* spell_holy_sealofsalvation.jpg */; };
+		25ECC91112E3F9B100E34E02 /* spell_holy_turnundead.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88A12E3F9B100E34E02 /* spell_holy_turnundead.jpg */; };
+		25ECC91212E3F9B100E34E02 /* spell_holy_wordfortitude.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88B12E3F9B100E34E02 /* spell_holy_wordfortitude.jpg */; };
+		25ECC91312E3F9B100E34E02 /* spell_magearmor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88C12E3F9B100E34E02 /* spell_magearmor.jpg */; };
+		25ECC91412E3F9B100E34E02 /* spell_magic_featherfall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88D12E3F9B100E34E02 /* spell_magic_featherfall.jpg */; };
+		25ECC91512E3F9B100E34E02 /* spell_magic_magearmor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88E12E3F9B100E34E02 /* spell_magic_magearmor.jpg */; };
+		25ECC91612E3F9B100E34E02 /* spell_nature_ancestralguardian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88F12E3F9B100E34E02 /* spell_nature_ancestralguardian.jpg */; };
+		25ECC91712E3F9B100E34E02 /* spell_nature_astralrecal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89012E3F9B100E34E02 /* spell_nature_astralrecal.jpg */; };
+		25ECC91812E3F9B100E34E02 /* spell_nature_chainlightning.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89112E3F9B100E34E02 /* spell_nature_chainlightning.jpg */; };
+		25ECC91912E3F9B100E34E02 /* spell_nature_cyclone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89212E3F9B100E34E02 /* spell_nature_cyclone.jpg */; };
+		25ECC91A12E3F9B100E34E02 /* spell_nature_earthshock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89312E3F9B100E34E02 /* spell_nature_earthshock.jpg */; };
+		25ECC91B12E3F9B100E34E02 /* spell_nature_faeriefire.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89412E3F9B100E34E02 /* spell_nature_faeriefire.jpg */; };
+		25ECC91C12E3F9B100E34E02 /* spell_nature_giftofthewild.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89512E3F9B100E34E02 /* spell_nature_giftofthewild.jpg */; };
+		25ECC91D12E3F9B100E34E02 /* spell_nature_groundingtotem.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89612E3F9B100E34E02 /* spell_nature_groundingtotem.jpg */; };
+		25ECC91E12E3F9B100E34E02 /* spell_nature_healingwavegreater.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89712E3F9B100E34E02 /* spell_nature_healingwavegreater.jpg */; };
+		25ECC91F12E3F9B100E34E02 /* spell_nature_insectswarm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89812E3F9B100E34E02 /* spell_nature_insectswarm.jpg */; };
+		25ECC92012E3F9B100E34E02 /* spell_nature_moonkey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89912E3F9B100E34E02 /* spell_nature_moonkey.jpg */; };
+		25ECC92112E3F9B100E34E02 /* spell_nature_reincarnation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89A12E3F9B100E34E02 /* spell_nature_reincarnation.jpg */; };
+		25ECC92212E3F9B100E34E02 /* spell_nature_stoneclawtotem.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89B12E3F9B100E34E02 /* spell_nature_stoneclawtotem.jpg */; };
+		25ECC92312E3F9B100E34E02 /* spell_nature_thorns.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89C12E3F9B100E34E02 /* spell_nature_thorns.jpg */; };
+		25ECC92412E3F9B100E34E02 /* spell_nature_thunderclap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89D12E3F9B100E34E02 /* spell_nature_thunderclap.jpg */; };
+		25ECC92512E3F9B100E34E02 /* spell_shadow_curse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89E12E3F9B100E34E02 /* spell_shadow_curse.jpg */; };
+		25ECC92612E3F9B100E34E02 /* spell_shadow_deadofnight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89F12E3F9B100E34E02 /* spell_shadow_deadofnight.jpg */; };
+		25ECC92712E3F9B100E34E02 /* spell_shadow_demonbreath.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8A012E3F9B100E34E02 /* spell_shadow_demonbreath.jpg */; };
+		25ECC92812E3F9B100E34E02 /* spell_shadow_demoniccircleteleport.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8A112E3F9B100E34E02 /* spell_shadow_demoniccircleteleport.jpg */; };
+		25ECC92912E3F9B100E34E02 /* spell_shadow_demonicfortitude.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8A212E3F9B100E34E02 /* spell_shadow_demonicfortitude.jpg */; };
+		25ECC92A12E3F9B100E34E02 /* spell_shadow_detectlesserinvisibility.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8A312E3F9B100E34E02 /* spell_shadow_detectlesserinvisibility.jpg */; };
+		25ECC92B12E3F9B100E34E02 /* spell_shadow_enslavedemon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8A412E3F9B100E34E02 /* spell_shadow_enslavedemon.jpg */; };
+		25ECC92C12E3F9B100E34E02 /* spell_shadow_evileye.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8A512E3F9B100E34E02 /* spell_shadow_evileye.jpg */; };
+		25ECC92D12E3F9B100E34E02 /* spell_shadow_gathershadows.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8A612E3F9B100E34E02 /* spell_shadow_gathershadows.jpg */; };
+		25ECC92E12E3F9B100E34E02 /* spell_shadow_haunting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8A712E3F9B100E34E02 /* spell_shadow_haunting.jpg */; };
+		25ECC92F12E3F9B100E34E02 /* spell_shadow_mindsteal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8A812E3F9B100E34E02 /* spell_shadow_mindsteal.jpg */; };
+		25ECC93012E3F9B100E34E02 /* spell_shadow_nethercloak.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8A912E3F9B100E34E02 /* spell_shadow_nethercloak.jpg */; };
+		25ECC93112E3F9B100E34E02 /* spell_shadow_shadesofdarkness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8AA12E3F9B100E34E02 /* spell_shadow_shadesofdarkness.jpg */; };
+		25ECC93212E3F9B100E34E02 /* spell_shadow_shadowbolt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8AB12E3F9B100E34E02 /* spell_shadow_shadowbolt.jpg */; };
+		25ECC93312E3F9B100E34E02 /* spell_shadow_shadowward.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8AC12E3F9B100E34E02 /* spell_shadow_shadowward.jpg */; };
+		25ECC93412E3F9B100E34E02 /* spell_shadow_summonfelhunter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8AD12E3F9B100E34E02 /* spell_shadow_summonfelhunter.jpg */; };
+		25ECC93512E3F9B100E34E02 /* spell_shadow_summonvoidwalker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8AE12E3F9B100E34E02 /* spell_shadow_summonvoidwalker.jpg */; };
+		25ECC93612E3F9B100E34E02 /* spell_shadow_vampiricaura.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8AF12E3F9B100E34E02 /* spell_shadow_vampiricaura.jpg */; };
+		25ECC93712E3F9B100E34E02 /* spell_shaman_firenova.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8B012E3F9B100E34E02 /* spell_shaman_firenova.jpg */; };
+		25ECC93812E3F9B100E34E02 /* spell_shaman_hex.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8B112E3F9B100E34E02 /* spell_shaman_hex.jpg */; };
+		25ECC93912E3F9B100E34E02 /* spell_shaman_improvedreincarnation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8B212E3F9B100E34E02 /* spell_shaman_improvedreincarnation.jpg */; };
+		25ECC93A12E3F9B100E34E02 /* spell_shaman_lavaburst.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8B312E3F9B100E34E02 /* spell_shaman_lavaburst.jpg */; };
+		25ECC93B12E3F9B100E34E02 /* spell_shaman_totemrecall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8B412E3F9B100E34E02 /* spell_shaman_totemrecall.jpg */; };
+		25ECC93C12E3F9B100E34E02 /* spell_shaman_unleashweapon_flame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8B512E3F9B100E34E02 /* spell_shaman_unleashweapon_flame.jpg */; };
+		25ECC93D12E3F9B100E34E02 /* spell_shaman_unleashweapon_life.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8B612E3F9B100E34E02 /* spell_shaman_unleashweapon_life.jpg */; };
+		25ECC93E12E3F9B100E34E02 /* spell_shaman_unleashweapon_wind.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8B712E3F9B100E34E02 /* spell_shaman_unleashweapon_wind.jpg */; };
+		25ECC93F12E3F9B100E34E02 /* trade_brewpoison.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8B812E3F9B100E34E02 /* trade_brewpoison.jpg */; };
+		25ECC94012E3F9B100E34E02 /* ability_druid_aquaticform.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83212E3F9B100E34E02 /* ability_druid_aquaticform.jpg */; };
+		25ECC94112E3F9B100E34E02 /* ability_druid_challangingroar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83312E3F9B100E34E02 /* ability_druid_challangingroar.jpg */; };
+		25ECC94212E3F9B100E34E02 /* ability_druid_cower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83412E3F9B100E34E02 /* ability_druid_cower.jpg */; };
+		25ECC94312E3F9B100E34E02 /* ability_druid_dash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83512E3F9B100E34E02 /* ability_druid_dash.jpg */; };
+		25ECC94412E3F9B100E34E02 /* ability_druid_lacerate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83612E3F9B100E34E02 /* ability_druid_lacerate.jpg */; };
+		25ECC94512E3F9B100E34E02 /* ability_druid_maul.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83712E3F9B100E34E02 /* ability_druid_maul.jpg */; };
+		25ECC94612E3F9B100E34E02 /* ability_druid_skinteeth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83812E3F9B100E34E02 /* ability_druid_skinteeth.jpg */; };
+		25ECC94712E3F9B100E34E02 /* ability_golemstormbolt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83912E3F9B100E34E02 /* ability_golemstormbolt.jpg */; };
+		25ECC94812E3F9B100E34E02 /* ability_golemthunderclap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83A12E3F9B100E34E02 /* ability_golemthunderclap.jpg */; };
+		25ECC94912E3F9B100E34E02 /* ability_hunter_aspectofthemonkey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83B12E3F9B100E34E02 /* ability_hunter_aspectofthemonkey.jpg */; };
+		25ECC94A12E3F9B100E34E02 /* ability_hunter_assassinate2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83C12E3F9B100E34E02 /* ability_hunter_assassinate2.jpg */; };
+		25ECC94B12E3F9B100E34E02 /* ability_hunter_beastsoothe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83D12E3F9B100E34E02 /* ability_hunter_beastsoothe.jpg */; };
+		25ECC94C12E3F9B100E34E02 /* ability_hunter_killcommand.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83E12E3F9B100E34E02 /* ability_hunter_killcommand.jpg */; };
+		25ECC94D12E3F9B100E34E02 /* ability_hunter_masterscall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC83F12E3F9B100E34E02 /* ability_hunter_masterscall.jpg */; };
+		25ECC94E12E3F9B100E34E02 /* ability_hunter_misdirection.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84012E3F9B100E34E02 /* ability_hunter_misdirection.jpg */; };
+		25ECC94F12E3F9B100E34E02 /* ability_hunter_runningshot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84112E3F9B100E34E02 /* ability_hunter_runningshot.jpg */; };
+		25ECC95012E3F9B100E34E02 /* ability_hunter_snaketrap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84212E3F9B100E34E02 /* ability_hunter_snaketrap.jpg */; };
+		25ECC95112E3F9B100E34E02 /* ability_hunter_steadyshot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84312E3F9B100E34E02 /* ability_hunter_steadyshot.jpg */; };
+		25ECC95212E3F9B100E34E02 /* ability_hunter_traplauncher.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84412E3F9B100E34E02 /* ability_hunter_traplauncher.jpg */; };
+		25ECC95312E3F9B100E34E02 /* ability_impalingbolt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84512E3F9B100E34E02 /* ability_impalingbolt.jpg */; };
+		25ECC95412E3F9B100E34E02 /* ability_mage_conjurefoodrank9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84612E3F9B100E34E02 /* ability_mage_conjurefoodrank9.jpg */; };
+		25ECC95512E3F9B100E34E02 /* ability_mage_frostfirebolt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84712E3F9B100E34E02 /* ability_mage_frostfirebolt.jpg */; };
+		25ECC95612E3F9B100E34E02 /* ability_mage_invisibility.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84812E3F9B100E34E02 /* ability_mage_invisibility.jpg */; };
+		25ECC95712E3F9B100E34E02 /* ability_mage_moltenarmor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84912E3F9B100E34E02 /* ability_mage_moltenarmor.jpg */; };
+		25ECC95812E3F9B100E34E02 /* ability_meleedamage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84A12E3F9B100E34E02 /* ability_meleedamage.jpg */; };
+		25ECC95912E3F9B100E34E02 /* ability_mount_whitedirewolf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84B12E3F9B100E34E02 /* ability_mount_whitedirewolf.jpg */; };
+		25ECC95A12E3F9B100E34E02 /* ability_mount_whitetiger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84C12E3F9B100E34E02 /* ability_mount_whitetiger.jpg */; };
+		25ECC95B12E3F9B100E34E02 /* ability_poisonsting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84D12E3F9B100E34E02 /* ability_poisonsting.jpg */; };
+		25ECC95C12E3F9B100E34E02 /* ability_rogue_distract.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84E12E3F9B100E34E02 /* ability_rogue_distract.jpg */; };
+		25ECC95D12E3F9B100E34E02 /* ability_rogue_fanofknives.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC84F12E3F9B100E34E02 /* ability_rogue_fanofknives.jpg */; };
+		25ECC95E12E3F9B100E34E02 /* ability_rogue_feint.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85012E3F9B100E34E02 /* ability_rogue_feint.jpg */; };
+		25ECC95F12E3F9B100E34E02 /* ability_rogue_garrote.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85112E3F9B100E34E02 /* ability_rogue_garrote.jpg */; };
+		25ECC96012E3F9B100E34E02 /* ability_rogue_rupture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85212E3F9B100E34E02 /* ability_rogue_rupture.jpg */; };
+		25ECC96112E3F9B100E34E02 /* ability_rogue_tricksofthetrade.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85312E3F9B100E34E02 /* ability_rogue_tricksofthetrade.jpg */; };
+		25ECC96212E3F9B100E34E02 /* ability_sap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85412E3F9B100E34E02 /* ability_sap.jpg */; };
+		25ECC96312E3F9B100E34E02 /* ability_vanish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85512E3F9B100E34E02 /* ability_vanish.jpg */; };
+		25ECC96412E3F9B100E34E02 /* ability_warlock_shadowflame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85612E3F9B100E34E02 /* ability_warlock_shadowflame.jpg */; };
+		25ECC96512E3F9B100E34E02 /* ability_warrior_battleshout.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85712E3F9B100E34E02 /* ability_warrior_battleshout.jpg */; };
+		25ECC96612E3F9B100E34E02 /* ability_warrior_charge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85812E3F9B100E34E02 /* ability_warrior_charge.jpg */; };
+		25ECC96712E3F9B100E34E02 /* ability_warrior_cleave.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85912E3F9B100E34E02 /* ability_warrior_cleave.jpg */; };
+		25ECC96812E3F9B100E34E02 /* ability_warrior_colossussmash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85A12E3F9B100E34E02 /* ability_warrior_colossussmash.jpg */; };
+		25ECC96912E3F9B100E34E02 /* ability_warrior_rallyingcry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85B12E3F9B100E34E02 /* ability_warrior_rallyingcry.jpg */; };
+		25ECC96A12E3F9B100E34E02 /* ability_warrior_shieldreflection.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85C12E3F9B100E34E02 /* ability_warrior_shieldreflection.jpg */; };
+		25ECC96B12E3F9B100E34E02 /* ability_warrior_shieldwall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85D12E3F9B100E34E02 /* ability_warrior_shieldwall.jpg */; };
+		25ECC96C12E3F9B100E34E02 /* ability_warrior_sunder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85E12E3F9B100E34E02 /* ability_warrior_sunder.jpg */; };
+		25ECC96D12E3F9B100E34E02 /* ability_warrior_victoryrush.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC85F12E3F9B100E34E02 /* ability_warrior_victoryrush.jpg */; };
+		25ECC96E12E3F9B100E34E02 /* ability_warrior_warcry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86012E3F9B100E34E02 /* ability_warrior_warcry.jpg */; };
+		25ECC96F12E3F9B100E34E02 /* ability_whirlwind.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86112E3F9B100E34E02 /* ability_whirlwind.jpg */; };
+		25ECC97012E3F9B100E34E02 /* inv_axe_66.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86212E3F9B100E34E02 /* inv_axe_66.jpg */; };
+		25ECC97112E3F9B100E34E02 /* inv_feather_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86312E3F9B100E34E02 /* inv_feather_01.jpg */; };
+		25ECC97212E3F9B100E34E02 /* inv_helmet_96.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86412E3F9B100E34E02 /* inv_helmet_96.jpg */; };
+		25ECC97312E3F9B100E34E02 /* inv_misc_bag_11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86512E3F9B100E34E02 /* inv_misc_bag_11.jpg */; };
+		25ECC97412E3F9B100E34E02 /* inv_misc_herb_felblossom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86612E3F9B100E34E02 /* inv_misc_herb_felblossom.jpg */; };
+		25ECC97512E3F9B100E34E02 /* inv_misc_horn_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86712E3F9B100E34E02 /* inv_misc_horn_02.jpg */; };
+		25ECC97612E3F9B100E34E02 /* inv_misc_penguinpet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86812E3F9B100E34E02 /* inv_misc_penguinpet.jpg */; };
+		25ECC97712E3F9B100E34E02 /* inv_spear_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86912E3F9B100E34E02 /* inv_spear_04.jpg */; };
+		25ECC97812E3F9B100E34E02 /* inv_stone_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86A12E3F9B100E34E02 /* inv_stone_04.jpg */; };
+		25ECC97912E3F9B100E34E02 /* inv_throwingknife_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86B12E3F9B100E34E02 /* inv_throwingknife_06.jpg */; };
+		25ECC97A12E3F9B100E34E02 /* spell_arcane_massdispel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86C12E3F9B100E34E02 /* spell_arcane_massdispel.jpg */; };
+		25ECC97B12E3F9B100E34E02 /* spell_arcane_starfire.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86D12E3F9B100E34E02 /* spell_arcane_starfire.jpg */; };
+		25ECC97C12E3F9B100E34E02 /* spell_deathknight_classicon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86E12E3F9B100E34E02 /* spell_deathknight_classicon.jpg */; };
+		25ECC97D12E3F9B100E34E02 /* spell_deathknight_darkconviction.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC86F12E3F9B100E34E02 /* spell_deathknight_darkconviction.jpg */; };
+		25ECC97E12E3F9B100E34E02 /* spell_deathknight_icetouch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87012E3F9B100E34E02 /* spell_deathknight_icetouch.jpg */; };
+		25ECC97F12E3F9B100E34E02 /* spell_deathknight_pathoffrost.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87112E3F9B100E34E02 /* spell_deathknight_pathoffrost.jpg */; };
+		25ECC98012E3F9B100E34E02 /* spell_fire_elemental_totem.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87212E3F9B100E34E02 /* spell_fire_elemental_totem.jpg */; };
+		25ECC98112E3F9B100E34E02 /* spell_fire_flamebolt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87312E3F9B100E34E02 /* spell_fire_flamebolt.jpg */; };
+		25ECC98212E3F9B100E34E02 /* spell_fire_flameshock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87412E3F9B100E34E02 /* spell_fire_flameshock.jpg */; };
+		25ECC98312E3F9B100E34E02 /* spell_frost_chainsofice.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87512E3F9B100E34E02 /* spell_frost_chainsofice.jpg */; };
+		25ECC98412E3F9B100E34E02 /* spell_frost_chillingarmor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87612E3F9B100E34E02 /* spell_frost_chillingarmor.jpg */; };
+		25ECC98512E3F9B100E34E02 /* spell_frost_frost.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87712E3F9B100E34E02 /* spell_frost_frost.jpg */; };
+		25ECC98612E3F9B100E34E02 /* spell_frost_frostblast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87812E3F9B100E34E02 /* spell_frost_frostblast.jpg */; };
+		25ECC98712E3F9B100E34E02 /* spell_frost_frostnova.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87912E3F9B100E34E02 /* spell_frost_frostnova.jpg */; };
+		25ECC98812E3F9B100E34E02 /* spell_frost_stun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87A12E3F9B100E34E02 /* spell_frost_stun.jpg */; };
+		25ECC98912E3F9B100E34E02 /* spell_holy_aspiration.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87B12E3F9B100E34E02 /* spell_holy_aspiration.jpg */; };
+		25ECC98A12E3F9B100E34E02 /* spell_holy_crusaderstrike.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87C12E3F9B100E34E02 /* spell_holy_crusaderstrike.jpg */; };
+		25ECC98B12E3F9B100E34E02 /* spell_holy_dispelmagic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87D12E3F9B100E34E02 /* spell_holy_dispelmagic.jpg */; };
+		25ECC98C12E3F9B100E34E02 /* spell_holy_excorcism.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87E12E3F9B100E34E02 /* spell_holy_excorcism.jpg */; };
+		25ECC98D12E3F9B100E34E02 /* spell_holy_flashheal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC87F12E3F9B100E34E02 /* spell_holy_flashheal.jpg */; };
+		25ECC98E12E3F9B100E34E02 /* spell_holy_greaterblessingofkings.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88012E3F9B100E34E02 /* spell_holy_greaterblessingofkings.jpg */; };
+		25ECC98F12E3F9B100E34E02 /* spell_holy_holynova.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88112E3F9B100E34E02 /* spell_holy_holynova.jpg */; };
+		25ECC99012E3F9B100E34E02 /* spell_holy_holysmite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88212E3F9B100E34E02 /* spell_holy_holysmite.jpg */; };
+		25ECC99112E3F9B100E34E02 /* spell_holy_prayerofhealing02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88312E3F9B100E34E02 /* spell_holy_prayerofhealing02.jpg */; };
+		25ECC99212E3F9B100E34E02 /* spell_holy_prayerofmendingtga.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88412E3F9B100E34E02 /* spell_holy_prayerofmendingtga.jpg */; };
+		25ECC99312E3F9B100E34E02 /* spell_holy_purify.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88512E3F9B100E34E02 /* spell_holy_purify.jpg */; };
+		25ECC99412E3F9B100E34E02 /* spell_holy_purifyingpower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88612E3F9B100E34E02 /* spell_holy_purifyingpower.jpg */; };
+		25ECC99512E3F9B100E34E02 /* spell_holy_righteousfury.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88712E3F9B100E34E02 /* spell_holy_righteousfury.jpg */; };
+		25ECC99612E3F9B100E34E02 /* spell_holy_righteousnessaura.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88812E3F9B100E34E02 /* spell_holy_righteousnessaura.jpg */; };
+		25ECC99712E3F9B100E34E02 /* spell_holy_sealofsalvation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88912E3F9B100E34E02 /* spell_holy_sealofsalvation.jpg */; };
+		25ECC99812E3F9B100E34E02 /* spell_holy_turnundead.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88A12E3F9B100E34E02 /* spell_holy_turnundead.jpg */; };
+		25ECC99912E3F9B100E34E02 /* spell_holy_wordfortitude.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88B12E3F9B100E34E02 /* spell_holy_wordfortitude.jpg */; };
+		25ECC99A12E3F9B100E34E02 /* spell_magearmor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88C12E3F9B100E34E02 /* spell_magearmor.jpg */; };
+		25ECC99B12E3F9B100E34E02 /* spell_magic_featherfall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88D12E3F9B100E34E02 /* spell_magic_featherfall.jpg */; };
+		25ECC99C12E3F9B100E34E02 /* spell_magic_magearmor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88E12E3F9B100E34E02 /* spell_magic_magearmor.jpg */; };
+		25ECC99D12E3F9B100E34E02 /* spell_nature_ancestralguardian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC88F12E3F9B100E34E02 /* spell_nature_ancestralguardian.jpg */; };
+		25ECC99E12E3F9B100E34E02 /* spell_nature_astralrecal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89012E3F9B100E34E02 /* spell_nature_astralrecal.jpg */; };
+		25ECC99F12E3F9B100E34E02 /* spell_nature_chainlightning.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89112E3F9B100E34E02 /* spell_nature_chainlightning.jpg */; };
+		25ECC9A012E3F9B100E34E02 /* spell_nature_cyclone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89212E3F9B100E34E02 /* spell_nature_cyclone.jpg */; };
+		25ECC9A112E3F9B100E34E02 /* spell_nature_earthshock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89312E3F9B100E34E02 /* spell_nature_earthshock.jpg */; };
+		25ECC9A212E3F9B100E34E02 /* spell_nature_faeriefire.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89412E3F9B100E34E02 /* spell_nature_faeriefire.jpg */; };
+		25ECC9A312E3F9B100E34E02 /* spell_nature_giftofthewild.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89512E3F9B100E34E02 /* spell_nature_giftofthewild.jpg */; };
+		25ECC9A412E3F9B100E34E02 /* spell_nature_groundingtotem.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89612E3F9B100E34E02 /* spell_nature_groundingtotem.jpg */; };
+		25ECC9A512E3F9B100E34E02 /* spell_nature_healingwavegreater.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89712E3F9B100E34E02 /* spell_nature_healingwavegreater.jpg */; };
+		25ECC9A612E3F9B100E34E02 /* spell_nature_insectswarm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89812E3F9B100E34E02 /* spell_nature_insectswarm.jpg */; };
+		25ECC9A712E3F9B100E34E02 /* spell_nature_moonkey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89912E3F9B100E34E02 /* spell_nature_moonkey.jpg */; };
+		25ECC9A812E3F9B100E34E02 /* spell_nature_reincarnation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89A12E3F9B100E34E02 /* spell_nature_reincarnation.jpg */; };
+		25ECC9A912E3F9B100E34E02 /* spell_nature_stoneclawtotem.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89B12E3F9B100E34E02 /* spell_nature_stoneclawtotem.jpg */; };
+		25ECC9AA12E3F9B100E34E02 /* spell_nature_thorns.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89C12E3F9B100E34E02 /* spell_nature_thorns.jpg */; };
+		25ECC9AB12E3F9B100E34E02 /* spell_nature_thunderclap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89D12E3F9B100E34E02 /* spell_nature_thunderclap.jpg */; };
+		25ECC9AC12E3F9B100E34E02 /* spell_shadow_curse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89E12E3F9B100E34E02 /* spell_shadow_curse.jpg */; };
+		25ECC9AD12E3F9B100E34E02 /* spell_shadow_deadofnight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC89F12E3F9B100E34E02 /* spell_shadow_deadofnight.jpg */; };
+		25ECC9AE12E3F9B100E34E02 /* spell_shadow_demonbreath.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8A012E3F9B100E34E02 /* spell_shadow_demonbreath.jpg */; };
+		25ECC9AF12E3F9B100E34E02 /* spell_shadow_demoniccircleteleport.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8A112E3F9B100E34E02 /* spell_shadow_demoniccircleteleport.jpg */; };
+		25ECC9B012E3F9B100E34E02 /* spell_shadow_demonicfortitude.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8A212E3F9B100E34E02 /* spell_shadow_demonicfortitude.jpg */; };
+		25ECC9B112E3F9B100E34E02 /* spell_shadow_detectlesserinvisibility.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8A312E3F9B100E34E02 /* spell_shadow_detectlesserinvisibility.jpg */; };
+		25ECC9B212E3F9B100E34E02 /* spell_shadow_enslavedemon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8A412E3F9B100E34E02 /* spell_shadow_enslavedemon.jpg */; };
+		25ECC9B312E3F9B100E34E02 /* spell_shadow_evileye.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8A512E3F9B100E34E02 /* spell_shadow_evileye.jpg */; };
+		25ECC9B412E3F9B100E34E02 /* spell_shadow_gathershadows.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8A612E3F9B100E34E02 /* spell_shadow_gathershadows.jpg */; };
+		25ECC9B512E3F9B100E34E02 /* spell_shadow_haunting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8A712E3F9B100E34E02 /* spell_shadow_haunting.jpg */; };
+		25ECC9B612E3F9B100E34E02 /* spell_shadow_mindsteal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8A812E3F9B100E34E02 /* spell_shadow_mindsteal.jpg */; };
+		25ECC9B712E3F9B100E34E02 /* spell_shadow_nethercloak.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8A912E3F9B100E34E02 /* spell_shadow_nethercloak.jpg */; };
+		25ECC9B812E3F9B100E34E02 /* spell_shadow_shadesofdarkness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8AA12E3F9B100E34E02 /* spell_shadow_shadesofdarkness.jpg */; };
+		25ECC9B912E3F9B100E34E02 /* spell_shadow_shadowbolt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8AB12E3F9B100E34E02 /* spell_shadow_shadowbolt.jpg */; };
+		25ECC9BA12E3F9B100E34E02 /* spell_shadow_shadowward.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8AC12E3F9B100E34E02 /* spell_shadow_shadowward.jpg */; };
+		25ECC9BB12E3F9B100E34E02 /* spell_shadow_summonfelhunter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8AD12E3F9B100E34E02 /* spell_shadow_summonfelhunter.jpg */; };
+		25ECC9BC12E3F9B100E34E02 /* spell_shadow_summonvoidwalker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8AE12E3F9B100E34E02 /* spell_shadow_summonvoidwalker.jpg */; };
+		25ECC9BD12E3F9B100E34E02 /* spell_shadow_vampiricaura.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8AF12E3F9B100E34E02 /* spell_shadow_vampiricaura.jpg */; };
+		25ECC9BE12E3F9B100E34E02 /* spell_shaman_firenova.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8B012E3F9B100E34E02 /* spell_shaman_firenova.jpg */; };
+		25ECC9BF12E3F9B100E34E02 /* spell_shaman_hex.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8B112E3F9B100E34E02 /* spell_shaman_hex.jpg */; };
+		25ECC9C012E3F9B100E34E02 /* spell_shaman_improvedreincarnation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8B212E3F9B100E34E02 /* spell_shaman_improvedreincarnation.jpg */; };
+		25ECC9C112E3F9B100E34E02 /* spell_shaman_lavaburst.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8B312E3F9B100E34E02 /* spell_shaman_lavaburst.jpg */; };
+		25ECC9C212E3F9B100E34E02 /* spell_shaman_totemrecall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8B412E3F9B100E34E02 /* spell_shaman_totemrecall.jpg */; };
+		25ECC9C312E3F9B100E34E02 /* spell_shaman_unleashweapon_flame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8B512E3F9B100E34E02 /* spell_shaman_unleashweapon_flame.jpg */; };
+		25ECC9C412E3F9B100E34E02 /* spell_shaman_unleashweapon_life.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8B612E3F9B100E34E02 /* spell_shaman_unleashweapon_life.jpg */; };
+		25ECC9C512E3F9B100E34E02 /* spell_shaman_unleashweapon_wind.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8B712E3F9B100E34E02 /* spell_shaman_unleashweapon_wind.jpg */; };
+		25ECC9C612E3F9B100E34E02 /* trade_brewpoison.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25ECC8B812E3F9B100E34E02 /* trade_brewpoison.jpg */; };
 		25FBA28512B73E6A00F306BC /* icon-border-header-circle-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28212B73E6A00F306BC /* icon-border-header-circle-gray.png */; };
 		25FBA28612B73E6A00F306BC /* icon-border-header-circle-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28312B73E6A00F306BC /* icon-border-header-circle-yellow.png */; };
 		25FBA28712B73E6A00F306BC /* icon-border-header-lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBA28412B73E6A00F306BC /* icon-border-header-lock.png */; };
@@ -1784,6 +2058,144 @@
 		25ECC70612E3BEA500E34E02 /* glyph_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyph_bg.png; sourceTree = "<group>"; };
 		25ECC76012E3C73800E34E02 /* Glyph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Glyph.h; sourceTree = "<group>"; };
 		25ECC76112E3C73800E34E02 /* Glyph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Glyph.m; sourceTree = "<group>"; };
+		25ECC7CF12E3D0EF00E34E02 /* Glyph+Fetch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Glyph+Fetch.h"; sourceTree = "<group>"; };
+		25ECC7D012E3D0EF00E34E02 /* Glyph+Fetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Glyph+Fetch.m"; sourceTree = "<group>"; };
+		25ECC80012E3F3A300E34E02 /* glyph_cell_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyph_cell_bg.png; sourceTree = "<group>"; };
+		25ECC83212E3F9B100E34E02 /* ability_druid_aquaticform.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_druid_aquaticform.jpg; sourceTree = "<group>"; };
+		25ECC83312E3F9B100E34E02 /* ability_druid_challangingroar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_druid_challangingroar.jpg; sourceTree = "<group>"; };
+		25ECC83412E3F9B100E34E02 /* ability_druid_cower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_druid_cower.jpg; sourceTree = "<group>"; };
+		25ECC83512E3F9B100E34E02 /* ability_druid_dash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_druid_dash.jpg; sourceTree = "<group>"; };
+		25ECC83612E3F9B100E34E02 /* ability_druid_lacerate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_druid_lacerate.jpg; sourceTree = "<group>"; };
+		25ECC83712E3F9B100E34E02 /* ability_druid_maul.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_druid_maul.jpg; sourceTree = "<group>"; };
+		25ECC83812E3F9B100E34E02 /* ability_druid_skinteeth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_druid_skinteeth.jpg; sourceTree = "<group>"; };
+		25ECC83912E3F9B100E34E02 /* ability_golemstormbolt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_golemstormbolt.jpg; sourceTree = "<group>"; };
+		25ECC83A12E3F9B100E34E02 /* ability_golemthunderclap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_golemthunderclap.jpg; sourceTree = "<group>"; };
+		25ECC83B12E3F9B100E34E02 /* ability_hunter_aspectofthemonkey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_hunter_aspectofthemonkey.jpg; sourceTree = "<group>"; };
+		25ECC83C12E3F9B100E34E02 /* ability_hunter_assassinate2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_hunter_assassinate2.jpg; sourceTree = "<group>"; };
+		25ECC83D12E3F9B100E34E02 /* ability_hunter_beastsoothe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_hunter_beastsoothe.jpg; sourceTree = "<group>"; };
+		25ECC83E12E3F9B100E34E02 /* ability_hunter_killcommand.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_hunter_killcommand.jpg; sourceTree = "<group>"; };
+		25ECC83F12E3F9B100E34E02 /* ability_hunter_masterscall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_hunter_masterscall.jpg; sourceTree = "<group>"; };
+		25ECC84012E3F9B100E34E02 /* ability_hunter_misdirection.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_hunter_misdirection.jpg; sourceTree = "<group>"; };
+		25ECC84112E3F9B100E34E02 /* ability_hunter_runningshot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_hunter_runningshot.jpg; sourceTree = "<group>"; };
+		25ECC84212E3F9B100E34E02 /* ability_hunter_snaketrap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_hunter_snaketrap.jpg; sourceTree = "<group>"; };
+		25ECC84312E3F9B100E34E02 /* ability_hunter_steadyshot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_hunter_steadyshot.jpg; sourceTree = "<group>"; };
+		25ECC84412E3F9B100E34E02 /* ability_hunter_traplauncher.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_hunter_traplauncher.jpg; sourceTree = "<group>"; };
+		25ECC84512E3F9B100E34E02 /* ability_impalingbolt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_impalingbolt.jpg; sourceTree = "<group>"; };
+		25ECC84612E3F9B100E34E02 /* ability_mage_conjurefoodrank9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_mage_conjurefoodrank9.jpg; sourceTree = "<group>"; };
+		25ECC84712E3F9B100E34E02 /* ability_mage_frostfirebolt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_mage_frostfirebolt.jpg; sourceTree = "<group>"; };
+		25ECC84812E3F9B100E34E02 /* ability_mage_invisibility.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_mage_invisibility.jpg; sourceTree = "<group>"; };
+		25ECC84912E3F9B100E34E02 /* ability_mage_moltenarmor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_mage_moltenarmor.jpg; sourceTree = "<group>"; };
+		25ECC84A12E3F9B100E34E02 /* ability_meleedamage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_meleedamage.jpg; sourceTree = "<group>"; };
+		25ECC84B12E3F9B100E34E02 /* ability_mount_whitedirewolf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_mount_whitedirewolf.jpg; sourceTree = "<group>"; };
+		25ECC84C12E3F9B100E34E02 /* ability_mount_whitetiger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_mount_whitetiger.jpg; sourceTree = "<group>"; };
+		25ECC84D12E3F9B100E34E02 /* ability_poisonsting.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_poisonsting.jpg; sourceTree = "<group>"; };
+		25ECC84E12E3F9B100E34E02 /* ability_rogue_distract.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_rogue_distract.jpg; sourceTree = "<group>"; };
+		25ECC84F12E3F9B100E34E02 /* ability_rogue_fanofknives.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_rogue_fanofknives.jpg; sourceTree = "<group>"; };
+		25ECC85012E3F9B100E34E02 /* ability_rogue_feint.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_rogue_feint.jpg; sourceTree = "<group>"; };
+		25ECC85112E3F9B100E34E02 /* ability_rogue_garrote.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_rogue_garrote.jpg; sourceTree = "<group>"; };
+		25ECC85212E3F9B100E34E02 /* ability_rogue_rupture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_rogue_rupture.jpg; sourceTree = "<group>"; };
+		25ECC85312E3F9B100E34E02 /* ability_rogue_tricksofthetrade.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_rogue_tricksofthetrade.jpg; sourceTree = "<group>"; };
+		25ECC85412E3F9B100E34E02 /* ability_sap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_sap.jpg; sourceTree = "<group>"; };
+		25ECC85512E3F9B100E34E02 /* ability_vanish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_vanish.jpg; sourceTree = "<group>"; };
+		25ECC85612E3F9B100E34E02 /* ability_warlock_shadowflame.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_warlock_shadowflame.jpg; sourceTree = "<group>"; };
+		25ECC85712E3F9B100E34E02 /* ability_warrior_battleshout.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_warrior_battleshout.jpg; sourceTree = "<group>"; };
+		25ECC85812E3F9B100E34E02 /* ability_warrior_charge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_warrior_charge.jpg; sourceTree = "<group>"; };
+		25ECC85912E3F9B100E34E02 /* ability_warrior_cleave.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_warrior_cleave.jpg; sourceTree = "<group>"; };
+		25ECC85A12E3F9B100E34E02 /* ability_warrior_colossussmash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_warrior_colossussmash.jpg; sourceTree = "<group>"; };
+		25ECC85B12E3F9B100E34E02 /* ability_warrior_rallyingcry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_warrior_rallyingcry.jpg; sourceTree = "<group>"; };
+		25ECC85C12E3F9B100E34E02 /* ability_warrior_shieldreflection.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_warrior_shieldreflection.jpg; sourceTree = "<group>"; };
+		25ECC85D12E3F9B100E34E02 /* ability_warrior_shieldwall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_warrior_shieldwall.jpg; sourceTree = "<group>"; };
+		25ECC85E12E3F9B100E34E02 /* ability_warrior_sunder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_warrior_sunder.jpg; sourceTree = "<group>"; };
+		25ECC85F12E3F9B100E34E02 /* ability_warrior_victoryrush.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_warrior_victoryrush.jpg; sourceTree = "<group>"; };
+		25ECC86012E3F9B100E34E02 /* ability_warrior_warcry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_warrior_warcry.jpg; sourceTree = "<group>"; };
+		25ECC86112E3F9B100E34E02 /* ability_whirlwind.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ability_whirlwind.jpg; sourceTree = "<group>"; };
+		25ECC86212E3F9B100E34E02 /* inv_axe_66.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inv_axe_66.jpg; sourceTree = "<group>"; };
+		25ECC86312E3F9B100E34E02 /* inv_feather_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inv_feather_01.jpg; sourceTree = "<group>"; };
+		25ECC86412E3F9B100E34E02 /* inv_helmet_96.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inv_helmet_96.jpg; sourceTree = "<group>"; };
+		25ECC86512E3F9B100E34E02 /* inv_misc_bag_11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inv_misc_bag_11.jpg; sourceTree = "<group>"; };
+		25ECC86612E3F9B100E34E02 /* inv_misc_herb_felblossom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inv_misc_herb_felblossom.jpg; sourceTree = "<group>"; };
+		25ECC86712E3F9B100E34E02 /* inv_misc_horn_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inv_misc_horn_02.jpg; sourceTree = "<group>"; };
+		25ECC86812E3F9B100E34E02 /* inv_misc_penguinpet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inv_misc_penguinpet.jpg; sourceTree = "<group>"; };
+		25ECC86912E3F9B100E34E02 /* inv_spear_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inv_spear_04.jpg; sourceTree = "<group>"; };
+		25ECC86A12E3F9B100E34E02 /* inv_stone_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inv_stone_04.jpg; sourceTree = "<group>"; };
+		25ECC86B12E3F9B100E34E02 /* inv_throwingknife_06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inv_throwingknife_06.jpg; sourceTree = "<group>"; };
+		25ECC86C12E3F9B100E34E02 /* spell_arcane_massdispel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_arcane_massdispel.jpg; sourceTree = "<group>"; };
+		25ECC86D12E3F9B100E34E02 /* spell_arcane_starfire.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_arcane_starfire.jpg; sourceTree = "<group>"; };
+		25ECC86E12E3F9B100E34E02 /* spell_deathknight_classicon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_deathknight_classicon.jpg; sourceTree = "<group>"; };
+		25ECC86F12E3F9B100E34E02 /* spell_deathknight_darkconviction.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_deathknight_darkconviction.jpg; sourceTree = "<group>"; };
+		25ECC87012E3F9B100E34E02 /* spell_deathknight_icetouch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_deathknight_icetouch.jpg; sourceTree = "<group>"; };
+		25ECC87112E3F9B100E34E02 /* spell_deathknight_pathoffrost.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_deathknight_pathoffrost.jpg; sourceTree = "<group>"; };
+		25ECC87212E3F9B100E34E02 /* spell_fire_elemental_totem.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_fire_elemental_totem.jpg; sourceTree = "<group>"; };
+		25ECC87312E3F9B100E34E02 /* spell_fire_flamebolt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_fire_flamebolt.jpg; sourceTree = "<group>"; };
+		25ECC87412E3F9B100E34E02 /* spell_fire_flameshock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_fire_flameshock.jpg; sourceTree = "<group>"; };
+		25ECC87512E3F9B100E34E02 /* spell_frost_chainsofice.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_frost_chainsofice.jpg; sourceTree = "<group>"; };
+		25ECC87612E3F9B100E34E02 /* spell_frost_chillingarmor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_frost_chillingarmor.jpg; sourceTree = "<group>"; };
+		25ECC87712E3F9B100E34E02 /* spell_frost_frost.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_frost_frost.jpg; sourceTree = "<group>"; };
+		25ECC87812E3F9B100E34E02 /* spell_frost_frostblast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_frost_frostblast.jpg; sourceTree = "<group>"; };
+		25ECC87912E3F9B100E34E02 /* spell_frost_frostnova.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_frost_frostnova.jpg; sourceTree = "<group>"; };
+		25ECC87A12E3F9B100E34E02 /* spell_frost_stun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_frost_stun.jpg; sourceTree = "<group>"; };
+		25ECC87B12E3F9B100E34E02 /* spell_holy_aspiration.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_holy_aspiration.jpg; sourceTree = "<group>"; };
+		25ECC87C12E3F9B100E34E02 /* spell_holy_crusaderstrike.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_holy_crusaderstrike.jpg; sourceTree = "<group>"; };
+		25ECC87D12E3F9B100E34E02 /* spell_holy_dispelmagic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_holy_dispelmagic.jpg; sourceTree = "<group>"; };
+		25ECC87E12E3F9B100E34E02 /* spell_holy_excorcism.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_holy_excorcism.jpg; sourceTree = "<group>"; };
+		25ECC87F12E3F9B100E34E02 /* spell_holy_flashheal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_holy_flashheal.jpg; sourceTree = "<group>"; };
+		25ECC88012E3F9B100E34E02 /* spell_holy_greaterblessingofkings.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_holy_greaterblessingofkings.jpg; sourceTree = "<group>"; };
+		25ECC88112E3F9B100E34E02 /* spell_holy_holynova.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_holy_holynova.jpg; sourceTree = "<group>"; };
+		25ECC88212E3F9B100E34E02 /* spell_holy_holysmite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_holy_holysmite.jpg; sourceTree = "<group>"; };
+		25ECC88312E3F9B100E34E02 /* spell_holy_prayerofhealing02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_holy_prayerofhealing02.jpg; sourceTree = "<group>"; };
+		25ECC88412E3F9B100E34E02 /* spell_holy_prayerofmendingtga.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_holy_prayerofmendingtga.jpg; sourceTree = "<group>"; };
+		25ECC88512E3F9B100E34E02 /* spell_holy_purify.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_holy_purify.jpg; sourceTree = "<group>"; };
+		25ECC88612E3F9B100E34E02 /* spell_holy_purifyingpower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_holy_purifyingpower.jpg; sourceTree = "<group>"; };
+		25ECC88712E3F9B100E34E02 /* spell_holy_righteousfury.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_holy_righteousfury.jpg; sourceTree = "<group>"; };
+		25ECC88812E3F9B100E34E02 /* spell_holy_righteousnessaura.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_holy_righteousnessaura.jpg; sourceTree = "<group>"; };
+		25ECC88912E3F9B100E34E02 /* spell_holy_sealofsalvation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_holy_sealofsalvation.jpg; sourceTree = "<group>"; };
+		25ECC88A12E3F9B100E34E02 /* spell_holy_turnundead.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_holy_turnundead.jpg; sourceTree = "<group>"; };
+		25ECC88B12E3F9B100E34E02 /* spell_holy_wordfortitude.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_holy_wordfortitude.jpg; sourceTree = "<group>"; };
+		25ECC88C12E3F9B100E34E02 /* spell_magearmor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_magearmor.jpg; sourceTree = "<group>"; };
+		25ECC88D12E3F9B100E34E02 /* spell_magic_featherfall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_magic_featherfall.jpg; sourceTree = "<group>"; };
+		25ECC88E12E3F9B100E34E02 /* spell_magic_magearmor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_magic_magearmor.jpg; sourceTree = "<group>"; };
+		25ECC88F12E3F9B100E34E02 /* spell_nature_ancestralguardian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_nature_ancestralguardian.jpg; sourceTree = "<group>"; };
+		25ECC89012E3F9B100E34E02 /* spell_nature_astralrecal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_nature_astralrecal.jpg; sourceTree = "<group>"; };
+		25ECC89112E3F9B100E34E02 /* spell_nature_chainlightning.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_nature_chainlightning.jpg; sourceTree = "<group>"; };
+		25ECC89212E3F9B100E34E02 /* spell_nature_cyclone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_nature_cyclone.jpg; sourceTree = "<group>"; };
+		25ECC89312E3F9B100E34E02 /* spell_nature_earthshock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_nature_earthshock.jpg; sourceTree = "<group>"; };
+		25ECC89412E3F9B100E34E02 /* spell_nature_faeriefire.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_nature_faeriefire.jpg; sourceTree = "<group>"; };
+		25ECC89512E3F9B100E34E02 /* spell_nature_giftofthewild.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_nature_giftofthewild.jpg; sourceTree = "<group>"; };
+		25ECC89612E3F9B100E34E02 /* spell_nature_groundingtotem.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_nature_groundingtotem.jpg; sourceTree = "<group>"; };
+		25ECC89712E3F9B100E34E02 /* spell_nature_healingwavegreater.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_nature_healingwavegreater.jpg; sourceTree = "<group>"; };
+		25ECC89812E3F9B100E34E02 /* spell_nature_insectswarm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_nature_insectswarm.jpg; sourceTree = "<group>"; };
+		25ECC89912E3F9B100E34E02 /* spell_nature_moonkey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_nature_moonkey.jpg; sourceTree = "<group>"; };
+		25ECC89A12E3F9B100E34E02 /* spell_nature_reincarnation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_nature_reincarnation.jpg; sourceTree = "<group>"; };
+		25ECC89B12E3F9B100E34E02 /* spell_nature_stoneclawtotem.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_nature_stoneclawtotem.jpg; sourceTree = "<group>"; };
+		25ECC89C12E3F9B100E34E02 /* spell_nature_thorns.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_nature_thorns.jpg; sourceTree = "<group>"; };
+		25ECC89D12E3F9B100E34E02 /* spell_nature_thunderclap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_nature_thunderclap.jpg; sourceTree = "<group>"; };
+		25ECC89E12E3F9B100E34E02 /* spell_shadow_curse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shadow_curse.jpg; sourceTree = "<group>"; };
+		25ECC89F12E3F9B100E34E02 /* spell_shadow_deadofnight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shadow_deadofnight.jpg; sourceTree = "<group>"; };
+		25ECC8A012E3F9B100E34E02 /* spell_shadow_demonbreath.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shadow_demonbreath.jpg; sourceTree = "<group>"; };
+		25ECC8A112E3F9B100E34E02 /* spell_shadow_demoniccircleteleport.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shadow_demoniccircleteleport.jpg; sourceTree = "<group>"; };
+		25ECC8A212E3F9B100E34E02 /* spell_shadow_demonicfortitude.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shadow_demonicfortitude.jpg; sourceTree = "<group>"; };
+		25ECC8A312E3F9B100E34E02 /* spell_shadow_detectlesserinvisibility.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shadow_detectlesserinvisibility.jpg; sourceTree = "<group>"; };
+		25ECC8A412E3F9B100E34E02 /* spell_shadow_enslavedemon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shadow_enslavedemon.jpg; sourceTree = "<group>"; };
+		25ECC8A512E3F9B100E34E02 /* spell_shadow_evileye.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shadow_evileye.jpg; sourceTree = "<group>"; };
+		25ECC8A612E3F9B100E34E02 /* spell_shadow_gathershadows.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shadow_gathershadows.jpg; sourceTree = "<group>"; };
+		25ECC8A712E3F9B100E34E02 /* spell_shadow_haunting.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shadow_haunting.jpg; sourceTree = "<group>"; };
+		25ECC8A812E3F9B100E34E02 /* spell_shadow_mindsteal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shadow_mindsteal.jpg; sourceTree = "<group>"; };
+		25ECC8A912E3F9B100E34E02 /* spell_shadow_nethercloak.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shadow_nethercloak.jpg; sourceTree = "<group>"; };
+		25ECC8AA12E3F9B100E34E02 /* spell_shadow_shadesofdarkness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shadow_shadesofdarkness.jpg; sourceTree = "<group>"; };
+		25ECC8AB12E3F9B100E34E02 /* spell_shadow_shadowbolt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shadow_shadowbolt.jpg; sourceTree = "<group>"; };
+		25ECC8AC12E3F9B100E34E02 /* spell_shadow_shadowward.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shadow_shadowward.jpg; sourceTree = "<group>"; };
+		25ECC8AD12E3F9B100E34E02 /* spell_shadow_summonfelhunter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shadow_summonfelhunter.jpg; sourceTree = "<group>"; };
+		25ECC8AE12E3F9B100E34E02 /* spell_shadow_summonvoidwalker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shadow_summonvoidwalker.jpg; sourceTree = "<group>"; };
+		25ECC8AF12E3F9B100E34E02 /* spell_shadow_vampiricaura.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shadow_vampiricaura.jpg; sourceTree = "<group>"; };
+		25ECC8B012E3F9B100E34E02 /* spell_shaman_firenova.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shaman_firenova.jpg; sourceTree = "<group>"; };
+		25ECC8B112E3F9B100E34E02 /* spell_shaman_hex.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shaman_hex.jpg; sourceTree = "<group>"; };
+		25ECC8B212E3F9B100E34E02 /* spell_shaman_improvedreincarnation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shaman_improvedreincarnation.jpg; sourceTree = "<group>"; };
+		25ECC8B312E3F9B100E34E02 /* spell_shaman_lavaburst.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shaman_lavaburst.jpg; sourceTree = "<group>"; };
+		25ECC8B412E3F9B100E34E02 /* spell_shaman_totemrecall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shaman_totemrecall.jpg; sourceTree = "<group>"; };
+		25ECC8B512E3F9B100E34E02 /* spell_shaman_unleashweapon_flame.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shaman_unleashweapon_flame.jpg; sourceTree = "<group>"; };
+		25ECC8B612E3F9B100E34E02 /* spell_shaman_unleashweapon_life.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shaman_unleashweapon_life.jpg; sourceTree = "<group>"; };
+		25ECC8B712E3F9B100E34E02 /* spell_shaman_unleashweapon_wind.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spell_shaman_unleashweapon_wind.jpg; sourceTree = "<group>"; };
+		25ECC8B812E3F9B100E34E02 /* trade_brewpoison.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trade_brewpoison.jpg; sourceTree = "<group>"; };
 		25FBA28212B73E6A00F306BC /* icon-border-header-circle-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-border-header-circle-gray.png"; sourceTree = "<group>"; };
 		25FBA28312B73E6A00F306BC /* icon-border-header-circle-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-border-header-circle-yellow.png"; sourceTree = "<group>"; };
 		25FBA28412B73E6A00F306BC /* icon-border-header-lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-border-header-lock.png"; sourceTree = "<group>"; };
@@ -2262,6 +2674,7 @@
 				255CAD1312C02B2800F99462 /* table_cell_bg_landscape.png */,
 				255CAD3312C02B3600F99462 /* table_cell_bg_selected.png */,
 				251AD3C312C1CAF10055B097 /* table_background_gradient.png */,
+				25ECC80012E3F3A300E34E02 /* glyph_cell_bg.png */,
 				25ABC50112D2825D00F620F6 /* Default.jpg */,
 			);
 			name = Assets;
@@ -2302,6 +2715,8 @@
 			children = (
 				25E4BAA912C0311F0058E472 /* Save+Fetch.h */,
 				25E4BAAA12C0311F0058E472 /* Save+Fetch.m */,
+				25ECC7CF12E3D0EF00E34E02 /* Glyph+Fetch.h */,
+				25ECC7D012E3D0EF00E34E02 /* Glyph+Fetch.m */,
 				25E07ED912B4ECFC00646BC7 /* TalentTree+Fetch.h */,
 				25E07EDA12B4ECFC00646BC7 /* TalentTree+Fetch.m */,
 				25E07EF412B4EDDF00646BC7 /* NSManagedObject+Fetch.h */,
@@ -2402,6 +2817,141 @@
 		25EC49F312B9E17600D173AB /* talents */ = {
 			isa = PBXGroup;
 			children = (
+				25ECC83212E3F9B100E34E02 /* ability_druid_aquaticform.jpg */,
+				25ECC83312E3F9B100E34E02 /* ability_druid_challangingroar.jpg */,
+				25ECC83412E3F9B100E34E02 /* ability_druid_cower.jpg */,
+				25ECC83512E3F9B100E34E02 /* ability_druid_dash.jpg */,
+				25ECC83612E3F9B100E34E02 /* ability_druid_lacerate.jpg */,
+				25ECC83712E3F9B100E34E02 /* ability_druid_maul.jpg */,
+				25ECC83812E3F9B100E34E02 /* ability_druid_skinteeth.jpg */,
+				25ECC83912E3F9B100E34E02 /* ability_golemstormbolt.jpg */,
+				25ECC83A12E3F9B100E34E02 /* ability_golemthunderclap.jpg */,
+				25ECC83B12E3F9B100E34E02 /* ability_hunter_aspectofthemonkey.jpg */,
+				25ECC83C12E3F9B100E34E02 /* ability_hunter_assassinate2.jpg */,
+				25ECC83D12E3F9B100E34E02 /* ability_hunter_beastsoothe.jpg */,
+				25ECC83E12E3F9B100E34E02 /* ability_hunter_killcommand.jpg */,
+				25ECC83F12E3F9B100E34E02 /* ability_hunter_masterscall.jpg */,
+				25ECC84012E3F9B100E34E02 /* ability_hunter_misdirection.jpg */,
+				25ECC84112E3F9B100E34E02 /* ability_hunter_runningshot.jpg */,
+				25ECC84212E3F9B100E34E02 /* ability_hunter_snaketrap.jpg */,
+				25ECC84312E3F9B100E34E02 /* ability_hunter_steadyshot.jpg */,
+				25ECC84412E3F9B100E34E02 /* ability_hunter_traplauncher.jpg */,
+				25ECC84512E3F9B100E34E02 /* ability_impalingbolt.jpg */,
+				25ECC84612E3F9B100E34E02 /* ability_mage_conjurefoodrank9.jpg */,
+				25ECC84712E3F9B100E34E02 /* ability_mage_frostfirebolt.jpg */,
+				25ECC84812E3F9B100E34E02 /* ability_mage_invisibility.jpg */,
+				25ECC84912E3F9B100E34E02 /* ability_mage_moltenarmor.jpg */,
+				25ECC84A12E3F9B100E34E02 /* ability_meleedamage.jpg */,
+				25ECC84B12E3F9B100E34E02 /* ability_mount_whitedirewolf.jpg */,
+				25ECC84C12E3F9B100E34E02 /* ability_mount_whitetiger.jpg */,
+				25ECC84D12E3F9B100E34E02 /* ability_poisonsting.jpg */,
+				25ECC84E12E3F9B100E34E02 /* ability_rogue_distract.jpg */,
+				25ECC84F12E3F9B100E34E02 /* ability_rogue_fanofknives.jpg */,
+				25ECC85012E3F9B100E34E02 /* ability_rogue_feint.jpg */,
+				25ECC85112E3F9B100E34E02 /* ability_rogue_garrote.jpg */,
+				25ECC85212E3F9B100E34E02 /* ability_rogue_rupture.jpg */,
+				25ECC85312E3F9B100E34E02 /* ability_rogue_tricksofthetrade.jpg */,
+				25ECC85412E3F9B100E34E02 /* ability_sap.jpg */,
+				25ECC85512E3F9B100E34E02 /* ability_vanish.jpg */,
+				25ECC85612E3F9B100E34E02 /* ability_warlock_shadowflame.jpg */,
+				25ECC85712E3F9B100E34E02 /* ability_warrior_battleshout.jpg */,
+				25ECC85812E3F9B100E34E02 /* ability_warrior_charge.jpg */,
+				25ECC85912E3F9B100E34E02 /* ability_warrior_cleave.jpg */,
+				25ECC85A12E3F9B100E34E02 /* ability_warrior_colossussmash.jpg */,
+				25ECC85B12E3F9B100E34E02 /* ability_warrior_rallyingcry.jpg */,
+				25ECC85C12E3F9B100E34E02 /* ability_warrior_shieldreflection.jpg */,
+				25ECC85D12E3F9B100E34E02 /* ability_warrior_shieldwall.jpg */,
+				25ECC85E12E3F9B100E34E02 /* ability_warrior_sunder.jpg */,
+				25ECC85F12E3F9B100E34E02 /* ability_warrior_victoryrush.jpg */,
+				25ECC86012E3F9B100E34E02 /* ability_warrior_warcry.jpg */,
+				25ECC86112E3F9B100E34E02 /* ability_whirlwind.jpg */,
+				25ECC86212E3F9B100E34E02 /* inv_axe_66.jpg */,
+				25ECC86312E3F9B100E34E02 /* inv_feather_01.jpg */,
+				25ECC86412E3F9B100E34E02 /* inv_helmet_96.jpg */,
+				25ECC86512E3F9B100E34E02 /* inv_misc_bag_11.jpg */,
+				25ECC86612E3F9B100E34E02 /* inv_misc_herb_felblossom.jpg */,
+				25ECC86712E3F9B100E34E02 /* inv_misc_horn_02.jpg */,
+				25ECC86812E3F9B100E34E02 /* inv_misc_penguinpet.jpg */,
+				25ECC86912E3F9B100E34E02 /* inv_spear_04.jpg */,
+				25ECC86A12E3F9B100E34E02 /* inv_stone_04.jpg */,
+				25ECC86B12E3F9B100E34E02 /* inv_throwingknife_06.jpg */,
+				25ECC86C12E3F9B100E34E02 /* spell_arcane_massdispel.jpg */,
+				25ECC86D12E3F9B100E34E02 /* spell_arcane_starfire.jpg */,
+				25ECC86E12E3F9B100E34E02 /* spell_deathknight_classicon.jpg */,
+				25ECC86F12E3F9B100E34E02 /* spell_deathknight_darkconviction.jpg */,
+				25ECC87012E3F9B100E34E02 /* spell_deathknight_icetouch.jpg */,
+				25ECC87112E3F9B100E34E02 /* spell_deathknight_pathoffrost.jpg */,
+				25ECC87212E3F9B100E34E02 /* spell_fire_elemental_totem.jpg */,
+				25ECC87312E3F9B100E34E02 /* spell_fire_flamebolt.jpg */,
+				25ECC87412E3F9B100E34E02 /* spell_fire_flameshock.jpg */,
+				25ECC87512E3F9B100E34E02 /* spell_frost_chainsofice.jpg */,
+				25ECC87612E3F9B100E34E02 /* spell_frost_chillingarmor.jpg */,
+				25ECC87712E3F9B100E34E02 /* spell_frost_frost.jpg */,
+				25ECC87812E3F9B100E34E02 /* spell_frost_frostblast.jpg */,
+				25ECC87912E3F9B100E34E02 /* spell_frost_frostnova.jpg */,
+				25ECC87A12E3F9B100E34E02 /* spell_frost_stun.jpg */,
+				25ECC87B12E3F9B100E34E02 /* spell_holy_aspiration.jpg */,
+				25ECC87C12E3F9B100E34E02 /* spell_holy_crusaderstrike.jpg */,
+				25ECC87D12E3F9B100E34E02 /* spell_holy_dispelmagic.jpg */,
+				25ECC87E12E3F9B100E34E02 /* spell_holy_excorcism.jpg */,
+				25ECC87F12E3F9B100E34E02 /* spell_holy_flashheal.jpg */,
+				25ECC88012E3F9B100E34E02 /* spell_holy_greaterblessingofkings.jpg */,
+				25ECC88112E3F9B100E34E02 /* spell_holy_holynova.jpg */,
+				25ECC88212E3F9B100E34E02 /* spell_holy_holysmite.jpg */,
+				25ECC88312E3F9B100E34E02 /* spell_holy_prayerofhealing02.jpg */,
+				25ECC88412E3F9B100E34E02 /* spell_holy_prayerofmendingtga.jpg */,
+				25ECC88512E3F9B100E34E02 /* spell_holy_purify.jpg */,
+				25ECC88612E3F9B100E34E02 /* spell_holy_purifyingpower.jpg */,
+				25ECC88712E3F9B100E34E02 /* spell_holy_righteousfury.jpg */,
+				25ECC88812E3F9B100E34E02 /* spell_holy_righteousnessaura.jpg */,
+				25ECC88912E3F9B100E34E02 /* spell_holy_sealofsalvation.jpg */,
+				25ECC88A12E3F9B100E34E02 /* spell_holy_turnundead.jpg */,
+				25ECC88B12E3F9B100E34E02 /* spell_holy_wordfortitude.jpg */,
+				25ECC88C12E3F9B100E34E02 /* spell_magearmor.jpg */,
+				25ECC88D12E3F9B100E34E02 /* spell_magic_featherfall.jpg */,
+				25ECC88E12E3F9B100E34E02 /* spell_magic_magearmor.jpg */,
+				25ECC88F12E3F9B100E34E02 /* spell_nature_ancestralguardian.jpg */,
+				25ECC89012E3F9B100E34E02 /* spell_nature_astralrecal.jpg */,
+				25ECC89112E3F9B100E34E02 /* spell_nature_chainlightning.jpg */,
+				25ECC89212E3F9B100E34E02 /* spell_nature_cyclone.jpg */,
+				25ECC89312E3F9B100E34E02 /* spell_nature_earthshock.jpg */,
+				25ECC89412E3F9B100E34E02 /* spell_nature_faeriefire.jpg */,
+				25ECC89512E3F9B100E34E02 /* spell_nature_giftofthewild.jpg */,
+				25ECC89612E3F9B100E34E02 /* spell_nature_groundingtotem.jpg */,
+				25ECC89712E3F9B100E34E02 /* spell_nature_healingwavegreater.jpg */,
+				25ECC89812E3F9B100E34E02 /* spell_nature_insectswarm.jpg */,
+				25ECC89912E3F9B100E34E02 /* spell_nature_moonkey.jpg */,
+				25ECC89A12E3F9B100E34E02 /* spell_nature_reincarnation.jpg */,
+				25ECC89B12E3F9B100E34E02 /* spell_nature_stoneclawtotem.jpg */,
+				25ECC89C12E3F9B100E34E02 /* spell_nature_thorns.jpg */,
+				25ECC89D12E3F9B100E34E02 /* spell_nature_thunderclap.jpg */,
+				25ECC89E12E3F9B100E34E02 /* spell_shadow_curse.jpg */,
+				25ECC89F12E3F9B100E34E02 /* spell_shadow_deadofnight.jpg */,
+				25ECC8A012E3F9B100E34E02 /* spell_shadow_demonbreath.jpg */,
+				25ECC8A112E3F9B100E34E02 /* spell_shadow_demoniccircleteleport.jpg */,
+				25ECC8A212E3F9B100E34E02 /* spell_shadow_demonicfortitude.jpg */,
+				25ECC8A312E3F9B100E34E02 /* spell_shadow_detectlesserinvisibility.jpg */,
+				25ECC8A412E3F9B100E34E02 /* spell_shadow_enslavedemon.jpg */,
+				25ECC8A512E3F9B100E34E02 /* spell_shadow_evileye.jpg */,
+				25ECC8A612E3F9B100E34E02 /* spell_shadow_gathershadows.jpg */,
+				25ECC8A712E3F9B100E34E02 /* spell_shadow_haunting.jpg */,
+				25ECC8A812E3F9B100E34E02 /* spell_shadow_mindsteal.jpg */,
+				25ECC8A912E3F9B100E34E02 /* spell_shadow_nethercloak.jpg */,
+				25ECC8AA12E3F9B100E34E02 /* spell_shadow_shadesofdarkness.jpg */,
+				25ECC8AB12E3F9B100E34E02 /* spell_shadow_shadowbolt.jpg */,
+				25ECC8AC12E3F9B100E34E02 /* spell_shadow_shadowward.jpg */,
+				25ECC8AD12E3F9B100E34E02 /* spell_shadow_summonfelhunter.jpg */,
+				25ECC8AE12E3F9B100E34E02 /* spell_shadow_summonvoidwalker.jpg */,
+				25ECC8AF12E3F9B100E34E02 /* spell_shadow_vampiricaura.jpg */,
+				25ECC8B012E3F9B100E34E02 /* spell_shaman_firenova.jpg */,
+				25ECC8B112E3F9B100E34E02 /* spell_shaman_hex.jpg */,
+				25ECC8B212E3F9B100E34E02 /* spell_shaman_improvedreincarnation.jpg */,
+				25ECC8B312E3F9B100E34E02 /* spell_shaman_lavaburst.jpg */,
+				25ECC8B412E3F9B100E34E02 /* spell_shaman_totemrecall.jpg */,
+				25ECC8B512E3F9B100E34E02 /* spell_shaman_unleashweapon_flame.jpg */,
+				25ECC8B612E3F9B100E34E02 /* spell_shaman_unleashweapon_life.jpg */,
+				25ECC8B712E3F9B100E34E02 /* spell_shaman_unleashweapon_wind.jpg */,
+				25ECC8B812E3F9B100E34E02 /* trade_brewpoison.jpg */,
 				25EC49F412B9E17600D173AB /* ability_ambush.jpg */,
 				25EC49F512B9E17600D173AB /* ability_backstab.jpg */,
 				25EC49F612B9E17600D173AB /* ability_bullrush.jpg */,
@@ -3926,6 +4476,142 @@
 				25ECC6B412E3B38200E34E02 /* glyphs.json in Resources */,
 				25ECC70412E3BE2200E34E02 /* GlyphViewController.xib in Resources */,
 				25ECC70712E3BEA500E34E02 /* glyph_bg.png in Resources */,
+				25ECC80112E3F3A300E34E02 /* glyph_cell_bg.png in Resources */,
+				25ECC8B912E3F9B100E34E02 /* ability_druid_aquaticform.jpg in Resources */,
+				25ECC8BA12E3F9B100E34E02 /* ability_druid_challangingroar.jpg in Resources */,
+				25ECC8BB12E3F9B100E34E02 /* ability_druid_cower.jpg in Resources */,
+				25ECC8BC12E3F9B100E34E02 /* ability_druid_dash.jpg in Resources */,
+				25ECC8BD12E3F9B100E34E02 /* ability_druid_lacerate.jpg in Resources */,
+				25ECC8BE12E3F9B100E34E02 /* ability_druid_maul.jpg in Resources */,
+				25ECC8BF12E3F9B100E34E02 /* ability_druid_skinteeth.jpg in Resources */,
+				25ECC8C012E3F9B100E34E02 /* ability_golemstormbolt.jpg in Resources */,
+				25ECC8C112E3F9B100E34E02 /* ability_golemthunderclap.jpg in Resources */,
+				25ECC8C212E3F9B100E34E02 /* ability_hunter_aspectofthemonkey.jpg in Resources */,
+				25ECC8C312E3F9B100E34E02 /* ability_hunter_assassinate2.jpg in Resources */,
+				25ECC8C412E3F9B100E34E02 /* ability_hunter_beastsoothe.jpg in Resources */,
+				25ECC8C512E3F9B100E34E02 /* ability_hunter_killcommand.jpg in Resources */,
+				25ECC8C612E3F9B100E34E02 /* ability_hunter_masterscall.jpg in Resources */,
+				25ECC8C712E3F9B100E34E02 /* ability_hunter_misdirection.jpg in Resources */,
+				25ECC8C812E3F9B100E34E02 /* ability_hunter_runningshot.jpg in Resources */,
+				25ECC8C912E3F9B100E34E02 /* ability_hunter_snaketrap.jpg in Resources */,
+				25ECC8CA12E3F9B100E34E02 /* ability_hunter_steadyshot.jpg in Resources */,
+				25ECC8CB12E3F9B100E34E02 /* ability_hunter_traplauncher.jpg in Resources */,
+				25ECC8CC12E3F9B100E34E02 /* ability_impalingbolt.jpg in Resources */,
+				25ECC8CD12E3F9B100E34E02 /* ability_mage_conjurefoodrank9.jpg in Resources */,
+				25ECC8CE12E3F9B100E34E02 /* ability_mage_frostfirebolt.jpg in Resources */,
+				25ECC8CF12E3F9B100E34E02 /* ability_mage_invisibility.jpg in Resources */,
+				25ECC8D012E3F9B100E34E02 /* ability_mage_moltenarmor.jpg in Resources */,
+				25ECC8D112E3F9B100E34E02 /* ability_meleedamage.jpg in Resources */,
+				25ECC8D212E3F9B100E34E02 /* ability_mount_whitedirewolf.jpg in Resources */,
+				25ECC8D312E3F9B100E34E02 /* ability_mount_whitetiger.jpg in Resources */,
+				25ECC8D412E3F9B100E34E02 /* ability_poisonsting.jpg in Resources */,
+				25ECC8D512E3F9B100E34E02 /* ability_rogue_distract.jpg in Resources */,
+				25ECC8D612E3F9B100E34E02 /* ability_rogue_fanofknives.jpg in Resources */,
+				25ECC8D712E3F9B100E34E02 /* ability_rogue_feint.jpg in Resources */,
+				25ECC8D812E3F9B100E34E02 /* ability_rogue_garrote.jpg in Resources */,
+				25ECC8D912E3F9B100E34E02 /* ability_rogue_rupture.jpg in Resources */,
+				25ECC8DA12E3F9B100E34E02 /* ability_rogue_tricksofthetrade.jpg in Resources */,
+				25ECC8DB12E3F9B100E34E02 /* ability_sap.jpg in Resources */,
+				25ECC8DC12E3F9B100E34E02 /* ability_vanish.jpg in Resources */,
+				25ECC8DD12E3F9B100E34E02 /* ability_warlock_shadowflame.jpg in Resources */,
+				25ECC8DE12E3F9B100E34E02 /* ability_warrior_battleshout.jpg in Resources */,
+				25ECC8DF12E3F9B100E34E02 /* ability_warrior_charge.jpg in Resources */,
+				25ECC8E012E3F9B100E34E02 /* ability_warrior_cleave.jpg in Resources */,
+				25ECC8E112E3F9B100E34E02 /* ability_warrior_colossussmash.jpg in Resources */,
+				25ECC8E212E3F9B100E34E02 /* ability_warrior_rallyingcry.jpg in Resources */,
+				25ECC8E312E3F9B100E34E02 /* ability_warrior_shieldreflection.jpg in Resources */,
+				25ECC8E412E3F9B100E34E02 /* ability_warrior_shieldwall.jpg in Resources */,
+				25ECC8E512E3F9B100E34E02 /* ability_warrior_sunder.jpg in Resources */,
+				25ECC8E612E3F9B100E34E02 /* ability_warrior_victoryrush.jpg in Resources */,
+				25ECC8E712E3F9B100E34E02 /* ability_warrior_warcry.jpg in Resources */,
+				25ECC8E812E3F9B100E34E02 /* ability_whirlwind.jpg in Resources */,
+				25ECC8E912E3F9B100E34E02 /* inv_axe_66.jpg in Resources */,
+				25ECC8EA12E3F9B100E34E02 /* inv_feather_01.jpg in Resources */,
+				25ECC8EB12E3F9B100E34E02 /* inv_helmet_96.jpg in Resources */,
+				25ECC8EC12E3F9B100E34E02 /* inv_misc_bag_11.jpg in Resources */,
+				25ECC8ED12E3F9B100E34E02 /* inv_misc_herb_felblossom.jpg in Resources */,
+				25ECC8EE12E3F9B100E34E02 /* inv_misc_horn_02.jpg in Resources */,
+				25ECC8EF12E3F9B100E34E02 /* inv_misc_penguinpet.jpg in Resources */,
+				25ECC8F012E3F9B100E34E02 /* inv_spear_04.jpg in Resources */,
+				25ECC8F112E3F9B100E34E02 /* inv_stone_04.jpg in Resources */,
+				25ECC8F212E3F9B100E34E02 /* inv_throwingknife_06.jpg in Resources */,
+				25ECC8F312E3F9B100E34E02 /* spell_arcane_massdispel.jpg in Resources */,
+				25ECC8F412E3F9B100E34E02 /* spell_arcane_starfire.jpg in Resources */,
+				25ECC8F512E3F9B100E34E02 /* spell_deathknight_classicon.jpg in Resources */,
+				25ECC8F612E3F9B100E34E02 /* spell_deathknight_darkconviction.jpg in Resources */,
+				25ECC8F712E3F9B100E34E02 /* spell_deathknight_icetouch.jpg in Resources */,
+				25ECC8F812E3F9B100E34E02 /* spell_deathknight_pathoffrost.jpg in Resources */,
+				25ECC8F912E3F9B100E34E02 /* spell_fire_elemental_totem.jpg in Resources */,
+				25ECC8FA12E3F9B100E34E02 /* spell_fire_flamebolt.jpg in Resources */,
+				25ECC8FB12E3F9B100E34E02 /* spell_fire_flameshock.jpg in Resources */,
+				25ECC8FC12E3F9B100E34E02 /* spell_frost_chainsofice.jpg in Resources */,
+				25ECC8FD12E3F9B100E34E02 /* spell_frost_chillingarmor.jpg in Resources */,
+				25ECC8FE12E3F9B100E34E02 /* spell_frost_frost.jpg in Resources */,
+				25ECC8FF12E3F9B100E34E02 /* spell_frost_frostblast.jpg in Resources */,
+				25ECC90012E3F9B100E34E02 /* spell_frost_frostnova.jpg in Resources */,
+				25ECC90112E3F9B100E34E02 /* spell_frost_stun.jpg in Resources */,
+				25ECC90212E3F9B100E34E02 /* spell_holy_aspiration.jpg in Resources */,
+				25ECC90312E3F9B100E34E02 /* spell_holy_crusaderstrike.jpg in Resources */,
+				25ECC90412E3F9B100E34E02 /* spell_holy_dispelmagic.jpg in Resources */,
+				25ECC90512E3F9B100E34E02 /* spell_holy_excorcism.jpg in Resources */,
+				25ECC90612E3F9B100E34E02 /* spell_holy_flashheal.jpg in Resources */,
+				25ECC90712E3F9B100E34E02 /* spell_holy_greaterblessingofkings.jpg in Resources */,
+				25ECC90812E3F9B100E34E02 /* spell_holy_holynova.jpg in Resources */,
+				25ECC90912E3F9B100E34E02 /* spell_holy_holysmite.jpg in Resources */,
+				25ECC90A12E3F9B100E34E02 /* spell_holy_prayerofhealing02.jpg in Resources */,
+				25ECC90B12E3F9B100E34E02 /* spell_holy_prayerofmendingtga.jpg in Resources */,
+				25ECC90C12E3F9B100E34E02 /* spell_holy_purify.jpg in Resources */,
+				25ECC90D12E3F9B100E34E02 /* spell_holy_purifyingpower.jpg in Resources */,
+				25ECC90E12E3F9B100E34E02 /* spell_holy_righteousfury.jpg in Resources */,
+				25ECC90F12E3F9B100E34E02 /* spell_holy_righteousnessaura.jpg in Resources */,
+				25ECC91012E3F9B100E34E02 /* spell_holy_sealofsalvation.jpg in Resources */,
+				25ECC91112E3F9B100E34E02 /* spell_holy_turnundead.jpg in Resources */,
+				25ECC91212E3F9B100E34E02 /* spell_holy_wordfortitude.jpg in Resources */,
+				25ECC91312E3F9B100E34E02 /* spell_magearmor.jpg in Resources */,
+				25ECC91412E3F9B100E34E02 /* spell_magic_featherfall.jpg in Resources */,
+				25ECC91512E3F9B100E34E02 /* spell_magic_magearmor.jpg in Resources */,
+				25ECC91612E3F9B100E34E02 /* spell_nature_ancestralguardian.jpg in Resources */,
+				25ECC91712E3F9B100E34E02 /* spell_nature_astralrecal.jpg in Resources */,
+				25ECC91812E3F9B100E34E02 /* spell_nature_chainlightning.jpg in Resources */,
+				25ECC91912E3F9B100E34E02 /* spell_nature_cyclone.jpg in Resources */,
+				25ECC91A12E3F9B100E34E02 /* spell_nature_earthshock.jpg in Resources */,
+				25ECC91B12E3F9B100E34E02 /* spell_nature_faeriefire.jpg in Resources */,
+				25ECC91C12E3F9B100E34E02 /* spell_nature_giftofthewild.jpg in Resources */,
+				25ECC91D12E3F9B100E34E02 /* spell_nature_groundingtotem.jpg in Resources */,
+				25ECC91E12E3F9B100E34E02 /* spell_nature_healingwavegreater.jpg in Resources */,
+				25ECC91F12E3F9B100E34E02 /* spell_nature_insectswarm.jpg in Resources */,
+				25ECC92012E3F9B100E34E02 /* spell_nature_moonkey.jpg in Resources */,
+				25ECC92112E3F9B100E34E02 /* spell_nature_reincarnation.jpg in Resources */,
+				25ECC92212E3F9B100E34E02 /* spell_nature_stoneclawtotem.jpg in Resources */,
+				25ECC92312E3F9B100E34E02 /* spell_nature_thorns.jpg in Resources */,
+				25ECC92412E3F9B100E34E02 /* spell_nature_thunderclap.jpg in Resources */,
+				25ECC92512E3F9B100E34E02 /* spell_shadow_curse.jpg in Resources */,
+				25ECC92612E3F9B100E34E02 /* spell_shadow_deadofnight.jpg in Resources */,
+				25ECC92712E3F9B100E34E02 /* spell_shadow_demonbreath.jpg in Resources */,
+				25ECC92812E3F9B100E34E02 /* spell_shadow_demoniccircleteleport.jpg in Resources */,
+				25ECC92912E3F9B100E34E02 /* spell_shadow_demonicfortitude.jpg in Resources */,
+				25ECC92A12E3F9B100E34E02 /* spell_shadow_detectlesserinvisibility.jpg in Resources */,
+				25ECC92B12E3F9B100E34E02 /* spell_shadow_enslavedemon.jpg in Resources */,
+				25ECC92C12E3F9B100E34E02 /* spell_shadow_evileye.jpg in Resources */,
+				25ECC92D12E3F9B100E34E02 /* spell_shadow_gathershadows.jpg in Resources */,
+				25ECC92E12E3F9B100E34E02 /* spell_shadow_haunting.jpg in Resources */,
+				25ECC92F12E3F9B100E34E02 /* spell_shadow_mindsteal.jpg in Resources */,
+				25ECC93012E3F9B100E34E02 /* spell_shadow_nethercloak.jpg in Resources */,
+				25ECC93112E3F9B100E34E02 /* spell_shadow_shadesofdarkness.jpg in Resources */,
+				25ECC93212E3F9B100E34E02 /* spell_shadow_shadowbolt.jpg in Resources */,
+				25ECC93312E3F9B100E34E02 /* spell_shadow_shadowward.jpg in Resources */,
+				25ECC93412E3F9B100E34E02 /* spell_shadow_summonfelhunter.jpg in Resources */,
+				25ECC93512E3F9B100E34E02 /* spell_shadow_summonvoidwalker.jpg in Resources */,
+				25ECC93612E3F9B100E34E02 /* spell_shadow_vampiricaura.jpg in Resources */,
+				25ECC93712E3F9B100E34E02 /* spell_shaman_firenova.jpg in Resources */,
+				25ECC93812E3F9B100E34E02 /* spell_shaman_hex.jpg in Resources */,
+				25ECC93912E3F9B100E34E02 /* spell_shaman_improvedreincarnation.jpg in Resources */,
+				25ECC93A12E3F9B100E34E02 /* spell_shaman_lavaburst.jpg in Resources */,
+				25ECC93B12E3F9B100E34E02 /* spell_shaman_totemrecall.jpg in Resources */,
+				25ECC93C12E3F9B100E34E02 /* spell_shaman_unleashweapon_flame.jpg in Resources */,
+				25ECC93D12E3F9B100E34E02 /* spell_shaman_unleashweapon_life.jpg in Resources */,
+				25ECC93E12E3F9B100E34E02 /* spell_shaman_unleashweapon_wind.jpg in Resources */,
+				25ECC93F12E3F9B100E34E02 /* trade_brewpoison.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3950,6 +4636,142 @@
 				25FBA79512B8329300F306BC /* druid.json in Resources */,
 				25FBA79612B8329400F306BC /* masteries.json in Resources */,
 				25E5FB3112E3B19E0096E0E0 /* glyphs.json in Resources */,
+				25ECC80212E3F3A300E34E02 /* glyph_cell_bg.png in Resources */,
+				25ECC94012E3F9B100E34E02 /* ability_druid_aquaticform.jpg in Resources */,
+				25ECC94112E3F9B100E34E02 /* ability_druid_challangingroar.jpg in Resources */,
+				25ECC94212E3F9B100E34E02 /* ability_druid_cower.jpg in Resources */,
+				25ECC94312E3F9B100E34E02 /* ability_druid_dash.jpg in Resources */,
+				25ECC94412E3F9B100E34E02 /* ability_druid_lacerate.jpg in Resources */,
+				25ECC94512E3F9B100E34E02 /* ability_druid_maul.jpg in Resources */,
+				25ECC94612E3F9B100E34E02 /* ability_druid_skinteeth.jpg in Resources */,
+				25ECC94712E3F9B100E34E02 /* ability_golemstormbolt.jpg in Resources */,
+				25ECC94812E3F9B100E34E02 /* ability_golemthunderclap.jpg in Resources */,
+				25ECC94912E3F9B100E34E02 /* ability_hunter_aspectofthemonkey.jpg in Resources */,
+				25ECC94A12E3F9B100E34E02 /* ability_hunter_assassinate2.jpg in Resources */,
+				25ECC94B12E3F9B100E34E02 /* ability_hunter_beastsoothe.jpg in Resources */,
+				25ECC94C12E3F9B100E34E02 /* ability_hunter_killcommand.jpg in Resources */,
+				25ECC94D12E3F9B100E34E02 /* ability_hunter_masterscall.jpg in Resources */,
+				25ECC94E12E3F9B100E34E02 /* ability_hunter_misdirection.jpg in Resources */,
+				25ECC94F12E3F9B100E34E02 /* ability_hunter_runningshot.jpg in Resources */,
+				25ECC95012E3F9B100E34E02 /* ability_hunter_snaketrap.jpg in Resources */,
+				25ECC95112E3F9B100E34E02 /* ability_hunter_steadyshot.jpg in Resources */,
+				25ECC95212E3F9B100E34E02 /* ability_hunter_traplauncher.jpg in Resources */,
+				25ECC95312E3F9B100E34E02 /* ability_impalingbolt.jpg in Resources */,
+				25ECC95412E3F9B100E34E02 /* ability_mage_conjurefoodrank9.jpg in Resources */,
+				25ECC95512E3F9B100E34E02 /* ability_mage_frostfirebolt.jpg in Resources */,
+				25ECC95612E3F9B100E34E02 /* ability_mage_invisibility.jpg in Resources */,
+				25ECC95712E3F9B100E34E02 /* ability_mage_moltenarmor.jpg in Resources */,
+				25ECC95812E3F9B100E34E02 /* ability_meleedamage.jpg in Resources */,
+				25ECC95912E3F9B100E34E02 /* ability_mount_whitedirewolf.jpg in Resources */,
+				25ECC95A12E3F9B100E34E02 /* ability_mount_whitetiger.jpg in Resources */,
+				25ECC95B12E3F9B100E34E02 /* ability_poisonsting.jpg in Resources */,
+				25ECC95C12E3F9B100E34E02 /* ability_rogue_distract.jpg in Resources */,
+				25ECC95D12E3F9B100E34E02 /* ability_rogue_fanofknives.jpg in Resources */,
+				25ECC95E12E3F9B100E34E02 /* ability_rogue_feint.jpg in Resources */,
+				25ECC95F12E3F9B100E34E02 /* ability_rogue_garrote.jpg in Resources */,
+				25ECC96012E3F9B100E34E02 /* ability_rogue_rupture.jpg in Resources */,
+				25ECC96112E3F9B100E34E02 /* ability_rogue_tricksofthetrade.jpg in Resources */,
+				25ECC96212E3F9B100E34E02 /* ability_sap.jpg in Resources */,
+				25ECC96312E3F9B100E34E02 /* ability_vanish.jpg in Resources */,
+				25ECC96412E3F9B100E34E02 /* ability_warlock_shadowflame.jpg in Resources */,
+				25ECC96512E3F9B100E34E02 /* ability_warrior_battleshout.jpg in Resources */,
+				25ECC96612E3F9B100E34E02 /* ability_warrior_charge.jpg in Resources */,
+				25ECC96712E3F9B100E34E02 /* ability_warrior_cleave.jpg in Resources */,
+				25ECC96812E3F9B100E34E02 /* ability_warrior_colossussmash.jpg in Resources */,
+				25ECC96912E3F9B100E34E02 /* ability_warrior_rallyingcry.jpg in Resources */,
+				25ECC96A12E3F9B100E34E02 /* ability_warrior_shieldreflection.jpg in Resources */,
+				25ECC96B12E3F9B100E34E02 /* ability_warrior_shieldwall.jpg in Resources */,
+				25ECC96C12E3F9B100E34E02 /* ability_warrior_sunder.jpg in Resources */,
+				25ECC96D12E3F9B100E34E02 /* ability_warrior_victoryrush.jpg in Resources */,
+				25ECC96E12E3F9B100E34E02 /* ability_warrior_warcry.jpg in Resources */,
+				25ECC96F12E3F9B100E34E02 /* ability_whirlwind.jpg in Resources */,
+				25ECC97012E3F9B100E34E02 /* inv_axe_66.jpg in Resources */,
+				25ECC97112E3F9B100E34E02 /* inv_feather_01.jpg in Resources */,
+				25ECC97212E3F9B100E34E02 /* inv_helmet_96.jpg in Resources */,
+				25ECC97312E3F9B100E34E02 /* inv_misc_bag_11.jpg in Resources */,
+				25ECC97412E3F9B100E34E02 /* inv_misc_herb_felblossom.jpg in Resources */,
+				25ECC97512E3F9B100E34E02 /* inv_misc_horn_02.jpg in Resources */,
+				25ECC97612E3F9B100E34E02 /* inv_misc_penguinpet.jpg in Resources */,
+				25ECC97712E3F9B100E34E02 /* inv_spear_04.jpg in Resources */,
+				25ECC97812E3F9B100E34E02 /* inv_stone_04.jpg in Resources */,
+				25ECC97912E3F9B100E34E02 /* inv_throwingknife_06.jpg in Resources */,
+				25ECC97A12E3F9B100E34E02 /* spell_arcane_massdispel.jpg in Resources */,
+				25ECC97B12E3F9B100E34E02 /* spell_arcane_starfire.jpg in Resources */,
+				25ECC97C12E3F9B100E34E02 /* spell_deathknight_classicon.jpg in Resources */,
+				25ECC97D12E3F9B100E34E02 /* spell_deathknight_darkconviction.jpg in Resources */,
+				25ECC97E12E3F9B100E34E02 /* spell_deathknight_icetouch.jpg in Resources */,
+				25ECC97F12E3F9B100E34E02 /* spell_deathknight_pathoffrost.jpg in Resources */,
+				25ECC98012E3F9B100E34E02 /* spell_fire_elemental_totem.jpg in Resources */,
+				25ECC98112E3F9B100E34E02 /* spell_fire_flamebolt.jpg in Resources */,
+				25ECC98212E3F9B100E34E02 /* spell_fire_flameshock.jpg in Resources */,
+				25ECC98312E3F9B100E34E02 /* spell_frost_chainsofice.jpg in Resources */,
+				25ECC98412E3F9B100E34E02 /* spell_frost_chillingarmor.jpg in Resources */,
+				25ECC98512E3F9B100E34E02 /* spell_frost_frost.jpg in Resources */,
+				25ECC98612E3F9B100E34E02 /* spell_frost_frostblast.jpg in Resources */,
+				25ECC98712E3F9B100E34E02 /* spell_frost_frostnova.jpg in Resources */,
+				25ECC98812E3F9B100E34E02 /* spell_frost_stun.jpg in Resources */,
+				25ECC98912E3F9B100E34E02 /* spell_holy_aspiration.jpg in Resources */,
+				25ECC98A12E3F9B100E34E02 /* spell_holy_crusaderstrike.jpg in Resources */,
+				25ECC98B12E3F9B100E34E02 /* spell_holy_dispelmagic.jpg in Resources */,
+				25ECC98C12E3F9B100E34E02 /* spell_holy_excorcism.jpg in Resources */,
+				25ECC98D12E3F9B100E34E02 /* spell_holy_flashheal.jpg in Resources */,
+				25ECC98E12E3F9B100E34E02 /* spell_holy_greaterblessingofkings.jpg in Resources */,
+				25ECC98F12E3F9B100E34E02 /* spell_holy_holynova.jpg in Resources */,
+				25ECC99012E3F9B100E34E02 /* spell_holy_holysmite.jpg in Resources */,
+				25ECC99112E3F9B100E34E02 /* spell_holy_prayerofhealing02.jpg in Resources */,
+				25ECC99212E3F9B100E34E02 /* spell_holy_prayerofmendingtga.jpg in Resources */,
+				25ECC99312E3F9B100E34E02 /* spell_holy_purify.jpg in Resources */,
+				25ECC99412E3F9B100E34E02 /* spell_holy_purifyingpower.jpg in Resources */,
+				25ECC99512E3F9B100E34E02 /* spell_holy_righteousfury.jpg in Resources */,
+				25ECC99612E3F9B100E34E02 /* spell_holy_righteousnessaura.jpg in Resources */,
+				25ECC99712E3F9B100E34E02 /* spell_holy_sealofsalvation.jpg in Resources */,
+				25ECC99812E3F9B100E34E02 /* spell_holy_turnundead.jpg in Resources */,
+				25ECC99912E3F9B100E34E02 /* spell_holy_wordfortitude.jpg in Resources */,
+				25ECC99A12E3F9B100E34E02 /* spell_magearmor.jpg in Resources */,
+				25ECC99B12E3F9B100E34E02 /* spell_magic_featherfall.jpg in Resources */,
+				25ECC99C12E3F9B100E34E02 /* spell_magic_magearmor.jpg in Resources */,
+				25ECC99D12E3F9B100E34E02 /* spell_nature_ancestralguardian.jpg in Resources */,
+				25ECC99E12E3F9B100E34E02 /* spell_nature_astralrecal.jpg in Resources */,
+				25ECC99F12E3F9B100E34E02 /* spell_nature_chainlightning.jpg in Resources */,
+				25ECC9A012E3F9B100E34E02 /* spell_nature_cyclone.jpg in Resources */,
+				25ECC9A112E3F9B100E34E02 /* spell_nature_earthshock.jpg in Resources */,
+				25ECC9A212E3F9B100E34E02 /* spell_nature_faeriefire.jpg in Resources */,
+				25ECC9A312E3F9B100E34E02 /* spell_nature_giftofthewild.jpg in Resources */,
+				25ECC9A412E3F9B100E34E02 /* spell_nature_groundingtotem.jpg in Resources */,
+				25ECC9A512E3F9B100E34E02 /* spell_nature_healingwavegreater.jpg in Resources */,
+				25ECC9A612E3F9B100E34E02 /* spell_nature_insectswarm.jpg in Resources */,
+				25ECC9A712E3F9B100E34E02 /* spell_nature_moonkey.jpg in Resources */,
+				25ECC9A812E3F9B100E34E02 /* spell_nature_reincarnation.jpg in Resources */,
+				25ECC9A912E3F9B100E34E02 /* spell_nature_stoneclawtotem.jpg in Resources */,
+				25ECC9AA12E3F9B100E34E02 /* spell_nature_thorns.jpg in Resources */,
+				25ECC9AB12E3F9B100E34E02 /* spell_nature_thunderclap.jpg in Resources */,
+				25ECC9AC12E3F9B100E34E02 /* spell_shadow_curse.jpg in Resources */,
+				25ECC9AD12E3F9B100E34E02 /* spell_shadow_deadofnight.jpg in Resources */,
+				25ECC9AE12E3F9B100E34E02 /* spell_shadow_demonbreath.jpg in Resources */,
+				25ECC9AF12E3F9B100E34E02 /* spell_shadow_demoniccircleteleport.jpg in Resources */,
+				25ECC9B012E3F9B100E34E02 /* spell_shadow_demonicfortitude.jpg in Resources */,
+				25ECC9B112E3F9B100E34E02 /* spell_shadow_detectlesserinvisibility.jpg in Resources */,
+				25ECC9B212E3F9B100E34E02 /* spell_shadow_enslavedemon.jpg in Resources */,
+				25ECC9B312E3F9B100E34E02 /* spell_shadow_evileye.jpg in Resources */,
+				25ECC9B412E3F9B100E34E02 /* spell_shadow_gathershadows.jpg in Resources */,
+				25ECC9B512E3F9B100E34E02 /* spell_shadow_haunting.jpg in Resources */,
+				25ECC9B612E3F9B100E34E02 /* spell_shadow_mindsteal.jpg in Resources */,
+				25ECC9B712E3F9B100E34E02 /* spell_shadow_nethercloak.jpg in Resources */,
+				25ECC9B812E3F9B100E34E02 /* spell_shadow_shadesofdarkness.jpg in Resources */,
+				25ECC9B912E3F9B100E34E02 /* spell_shadow_shadowbolt.jpg in Resources */,
+				25ECC9BA12E3F9B100E34E02 /* spell_shadow_shadowward.jpg in Resources */,
+				25ECC9BB12E3F9B100E34E02 /* spell_shadow_summonfelhunter.jpg in Resources */,
+				25ECC9BC12E3F9B100E34E02 /* spell_shadow_summonvoidwalker.jpg in Resources */,
+				25ECC9BD12E3F9B100E34E02 /* spell_shadow_vampiricaura.jpg in Resources */,
+				25ECC9BE12E3F9B100E34E02 /* spell_shaman_firenova.jpg in Resources */,
+				25ECC9BF12E3F9B100E34E02 /* spell_shaman_hex.jpg in Resources */,
+				25ECC9C012E3F9B100E34E02 /* spell_shaman_improvedreincarnation.jpg in Resources */,
+				25ECC9C112E3F9B100E34E02 /* spell_shaman_lavaburst.jpg in Resources */,
+				25ECC9C212E3F9B100E34E02 /* spell_shaman_totemrecall.jpg in Resources */,
+				25ECC9C312E3F9B100E34E02 /* spell_shaman_unleashweapon_flame.jpg in Resources */,
+				25ECC9C412E3F9B100E34E02 /* spell_shaman_unleashweapon_life.jpg in Resources */,
+				25ECC9C512E3F9B100E34E02 /* spell_shaman_unleashweapon_wind.jpg in Resources */,
+				25ECC9C612E3F9B100E34E02 /* trade_brewpoison.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4028,6 +4850,7 @@
 				257058B712DB0EF300E4E5DB /* Appirater.m in Sources */,
 				25ECC70312E3BE2200E34E02 /* GlyphViewController.m in Sources */,
 				25ECC76212E3C73800E34E02 /* Glyph.m in Sources */,
+				25ECC7D112E3D0EF00E34E02 /* Glyph+Fetch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4052,6 +4875,7 @@
 				25FBA77712B831F100F306BC /* CDataScanner.m in Sources */,
 				25FBA79912B832AE00F306BC /* Talented.xcdatamodel in Sources */,
 				25ECC76312E3C73800E34E02 /* Glyph.m in Sources */,
+				25ECC7D212E3D0EF00E34E02 /* Glyph+Fetch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

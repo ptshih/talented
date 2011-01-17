@@ -42,12 +42,12 @@
 				<int key="NSvFlags">292</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<object class="IBUIImageView" id="268223261">
+					<object class="IBUIImageView" id="999859988">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">274</int>
 						<string key="NSFrameSize">{1024, 748}</string>
 						<reference key="NSSuperview" ref="766721923"/>
-						<object class="NSColor" key="IBUIBackgroundColor">
+						<object class="NSColor" key="IBUIBackgroundColor" id="799380083">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MCAwAA</bytes>
 						</object>
@@ -58,7 +58,22 @@
 							<string key="NSResourceName">glyph_bg.png</string>
 						</object>
 					</object>
-					<object class="IBUIButton" id="330297414">
+					<object class="IBUITableView" id="247014451">
+						<reference key="NSNextResponder" ref="766721923"/>
+						<int key="NSvFlags">274</int>
+						<string key="NSFrame">{{719, 61}, {296, 680}}</string>
+						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="IBUIBackgroundColor" ref="799380083"/>
+						<bool key="IBUIClipsSubviews">YES</bool>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<bool key="IBUIAlwaysBounceVertical">YES</bool>
+						<int key="IBUISectionIndexMinimumDisplayRowCount">0</int>
+						<bool key="IBUIShowsSelectionImmediatelyOnTouchBegin">YES</bool>
+						<float key="IBUIRowHeight">44</float>
+						<float key="IBUISectionHeaderHeight">22</float>
+						<float key="IBUISectionFooterHeight">22</float>
+					</object>
+					<object class="IBUIButton" id="606041240">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{992, 17}, {30, 30}}</string>
@@ -116,11 +131,35 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">dismiss</string>
-						<reference key="source" ref="330297414"/>
+						<reference key="source" ref="606041240"/>
 						<reference key="destination" ref="841351856"/>
 						<int key="IBEventType">7</int>
 					</object>
 					<int key="connectionID">6</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">dataSource</string>
+						<reference key="source" ref="247014451"/>
+						<reference key="destination" ref="841351856"/>
+					</object>
+					<int key="connectionID">8</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="247014451"/>
+						<reference key="destination" ref="841351856"/>
+					</object>
+					<int key="connectionID">9</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">_glyphTableView</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="247014451"/>
+					</object>
+					<int key="connectionID">10</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -148,21 +187,28 @@
 						<reference key="object" ref="766721923"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="268223261"/>
-							<reference ref="330297414"/>
+							<reference ref="999859988"/>
+							<reference ref="606041240"/>
+							<reference ref="247014451"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">4</int>
-						<reference key="object" ref="268223261"/>
+						<reference key="object" ref="999859988"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">5</int>
-						<reference key="object" ref="330297414"/>
+						<reference key="object" ref="606041240"/>
 						<reference key="parent" ref="766721923"/>
 						<string key="objectName">dismissButton</string>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">7</int>
+						<reference key="object" ref="247014451"/>
+						<reference key="parent" ref="766721923"/>
+						<string key="objectName">glyphTableView</string>
 					</object>
 				</object>
 			</object>
@@ -178,12 +224,14 @@
 					<string>4.IBViewBoundsToFrameTransform</string>
 					<string>5.IBPluginDependency</string>
 					<string>5.IBViewBoundsToFrameTransform</string>
+					<string>7.IBPluginDependency</string>
+					<string>7.IBViewBoundsToFrameTransform</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>GlyphViewController</string>
 					<string>UIResponder</string>
-					<string>{{17, 196}, {1024, 768}}</string>
+					<string>{{29, 199}, {1024, 768}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
@@ -192,6 +240,10 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">P4AAAL+AAABEbgAAwkAAAA</bytes>
+					</object>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAABENAAAxDfAAA</bytes>
 					</object>
 				</object>
 			</object>
@@ -211,7 +263,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">6</int>
+			<int key="maxID">10</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -228,6 +280,17 @@
 						<object class="IBActionInfo" key="NS.object.0">
 							<string key="name">dismiss</string>
 							<string key="candidateClassName">id</string>
+						</object>
+					</object>
+					<object class="NSMutableDictionary" key="outlets">
+						<string key="NS.key.0">_glyphTableView</string>
+						<string key="NS.object.0">UITableView</string>
+					</object>
+					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<string key="NS.key.0">_glyphTableView</string>
+						<object class="IBToOneOutletInfo" key="NS.object.0">
+							<string key="name">_glyphTableView</string>
+							<string key="candidateClassName">UITableView</string>
 						</object>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
@@ -373,6 +436,14 @@
 					<reference key="sourceIdentifier" ref="786211723"/>
 				</object>
 				<object class="IBPartialClassDescription">
+					<string key="className">UIScrollView</string>
+					<string key="superclassName">UIView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">UIKit.framework/Headers/UIScrollView.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
 					<string key="className">UISearchBar</string>
 					<string key="superclassName">UIView</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
@@ -386,6 +457,14 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBFrameworkSource</string>
 						<string key="minorKey">UIKit.framework/Headers/UISearchDisplayController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">UITableView</string>
+					<string key="superclassName">UIScrollView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">UIKit.framework/Headers/UITableView.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
