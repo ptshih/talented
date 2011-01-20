@@ -14,6 +14,9 @@
 - (void)selectedGlyphWithId:(NSNumber *)glyphId atKeyPath:(NSString *)keyPath;
 @end
 
+@class TooltipViewController;
+@class CalculatorViewController;
+
 @interface GlyphViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
   IBOutlet UITableView *_glyphTableView;
   IBOutlet UIButton *_primeLeft;
@@ -28,12 +31,16 @@
   NSFetchedResultsController * _fetchedResultsController;
   NSInteger _characterClassId;
   id <GlyphDelegate> _delegate;
+  TooltipViewController *_tooltipViewController;
+  CalculatorViewController *_calculatorViewController;
 }
 
 @property (nonatomic, retain) UITableView *glyphTableView;
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, assign) NSInteger characterClassId;
 @property (nonatomic, assign) id <GlyphDelegate> delegate;
+@property (nonatomic, retain) TooltipViewController *tooltipViewController;
+@property (nonatomic, assign) CalculatorViewController *calculatorViewController;
 
 - (void)preloadGlyphsWithDict:(NSDictionary *)glyphDict;
 - (IBAction)prepareGlyphForButton:(UIButton *)button;

@@ -222,6 +222,7 @@ static UIImage *_redButtonBackground = nil;
   GlyphViewController *gvc = [[GlyphViewController alloc] initWithNibName:@"GlyphViewController" bundle:nil];
   gvc.characterClassId = self.characterClassId;
   gvc.delegate = self;
+  gvc.calculatorViewController = self;
   [self presentModalViewController:gvc animated:YES];
   if ([self.glyphDict count] > 0) {
     [gvc preloadGlyphsWithDict:self.glyphDict];

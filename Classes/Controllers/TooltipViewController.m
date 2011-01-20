@@ -17,6 +17,7 @@
 #import "InfoTextView.h"
 #import "PrimarySpell.h"
 #import "Mastery.h"
+#import "Glyph.h"
 
 #define TOOLTIP_WIDTH 270.0
 #define BUTTON_WIDTH 45.0
@@ -52,6 +53,7 @@ static UIImage *_closeButtonImage = nil;
 @synthesize tooltipSource = _tooltipSource;
 @synthesize mastery = _mastery;
 @synthesize primarySpell = _primarySpell;
+@synthesize glyph = _glyph;
 
 @synthesize treeView = _treeView;
 @synthesize talentView = _talentView;
@@ -234,10 +236,13 @@ static UIImage *_closeButtonImage = nil;
     case 1:
       self.nameLabel.text = self.primarySpell.primarySpellName;
       labelSize = [self.nameLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH - CLOSE_BUTTON_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
-
       break;
     case 2:
       self.nameLabel.text = [NSString stringWithFormat:@"%@: %@", NSLocalizedString(@"Mastery", @"Mastery"), self.mastery.masteryName];
+      labelSize = [self.nameLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH - CLOSE_BUTTON_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
+      break;
+    case 3:
+      self.nameLabel.text = self.glyph.glyphName;
       labelSize = [self.nameLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH - CLOSE_BUTTON_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
       break;
     default:
@@ -400,6 +405,8 @@ static UIImage *_closeButtonImage = nil;
     self.tooltipLabel.text = self.primarySpell.tooltip;
   } else if (self.tooltipSource == TooltipSourceMastery) {
     self.tooltipLabel.text = self.mastery.tooltip;
+  } else if (self.tooltipSource == TooltipSourceGlyph) {
+    self.tooltipLabel.text = self.glyph.tooltip;
   }
 
   self.tooltipLabel.text = [self.tooltipLabel.text stringByReplacingOccurrencesOfString:@"\n\n" withString:@"\n"];

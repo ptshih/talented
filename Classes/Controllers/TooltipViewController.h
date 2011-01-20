@@ -13,11 +13,13 @@
 @class InfoTextView;
 @class PrimarySpell;
 @class Mastery;
+@class Glyph;
 
 typedef enum {
   TooltipSourceTalent = 0,
   TooltipSourcePrimarySpell = 1,
-  TooltipSourceMastery = 2
+  TooltipSourceMastery = 2,
+  TooltipSourceGlyph = 3
 } TooltipSource;
 
 @interface TooltipViewController : UIViewController {
@@ -27,6 +29,7 @@ typedef enum {
   NSInteger _tooltipSource;
   Mastery *_mastery;
   PrimarySpell *_primarySpell;
+  Glyph *_glyph;
   
   CGFloat _availableHeight;
   CGFloat _desiredHeight;
@@ -58,6 +61,7 @@ typedef enum {
 @property (nonatomic, assign) NSInteger tooltipSource;
 @property (nonatomic, assign) Mastery *mastery;
 @property (nonatomic, assign) PrimarySpell *primarySpell;
+@property (nonatomic, assign) Glyph *glyph;
 
 @property (nonatomic, assign) CGFloat availableHeight;
 

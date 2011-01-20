@@ -11,12 +11,17 @@
 #import "Glyph.h"
 #import "Glyph+Fetch.h"
 #import "Constants.h"
+#import "TooltipViewController.h"
+#import "CalculatorViewController.h"
+#import "UIView+Additions.h"
 
 @interface GlyphViewController (Private)
 
 - (void)fetchAllGlyphs;
 - (void)fetchGlyphsForCharacterClass;
 - (void)resetFetchResultsController;
+- (void)showTooltipForButton:(UIButton *)button withGlyph:(Glyph *)glyph;
+- (void)hideTooltip;
 
 @end
 
@@ -26,6 +31,8 @@
 @synthesize fetchedResultsController = _fetchedResultsController;
 @synthesize characterClassId = _characterClassId;
 @synthesize delegate = _delegate;
+@synthesize tooltipViewController = _tooltipViewController;
+@synthesize calculatorViewController = _calculatorViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -103,8 +110,6 @@
   NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
   NSEntityDescription *entity = [NSEntityDescription entityForName:@"Glyph" inManagedObjectContext:context];
   
-
-  
   NSArray *allKeys = [glyphDict allKeys];
   for (NSString *key in allKeys) {
     // Fetch glyph from coredata
@@ -180,6 +185,17 @@
     
   } else {
     // No glyph selected, show tooltip
+    // Fetch glyph from coredata
+    NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Glyph" inManagedObjectContext:context];
+    NSFetchRequest *request = [Glyph fetchRequestForGlyphWithGlyphId:[[self.calculatorViewController.glyphDict valueForKey:keyPath] integerValue]];
+    [request setEntity:entity];
+    NSError *error;
+    NSArray *array = [context executeFetchRequest:request error:&error];
+    if ([array count] > 0) {
+      Glyph *glyph = [array objectAtIndex:0];
+      [self showTooltipForButton:button withGlyph:glyph];
+    }
   }
 }
 
@@ -204,8 +220,45 @@
   }
 }
 
-- (void)showTooltipForButton:(UIButton *)button {
+- (void)showTooltipForButton:(UIButton *)button withGlyph:(Glyph *)glyph {
+  if (!self.tooltipViewController) {
+    _tooltipViewController = [[TooltipViewController alloc] init];
+  } else {
+    [self hideTooltip];
+  }
   
+  self.tooltipViewController.availableHeight = self.view.height;
+  
+  self.tooltipViewController.glyph = glyph;
+  self.tooltipViewController.tooltipSource = TooltipSourceGlyph;
+  
+  [self.tooltipViewController reloadTooltipData];
+  
+  NSInteger tooltipTop;
+  if ([button isEqual:_primeLeft] || [button isEqual:_primeRight] || [button isEqual:_majorMiddle]) {
+    tooltipTop = button.top - self.tooltipViewController.view.height - 6;
+  } else {
+    tooltipTop = button.bottom + 6;
+  }
+  
+  CGRect tooltipFrame = CGRectMake(button.center.x - 150.0, tooltipTop, self.tooltipViewController.view.width, self.tooltipViewController.view.height);
+
+  self.tooltipViewController.view.frame = tooltipFrame;
+  
+  self.tooltipViewController.view.alpha = 0.0f;
+  [self.view addSubview:self.tooltipViewController.view];
+  [UIView beginAnimations:@"TooltipTransition" context:nil];
+  [UIView setAnimationCurve:UIViewAnimationCurveLinear];  
+  [UIView setAnimationDuration:0.2f];
+  self.tooltipViewController.view.alpha = 1.0f;
+  [UIView commitAnimations];
+  
+}
+
+- (void)hideTooltip {
+  if (self.tooltipViewController) {
+    [self.tooltipViewController.view removeFromSuperview];
+  }
 }
 
 #pragma mark UITableViewDataSource
@@ -302,6 +355,7 @@
   if (_minorMiddle) [_minorMiddle release];
   if (_minorRight) [_minorRight release];
   
+  if (_tooltipViewController) [_tooltipViewController release];
   if (_fetchedResultsController) [_fetchedResultsController release];
   [super dealloc];
 }
