@@ -237,8 +237,9 @@
 #pragma mark -
 #pragma mark Application lifecycle
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Detect Upgrade
+  
   if ([[NSUserDefaults standardUserDefaults] objectForKey:@"appVersion"]) {
     if (![[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"] isEqualToString:[[NSUserDefaults standardUserDefaults] objectForKey:@"appVersion"]]) {
       // Perform upgrade
@@ -246,7 +247,9 @@
       [self migrateSaves];
     }
   } else {
+    // Never set appversion before, so migrate
     [[NSUserDefaults standardUserDefaults] setObject:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"] forKey:@"appVersion"];
+    [self migrateSaves];
   }
   
 #ifdef FORCE_MIGRATION

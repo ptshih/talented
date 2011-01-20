@@ -48,7 +48,6 @@ static NSManagedObjectContext *_managedObjectContext = nil;
   if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:nil error:&error]) {
     // Handle the error.
     DLog(@"failed to create persistent store");
-    [self resetPersistentStore];
   }
   
   DLog(@"init persistent store with path: %@", storeUrl);
