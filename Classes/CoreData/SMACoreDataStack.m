@@ -53,6 +53,65 @@ static NSManagedObjectContext *_managedObjectContext = nil;
   DLog(@"init persistent store with path: %@", storeUrl);
 }
 
++ (void)resetPersistentStore {
+  DLog(@"reset persistent store");
+  [_managedObjectModel release];
+  [_persistentStoreCoordinator release];
+  _managedObjectModel = nil;
+  _persistentStoreCoordinator = nil;
+  
+  // Localize datastore filename
+  NSString *datastoreName = [NSString stringWithFormat:@"talented_%@.sqlite", USER_LANGUAGE];
+  NSURL *storeUrl = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent:datastoreName]];
+  NSError *error = nil;
+  
+  if (storeUrl) {
+    [[NSFileManager defaultManager] removeItemAtURL:storeUrl error:&error];
+  }
+  
+  [SMACoreDataStack prepareDocumentsDirectory];
+  
+  _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+  
+  if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:nil error:&error]) {
+    // Handle the error.
+    DLog(@"failed to create persistent store");
+  }
+  
+  DLog(@"init persistent store with path: %@", storeUrl);
+  
+  [self resetManagedObjectContext];
+}
+
++ (void)resetManagedObjectContext {
+  if (_managedObjectContext) {
+    [_managedObjectContext release];
+    _managedObjectContext = nil;
+  }
+  
+  NSPersistentStoreCoordinator *coordinator = _persistentStoreCoordinator;
+  NSManagedObjectContext *managedObjectContext = nil;
+  if (coordinator != nil) {
+    managedObjectContext = [[NSManagedObjectContext alloc] init];
+    [managedObjectContext setPersistentStoreCoordinator:coordinator];
+  }
+  
+  _managedObjectContext = managedObjectContext;
+}
+
++ (void)deleteAllPersistentStores {
+  // Localize datastore filename
+  for (NSString *lang in LANGUAGES) {
+    NSString *datastoreName = [NSString stringWithFormat:@"talented_%@.sqlite", lang];
+    NSURL *storeUrl = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent:datastoreName]];
+    NSError *error = nil;
+  
+    if (storeUrl) {
+      [[NSFileManager defaultManager] removeItemAtURL:storeUrl error:&error];
+    }
+  }
+}
+
 + (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
   if(!_persistentStoreCoordinator) {
     [self initPersistentStore];

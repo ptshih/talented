@@ -109,7 +109,7 @@ extern NSString *const kAppiraterDeclinedToRate;
  a significant event, call the method:
  [Appirater userDidSignificantEvent:];
  */
-#define APPIRATER_SIG_EVENTS_UNTIL_PROMPT	10	// integer
+#define APPIRATER_SIG_EVENTS_UNTIL_PROMPT	50	// integer
 
 /*
  Once the rating alert is presented to the user, they might select

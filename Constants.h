@@ -10,8 +10,11 @@
 //#define REMOTE_TALENT_IMAGES // this downloads and uses icons from wowarmory
 //#define DOWNLOAD_TALENT_IMAGES // if this is defined, we will save the icons to disk
 
+//#define FORCE_MIGRATION
+
 #define PATCH_VERSION 4.0.6
 
+#define LANGUAGES [NSArray arrayWithObjects:@"en", @"fr", @"de", @"es", @"ru", @"ko", nil]
 #define USER_LANGUAGE [[NSLocale preferredLanguages] objectAtIndex:0]
 
 #define WOW_ASSETS_URL @"http://us.battle.net/wow-assets/static/images/icons/56/"

@@ -21,6 +21,8 @@
 #import "TalentTree.h"
 #import "CharacterClass.h"
 #import "Glyph.h"
+#import "Save.h"
+#import "Save+Fetch.h"
 
 @implementation TalentedAppDelegate
 
@@ -33,8 +35,8 @@
   // Delete old persistent stores
 }
 
-- (void)loadTalentDataForLanguage {
-  if (![[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"hasLoadedData_%@", USER_LANGUAGE]]) {
+- (void)loadTalentDataForLanguage:(NSString *)language {
+  if (![[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"hasLoadedData_%@", language]]) {
     [self talentDataTestForClass:@"warrior"];
     [self talentDataTestForClass:@"paladin"];
     [self talentDataTestForClass:@"hunter"];
@@ -45,12 +47,13 @@
     [self talentDataTestForClass:@"mage"];
     [self talentDataTestForClass:@"warlock"];
     [self talentDataTestForClass:@"druid"];
-    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:[NSString stringWithFormat:@"hasLoadedData_%@", USER_LANGUAGE]];
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:[NSString stringWithFormat:@"hasLoadedData_%@", language]];
     [[NSUserDefaults standardUserDefaults] synchronize];
   }
 }
 
 - (void)talentDataTestForClass:(NSString *)classString {
+  NSError *error;
   // Localize datastore filename
   NSString *localizedFileName = [NSString stringWithFormat:@"%@_%@", classString, USER_LANGUAGE];
   
@@ -89,7 +92,7 @@
     }
     
     if (context.hasChanges) {
-      if (![context save:nil]) {
+      if (![context save:&error]) {
       }
       DLog(@"saving to core data");
     }
@@ -161,16 +164,99 @@
   }
 }
 
+#pragma mark Upgrade Code Path
+- (void)migrateSaves {
+  // Fetch all saves
+  NSArray *oldSaves = [self fetchAllSavesAsDictionary];
+  
+  // Delete persistent store for all languages
+  for (NSString *lang in LANGUAGES) {
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:[NSString stringWithFormat:@"hasLoadedData_%@", lang]];
+  }
+  [SMACoreDataStack deleteAllPersistentStores];
+
+  // Reset current language's persistent store
+  [SMACoreDataStack resetPersistentStore];
+  // Reload Talent Data
+  [self loadTalentDataForLanguage:USER_LANGUAGE];
+  // Re-insert all saves
+  [self insertAllSaves:oldSaves];
+}
+
+- (NSArray *)fetchAllSavesAsDictionary {
+  NSError *error;
+  NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
+  NSEntityDescription *entity = [NSEntityDescription entityForName:@"Save" inManagedObjectContext:context];
+  
+  NSFetchRequest *request = [Save fetchRequestForAllSaves];
+  [request setEntity:entity];
+  
+  NSArray *saves = [context executeFetchRequest:request error:&error];
+  NSMutableArray *saveArray = [NSMutableArray array];
+  for (Save *save in saves) {
+    NSMutableDictionary *saveDict = [NSMutableDictionary dictionary];
+    if (save.characterClassId) [saveDict setObject:save.characterClassId forKey:@"characterClassId"];
+    if (save.saveName) [saveDict setObject:save.saveName forKey:@"saveName"];
+    if (save.saveSpecTree) [saveDict setObject:save.saveSpecTree forKey:@"saveSpecTree"];
+    if (save.saveString) [saveDict setObject:save.saveString forKey:@"saveString"];
+    if (save.leftPoints) [saveDict setObject:save.leftPoints forKey:@"leftPoints"];
+    if (save.middlePoints) [saveDict setObject:save.middlePoints forKey:@"middlePoints"];
+    if (save.rightPoints) [saveDict setObject:save.rightPoints forKey:@"rightPoints"];
+    if (save.timestamp) [saveDict setObject:save.timestamp forKey:@"timestamp"];
+    if (save.glyphData) [saveDict setObject:save.glyphData forKey:@"glyphData"];
+    [saveArray addObject:saveDict];
+  }
+  
+  return saveArray;
+}
+
+- (void)insertAllSaves:(NSArray *)saves {
+  NSError *error;
+  NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
+  
+  for (NSDictionary *saveDict in saves) {
+    Save *newSave = [NSEntityDescription insertNewObjectForEntityForName:@"Save" inManagedObjectContext:context];
+    newSave.characterClassId = [saveDict objectForKey:@"characterClassId"];
+    newSave.saveName = [saveDict objectForKey:@"saveName"];
+    newSave.saveSpecTree = [saveDict objectForKey:@"saveSpecTree"];
+    newSave.saveString = [saveDict objectForKey:@"saveString"];
+    newSave.leftPoints = [saveDict objectForKey:@"leftPoints"];
+    newSave.middlePoints = [saveDict objectForKey:@"middlePoints"];
+    newSave.rightPoints = [saveDict objectForKey:@"rightPoints"];
+    newSave.timestamp = [saveDict objectForKey:@"timestamp"];
+    if ([saveDict objectForKey:@"glyphData"]) newSave.glyphData = [saveDict objectForKey:@"glyphData"];
+  }
+  
+  if (context.hasChanges) {
+    if (![context save:&error]) {
+    }
+    DLog(@"saving to core data");
+  }
+}
+
 #pragma mark -
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-  // Override point for customization after application launch.
+  // Detect Upgrade
+  if ([[NSUserDefaults standardUserDefaults] objectForKey:@"appVersion"]) {
+    if (![[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"] isEqualToString:[[NSUserDefaults standardUserDefaults] objectForKey:@"appVersion"]]) {
+      // Perform upgrade
+      [[NSUserDefaults standardUserDefaults] setObject:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"] forKey:@"appVersion"];
+      [self migrateSaves];
+    }
+  } else {
+    [[NSUserDefaults standardUserDefaults] setObject:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"] forKey:@"appVersion"];
+  }
+  
+#ifdef FORCE_MIGRATION
+  [self migrateSaves];
+#endif
   
   _launcherViewController = [[LauncherViewController alloc] initWithNibName:@"LauncherViewController" bundle:nil];
   
   if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"lastSelectedLanguage"] isEqual:USER_LANGUAGE]) {
-    [self loadTalentDataForLanguage];
+    [self loadTalentDataForLanguage:USER_LANGUAGE];
   }
   
   [Appirater appLaunched:YES];

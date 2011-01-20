@@ -282,7 +282,7 @@ static UIImage *_redButtonBackground = nil;
   _hasChanged = NO;
   [self resetAll];
   self.specTreeNo = specTree;
-  self.glyphDict = [NSDictionary dictionaryWithDictionary:glyphDict];
+  self.glyphDict = [NSMutableDictionary dictionaryWithDictionary:glyphDict];
   NSArray *saveArray = [saveString componentsSeparatedByString:@","];
   NSInteger i = 0;
   NSInteger j = 0;

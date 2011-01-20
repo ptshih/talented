@@ -45,7 +45,6 @@ static UIImage *_backgroundGradientImage = nil;
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  [self resetFetchResultsController];
   _navItem.leftBarButtonItem = self.editButtonItem;
   _tableView.backgroundColor = [UIColor colorWithPatternImage:_backgroundGradientImage];
   self.searchDisplayController.searchResultsTableView.backgroundColor = [UIColor colorWithPatternImage:_backgroundGradientImage];

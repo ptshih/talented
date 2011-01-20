@@ -22,6 +22,9 @@
 - (void)talentDataTestForClass:(NSString *)classString;
 - (void)loadGlyphsForCharacterClass:(CharacterClass *)characterClass;
 - (NSString *)glyphKeyPathForCharacterClass:(CharacterClass *)characterClass;
+- (void)migrateSaves;
+- (NSArray *)fetchAllSavesAsDictionary;
+- (void)insertAllSaves:(NSArray *)saves;
 
 @end
 

@@ -14,6 +14,9 @@
 
 }
 
++ (void)resetPersistentStore;
++ (void)resetManagedObjectContext;
++ (void)deleteAllPersistentStores;
 + (NSManagedObjectModel *)managedObjectModel;
 + (NSManagedObjectContext *)managedObjectContext;
 + (NSString *)applicationDocumentsDirectory;
