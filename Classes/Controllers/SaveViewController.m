@@ -52,6 +52,11 @@ static UIImage *_backgroundGradientImage = nil;
   self.searchDisplayController.searchResultsTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+  [self resetFetchResultsController];
+  [_tableView reloadData];
+}
+
 - (void)resetFetchResultsController {
   if (_fetchedResultsController) _fetchedResultsController = nil;
   if (self.characterClassId > 0) {
