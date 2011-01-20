@@ -7,7 +7,6 @@
 //
 
 #import "CalculatorViewController.h"
-#import "GlyphViewController.h"
 #import "TooltipViewController.h"
 #import "SMACoreDataStack.h"
 #import "TalentTree.h"
@@ -55,6 +54,7 @@ static UIImage *_redButtonBackground = nil;
 @implementation CalculatorViewController
 
 @synthesize tooltipViewController = _tooltipViewController;
+@synthesize glyphDict = _glyphDict;
 @synthesize treeArray = _treeArray;
 @synthesize summaryViewArray = _summaryViewArray;
 @synthesize treeViewArray = _treeViewArray;
@@ -70,6 +70,7 @@ static UIImage *_redButtonBackground = nil;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
+    _glyphDict = [[NSMutableDictionary alloc] init];
     _summaryViewArray = [[NSMutableArray alloc] init];
     _treeViewArray = [[NSMutableArray alloc] init];
     _characterClassId = 0;
@@ -124,7 +125,9 @@ static UIImage *_redButtonBackground = nil;
 //    NSNumber *recentSaveCharacterClassId = [NSNumber numberWithInteger:self.characterClassId];
     NSDictionary *recentSaveDict = [NSDictionary dictionaryWithObjectsAndKeys:recentSaveSpecTreeNo, @"specTreeNo", recentSaveString, @"saveString", nil];
     NSString *recentSavePath = [NSString stringWithFormat:@"recent_save_%d", self.characterClassId];
+    NSString *recentGlyphPath = [NSString stringWithFormat:@"recent_glyph_%d", self.characterClassId];
     [[NSUserDefaults standardUserDefaults] setObject:recentSaveDict forKey:recentSavePath];
+    [[NSUserDefaults standardUserDefaults] setObject:self.glyphDict forKey:recentGlyphPath];
     [[NSUserDefaults standardUserDefaults] synchronize];
   }
   [self dismissModalViewControllerAnimated:YES];
@@ -218,12 +221,20 @@ static UIImage *_redButtonBackground = nil;
 - (IBAction)glyph {
   GlyphViewController *gvc = [[GlyphViewController alloc] initWithNibName:@"GlyphViewController" bundle:nil];
   gvc.characterClassId = self.characterClassId;
+  gvc.delegate = self;
   [self presentModalViewController:gvc animated:YES];
+  if ([self.glyphDict count] > 0) {
+    [gvc preloadGlyphsWithDict:self.glyphDict];
+  }
   [gvc release];
 }
 
-#pragma mark MFMailCompose
+#pragma mark GlyphDelegate
+- (void)selectedGlyphWithId:(NSNumber *)glyphId atKeyPath:(NSString *)keyPath {
+  [self.glyphDict setValue:glyphId forKey:keyPath];
+}
 
+#pragma mark MFMailCompose
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
   [self dismissModalViewControllerAnimated:YES];
 }
@@ -262,7 +273,7 @@ static UIImage *_redButtonBackground = nil;
 //  [self loadWithSaveString:tmpString andSpecTree:1];
 }
 
-- (void)loadWithSaveString:(NSString *)saveString andSpecTree:(NSInteger)specTree isRecent:(BOOL)isRecent {
+- (void)loadWithSaveString:(NSString *)saveString andSpecTree:(NSInteger)specTree andGlyphDict:(NSDictionary *)glyphDict isRecent:(BOOL)isRecent {
   if (!isRecent) {
     _isLoad = YES;
     _hasSaved = YES;
@@ -270,6 +281,7 @@ static UIImage *_redButtonBackground = nil;
   _hasChanged = NO;
   [self resetAll];
   self.specTreeNo = specTree;
+  self.glyphDict = [NSDictionary dictionaryWithDictionary:glyphDict];
   NSArray *saveArray = [saveString componentsSeparatedByString:@","];
   NSInteger i = 0;
   NSInteger j = 0;
@@ -299,7 +311,11 @@ static UIImage *_redButtonBackground = nil;
   _hasSaved = YES;
   NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
   
-  NSDictionary *saveDict = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:self.characterClassId], @"characterClassId", [NSNumber numberWithInteger:self.specTreeNo], @"saveSpecTree", saveName, @"saveName", [self generateSaveString], @"saveString", [NSNumber numberWithInteger:[[self.treeViewArray objectAtIndex:0] pointsInTree]], @"leftPoints", [NSNumber numberWithInteger:[[self.treeViewArray objectAtIndex:1] pointsInTree]], @"middlePoints", [NSNumber numberWithInteger:[[self.treeViewArray objectAtIndex:2] pointsInTree]], @"rightPoints", [NSDate date], @"timestamp", nil];
+  // Serialize glyphDict to NSData
+  NSString *error;
+  NSData *glyphData = [NSPropertyListSerialization dataFromPropertyList:self.glyphDict format:NSPropertyListBinaryFormat_v1_0 errorDescription:&error];
+  
+  NSDictionary *saveDict = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:self.characterClassId], @"characterClassId", [NSNumber numberWithInteger:self.specTreeNo], @"saveSpecTree", saveName, @"saveName", [self generateSaveString], @"saveString", [NSNumber numberWithInteger:[[self.treeViewArray objectAtIndex:0] pointsInTree]], @"leftPoints", [NSNumber numberWithInteger:[[self.treeViewArray objectAtIndex:1] pointsInTree]], @"middlePoints", [NSNumber numberWithInteger:[[self.treeViewArray objectAtIndex:2] pointsInTree]], @"rightPoints", [NSDate date], @"timestamp", glyphData, @"glyphData", nil];
   
   Save *newSave = [Save addSaveWithDictionary:saveDict inContext:context];
   
@@ -341,7 +357,12 @@ static UIImage *_redButtonBackground = nil;
   DLog(@"loading save: %@", save);
   self.characterClassId = [save.characterClassId integerValue];
   self.specTreeNo = [save.saveSpecTree integerValue];
-  [self loadWithSaveString:save.saveString andSpecTree:[save.saveSpecTree integerValue] isRecent:NO];
+  
+  NSString *error;
+  NSPropertyListFormat format;
+  NSDictionary *glyphDict = [NSPropertyListSerialization propertyListFromData:save.glyphData mutabilityOption:NSPropertyListImmutable format:&format errorDescription:&error];
+  
+  [self loadWithSaveString:save.saveString andSpecTree:[save.saveSpecTree integerValue] andGlyphDict:glyphDict isRecent:NO];
 }
 
 #pragma mark Reset
@@ -940,6 +961,7 @@ static UIImage *_redButtonBackground = nil;
   if (_summaryViewArray) [_summaryViewArray release];
   if (_treeViewArray) [_treeViewArray release];
   if (_treeArray) [_treeArray release];
+  if (_glyphDict) [_glyphDict release];
   
   if (_alertPopoverController) [_alertPopoverController release];
   if (_saveViewController) [_saveViewController release];

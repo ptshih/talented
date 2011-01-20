@@ -12,6 +12,7 @@
 #import "SummaryViewController.h"
 #import "SaveViewController.h"
 #import "AlertViewController.h"
+#import "GlyphViewController.h"
 
 typedef enum {
   CalculatorStateEnabled = 0,
@@ -21,7 +22,7 @@ typedef enum {
 
 @class TooltipViewController;
 
-@interface CalculatorViewController : UIViewController <TreeDelegate, SummaryDelegate, SaveDelegate, AlertDelegate, MFMailComposeViewControllerDelegate> {
+@interface CalculatorViewController : UIViewController <TreeDelegate, SummaryDelegate, SaveDelegate, GlyphDelegate, AlertDelegate, MFMailComposeViewControllerDelegate> {
   IBOutlet UIView *_talentTreeView;
   IBOutlet UIView *_summaryView;
   IBOutlet UIButton *_swapButton;
@@ -53,6 +54,7 @@ typedef enum {
   
   TooltipViewController *_tooltipViewController;
 
+  NSMutableDictionary *_glyphDict; // [primeLeft, primeMiddle, primeRight, majorLeft, majorMiddle, majorRight, minorLeft, minorMiddle, minorRight]
   NSArray *_treeArray;
   NSMutableArray *_treeViewArray;
   NSMutableArray *_summaryViewArray;
@@ -71,6 +73,7 @@ typedef enum {
 }
 
 @property (nonatomic, retain) TooltipViewController *tooltipViewController;
+@property (nonatomic, retain) NSMutableDictionary *glyphDict;
 @property (nonatomic, retain) NSArray *treeArray;
 @property (nonatomic, retain) NSMutableArray *treeViewArray;
 @property (nonatomic, retain) NSMutableArray *summaryViewArray;
@@ -93,6 +96,6 @@ typedef enum {
 - (IBAction)swapViews;
 - (void)hideTooltip;
 
-- (void)loadWithSaveString:(NSString *)saveString andSpecTree:(NSInteger)specTree isRecent:(BOOL)isRecent;
+- (void)loadWithSaveString:(NSString *)saveString andSpecTree:(NSInteger)specTree andGlyphDict:(NSDictionary *)glyphDict isRecent:(BOOL)isRecent;
 
 @end

@@ -19,6 +19,7 @@
 @dynamic rightPoints;
 @dynamic timestamp;
 @dynamic leftPoints;
+@dynamic glyphData;
 
 + (Save *)addSaveWithDictionary:(NSDictionary *)dictionary inContext:(NSManagedObjectContext *)context {
   if (dictionary) {
@@ -32,6 +33,7 @@
     newSave.middlePoints = [dictionary objectForKey:@"middlePoints"];
     newSave.rightPoints = [dictionary objectForKey:@"rightPoints"];
     newSave.timestamp = [dictionary objectForKey:@"timestamp"];
+    newSave.glyphData = [dictionary objectForKey:@"glyphData"];
     
     return newSave;
   } else {

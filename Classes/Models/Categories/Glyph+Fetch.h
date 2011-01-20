@@ -13,6 +13,7 @@
 @interface Glyph (Fetch)
 
 + (NSFetchRequest *)fetchRequestForAllGlyphs;
++ (NSFetchRequest *)fetchRequestForGlyphWithGlyphId:(NSInteger)glyphId;
 + (NSFetchRequest *)fetchRequestForGlyphsWithCharacterClassId:(NSInteger)characterClassId;
 
 @end

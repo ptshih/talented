@@ -169,14 +169,17 @@ static UIImage *_arthas = nil;
 
 - (void)loadClassRecentlyUsed {
   NSString *recentSavePath = [NSString stringWithFormat:@"recent_save_%d", _selectedCharacterClassId];
+  NSString *recentGlyphPath = [NSString stringWithFormat:@"recent_glyph_%d", _selectedCharacterClassId];
   NSDictionary *recentSaveDict = [[NSUserDefaults standardUserDefaults] objectForKey:recentSavePath];
+  NSDictionary *recentGlyphDict = [[NSUserDefaults standardUserDefaults] objectForKey:recentGlyphPath];
   [[NSUserDefaults standardUserDefaults] removeObjectForKey:recentSavePath];
+  [[NSUserDefaults standardUserDefaults] removeObjectForKey:recentGlyphPath];
   
   CalculatorViewController *cvc = [[CalculatorViewController alloc] initWithNibName:@"CalculatorViewController" bundle:nil];
   cvc.characterClassId = _selectedCharacterClassId;
   cvc.specTreeNo = [[recentSaveDict objectForKey:@"specTreeNo"] integerValue];
   [self presentModalViewController:cvc animated:YES];
-  [cvc loadWithSaveString:[recentSaveDict objectForKey:@"saveString"] andSpecTree:cvc.specTreeNo isRecent:YES];
+  [cvc loadWithSaveString:[recentSaveDict objectForKey:@"saveString"] andSpecTree:cvc.specTreeNo andGlyphDict:recentGlyphDict isRecent:YES];
   [cvc release]; 
   
   [Appirater userDidSignificantEvent:YES];
@@ -265,7 +268,12 @@ static UIImage *_arthas = nil;
   cvc.characterClassId = [save.characterClassId integerValue];
   cvc.specTreeNo = [save.saveSpecTree integerValue];
   [self presentModalViewController:cvc animated:YES];
-  [cvc loadWithSaveString:save.saveString andSpecTree:[save.saveSpecTree integerValue] isRecent:NO];
+  
+  NSString *error;
+  NSPropertyListFormat format;
+  NSDictionary *glyphDict = [NSPropertyListSerialization propertyListFromData:save.glyphData mutabilityOption:NSPropertyListImmutable format:&format errorDescription:&error];
+  
+  [cvc loadWithSaveString:save.saveString andSpecTree:[save.saveSpecTree integerValue] andGlyphDict:glyphDict isRecent:NO];
   [cvc release];
   
   [Appirater userDidSignificantEvent:YES];

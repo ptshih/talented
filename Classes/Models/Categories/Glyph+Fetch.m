@@ -16,6 +16,11 @@
   return request;
 }
 
++ (NSFetchRequest *)fetchRequestForGlyphWithGlyphId:(NSInteger)glyphId {
+  NSFetchRequest *request = [NSManagedObject fetchRequestWithName:@"getGlyphWithGlyphId" andSubstitutionVariables:[NSDictionary dictionaryWithObject:[NSNumber numberWithInteger:glyphId] forKey:@"glyphId"]];
+  return request;
+}
+
 + (NSFetchRequest *)fetchRequestForGlyphsWithCharacterClassId:(NSInteger)characterClassId {
   NSFetchRequest *request = [NSManagedObject fetchRequestWithName:@"getGlyphsWithCharacterClassId" andSubstitutionVariables:[NSDictionary dictionaryWithObject:[NSNumber numberWithInteger:characterClassId] forKey:@"characterClassId"]];
   return request;

@@ -25,6 +25,7 @@
 @synthesize glyphTableView = _glyphTableView;
 @synthesize fetchedResultsController = _fetchedResultsController;
 @synthesize characterClassId = _characterClassId;
+@synthesize delegate = _delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -93,7 +94,95 @@
   }
 }
 
+- (NSIndexPath *)selectedGlyphIndexPath {
+  return [self.glyphTableView indexPathForSelectedRow];
+}
+
+
+- (void)preloadGlyphsWithDict:(NSDictionary *)glyphDict {
+  NSManagedObjectContext *context = [SMACoreDataStack managedObjectContext];
+  NSEntityDescription *entity = [NSEntityDescription entityForName:@"Glyph" inManagedObjectContext:context];
+  
+
+  
+  NSArray *allKeys = [glyphDict allKeys];
+  for (NSString *key in allKeys) {
+    // Fetch glyph from coredata
+    NSFetchRequest *request = [Glyph fetchRequestForGlyphWithGlyphId:[[glyphDict valueForKey:key] integerValue]];
+    [request setEntity:entity];
+    NSError *error;
+    NSArray *array = [context executeFetchRequest:request error:&error];
+    Glyph *glyph = [array objectAtIndex:0];
+    UIImage *myImage = [UIImage imageNamed:WOW_ICON_LOCAL(glyph.icon)];
+    
+    if ([key isEqualToString:@"primeLeft"]) {
+      [_primeLeft setBackgroundImage:myImage forState:UIControlStateNormal];
+    } else if ([key isEqualToString:@"primeMiddle"]) {
+      [_primeMiddle setBackgroundImage:myImage forState:UIControlStateNormal];
+    } else if ([key isEqualToString:@"primeRight"]) {
+      [_primeRight setBackgroundImage:myImage forState:UIControlStateNormal];
+    } else if ([key isEqualToString:@"majorLeft"]) {
+      [_majorLeft setBackgroundImage:myImage forState:UIControlStateNormal];
+    } else if ([key isEqualToString:@"majorMiddle"]) {
+      [_majorMiddle setBackgroundImage:myImage forState:UIControlStateNormal];
+    } else if ([key isEqualToString:@"majorRight"]) {
+      [_majorRight setBackgroundImage:myImage forState:UIControlStateNormal];
+    } else if ([key isEqualToString:@"minorLeft"]) {
+      [_minorLeft setBackgroundImage:myImage forState:UIControlStateNormal];
+    } else if ([key isEqualToString:@"minorMiddle"]) {
+      [_minorMiddle setBackgroundImage:myImage forState:UIControlStateNormal];
+    } else if ([key isEqualToString:@"minorRight"]) {
+      [_minorRight setBackgroundImage:myImage forState:UIControlStateNormal];
+    }
+  }
+}
+
 #pragma mark IBAction
+- (IBAction)prepareGlyphForButton:(UIButton *)button {
+  // Find which button this is
+  NSString *keyPath = nil;
+  if ([button isEqual:_primeLeft]) {
+    keyPath = @"primeLeft";
+  } else if ([button isEqual:_primeMiddle]) {
+    keyPath = @"primeMiddle";
+  } else if ([button isEqual:_primeRight]) {
+    keyPath = @"primeRight";
+  } else if ([button isEqual:_majorLeft]) {
+    keyPath = @"majorLeft";
+  } else if ([button isEqual:_majorMiddle]) {
+    keyPath = @"majorMiddle";
+  } else if ([button isEqual:_majorRight]) {
+    keyPath = @"majorRight";
+  } else if ([button isEqual:_minorLeft]) {
+    keyPath = @"minorLeft";
+  } else if ([button isEqual:_minorMiddle]) {
+    keyPath = @"minorMiddle";
+  } else if ([button isEqual:_minorRight]) {
+    keyPath = @"minorRight";
+  }
+
+  NSIndexPath *selectedIndexPath = [self selectedGlyphIndexPath];
+  if (selectedIndexPath) {
+    Glyph *glyph = [self.fetchedResultsController objectAtIndexPath:selectedIndexPath];
+    UIImage *myImage = [UIImage imageNamed:WOW_ICON_LOCAL(glyph.icon)];
+    [button setBackgroundImage:myImage forState:UIControlStateNormal];
+    [self.glyphTableView deselectRowAtIndexPath:selectedIndexPath animated:YES];
+    
+    // Tell delegate about the selection
+    //
+    if (self.delegate) {
+      [self.delegate retain];
+      if ([self.delegate respondsToSelector:@selector(selectedGlyphWithId:atKeyPath:)]) {
+        [self.delegate selectedGlyphWithId:glyph.glyphId atKeyPath:keyPath];
+      }
+      [self.delegate release];
+    }
+    
+  } else {
+    // No glyph selected, show tooltip
+  }
+}
+
 - (IBAction)dismiss {
   [self dismissModalViewControllerAnimated:YES];
 }
@@ -113,6 +202,10 @@
       return NSLocalizedString(@"Prime Glyph", @"Prime Glyph");
       break;
   }
+}
+
+- (void)showTooltipForButton:(UIButton *)button {
+  
 }
 
 #pragma mark UITableViewDataSource
@@ -197,7 +290,18 @@
 }
 
 - (void)dealloc {
+  // IBOutlets
   if (_glyphTableView) [_glyphTableView release];
+  if (_primeLeft) [_primeLeft release];
+  if (_primeMiddle) [_primeMiddle release];
+  if (_primeRight) [_primeRight release];
+  if (_majorLeft) [_majorLeft release];
+  if (_majorMiddle) [_majorMiddle release];
+  if (_majorRight) [_majorRight release];
+  if (_minorLeft) [_minorLeft release];
+  if (_minorMiddle) [_minorMiddle release];
+  if (_minorRight) [_minorRight release];
+  
   if (_fetchedResultsController) [_fetchedResultsController release];
   [super dealloc];
 }

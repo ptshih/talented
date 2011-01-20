@@ -21,6 +21,7 @@
 @property (nonatomic, retain) NSNumber * rightPoints;
 @property (nonatomic, retain) NSDate * timestamp;
 @property (nonatomic, retain) NSNumber * leftPoints;
+@property (nonatomic, retain) NSData * glyphData;
 
 + (Save *)addSaveWithDictionary:(NSDictionary *)dictionary inContext:(NSManagedObjectContext *)context;
 
