@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol TooltipDelegate <NSObject>
+
+@optional
+- (void)tooltipDidDismiss;
+
+@end
+
 @class TreeViewController;
 @class TalentViewController;
 @class InfoTextView;
@@ -53,6 +60,8 @@ typedef enum {
   UILabel *_cooldownLabel;
   UILabel *_requiresLabel;
   
+  BOOL _showGlyphHelp;
+  id <TooltipDelegate> _delegate;
 }
 
 @property (nonatomic, assign) TreeViewController *treeView;
@@ -82,6 +91,9 @@ typedef enum {
 @property (nonatomic, retain) UILabel *castTimeLabel;
 @property (nonatomic, retain) UILabel *cooldownLabel;
 @property (nonatomic, retain) UILabel *requiresLabel;
+
+@property (nonatomic, assign) BOOL showGlyphHelp;
+@property (nonatomic, assign) id <TooltipDelegate> delegate;
 
 - (void)reloadTooltipData;
 

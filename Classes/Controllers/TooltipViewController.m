@@ -22,8 +22,8 @@
 #define TOOLTIP_WIDTH 270.0
 #define BUTTON_WIDTH 45.0
 #define BUTTON_HEIGHT 34.0
-#define CLOSE_BUTTON_WIDTH 17.0
-#define CLOSE_BUTTON_HEIGHT 17.0
+#define CLOSE_BUTTON_WIDTH 34.0
+#define CLOSE_BUTTON_HEIGHT 34.0
 #define TOOLTIP_CAP 15
 #define MARGIN_X 15.0
 #define MARGIN_Y 15.0
@@ -78,6 +78,9 @@ static UIImage *_closeButtonImage = nil;
 @synthesize cooldownLabel = _cooldownLabel;
 @synthesize requiresLabel = _requiresLabel;
 
+@synthesize showGlyphHelp = _showGlyphHelp;
+@synthesize delegate = _delegate;
+
 + (void)initialize {
   _plusButtonOn = [[UIImage imageNamed:@"points_plus_on.png"] retain];
   _plusButtonOff = [[UIImage imageNamed:@"points_plus_off.png"] retain];
@@ -94,6 +97,8 @@ static UIImage *_closeButtonImage = nil;
     _availableHeight = 564.0;
     _desiredHeight = 15.0; // 75px after buttons and top border spacing
     
+    _showGlyphHelp = NO;
+    
     // Base View
     self.view.width = FRAME_WIDTH;
     self.view.height = 0.0;
@@ -108,6 +113,13 @@ static UIImage *_closeButtonImage = nil;
 
 - (void)closeTooltip {
   [self.view removeFromSuperview];
+  if (self.delegate) {
+    [self.delegate retain];
+    if ([self.delegate respondsToSelector:@selector(tooltipDidDismiss)]) {
+      [self.delegate tooltipDidDismiss];
+    }
+    [self.delegate release];
+  }
 }
 
 #pragma mark UI Initialization and Setup
@@ -115,7 +127,7 @@ static UIImage *_closeButtonImage = nil;
   // Add and Subtract Buttons
   _plusButton = [[UIButton alloc] initWithFrame:CGRectMake(FRAME_WIDTH - MARGIN_X - BUTTON_WIDTH, 15, BUTTON_WIDTH, BUTTON_HEIGHT)];
   _minusButton = [[UIButton alloc] initWithFrame:CGRectMake(FRAME_WIDTH - MARGIN_X - BUTTON_WIDTH - BUTTON_WIDTH, 15, BUTTON_WIDTH, BUTTON_HEIGHT)];
-  _closeButton = [[UIButton alloc] initWithFrame:CGRectMake(FRAME_WIDTH - MARGIN_X - CLOSE_BUTTON_WIDTH, 18, CLOSE_BUTTON_WIDTH, CLOSE_BUTTON_HEIGHT)];
+  _closeButton = [[UIButton alloc] initWithFrame:CGRectMake(FRAME_WIDTH - MARGIN_X - CLOSE_BUTTON_WIDTH + 8, 10, CLOSE_BUTTON_WIDTH, CLOSE_BUTTON_HEIGHT)];
   [self.plusButton addTarget:self action:@selector(addPoint:) forControlEvents:UIControlEventTouchUpInside];
   [self.minusButton addTarget:self action:@selector(removePoint:) forControlEvents:UIControlEventTouchUpInside];
   [self.closeButton addTarget:self action:@selector(closeTooltip) forControlEvents:UIControlEventTouchUpInside];
@@ -258,6 +270,7 @@ static UIImage *_closeButtonImage = nil;
   
   if (self.tooltipSource == TooltipSourceTalent) {
     // Add rank label
+    self.rankLabel.hidden = NO;
     NSInteger maxRank = [self.talentView.talent.ranks count];
     self.rankLabel.text = [NSString stringWithFormat:@"%@ %d/%d", NSLocalizedString(@"Rank", @"Rank"), self.talentView.currentRank , maxRank];
     labelSize = [self.rankLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH - BUTTON_WIDTH - BUTTON_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
@@ -310,6 +323,21 @@ static UIImage *_closeButtonImage = nil;
     } else {
       self.tierReqLabel.hidden = YES;
     }
+  } else if ((self.tooltipSource == TooltipSourceGlyph) && self.showGlyphHelp) {
+    // Borrow rank label for instructions
+    self.rankLabel.hidden = NO;
+    self.rankLabel.text = @"Tap a glyph slot to inscribe this glyph";
+    labelSize = [self.rankLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(TOOLTIP_WIDTH, INT_MAX) lineBreakMode:UILineBreakModeWordWrap];
+    
+    self.rankLabel.textColor = LABEL_COLOR_GREEN;
+    self.rankLabel.top = _desiredHeight;
+    self.rankLabel.left = MARGIN_X;
+    self.rankLabel.width = labelSize.width;
+    self.rankLabel.height = labelSize.height;
+    
+    _desiredHeight = self.rankLabel.bottom + MARGIN_Y_SM;
+  } else {
+    self.rankLabel.hidden = YES;
   }
 
   // Spell Detail Labels, these are conditional also

@@ -11,7 +11,6 @@
 #import "Glyph.h"
 #import "Glyph+Fetch.h"
 #import "Constants.h"
-#import "TooltipViewController.h"
 #import "CalculatorViewController.h"
 #import "UIView+Additions.h"
 
@@ -21,6 +20,7 @@
 - (void)fetchGlyphsForCharacterClass;
 - (void)resetFetchResultsController;
 - (void)showTooltipForButton:(UIButton *)button withGlyph:(Glyph *)glyph;
+- (void)showTooltipForCell:(UITableViewCell *)cell withGlyph:(Glyph *)glyph;
 - (void)hideTooltip;
 
 @end
@@ -144,45 +144,64 @@
 
 #pragma mark IBAction
 - (IBAction)prepareGlyphForButton:(UIButton *)button {
+  [self hideTooltip];
+  
   // Find which button this is
+  NSInteger glyphType = -1;
   NSString *keyPath = nil;
   if ([button isEqual:_primeLeft]) {
     keyPath = @"primeLeft";
+    glyphType = 0;
   } else if ([button isEqual:_primeMiddle]) {
     keyPath = @"primeMiddle";
+    glyphType = 0;
   } else if ([button isEqual:_primeRight]) {
     keyPath = @"primeRight";
+    glyphType = 0;
   } else if ([button isEqual:_majorLeft]) {
     keyPath = @"majorLeft";
+    glyphType = 1;
   } else if ([button isEqual:_majorMiddle]) {
     keyPath = @"majorMiddle";
+    glyphType = 1;
   } else if ([button isEqual:_majorRight]) {
     keyPath = @"majorRight";
+    glyphType = 1;
   } else if ([button isEqual:_minorLeft]) {
     keyPath = @"minorLeft";
+    glyphType = 2;
   } else if ([button isEqual:_minorMiddle]) {
     keyPath = @"minorMiddle";
+    glyphType = 2;
   } else if ([button isEqual:_minorRight]) {
     keyPath = @"minorRight";
+    glyphType = 2;
   }
 
   NSIndexPath *selectedIndexPath = [self selectedGlyphIndexPath];
   if (selectedIndexPath) {
     Glyph *glyph = [self.fetchedResultsController objectAtIndexPath:selectedIndexPath];
-    UIImage *myImage = [UIImage imageNamed:WOW_ICON_LOCAL(glyph.icon)];
-    [button setBackgroundImage:myImage forState:UIControlStateNormal];
-    [self.glyphTableView deselectRowAtIndexPath:selectedIndexPath animated:YES];
     
-    // Tell delegate about the selection
-    //
-    if (self.delegate) {
-      [self.delegate retain];
-      if ([self.delegate respondsToSelector:@selector(selectedGlyphWithId:atKeyPath:)]) {
-        [self.delegate selectedGlyphWithId:glyph.glyphId atKeyPath:keyPath];
+    // Check if this glyph can be placed here
+    if (glyphType != [glyph.glyphType integerValue]) {
+      UIAlertView *wrongGlyphAlertView = [[UIAlertView alloc] initWithTitle:@"Wrong Glyph Type" message:@"This glyph cannot be placed here." delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", @"OK") otherButtonTitles:nil];
+      [wrongGlyphAlertView show];
+      [wrongGlyphAlertView autorelease];
+    } else {    
+      UIImage *myImage = [UIImage imageNamed:WOW_ICON_LOCAL(glyph.icon)];
+      [button setBackgroundImage:myImage forState:UIControlStateNormal];
+      [self.glyphTableView deselectRowAtIndexPath:selectedIndexPath animated:YES];
+      
+      // Tell delegate about the selection
+      //
+      if (self.delegate) {
+        [self.delegate retain];
+        if ([self.delegate respondsToSelector:@selector(selectedGlyphWithId:atKeyPath:)]) {
+          [self.delegate selectedGlyphWithId:glyph.glyphId atKeyPath:keyPath];
+        }
+        [self.delegate release];
       }
-      [self.delegate release];
     }
-    
   } else {
     // No glyph selected, show tooltip
     // Fetch glyph from coredata
@@ -231,17 +250,28 @@
   
   self.tooltipViewController.glyph = glyph;
   self.tooltipViewController.tooltipSource = TooltipSourceGlyph;
+  self.tooltipViewController.showGlyphHelp = NO;
+  self.tooltipViewController.delegate = nil;
   
   [self.tooltipViewController reloadTooltipData];
   
   NSInteger tooltipTop;
-  if ([button isEqual:_primeLeft] || [button isEqual:_primeRight] || [button isEqual:_majorMiddle]) {
-    tooltipTop = button.top - self.tooltipViewController.view.height - 6;
+  NSInteger tooltipLeft;
+  if ([button isEqual:_primeLeft]) {
+    tooltipTop = button.top - self.tooltipViewController.view.height - 20;
+    tooltipLeft = button.left;
+  } else if ([button isEqual:_primeRight]) {
+    tooltipTop = button.top - self.tooltipViewController.view.height - 20;
+    tooltipLeft = button.left - self.tooltipViewController.view.width;
+  } else if ([button isEqual:_majorMiddle]) {
+    tooltipTop = button.top - self.tooltipViewController.view.height - 20;
+    tooltipLeft = button.center.x - self.tooltipViewController.view.width / 2;
   } else {
-    tooltipTop = button.bottom + 6;
+    tooltipTop = button.bottom + 20;
+    tooltipLeft = button.center.x - self.tooltipViewController.view.width / 2;
   }
   
-  CGRect tooltipFrame = CGRectMake(button.center.x - 150.0, tooltipTop, self.tooltipViewController.view.width, self.tooltipViewController.view.height);
+  CGRect tooltipFrame = CGRectMake(tooltipLeft, tooltipTop, self.tooltipViewController.view.width, self.tooltipViewController.view.height);
 
   self.tooltipViewController.view.frame = tooltipFrame;
   
@@ -252,12 +282,55 @@
   [UIView setAnimationDuration:0.2f];
   self.tooltipViewController.view.alpha = 1.0f;
   [UIView commitAnimations];
+}
+
+- (void)showTooltipForCell:(UITableViewCell *)cell withGlyph:(Glyph *)glyph {
+  if (!self.tooltipViewController) {
+    _tooltipViewController = [[TooltipViewController alloc] init];
+  } else {
+    [self hideTooltip];
+  }
   
+  self.tooltipViewController.availableHeight = self.view.height;
+  
+  self.tooltipViewController.glyph = glyph;
+  self.tooltipViewController.tooltipSource = TooltipSourceGlyph;
+  self.tooltipViewController.showGlyphHelp = YES;
+  self.tooltipViewController.delegate = self;
+  
+  [self.tooltipViewController reloadTooltipData];
+  
+  CGPoint newPoint = [cell convertPoint:cell.bounds.origin toView:self.view];
+  NSInteger tooltipTop = newPoint.y;
+  CGRect tooltipFrame;
+  if (tooltipTop > 374) {
+    tooltipFrame = CGRectMake(400, tooltipTop - self.tooltipViewController.view.height, self.tooltipViewController.view.width, self.tooltipViewController.view.height);
+  } else {
+    tooltipFrame = CGRectMake(400, tooltipTop, self.tooltipViewController.view.width, self.tooltipViewController.view.height);
+  }
+  
+  self.tooltipViewController.view.frame = tooltipFrame;
+  
+  self.tooltipViewController.view.alpha = 0.0f;
+  [self.view addSubview:self.tooltipViewController.view];
+  [UIView beginAnimations:@"TooltipTransition" context:nil];
+  [UIView setAnimationCurve:UIViewAnimationCurveLinear];  
+  [UIView setAnimationDuration:0.2f];
+  self.tooltipViewController.view.alpha = 1.0f;
+  [UIView commitAnimations];
 }
 
 - (void)hideTooltip {
   if (self.tooltipViewController) {
     [self.tooltipViewController.view removeFromSuperview];
+  }
+}
+
+#pragma mark TooltipDelegate
+- (void)tooltipDidDismiss {
+  NSIndexPath *selectedIndexPath = [self selectedGlyphIndexPath];
+  if (selectedIndexPath) {
+    [self.glyphTableView deselectRowAtIndexPath:selectedIndexPath animated:YES];
   }
 }
 
@@ -321,6 +394,11 @@
 #pragma mark UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
   return 44.0;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+  Glyph *glyph = [self.fetchedResultsController objectAtIndexPath:indexPath];
+  [self showTooltipForCell:[tableView cellForRowAtIndexPath:indexPath] withGlyph:glyph];
 }
 
 #pragma mark Memory Management

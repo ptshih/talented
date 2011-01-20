@@ -8,16 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "TooltipViewController.h"
 
 @protocol GlyphDelegate <NSObject>
 @required
 - (void)selectedGlyphWithId:(NSNumber *)glyphId atKeyPath:(NSString *)keyPath;
 @end
 
-@class TooltipViewController;
 @class CalculatorViewController;
 
-@interface GlyphViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+@interface GlyphViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, TooltipDelegate> {
   IBOutlet UITableView *_glyphTableView;
   IBOutlet UIButton *_primeLeft;
   IBOutlet UIButton *_primeMiddle;
