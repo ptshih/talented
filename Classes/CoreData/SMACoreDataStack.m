@@ -22,12 +22,12 @@ static NSManagedObjectContext *_managedObjectContext = nil;
 
 @implementation SMACoreDataStack
 
-+ (void)load {
-  NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-  // Initialize persistent store at load time
-  [self initPersistentStore];
-  [pool drain];
-}
+//+ (void)load {
+//  NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+//  // Initialize persistent store at load time
+//  [self initPersistentStore];
+//  [pool drain];
+//}
 
 #pragma mark Core Data
 + (void)initPersistentStore {
