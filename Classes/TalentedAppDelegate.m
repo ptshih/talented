@@ -167,7 +167,7 @@
 #pragma mark Upgrade Code Path
 - (void)migrateVersion {
   // Fetch all saves
-//  NSArray *oldSaves = [self fetchAllSavesAsDictionary];
+  NSArray *oldSaves = [self fetchAllSavesAsDictionary];
   
   // Delete persistent store for current Language
   [[NSUserDefaults standardUserDefaults] removeObjectForKey:[NSString stringWithFormat:@"hasLoadedData_%@", USER_LANGUAGE]];
@@ -177,7 +177,7 @@
   // Reload Talent Data
   [self loadTalentDataForLanguage:USER_LANGUAGE];
   // Re-insert all saves
-//  [self insertAllSaves:oldSaves];
+  [self insertAllSaves:oldSaves];
 }
 
 - (NSArray *)fetchAllSavesAsDictionary {
@@ -250,7 +250,7 @@
   }
   
 #ifdef FORCE_MIGRATION
-  [self migrateSaves];
+  [self migrateVersion];
 #endif
   
   _launcherViewController = [[LauncherViewController alloc] initWithNibName:@"LauncherViewController" bundle:nil];
