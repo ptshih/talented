@@ -121,13 +121,25 @@ static NSManagedObjectContext *_managedObjectContext = nil;
   return _persistentStoreCoordinator;
 }
 
+//+ (NSManagedObjectModel *)managedObjectModel {
+//  if (_managedObjectModel != nil) {
+//    return _managedObjectModel;
+//  }
+//  
+//  _managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:[NSBundle allBundles]] retain];
+//  return _managedObjectModel;
+//}
+
 + (NSManagedObjectModel *)managedObjectModel {
+  
   if (_managedObjectModel != nil) {
     return _managedObjectModel;
   }
   
-//  _managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:[NSBundle allBundles]] retain];
-  _managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];
+  NSString *path = [[NSBundle mainBundle] pathForResource:@"Talented" ofType:@"momd"];
+  NSURL *momURL = [NSURL fileURLWithPath:path];
+  _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:momURL];
+  
   return _managedObjectModel;
 }
 
