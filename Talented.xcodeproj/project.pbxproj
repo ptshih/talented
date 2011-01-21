@@ -79,6 +79,8 @@
 		251AD07512C19D290055B097 /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 251AD07312C19D290055B097 /* AlertViewController.xib */; };
 		251AD2F712C1C2440055B097 /* NSDate+HumanInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 251AD2F612C1C2440055B097 /* NSDate+HumanInterval.m */; };
 		251AD3C412C1CAF10055B097 /* table_background_gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 251AD3C312C1CAF10055B097 /* table_background_gradient.png */; };
+		2536D76912E9069000286280 /* Talented.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2536D76812E9069000286280 /* Talented.xcdatamodeld */; };
+		2536D76A12E9069000286280 /* Talented.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2536D76812E9069000286280 /* Talented.xcdatamodeld */; };
 		255132FC12BA301B0030931A /* worgen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 255132FB12BA301B0030931A /* worgen.jpg */; };
 		2551330A12BA359B0030931A /* angel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2551330512BA359B0030931A /* angel.jpg */; };
 		2551330B12BA359B0030931A /* arthas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2551330612BA359B0030931A /* arthas.jpg */; };
@@ -154,7 +156,6 @@
 		257AEA4A129E902700DE9D51 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA49129E902700DE9D51 /* Reachability.m */; };
 		257AEA4F129E902A00DE9D51 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA4E129E902A00DE9D51 /* libFlurry.a */; };
 		257AEA53129E903B00DE9D51 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257AEA52129E903B00DE9D51 /* SystemConfiguration.framework */; };
-		257AEA6E129E910900DE9D51 /* Talented.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA6D129E910900DE9D51 /* Talented.xcdatamodel */; };
 		257AEAB3129E92AB00DE9D51 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 257AEAAE129E92AB00DE9D51 /* Icon-72.png */; };
 		257AEAEE129E945400DE9D51 /* LauncherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257AEAEC129E945400DE9D51 /* LauncherViewController.m */; };
 		257AEAEF129E945400DE9D51 /* LauncherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257AEAED129E945400DE9D51 /* LauncherViewController.xib */; };
@@ -1177,7 +1178,6 @@
 		25FBA79412B8329300F306BC /* talent.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E6C912B4D37300EB1987 /* talent.json */; };
 		25FBA79512B8329300F306BC /* druid.json in Resources */ = {isa = PBXBuildFile; fileRef = 25136BB112B637A500BEFD01 /* druid.json */; };
 		25FBA79612B8329400F306BC /* masteries.json in Resources */ = {isa = PBXBuildFile; fileRef = 2500E89012B4E03E00EB1987 /* masteries.json */; };
-		25FBA79912B832AE00F306BC /* Talented.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 257AEA6D129E910900DE9D51 /* Talented.xcdatamodel */; };
 		25FBAA7C12B8DB8E00F306BC /* MasteryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FBAA7912B8DB8E00F306BC /* MasteryView.m */; };
 		25FBAA7D12B8DB8E00F306BC /* MasteryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25FBAA7B12B8DB8E00F306BC /* MasteryView.xib */; };
 		25FBAAA312B8DE8700F306BC /* icon-border-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBAAA112B8DE8700F306BC /* icon-border-highlight.png */; };
@@ -1291,6 +1291,7 @@
 		251AD2F512C1C2440055B097 /* NSDate+HumanInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HumanInterval.h"; sourceTree = "<group>"; };
 		251AD2F612C1C2440055B097 /* NSDate+HumanInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HumanInterval.m"; sourceTree = "<group>"; };
 		251AD3C312C1CAF10055B097 /* table_background_gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table_background_gradient.png; sourceTree = "<group>"; };
+		2536D76B12E9069000286280 /* Talented 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Talented 2.xcdatamodel"; sourceTree = "<group>"; };
 		255132FB12BA301B0030931A /* worgen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = worgen.jpg; sourceTree = "<group>"; };
 		2551330512BA359B0030931A /* angel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angel.jpg; sourceTree = "<group>"; };
 		2551330612BA359B0030931A /* arthas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arthas.jpg; sourceTree = "<group>"; };
@@ -1379,7 +1380,7 @@
 		257AEA4D129E902A00DE9D51 /* FlurryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAPI.h; sourceTree = "<group>"; };
 		257AEA4E129E902A00DE9D51 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
 		257AEA52129E903B00DE9D51 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		257AEA6D129E910900DE9D51 /* Talented.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; name = Talented.xcdatamodel; path = Resources/Talented.xcdatamodel; sourceTree = "<group>"; };
+		257AEA6D129E910900DE9D51 /* Talented.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Talented.xcdatamodel; sourceTree = "<group>"; };
 		257AEAAE129E92AB00DE9D51 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		257AEAEB129E945400DE9D51 /* LauncherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LauncherViewController.h; sourceTree = "<group>"; };
 		257AEAEC129E945400DE9D51 /* LauncherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LauncherViewController.m; sourceTree = "<group>"; };
@@ -3639,7 +3640,7 @@
 				257AEAAC129E92AB00DE9D51 /* Assets */,
 				257AEAB1129E92AB00DE9D51 /* Nibs */,
 				8D1107310486CEB800E47090 /* Talented-Info.plist */,
-				257AEA6D129E910900DE9D51 /* Talented.xcdatamodel */,
+				2536D76812E9069000286280 /* Talented.xcdatamodeld */,
 				25FBA6C412B8308D00F306BC /* CoreDataTests-Info.plist */,
 				255CAC8E12C01B7300F99462 /* Localizable.strings */,
 			);
@@ -4871,7 +4872,7 @@
 				257AEA34129E901900DE9D51 /* SMADataCenter.m in Sources */,
 				257AEA35129E901900DE9D51 /* SMACoreDataStack.m in Sources */,
 				257AEA4A129E902700DE9D51 /* Reachability.m in Sources */,
-				257AEA6E129E910900DE9D51 /* Talented.xcdatamodel in Sources */,
+				2536D76912E9069000286280 /* Talented.xcdatamodeld in Sources */,
 				257AEAEE129E945400DE9D51 /* LauncherViewController.m in Sources */,
 				257AEB2E129E968A00DE9D51 /* TalentViewController.m in Sources */,
 				2500E48A12B492DA00EB1987 /* CDataScanner.m in Sources */,
@@ -4941,7 +4942,7 @@
 				25FBA77312B831D900F306BC /* CJSONScanner.m in Sources */,
 				25FBA77412B831DA00F306BC /* CJSONSerializer.m in Sources */,
 				25FBA77712B831F100F306BC /* CDataScanner.m in Sources */,
-				25FBA79912B832AE00F306BC /* Talented.xcdatamodel in Sources */,
+				2536D76A12E9069000286280 /* Talented.xcdatamodeld in Sources */,
 				25ECC76312E3C73800E34E02 /* Glyph.m in Sources */,
 				25ECC7D212E3D0EF00E34E02 /* Glyph+Fetch.m in Sources */,
 			);
@@ -5194,6 +5195,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2536D76812E9069000286280 /* Talented.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				257AEA6D129E910900DE9D51 /* Talented.xcdatamodel */,
+				2536D76B12E9069000286280 /* Talented 2.xcdatamodel */,
+			);
+			currentVersion = 2536D76B12E9069000286280 /* Talented 2.xcdatamodel */;
+			name = Talented.xcdatamodeld;
+			path = Resources/Talented.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
 }
