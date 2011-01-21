@@ -165,22 +165,19 @@
 }
 
 #pragma mark Upgrade Code Path
-- (void)migrateSaves {
+- (void)migrateVersion {
   // Fetch all saves
-  NSArray *oldSaves = [self fetchAllSavesAsDictionary];
+//  NSArray *oldSaves = [self fetchAllSavesAsDictionary];
   
-  // Delete persistent store for all languages
-  for (NSString *lang in LANGUAGES) {
-    [[NSUserDefaults standardUserDefaults] removeObjectForKey:[NSString stringWithFormat:@"hasLoadedData_%@", lang]];
-  }
-  [SMACoreDataStack deleteAllPersistentStores];
+  // Delete persistent store for current Language
+  [[NSUserDefaults standardUserDefaults] removeObjectForKey:[NSString stringWithFormat:@"hasLoadedData_%@", USER_LANGUAGE]];
 
   // Reset current language's persistent store
   [SMACoreDataStack resetPersistentStore];
   // Reload Talent Data
   [self loadTalentDataForLanguage:USER_LANGUAGE];
   // Re-insert all saves
-  [self insertAllSaves:oldSaves];
+//  [self insertAllSaves:oldSaves];
 }
 
 - (NSArray *)fetchAllSavesAsDictionary {
@@ -244,12 +241,12 @@
     if (![[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"] isEqualToString:[[NSUserDefaults standardUserDefaults] objectForKey:@"appVersion"]]) {
       // Perform upgrade
       [[NSUserDefaults standardUserDefaults] setObject:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"] forKey:@"appVersion"];
-      [self migrateSaves];
+      [self migrateVersion];
     }
   } else {
     // Never set appversion before, so migrate
     [[NSUserDefaults standardUserDefaults] setObject:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"] forKey:@"appVersion"];
-    [self migrateSaves];
+    [self migrateVersion];
   }
   
 #ifdef FORCE_MIGRATION
@@ -259,6 +256,7 @@
   _launcherViewController = [[LauncherViewController alloc] initWithNibName:@"LauncherViewController" bundle:nil];
   
   if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"lastSelectedLanguage"] isEqual:USER_LANGUAGE]) {
+    [self migrateVersion];
     [self loadTalentDataForLanguage:USER_LANGUAGE];
   }
   
