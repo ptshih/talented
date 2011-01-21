@@ -38,6 +38,8 @@ static NSManagedObjectContext *_managedObjectContext = nil;
   
   [SMACoreDataStack prepareDocumentsDirectory];
   
+  NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES], NSMigratePersistentStoresAutomaticallyOption, [NSNumber numberWithBool:YES], NSInferMappingModelAutomaticallyOption, nil];
+  
   // Localize datastore filename
   NSString *datastoreName = [NSString stringWithFormat:@"talented_%@.sqlite", USER_LANGUAGE];
   NSURL *storeUrl = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent:datastoreName]];
@@ -45,7 +47,7 @@ static NSManagedObjectContext *_managedObjectContext = nil;
   
   _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
   
-  if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:nil error:&error]) {
+  if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:options error:&error]) {
     // Handle the error.
     DLog(@"failed to create persistent store");
   }
@@ -124,7 +126,8 @@ static NSManagedObjectContext *_managedObjectContext = nil;
     return _managedObjectModel;
   }
   
-  _managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:[NSBundle allBundles]] retain];
+//  _managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:[NSBundle allBundles]] retain];
+  _managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];
   return _managedObjectModel;
 }
 
