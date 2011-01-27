@@ -424,6 +424,9 @@ static UIImage *_redButtonBackground = nil;
     [tvc updateState];
   }
   
+  // Reset glyphs
+  [self.glyphDict removeAllObjects];
+  
   [self updateHeaderState];
   [self updateHeaderPoints];
   [self updateFooterLabels];
