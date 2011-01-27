@@ -16,6 +16,7 @@ static NSManagedObjectContext *_managedObjectContext = nil;
 @interface SMACoreDataStack (Private)
 
 + (void)initPersistentStore;
++ (void)createPersistentStore;
 + (void)prepareDocumentsDirectory;
 
 @end
@@ -25,7 +26,7 @@ static NSManagedObjectContext *_managedObjectContext = nil;
 + (void)load {
   NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
   // Initialize persistent store at load time
-  [self initPersistentStore];
+  [SMACoreDataStack initPersistentStore];
   [pool drain];
 }
 
@@ -36,16 +37,20 @@ static NSManagedObjectContext *_managedObjectContext = nil;
     _persistentStoreCoordinator = nil;
   }
   
+  [SMACoreDataStack createPersistentStore];
+}
+
++ (void)createPersistentStore {
   [SMACoreDataStack prepareDocumentsDirectory];
   
   NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES], NSMigratePersistentStoresAutomaticallyOption, [NSNumber numberWithBool:YES], NSInferMappingModelAutomaticallyOption, nil];
   
   // Localize datastore filename
   NSString *datastoreName = [NSString stringWithFormat:@"talented_%@.sqlite", USER_LANGUAGE];
-  NSURL *storeUrl = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent:datastoreName]];
+  NSURL *storeUrl = [NSURL fileURLWithPath:[[SMACoreDataStack applicationDocumentsDirectory] stringByAppendingPathComponent:datastoreName]];
   NSError *error = nil;
   
-  _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+  _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[SMACoreDataStack managedObjectModel]];
   
   if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:options error:&error]) {
     // Handle the error.
@@ -56,33 +61,20 @@ static NSManagedObjectContext *_managedObjectContext = nil;
 }
 
 + (void)resetPersistentStore {
-  DLog(@"reset persistent store");
-  [_managedObjectModel release];
+  DLog(@"reset persistent store");  
+  NSArray *stores = [_persistentStoreCoordinator persistentStores];
+  
+  for(NSPersistentStore *store in stores) {
+    [_persistentStoreCoordinator removePersistentStore:store error:nil];
+    [[NSFileManager defaultManager] removeItemAtPath:store.URL.path error:nil];
+  }
+  
   [_persistentStoreCoordinator release];
-  _managedObjectModel = nil;
   _persistentStoreCoordinator = nil;
   
-  // Localize datastore filename
-  NSString *datastoreName = [NSString stringWithFormat:@"talented_%@.sqlite", USER_LANGUAGE];
-  NSURL *storeUrl = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent:datastoreName]];
-  NSError *error = nil;
+  [SMACoreDataStack createPersistentStore];
   
-  if (storeUrl) {
-    [[NSFileManager defaultManager] removeItemAtURL:storeUrl error:&error];
-  }
-  
-  [SMACoreDataStack prepareDocumentsDirectory];
-  
-  _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-  
-  if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:nil error:&error]) {
-    // Handle the error.
-    DLog(@"failed to create persistent store");
-  }
-  
-  DLog(@"init persistent store with path: %@", storeUrl);
-  
-  [self resetManagedObjectContext];
+  [SMACoreDataStack resetManagedObjectContext];
 }
 
 + (void)resetManagedObjectContext {
@@ -105,7 +97,7 @@ static NSManagedObjectContext *_managedObjectContext = nil;
   // Localize datastore filename
   for (NSString *lang in LANGUAGES) {
     NSString *datastoreName = [NSString stringWithFormat:@"talented_%@.sqlite", lang];
-    NSURL *storeUrl = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent:datastoreName]];
+    NSURL *storeUrl = [NSURL fileURLWithPath:[[SMACoreDataStack applicationDocumentsDirectory] stringByAppendingPathComponent:datastoreName]];
     NSError *error = nil;
   
     if (storeUrl) {
@@ -116,7 +108,7 @@ static NSManagedObjectContext *_managedObjectContext = nil;
 
 + (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
   if(!_persistentStoreCoordinator) {
-    [self initPersistentStore];
+    [SMACoreDataStack initPersistentStore];
   }
   return _persistentStoreCoordinator;
 }
@@ -148,7 +140,7 @@ static NSManagedObjectContext *_managedObjectContext = nil;
     return _managedObjectContext;
   }
   
-  NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+  NSPersistentStoreCoordinator *coordinator = [SMACoreDataStack persistentStoreCoordinator];
   if (coordinator != nil) {
     _managedObjectContext = [[NSManagedObjectContext alloc] init];
     [_managedObjectContext setPersistentStoreCoordinator:coordinator];
@@ -162,9 +154,9 @@ static NSManagedObjectContext *_managedObjectContext = nil;
 
 + (void)prepareDocumentsDirectory {
   BOOL isDir;
-  [[NSFileManager defaultManager] fileExistsAtPath:[self applicationDocumentsDirectory]  isDirectory:&isDir];
+  [[NSFileManager defaultManager] fileExistsAtPath:[SMACoreDataStack applicationDocumentsDirectory]  isDirectory:&isDir];
   if (!isDir) {
-    [[NSFileManager defaultManager] createDirectoryAtPath:[self applicationDocumentsDirectory] 
+    [[NSFileManager defaultManager] createDirectoryAtPath:[SMACoreDataStack applicationDocumentsDirectory] 
                               withIntermediateDirectories:YES attributes:nil error:nil];
   }
 }
